@@ -1,0 +1,20 @@
+config->Port->SQR3 |= config->Channel_0.Sequence_Number << ADC_SQR3_SQ1_Pos;
+config->Port->SQR3 |= config->Channel_1.Sequence_Number << ADC_SQR3_SQ2_Pos;
+config->Port->SQR3 |= config->Channel_2.Sequence_Number << ADC_SQR3_SQ3_Pos;
+config->Port->SQR3 |= config->Channel_3.Sequence_Number << ADC_SQR3_SQ4_Pos;
+config->Port->SQR3 |= config->Channel_4.Sequence_Number << ADC_SQR3_SQ5_Pos;
+config->Port->SQR3 |= config->Channel_5.Sequence_Number << ADC_SQR3_SQ6_Pos;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
