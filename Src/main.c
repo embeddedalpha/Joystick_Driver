@@ -172,7 +172,7 @@ int main(void)
 //			Joystick_2_Left = 0;
 			Joystick_2_Right = 0;
 		}
-		if(Joystick_Data_Buffer[3] > 2100)
+		if(Joystick_Data_Buffer[3] > 2000)
 		{
 			Joystick_2_UP = 1;
 			Joystick_1_UP = 0;
