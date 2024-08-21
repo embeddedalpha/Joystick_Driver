@@ -29,9 +29,9 @@ static void ADC_Timer_External_Trigger_Init(ADC_Config *config)
 	if(config->External_Trigger.Trigger_Event == ADC_Configuration.Regular_External_Trigger_Event.Timer_1_CC1)
 	{
 		RCC -> APB2ENR |= RCC_APB2ENR_TIM1EN;
-		TIM1 -> CCR1 = 10000/2 -1;
+		TIM1 -> CCR1 = 100/2 -1;
 		TIM1->PSC = 16800;
-		TIM1->ARR = 10000-1;
+		TIM1->ARR = 100-1;
 		TIM1 -> CR2 |= TIM_CR2_MMS_1 | TIM_CR2_MMS_0;
 		TIM1 -> CCER |= TIM_CCER_CC1E;
 		TIM1->CR1 |= TIM_CR1_CEN ;
@@ -130,7 +130,7 @@ static void ADC_Timer_External_Trigger_Init(ADC_Config *config)
 		//	NVIC_SetPriority(TIM1_CC_IRQn,1);
 		TIM2 -> CR2 |=  TIM_CR2_MMS_1;
 		TIM2->PSC = 10000-1;
-		TIM2->ARR = 16800-1;
+		TIM2->ARR = 1680-1;
 		TIM2->CR1 |= TIM_CR1_CEN;
 		TIM2 -> EGR |= TIM_EGR_UG;
 	}
