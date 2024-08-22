@@ -1,8 +1,14 @@
-/*
- * ADC.h
- *
- *  Created on: Jul 31, 2024
- *      Author: kunal
+/**
+ * @file ADC.h
+ * @author Kunal Salvi (kunalsalvius@gmail.com)
+ * @brief  This is the driver file to be added the the application code.
+ *         Functions in this driver are implemented in @ref ADC.c
+ *         
+ * @version 0.1
+ * @date 2024-08-21
+ * 
+ * @copyright Copyright (c) 2024
+ * 
  */
 
 #ifndef ADC_H_
@@ -20,14 +26,45 @@ typedef struct ADC_Pin{
 	uint8_t Sample_Time;
 }ADC_Pin;
 
+
+/** @struct ADC_Config
+ *  @brief  This is the configuration structure to be used to make an instance of ADC.
+ */
+
 typedef struct ADC_Config{
 
-	ADC_TypeDef *Port;
+/**
+ * @brief 	Sets up the ADC hardware block to be used. 
+ *        	STM32F407VGT6 has 3 ADC blocks and can be set using
+ * 			@ref ADC_Configuration.Port
+ * 
+ */
+	ADC_TypeDef *Port; 
 
+
+/**
+ * @brief 	Used to setup Data Alignment of the converted data. 
+ *        	Data can be converted into Right or Left Alignment 
+ * 			@ref ADC_Configuration.Data_Alignment
+ * 
+ */
 	uint8_t Data_Alignment;
 
+/**
+ * @brief 	Used to setup Conversion Mode of the ADC. 
+ *        	ADC conversions can Single or Continuous.
+ * 			When External Trigger is enabled, make sure conversion mode
+ * 			is set to Single  
+ *          @ref ADC_Configuration.Conversion_Mode
+ * 
+ */
 	uint8_t Conversion_Mode;
 
+
+/**
+ * @brief Used to setup Channel Type of the ADC.
+ * 
+ */
 	uint8_t Channel_Type;
 
 	struct External_Trigger
@@ -65,9 +102,6 @@ typedef struct ADC_Config{
 		uint16_t Higher_Threshold;
 		uint16_t Lower_Threshold;
 	}Watchdog_Analog;
-
-
-
 }ADC_Config;
 
 int8_t ADC_Init(ADC_Config *config);
