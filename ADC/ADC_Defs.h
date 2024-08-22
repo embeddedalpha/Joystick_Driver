@@ -1,8 +1,14 @@
-/*
- * ADC_Defs.h
- *
- *  Created on: Jul 31, 2024
- *      Author: kunal
+/**
+ * @file ADC_Defs.h
+ * @author Kunal Salvi (kunalsalviusu@gmail.com)
+ * @brief  The variables used to configure the ADC are declared in this file.
+ *         Use these configurations only.
+ *         
+ * @version 0.1
+ * @date 2024-08-20
+ * 
+ * @copyright Copyright (c) 2024
+ * 
  */
 
 #ifndef ADC_DEFS_H_
@@ -11,12 +17,49 @@
 #include "main.h"
 #include "ADC.h"
 
-
+/**
+ * @brief 
+ * 
+ * This sturct is used in _ADC_Channel_ struct. 
+ * Used to enable or disable a particular Channel of the ADC.
+ * 
+ * @see _ADC_Channel_
+ * 
+ * @param Enable 
+ * @param Disable
+ * 
+ */
 typedef struct _ADC_Channel_Enable_Disable_{
 	bool Enable;
 	bool Disable;
 }_ADC_Channel_Enable_Disable_;
 
+/**
+ * @brief 
+ * 
+ * This sturct is used in _ADC_Channel_ struct. 
+ * Used to enable or disable a particular Channel of the ADC.
+ * 
+ * @see _ADC_Channel_
+ * 
+ *  @param Sequence_1;
+	@param Sequence_2;
+	@param Sequence_3;
+	@param Sequence_4;
+	@param Sequence_5;
+	@param Sequence_6;
+	@param Sequence_7;
+	@param Sequence_8;
+	@param Sequence_9;
+	@param Sequence_10;
+	@param Sequence_11;
+	@param Sequence_12;
+	@param Sequence_13;
+	@param Sequence_14;
+	@param Sequence_15;
+	@param Sequence_16;
+ * 
+ */
 typedef struct _ADC_Channel_Sequence_Number_{
 
 	uint8_t Sequence_1;
@@ -37,6 +80,29 @@ typedef struct _ADC_Channel_Sequence_Number_{
 	uint8_t Sequence_16;
 }_ADC_Channel_Sequence_Number_;
 
+/**
+ * @brief 
+ * 
+ * This struct provides an easy way for the user to set the sample time 
+ * of a channel. All the options when selected will have an additional
+ * 12 cycles added to them in the hardware. 
+ * So _3_Cycles is selected by the user, then total cycles taken to complete
+ * one conversion of that channel will be 3+12 = 15 cycles.
+ * Is used in _ADC_Channel_ struct. 
+ * 
+ * @see _ADC_Channel_
+ * 
+ *  @param  _3_Cycles
+	@param _15_Cycles
+	@param _28_Cycles
+	@param _56_Cycles
+	@param _84_Cycles
+	@param _112_Cycles
+	@param _144_Cycles
+	@param _480_Cycles
+ * 
+ */
+
 typedef struct _ADC_Channel_Sample_Time_{
 	uint8_t _3_Cycles;
 	uint8_t _15_Cycles;
@@ -48,6 +114,21 @@ typedef struct _ADC_Channel_Sample_Time_{
 	uint8_t _480_Cycles;
 }_ADC_Channel_Sample_Time_;
 
+/**
+ * @brief 
+ * This sturct is used in ADC_Configuration struct. 
+ * Encapsulates all the necessary configurations needed for any 
+ * ADC channel. 
+ * 
+ * @param Enable
+ * @param Sequence_Number
+ * @param Sample_Time
+ * 
+ * @see _ADC_Channel_Enable_Disable_
+ * @see _ADC_Channel_Sequence_Number_
+ * @see _ADC_Channel_Sample_Time_
+ * 
+ */
 typedef struct _ADC_Channel_{
 
 	_ADC_Channel_Enable_Disable_ Enable;
@@ -56,7 +137,18 @@ typedef struct _ADC_Channel_{
 }_ADC_Channel_;
 
 
-
+/**
+ * @brief 
+ * This struct helps select the mode in which the conversions will happen.
+ * 
+ * @attention When an external trigger is used i.e. Regular_External_Trigger_Enable or 
+ * Injected_External_Trigger_Enable is configured to be Enable, make sure to 
+ * select "Single" instead of Continuous.
+ * 
+ * @snippet Conversion_Mode.Single
+ * 
+ * @see ADC_Configuration 
+ */
 typedef struct ADC_Mode
 {
 	uint8_t Single;
@@ -87,7 +179,12 @@ static const struct ADC_Configuration{
 
 
 	_ADC_Channel_ Channel;
-	ADC_Mode Conversion_Mode;
+
+	struct Conversion_Mode{
+		uint8_t Single;
+		uint8_t Continuous;
+	}Conversion_Mode;
+
 	ADC_Channel_Type Channel_Type;
 
 
