@@ -1,9 +1,16 @@
-/*
- * ADC.c
- *
- *  Created on: Jul 31, 2024
- *      Author: kunal
+/**
+ * @file ADC.c
+ * @author Kunal Salvi (kunalsalvius@gmail.com)
+ * @brief This is the part driver file that has the implementation of funcitons
+ *        in the ADC.h file. 
+ *        
+ * @version 0.1
+ * @date 2024-08-21
+ * 
+ * @copyright Copyright (c) 2024
+ * 
  */
+
 
 
 #include "ADC.h"
@@ -24,6 +31,10 @@ int8_t pin_temp = 0;
 //	}
 //}
 
+/***
+ * @brief This is a static function that setups up the external timer trigger that triggers the ADC hardware block.
+ *        The members of ADC_Config used in this function is struct External_Trigger. External_Trigger struct
+ */
 static void ADC_Timer_External_Trigger_Init(ADC_Config *config)
 {
 	if(config->External_Trigger.Trigger_Event == ADC_Configuration.Regular_External_Trigger_Event.Timer_1_CC1)
