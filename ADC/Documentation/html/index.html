@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ADC Driver: Main Page</title>
+<title>ADC Driver: ADC Driver Documentation</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,10 +84,66 @@ $(function(){ initResizable(false); });
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">ADC Driver Documentation</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">ADC Driver Documentation </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><h1><a class="anchor" id="intro_sec"></a>
+Introduction</h1>
+<p>Welcome to the ADC (Analog-to-Digital Converter) driver documentation. This documentation covers the initialization, configuration, and usage of the ADC peripheral for the STM32F407VGT6 microcontroller. The driver allows for flexible setup of ADC channels, including configuration of data alignment, conversion modes, and external triggers.</p>
+<h1><a class="anchor" id="features_sec"></a>
+Features</h1>
+<ul>
+<li>Support for configuring up to 16 ADC channels.</li>
+<li>Customizable data alignment (Left/Right).</li>
+<li>Single and continuous conversion modes.</li>
+<li>External trigger support for starting ADC conversions.</li>
+<li>Analog watchdog feature for monitoring ADC channels.</li>
+<li>Integrated DMA support for efficient data transfer.</li>
+</ul>
+<h1><a class="anchor" id="usage_sec"></a>
+Usage</h1>
+<p>To use the ADC driver in your application:</p>
+<ol type="1">
+<li><b>Include the Header</b>: Make sure to include <code><a class="el" href="_a_d_c_8h.html" title="This is the driver file to be added the the application code. Functions in this driver are implemente...">ADC.h</a></code> in your project.</li>
+<li><b>Configure ADC Settings</b>: Use the <code><a class="el" href="struct_a_d_c___config.html" title="This is the configuration structure to be used to make an instance of ADC.">ADC_Config</a></code> structure to set up the ADC, including channels, data alignment, conversion mode, and triggers.</li>
+<li><b>Initialize the ADC</b>: Call <code><a class="el" href="_a_d_c_8h.html#a1e6d26143d01b3b33e2cc9a31a448257" title="Initializes the ADC with the provided configuration.">ADC_Init()</a></code> with the configuration structure to initialize the ADC.</li>
+<li><b>Enable the ADC</b>: Use <code><a class="el" href="_a_d_c_8h.html#a9c25ec9691f3f151ac984a3252132a4e" title="Enables the ADC and introduces a delay.">ADC_Enable()</a></code> to power on the ADC and introduce a stabilization delay.</li>
+<li><b>Start Conversion</b>: Use <code><a class="el" href="_a_d_c_8h.html#a867785c054b4b0abe8bb5f1c5782b2e5" title="Starts the ADC conversion based on the specified channel type.">ADC_Start()</a></code> or <code><a class="el" href="_a_d_c_8h.html#aa03b1f6a2704bf6f76d5e643bbfe05cb" title="Starts ADC capture and initializes DMA.">ADC_Start_Capture()</a></code> to begin the ADC conversion process.</li>
+</ol>
+<h1><a class="anchor" id="examples_sec"></a>
+Example Code</h1>
+<p>Here is a simple example of configuring and starting an ADC conversion:</p>
+<div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_d_c___config.html">ADC_Config</a> adcConfig;</div>
+<div class="line">adcConfig.<a class="code hl_variable" href="struct_a_d_c___config.html#ac4caf8989c2524665555d53aa6c323b8">Port</a> = ADC1;</div>
+<div class="line">adcConfig.<a class="code hl_variable" href="struct_a_d_c___config.html#a96ba11656c14a490d1798e3f24d4d500">Data_Alignment</a> = ADC_Configuration.Data_Alignment.Right_Justified;</div>
+<div class="line">adcConfig.<a class="code hl_variable" href="struct_a_d_c___config.html#acceb0883f226db4845ecf31f50d54f41">Conversion_Mode</a> = ADC_Configuration.Conversion_Mode.Continuous;</div>
+<div class="line">adcConfig.Channel_0.Enable = <span class="keyword">true</span>;</div>
+<div class="line">adcConfig.Channel_0.Sequence_Number = 1;</div>
+<div class="line">adcConfig.Channel_0.Sample_Time = ADC_Configuration.Channel.Sample_Time._15_Cycles;</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">if</span> (<a class="code hl_function" href="_a_d_c_8c.html#a1e6d26143d01b3b33e2cc9a31a448257">ADC_Init</a>(&amp;adcConfig) == 1) {</div>
+<div class="line">    <a class="code hl_function" href="_a_d_c_8c.html#a9c25ec9691f3f151ac984a3252132a4e">ADC_Enable</a>(&amp;adcConfig);</div>
+<div class="line">    <a class="code hl_function" href="_a_d_c_8c.html#a867785c054b4b0abe8bb5f1c5782b2e5">ADC_Start</a>(&amp;adcConfig);</div>
+<div class="line">}</div>
+<div class="ttc" id="a_a_d_c_8c_html_a1e6d26143d01b3b33e2cc9a31a448257"><div class="ttname"><a href="_a_d_c_8c.html#a1e6d26143d01b3b33e2cc9a31a448257">ADC_Init</a></div><div class="ttdeci">int8_t ADC_Init(ADC_Config *config)</div><div class="ttdoc">Initializes the ADC with the provided configuration.</div><div class="ttdef"><b>Definition</b> ADC.c:661</div></div>
+<div class="ttc" id="a_a_d_c_8c_html_a867785c054b4b0abe8bb5f1c5782b2e5"><div class="ttname"><a href="_a_d_c_8c.html#a867785c054b4b0abe8bb5f1c5782b2e5">ADC_Start</a></div><div class="ttdeci">int8_t ADC_Start(ADC_Config *config)</div><div class="ttdoc">Starts the ADC conversion based on the specified channel type.</div><div class="ttdef"><b>Definition</b> ADC.c:796</div></div>
+<div class="ttc" id="a_a_d_c_8c_html_a9c25ec9691f3f151ac984a3252132a4e"><div class="ttname"><a href="_a_d_c_8c.html#a9c25ec9691f3f151ac984a3252132a4e">ADC_Enable</a></div><div class="ttdeci">int8_t ADC_Enable(ADC_Config *config)</div><div class="ttdoc">Enables the ADC and introduces a delay.</div><div class="ttdef"><b>Definition</b> ADC.c:772</div></div>
+<div class="ttc" id="astruct_a_d_c___config_html"><div class="ttname"><a href="struct_a_d_c___config.html">ADC_Config</a></div><div class="ttdoc">This is the configuration structure to be used to make an instance of ADC.</div><div class="ttdef"><b>Definition</b> ADC.h:96</div></div>
+<div class="ttc" id="astruct_a_d_c___config_html_a96ba11656c14a490d1798e3f24d4d500"><div class="ttname"><a href="struct_a_d_c___config.html#a96ba11656c14a490d1798e3f24d4d500">ADC_Config::Data_Alignment</a></div><div class="ttdeci">uint8_t Data_Alignment</div><div class="ttdoc">Used to setup Data Alignment of the converted data. Data can be converted into Right or Left Alignmen...</div><div class="ttdef"><b>Definition</b> ADC.h:113</div></div>
+<div class="ttc" id="astruct_a_d_c___config_html_ac4caf8989c2524665555d53aa6c323b8"><div class="ttname"><a href="struct_a_d_c___config.html#ac4caf8989c2524665555d53aa6c323b8">ADC_Config::Port</a></div><div class="ttdeci">ADC_TypeDef * Port</div><div class="ttdoc">Sets up the ADC hardware block to be used. STM32F407VGT6 has 3 ADC blocks and can be set using ADC_Co...</div><div class="ttdef"><b>Definition</b> ADC.h:104</div></div>
+<div class="ttc" id="astruct_a_d_c___config_html_acceb0883f226db4845ecf31f50d54f41"><div class="ttname"><a href="struct_a_d_c___config.html#acceb0883f226db4845ecf31f50d54f41">ADC_Config::Conversion_Mode</a></div><div class="ttdeci">uint8_t Conversion_Mode</div><div class="ttdoc">Used to setup Conversion Mode of the ADC. ADC conversions can Single or Continuous....</div><div class="ttdef"><b>Definition</b> ADC.h:123</div></div>
+</div><!-- fragment --><h1><a class="anchor" id="files_sec"></a>
+Files</h1>
+<ul>
+<li><b><a class="el" href="_a_d_c_8h.html" title="This is the driver file to be added the the application code. Functions in this driver are implemente...">ADC.h</a></b>: This file contains the declarations for the ADC driver, including the <code><a class="el" href="struct_a_d_c___config.html" title="This is the configuration structure to be used to make an instance of ADC.">ADC_Config</a></code> structure and various functions for initializing and controlling the ADC.</li>
+<li><b><a class="el" href="_a_d_c_8c.html" title="This is the part driver file that has the implementation of funcitons in the ADC.h file.">ADC.c</a></b>: This file contains the implementation of the functions declared in <code><a class="el" href="_a_d_c_8h.html" title="This is the driver file to be added the the application code. Functions in this driver are implemente...">ADC.h</a></code>.</li>
+<li><b><a class="el" href="_a_d_c___defs_8h.html" title="The variables used to configure the ADC are declared in this file. Use these configurations only.">ADC_Defs.h</a></b>: Contains additional definitions and structures used by the ADC driver.</li>
+</ul>
+<h1><a class="anchor" id="author_sec"></a>
+Author</h1>
+<p>This driver was developed by Kunal Salvi. For any questions or issues, please contact <a href="#" onclick="location.href='mai'+'lto:'+'kun'+'al'+'sal'+'vi'+'us@'+'gm'+'ail'+'.c'+'om'; return false;">kunal<span class="obfuscator">.nosp@m.</span>salv<span class="obfuscator">.nosp@m.</span>ius@g<span class="obfuscator">.nosp@m.</span>mail<span class="obfuscator">.nosp@m.</span>.com</a>. </p>
+</div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->
 <!-- start footer part -->

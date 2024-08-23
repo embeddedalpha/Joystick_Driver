@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['data_5falignment_0',['Data_Alignment',['../struct_a_d_c___config.html#a96ba11656c14a490d1798e3f24d4d500',1,'ADC_Config']]]
+  ['all_5fchannels_0',['All_Channels',['../struct_a_d_c___configuration_1_1___watchdog___analog___1_1_channel___scan.html#a936ca3abd3b56938f19e19d28141dc96',1,'ADC_Configuration::_Watchdog_Analog_::Channel_Scan']]]
 ];
