@@ -1,9 +1,45 @@
-/*
- * GPIO.h
+/**
+ * @mainpage GPIO Driver for STM32F407VGT6
  *
- *  Created on: Nov 2, 2021
- *      Author: Kunal
+ * @section intro_sec Introduction
+ *
+ * This documentation provides an overview of the GPIO driver implementation for the STM32F407VGT6 microcontroller.
+ * The GPIO driver includes functions for setting up and controlling the GPIO pins, including setting pins high or low,
+ * reading pin or port states, writing to a port, and configuring GPIO interrupts.
+ *
+ * @section features_sec Features
+ *
+ * - Enable or disable GPIO clocks
+ * - Initialize GPIO pins with specific configurations
+ * - Set or clear individual GPIO pins
+ * - Read the state of GPIO pins or the entire port
+ * - Configure GPIO interrupts with edge selection and priority
+ *
+ * @section usage_sec Usage
+ *
+ * Include the `GPIO.h` and `GPIO_Defs.h` headers in your application code to access the GPIO functions and configurations.
+ * Use the provided functions to initialize GPIO pins, control their states, and handle interrupts as needed.
+ *
+ * Example:
+ * @code
+ * GPIO_Pin_Init(GPIOA, 5, GPIO_Configuration.Mode.General_Purpose_Output, GPIO_Configuration.Output_Type.Push_Pull, GPIO_Configuration.Speed.High_Speed, GPIO_Configuration.Pull.No_Pull_Up_Down, 0);
+ * GPIO_Pin_High(GPIOA, 5);    // Set GPIOA pin 5 high
+ * @endcode
+ *
+ * @section dependencies_sec Dependencies
+ *
+ * - `GPIO_Defs.h`: Contains the definitions and configurations for the GPIO driver.
+ * - `main.h`: Include this to provide the necessary microcontroller-specific includes.
+ *
+ * @section author_sec Author
+ *
+ * Author: Your Name
+ *
+ * @date 2024-08-21
+ * @version 1.0
+ * @copyright Copyright (c) 2024
  */
+
 
 #ifndef GPIO_GPIO_H_
 #define GPIO_GPIO_H_

@@ -1,0 +1,130 @@
+\doxysection{ADC.\+c File Reference}
+\hypertarget{_a_d_c_8c}{}\label{_a_d_c_8c}\index{ADC.c@{ADC.c}}
+
+
+This is the part driver file that has the implementation of funcitons in the \doxylink{_a_d_c_8h}{ADC.\+h} file.  
+
+
+{\ttfamily \#include "{}ADC.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int8\+\_\+t \mbox{\hyperlink{_a_d_c_8c_a1e6d26143d01b3b33e2cc9a31a448257}{ADC\+\_\+\+Init}} (\mbox{\hyperlink{struct_a_d_c___config}{ADC\+\_\+\+Config}} \texorpdfstring{$\ast$}{*}config)
+\begin{DoxyCompactList}\small\item\em Initializes the ADC with the provided configuration. \end{DoxyCompactList}\item 
+int8\+\_\+t \mbox{\hyperlink{_a_d_c_8c_a9c25ec9691f3f151ac984a3252132a4e}{ADC\+\_\+\+Enable}} (\mbox{\hyperlink{struct_a_d_c___config}{ADC\+\_\+\+Config}} \texorpdfstring{$\ast$}{*}config)
+\begin{DoxyCompactList}\small\item\em Enables the ADC and introduces a delay. \end{DoxyCompactList}\item 
+int8\+\_\+t \mbox{\hyperlink{_a_d_c_8c_a867785c054b4b0abe8bb5f1c5782b2e5}{ADC\+\_\+\+Start}} (\mbox{\hyperlink{struct_a_d_c___config}{ADC\+\_\+\+Config}} \texorpdfstring{$\ast$}{*}config)
+\begin{DoxyCompactList}\small\item\em Starts the ADC conversion based on the specified channel type. \end{DoxyCompactList}\item 
+int8\+\_\+t \mbox{\hyperlink{_a_d_c_8c_aa03b1f6a2704bf6f76d5e643bbfe05cb}{ADC\+\_\+\+Start\+\_\+\+Capture}} (\mbox{\hyperlink{struct_a_d_c___config}{ADC\+\_\+\+Config}} \texorpdfstring{$\ast$}{*}config, uint16\+\_\+t \texorpdfstring{$\ast$}{*}buffer)
+\begin{DoxyCompactList}\small\item\em Starts ADC capture and initializes DMA. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{_a_d_c_8c_a914199841e5c54c39d5a77a04afeee43}\label{_a_d_c_8c_a914199841e5c54c39d5a77a04afeee43} 
+DMA\+\_\+\+Config {\bfseries x\+ADC}
+\begin{DoxyCompactList}\small\item\em Global DMA configuration structure for ADC. \end{DoxyCompactList}\item 
+\Hypertarget{_a_d_c_8c_a485fe8eb2c05e6966d95ec0290bdf9d8}\label{_a_d_c_8c_a485fe8eb2c05e6966d95ec0290bdf9d8} 
+int8\+\_\+t {\bfseries pin\+\_\+temp} = 0
+\begin{DoxyCompactList}\small\item\em Temporary variable to store pin value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the part driver file that has the implementation of funcitons in the \doxylink{_a_d_c_8h}{ADC.\+h} file. 
+
+\begin{DoxyAuthor}{Author}
+Kunal Salvi (\href{mailto:kunalsalvius@gmail.com}{\texttt{ kunalsalvius@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/08-\/21
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_a_d_c_8c_a9c25ec9691f3f151ac984a3252132a4e}\index{ADC.c@{ADC.c}!ADC\_Enable@{ADC\_Enable}}
+\index{ADC\_Enable@{ADC\_Enable}!ADC.c@{ADC.c}}
+\doxysubsubsection{\texorpdfstring{ADC\_Enable()}{ADC\_Enable()}}
+{\footnotesize\ttfamily \label{_a_d_c_8c_a9c25ec9691f3f151ac984a3252132a4e} 
+int8\+\_\+t ADC\+\_\+\+Enable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_a_d_c___config}{ADC\+\_\+\+Config}} \texorpdfstring{$\ast$}{*}}]{config}{}\end{DoxyParamCaption})}
+
+
+
+Enables the ADC and introduces a delay. 
+
+This function enables the ADC by setting the ADON bit in the control register. After enabling the ADC, it introduces a delay to allow the ADC to stabilize.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em config} & Pointer to the ADC configuration structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int8\+\_\+t Returns 1 on successful enabling of the ADC. 
+\end{DoxyReturn}
+\Hypertarget{_a_d_c_8c_a1e6d26143d01b3b33e2cc9a31a448257}\index{ADC.c@{ADC.c}!ADC\_Init@{ADC\_Init}}
+\index{ADC\_Init@{ADC\_Init}!ADC.c@{ADC.c}}
+\doxysubsubsection{\texorpdfstring{ADC\_Init()}{ADC\_Init()}}
+{\footnotesize\ttfamily \label{_a_d_c_8c_a1e6d26143d01b3b33e2cc9a31a448257} 
+int8\+\_\+t ADC\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_a_d_c___config}{ADC\+\_\+\+Config}} \texorpdfstring{$\ast$}{*}}]{config}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the ADC with the provided configuration. 
+
+This function initializes the ADC peripheral based on the settings provided in the {\ttfamily \doxylink{struct_a_d_c___config}{ADC\+\_\+\+Config}} structure. It configures the ADC port, resolution, conversion mode, data alignment, and external trigger if enabled. It also sets up the DMA for ADC data transfer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em config} & Pointer to the ADC configuration structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int8\+\_\+t Returns 1 on successful initialization, or -\/1 if an error occurs. 
+\end{DoxyReturn}
+\Hypertarget{_a_d_c_8c_a867785c054b4b0abe8bb5f1c5782b2e5}\index{ADC.c@{ADC.c}!ADC\_Start@{ADC\_Start}}
+\index{ADC\_Start@{ADC\_Start}!ADC.c@{ADC.c}}
+\doxysubsubsection{\texorpdfstring{ADC\_Start()}{ADC\_Start()}}
+{\footnotesize\ttfamily \label{_a_d_c_8c_a867785c054b4b0abe8bb5f1c5782b2e5} 
+int8\+\_\+t ADC\+\_\+\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_a_d_c___config}{ADC\+\_\+\+Config}} \texorpdfstring{$\ast$}{*}}]{config}{}\end{DoxyParamCaption})}
+
+
+
+Starts the ADC conversion based on the specified channel type. 
+
+This function starts the ADC conversion process for either regular or injected channels. It clears the status register, then initiates the conversion by setting the appropriate start bit in the control register. If the channel type is invalid, it returns an error code.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em config} & Pointer to the ADC configuration structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int8\+\_\+t Returns 1 on successful start of the ADC conversion, or -\/1 if the channel type is invalid. 
+\end{DoxyReturn}
+\Hypertarget{_a_d_c_8c_aa03b1f6a2704bf6f76d5e643bbfe05cb}\index{ADC.c@{ADC.c}!ADC\_Start\_Capture@{ADC\_Start\_Capture}}
+\index{ADC\_Start\_Capture@{ADC\_Start\_Capture}!ADC.c@{ADC.c}}
+\doxysubsubsection{\texorpdfstring{ADC\_Start\_Capture()}{ADC\_Start\_Capture()}}
+{\footnotesize\ttfamily \label{_a_d_c_8c_aa03b1f6a2704bf6f76d5e643bbfe05cb} 
+int8\+\_\+t ADC\+\_\+\+Start\+\_\+\+Capture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_a_d_c___config}{ADC\+\_\+\+Config}} \texorpdfstring{$\ast$}{*}}]{config}{, }\item[{uint16\+\_\+t \texorpdfstring{$\ast$}{*}}]{buffer}{}\end{DoxyParamCaption})}
+
+
+
+Starts ADC capture and initializes DMA. 
+
+This function initiates the ADC capture process. If an overrun condition is detected, it reinitializes the ADC by toggling the ADON bit. It then sets up the DMA to transfer the ADC data to a specified buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em config} & Pointer to the ADC configuration structure. \\
+\hline
+\mbox{\texttt{ out}}  & {\em buffer} & Pointer to the buffer where ADC data will be stored.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int8\+\_\+t Returns 1 on successful start of ADC capture. 
+\end{DoxyReturn}
