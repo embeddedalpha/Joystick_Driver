@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___c_m_s_i_s___device" xml:lang="en-US">
+<title>CMSIS_Device</title>
+<indexterm><primary>CMSIS_Device</primary></indexterm>
+Collaboration diagram for CMSIS_Device:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="group___c_m_s_i_s___device.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Topics    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_group__stm32f407xx">Stm32f407xx</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+    <xi:include href="group__stm32f407xx.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

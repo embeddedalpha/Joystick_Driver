@@ -1,0 +1,477 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_unionx_p_s_r___type" xml:lang="en-US">
+<title>xPSR_Type Union Reference</title>
+<indexterm><primary>xPSR_Type</primary></indexterm>
+<para>
+
+<para>Union type to access the Special-Purpose Program Status Registers (xPSR). </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;core_armv81mml.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para>struct {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad502ba7dbb2aab5f87c782b28f02622d">ISR</link>:9</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1">_reserved0</link>:7</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gaa91800ec6e90e457c7a1acd1f2e17099">GE</link>:4</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga959a73d8faee56599b7e792a7c5a2d16">_reserved1</link>:4</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga6e1cf12e53a20224f6f62c001d9be972">T</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga76485660fe8ad98cdc71ddd7cb0ed777">IT</link>:2</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga65f27ddc4f7e09c14ce7c5211b2e000a">Q</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gacd4a2b64faee91e4a9eef300667fa222">V</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776">C</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga5ae954cbd9986cd64625d7fa00943c8e">Z</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gabae0610bc2a97bbf7f689e953e0b451f">N</link>:1</para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>} <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga61873807b9abee3dfa090c036e580d2e">b</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad0fb62e7a08e70fc5e0a76b67809f84b">w</link></para>
+</listitem>
+            <listitem><para>struct {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad502ba7dbb2aab5f87c782b28f02622d">ISR</link>:9</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1">_reserved0</link>:15</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga6e1cf12e53a20224f6f62c001d9be972">T</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga959a73d8faee56599b7e792a7c5a2d16">_reserved1</link>:3</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gacd4a2b64faee91e4a9eef300667fa222">V</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776">C</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga5ae954cbd9986cd64625d7fa00943c8e">Z</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gabae0610bc2a97bbf7f689e953e0b451f">N</link>:1</para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>} <link linkend="_group___c_m_s_i_s___core___sys_tick_functions_1gaf49c84711c1d030fdf91db1b6d63b515">b</link></para>
+</listitem>
+            <listitem><para>struct {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad502ba7dbb2aab5f87c782b28f02622d">ISR</link>:9</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1">_reserved0</link>:7</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gaa91800ec6e90e457c7a1acd1f2e17099">GE</link>:4</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga959a73d8faee56599b7e792a7c5a2d16">_reserved1</link>:4</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga6e1cf12e53a20224f6f62c001d9be972">T</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga76485660fe8ad98cdc71ddd7cb0ed777">IT</link>:2</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga65f27ddc4f7e09c14ce7c5211b2e000a">Q</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gacd4a2b64faee91e4a9eef300667fa222">V</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776">C</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga5ae954cbd9986cd64625d7fa00943c8e">Z</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gabae0610bc2a97bbf7f689e953e0b451f">N</link>:1</para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>} <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad2c6abf86ebe8085365f6d5d9f68e458">b</link></para>
+</listitem>
+            <listitem><para>struct {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad502ba7dbb2aab5f87c782b28f02622d">ISR</link>:9</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1">_reserved0</link>:15</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga6e1cf12e53a20224f6f62c001d9be972">T</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga959a73d8faee56599b7e792a7c5a2d16">_reserved1</link>:3</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gacd4a2b64faee91e4a9eef300667fa222">V</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776">C</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga5ae954cbd9986cd64625d7fa00943c8e">Z</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gabae0610bc2a97bbf7f689e953e0b451f">N</link>:1</para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>} <link linkend="_group___c_m_s_i_s___core___sys_tick_functions_1ga0bd5ce509e238f569764686f70f91927">b</link></para>
+</listitem>
+            <listitem><para>struct {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad502ba7dbb2aab5f87c782b28f02622d">ISR</link>:9</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1">_reserved0</link>:15</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga6e1cf12e53a20224f6f62c001d9be972">T</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga959a73d8faee56599b7e792a7c5a2d16">_reserved1</link>:3</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gacd4a2b64faee91e4a9eef300667fa222">V</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776">C</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga5ae954cbd9986cd64625d7fa00943c8e">Z</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gabae0610bc2a97bbf7f689e953e0b451f">N</link>:1</para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>} <link linkend="_group___c_m_s_i_s___core___sys_tick_functions_1gae2d0789dd34a84784b44cc80ef05a5b1">b</link></para>
+</listitem>
+            <listitem><para>struct {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad502ba7dbb2aab5f87c782b28f02622d">ISR</link>:9</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1">_reserved0</link>:15</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga6e1cf12e53a20224f6f62c001d9be972">T</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga959a73d8faee56599b7e792a7c5a2d16">_reserved1</link>:3</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gacd4a2b64faee91e4a9eef300667fa222">V</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776">C</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga5ae954cbd9986cd64625d7fa00943c8e">Z</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gabae0610bc2a97bbf7f689e953e0b451f">N</link>:1</para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>} <link linkend="_group___c_m_s_i_s___core___sys_tick_functions_1gac18a1b2047fe4307c4ff221b3f99bfbc">b</link></para>
+</listitem>
+            <listitem><para>struct {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad502ba7dbb2aab5f87c782b28f02622d">ISR</link>:9</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1">_reserved0</link>:15</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga6e1cf12e53a20224f6f62c001d9be972">T</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga959a73d8faee56599b7e792a7c5a2d16">_reserved1</link>:3</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gacd4a2b64faee91e4a9eef300667fa222">V</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776">C</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga5ae954cbd9986cd64625d7fa00943c8e">Z</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gabae0610bc2a97bbf7f689e953e0b451f">N</link>:1</para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>} <link linkend="_group___c_m_s_i_s___core___sys_tick_functions_1gac2accdfd20f90f2841d23517a7f01eff">b</link></para>
+</listitem>
+            <listitem><para>struct {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad502ba7dbb2aab5f87c782b28f02622d">ISR</link>:9</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1">_reserved0</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gabedfacab5e6f9c329bfa0051cb88a9d3">ICI_IT_1</link>:6</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga959a73d8faee56599b7e792a7c5a2d16">_reserved1</link>:8</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga6e1cf12e53a20224f6f62c001d9be972">T</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gae1df616880ca701154eba05e747605df">ICI_IT_2</link>:2</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga65f27ddc4f7e09c14ce7c5211b2e000a">Q</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gacd4a2b64faee91e4a9eef300667fa222">V</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776">C</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga5ae954cbd9986cd64625d7fa00943c8e">Z</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gabae0610bc2a97bbf7f689e953e0b451f">N</link>:1</para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>} <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga642fbb610bf0a3aa196c9c9aca469478">b</link></para>
+</listitem>
+            <listitem><para>struct {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad502ba7dbb2aab5f87c782b28f02622d">ISR</link>:9</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1">_reserved0</link>:7</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gaa91800ec6e90e457c7a1acd1f2e17099">GE</link>:4</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga959a73d8faee56599b7e792a7c5a2d16">_reserved1</link>:4</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga6e1cf12e53a20224f6f62c001d9be972">T</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga76485660fe8ad98cdc71ddd7cb0ed777">IT</link>:2</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga65f27ddc4f7e09c14ce7c5211b2e000a">Q</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gacd4a2b64faee91e4a9eef300667fa222">V</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776">C</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga5ae954cbd9986cd64625d7fa00943c8e">Z</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gabae0610bc2a97bbf7f689e953e0b451f">N</link>:1</para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>} <link linkend="_group___c_m_s_i_s__core___debug_functions_1gae7580c69a1f47733d678ff9bbf992d67">b</link></para>
+</listitem>
+            <listitem><para>struct {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad502ba7dbb2aab5f87c782b28f02622d">ISR</link>:9</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1">_reserved0</link>:7</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gaa91800ec6e90e457c7a1acd1f2e17099">GE</link>:4</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga959a73d8faee56599b7e792a7c5a2d16">_reserved1</link>:4</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga6e1cf12e53a20224f6f62c001d9be972">T</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga76485660fe8ad98cdc71ddd7cb0ed777">IT</link>:2</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga65f27ddc4f7e09c14ce7c5211b2e000a">Q</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gacd4a2b64faee91e4a9eef300667fa222">V</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776">C</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga5ae954cbd9986cd64625d7fa00943c8e">Z</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gabae0610bc2a97bbf7f689e953e0b451f">N</link>:1</para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>} <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga1caef814881317b3fa3c2d3552e8f47b">b</link></para>
+</listitem>
+            <listitem><para>struct {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad502ba7dbb2aab5f87c782b28f02622d">ISR</link>:9</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1">_reserved0</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gabedfacab5e6f9c329bfa0051cb88a9d3">ICI_IT_1</link>:6</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gaa91800ec6e90e457c7a1acd1f2e17099">GE</link>:4</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga959a73d8faee56599b7e792a7c5a2d16">_reserved1</link>:4</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga6e1cf12e53a20224f6f62c001d9be972">T</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gae1df616880ca701154eba05e747605df">ICI_IT_2</link>:2</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga65f27ddc4f7e09c14ce7c5211b2e000a">Q</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gacd4a2b64faee91e4a9eef300667fa222">V</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776">C</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga5ae954cbd9986cd64625d7fa00943c8e">Z</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gabae0610bc2a97bbf7f689e953e0b451f">N</link>:1</para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>} <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga6211ec8327a0b0c88d4461286644237e">b</link></para>
+</listitem>
+            <listitem><para>struct {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad502ba7dbb2aab5f87c782b28f02622d">ISR</link>:9</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1">_reserved0</link>:7</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gaa91800ec6e90e457c7a1acd1f2e17099">GE</link>:4</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga959a73d8faee56599b7e792a7c5a2d16">_reserved1</link>:4</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga6e1cf12e53a20224f6f62c001d9be972">T</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga76485660fe8ad98cdc71ddd7cb0ed777">IT</link>:2</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga65f27ddc4f7e09c14ce7c5211b2e000a">Q</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gacd4a2b64faee91e4a9eef300667fa222">V</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776">C</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga5ae954cbd9986cd64625d7fa00943c8e">Z</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gabae0610bc2a97bbf7f689e953e0b451f">N</link>:1</para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>} <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga8bd8b615be33ffd7d70a20785abfa03a">b</link></para>
+</listitem>
+            <listitem><para>struct {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad502ba7dbb2aab5f87c782b28f02622d">ISR</link>:9</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1">_reserved0</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gabedfacab5e6f9c329bfa0051cb88a9d3">ICI_IT_1</link>:6</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gaa91800ec6e90e457c7a1acd1f2e17099">GE</link>:4</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga959a73d8faee56599b7e792a7c5a2d16">_reserved1</link>:4</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga6e1cf12e53a20224f6f62c001d9be972">T</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gae1df616880ca701154eba05e747605df">ICI_IT_2</link>:2</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga65f27ddc4f7e09c14ce7c5211b2e000a">Q</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gacd4a2b64faee91e4a9eef300667fa222">V</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776">C</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga5ae954cbd9986cd64625d7fa00943c8e">Z</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gabae0610bc2a97bbf7f689e953e0b451f">N</link>:1</para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>} <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac0d1a8c5d8ef96f221a0e1576c8c1077">b</link></para>
+</listitem>
+            <listitem><para>struct {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad502ba7dbb2aab5f87c782b28f02622d">ISR</link>:9</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1">_reserved0</link>:7</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gaa91800ec6e90e457c7a1acd1f2e17099">GE</link>:4</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga959a73d8faee56599b7e792a7c5a2d16">_reserved1</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga6254fd9c7aeecc526904d21b26168fdb">B</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga74c76ececf7d1666f0a8cc77aac64f7d">_reserved2</link>:2</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga6e1cf12e53a20224f6f62c001d9be972">T</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga76485660fe8ad98cdc71ddd7cb0ed777">IT</link>:2</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga65f27ddc4f7e09c14ce7c5211b2e000a">Q</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gacd4a2b64faee91e4a9eef300667fa222">V</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776">C</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga5ae954cbd9986cd64625d7fa00943c8e">Z</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gabae0610bc2a97bbf7f689e953e0b451f">N</link>:1</para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>} <link linkend="_group___c_m_s_i_s__core___debug_functions_1gaa6657448cf42deedd78f61e3dd94560c">b</link></para>
+</listitem>
+            <listitem><para>struct {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad502ba7dbb2aab5f87c782b28f02622d">ISR</link>:9</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1">_reserved0</link>:15</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga6e1cf12e53a20224f6f62c001d9be972">T</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga959a73d8faee56599b7e792a7c5a2d16">_reserved1</link>:3</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gacd4a2b64faee91e4a9eef300667fa222">V</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776">C</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga5ae954cbd9986cd64625d7fa00943c8e">Z</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gabae0610bc2a97bbf7f689e953e0b451f">N</link>:1</para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>} <link linkend="_group___c_m_s_i_s___core___sys_tick_functions_1ga9047741cd612f5350c9d322fdc3cfdba">b</link></para>
+</listitem>
+            <listitem><para>struct {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad502ba7dbb2aab5f87c782b28f02622d">ISR</link>:9</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1">_reserved0</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gabedfacab5e6f9c329bfa0051cb88a9d3">ICI_IT_1</link>:6</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga959a73d8faee56599b7e792a7c5a2d16">_reserved1</link>:8</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga6e1cf12e53a20224f6f62c001d9be972">T</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gae1df616880ca701154eba05e747605df">ICI_IT_2</link>:2</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga65f27ddc4f7e09c14ce7c5211b2e000a">Q</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gacd4a2b64faee91e4a9eef300667fa222">V</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776">C</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga5ae954cbd9986cd64625d7fa00943c8e">Z</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gabae0610bc2a97bbf7f689e953e0b451f">N</link>:1</para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>} <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga8af76519ecd3cf5839b231eebb8809a3">b</link></para>
+</listitem>
+            <listitem><para>struct {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad502ba7dbb2aab5f87c782b28f02622d">ISR</link>:9</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1">_reserved0</link>:7</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gaa91800ec6e90e457c7a1acd1f2e17099">GE</link>:4</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga959a73d8faee56599b7e792a7c5a2d16">_reserved1</link>:4</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga6e1cf12e53a20224f6f62c001d9be972">T</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga76485660fe8ad98cdc71ddd7cb0ed777">IT</link>:2</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga65f27ddc4f7e09c14ce7c5211b2e000a">Q</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gacd4a2b64faee91e4a9eef300667fa222">V</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776">C</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga5ae954cbd9986cd64625d7fa00943c8e">Z</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gabae0610bc2a97bbf7f689e953e0b451f">N</link>:1</para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>} <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga7369d8d8bdefd9d72d4468ae0ee67b51">b</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Union type to access the Special-Purpose Program Status Registers (xPSR). </para>
+<para>
+Definition at line <link linkend="_core__armv81mml_8h_source_1l00385">385</link> of file <link linkend="_core__armv81mml_8h_source">core_armv81mml.h</link>.</para>
+<para>
+The documentation for this union was generated from the following files:</para>
+Inc/<link linkend="_core__armv81mml_8h">core_armv81mml.h</link>Inc/<link linkend="_core__armv8mbl_8h">core_armv8mbl.h</link>Inc/<link linkend="_core__armv8mml_8h">core_armv8mml.h</link>Inc/<link linkend="_core__cm0_8h">core_cm0.h</link>Inc/<link linkend="_core__cm0plus_8h">core_cm0plus.h</link>Inc/<link linkend="_core__cm1_8h">core_cm1.h</link>Inc/<link linkend="_core__cm23_8h">core_cm23.h</link>Inc/<link linkend="_core__cm3_8h">core_cm3.h</link>Inc/<link linkend="_core__cm33_8h">core_cm33.h</link>Inc/<link linkend="_core__cm35p_8h">core_cm35p.h</link>Inc/<link linkend="_core__cm4_8h">core_cm4.h</link>Inc/<link linkend="_core__cm55_8h">core_cm55.h</link>Inc/<link linkend="_core__cm7_8h">core_cm7.h</link>Inc/<link linkend="_core__cm85_8h">core_cm85.h</link>Inc/<link linkend="_core__sc000_8h">core_sc000.h</link>Inc/<link linkend="_core__sc300_8h">core_sc300.h</link>Inc/<link linkend="_core__starmc1_8h">core_starmc1.h</link></section>
+</section>

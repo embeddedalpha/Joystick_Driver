@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___c_m_s_i_s___core___mve_functions" xml:lang="en-US">
+<title>MVE Functions</title>
+<indexterm><primary>MVE Functions</primary></indexterm>
+<para>
+
+<para>Function that provides MVE type. </para>
+ 
+</para>
+Collaboration diagram for MVE Functions:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="group___c_m_s_i_s___core___mve_functions.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Topics    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_group___c_m_s_i_s___core___s_a_u_functions">SAU Functions</link></para>
+
+<para>Functions that configure the SAU. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+        <itemizedlist>
+            <listitem><para>__STATIC_INLINE uint32_t <link linkend="_group___c_m_s_i_s___core___n_v_i_c_functions_1ga9de35f6ff713a3cac7674baf49e22b72">SCB_GetMVEType</link> (void)</para>
+
+<para>get MVE type </para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para>Function that provides MVE type. </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_group___c_m_s_i_s___core___n_v_i_c_functions_1ga9de35f6ff713a3cac7674baf49e22b72"/><section>
+    <title>SCB_GetMVEType()</title>
+<indexterm><primary>SCB_GetMVEType</primary><secondary>MVE Functions</secondary></indexterm>
+<indexterm><primary>MVE Functions</primary><secondary>SCB_GetMVEType</secondary></indexterm>
+<para><computeroutput>__STATIC_INLINE uint32_t SCB_GetMVEType (void )</computeroutput></para><para>
+
+<para>get MVE type </para>
+</para>
+
+<para>returns the MVE type <formalpara><title>Returns</title>
+
+<para><itemizedlist>
+<listitem>
+<para><emphasis role="bold">0</emphasis>: No Vector Extension (MVE)</para>
+</listitem><listitem>
+<para><emphasis role="bold">1</emphasis>: Integer Vector Extension (MVE-I)</para>
+</listitem><listitem>
+<para><emphasis role="bold">2</emphasis>: Floating-point Vector Extension (MVE-F) </para>
+</listitem></itemizedlist>
+</para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_core__armv81mml_8h_source_1l03900">3900</link> of file <link linkend="_core__armv81mml_8h_source">core_armv81mml.h</link>.</para>
+</section>
+</section>
+    <xi:include href="group___c_m_s_i_s___core___s_a_u_functions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

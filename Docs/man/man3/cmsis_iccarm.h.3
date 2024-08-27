@@ -1,0 +1,426 @@
+.TH "Inc/cmsis_iccarm.h" 3 "Version JSTDRVF4" "Joystick Driver" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Inc/cmsis_iccarm.h \- CMSIS compiler ICCARM (IAR Compiler for Arm) header file\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fR#include <intrinsics\&.h>\fP
+.br
+
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fB__iar_u32\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__IAR_FT\fP   _Pragma('inline=forced') __intrinsic"
+.br
+.ti -1c
+.RI "#define \fB__ICCARM_V8\fP   0"
+.br
+.ti -1c
+.RI "#define \fB__ALIGNED\fP(x)"
+.br
+.ti -1c
+.RI "#define \fB__IAR_M0_FAMILY\fP   0"
+.br
+.ti -1c
+.RI "#define \fB__ASM\fP   __asm"
+.br
+.ti -1c
+.RI "#define \fB__COMPILER_BARRIER\fP()"
+.br
+.ti -1c
+.RI "#define \fB__INLINE\fP   inline"
+.br
+.ti -1c
+.RI "#define \fB__NO_RETURN\fP   _Pragma('object_attribute=__noreturn')"
+.br
+.ti -1c
+.RI "#define \fB__PACKED\fP   __packed"
+.br
+.ti -1c
+.RI "#define \fB__PACKED_STRUCT\fP   __packed struct"
+.br
+.ti -1c
+.RI "#define \fB__PACKED_UNION\fP   __packed union"
+.br
+.ti -1c
+.RI "#define \fB__RESTRICT\fP   restrict"
+.br
+.ti -1c
+.RI "#define \fB__STATIC_INLINE\fP   static inline"
+.br
+.ti -1c
+.RI "#define \fB__FORCEINLINE\fP   _Pragma('inline=forced')"
+.br
+.ti -1c
+.RI "#define \fB__STATIC_FORCEINLINE\fP   __FORCEINLINE __STATIC_INLINE"
+.br
+.ti -1c
+.RI "#define \fB__UNALIGNED_UINT16_READ\fP(PTR)"
+.br
+.ti -1c
+.RI "#define \fB__UNALIGNED_UINT16_WRITE\fP(PTR,  VAL)"
+.br
+.ti -1c
+.RI "#define \fB__UNALIGNED_UINT32_READ\fP(PTR)"
+.br
+.ti -1c
+.RI "#define \fB__UNALIGNED_UINT32_WRITE\fP(PTR,  VAL)"
+.br
+.ti -1c
+.RI "#define \fB__UNALIGNED_UINT32\fP(PTR)"
+.br
+.ti -1c
+.RI "#define \fB__USED\fP   _Pragma('__root')"
+.br
+.ti -1c
+.RI "#define \fB__WEAK\fP   _Pragma('__weak')"
+.br
+.ti -1c
+.RI "#define \fB__PROGRAM_START\fP   __iar_program_start"
+.br
+.ti -1c
+.RI "#define \fB__INITIAL_SP\fP   CSTACK$$Limit"
+.br
+.ti -1c
+.RI "#define \fB__STACK_LIMIT\fP   CSTACK$$Base"
+.br
+.ti -1c
+.RI "#define \fB__VECTOR_TABLE\fP   __vector_table"
+.br
+.ti -1c
+.RI "#define \fB__VECTOR_TABLE_ATTRIBUTE\fP   @'\&.intvec'"
+.br
+.ti -1c
+.RI "#define \fB__ICCARM_INTRINSICS_VERSION__\fP   0"
+.br
+.ti -1c
+.RI "#define \fB__get_FPSCR\fP"
+.br
+.ti -1c
+.RI "#define \fB__set_FPSCR\fP   __cmsis_iar_set_FPSR_not_active"
+.br
+.ti -1c
+.RI "#define \fB__get_FPSCR\fP()"
+.br
+.ti -1c
+.RI "#define \fB__set_FPSCR\fP(VALUE)"
+.br
+.ti -1c
+.RI "#define \fB__enable_irq\fP"
+.br
+.RI "Enable IRQ \fBInterrupts\fP\&. "
+.ti -1c
+.RI "#define \fB__disable_irq\fP"
+.br
+.RI "Disable IRQ \fBInterrupts\fP\&. "
+.ti -1c
+.RI "#define \fB__NOP\fP   __no_operation"
+.br
+.ti -1c
+.RI "#define \fB__get_xPSR\fP"
+.br
+.RI "Get xPSR Register\&. "
+.ti -1c
+.RI "#define \fB__BKPT\fP(value)"
+.br
+.ti -1c
+.RI "#define \fB__SXTB16_RORn\fP(ARG1,  ARG2)"
+.br
+.ti -1c
+.RI "#define \fB__SXTAB16_RORn\fP(ARG1,  ARG2,  ARG3)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "__IAR_FT uint16_t \fB__iar_uint16_read\fP (void const *ptr)"
+.br
+.ti -1c
+.RI "__IAR_FT void \fB__iar_uint16_write\fP (void const *ptr, uint16_t val)"
+.br
+.ti -1c
+.RI "__IAR_FT uint32_t \fB__iar_uint32_read\fP (void const *ptr)"
+.br
+.ti -1c
+.RI "__IAR_FT void \fB__iar_uint32_write\fP (void const *ptr, uint32_t val)"
+.br
+.ti -1c
+.RI "__IAR_FT uint32_t \fB__LDREXW\fP (uint32_t volatile *ptr)"
+.br
+.ti -1c
+.RI "__IAR_FT uint32_t \fB__STREXW\fP (uint32_t value, uint32_t volatile *ptr)"
+.br
+.ti -1c
+.RI "__IAR_FT uint32_t \fB__ROR\fP (uint32_t op1, uint32_t op2)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+CMSIS compiler ICCARM (IAR Compiler for Arm) header file\&. 
+
+
+.PP
+\fBVersion\fP
+.RS 4
+V5\&.3\&.0 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+14\&. April 2021 
+.RE
+.PP
+
+.PP
+Definition in file \fBcmsis_iccarm\&.h\fP\&.
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __ALIGNED( x)"
+
+.PP
+Definition at line \fB54\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __ASM   __asm"
+
+.PP
+Definition at line \fB113\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __BKPT( value)"
+\fBValue:\fP
+.nf
+__asm volatile ("BKPT     %0" : : "i"(value))
+.PP
+.fi
+
+.PP
+Definition at line \fB828\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __COMPILER_BARRIER()"
+\fBValue:\fP
+.nf
+__ASM volatile("":::"memory")
+.PP
+.fi
+
+.PP
+Definition at line \fB117\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __FORCEINLINE   _Pragma('inline=forced')"
+
+.PP
+Definition at line \fB173\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __get_FPSCR( void)"
+\fBValue:\fP
+.nf
+__cmsis_iar_get_FPSR_not_active
+.PP
+.fi
+
+.PP
+Definition at line \fB540\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __get_FPSCR( void)"
+\fBValue:\fP
+.nf
+(0)
+.PP
+.fi
+
+.PP
+Definition at line \fB540\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __IAR_FT   _Pragma('inline=forced') __intrinsic"
+
+.PP
+Definition at line \fB38\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __IAR_M0_FAMILY   0"
+
+.PP
+Definition at line \fB108\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __ICCARM_INTRINSICS_VERSION__   0"
+
+.PP
+Definition at line \fB289\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __ICCARM_V8   0"
+
+.PP
+Definition at line \fB43\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __INITIAL_SP   CSTACK$$Limit"
+
+.PP
+Definition at line \fB255\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __INLINE   inline"
+
+.PP
+Definition at line \fB121\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __NO_RETURN   _Pragma('object_attribute=__noreturn')"
+
+.PP
+Definition at line \fB128\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __NOP   __no_operation"
+
+.PP
+Definition at line \fB608\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __PACKED   __packed"
+
+.PP
+Definition at line \fB137\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __PACKED_STRUCT   __packed struct"
+
+.PP
+Definition at line \fB146\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __PACKED_UNION   __packed union"
+
+.PP
+Definition at line \fB155\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __PROGRAM_START   __iar_program_start"
+
+.PP
+Definition at line \fB251\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __RESTRICT   restrict"
+
+.PP
+Definition at line \fB164\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __set_FPSCR   __cmsis_iar_set_FPSR_not_active"
+
+.PP
+Definition at line \fB541\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __set_FPSCR( VALUE)"
+\fBValue:\fP
+.nf
+((void)VALUE)
+.PP
+.fi
+
+.PP
+Definition at line \fB541\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __STACK_LIMIT   CSTACK$$Base"
+
+.PP
+Definition at line \fB259\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __STATIC_FORCEINLINE   __FORCEINLINE __STATIC_INLINE"
+
+.PP
+Definition at line \fB177\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __STATIC_INLINE   static inline"
+
+.PP
+Definition at line \fB169\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __SXTAB16_RORn( ARG1,  ARG2,  ARG3)"
+\fBValue:\fP
+.nf
+__SXTAB16(ARG1, __ROR(ARG2, ARG3))
+.PP
+.fi
+
+.PP
+Definition at line \fB1000\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __SXTB16_RORn( ARG1,  ARG2)"
+\fBValue:\fP
+.nf
+__SXTB16(__ROR(ARG1, ARG2))
+.PP
+.fi
+
+.PP
+Definition at line \fB998\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __UNALIGNED_UINT16_READ( PTR)"
+\fBValue:\fP
+.nf
+__iar_uint16_read(PTR)
+.PP
+.fi
+
+.PP
+Definition at line \fB188\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __UNALIGNED_UINT16_WRITE( PTR,  VAL)"
+\fBValue:\fP
+.nf
+__iar_uint16_write(PTR,VAL)
+.PP
+.fi
+
+.PP
+Definition at line \fB200\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __UNALIGNED_UINT32( PTR)"
+\fBValue:\fP
+.nf
+(((struct __iar_u32 *)(PTR))\->v)
+.PP
+.fi
+
+.PP
+Definition at line \fB230\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __UNALIGNED_UINT32_READ( PTR)"
+\fBValue:\fP
+.nf
+__iar_uint32_read(PTR)
+.PP
+.fi
+
+.PP
+Definition at line \fB211\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __UNALIGNED_UINT32_WRITE( PTR,  VAL)"
+\fBValue:\fP
+.nf
+__iar_uint32_write(PTR,VAL)
+.PP
+.fi
+
+.PP
+Definition at line \fB222\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __USED   _Pragma('__root')"
+
+.PP
+Definition at line \fB237\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __VECTOR_TABLE   __vector_table"
+
+.PP
+Definition at line \fB263\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __VECTOR_TABLE_ATTRIBUTE   @'\&.intvec'"
+
+.PP
+Definition at line \fB267\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __WEAK   _Pragma('__weak')"
+
+.PP
+Definition at line \fB246\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SH "Function Documentation"
+.PP 
+.SS "__IAR_FT uint16_t __iar_uint16_read (void const * ptr)"
+
+.PP
+Definition at line \fB183\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "__IAR_FT void __iar_uint16_write (void const * ptr, uint16_t val)"
+
+.PP
+Definition at line \fB195\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "__IAR_FT uint32_t __iar_uint32_read (void const * ptr)"
+
+.PP
+Definition at line \fB206\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "__IAR_FT void __iar_uint32_write (void const * ptr, uint32_t val)"
+
+.PP
+Definition at line \fB217\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "__IAR_FT uint32_t __LDREXW (uint32_t volatile * ptr)"
+
+.PP
+Definition at line \fB614\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "__IAR_FT uint32_t __ROR (uint32_t op1, uint32_t op2)"
+
+.PP
+Definition at line \fB648\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "__IAR_FT uint32_t __STREXW (uint32_t value, uint32_t volatile * ptr)"
+
+.PP
+Definition at line \fB619\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Joystick Driver from the source code\&.

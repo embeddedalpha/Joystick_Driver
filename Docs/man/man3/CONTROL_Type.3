@@ -1,0 +1,342 @@
+.TH "CONTROL_Type" 3 "Version JSTDRVF4" "Joystick Driver" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CONTROL_Type \- Union type to access the Control Registers (CONTROL)\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <core_armv81mml\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBnPRIV\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBSPSEL\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBFPCA\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBSFPA\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved1\fP:28"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBw\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBnPRIV\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBSPSEL\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved1\fP:30"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBnPRIV\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBSPSEL\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBFPCA\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBSFPA\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved1\fP:28"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved0\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBSPSEL\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved1\fP:30"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBnPRIV\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBSPSEL\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved1\fP:30"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved0\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBSPSEL\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved1\fP:30"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBnPRIV\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBSPSEL\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved1\fP:30"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBnPRIV\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBSPSEL\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved1\fP:30"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBnPRIV\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBSPSEL\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBFPCA\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBSFPA\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved1\fP:28"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBnPRIV\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBSPSEL\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBFPCA\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBSFPA\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved1\fP:28"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBnPRIV\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBSPSEL\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBFPCA\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved0\fP:29"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBnPRIV\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBSPSEL\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBFPCA\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBSFPA\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved1\fP:28"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBnPRIV\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBSPSEL\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBFPCA\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved0\fP:29"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBnPRIV\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBSPSEL\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBFPCA\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBSFPA\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBBTI_EN\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBUBTI_EN\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBPAC_EN\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBUPAC_EN\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved1\fP:24"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved0\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBSPSEL\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved1\fP:30"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBnPRIV\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBSPSEL\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved1\fP:30"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBnPRIV\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBSPSEL\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBFPCA\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBSFPA\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved1\fP:28"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Union type to access the Control Registers (CONTROL)\&. 
+.PP
+Definition at line \fB436\fP of file \fBcore_armv81mml\&.h\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Joystick Driver from the source code\&.

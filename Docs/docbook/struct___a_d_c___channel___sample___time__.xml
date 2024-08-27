@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct___a_d_c___channel___sample___time__" xml:lang="en-US">
+<title>_ADC_Channel_Sample_Time_ Struct Reference</title>
+<indexterm><primary>_ADC_Channel_Sample_Time_</primary></indexterm>
+<para>
+
+<para>This struct provides an easy way for the user to set the sample time of a channel. All the options when selected will have an additional 12 cycles added to them in the hardware. So <emphasis>3_Cycles is selected by the user, then total cycles taken to complete one conversion of that channel will be 3+12 = 15 cycles. Is used in _ADC_Channel</emphasis> struct. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;ADC_Defs.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para>uint8_t <link linkend="_struct___a_d_c___channel___sample___time___1a035fba5aa152d419d5d49126a112717b">_3_Cycles</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct___a_d_c___channel___sample___time___1aa5d94ed55e16ddbf73b3c6997d8cc07d">_15_Cycles</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct___a_d_c___channel___sample___time___1a18752a88507686d61ce993a1f7b478da">_28_Cycles</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct___a_d_c___channel___sample___time___1a4bcc81037bc3dd163630c6da16191242">_56_Cycles</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct___a_d_c___channel___sample___time___1a02fae348c526dc4d61963c31be3069e4">_84_Cycles</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct___a_d_c___channel___sample___time___1a0a3dcb5526dd9bd9d8779541d07f93cc">_112_Cycles</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct___a_d_c___channel___sample___time___1af70a9f09fdfb0b76adcc2b013f201f18">_144_Cycles</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct___a_d_c___channel___sample___time___1a168b0d8ccbdf879f6ba6e8b32a7c6ab5">_480_Cycles</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>This struct provides an easy way for the user to set the sample time of a channel. All the options when selected will have an additional 12 cycles added to them in the hardware. So <emphasis>3_Cycles is selected by the user, then total cycles taken to complete one conversion of that channel will be 3+12 = 15 cycles. Is used in _ADC_Channel</emphasis> struct. </para>
+
+
+
+<para><formalpara><title>See also</title>
+
+<para><emphasis>ADC_Channel</emphasis></para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>_3_Cycles</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>_15_Cycles</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>_28_Cycles</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>_56_Cycles</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>_84_Cycles</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>_112_Cycles</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>_144_Cycles</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>_480_Cycles</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00104">104</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_struct___a_d_c___channel___sample___time___1a0a3dcb5526dd9bd9d8779541d07f93cc"/><section>
+    <title>_112_Cycles</title>
+<indexterm><primary>_112_Cycles</primary><secondary>_ADC_Channel_Sample_Time_</secondary></indexterm>
+<indexterm><primary>_ADC_Channel_Sample_Time_</primary><secondary>_112_Cycles</secondary></indexterm>
+<para><computeroutput>uint8_t _112_Cycles</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00110">110</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct___a_d_c___channel___sample___time___1af70a9f09fdfb0b76adcc2b013f201f18"/><section>
+    <title>_144_Cycles</title>
+<indexterm><primary>_144_Cycles</primary><secondary>_ADC_Channel_Sample_Time_</secondary></indexterm>
+<indexterm><primary>_ADC_Channel_Sample_Time_</primary><secondary>_144_Cycles</secondary></indexterm>
+<para><computeroutput>uint8_t _144_Cycles</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00111">111</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct___a_d_c___channel___sample___time___1aa5d94ed55e16ddbf73b3c6997d8cc07d"/><section>
+    <title>_15_Cycles</title>
+<indexterm><primary>_15_Cycles</primary><secondary>_ADC_Channel_Sample_Time_</secondary></indexterm>
+<indexterm><primary>_ADC_Channel_Sample_Time_</primary><secondary>_15_Cycles</secondary></indexterm>
+<para><computeroutput>uint8_t _15_Cycles</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00106">106</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct___a_d_c___channel___sample___time___1a18752a88507686d61ce993a1f7b478da"/><section>
+    <title>_28_Cycles</title>
+<indexterm><primary>_28_Cycles</primary><secondary>_ADC_Channel_Sample_Time_</secondary></indexterm>
+<indexterm><primary>_ADC_Channel_Sample_Time_</primary><secondary>_28_Cycles</secondary></indexterm>
+<para><computeroutput>uint8_t _28_Cycles</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00107">107</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct___a_d_c___channel___sample___time___1a035fba5aa152d419d5d49126a112717b"/><section>
+    <title>_3_Cycles</title>
+<indexterm><primary>_3_Cycles</primary><secondary>_ADC_Channel_Sample_Time_</secondary></indexterm>
+<indexterm><primary>_ADC_Channel_Sample_Time_</primary><secondary>_3_Cycles</secondary></indexterm>
+<para><computeroutput>uint8_t _3_Cycles</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00105">105</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct___a_d_c___channel___sample___time___1a168b0d8ccbdf879f6ba6e8b32a7c6ab5"/><section>
+    <title>_480_Cycles</title>
+<indexterm><primary>_480_Cycles</primary><secondary>_ADC_Channel_Sample_Time_</secondary></indexterm>
+<indexterm><primary>_ADC_Channel_Sample_Time_</primary><secondary>_480_Cycles</secondary></indexterm>
+<para><computeroutput>uint8_t _480_Cycles</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00112">112</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct___a_d_c___channel___sample___time___1a4bcc81037bc3dd163630c6da16191242"/><section>
+    <title>_56_Cycles</title>
+<indexterm><primary>_56_Cycles</primary><secondary>_ADC_Channel_Sample_Time_</secondary></indexterm>
+<indexterm><primary>_ADC_Channel_Sample_Time_</primary><secondary>_56_Cycles</secondary></indexterm>
+<para><computeroutput>uint8_t _56_Cycles</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00108">108</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct___a_d_c___channel___sample___time___1a02fae348c526dc4d61963c31be3069e4"/><section>
+    <title>_84_Cycles</title>
+<indexterm><primary>_84_Cycles</primary><secondary>_ADC_Channel_Sample_Time_</secondary></indexterm>
+<indexterm><primary>_ADC_Channel_Sample_Time_</primary><secondary>_84_Cycles</secondary></indexterm>
+<para><computeroutput>uint8_t _84_Cycles</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00109">109</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+ADC/<link linkend="__a_d_c___defs_8h">ADC_Defs.h</link></section>
+</section>

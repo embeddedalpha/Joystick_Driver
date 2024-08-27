@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_s_t_l___type" xml:lang="en-US">
+<title>STL_Type Struct Reference</title>
+<indexterm><primary>STL_Type</primary></indexterm>
+<para>
+
+<para>Structure type to access the Software Test Library Observation Registerss (STL). </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;core_cm55.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para>__IM uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga007a759d95e71d623c7d4fe9635a2a32">STLNVICPENDOR</link></para>
+</listitem>
+            <listitem><para>__IM uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga65b0db66b8e922cb2102774f2b813c3e">STLNVICACTVOR</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac9b95db444f893c84f01e49a91d22651">RESERVED0</link> [2U]</para>
+</listitem>
+            <listitem><para>__OM uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga07901544923c85d84dc89bcbee505904">STLIDMPUSR</link></para>
+</listitem>
+            <listitem><para>__IM uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga23948e228365c8f92c904ed979e47397">STLIMPUOR</link></para>
+</listitem>
+            <listitem><para>__IM uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gae7a5a4b24605b06d417c53a116abdf84">STLD0MPUOR</link></para>
+</listitem>
+            <listitem><para>__IM uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga6889f2172b275ed5504d859c3b164bcb">STLD1MPUOR</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Structure type to access the Software Test Library Observation Registerss (STL). </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01778">1778</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+<para>
+The documentation for this struct was generated from the following file:</para>
+Inc/<link linkend="_core__cm55_8h">core_cm55.h</link></section>
+</section>

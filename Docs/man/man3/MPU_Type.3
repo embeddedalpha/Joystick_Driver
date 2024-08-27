@@ -1,0 +1,261 @@
+.TH "MPU_Type" 3 "Version JSTDRVF4" "Joystick Driver" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MPU_Type \- Structure type to access the Memory Protection Unit (MPU)\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <core_armv81mml\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "__IM uint32_t \fBTYPE\fP"
+.br
+.ti -1c
+.RI "__IOM uint32_t \fBCTRL\fP"
+.br
+.ti -1c
+.RI "__IOM uint32_t \fBRNR\fP"
+.br
+.ti -1c
+.RI "__IOM uint32_t \fBRBAR\fP"
+.br
+.ti -1c
+.RI "__IOM uint32_t \fBRLAR\fP"
+.br
+.ti -1c
+.RI "__IOM uint32_t \fBRBAR_A1\fP"
+.br
+.ti -1c
+.RI "__IOM uint32_t \fBRLAR_A1\fP"
+.br
+.ti -1c
+.RI "__IOM uint32_t \fBRBAR_A2\fP"
+.br
+.ti -1c
+.RI "__IOM uint32_t \fBRLAR_A2\fP"
+.br
+.ti -1c
+.RI "__IOM uint32_t \fBRBAR_A3\fP"
+.br
+.ti -1c
+.RI "__IOM uint32_t \fBRLAR_A3\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED0\fP [1]"
+.br
+.ti -1c
+.RI "union {"
+.br
+.ti -1c
+.RI "   __IOM uint32_t \fBMAIR\fP [2]"
+.br
+.ti -1c
+.RI "   struct {"
+.br
+.ti -1c
+.RI "      __IOM uint32_t \fBMAIR0\fP"
+.br
+.ti -1c
+.RI "      __IOM uint32_t \fBMAIR1\fP"
+.br
+.ti -1c
+.RI "   } "
+.br
+.ti -1c
+.RI "}; "
+.br
+.ti -1c
+.RI "union {"
+.br
+.ti -1c
+.RI "   __IOM uint32_t \fBMAIR\fP [2]"
+.br
+.ti -1c
+.RI "   struct {"
+.br
+.ti -1c
+.RI "      __IOM uint32_t \fBMAIR0\fP"
+.br
+.ti -1c
+.RI "      __IOM uint32_t \fBMAIR1\fP"
+.br
+.ti -1c
+.RI "   } "
+.br
+.ti -1c
+.RI "}; "
+.br
+.ti -1c
+.RI "union {"
+.br
+.ti -1c
+.RI "   __IOM uint32_t \fBMAIR\fP [2]"
+.br
+.ti -1c
+.RI "   struct {"
+.br
+.ti -1c
+.RI "      __IOM uint32_t \fBMAIR0\fP"
+.br
+.ti -1c
+.RI "      __IOM uint32_t \fBMAIR1\fP"
+.br
+.ti -1c
+.RI "   } "
+.br
+.ti -1c
+.RI "}; "
+.br
+.ti -1c
+.RI "__IOM uint32_t \fBRASR\fP"
+.br
+.ti -1c
+.RI "union {"
+.br
+.ti -1c
+.RI "   __IOM uint32_t \fBMAIR\fP [2]"
+.br
+.ti -1c
+.RI "   struct {"
+.br
+.ti -1c
+.RI "      __IOM uint32_t \fBMAIR0\fP"
+.br
+.ti -1c
+.RI "      __IOM uint32_t \fBMAIR1\fP"
+.br
+.ti -1c
+.RI "   } "
+.br
+.ti -1c
+.RI "}; "
+.br
+.ti -1c
+.RI "__IOM uint32_t \fBRASR_A1\fP"
+.br
+.ti -1c
+.RI "__IOM uint32_t \fBRASR_A2\fP"
+.br
+.ti -1c
+.RI "__IOM uint32_t \fBRASR_A3\fP"
+.br
+.ti -1c
+.RI "union {"
+.br
+.ti -1c
+.RI "   __IOM uint32_t \fBMAIR\fP [2]"
+.br
+.ti -1c
+.RI "   struct {"
+.br
+.ti -1c
+.RI "      __IOM uint32_t \fBMAIR0\fP"
+.br
+.ti -1c
+.RI "      __IOM uint32_t \fBMAIR1\fP"
+.br
+.ti -1c
+.RI "   } "
+.br
+.ti -1c
+.RI "}; "
+.br
+.ti -1c
+.RI "union {"
+.br
+.ti -1c
+.RI "   __IOM uint32_t \fBMAIR\fP [2]"
+.br
+.ti -1c
+.RI "   struct {"
+.br
+.ti -1c
+.RI "      __IOM uint32_t \fBMAIR0\fP"
+.br
+.ti -1c
+.RI "      __IOM uint32_t \fBMAIR1\fP"
+.br
+.ti -1c
+.RI "   } "
+.br
+.ti -1c
+.RI "}; "
+.br
+.ti -1c
+.RI "union {"
+.br
+.ti -1c
+.RI "   __IOM uint32_t \fBMAIR\fP [2]"
+.br
+.ti -1c
+.RI "   struct {"
+.br
+.ti -1c
+.RI "      __IOM uint32_t \fBMAIR0\fP"
+.br
+.ti -1c
+.RI "      __IOM uint32_t \fBMAIR1\fP"
+.br
+.ti -1c
+.RI "   } "
+.br
+.ti -1c
+.RI "}; "
+.br
+.ti -1c
+.RI "union {"
+.br
+.ti -1c
+.RI "   __IOM uint32_t \fBMAIR\fP [2]"
+.br
+.ti -1c
+.RI "   struct {"
+.br
+.ti -1c
+.RI "      __IOM uint32_t \fBMAIR0\fP"
+.br
+.ti -1c
+.RI "      __IOM uint32_t \fBMAIR1\fP"
+.br
+.ti -1c
+.RI "   } "
+.br
+.ti -1c
+.RI "}; "
+.br
+.ti -1c
+.RI "union {"
+.br
+.ti -1c
+.RI "   __IOM uint32_t \fBMAIR\fP [2]"
+.br
+.ti -1c
+.RI "   struct {"
+.br
+.ti -1c
+.RI "      __IOM uint32_t \fBMAIR0\fP"
+.br
+.ti -1c
+.RI "      __IOM uint32_t \fBMAIR1\fP"
+.br
+.ti -1c
+.RI "   } "
+.br
+.ti -1c
+.RI "}; "
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Structure type to access the Memory Protection Unit (MPU)\&. 
+.PP
+Definition at line \fB2280\fP of file \fBcore_armv81mml\&.h\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Joystick Driver from the source code\&.

@@ -1,0 +1,146 @@
+.TH "Library_configuration_section" 3 "Version JSTDRVF4" "Joystick Driver" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Library_configuration_section \- Library_configuration_section
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSTM32F4\fP"
+.br
+.RI "STM32 Family\&. "
+.ti -1c
+.RI "#define \fBSTM32F407xx\fP"
+.br
+.ti -1c
+.RI "#define \fB__STM32F4xx_CMSIS_VERSION_MAIN\fP   (0x02U)"
+.br
+.RI "Comment the line below if you will not use the peripherals drivers\&. In this case, these drivers will not be included and the application code will be based on direct access to peripherals registers\&. "
+.ti -1c
+.RI "#define \fB__STM32F4xx_CMSIS_VERSION_SUB1\fP   (0x06U)"
+.br
+.ti -1c
+.RI "#define \fB__STM32F4xx_CMSIS_VERSION_SUB2\fP   (0x09U)"
+.br
+.ti -1c
+.RI "#define \fB__STM32F4xx_CMSIS_VERSION_RC\fP   (0x00U)"
+.br
+.ti -1c
+.RI "#define \fB__STM32F4xx_CMSIS_VERSION\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __STM32F4xx_CMSIS_VERSION"
+\fBValue:\fP
+.nf
+                                         ((__STM32F4xx_CMSIS_VERSION_MAIN << 24)\\
+                                         |(__STM32F4xx_CMSIS_VERSION_SUB1 << 16)\\
+                                         |(__STM32F4xx_CMSIS_VERSION_SUB2 << 8 )\\
+                                         |(__STM32F4xx_CMSIS_VERSION_RC))
+.PP
+.fi
+
+.PP
+Definition at line \fB114\fP of file \fBstm32f4xx\&.h\fP\&.
+.SS "#define __STM32F4xx_CMSIS_VERSION_MAIN   (0x02U)"
+
+.PP
+Comment the line below if you will not use the peripherals drivers\&. In this case, these drivers will not be included and the application code will be based on direct access to peripherals registers\&. < STM32F417VG, STM32F417VE, STM32F417ZG, STM32F417ZE, STM32F417IG and STM32F417IE Devices
+
+.PP
+< STM32F427VG, STM32F427VI, STM32F427ZG, STM32F427ZI, STM32F427IG and STM32F427II Devices
+
+.PP
+< STM32F437VG, STM32F437VI, STM32F437ZG, STM32F437ZI, STM32F437IG and STM32F437II Devices
+
+.PP
+< STM32F429VG, STM32F429VI, STM32F429ZG, STM32F429ZI, STM32F429BG, STM32F429BI, STM32F429NG, STM32F439NI, STM32F429IG and STM32F429II Devices
+
+.PP
+< STM32F439VG, STM32F439VI, STM32F439ZG, STM32F439ZI, STM32F439BG, STM32F439BI, STM32F439NG, STM32F439NI, STM32F439IG and STM32F439II Devices
+
+.PP
+< STM32F401CB, STM32F401CC, STM32F401RB, STM32F401RC, STM32F401VB and STM32F401VC Devices
+
+.PP
+< STM32F401CD, STM32F401RD, STM32F401VD, STM32F401CE, STM32F401RE and STM32F401VE Devices
+
+.PP
+< STM32F410T8 and STM32F410TB Devices
+
+.PP
+< STM32F410C8 and STM32F410CB Devices
+
+.PP
+< STM32F410R8 and STM32F410RB Devices
+
+.PP
+< STM32F411CC, STM32F411RC, STM32F411VC, STM32F411CE, STM32F411RE and STM32F411VE Devices
+
+.PP
+< STM32F446MC, STM32F446ME, STM32F446RC, STM32F446RE, STM32F446VC, STM32F446VE, STM32F446ZC, and STM32F446ZE Devices
+
+.PP
+< STM32F469AI, STM32F469II, STM32F469BI, STM32F469NI, STM32F469AG, STM32F469IG, STM32F469BG, STM32F469NG, STM32F469AE, STM32F469IE, STM32F469BE and STM32F469NE Devices
+
+.PP
+< STM32F479AI, STM32F479II, STM32F479BI, STM32F479NI, STM32F479AG, STM32F479IG, STM32F479BG and STM32F479NG Devices
+
+.PP
+< STM32F412CEU and STM32F412CGU Devices
+
+.PP
+< STM32F412ZET, STM32F412ZGT, STM32F412ZEJ and STM32F412ZGJ Devices
+
+.PP
+< STM32F412VET, STM32F412VGT, STM32F412VEH and STM32F412VGH Devices
+
+.PP
+< STM32F412RET, STM32F412RGT, STM32F412REY and STM32F412RGY Devices
+
+.PP
+< STM32F413CH, STM32F413MH, STM32F413RH, STM32F413VH, STM32F413ZH, STM32F413CG, STM32F413MG, STM32F413RG, STM32F413VG and STM32F413ZG Devices
+
+.PP
+< STM32F423CH, STM32F423RH, STM32F423VH and STM32F423ZH Devices
+
+.PP
+CMSIS version number V2\&.6\&.9 [31:24] main version 
+.PP
+Definition at line \fB110\fP of file \fBstm32f4xx\&.h\fP\&.
+.SS "#define __STM32F4xx_CMSIS_VERSION_RC   (0x00U)"
+[7:0] release candidate 
+.PP
+Definition at line \fB113\fP of file \fBstm32f4xx\&.h\fP\&.
+.SS "#define __STM32F4xx_CMSIS_VERSION_SUB1   (0x06U)"
+[23:16] sub1 version 
+.PP
+Definition at line \fB111\fP of file \fBstm32f4xx\&.h\fP\&.
+.SS "#define __STM32F4xx_CMSIS_VERSION_SUB2   (0x09U)"
+[15:8] sub2 version 
+.PP
+Definition at line \fB112\fP of file \fBstm32f4xx\&.h\fP\&.
+.SS "#define STM32F4"
+
+.PP
+STM32 Family\&. 
+.PP
+Definition at line \fB52\fP of file \fBstm32f4xx\&.h\fP\&.
+.SS "#define STM32F407xx"
+< STM32F405RG, STM32F405VG and STM32F405ZG Devices
+
+.PP
+< STM32F415RG, STM32F415VG and STM32F415ZG Devices STM32F407VG, STM32F407VE, STM32F407ZG, STM32F407ZE, STM32F407IG and STM32F407IE Devices 
+.PP
+Definition at line \fB66\fP of file \fBstm32f4xx\&.h\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Joystick Driver from the source code\&.

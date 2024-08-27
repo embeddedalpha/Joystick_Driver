@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_d_m_a___configuration_1_1_transfer___direction" xml:lang="en-US">
+<title>DMA_Configuration::Transfer_Direction Struct Reference</title>
+<indexterm><primary>DMA_Configuration::Transfer_Direction</primary></indexterm>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para>uint32_t <link linkend="_struct_d_m_a___configuration_1_1_transfer___direction_1a94e3a8a0f88b99c0d7874742a786074c">Peripheral_to_memory</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_d_m_a___configuration_1_1_transfer___direction_1a27bb1c190d74aaf8e3d8a0aca7efea00">Memory_to_peripheral</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_d_m_a___configuration_1_1_transfer___direction_1a43af787497070ed4156967c39aff3bf2">Memory_to_memory</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00153">153</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_transfer___direction_1a43af787497070ed4156967c39aff3bf2"/><section>
+    <title>Memory_to_memory</title>
+<indexterm><primary>Memory_to_memory</primary><secondary>DMA_Configuration::Transfer_Direction</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Transfer_Direction</primary><secondary>Memory_to_memory</secondary></indexterm>
+<para><computeroutput>uint32_t Memory_to_memory</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00157">157</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_transfer___direction_1a27bb1c190d74aaf8e3d8a0aca7efea00"/><section>
+    <title>Memory_to_peripheral</title>
+<indexterm><primary>Memory_to_peripheral</primary><secondary>DMA_Configuration::Transfer_Direction</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Transfer_Direction</primary><secondary>Memory_to_peripheral</secondary></indexterm>
+<para><computeroutput>uint32_t Memory_to_peripheral</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00156">156</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_transfer___direction_1a94e3a8a0f88b99c0d7874742a786074c"/><section>
+    <title>Peripheral_to_memory</title>
+<indexterm><primary>Peripheral_to_memory</primary><secondary>DMA_Configuration::Transfer_Direction</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Transfer_Direction</primary><secondary>Peripheral_to_memory</secondary></indexterm>
+<para><computeroutput>uint32_t Peripheral_to_memory</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00155">155</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+DMA/DMA_Defs.h</section>
+</section>

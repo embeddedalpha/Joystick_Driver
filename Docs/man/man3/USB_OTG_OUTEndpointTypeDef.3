@@ -1,0 +1,75 @@
+.TH "USB_OTG_OUTEndpointTypeDef" 3 "Version JSTDRVF4" "Joystick Driver" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+USB_OTG_OUTEndpointTypeDef \- USB_OTG_OUT_Endpoint-Specific_Registers\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <stm32f407xx\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDOEPCTL\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBReserved04\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDOEPINT\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBReserved0C\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDOEPTSIZ\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDOEPDMA\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBReserved18\fP [2]"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+USB_OTG_OUT_Endpoint-Specific_Registers\&. 
+.PP
+Definition at line \fB860\fP of file \fBstm32f407xx\&.h\fP\&.
+.SH "Field Documentation"
+.PP 
+.SS "\fB__IO\fP uint32_t DOEPCTL"
+dev OUT Endpoint Control Reg B00h + (ep_num * 20h) + 00h 
+.PP
+Definition at line \fB862\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t DOEPDMA"
+dev OUT Endpoint DMA Address B00h + (ep_num * 20h) + 14h 
+.PP
+Definition at line \fB867\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t DOEPINT"
+dev OUT Endpoint Itr Reg B00h + (ep_num * 20h) + 08h 
+.PP
+Definition at line \fB864\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t DOEPTSIZ"
+dev OUT Endpoint Txfer Size B00h + (ep_num * 20h) + 10h 
+.PP
+Definition at line \fB866\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "uint32_t Reserved04"
+Reserved B00h + (ep_num * 20h) + 04h 
+.PP
+Definition at line \fB863\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "uint32_t Reserved0C"
+Reserved B00h + (ep_num * 20h) + 0Ch 
+.PP
+Definition at line \fB865\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "uint32_t Reserved18[2]"
+Reserved B00h + (ep_num * 20h) + 18h - B00h + (ep_num * 20h) + 1Ch 
+.PP
+Definition at line \fB868\fP of file \fBstm32f407xx\&.h\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Joystick Driver from the source code\&.

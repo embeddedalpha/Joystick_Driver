@@ -1015,6 +1015,16 @@ Discarded input sections
                 0x00000000        0x1 ./USART/USART.o
  .rodata.Low_Power_USART
                 0x00000000        0x2 ./USART/USART.o
+ .rodata.DMA_Configuration
+                0x00000000      0x3fc ./USART/USART.o
+ .bss.xUSART_RX
+                0x00000000      0x150 ./USART/USART.o
+ .bss.xUSART_TX
+                0x00000000      0x150 ./USART/USART.o
+ .bss.usart_dma_instance_number
+                0x00000000        0x1 ./USART/USART.o
+ .text.Get_USART_Instance_Number
+                0x00000000       0x84 ./USART/USART.o
  .text.USART_Config_Reset
                 0x00000000       0x3c ./USART/USART.o
  .text.USART_Clock_Enable
@@ -1024,22 +1034,22 @@ Discarded input sections
  .text.PIN_Setup
                 0x00000000      0x8b0 ./USART/USART.o
  .text.USART_Init
-                0x00000000      0x170 ./USART/USART.o
+                0x00000000      0x580 ./USART/USART.o
  .text.USART_TX_Buffer
-                0x00000000       0x62 ./USART/USART.o
+                0x00000000      0x244 ./USART/USART.o
  .text.USART_RX_Buffer
-                0x00000000       0x64 ./USART/USART.o
+                0x00000000      0x244 ./USART/USART.o
  .text.USART_TX_Single_Byte
                 0x00000000       0x32 ./USART/USART.o
  .text.USART_RX_Single_Byte
                 0x00000000       0x30 ./USART/USART.o
- .debug_info    0x00000000     0x13ef ./USART/USART.o
- .debug_abbrev  0x00000000      0x23d ./USART/USART.o
+ .debug_info    0x00000000     0x1db4 ./USART/USART.o
+ .debug_abbrev  0x00000000      0x2b4 ./USART/USART.o
  .debug_aranges
-                0x00000000       0x68 ./USART/USART.o
+                0x00000000       0x70 ./USART/USART.o
  .debug_rnglists
-                0x00000000       0x4d ./USART/USART.o
- .debug_macro   0x00000000      0x280 ./USART/USART.o
+                0x00000000       0x56 ./USART/USART.o
+ .debug_macro   0x00000000      0x294 ./USART/USART.o
  .debug_macro   0x00000000      0xaba ./USART/USART.o
  .debug_macro   0x00000000       0x2f ./USART/USART.o
  .debug_macro   0x00000000       0x22 ./USART/USART.o
@@ -1087,10 +1097,10 @@ Discarded input sections
  .debug_macro   0x00000000       0x4c ./USART/USART.o
  .debug_macro   0x00000000       0x22 ./USART/USART.o
  .debug_macro   0x00000000       0x10 ./USART/USART.o
- .debug_line    0x00000000     0x1573 ./USART/USART.o
- .debug_str     0x00000000    0x8e30c ./USART/USART.o
+ .debug_line    0x00000000     0x195d ./USART/USART.o
+ .debug_str     0x00000000    0x8ea66 ./USART/USART.o
  .comment       0x00000000       0x44 ./USART/USART.o
- .debug_frame   0x00000000      0x19c ./USART/USART.o
+ .debug_frame   0x00000000      0x1c8 ./USART/USART.o
  .ARM.attributes
                 0x00000000       0x34 ./USART/USART.o
  .text          0x00000000        0x0 D:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-exit.o)

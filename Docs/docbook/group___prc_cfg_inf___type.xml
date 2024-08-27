@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___prc_cfg_inf___type" xml:lang="en-US">
+<title>Processor Configuration Information Registers (IMPLEMENTATION DEFINED)</title>
+<indexterm><primary>Processor Configuration Information Registers (IMPLEMENTATION DEFINED)</primary></indexterm>
+<para>
+
+<para>Type definitions for the Processor Configuration Information Registerss (PRCCFGINF) </para>
+ 
+</para>
+Collaboration diagram for Processor Configuration Information Registers (IMPLEMENTATION DEFINED):<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="group___prc_cfg_inf___type.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Topics    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_group___s_t_l___type">Software Test Library Observation Registers</link></para>
+
+<para>Type definitions for the Software Test Library Observation Registerss (STL) </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Data Structures    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_struct_prc_cfg_inf___type">PrcCfgInf_Type</link></para>
+
+<para>Structure type to access the Processor Configuration Information Registerss (PRCCFGINF). </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Type definitions for the Processor Configuration Information Registerss (PRCCFGINF) </para>
+</section>
+    <xi:include href="group___s_t_l___type.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

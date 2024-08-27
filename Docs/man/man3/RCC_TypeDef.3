@@ -1,0 +1,250 @@
+.TH "RCC_TypeDef" 3 "Version JSTDRVF4" "Joystick Driver" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_TypeDef \- Reset and Clock Control\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <stm32f407xx\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBPLLCFGR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCFGR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCIR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAHB1RSTR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAHB2RSTR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAHB3RSTR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED0\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAPB1RSTR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAPB2RSTR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED1\fP [2]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAHB1ENR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAHB2ENR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAHB3ENR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED2\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAPB1ENR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAPB2ENR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED3\fP [2]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAHB1LPENR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAHB2LPENR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAHB3LPENR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED4\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAPB1LPENR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAPB2LPENR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED5\fP [2]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBBDCR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCSR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED6\fP [2]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBSSCGR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBPLLI2SCFGR\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Reset and Clock Control\&. 
+.PP
+Definition at line \fB596\fP of file \fBstm32f407xx\&.h\fP\&.
+.SH "Field Documentation"
+.PP 
+.SS "\fB__IO\fP uint32_t AHB1ENR"
+RCC AHB1 peripheral clock register, Address offset: 0x30 
+.PP
+Definition at line \fB609\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t AHB1LPENR"
+RCC AHB1 peripheral clock enable in low power mode register, Address offset: 0x50 
+.PP
+Definition at line \fB616\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t AHB1RSTR"
+RCC AHB1 peripheral reset register, Address offset: 0x10 
+.PP
+Definition at line \fB602\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t AHB2ENR"
+RCC AHB2 peripheral clock register, Address offset: 0x34 
+.PP
+Definition at line \fB610\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t AHB2LPENR"
+RCC AHB2 peripheral clock enable in low power mode register, Address offset: 0x54 
+.PP
+Definition at line \fB617\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t AHB2RSTR"
+RCC AHB2 peripheral reset register, Address offset: 0x14 
+.PP
+Definition at line \fB603\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t AHB3ENR"
+RCC AHB3 peripheral clock register, Address offset: 0x38 
+.PP
+Definition at line \fB611\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t AHB3LPENR"
+RCC AHB3 peripheral clock enable in low power mode register, Address offset: 0x58 
+.PP
+Definition at line \fB618\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t AHB3RSTR"
+RCC AHB3 peripheral reset register, Address offset: 0x18 
+.PP
+Definition at line \fB604\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t APB1ENR"
+RCC APB1 peripheral clock enable register, Address offset: 0x40 
+.PP
+Definition at line \fB613\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t APB1LPENR"
+RCC APB1 peripheral clock enable in low power mode register, Address offset: 0x60 
+.PP
+Definition at line \fB620\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t APB1RSTR"
+RCC APB1 peripheral reset register, Address offset: 0x20 
+.PP
+Definition at line \fB606\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t APB2ENR"
+RCC APB2 peripheral clock enable register, Address offset: 0x44 
+.PP
+Definition at line \fB614\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t APB2LPENR"
+RCC APB2 peripheral clock enable in low power mode register, Address offset: 0x64 
+.PP
+Definition at line \fB621\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t APB2RSTR"
+RCC APB2 peripheral reset register, Address offset: 0x24 
+.PP
+Definition at line \fB607\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t BDCR"
+RCC Backup domain control register, Address offset: 0x70 
+.PP
+Definition at line \fB623\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t CFGR"
+RCC clock configuration register, Address offset: 0x08 
+.PP
+Definition at line \fB600\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t CIR"
+RCC clock interrupt register, Address offset: 0x0C 
+.PP
+Definition at line \fB601\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t CR"
+RCC clock control register, Address offset: 0x00 
+.PP
+Definition at line \fB598\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t CSR"
+RCC clock control & status register, Address offset: 0x74 
+.PP
+Definition at line \fB624\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t PLLCFGR"
+RCC PLL configuration register, Address offset: 0x04 
+.PP
+Definition at line \fB599\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t PLLI2SCFGR"
+RCC PLLI2S configuration register, Address offset: 0x84 
+.PP
+Definition at line \fB627\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "uint32_t RESERVED0"
+Reserved, 0x1C 
+.br
+ 
+.PP
+Definition at line \fB605\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "uint32_t RESERVED1[2]"
+Reserved, 0x28-0x2C 
+.br
+ 
+.PP
+Definition at line \fB608\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "uint32_t RESERVED2"
+Reserved, 0x3C 
+.br
+ 
+.PP
+Definition at line \fB612\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "uint32_t RESERVED3[2]"
+Reserved, 0x48-0x4C 
+.br
+ 
+.PP
+Definition at line \fB615\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "uint32_t RESERVED4"
+Reserved, 0x5C 
+.br
+ 
+.PP
+Definition at line \fB619\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "uint32_t RESERVED5[2]"
+Reserved, 0x68-0x6C 
+.br
+ 
+.PP
+Definition at line \fB622\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "uint32_t RESERVED6[2]"
+Reserved, 0x78-0x7C 
+.br
+ 
+.PP
+Definition at line \fB625\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t SSCGR"
+RCC spread spectrum clock generation register, Address offset: 0x80 
+.PP
+Definition at line \fB626\fP of file \fBstm32f407xx\&.h\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Joystick Driver from the source code\&.

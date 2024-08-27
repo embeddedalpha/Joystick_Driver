@@ -1,0 +1,1632 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___err_bnk___type" xml:lang="en-US">
+<title>Error Banking Registers (IMPLEMENTATION DEFINED)</title>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary></indexterm>
+<para>
+
+<para>Type definitions for the Error Banking Registers (ERRBNK) </para>
+ 
+</para>
+Collaboration diagram for Error Banking Registers (IMPLEMENTATION DEFINED):<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="group___err_bnk___type.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Topics    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_group___prc_cfg_inf___type">Processor Configuration Information Registers (IMPLEMENTATION DEFINED)</link></para>
+
+<para>Type definitions for the Processor Configuration Information Registerss (PRCCFGINF) </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Data Structures    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_struct_err_bnk___type">ErrBnk_Type</link></para>
+
+<para>Structure type to access the Error Banking Registers (ERRBNK). </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga2a02d42c85dcd7157e36ffd1793af9b5">ERRBNK_IEBR0_SWDEF_Pos</link>&#160;&#160;&#160;30U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga0f33619d11962794de941a1945a64171">ERRBNK_IEBR0_SWDEF_Msk</link>&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga2a02d42c85dcd7157e36ffd1793af9b5">ERRBNK_IEBR0_SWDEF_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gaeaa49f865d866b34d7e7a484d36f3073">ERRBNK_IEBR0_BANK_Pos</link>&#160;&#160;&#160;16U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gaeec701a537ef5da1d078a80694c3de42">ERRBNK_IEBR0_BANK_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gaeaa49f865d866b34d7e7a484d36f3073">ERRBNK_IEBR0_BANK_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga0a5d578c8fcb453fa9de3919f5d385f6">ERRBNK_IEBR0_LOCATION_Pos</link>&#160;&#160;&#160;2U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gacece89f5d2ce4c4e05680b994866c554">ERRBNK_IEBR0_LOCATION_Msk</link>&#160;&#160;&#160;(0x3FFFUL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga0a5d578c8fcb453fa9de3919f5d385f6">ERRBNK_IEBR0_LOCATION_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga073d0a845eb34db4afa25a6dd50256a2">ERRBNK_IEBR0_LOCKED_Pos</link>&#160;&#160;&#160;1U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga16998136613470731279d999ca1f5e49">ERRBNK_IEBR0_LOCKED_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga073d0a845eb34db4afa25a6dd50256a2">ERRBNK_IEBR0_LOCKED_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gadb563b42eac50dde50acacf10095e7cf">ERRBNK_IEBR0_VALID_Pos</link>&#160;&#160;&#160;0U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gae6ad7309872abc9314ed984bc0089acb">ERRBNK_IEBR0_VALID_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; /*<link linkend="_group___c_m_s_i_s___s_c_b_1gadb563b42eac50dde50acacf10095e7cf">ERRBNK_IEBR0_VALID_Pos</link>*/)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga14e57259fc0f58b3a4d7157f3c609b5f">ERRBNK_IEBR1_SWDEF_Pos</link>&#160;&#160;&#160;30U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga90332bfd1688a36fc00ec2d6dfe1a8ba">ERRBNK_IEBR1_SWDEF_Msk</link>&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga14e57259fc0f58b3a4d7157f3c609b5f">ERRBNK_IEBR1_SWDEF_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga8782ae848ab4a9639ce9afb01ed26c8e">ERRBNK_IEBR1_BANK_Pos</link>&#160;&#160;&#160;16U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga5ab89fbe9e50ed36108b16c5f462e24e">ERRBNK_IEBR1_BANK_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga8782ae848ab4a9639ce9afb01ed26c8e">ERRBNK_IEBR1_BANK_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga44d1e7d673d4a6725162030ec0f1ad05">ERRBNK_IEBR1_LOCATION_Pos</link>&#160;&#160;&#160;2U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga34f378993e3917dd1ce55c185a35c222">ERRBNK_IEBR1_LOCATION_Msk</link>&#160;&#160;&#160;(0x3FFFUL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga44d1e7d673d4a6725162030ec0f1ad05">ERRBNK_IEBR1_LOCATION_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga5016a8de22df469192e1a10ef1aea59c">ERRBNK_IEBR1_LOCKED_Pos</link>&#160;&#160;&#160;1U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga5d193b34210b47e66d1cccf8bb89d34f">ERRBNK_IEBR1_LOCKED_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga5016a8de22df469192e1a10ef1aea59c">ERRBNK_IEBR1_LOCKED_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gab9103686fbc687ebb0e80d06035428cf">ERRBNK_IEBR1_VALID_Pos</link>&#160;&#160;&#160;0U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gadc021a89dfee1a9b3065c97507d807e8">ERRBNK_IEBR1_VALID_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; /*<link linkend="_group___c_m_s_i_s___s_c_b_1gab9103686fbc687ebb0e80d06035428cf">ERRBNK_IEBR1_VALID_Pos</link>*/)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gad08c7048a704ccdddb890841b7ff5bd7">ERRBNK_DEBR0_SWDEF_Pos</link>&#160;&#160;&#160;30U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga4dd4c27bce51c772cdc9e4765998cd12">ERRBNK_DEBR0_SWDEF_Msk</link>&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gad08c7048a704ccdddb890841b7ff5bd7">ERRBNK_DEBR0_SWDEF_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gafe176d0d424e4e9622e1d404733a48c1">ERRBNK_DEBR0_TYPE_Pos</link>&#160;&#160;&#160;17U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga83f585715baa90f9fee835188f0dc155">ERRBNK_DEBR0_TYPE_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gafe176d0d424e4e9622e1d404733a48c1">ERRBNK_DEBR0_TYPE_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga9b9589c80b747a4237c77324606ec118">ERRBNK_DEBR0_BANK_Pos</link>&#160;&#160;&#160;16U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gaee1954deb3ce8a754308bf5d73f21b6e">ERRBNK_DEBR0_BANK_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga9b9589c80b747a4237c77324606ec118">ERRBNK_DEBR0_BANK_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga907eaac2cb5b2a84c738dc87840504e4">ERRBNK_DEBR0_LOCATION_Pos</link>&#160;&#160;&#160;2U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gaa0d71541f25431c924c99b61bc9e148b">ERRBNK_DEBR0_LOCATION_Msk</link>&#160;&#160;&#160;(0x3FFFUL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga907eaac2cb5b2a84c738dc87840504e4">ERRBNK_DEBR0_LOCATION_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga399ae5039e61ed8f563e47bcb32cd984">ERRBNK_DEBR0_LOCKED_Pos</link>&#160;&#160;&#160;1U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga98de57d1ea7d347b6495694e9270b8da">ERRBNK_DEBR0_LOCKED_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga399ae5039e61ed8f563e47bcb32cd984">ERRBNK_DEBR0_LOCKED_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga36a791dac4b66cc8606e88d27f73d9c3">ERRBNK_DEBR0_VALID_Pos</link>&#160;&#160;&#160;0U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gab5f46f6dfc75fc3d610972ecd80b848a">ERRBNK_DEBR0_VALID_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; /*<link linkend="_group___c_m_s_i_s___s_c_b_1ga36a791dac4b66cc8606e88d27f73d9c3">ERRBNK_DEBR0_VALID_Pos</link>*/)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gac3956b7ff890d8c75f3f02c2750eab51">ERRBNK_DEBR1_SWDEF_Pos</link>&#160;&#160;&#160;30U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gabec87b423b25f358c60b1f018a51b228">ERRBNK_DEBR1_SWDEF_Msk</link>&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gac3956b7ff890d8c75f3f02c2750eab51">ERRBNK_DEBR1_SWDEF_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga16e9967558e14181d7909128dbf1cda6">ERRBNK_DEBR1_TYPE_Pos</link>&#160;&#160;&#160;17U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gaa196cbeca060570fb384b103d27ecd0a">ERRBNK_DEBR1_TYPE_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga16e9967558e14181d7909128dbf1cda6">ERRBNK_DEBR1_TYPE_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gad1815158b13eed7e76a7ea4a008c0043">ERRBNK_DEBR1_BANK_Pos</link>&#160;&#160;&#160;16U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gadc1d26472c5b994169a734ef63e7a2e2">ERRBNK_DEBR1_BANK_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gad1815158b13eed7e76a7ea4a008c0043">ERRBNK_DEBR1_BANK_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gad7593b2b1c37aa3793201cf576224682">ERRBNK_DEBR1_LOCATION_Pos</link>&#160;&#160;&#160;2U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga8b843e210b244315fde2c11044ac2efa">ERRBNK_DEBR1_LOCATION_Msk</link>&#160;&#160;&#160;(0x3FFFUL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gad7593b2b1c37aa3793201cf576224682">ERRBNK_DEBR1_LOCATION_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga14ec342ca40f6b2a5ecdc95a0c296f6f">ERRBNK_DEBR1_LOCKED_Pos</link>&#160;&#160;&#160;1U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga5d58c75561d7addedd1b4eedd17e9978">ERRBNK_DEBR1_LOCKED_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga14ec342ca40f6b2a5ecdc95a0c296f6f">ERRBNK_DEBR1_LOCKED_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gabd23e5a68d23f0415a70253c2836e887">ERRBNK_DEBR1_VALID_Pos</link>&#160;&#160;&#160;0U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gade3451cfa57b130121e465fb5ff04cef">ERRBNK_DEBR1_VALID_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; /*<link linkend="_group___c_m_s_i_s___s_c_b_1gabd23e5a68d23f0415a70253c2836e887">ERRBNK_DEBR1_VALID_Pos</link>*/)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gaa41d89f6f4c383e525df7f7d1c5c029d">ERRBNK_TEBR0_SWDEF_Pos</link>&#160;&#160;&#160;30U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga2ed666c4fc20979a797871a4f1e12ba6">ERRBNK_TEBR0_SWDEF_Msk</link>&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gaa41d89f6f4c383e525df7f7d1c5c029d">ERRBNK_TEBR0_SWDEF_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gab7ccdc49857bb574c333bb26877c6a63">ERRBNK_TEBR0_POISON_Pos</link>&#160;&#160;&#160;28U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga1b45e2cde3470ef70329bbc52d113fd9">ERRBNK_TEBR0_POISON_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gab7ccdc49857bb574c333bb26877c6a63">ERRBNK_TEBR0_POISON_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gafd2d2fa3f7cae8cf05927361df7b4eaf">ERRBNK_TEBR0_TYPE_Pos</link>&#160;&#160;&#160;27U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga0dece8f55702232a4b0ddf4218dc6b51">ERRBNK_TEBR0_TYPE_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gafd2d2fa3f7cae8cf05927361df7b4eaf">ERRBNK_TEBR0_TYPE_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga3cf4b6d8d2c6337906a1c3d8c4e732dc">ERRBNK_TEBR0_BANK_Pos</link>&#160;&#160;&#160;24U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gad58e636502d5f7d7ded8f612c77b9c3c">ERRBNK_TEBR0_BANK_Msk</link>&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga3cf4b6d8d2c6337906a1c3d8c4e732dc">ERRBNK_TEBR0_BANK_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gab0e4eaf6c4fb6ac5e6ba7faac6a8a476">ERRBNK_TEBR0_LOCATION_Pos</link>&#160;&#160;&#160;2U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga040a21cd3ab10370de0d3fb651539e27">ERRBNK_TEBR0_LOCATION_Msk</link>&#160;&#160;&#160;(0x3FFFFFUL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gab0e4eaf6c4fb6ac5e6ba7faac6a8a476">ERRBNK_TEBR0_LOCATION_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga4823c7e1770aa7d0ae06758043bd026a">ERRBNK_TEBR0_LOCKED_Pos</link>&#160;&#160;&#160;1U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gac4234faf731f9ac8428ab0b41f88c51f">ERRBNK_TEBR0_LOCKED_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga4823c7e1770aa7d0ae06758043bd026a">ERRBNK_TEBR0_LOCKED_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga9e30e5399c4c6622bc877389884e7ff4">ERRBNK_TEBR0_VALID_Pos</link>&#160;&#160;&#160;0U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gaef9c8653a3f94e49ecce1d0446154297">ERRBNK_TEBR0_VALID_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; /*<link linkend="_group___c_m_s_i_s___s_c_b_1ga9e30e5399c4c6622bc877389884e7ff4">ERRBNK_TEBR0_VALID_Pos</link>*/)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gaa79fbc05cf56d9944ec7122534d2451f">ERRBNK_TEBR1_SWDEF_Pos</link>&#160;&#160;&#160;30U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gae2aa0c87f31b2b1e917226e06cc4df8d">ERRBNK_TEBR1_SWDEF_Msk</link>&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gaa79fbc05cf56d9944ec7122534d2451f">ERRBNK_TEBR1_SWDEF_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga2912e7257126aeb9bff32ea824c8040b">ERRBNK_TEBR1_POISON_Pos</link>&#160;&#160;&#160;28U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga23836ccc0ee921e1a5ff61f40ae65add">ERRBNK_TEBR1_POISON_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga2912e7257126aeb9bff32ea824c8040b">ERRBNK_TEBR1_POISON_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga0918466eb38c8f6a48865bf206d5ca32">ERRBNK_TEBR1_TYPE_Pos</link>&#160;&#160;&#160;27U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga455a083e7d931a86269adb2a3727b8de">ERRBNK_TEBR1_TYPE_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga0918466eb38c8f6a48865bf206d5ca32">ERRBNK_TEBR1_TYPE_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gaf76b700aa80e7f780df7072db468ba11">ERRBNK_TEBR1_BANK_Pos</link>&#160;&#160;&#160;24U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gaf9b1bc9ab3aab722cc366e47c965f52a">ERRBNK_TEBR1_BANK_Msk</link>&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gaf76b700aa80e7f780df7072db468ba11">ERRBNK_TEBR1_BANK_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga72082e9ed235f4177338c5e211f33bde">ERRBNK_TEBR1_LOCATION_Pos</link>&#160;&#160;&#160;2U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga5fb5252e8325ca90e12d06592599b677">ERRBNK_TEBR1_LOCATION_Msk</link>&#160;&#160;&#160;(0x3FFFFFUL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga72082e9ed235f4177338c5e211f33bde">ERRBNK_TEBR1_LOCATION_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga8fcc66ff900b8c3227ea474475a670d6">ERRBNK_TEBR1_LOCKED_Pos</link>&#160;&#160;&#160;1U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga01ac5751b5956f39d45bc4c1802c0bca">ERRBNK_TEBR1_LOCKED_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga8fcc66ff900b8c3227ea474475a670d6">ERRBNK_TEBR1_LOCKED_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gaf1a15db93ae93ba4605f9fd3bf61b702">ERRBNK_TEBR1_VALID_Pos</link>&#160;&#160;&#160;0U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gad25c4eadbe5872c4fd956ae32223c36c">ERRBNK_TEBR1_VALID_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; /*<link linkend="_group___c_m_s_i_s___s_c_b_1gaf1a15db93ae93ba4605f9fd3bf61b702">ERRBNK_TEBR1_VALID_Pos</link>*/)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga2a02d42c85dcd7157e36ffd1793af9b5">ERRBNK_IEBR0_SWDEF_Pos</link>&#160;&#160;&#160;30U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga0f33619d11962794de941a1945a64171">ERRBNK_IEBR0_SWDEF_Msk</link>&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga2a02d42c85dcd7157e36ffd1793af9b5">ERRBNK_IEBR0_SWDEF_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gaeaa49f865d866b34d7e7a484d36f3073">ERRBNK_IEBR0_BANK_Pos</link>&#160;&#160;&#160;16U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gaeec701a537ef5da1d078a80694c3de42">ERRBNK_IEBR0_BANK_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gaeaa49f865d866b34d7e7a484d36f3073">ERRBNK_IEBR0_BANK_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga0a5d578c8fcb453fa9de3919f5d385f6">ERRBNK_IEBR0_LOCATION_Pos</link>&#160;&#160;&#160;2U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gacece89f5d2ce4c4e05680b994866c554">ERRBNK_IEBR0_LOCATION_Msk</link>&#160;&#160;&#160;(0x3FFFUL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga0a5d578c8fcb453fa9de3919f5d385f6">ERRBNK_IEBR0_LOCATION_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga073d0a845eb34db4afa25a6dd50256a2">ERRBNK_IEBR0_LOCKED_Pos</link>&#160;&#160;&#160;1U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga16998136613470731279d999ca1f5e49">ERRBNK_IEBR0_LOCKED_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga073d0a845eb34db4afa25a6dd50256a2">ERRBNK_IEBR0_LOCKED_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gadb563b42eac50dde50acacf10095e7cf">ERRBNK_IEBR0_VALID_Pos</link>&#160;&#160;&#160;0U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gae6ad7309872abc9314ed984bc0089acb">ERRBNK_IEBR0_VALID_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; /*<link linkend="_group___c_m_s_i_s___s_c_b_1gadb563b42eac50dde50acacf10095e7cf">ERRBNK_IEBR0_VALID_Pos</link>*/)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga14e57259fc0f58b3a4d7157f3c609b5f">ERRBNK_IEBR1_SWDEF_Pos</link>&#160;&#160;&#160;30U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga90332bfd1688a36fc00ec2d6dfe1a8ba">ERRBNK_IEBR1_SWDEF_Msk</link>&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga14e57259fc0f58b3a4d7157f3c609b5f">ERRBNK_IEBR1_SWDEF_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga8782ae848ab4a9639ce9afb01ed26c8e">ERRBNK_IEBR1_BANK_Pos</link>&#160;&#160;&#160;16U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga5ab89fbe9e50ed36108b16c5f462e24e">ERRBNK_IEBR1_BANK_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga8782ae848ab4a9639ce9afb01ed26c8e">ERRBNK_IEBR1_BANK_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga44d1e7d673d4a6725162030ec0f1ad05">ERRBNK_IEBR1_LOCATION_Pos</link>&#160;&#160;&#160;2U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga34f378993e3917dd1ce55c185a35c222">ERRBNK_IEBR1_LOCATION_Msk</link>&#160;&#160;&#160;(0x3FFFUL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga44d1e7d673d4a6725162030ec0f1ad05">ERRBNK_IEBR1_LOCATION_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga5016a8de22df469192e1a10ef1aea59c">ERRBNK_IEBR1_LOCKED_Pos</link>&#160;&#160;&#160;1U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga5d193b34210b47e66d1cccf8bb89d34f">ERRBNK_IEBR1_LOCKED_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga5016a8de22df469192e1a10ef1aea59c">ERRBNK_IEBR1_LOCKED_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gab9103686fbc687ebb0e80d06035428cf">ERRBNK_IEBR1_VALID_Pos</link>&#160;&#160;&#160;0U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gadc021a89dfee1a9b3065c97507d807e8">ERRBNK_IEBR1_VALID_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; /*<link linkend="_group___c_m_s_i_s___s_c_b_1gab9103686fbc687ebb0e80d06035428cf">ERRBNK_IEBR1_VALID_Pos</link>*/)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gad08c7048a704ccdddb890841b7ff5bd7">ERRBNK_DEBR0_SWDEF_Pos</link>&#160;&#160;&#160;30U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga4dd4c27bce51c772cdc9e4765998cd12">ERRBNK_DEBR0_SWDEF_Msk</link>&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gad08c7048a704ccdddb890841b7ff5bd7">ERRBNK_DEBR0_SWDEF_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gafe176d0d424e4e9622e1d404733a48c1">ERRBNK_DEBR0_TYPE_Pos</link>&#160;&#160;&#160;17U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga83f585715baa90f9fee835188f0dc155">ERRBNK_DEBR0_TYPE_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gafe176d0d424e4e9622e1d404733a48c1">ERRBNK_DEBR0_TYPE_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga9b9589c80b747a4237c77324606ec118">ERRBNK_DEBR0_BANK_Pos</link>&#160;&#160;&#160;16U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gaee1954deb3ce8a754308bf5d73f21b6e">ERRBNK_DEBR0_BANK_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga9b9589c80b747a4237c77324606ec118">ERRBNK_DEBR0_BANK_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga907eaac2cb5b2a84c738dc87840504e4">ERRBNK_DEBR0_LOCATION_Pos</link>&#160;&#160;&#160;2U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gaa0d71541f25431c924c99b61bc9e148b">ERRBNK_DEBR0_LOCATION_Msk</link>&#160;&#160;&#160;(0x3FFFUL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga907eaac2cb5b2a84c738dc87840504e4">ERRBNK_DEBR0_LOCATION_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga399ae5039e61ed8f563e47bcb32cd984">ERRBNK_DEBR0_LOCKED_Pos</link>&#160;&#160;&#160;1U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga98de57d1ea7d347b6495694e9270b8da">ERRBNK_DEBR0_LOCKED_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga399ae5039e61ed8f563e47bcb32cd984">ERRBNK_DEBR0_LOCKED_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga36a791dac4b66cc8606e88d27f73d9c3">ERRBNK_DEBR0_VALID_Pos</link>&#160;&#160;&#160;0U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gab5f46f6dfc75fc3d610972ecd80b848a">ERRBNK_DEBR0_VALID_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; /*<link linkend="_group___c_m_s_i_s___s_c_b_1ga36a791dac4b66cc8606e88d27f73d9c3">ERRBNK_DEBR0_VALID_Pos</link>*/)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gac3956b7ff890d8c75f3f02c2750eab51">ERRBNK_DEBR1_SWDEF_Pos</link>&#160;&#160;&#160;30U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gabec87b423b25f358c60b1f018a51b228">ERRBNK_DEBR1_SWDEF_Msk</link>&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gac3956b7ff890d8c75f3f02c2750eab51">ERRBNK_DEBR1_SWDEF_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga16e9967558e14181d7909128dbf1cda6">ERRBNK_DEBR1_TYPE_Pos</link>&#160;&#160;&#160;17U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gaa196cbeca060570fb384b103d27ecd0a">ERRBNK_DEBR1_TYPE_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga16e9967558e14181d7909128dbf1cda6">ERRBNK_DEBR1_TYPE_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gad1815158b13eed7e76a7ea4a008c0043">ERRBNK_DEBR1_BANK_Pos</link>&#160;&#160;&#160;16U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gadc1d26472c5b994169a734ef63e7a2e2">ERRBNK_DEBR1_BANK_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gad1815158b13eed7e76a7ea4a008c0043">ERRBNK_DEBR1_BANK_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gad7593b2b1c37aa3793201cf576224682">ERRBNK_DEBR1_LOCATION_Pos</link>&#160;&#160;&#160;2U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga8b843e210b244315fde2c11044ac2efa">ERRBNK_DEBR1_LOCATION_Msk</link>&#160;&#160;&#160;(0x3FFFUL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gad7593b2b1c37aa3793201cf576224682">ERRBNK_DEBR1_LOCATION_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga14ec342ca40f6b2a5ecdc95a0c296f6f">ERRBNK_DEBR1_LOCKED_Pos</link>&#160;&#160;&#160;1U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga5d58c75561d7addedd1b4eedd17e9978">ERRBNK_DEBR1_LOCKED_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga14ec342ca40f6b2a5ecdc95a0c296f6f">ERRBNK_DEBR1_LOCKED_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gabd23e5a68d23f0415a70253c2836e887">ERRBNK_DEBR1_VALID_Pos</link>&#160;&#160;&#160;0U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gade3451cfa57b130121e465fb5ff04cef">ERRBNK_DEBR1_VALID_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; /*<link linkend="_group___c_m_s_i_s___s_c_b_1gabd23e5a68d23f0415a70253c2836e887">ERRBNK_DEBR1_VALID_Pos</link>*/)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gaa41d89f6f4c383e525df7f7d1c5c029d">ERRBNK_TEBR0_SWDEF_Pos</link>&#160;&#160;&#160;30U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga2ed666c4fc20979a797871a4f1e12ba6">ERRBNK_TEBR0_SWDEF_Msk</link>&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gaa41d89f6f4c383e525df7f7d1c5c029d">ERRBNK_TEBR0_SWDEF_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gab7ccdc49857bb574c333bb26877c6a63">ERRBNK_TEBR0_POISON_Pos</link>&#160;&#160;&#160;28U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga1b45e2cde3470ef70329bbc52d113fd9">ERRBNK_TEBR0_POISON_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gab7ccdc49857bb574c333bb26877c6a63">ERRBNK_TEBR0_POISON_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gafd2d2fa3f7cae8cf05927361df7b4eaf">ERRBNK_TEBR0_TYPE_Pos</link>&#160;&#160;&#160;27U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga0dece8f55702232a4b0ddf4218dc6b51">ERRBNK_TEBR0_TYPE_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gafd2d2fa3f7cae8cf05927361df7b4eaf">ERRBNK_TEBR0_TYPE_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga3cf4b6d8d2c6337906a1c3d8c4e732dc">ERRBNK_TEBR0_BANK_Pos</link>&#160;&#160;&#160;24U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gad58e636502d5f7d7ded8f612c77b9c3c">ERRBNK_TEBR0_BANK_Msk</link>&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga3cf4b6d8d2c6337906a1c3d8c4e732dc">ERRBNK_TEBR0_BANK_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gab0e4eaf6c4fb6ac5e6ba7faac6a8a476">ERRBNK_TEBR0_LOCATION_Pos</link>&#160;&#160;&#160;2U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga040a21cd3ab10370de0d3fb651539e27">ERRBNK_TEBR0_LOCATION_Msk</link>&#160;&#160;&#160;(0x3FFFFFUL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gab0e4eaf6c4fb6ac5e6ba7faac6a8a476">ERRBNK_TEBR0_LOCATION_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga4823c7e1770aa7d0ae06758043bd026a">ERRBNK_TEBR0_LOCKED_Pos</link>&#160;&#160;&#160;1U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gac4234faf731f9ac8428ab0b41f88c51f">ERRBNK_TEBR0_LOCKED_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga4823c7e1770aa7d0ae06758043bd026a">ERRBNK_TEBR0_LOCKED_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga9e30e5399c4c6622bc877389884e7ff4">ERRBNK_TEBR0_VALID_Pos</link>&#160;&#160;&#160;0U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gaef9c8653a3f94e49ecce1d0446154297">ERRBNK_TEBR0_VALID_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; /*<link linkend="_group___c_m_s_i_s___s_c_b_1ga9e30e5399c4c6622bc877389884e7ff4">ERRBNK_TEBR0_VALID_Pos</link>*/)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gaa79fbc05cf56d9944ec7122534d2451f">ERRBNK_TEBR1_SWDEF_Pos</link>&#160;&#160;&#160;30U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gae2aa0c87f31b2b1e917226e06cc4df8d">ERRBNK_TEBR1_SWDEF_Msk</link>&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gaa79fbc05cf56d9944ec7122534d2451f">ERRBNK_TEBR1_SWDEF_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga2912e7257126aeb9bff32ea824c8040b">ERRBNK_TEBR1_POISON_Pos</link>&#160;&#160;&#160;28U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga23836ccc0ee921e1a5ff61f40ae65add">ERRBNK_TEBR1_POISON_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga2912e7257126aeb9bff32ea824c8040b">ERRBNK_TEBR1_POISON_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga0918466eb38c8f6a48865bf206d5ca32">ERRBNK_TEBR1_TYPE_Pos</link>&#160;&#160;&#160;27U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga455a083e7d931a86269adb2a3727b8de">ERRBNK_TEBR1_TYPE_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga0918466eb38c8f6a48865bf206d5ca32">ERRBNK_TEBR1_TYPE_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gaf76b700aa80e7f780df7072db468ba11">ERRBNK_TEBR1_BANK_Pos</link>&#160;&#160;&#160;24U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gaf9b1bc9ab3aab722cc366e47c965f52a">ERRBNK_TEBR1_BANK_Msk</link>&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gaf76b700aa80e7f780df7072db468ba11">ERRBNK_TEBR1_BANK_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga72082e9ed235f4177338c5e211f33bde">ERRBNK_TEBR1_LOCATION_Pos</link>&#160;&#160;&#160;2U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga5fb5252e8325ca90e12d06592599b677">ERRBNK_TEBR1_LOCATION_Msk</link>&#160;&#160;&#160;(0x3FFFFFUL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga72082e9ed235f4177338c5e211f33bde">ERRBNK_TEBR1_LOCATION_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga8fcc66ff900b8c3227ea474475a670d6">ERRBNK_TEBR1_LOCKED_Pos</link>&#160;&#160;&#160;1U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga01ac5751b5956f39d45bc4c1802c0bca">ERRBNK_TEBR1_LOCKED_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga8fcc66ff900b8c3227ea474475a670d6">ERRBNK_TEBR1_LOCKED_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gaf1a15db93ae93ba4605f9fd3bf61b702">ERRBNK_TEBR1_VALID_Pos</link>&#160;&#160;&#160;0U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gad25c4eadbe5872c4fd956ae32223c36c">ERRBNK_TEBR1_VALID_Msk</link>&#160;&#160;&#160;(0x1UL &lt;&lt; /*<link linkend="_group___c_m_s_i_s___s_c_b_1gaf1a15db93ae93ba4605f9fd3bf61b702">ERRBNK_TEBR1_VALID_Pos</link>*/)</para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para>Type definitions for the Error Banking Registers (ERRBNK) </para>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gaee1954deb3ce8a754308bf5d73f21b6e"/><section>
+    <title>ERRBNK_DEBR0_BANK_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR0_BANK_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR0_BANK_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR0_BANK_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga9b9589c80b747a4237c77324606ec118">ERRBNK_DEBR0_BANK_Pos</link>)</computeroutput></para>
+<para>ERRBNK DEBR0: BANK Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01668">1668</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gaee1954deb3ce8a754308bf5d73f21b6e"/><section>
+    <title>ERRBNK_DEBR0_BANK_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR0_BANK_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR0_BANK_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR0_BANK_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga9b9589c80b747a4237c77324606ec118">ERRBNK_DEBR0_BANK_Pos</link>)</computeroutput></para>
+<para>ERRBNK DEBR0: BANK Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01655">1655</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga9b9589c80b747a4237c77324606ec118"/><section>
+    <title>ERRBNK_DEBR0_BANK_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR0_BANK_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR0_BANK_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR0_BANK_Pos&#160;&#160;&#160;16U</computeroutput></para>
+<para>ERRBNK DEBR0: BANK Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01667">1667</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga9b9589c80b747a4237c77324606ec118"/><section>
+    <title>ERRBNK_DEBR0_BANK_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR0_BANK_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR0_BANK_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR0_BANK_Pos&#160;&#160;&#160;16U</computeroutput></para>
+<para>ERRBNK DEBR0: BANK Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01654">1654</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gaa0d71541f25431c924c99b61bc9e148b"/><section>
+    <title>ERRBNK_DEBR0_LOCATION_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR0_LOCATION_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR0_LOCATION_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR0_LOCATION_Msk&#160;&#160;&#160;(0x3FFFUL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga907eaac2cb5b2a84c738dc87840504e4">ERRBNK_DEBR0_LOCATION_Pos</link>)</computeroutput></para>
+<para>ERRBNK DEBR0: LOCATION Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01671">1671</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gaa0d71541f25431c924c99b61bc9e148b"/><section>
+    <title>ERRBNK_DEBR0_LOCATION_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR0_LOCATION_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR0_LOCATION_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR0_LOCATION_Msk&#160;&#160;&#160;(0x3FFFUL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga907eaac2cb5b2a84c738dc87840504e4">ERRBNK_DEBR0_LOCATION_Pos</link>)</computeroutput></para>
+<para>ERRBNK DEBR0: LOCATION Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01658">1658</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga907eaac2cb5b2a84c738dc87840504e4"/><section>
+    <title>ERRBNK_DEBR0_LOCATION_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR0_LOCATION_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR0_LOCATION_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR0_LOCATION_Pos&#160;&#160;&#160;2U</computeroutput></para>
+<para>ERRBNK DEBR0: LOCATION Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01670">1670</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga907eaac2cb5b2a84c738dc87840504e4"/><section>
+    <title>ERRBNK_DEBR0_LOCATION_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR0_LOCATION_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR0_LOCATION_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR0_LOCATION_Pos&#160;&#160;&#160;2U</computeroutput></para>
+<para>ERRBNK DEBR0: LOCATION Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01657">1657</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga98de57d1ea7d347b6495694e9270b8da"/><section>
+    <title>ERRBNK_DEBR0_LOCKED_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR0_LOCKED_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR0_LOCKED_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR0_LOCKED_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga399ae5039e61ed8f563e47bcb32cd984">ERRBNK_DEBR0_LOCKED_Pos</link>)</computeroutput></para>
+<para>ERRBNK DEBR0: LOCKED Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01674">1674</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga98de57d1ea7d347b6495694e9270b8da"/><section>
+    <title>ERRBNK_DEBR0_LOCKED_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR0_LOCKED_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR0_LOCKED_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR0_LOCKED_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga399ae5039e61ed8f563e47bcb32cd984">ERRBNK_DEBR0_LOCKED_Pos</link>)</computeroutput></para>
+<para>ERRBNK DEBR0: LOCKED Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01661">1661</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga399ae5039e61ed8f563e47bcb32cd984"/><section>
+    <title>ERRBNK_DEBR0_LOCKED_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR0_LOCKED_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR0_LOCKED_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR0_LOCKED_Pos&#160;&#160;&#160;1U</computeroutput></para>
+<para>ERRBNK DEBR0: LOCKED Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01673">1673</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga399ae5039e61ed8f563e47bcb32cd984"/><section>
+    <title>ERRBNK_DEBR0_LOCKED_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR0_LOCKED_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR0_LOCKED_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR0_LOCKED_Pos&#160;&#160;&#160;1U</computeroutput></para>
+<para>ERRBNK DEBR0: LOCKED Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01660">1660</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga4dd4c27bce51c772cdc9e4765998cd12"/><section>
+    <title>ERRBNK_DEBR0_SWDEF_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR0_SWDEF_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR0_SWDEF_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR0_SWDEF_Msk&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gad08c7048a704ccdddb890841b7ff5bd7">ERRBNK_DEBR0_SWDEF_Pos</link>)</computeroutput></para>
+<para>ERRBNK DEBR0: SWDEF Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01662">1662</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga4dd4c27bce51c772cdc9e4765998cd12"/><section>
+    <title>ERRBNK_DEBR0_SWDEF_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR0_SWDEF_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR0_SWDEF_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR0_SWDEF_Msk&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gad08c7048a704ccdddb890841b7ff5bd7">ERRBNK_DEBR0_SWDEF_Pos</link>)</computeroutput></para>
+<para>ERRBNK DEBR0: SWDEF Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01649">1649</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gad08c7048a704ccdddb890841b7ff5bd7"/><section>
+    <title>ERRBNK_DEBR0_SWDEF_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR0_SWDEF_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR0_SWDEF_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR0_SWDEF_Pos&#160;&#160;&#160;30U</computeroutput></para>
+<para>ERRBNK DEBR0: SWDEF Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01661">1661</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gad08c7048a704ccdddb890841b7ff5bd7"/><section>
+    <title>ERRBNK_DEBR0_SWDEF_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR0_SWDEF_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR0_SWDEF_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR0_SWDEF_Pos&#160;&#160;&#160;30U</computeroutput></para>
+<para>ERRBNK DEBR0: SWDEF Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01648">1648</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga83f585715baa90f9fee835188f0dc155"/><section>
+    <title>ERRBNK_DEBR0_TYPE_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR0_TYPE_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR0_TYPE_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR0_TYPE_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gafe176d0d424e4e9622e1d404733a48c1">ERRBNK_DEBR0_TYPE_Pos</link>)</computeroutput></para>
+<para>ERRBNK DEBR0: TYPE Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01665">1665</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga83f585715baa90f9fee835188f0dc155"/><section>
+    <title>ERRBNK_DEBR0_TYPE_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR0_TYPE_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR0_TYPE_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR0_TYPE_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gafe176d0d424e4e9622e1d404733a48c1">ERRBNK_DEBR0_TYPE_Pos</link>)</computeroutput></para>
+<para>ERRBNK DEBR0: TYPE Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01652">1652</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gafe176d0d424e4e9622e1d404733a48c1"/><section>
+    <title>ERRBNK_DEBR0_TYPE_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR0_TYPE_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR0_TYPE_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR0_TYPE_Pos&#160;&#160;&#160;17U</computeroutput></para>
+<para>ERRBNK DEBR0: TYPE Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01664">1664</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gafe176d0d424e4e9622e1d404733a48c1"/><section>
+    <title>ERRBNK_DEBR0_TYPE_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR0_TYPE_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR0_TYPE_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR0_TYPE_Pos&#160;&#160;&#160;17U</computeroutput></para>
+<para>ERRBNK DEBR0: TYPE Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01651">1651</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gab5f46f6dfc75fc3d610972ecd80b848a"/><section>
+    <title>ERRBNK_DEBR0_VALID_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR0_VALID_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR0_VALID_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR0_VALID_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; /*<link linkend="_group___c_m_s_i_s___s_c_b_1ga36a791dac4b66cc8606e88d27f73d9c3">ERRBNK_DEBR0_VALID_Pos</link>*/)</computeroutput></para>
+<para>ERRBNK DEBR0: VALID Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01677">1677</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gab5f46f6dfc75fc3d610972ecd80b848a"/><section>
+    <title>ERRBNK_DEBR0_VALID_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR0_VALID_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR0_VALID_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR0_VALID_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; /*<link linkend="_group___c_m_s_i_s___s_c_b_1ga36a791dac4b66cc8606e88d27f73d9c3">ERRBNK_DEBR0_VALID_Pos</link>*/)</computeroutput></para>
+<para>ERRBNK DEBR0: VALID Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01664">1664</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga36a791dac4b66cc8606e88d27f73d9c3"/><section>
+    <title>ERRBNK_DEBR0_VALID_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR0_VALID_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR0_VALID_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR0_VALID_Pos&#160;&#160;&#160;0U</computeroutput></para>
+<para>ERRBNK DEBR0: VALID Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01676">1676</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga36a791dac4b66cc8606e88d27f73d9c3"/><section>
+    <title>ERRBNK_DEBR0_VALID_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR0_VALID_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR0_VALID_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR0_VALID_Pos&#160;&#160;&#160;0U</computeroutput></para>
+<para>ERRBNK DEBR0: VALID Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01663">1663</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gadc1d26472c5b994169a734ef63e7a2e2"/><section>
+    <title>ERRBNK_DEBR1_BANK_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR1_BANK_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR1_BANK_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR1_BANK_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gad1815158b13eed7e76a7ea4a008c0043">ERRBNK_DEBR1_BANK_Pos</link>)</computeroutput></para>
+<para>ERRBNK DEBR1: BANK Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01687">1687</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gadc1d26472c5b994169a734ef63e7a2e2"/><section>
+    <title>ERRBNK_DEBR1_BANK_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR1_BANK_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR1_BANK_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR1_BANK_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gad1815158b13eed7e76a7ea4a008c0043">ERRBNK_DEBR1_BANK_Pos</link>)</computeroutput></para>
+<para>ERRBNK DEBR1: BANK Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01674">1674</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gad1815158b13eed7e76a7ea4a008c0043"/><section>
+    <title>ERRBNK_DEBR1_BANK_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR1_BANK_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR1_BANK_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR1_BANK_Pos&#160;&#160;&#160;16U</computeroutput></para>
+<para>ERRBNK DEBR1: BANK Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01686">1686</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gad1815158b13eed7e76a7ea4a008c0043"/><section>
+    <title>ERRBNK_DEBR1_BANK_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR1_BANK_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR1_BANK_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR1_BANK_Pos&#160;&#160;&#160;16U</computeroutput></para>
+<para>ERRBNK DEBR1: BANK Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01673">1673</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga8b843e210b244315fde2c11044ac2efa"/><section>
+    <title>ERRBNK_DEBR1_LOCATION_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR1_LOCATION_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR1_LOCATION_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR1_LOCATION_Msk&#160;&#160;&#160;(0x3FFFUL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gad7593b2b1c37aa3793201cf576224682">ERRBNK_DEBR1_LOCATION_Pos</link>)</computeroutput></para>
+<para>ERRBNK DEBR1: LOCATION Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01690">1690</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga8b843e210b244315fde2c11044ac2efa"/><section>
+    <title>ERRBNK_DEBR1_LOCATION_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR1_LOCATION_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR1_LOCATION_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR1_LOCATION_Msk&#160;&#160;&#160;(0x3FFFUL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gad7593b2b1c37aa3793201cf576224682">ERRBNK_DEBR1_LOCATION_Pos</link>)</computeroutput></para>
+<para>ERRBNK DEBR1: LOCATION Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01677">1677</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gad7593b2b1c37aa3793201cf576224682"/><section>
+    <title>ERRBNK_DEBR1_LOCATION_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR1_LOCATION_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR1_LOCATION_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR1_LOCATION_Pos&#160;&#160;&#160;2U</computeroutput></para>
+<para>ERRBNK DEBR1: LOCATION Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01689">1689</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gad7593b2b1c37aa3793201cf576224682"/><section>
+    <title>ERRBNK_DEBR1_LOCATION_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR1_LOCATION_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR1_LOCATION_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR1_LOCATION_Pos&#160;&#160;&#160;2U</computeroutput></para>
+<para>ERRBNK DEBR1: LOCATION Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01676">1676</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga5d58c75561d7addedd1b4eedd17e9978"/><section>
+    <title>ERRBNK_DEBR1_LOCKED_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR1_LOCKED_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR1_LOCKED_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR1_LOCKED_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga14ec342ca40f6b2a5ecdc95a0c296f6f">ERRBNK_DEBR1_LOCKED_Pos</link>)</computeroutput></para>
+<para>ERRBNK DEBR1: LOCKED Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01693">1693</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga5d58c75561d7addedd1b4eedd17e9978"/><section>
+    <title>ERRBNK_DEBR1_LOCKED_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR1_LOCKED_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR1_LOCKED_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR1_LOCKED_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga14ec342ca40f6b2a5ecdc95a0c296f6f">ERRBNK_DEBR1_LOCKED_Pos</link>)</computeroutput></para>
+<para>ERRBNK DEBR1: LOCKED Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01680">1680</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga14ec342ca40f6b2a5ecdc95a0c296f6f"/><section>
+    <title>ERRBNK_DEBR1_LOCKED_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR1_LOCKED_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR1_LOCKED_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR1_LOCKED_Pos&#160;&#160;&#160;1U</computeroutput></para>
+<para>ERRBNK DEBR1: LOCKED Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01692">1692</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga14ec342ca40f6b2a5ecdc95a0c296f6f"/><section>
+    <title>ERRBNK_DEBR1_LOCKED_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR1_LOCKED_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR1_LOCKED_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR1_LOCKED_Pos&#160;&#160;&#160;1U</computeroutput></para>
+<para>ERRBNK DEBR1: LOCKED Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01679">1679</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gabec87b423b25f358c60b1f018a51b228"/><section>
+    <title>ERRBNK_DEBR1_SWDEF_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR1_SWDEF_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR1_SWDEF_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR1_SWDEF_Msk&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gac3956b7ff890d8c75f3f02c2750eab51">ERRBNK_DEBR1_SWDEF_Pos</link>)</computeroutput></para>
+<para>ERRBNK DEBR1: SWDEF Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01681">1681</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gabec87b423b25f358c60b1f018a51b228"/><section>
+    <title>ERRBNK_DEBR1_SWDEF_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR1_SWDEF_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR1_SWDEF_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR1_SWDEF_Msk&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gac3956b7ff890d8c75f3f02c2750eab51">ERRBNK_DEBR1_SWDEF_Pos</link>)</computeroutput></para>
+<para>ERRBNK DEBR1: SWDEF Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01668">1668</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gac3956b7ff890d8c75f3f02c2750eab51"/><section>
+    <title>ERRBNK_DEBR1_SWDEF_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR1_SWDEF_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR1_SWDEF_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR1_SWDEF_Pos&#160;&#160;&#160;30U</computeroutput></para>
+<para>ERRBNK DEBR1: SWDEF Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01680">1680</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gac3956b7ff890d8c75f3f02c2750eab51"/><section>
+    <title>ERRBNK_DEBR1_SWDEF_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR1_SWDEF_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR1_SWDEF_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR1_SWDEF_Pos&#160;&#160;&#160;30U</computeroutput></para>
+<para>ERRBNK DEBR1: SWDEF Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01667">1667</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gaa196cbeca060570fb384b103d27ecd0a"/><section>
+    <title>ERRBNK_DEBR1_TYPE_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR1_TYPE_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR1_TYPE_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR1_TYPE_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga16e9967558e14181d7909128dbf1cda6">ERRBNK_DEBR1_TYPE_Pos</link>)</computeroutput></para>
+<para>ERRBNK DEBR1: TYPE Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01684">1684</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gaa196cbeca060570fb384b103d27ecd0a"/><section>
+    <title>ERRBNK_DEBR1_TYPE_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR1_TYPE_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR1_TYPE_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR1_TYPE_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga16e9967558e14181d7909128dbf1cda6">ERRBNK_DEBR1_TYPE_Pos</link>)</computeroutput></para>
+<para>ERRBNK DEBR1: TYPE Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01671">1671</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga16e9967558e14181d7909128dbf1cda6"/><section>
+    <title>ERRBNK_DEBR1_TYPE_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR1_TYPE_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR1_TYPE_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR1_TYPE_Pos&#160;&#160;&#160;17U</computeroutput></para>
+<para>ERRBNK DEBR1: TYPE Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01683">1683</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga16e9967558e14181d7909128dbf1cda6"/><section>
+    <title>ERRBNK_DEBR1_TYPE_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR1_TYPE_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR1_TYPE_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR1_TYPE_Pos&#160;&#160;&#160;17U</computeroutput></para>
+<para>ERRBNK DEBR1: TYPE Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01670">1670</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gade3451cfa57b130121e465fb5ff04cef"/><section>
+    <title>ERRBNK_DEBR1_VALID_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR1_VALID_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR1_VALID_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR1_VALID_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; /*<link linkend="_group___c_m_s_i_s___s_c_b_1gabd23e5a68d23f0415a70253c2836e887">ERRBNK_DEBR1_VALID_Pos</link>*/)</computeroutput></para>
+<para>ERRBNK DEBR1: VALID Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01696">1696</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gade3451cfa57b130121e465fb5ff04cef"/><section>
+    <title>ERRBNK_DEBR1_VALID_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR1_VALID_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR1_VALID_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR1_VALID_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; /*<link linkend="_group___c_m_s_i_s___s_c_b_1gabd23e5a68d23f0415a70253c2836e887">ERRBNK_DEBR1_VALID_Pos</link>*/)</computeroutput></para>
+<para>ERRBNK DEBR1: VALID Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01683">1683</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gabd23e5a68d23f0415a70253c2836e887"/><section>
+    <title>ERRBNK_DEBR1_VALID_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR1_VALID_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR1_VALID_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR1_VALID_Pos&#160;&#160;&#160;0U</computeroutput></para>
+<para>ERRBNK DEBR1: VALID Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01695">1695</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gabd23e5a68d23f0415a70253c2836e887"/><section>
+    <title>ERRBNK_DEBR1_VALID_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_DEBR1_VALID_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_DEBR1_VALID_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_DEBR1_VALID_Pos&#160;&#160;&#160;0U</computeroutput></para>
+<para>ERRBNK DEBR1: VALID Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01682">1682</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gaeec701a537ef5da1d078a80694c3de42"/><section>
+    <title>ERRBNK_IEBR0_BANK_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR0_BANK_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR0_BANK_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR0_BANK_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gaeaa49f865d866b34d7e7a484d36f3073">ERRBNK_IEBR0_BANK_Pos</link>)</computeroutput></para>
+<para>ERRBNK IEBR0: BANK Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01633">1633</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gaeec701a537ef5da1d078a80694c3de42"/><section>
+    <title>ERRBNK_IEBR0_BANK_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR0_BANK_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR0_BANK_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR0_BANK_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gaeaa49f865d866b34d7e7a484d36f3073">ERRBNK_IEBR0_BANK_Pos</link>)</computeroutput></para>
+<para>ERRBNK IEBR0: BANK Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01620">1620</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gaeaa49f865d866b34d7e7a484d36f3073"/><section>
+    <title>ERRBNK_IEBR0_BANK_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR0_BANK_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR0_BANK_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR0_BANK_Pos&#160;&#160;&#160;16U</computeroutput></para>
+<para>ERRBNK IEBR0: BANK Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01632">1632</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gaeaa49f865d866b34d7e7a484d36f3073"/><section>
+    <title>ERRBNK_IEBR0_BANK_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR0_BANK_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR0_BANK_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR0_BANK_Pos&#160;&#160;&#160;16U</computeroutput></para>
+<para>ERRBNK IEBR0: BANK Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01619">1619</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gacece89f5d2ce4c4e05680b994866c554"/><section>
+    <title>ERRBNK_IEBR0_LOCATION_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR0_LOCATION_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR0_LOCATION_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR0_LOCATION_Msk&#160;&#160;&#160;(0x3FFFUL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga0a5d578c8fcb453fa9de3919f5d385f6">ERRBNK_IEBR0_LOCATION_Pos</link>)</computeroutput></para>
+<para>ERRBNK IEBR0: LOCATION Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01636">1636</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gacece89f5d2ce4c4e05680b994866c554"/><section>
+    <title>ERRBNK_IEBR0_LOCATION_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR0_LOCATION_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR0_LOCATION_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR0_LOCATION_Msk&#160;&#160;&#160;(0x3FFFUL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga0a5d578c8fcb453fa9de3919f5d385f6">ERRBNK_IEBR0_LOCATION_Pos</link>)</computeroutput></para>
+<para>ERRBNK IEBR0: LOCATION Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01623">1623</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga0a5d578c8fcb453fa9de3919f5d385f6"/><section>
+    <title>ERRBNK_IEBR0_LOCATION_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR0_LOCATION_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR0_LOCATION_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR0_LOCATION_Pos&#160;&#160;&#160;2U</computeroutput></para>
+<para>ERRBNK IEBR0: LOCATION Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01635">1635</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga0a5d578c8fcb453fa9de3919f5d385f6"/><section>
+    <title>ERRBNK_IEBR0_LOCATION_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR0_LOCATION_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR0_LOCATION_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR0_LOCATION_Pos&#160;&#160;&#160;2U</computeroutput></para>
+<para>ERRBNK IEBR0: LOCATION Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01622">1622</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga16998136613470731279d999ca1f5e49"/><section>
+    <title>ERRBNK_IEBR0_LOCKED_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR0_LOCKED_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR0_LOCKED_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR0_LOCKED_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga073d0a845eb34db4afa25a6dd50256a2">ERRBNK_IEBR0_LOCKED_Pos</link>)</computeroutput></para>
+<para>ERRBNK IEBR0: LOCKED Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01639">1639</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga16998136613470731279d999ca1f5e49"/><section>
+    <title>ERRBNK_IEBR0_LOCKED_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR0_LOCKED_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR0_LOCKED_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR0_LOCKED_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga073d0a845eb34db4afa25a6dd50256a2">ERRBNK_IEBR0_LOCKED_Pos</link>)</computeroutput></para>
+<para>ERRBNK IEBR0: LOCKED Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01626">1626</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga073d0a845eb34db4afa25a6dd50256a2"/><section>
+    <title>ERRBNK_IEBR0_LOCKED_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR0_LOCKED_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR0_LOCKED_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR0_LOCKED_Pos&#160;&#160;&#160;1U</computeroutput></para>
+<para>ERRBNK IEBR0: LOCKED Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01638">1638</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga073d0a845eb34db4afa25a6dd50256a2"/><section>
+    <title>ERRBNK_IEBR0_LOCKED_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR0_LOCKED_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR0_LOCKED_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR0_LOCKED_Pos&#160;&#160;&#160;1U</computeroutput></para>
+<para>ERRBNK IEBR0: LOCKED Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01625">1625</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga0f33619d11962794de941a1945a64171"/><section>
+    <title>ERRBNK_IEBR0_SWDEF_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR0_SWDEF_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR0_SWDEF_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR0_SWDEF_Msk&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga2a02d42c85dcd7157e36ffd1793af9b5">ERRBNK_IEBR0_SWDEF_Pos</link>)</computeroutput></para>
+<para>ERRBNK IEBR0: SWDEF Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01630">1630</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga0f33619d11962794de941a1945a64171"/><section>
+    <title>ERRBNK_IEBR0_SWDEF_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR0_SWDEF_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR0_SWDEF_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR0_SWDEF_Msk&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga2a02d42c85dcd7157e36ffd1793af9b5">ERRBNK_IEBR0_SWDEF_Pos</link>)</computeroutput></para>
+<para>ERRBNK IEBR0: SWDEF Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01617">1617</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga2a02d42c85dcd7157e36ffd1793af9b5"/><section>
+    <title>ERRBNK_IEBR0_SWDEF_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR0_SWDEF_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR0_SWDEF_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR0_SWDEF_Pos&#160;&#160;&#160;30U</computeroutput></para>
+<para>ERRBNK IEBR0: SWDEF Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01629">1629</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga2a02d42c85dcd7157e36ffd1793af9b5"/><section>
+    <title>ERRBNK_IEBR0_SWDEF_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR0_SWDEF_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR0_SWDEF_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR0_SWDEF_Pos&#160;&#160;&#160;30U</computeroutput></para>
+<para>ERRBNK IEBR0: SWDEF Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01616">1616</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gae6ad7309872abc9314ed984bc0089acb"/><section>
+    <title>ERRBNK_IEBR0_VALID_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR0_VALID_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR0_VALID_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR0_VALID_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; /*<link linkend="_group___c_m_s_i_s___s_c_b_1gadb563b42eac50dde50acacf10095e7cf">ERRBNK_IEBR0_VALID_Pos</link>*/)</computeroutput></para>
+<para>ERRBNK IEBR0: VALID Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01642">1642</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gae6ad7309872abc9314ed984bc0089acb"/><section>
+    <title>ERRBNK_IEBR0_VALID_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR0_VALID_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR0_VALID_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR0_VALID_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; /*<link linkend="_group___c_m_s_i_s___s_c_b_1gadb563b42eac50dde50acacf10095e7cf">ERRBNK_IEBR0_VALID_Pos</link>*/)</computeroutput></para>
+<para>ERRBNK IEBR0: VALID Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01629">1629</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gadb563b42eac50dde50acacf10095e7cf"/><section>
+    <title>ERRBNK_IEBR0_VALID_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR0_VALID_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR0_VALID_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR0_VALID_Pos&#160;&#160;&#160;0U</computeroutput></para>
+<para>ERRBNK IEBR0: VALID Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01641">1641</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gadb563b42eac50dde50acacf10095e7cf"/><section>
+    <title>ERRBNK_IEBR0_VALID_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR0_VALID_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR0_VALID_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR0_VALID_Pos&#160;&#160;&#160;0U</computeroutput></para>
+<para>ERRBNK IEBR0: VALID Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01628">1628</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga5ab89fbe9e50ed36108b16c5f462e24e"/><section>
+    <title>ERRBNK_IEBR1_BANK_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR1_BANK_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR1_BANK_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR1_BANK_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga8782ae848ab4a9639ce9afb01ed26c8e">ERRBNK_IEBR1_BANK_Pos</link>)</computeroutput></para>
+<para>ERRBNK IEBR1: BANK Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01649">1649</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga5ab89fbe9e50ed36108b16c5f462e24e"/><section>
+    <title>ERRBNK_IEBR1_BANK_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR1_BANK_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR1_BANK_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR1_BANK_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga8782ae848ab4a9639ce9afb01ed26c8e">ERRBNK_IEBR1_BANK_Pos</link>)</computeroutput></para>
+<para>ERRBNK IEBR1: BANK Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01636">1636</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga8782ae848ab4a9639ce9afb01ed26c8e"/><section>
+    <title>ERRBNK_IEBR1_BANK_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR1_BANK_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR1_BANK_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR1_BANK_Pos&#160;&#160;&#160;16U</computeroutput></para>
+<para>ERRBNK IEBR1: BANK Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01648">1648</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga8782ae848ab4a9639ce9afb01ed26c8e"/><section>
+    <title>ERRBNK_IEBR1_BANK_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR1_BANK_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR1_BANK_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR1_BANK_Pos&#160;&#160;&#160;16U</computeroutput></para>
+<para>ERRBNK IEBR1: BANK Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01635">1635</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga34f378993e3917dd1ce55c185a35c222"/><section>
+    <title>ERRBNK_IEBR1_LOCATION_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR1_LOCATION_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR1_LOCATION_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR1_LOCATION_Msk&#160;&#160;&#160;(0x3FFFUL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga44d1e7d673d4a6725162030ec0f1ad05">ERRBNK_IEBR1_LOCATION_Pos</link>)</computeroutput></para>
+<para>ERRBNK IEBR1: LOCATION Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01652">1652</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga34f378993e3917dd1ce55c185a35c222"/><section>
+    <title>ERRBNK_IEBR1_LOCATION_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR1_LOCATION_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR1_LOCATION_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR1_LOCATION_Msk&#160;&#160;&#160;(0x3FFFUL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga44d1e7d673d4a6725162030ec0f1ad05">ERRBNK_IEBR1_LOCATION_Pos</link>)</computeroutput></para>
+<para>ERRBNK IEBR1: LOCATION Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01639">1639</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga44d1e7d673d4a6725162030ec0f1ad05"/><section>
+    <title>ERRBNK_IEBR1_LOCATION_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR1_LOCATION_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR1_LOCATION_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR1_LOCATION_Pos&#160;&#160;&#160;2U</computeroutput></para>
+<para>ERRBNK IEBR1: LOCATION Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01651">1651</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga44d1e7d673d4a6725162030ec0f1ad05"/><section>
+    <title>ERRBNK_IEBR1_LOCATION_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR1_LOCATION_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR1_LOCATION_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR1_LOCATION_Pos&#160;&#160;&#160;2U</computeroutput></para>
+<para>ERRBNK IEBR1: LOCATION Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01638">1638</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga5d193b34210b47e66d1cccf8bb89d34f"/><section>
+    <title>ERRBNK_IEBR1_LOCKED_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR1_LOCKED_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR1_LOCKED_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR1_LOCKED_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga5016a8de22df469192e1a10ef1aea59c">ERRBNK_IEBR1_LOCKED_Pos</link>)</computeroutput></para>
+<para>ERRBNK IEBR1: LOCKED Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01655">1655</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga5d193b34210b47e66d1cccf8bb89d34f"/><section>
+    <title>ERRBNK_IEBR1_LOCKED_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR1_LOCKED_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR1_LOCKED_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR1_LOCKED_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga5016a8de22df469192e1a10ef1aea59c">ERRBNK_IEBR1_LOCKED_Pos</link>)</computeroutput></para>
+<para>ERRBNK IEBR1: LOCKED Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01642">1642</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga5016a8de22df469192e1a10ef1aea59c"/><section>
+    <title>ERRBNK_IEBR1_LOCKED_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR1_LOCKED_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR1_LOCKED_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR1_LOCKED_Pos&#160;&#160;&#160;1U</computeroutput></para>
+<para>ERRBNK IEBR1: LOCKED Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01654">1654</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga5016a8de22df469192e1a10ef1aea59c"/><section>
+    <title>ERRBNK_IEBR1_LOCKED_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR1_LOCKED_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR1_LOCKED_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR1_LOCKED_Pos&#160;&#160;&#160;1U</computeroutput></para>
+<para>ERRBNK IEBR1: LOCKED Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01641">1641</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga90332bfd1688a36fc00ec2d6dfe1a8ba"/><section>
+    <title>ERRBNK_IEBR1_SWDEF_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR1_SWDEF_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR1_SWDEF_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR1_SWDEF_Msk&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga14e57259fc0f58b3a4d7157f3c609b5f">ERRBNK_IEBR1_SWDEF_Pos</link>)</computeroutput></para>
+<para>ERRBNK IEBR1: SWDEF Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01646">1646</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga90332bfd1688a36fc00ec2d6dfe1a8ba"/><section>
+    <title>ERRBNK_IEBR1_SWDEF_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR1_SWDEF_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR1_SWDEF_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR1_SWDEF_Msk&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga14e57259fc0f58b3a4d7157f3c609b5f">ERRBNK_IEBR1_SWDEF_Pos</link>)</computeroutput></para>
+<para>ERRBNK IEBR1: SWDEF Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01633">1633</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga14e57259fc0f58b3a4d7157f3c609b5f"/><section>
+    <title>ERRBNK_IEBR1_SWDEF_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR1_SWDEF_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR1_SWDEF_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR1_SWDEF_Pos&#160;&#160;&#160;30U</computeroutput></para>
+<para>ERRBNK IEBR1: SWDEF Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01645">1645</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga14e57259fc0f58b3a4d7157f3c609b5f"/><section>
+    <title>ERRBNK_IEBR1_SWDEF_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR1_SWDEF_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR1_SWDEF_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR1_SWDEF_Pos&#160;&#160;&#160;30U</computeroutput></para>
+<para>ERRBNK IEBR1: SWDEF Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01632">1632</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gadc021a89dfee1a9b3065c97507d807e8"/><section>
+    <title>ERRBNK_IEBR1_VALID_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR1_VALID_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR1_VALID_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR1_VALID_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; /*<link linkend="_group___c_m_s_i_s___s_c_b_1gab9103686fbc687ebb0e80d06035428cf">ERRBNK_IEBR1_VALID_Pos</link>*/)</computeroutput></para>
+<para>ERRBNK IEBR1: VALID Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01658">1658</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gadc021a89dfee1a9b3065c97507d807e8"/><section>
+    <title>ERRBNK_IEBR1_VALID_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR1_VALID_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR1_VALID_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR1_VALID_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; /*<link linkend="_group___c_m_s_i_s___s_c_b_1gab9103686fbc687ebb0e80d06035428cf">ERRBNK_IEBR1_VALID_Pos</link>*/)</computeroutput></para>
+<para>ERRBNK IEBR1: VALID Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01645">1645</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gab9103686fbc687ebb0e80d06035428cf"/><section>
+    <title>ERRBNK_IEBR1_VALID_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR1_VALID_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR1_VALID_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR1_VALID_Pos&#160;&#160;&#160;0U</computeroutput></para>
+<para>ERRBNK IEBR1: VALID Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01657">1657</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gab9103686fbc687ebb0e80d06035428cf"/><section>
+    <title>ERRBNK_IEBR1_VALID_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_IEBR1_VALID_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_IEBR1_VALID_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_IEBR1_VALID_Pos&#160;&#160;&#160;0U</computeroutput></para>
+<para>ERRBNK IEBR1: VALID Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01644">1644</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gad58e636502d5f7d7ded8f612c77b9c3c"/><section>
+    <title>ERRBNK_TEBR0_BANK_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_BANK_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_BANK_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_BANK_Msk&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga3cf4b6d8d2c6337906a1c3d8c4e732dc">ERRBNK_TEBR0_BANK_Pos</link>)</computeroutput></para>
+<para>ERRBNK TEBR0: BANK Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01709">1709</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gad58e636502d5f7d7ded8f612c77b9c3c"/><section>
+    <title>ERRBNK_TEBR0_BANK_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_BANK_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_BANK_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_BANK_Msk&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga3cf4b6d8d2c6337906a1c3d8c4e732dc">ERRBNK_TEBR0_BANK_Pos</link>)</computeroutput></para>
+<para>ERRBNK TEBR0: BANK Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01696">1696</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga3cf4b6d8d2c6337906a1c3d8c4e732dc"/><section>
+    <title>ERRBNK_TEBR0_BANK_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_BANK_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_BANK_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_BANK_Pos&#160;&#160;&#160;24U</computeroutput></para>
+<para>ERRBNK TEBR0: BANK Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01708">1708</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga3cf4b6d8d2c6337906a1c3d8c4e732dc"/><section>
+    <title>ERRBNK_TEBR0_BANK_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_BANK_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_BANK_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_BANK_Pos&#160;&#160;&#160;24U</computeroutput></para>
+<para>ERRBNK TEBR0: BANK Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01695">1695</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga040a21cd3ab10370de0d3fb651539e27"/><section>
+    <title>ERRBNK_TEBR0_LOCATION_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_LOCATION_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_LOCATION_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_LOCATION_Msk&#160;&#160;&#160;(0x3FFFFFUL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gab0e4eaf6c4fb6ac5e6ba7faac6a8a476">ERRBNK_TEBR0_LOCATION_Pos</link>)</computeroutput></para>
+<para>ERRBNK TEBR0: LOCATION Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01712">1712</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga040a21cd3ab10370de0d3fb651539e27"/><section>
+    <title>ERRBNK_TEBR0_LOCATION_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_LOCATION_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_LOCATION_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_LOCATION_Msk&#160;&#160;&#160;(0x3FFFFFUL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gab0e4eaf6c4fb6ac5e6ba7faac6a8a476">ERRBNK_TEBR0_LOCATION_Pos</link>)</computeroutput></para>
+<para>ERRBNK TEBR0: LOCATION Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01699">1699</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gab0e4eaf6c4fb6ac5e6ba7faac6a8a476"/><section>
+    <title>ERRBNK_TEBR0_LOCATION_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_LOCATION_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_LOCATION_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_LOCATION_Pos&#160;&#160;&#160;2U</computeroutput></para>
+<para>ERRBNK TEBR0: LOCATION Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01711">1711</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gab0e4eaf6c4fb6ac5e6ba7faac6a8a476"/><section>
+    <title>ERRBNK_TEBR0_LOCATION_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_LOCATION_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_LOCATION_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_LOCATION_Pos&#160;&#160;&#160;2U</computeroutput></para>
+<para>ERRBNK TEBR0: LOCATION Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01698">1698</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gac4234faf731f9ac8428ab0b41f88c51f"/><section>
+    <title>ERRBNK_TEBR0_LOCKED_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_LOCKED_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_LOCKED_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_LOCKED_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga4823c7e1770aa7d0ae06758043bd026a">ERRBNK_TEBR0_LOCKED_Pos</link>)</computeroutput></para>
+<para>ERRBNK TEBR0: LOCKED Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01715">1715</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gac4234faf731f9ac8428ab0b41f88c51f"/><section>
+    <title>ERRBNK_TEBR0_LOCKED_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_LOCKED_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_LOCKED_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_LOCKED_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga4823c7e1770aa7d0ae06758043bd026a">ERRBNK_TEBR0_LOCKED_Pos</link>)</computeroutput></para>
+<para>ERRBNK TEBR0: LOCKED Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01702">1702</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga4823c7e1770aa7d0ae06758043bd026a"/><section>
+    <title>ERRBNK_TEBR0_LOCKED_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_LOCKED_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_LOCKED_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_LOCKED_Pos&#160;&#160;&#160;1U</computeroutput></para>
+<para>ERRBNK TEBR0: LOCKED Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01714">1714</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga4823c7e1770aa7d0ae06758043bd026a"/><section>
+    <title>ERRBNK_TEBR0_LOCKED_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_LOCKED_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_LOCKED_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_LOCKED_Pos&#160;&#160;&#160;1U</computeroutput></para>
+<para>ERRBNK TEBR0: LOCKED Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01701">1701</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga1b45e2cde3470ef70329bbc52d113fd9"/><section>
+    <title>ERRBNK_TEBR0_POISON_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_POISON_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_POISON_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_POISON_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gab7ccdc49857bb574c333bb26877c6a63">ERRBNK_TEBR0_POISON_Pos</link>)</computeroutput></para>
+<para>ERRBNK TEBR0: POISON Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01703">1703</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga1b45e2cde3470ef70329bbc52d113fd9"/><section>
+    <title>ERRBNK_TEBR0_POISON_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_POISON_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_POISON_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_POISON_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gab7ccdc49857bb574c333bb26877c6a63">ERRBNK_TEBR0_POISON_Pos</link>)</computeroutput></para>
+<para>ERRBNK TEBR0: POISON Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01690">1690</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gab7ccdc49857bb574c333bb26877c6a63"/><section>
+    <title>ERRBNK_TEBR0_POISON_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_POISON_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_POISON_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_POISON_Pos&#160;&#160;&#160;28U</computeroutput></para>
+<para>ERRBNK TEBR0: POISON Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01702">1702</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gab7ccdc49857bb574c333bb26877c6a63"/><section>
+    <title>ERRBNK_TEBR0_POISON_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_POISON_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_POISON_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_POISON_Pos&#160;&#160;&#160;28U</computeroutput></para>
+<para>ERRBNK TEBR0: POISON Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01689">1689</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga2ed666c4fc20979a797871a4f1e12ba6"/><section>
+    <title>ERRBNK_TEBR0_SWDEF_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_SWDEF_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_SWDEF_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_SWDEF_Msk&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gaa41d89f6f4c383e525df7f7d1c5c029d">ERRBNK_TEBR0_SWDEF_Pos</link>)</computeroutput></para>
+<para>ERRBNK TEBR0: SWDEF Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01700">1700</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga2ed666c4fc20979a797871a4f1e12ba6"/><section>
+    <title>ERRBNK_TEBR0_SWDEF_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_SWDEF_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_SWDEF_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_SWDEF_Msk&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gaa41d89f6f4c383e525df7f7d1c5c029d">ERRBNK_TEBR0_SWDEF_Pos</link>)</computeroutput></para>
+<para>ERRBNK TEBR0: SWDEF Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01687">1687</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gaa41d89f6f4c383e525df7f7d1c5c029d"/><section>
+    <title>ERRBNK_TEBR0_SWDEF_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_SWDEF_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_SWDEF_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_SWDEF_Pos&#160;&#160;&#160;30U</computeroutput></para>
+<para>ERRBNK TEBR0: SWDEF Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01699">1699</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gaa41d89f6f4c383e525df7f7d1c5c029d"/><section>
+    <title>ERRBNK_TEBR0_SWDEF_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_SWDEF_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_SWDEF_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_SWDEF_Pos&#160;&#160;&#160;30U</computeroutput></para>
+<para>ERRBNK TEBR0: SWDEF Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01686">1686</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga0dece8f55702232a4b0ddf4218dc6b51"/><section>
+    <title>ERRBNK_TEBR0_TYPE_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_TYPE_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_TYPE_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_TYPE_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gafd2d2fa3f7cae8cf05927361df7b4eaf">ERRBNK_TEBR0_TYPE_Pos</link>)</computeroutput></para>
+<para>ERRBNK TEBR0: TYPE Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01706">1706</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga0dece8f55702232a4b0ddf4218dc6b51"/><section>
+    <title>ERRBNK_TEBR0_TYPE_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_TYPE_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_TYPE_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_TYPE_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gafd2d2fa3f7cae8cf05927361df7b4eaf">ERRBNK_TEBR0_TYPE_Pos</link>)</computeroutput></para>
+<para>ERRBNK TEBR0: TYPE Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01693">1693</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gafd2d2fa3f7cae8cf05927361df7b4eaf"/><section>
+    <title>ERRBNK_TEBR0_TYPE_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_TYPE_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_TYPE_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_TYPE_Pos&#160;&#160;&#160;27U</computeroutput></para>
+<para>ERRBNK TEBR0: TYPE Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01705">1705</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gafd2d2fa3f7cae8cf05927361df7b4eaf"/><section>
+    <title>ERRBNK_TEBR0_TYPE_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_TYPE_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_TYPE_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_TYPE_Pos&#160;&#160;&#160;27U</computeroutput></para>
+<para>ERRBNK TEBR0: TYPE Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01692">1692</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gaef9c8653a3f94e49ecce1d0446154297"/><section>
+    <title>ERRBNK_TEBR0_VALID_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_VALID_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_VALID_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_VALID_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; /*<link linkend="_group___c_m_s_i_s___s_c_b_1ga9e30e5399c4c6622bc877389884e7ff4">ERRBNK_TEBR0_VALID_Pos</link>*/)</computeroutput></para>
+<para>ERRBNK TEBR0: VALID Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01718">1718</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gaef9c8653a3f94e49ecce1d0446154297"/><section>
+    <title>ERRBNK_TEBR0_VALID_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_VALID_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_VALID_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_VALID_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; /*<link linkend="_group___c_m_s_i_s___s_c_b_1ga9e30e5399c4c6622bc877389884e7ff4">ERRBNK_TEBR0_VALID_Pos</link>*/)</computeroutput></para>
+<para>ERRBNK TEBR0: VALID Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01705">1705</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga9e30e5399c4c6622bc877389884e7ff4"/><section>
+    <title>ERRBNK_TEBR0_VALID_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_VALID_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_VALID_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_VALID_Pos&#160;&#160;&#160;0U</computeroutput></para>
+<para>ERRBNK TEBR0: VALID Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01717">1717</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga9e30e5399c4c6622bc877389884e7ff4"/><section>
+    <title>ERRBNK_TEBR0_VALID_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR0_VALID_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR0_VALID_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR0_VALID_Pos&#160;&#160;&#160;0U</computeroutput></para>
+<para>ERRBNK TEBR0: VALID Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01704">1704</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gaf9b1bc9ab3aab722cc366e47c965f52a"/><section>
+    <title>ERRBNK_TEBR1_BANK_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_BANK_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_BANK_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_BANK_Msk&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gaf76b700aa80e7f780df7072db468ba11">ERRBNK_TEBR1_BANK_Pos</link>)</computeroutput></para>
+<para>ERRBNK TEBR1: BANK Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01731">1731</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gaf9b1bc9ab3aab722cc366e47c965f52a"/><section>
+    <title>ERRBNK_TEBR1_BANK_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_BANK_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_BANK_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_BANK_Msk&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gaf76b700aa80e7f780df7072db468ba11">ERRBNK_TEBR1_BANK_Pos</link>)</computeroutput></para>
+<para>ERRBNK TEBR1: BANK Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01718">1718</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gaf76b700aa80e7f780df7072db468ba11"/><section>
+    <title>ERRBNK_TEBR1_BANK_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_BANK_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_BANK_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_BANK_Pos&#160;&#160;&#160;24U</computeroutput></para>
+<para>ERRBNK TEBR1: BANK Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01730">1730</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gaf76b700aa80e7f780df7072db468ba11"/><section>
+    <title>ERRBNK_TEBR1_BANK_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_BANK_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_BANK_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_BANK_Pos&#160;&#160;&#160;24U</computeroutput></para>
+<para>ERRBNK TEBR1: BANK Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01717">1717</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga5fb5252e8325ca90e12d06592599b677"/><section>
+    <title>ERRBNK_TEBR1_LOCATION_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_LOCATION_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_LOCATION_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_LOCATION_Msk&#160;&#160;&#160;(0x3FFFFFUL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga72082e9ed235f4177338c5e211f33bde">ERRBNK_TEBR1_LOCATION_Pos</link>)</computeroutput></para>
+<para>ERRBNK TEBR1: LOCATION Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01734">1734</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga5fb5252e8325ca90e12d06592599b677"/><section>
+    <title>ERRBNK_TEBR1_LOCATION_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_LOCATION_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_LOCATION_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_LOCATION_Msk&#160;&#160;&#160;(0x3FFFFFUL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga72082e9ed235f4177338c5e211f33bde">ERRBNK_TEBR1_LOCATION_Pos</link>)</computeroutput></para>
+<para>ERRBNK TEBR1: LOCATION Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01721">1721</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga72082e9ed235f4177338c5e211f33bde"/><section>
+    <title>ERRBNK_TEBR1_LOCATION_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_LOCATION_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_LOCATION_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_LOCATION_Pos&#160;&#160;&#160;2U</computeroutput></para>
+<para>ERRBNK TEBR1: LOCATION Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01733">1733</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga72082e9ed235f4177338c5e211f33bde"/><section>
+    <title>ERRBNK_TEBR1_LOCATION_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_LOCATION_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_LOCATION_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_LOCATION_Pos&#160;&#160;&#160;2U</computeroutput></para>
+<para>ERRBNK TEBR1: LOCATION Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01720">1720</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga01ac5751b5956f39d45bc4c1802c0bca"/><section>
+    <title>ERRBNK_TEBR1_LOCKED_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_LOCKED_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_LOCKED_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_LOCKED_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga8fcc66ff900b8c3227ea474475a670d6">ERRBNK_TEBR1_LOCKED_Pos</link>)</computeroutput></para>
+<para>ERRBNK TEBR1: LOCKED Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01737">1737</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga01ac5751b5956f39d45bc4c1802c0bca"/><section>
+    <title>ERRBNK_TEBR1_LOCKED_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_LOCKED_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_LOCKED_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_LOCKED_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga8fcc66ff900b8c3227ea474475a670d6">ERRBNK_TEBR1_LOCKED_Pos</link>)</computeroutput></para>
+<para>ERRBNK TEBR1: LOCKED Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01724">1724</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga8fcc66ff900b8c3227ea474475a670d6"/><section>
+    <title>ERRBNK_TEBR1_LOCKED_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_LOCKED_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_LOCKED_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_LOCKED_Pos&#160;&#160;&#160;1U</computeroutput></para>
+<para>ERRBNK TEBR1: LOCKED Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01736">1736</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga8fcc66ff900b8c3227ea474475a670d6"/><section>
+    <title>ERRBNK_TEBR1_LOCKED_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_LOCKED_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_LOCKED_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_LOCKED_Pos&#160;&#160;&#160;1U</computeroutput></para>
+<para>ERRBNK TEBR1: LOCKED Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01723">1723</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga23836ccc0ee921e1a5ff61f40ae65add"/><section>
+    <title>ERRBNK_TEBR1_POISON_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_POISON_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_POISON_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_POISON_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga2912e7257126aeb9bff32ea824c8040b">ERRBNK_TEBR1_POISON_Pos</link>)</computeroutput></para>
+<para>ERRBNK TEBR1: POISON Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01725">1725</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga23836ccc0ee921e1a5ff61f40ae65add"/><section>
+    <title>ERRBNK_TEBR1_POISON_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_POISON_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_POISON_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_POISON_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga2912e7257126aeb9bff32ea824c8040b">ERRBNK_TEBR1_POISON_Pos</link>)</computeroutput></para>
+<para>ERRBNK TEBR1: POISON Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01712">1712</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga2912e7257126aeb9bff32ea824c8040b"/><section>
+    <title>ERRBNK_TEBR1_POISON_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_POISON_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_POISON_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_POISON_Pos&#160;&#160;&#160;28U</computeroutput></para>
+<para>ERRBNK TEBR1: POISON Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01724">1724</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga2912e7257126aeb9bff32ea824c8040b"/><section>
+    <title>ERRBNK_TEBR1_POISON_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_POISON_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_POISON_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_POISON_Pos&#160;&#160;&#160;28U</computeroutput></para>
+<para>ERRBNK TEBR1: POISON Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01711">1711</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gae2aa0c87f31b2b1e917226e06cc4df8d"/><section>
+    <title>ERRBNK_TEBR1_SWDEF_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_SWDEF_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_SWDEF_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_SWDEF_Msk&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gaa79fbc05cf56d9944ec7122534d2451f">ERRBNK_TEBR1_SWDEF_Pos</link>)</computeroutput></para>
+<para>ERRBNK TEBR1: SWDEF Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01722">1722</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gae2aa0c87f31b2b1e917226e06cc4df8d"/><section>
+    <title>ERRBNK_TEBR1_SWDEF_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_SWDEF_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_SWDEF_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_SWDEF_Msk&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gaa79fbc05cf56d9944ec7122534d2451f">ERRBNK_TEBR1_SWDEF_Pos</link>)</computeroutput></para>
+<para>ERRBNK TEBR1: SWDEF Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01709">1709</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gaa79fbc05cf56d9944ec7122534d2451f"/><section>
+    <title>ERRBNK_TEBR1_SWDEF_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_SWDEF_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_SWDEF_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_SWDEF_Pos&#160;&#160;&#160;30U</computeroutput></para>
+<para>ERRBNK TEBR1: SWDEF Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01721">1721</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gaa79fbc05cf56d9944ec7122534d2451f"/><section>
+    <title>ERRBNK_TEBR1_SWDEF_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_SWDEF_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_SWDEF_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_SWDEF_Pos&#160;&#160;&#160;30U</computeroutput></para>
+<para>ERRBNK TEBR1: SWDEF Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01708">1708</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga455a083e7d931a86269adb2a3727b8de"/><section>
+    <title>ERRBNK_TEBR1_TYPE_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_TYPE_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_TYPE_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_TYPE_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga0918466eb38c8f6a48865bf206d5ca32">ERRBNK_TEBR1_TYPE_Pos</link>)</computeroutput></para>
+<para>ERRBNK TEBR1: TYPE Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01728">1728</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga455a083e7d931a86269adb2a3727b8de"/><section>
+    <title>ERRBNK_TEBR1_TYPE_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_TYPE_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_TYPE_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_TYPE_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga0918466eb38c8f6a48865bf206d5ca32">ERRBNK_TEBR1_TYPE_Pos</link>)</computeroutput></para>
+<para>ERRBNK TEBR1: TYPE Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01715">1715</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga0918466eb38c8f6a48865bf206d5ca32"/><section>
+    <title>ERRBNK_TEBR1_TYPE_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_TYPE_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_TYPE_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_TYPE_Pos&#160;&#160;&#160;27U</computeroutput></para>
+<para>ERRBNK TEBR1: TYPE Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01727">1727</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga0918466eb38c8f6a48865bf206d5ca32"/><section>
+    <title>ERRBNK_TEBR1_TYPE_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_TYPE_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_TYPE_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_TYPE_Pos&#160;&#160;&#160;27U</computeroutput></para>
+<para>ERRBNK TEBR1: TYPE Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01714">1714</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gad25c4eadbe5872c4fd956ae32223c36c"/><section>
+    <title>ERRBNK_TEBR1_VALID_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_VALID_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_VALID_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_VALID_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; /*<link linkend="_group___c_m_s_i_s___s_c_b_1gaf1a15db93ae93ba4605f9fd3bf61b702">ERRBNK_TEBR1_VALID_Pos</link>*/)</computeroutput></para>
+<para>ERRBNK TEBR1: VALID Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01740">1740</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gad25c4eadbe5872c4fd956ae32223c36c"/><section>
+    <title>ERRBNK_TEBR1_VALID_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_VALID_Msk</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_VALID_Msk</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_VALID_Msk&#160;&#160;&#160;(0x1UL &lt;&lt; /*<link linkend="_group___c_m_s_i_s___s_c_b_1gaf1a15db93ae93ba4605f9fd3bf61b702">ERRBNK_TEBR1_VALID_Pos</link>*/)</computeroutput></para>
+<para>ERRBNK TEBR1: VALID Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01727">1727</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gaf1a15db93ae93ba4605f9fd3bf61b702"/><section>
+    <title>ERRBNK_TEBR1_VALID_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_VALID_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_VALID_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_VALID_Pos&#160;&#160;&#160;0U</computeroutput></para>
+<para>ERRBNK TEBR1: VALID Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01739">1739</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gaf1a15db93ae93ba4605f9fd3bf61b702"/><section>
+    <title>ERRBNK_TEBR1_VALID_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ERRBNK_TEBR1_VALID_Pos</primary><secondary>Error Banking Registers (IMPLEMENTATION DEFINED)</secondary></indexterm>
+<indexterm><primary>Error Banking Registers (IMPLEMENTATION DEFINED)</primary><secondary>ERRBNK_TEBR1_VALID_Pos</secondary></indexterm>
+<para><computeroutput>#define ERRBNK_TEBR1_VALID_Pos&#160;&#160;&#160;0U</computeroutput></para>
+<para>ERRBNK TEBR1: VALID Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01726">1726</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+</section>
+    <xi:include href="group___prc_cfg_inf___type.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

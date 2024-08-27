@@ -1,0 +1,179 @@
+\doxysection{mpu\+\_\+armv7.\+h}
+\hypertarget{mpu__armv7_8h_source}{}\label{mpu__armv7_8h_source}\index{Inc/mpu\_armv7.h@{Inc/mpu\_armv7.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00001}00001\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00002}00002\ \textcolor{comment}{\ *\ @file\ \ \ \ \ mpu\_armv7.h}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00003}00003\ \textcolor{comment}{\ *\ @brief\ \ \ \ CMSIS\ MPU\ API\ for\ Armv7-\/M\ MPU}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00004}00004\ \textcolor{comment}{\ *\ @version\ \ V5.1.2}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00005}00005\ \textcolor{comment}{\ *\ @date\ \ \ \ \ 25.\ May\ 2020}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00006}00006\ \textcolor{comment}{\ ******************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00007}00007\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00008}00008\ \textcolor{comment}{\ *\ Copyright\ (c)\ 2017-\/2020\ Arm\ Limited.\ All\ rights\ reserved.}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00009}00009\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00010}00010\ \textcolor{comment}{\ *\ SPDX-\/License-\/Identifier:\ Apache-\/2.0}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00011}00011\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00012}00012\ \textcolor{comment}{\ *\ Licensed\ under\ the\ Apache\ License,\ Version\ 2.0\ (the\ License);\ you\ may}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00013}00013\ \textcolor{comment}{\ *\ not\ use\ this\ file\ except\ in\ compliance\ with\ the\ License.}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00014}00014\ \textcolor{comment}{\ *\ You\ may\ obtain\ a\ copy\ of\ the\ License\ at}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00015}00015\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00016}00016\ \textcolor{comment}{\ *\ www.apache.org/licenses/LICENSE-\/2.0}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00017}00017\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00018}00018\ \textcolor{comment}{\ *\ Unless\ required\ by\ applicable\ law\ or\ agreed\ to\ in\ writing,\ software}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00019}00019\ \textcolor{comment}{\ *\ distributed\ under\ the\ License\ is\ distributed\ on\ an\ AS\ IS\ BASIS,\ WITHOUT}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00020}00020\ \textcolor{comment}{\ *\ WARRANTIES\ OR\ CONDITIONS\ OF\ ANY\ KIND,\ either\ express\ or\ implied.}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00021}00021\ \textcolor{comment}{\ *\ See\ the\ License\ for\ the\ specific\ language\ governing\ permissions\ and}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00022}00022\ \textcolor{comment}{\ *\ limitations\ under\ the\ License.}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00023}00023\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00024}00024\ \ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00025}00025\ \textcolor{preprocessor}{\#if\ \ \ defined\ (\ \_\_ICCARM\_\_\ )}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00026}00026\ \textcolor{preprocessor}{\ \ \#pragma\ system\_include\ \ \ \ \ \ \ \ \ }\textcolor{comment}{/*\ treat\ file\ as\ system\ include\ file\ for\ MISRA\ check\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00027}00027\ \textcolor{preprocessor}{\#elif\ defined\ (\_\_clang\_\_)}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00028}00028\ \textcolor{preprocessor}{\ \ \#pragma\ clang\ system\_header\ \ \ \ }\textcolor{comment}{/*\ treat\ file\ as\ system\ include\ file\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00029}00029\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00030}00030\ \ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00031}00031\ \textcolor{preprocessor}{\#ifndef\ ARM\_MPU\_ARMV7\_H}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00032}00032\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_ARMV7\_H}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00034}00034\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_32B\ \ \ \ \ \ ((uint8\_t)0x04U)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00035}00035\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_64B\ \ \ \ \ \ ((uint8\_t)0x05U)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00036}00036\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_128B\ \ \ \ \ ((uint8\_t)0x06U)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00037}00037\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_256B\ \ \ \ \ ((uint8\_t)0x07U)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00038}00038\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_512B\ \ \ \ \ ((uint8\_t)0x08U)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00039}00039\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_1KB\ \ \ \ \ \ ((uint8\_t)0x09U)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00040}00040\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_2KB\ \ \ \ \ \ ((uint8\_t)0x0AU)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00041}00041\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_4KB\ \ \ \ \ \ ((uint8\_t)0x0BU)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00042}00042\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_8KB\ \ \ \ \ \ ((uint8\_t)0x0CU)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00043}00043\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_16KB\ \ \ \ \ ((uint8\_t)0x0DU)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00044}00044\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_32KB\ \ \ \ \ ((uint8\_t)0x0EU)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00045}00045\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_64KB\ \ \ \ \ ((uint8\_t)0x0FU)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00046}00046\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_128KB\ \ \ \ ((uint8\_t)0x10U)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00047}00047\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_256KB\ \ \ \ ((uint8\_t)0x11U)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00048}00048\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_512KB\ \ \ \ ((uint8\_t)0x12U)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00049}00049\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_1MB\ \ \ \ \ \ ((uint8\_t)0x13U)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00050}00050\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_2MB\ \ \ \ \ \ ((uint8\_t)0x14U)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00051}00051\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_4MB\ \ \ \ \ \ ((uint8\_t)0x15U)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00052}00052\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_8MB\ \ \ \ \ \ ((uint8\_t)0x16U)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00053}00053\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_16MB\ \ \ \ \ ((uint8\_t)0x17U)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00054}00054\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_32MB\ \ \ \ \ ((uint8\_t)0x18U)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00055}00055\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_64MB\ \ \ \ \ ((uint8\_t)0x19U)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00056}00056\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_128MB\ \ \ \ ((uint8\_t)0x1AU)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00057}00057\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_256MB\ \ \ \ ((uint8\_t)0x1BU)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00058}00058\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_512MB\ \ \ \ ((uint8\_t)0x1CU)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00059}00059\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_1GB\ \ \ \ \ \ ((uint8\_t)0x1DU)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00060}00060\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_2GB\ \ \ \ \ \ ((uint8\_t)0x1EU)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00061}00061\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_REGION\_SIZE\_4GB\ \ \ \ \ \ ((uint8\_t)0x1FU)\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00062}00062\ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00063}00063\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_AP\_NONE\ 0U\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00064}00064\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_AP\_PRIV\ 1U\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00065}00065\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_AP\_URO\ \ 2U\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00066}00066\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_AP\_FULL\ 3U\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00067}00067\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_AP\_PRO\ \ 5U\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00068}00068\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_AP\_RO\ \ \ 6U\ }}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00075}00075\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_RBAR(Region,\ BaseAddress)\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00076}00076\ \textcolor{preprocessor}{\ \ (((BaseAddress)\ \&\ MPU\_RBAR\_ADDR\_Msk)\ |\ \ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00077}00077\ \textcolor{preprocessor}{\ \ \ ((Region)\ \&\ MPU\_RBAR\_REGION\_Msk)\ \ \ \ |\ \ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00078}00078\ \textcolor{preprocessor}{\ \ \ (MPU\_RBAR\_VALID\_Msk))}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00088}00088\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_ACCESS\_(TypeExtField,\ IsShareable,\ IsCacheable,\ IsBufferable)\ \ \ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00089}00089\ \textcolor{preprocessor}{\ \ ((((TypeExtField)\ <<\ MPU\_RASR\_TEX\_Pos)\ \&\ MPU\_RASR\_TEX\_Msk)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ |\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00090}00090\ \textcolor{preprocessor}{\ \ \ (((IsShareable)\ \ <<\ MPU\_RASR\_S\_Pos)\ \ \ \&\ MPU\_RASR\_S\_Msk)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ |\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00091}00091\ \textcolor{preprocessor}{\ \ \ (((IsCacheable)\ \ <<\ MPU\_RASR\_C\_Pos)\ \ \ \&\ MPU\_RASR\_C\_Msk)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ |\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00092}00092\ \textcolor{preprocessor}{\ \ \ (((IsBufferable)\ <<\ MPU\_RASR\_B\_Pos)\ \ \ \&\ MPU\_RASR\_B\_Msk))}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00093}00093\ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00103}00103\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_RASR\_EX(DisableExec,\ AccessPermission,\ AccessAttributes,\ SubRegionDisable,\ Size)\ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00104}00104\ \textcolor{preprocessor}{\ \ ((((DisableExec)\ \ \ \ \ \ <<\ MPU\_RASR\_XN\_Pos)\ \ \ \&\ MPU\_RASR\_XN\_Msk)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ |\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00105}00105\ \textcolor{preprocessor}{\ \ \ (((AccessPermission)\ <<\ MPU\_RASR\_AP\_Pos)\ \ \ \&\ MPU\_RASR\_AP\_Msk)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ |\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00106}00106\ \textcolor{preprocessor}{\ \ \ (((AccessAttributes)\ \&\ (MPU\_RASR\_TEX\_Msk\ |\ MPU\_RASR\_S\_Msk\ |\ MPU\_RASR\_C\_Msk\ |\ MPU\_RASR\_B\_Msk)))\ |\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00107}00107\ \textcolor{preprocessor}{\ \ \ (((SubRegionDisable)\ <<\ MPU\_RASR\_SRD\_Pos)\ \ \&\ MPU\_RASR\_SRD\_Msk)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ |\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00108}00108\ \textcolor{preprocessor}{\ \ \ (((Size)\ \ \ \ \ \ \ \ \ \ \ \ \ <<\ MPU\_RASR\_SIZE\_Pos)\ \&\ MPU\_RASR\_SIZE\_Msk)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ |\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00109}00109\ \textcolor{preprocessor}{\ \ \ (((MPU\_RASR\_ENABLE\_Msk))))}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00110}00110\ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00123}00123\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_RASR(DisableExec,\ AccessPermission,\ TypeExtField,\ IsShareable,\ IsCacheable,\ IsBufferable,\ SubRegionDisable,\ Size)\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00124}00124\ \textcolor{preprocessor}{\ \ ARM\_MPU\_RASR\_EX(DisableExec,\ AccessPermission,\ ARM\_MPU\_ACCESS\_(TypeExtField,\ IsShareable,\ IsCacheable,\ IsBufferable),\ SubRegionDisable,\ Size)}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00125}00125\ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00133}00133\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_ACCESS\_ORDERED\ ARM\_MPU\_ACCESS\_(0U,\ 1U,\ 0U,\ 0U)}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00134}00134\ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00144}00144\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_ACCESS\_DEVICE(IsShareable)\ ((IsShareable)\ ?\ ARM\_MPU\_ACCESS\_(0U,\ 1U,\ 0U,\ 1U)\ :\ ARM\_MPU\_ACCESS\_(2U,\ 0U,\ 0U,\ 0U))}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00145}00145\ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00157}00157\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_ACCESS\_NORMAL(OuterCp,\ InnerCp,\ IsShareable)\ ARM\_MPU\_ACCESS\_((4U\ |\ (OuterCp)),\ IsShareable,\ ((InnerCp)\ >>\ 1U),\ ((InnerCp)\ \&\ 1U))}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00158}00158\ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00162}00162\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_CACHEP\_NOCACHE\ 0U}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00163}00163\ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00167}00167\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_CACHEP\_WB\_WRA\ 1U}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00168}00168\ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00172}00172\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_CACHEP\_WT\_NWA\ 2U}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00173}00173\ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00177}00177\ \textcolor{preprocessor}{\#define\ ARM\_MPU\_CACHEP\_WB\_NWA\ 3U}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00178}00178\ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00179}00179\ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00183}\mbox{\hyperlink{struct_a_r_m___m_p_u___region__t}{00183}}\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00184}\mbox{\hyperlink{struct_a_r_m___m_p_u___region__t_a0b30f076910cb037e031563046dd5e10}{00184}}\ \ \ uint32\_t\ \mbox{\hyperlink{struct_a_r_m___m_p_u___region__t_a0b30f076910cb037e031563046dd5e10}{RBAR}};\ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00185}\mbox{\hyperlink{struct_a_r_m___m_p_u___region__t_a868291e1acbf1ce869f6e98a7c68718a}{00185}}\ \ \ uint32\_t\ \mbox{\hyperlink{struct_a_r_m___m_p_u___region__t_a868291e1acbf1ce869f6e98a7c68718a}{RASR}};\ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00186}00186\ \}\ \mbox{\hyperlink{struct_a_r_m___m_p_u___region__t}{ARM\_MPU\_Region\_t}};}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00187}00187\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00191}00191\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ ARM\_MPU\_Enable(uint32\_t\ MPU\_Control)}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00192}00192\ \{}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00193}00193\ \ \ \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_ga671101179b5943990785f36f8c1e2269}{\_\_DMB}}();}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00194}00194\ \ \ \mbox{\hyperlink{group___c_m_s_i_s___c_o_r_e_gaad8182e72fe5037a6ba1eb65a1554e0b}{MPU}}-\/>CTRL\ =\ MPU\_Control\ |\ \mbox{\hyperlink{group___c_m_s_i_s___c_o_r_e_gae72b283f6e38b641c877182f03d95844}{MPU\_CTRL\_ENABLE\_Msk}};}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00195}00195\ \textcolor{preprocessor}{\#ifdef\ SCB\_SHCSR\_MEMFAULTENA\_Msk}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00196}00196\ \ \ \mbox{\hyperlink{group___c_m_s_i_s___c_o_r_e_gaaaf6477c2bde2f00f99e3c2fd1060b01}{SCB}}-\/>SHCSR\ |=\ \mbox{\hyperlink{group___c_m_s_i_s___c_o_r_e_gaf084424fa1f69bea36a1c44899d83d17}{SCB\_SHCSR\_MEMFAULTENA\_Msk}};}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00197}00197\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00198}00198\ \ \ \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_ga067d257a2b34565410acefb5afef2203}{\_\_DSB}}();}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00199}00199\ \ \ \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_gaad233022e850a009fc6f7602be1182f6}{\_\_ISB}}();}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00200}00200\ \}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00201}00201\ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00204}00204\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ ARM\_MPU\_Disable(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00205}00205\ \{}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00206}00206\ \ \ \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_ga671101179b5943990785f36f8c1e2269}{\_\_DMB}}();}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00207}00207\ \textcolor{preprocessor}{\#ifdef\ SCB\_SHCSR\_MEMFAULTENA\_Msk}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00208}00208\ \ \ \mbox{\hyperlink{group___c_m_s_i_s___c_o_r_e_gaaaf6477c2bde2f00f99e3c2fd1060b01}{SCB}}-\/>SHCSR\ \&=\ \string~SCB\_SHCSR\_MEMFAULTENA\_Msk;}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00209}00209\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00210}00210\ \ \ \mbox{\hyperlink{group___c_m_s_i_s___c_o_r_e_gaad8182e72fe5037a6ba1eb65a1554e0b}{MPU}}-\/>CTRL\ \ \&=\ \string~MPU\_CTRL\_ENABLE\_Msk;}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00211}00211\ \ \ \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_ga067d257a2b34565410acefb5afef2203}{\_\_DSB}}();}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00212}00212\ \ \ \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_gaad233022e850a009fc6f7602be1182f6}{\_\_ISB}}();}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00213}00213\ \}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00214}00214\ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00218}00218\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ ARM\_MPU\_ClrRegion(uint32\_t\ rnr)}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00219}00219\ \{}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00220}00220\ \ \ \mbox{\hyperlink{group___c_m_s_i_s___c_o_r_e_gaad8182e72fe5037a6ba1eb65a1554e0b}{MPU}}-\/>RNR\ =\ rnr;}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00221}00221\ \ \ \mbox{\hyperlink{group___c_m_s_i_s___c_o_r_e_gaad8182e72fe5037a6ba1eb65a1554e0b}{MPU}}-\/>RASR\ =\ 0U;}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00222}00222\ \}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00223}00223\ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00228}00228\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ ARM\_MPU\_SetRegion(uint32\_t\ rbar,\ uint32\_t\ rasr)}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00229}00229\ \{}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00230}00230\ \ \ \mbox{\hyperlink{group___c_m_s_i_s___c_o_r_e_gaad8182e72fe5037a6ba1eb65a1554e0b}{MPU}}-\/>RBAR\ =\ rbar;}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00231}00231\ \ \ \mbox{\hyperlink{group___c_m_s_i_s___c_o_r_e_gaad8182e72fe5037a6ba1eb65a1554e0b}{MPU}}-\/>RASR\ =\ rasr;}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00232}00232\ \}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00233}00233\ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00239}00239\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ ARM\_MPU\_SetRegionEx(uint32\_t\ rnr,\ uint32\_t\ rbar,\ uint32\_t\ rasr)}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00240}00240\ \{}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00241}00241\ \ \ \mbox{\hyperlink{group___c_m_s_i_s___c_o_r_e_gaad8182e72fe5037a6ba1eb65a1554e0b}{MPU}}-\/>RNR\ =\ rnr;}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00242}00242\ \ \ \mbox{\hyperlink{group___c_m_s_i_s___c_o_r_e_gaad8182e72fe5037a6ba1eb65a1554e0b}{MPU}}-\/>RBAR\ =\ rbar;}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00243}00243\ \ \ \mbox{\hyperlink{group___c_m_s_i_s___c_o_r_e_gaad8182e72fe5037a6ba1eb65a1554e0b}{MPU}}-\/>RASR\ =\ rasr;}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00244}00244\ \}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00245}00245\ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00251}00251\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ ARM\_MPU\_OrderedMemcpy(\textcolor{keyword}{volatile}\ uint32\_t*\ dst,\ \textcolor{keyword}{const}\ uint32\_t*\ \_\_RESTRICT\ src,\ uint32\_t\ len)}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00252}00252\ \{}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00253}00253\ \ \ uint32\_t\ i;}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00254}00254\ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0U;\ i\ <\ len;\ ++i)\ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00255}00255\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00256}00256\ \ \ \ \ dst[i]\ =\ src[i];}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00257}00257\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00258}00258\ \}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00259}00259\ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00264}00264\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ ARM\_MPU\_Load(\mbox{\hyperlink{struct_a_r_m___m_p_u___region__t}{ARM\_MPU\_Region\_t}}\ \textcolor{keyword}{const}*\ table,\ uint32\_t\ cnt)\ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00265}00265\ \{}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00266}00266\ \ \ \textcolor{keyword}{const}\ uint32\_t\ rowWordSize\ =\ \textcolor{keyword}{sizeof}(\mbox{\hyperlink{struct_a_r_m___m_p_u___region__t}{ARM\_MPU\_Region\_t}})/4U;}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00267}00267\ \ \ \textcolor{keywordflow}{while}\ (cnt\ >\ MPU\_TYPE\_RALIASES)\ \{}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00268}00268\ \ \ \ \ ARM\_MPU\_OrderedMemcpy(\&(\mbox{\hyperlink{group___c_m_s_i_s___c_o_r_e_gaad8182e72fe5037a6ba1eb65a1554e0b}{MPU}}-\/>RBAR),\ \&(table-\/>\mbox{\hyperlink{struct_a_r_m___m_p_u___region__t_a0b30f076910cb037e031563046dd5e10}{RBAR}}),\ MPU\_TYPE\_RALIASES*rowWordSize);}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00269}00269\ \ \ \ \ table\ +=\ MPU\_TYPE\_RALIASES;}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00270}00270\ \ \ \ \ cnt\ -\/=\ MPU\_TYPE\_RALIASES;}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00271}00271\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00272}00272\ \ \ ARM\_MPU\_OrderedMemcpy(\&(\mbox{\hyperlink{group___c_m_s_i_s___c_o_r_e_gaad8182e72fe5037a6ba1eb65a1554e0b}{MPU}}-\/>RBAR),\ \&(table-\/>\mbox{\hyperlink{struct_a_r_m___m_p_u___region__t_a0b30f076910cb037e031563046dd5e10}{RBAR}}),\ cnt*rowWordSize);}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00273}00273\ \}}
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00274}00274\ }
+\DoxyCodeLine{\Hypertarget{mpu__armv7_8h_source_l00275}00275\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

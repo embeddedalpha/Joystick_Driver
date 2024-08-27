@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_e_w_i_c___type" xml:lang="en-US">
+<title>EWIC_Type Struct Reference</title>
+<indexterm><primary>EWIC_Type</primary></indexterm>
+<para>
+
+<para>Structure type to access the External Wakeup Interrupt Controller Registers (EWIC). </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;core_cm55.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para>__OM uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga94458e6529ff2837e509193e739f445b">EVENTSPR</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga99ed1d1bbc9e85b465fb29f40f37aa3a">RESERVED0</link> [31U]</para>
+</listitem>
+            <listitem><para>__IM uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gae010e6a7e51acc3e194782e8bd6280b1">EVENTMASKA</link></para>
+</listitem>
+            <listitem><para>__IM uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga7a9e0c184d9b20e0a65c94943f2c99c0">EVENTMASK</link> [15]</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Structure type to access the External Wakeup Interrupt Controller Registers (EWIC). </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01570">1570</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+<para>
+The documentation for this struct was generated from the following files:</para>
+Inc/<link linkend="_core__cm55_8h">core_cm55.h</link>Inc/<link linkend="_core__cm85_8h">core_cm85.h</link></section>
+</section>

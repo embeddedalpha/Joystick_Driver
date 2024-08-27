@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_a_d_c___configuration_1_1_regular___external___trigger___event" xml:lang="en-US">
+<title>ADC_Configuration::Regular_External_Trigger_Event Struct Reference</title>
+<indexterm><primary>ADC_Configuration::Regular_External_Trigger_Event</primary></indexterm>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para>uint8_t <link linkend="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1a92fe65f36c6e207c2fc9f273aae64c59">Timer_1_CC1</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1a2ad99180250575c783f7670694b72ccf">Timer_1_CC2</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1a4d3b7576dd5a5fdd45e6dbf23340680f">Timer_1_CC3</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1aeaa05d5d6edba6afaa75538bf075e284">Timer_2_CC2</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1aea2d890dff113844eb9d074b9659501a">Timer_2_CC3</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1a00b35548861d141b4013e3fa59bd0ef8">Timer_2_CC4</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1aa21bc0713dc081199fd9765423f71628">Timer_2_TRGO</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1a5280b1855ec53617a47f8ac55a307fd8">Timer_3_CC1</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1a9848bd75e6c6269ce62f5084de81a7b3">Timer_3_TRGO</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1a6e961e07de8af1e020103adad78a9f94">Timer_4_CC4</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1a858e07db033c4954bfc2fdc321686edd">Timer_5_CC1</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1a10c2047c032cdc736eb64a9e7451d311">Timer_5_CC2</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1afcaff18c0557c919da2c10ff3f14cd0c">Timer_5_CC3</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1a89edcfa905271489559a4beddc201f60">Timer_8_CC1</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1a78fdc758e661dff1a3a6e342daf62b5d">Timer_8_TRGO</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1af44fd9c58968f963a3057e0afb8ee437">EXTI_11</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00199">199</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1af44fd9c58968f963a3057e0afb8ee437"/><section>
+    <title>EXTI_11</title>
+<indexterm><primary>EXTI_11</primary><secondary>ADC_Configuration::Regular_External_Trigger_Event</secondary></indexterm>
+<indexterm><primary>ADC_Configuration::Regular_External_Trigger_Event</primary><secondary>EXTI_11</secondary></indexterm>
+<para><computeroutput>uint8_t EXTI_11</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00215">215</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1a92fe65f36c6e207c2fc9f273aae64c59"/><section>
+    <title>Timer_1_CC1</title>
+<indexterm><primary>Timer_1_CC1</primary><secondary>ADC_Configuration::Regular_External_Trigger_Event</secondary></indexterm>
+<indexterm><primary>ADC_Configuration::Regular_External_Trigger_Event</primary><secondary>Timer_1_CC1</secondary></indexterm>
+<para><computeroutput>uint8_t Timer_1_CC1</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00200">200</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1a2ad99180250575c783f7670694b72ccf"/><section>
+    <title>Timer_1_CC2</title>
+<indexterm><primary>Timer_1_CC2</primary><secondary>ADC_Configuration::Regular_External_Trigger_Event</secondary></indexterm>
+<indexterm><primary>ADC_Configuration::Regular_External_Trigger_Event</primary><secondary>Timer_1_CC2</secondary></indexterm>
+<para><computeroutput>uint8_t Timer_1_CC2</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00201">201</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1a4d3b7576dd5a5fdd45e6dbf23340680f"/><section>
+    <title>Timer_1_CC3</title>
+<indexterm><primary>Timer_1_CC3</primary><secondary>ADC_Configuration::Regular_External_Trigger_Event</secondary></indexterm>
+<indexterm><primary>ADC_Configuration::Regular_External_Trigger_Event</primary><secondary>Timer_1_CC3</secondary></indexterm>
+<para><computeroutput>uint8_t Timer_1_CC3</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00202">202</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1aeaa05d5d6edba6afaa75538bf075e284"/><section>
+    <title>Timer_2_CC2</title>
+<indexterm><primary>Timer_2_CC2</primary><secondary>ADC_Configuration::Regular_External_Trigger_Event</secondary></indexterm>
+<indexterm><primary>ADC_Configuration::Regular_External_Trigger_Event</primary><secondary>Timer_2_CC2</secondary></indexterm>
+<para><computeroutput>uint8_t Timer_2_CC2</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00203">203</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1aea2d890dff113844eb9d074b9659501a"/><section>
+    <title>Timer_2_CC3</title>
+<indexterm><primary>Timer_2_CC3</primary><secondary>ADC_Configuration::Regular_External_Trigger_Event</secondary></indexterm>
+<indexterm><primary>ADC_Configuration::Regular_External_Trigger_Event</primary><secondary>Timer_2_CC3</secondary></indexterm>
+<para><computeroutput>uint8_t Timer_2_CC3</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00204">204</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1a00b35548861d141b4013e3fa59bd0ef8"/><section>
+    <title>Timer_2_CC4</title>
+<indexterm><primary>Timer_2_CC4</primary><secondary>ADC_Configuration::Regular_External_Trigger_Event</secondary></indexterm>
+<indexterm><primary>ADC_Configuration::Regular_External_Trigger_Event</primary><secondary>Timer_2_CC4</secondary></indexterm>
+<para><computeroutput>uint8_t Timer_2_CC4</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00205">205</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1aa21bc0713dc081199fd9765423f71628"/><section>
+    <title>Timer_2_TRGO</title>
+<indexterm><primary>Timer_2_TRGO</primary><secondary>ADC_Configuration::Regular_External_Trigger_Event</secondary></indexterm>
+<indexterm><primary>ADC_Configuration::Regular_External_Trigger_Event</primary><secondary>Timer_2_TRGO</secondary></indexterm>
+<para><computeroutput>uint8_t Timer_2_TRGO</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00206">206</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1a5280b1855ec53617a47f8ac55a307fd8"/><section>
+    <title>Timer_3_CC1</title>
+<indexterm><primary>Timer_3_CC1</primary><secondary>ADC_Configuration::Regular_External_Trigger_Event</secondary></indexterm>
+<indexterm><primary>ADC_Configuration::Regular_External_Trigger_Event</primary><secondary>Timer_3_CC1</secondary></indexterm>
+<para><computeroutput>uint8_t Timer_3_CC1</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00207">207</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1a9848bd75e6c6269ce62f5084de81a7b3"/><section>
+    <title>Timer_3_TRGO</title>
+<indexterm><primary>Timer_3_TRGO</primary><secondary>ADC_Configuration::Regular_External_Trigger_Event</secondary></indexterm>
+<indexterm><primary>ADC_Configuration::Regular_External_Trigger_Event</primary><secondary>Timer_3_TRGO</secondary></indexterm>
+<para><computeroutput>uint8_t Timer_3_TRGO</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00208">208</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1a6e961e07de8af1e020103adad78a9f94"/><section>
+    <title>Timer_4_CC4</title>
+<indexterm><primary>Timer_4_CC4</primary><secondary>ADC_Configuration::Regular_External_Trigger_Event</secondary></indexterm>
+<indexterm><primary>ADC_Configuration::Regular_External_Trigger_Event</primary><secondary>Timer_4_CC4</secondary></indexterm>
+<para><computeroutput>uint8_t Timer_4_CC4</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00209">209</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1a858e07db033c4954bfc2fdc321686edd"/><section>
+    <title>Timer_5_CC1</title>
+<indexterm><primary>Timer_5_CC1</primary><secondary>ADC_Configuration::Regular_External_Trigger_Event</secondary></indexterm>
+<indexterm><primary>ADC_Configuration::Regular_External_Trigger_Event</primary><secondary>Timer_5_CC1</secondary></indexterm>
+<para><computeroutput>uint8_t Timer_5_CC1</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00210">210</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1a10c2047c032cdc736eb64a9e7451d311"/><section>
+    <title>Timer_5_CC2</title>
+<indexterm><primary>Timer_5_CC2</primary><secondary>ADC_Configuration::Regular_External_Trigger_Event</secondary></indexterm>
+<indexterm><primary>ADC_Configuration::Regular_External_Trigger_Event</primary><secondary>Timer_5_CC2</secondary></indexterm>
+<para><computeroutput>uint8_t Timer_5_CC2</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00211">211</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1afcaff18c0557c919da2c10ff3f14cd0c"/><section>
+    <title>Timer_5_CC3</title>
+<indexterm><primary>Timer_5_CC3</primary><secondary>ADC_Configuration::Regular_External_Trigger_Event</secondary></indexterm>
+<indexterm><primary>ADC_Configuration::Regular_External_Trigger_Event</primary><secondary>Timer_5_CC3</secondary></indexterm>
+<para><computeroutput>uint8_t Timer_5_CC3</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00212">212</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1a89edcfa905271489559a4beddc201f60"/><section>
+    <title>Timer_8_CC1</title>
+<indexterm><primary>Timer_8_CC1</primary><secondary>ADC_Configuration::Regular_External_Trigger_Event</secondary></indexterm>
+<indexterm><primary>ADC_Configuration::Regular_External_Trigger_Event</primary><secondary>Timer_8_CC1</secondary></indexterm>
+<para><computeroutput>uint8_t Timer_8_CC1</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00213">213</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_a_d_c___configuration_1_1_regular___external___trigger___event_1a78fdc758e661dff1a3a6e342daf62b5d"/><section>
+    <title>Timer_8_TRGO</title>
+<indexterm><primary>Timer_8_TRGO</primary><secondary>ADC_Configuration::Regular_External_Trigger_Event</secondary></indexterm>
+<indexterm><primary>ADC_Configuration::Regular_External_Trigger_Event</primary><secondary>Timer_8_TRGO</secondary></indexterm>
+<para><computeroutput>uint8_t Timer_8_TRGO</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00214">214</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+ADC/<link linkend="__a_d_c___defs_8h">ADC_Defs.h</link></section>
+</section>

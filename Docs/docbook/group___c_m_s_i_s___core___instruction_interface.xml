@@ -1,0 +1,1820 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___c_m_s_i_s___core___instruction_interface" xml:lang="en-US">
+<title>CMSIS Core Instruction Interface</title>
+<indexterm><primary>CMSIS Core Instruction Interface</primary></indexterm>
+Collaboration diagram for CMSIS Core Instruction Interface:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="group___c_m_s_i_s___core___instruction_interface.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Topics    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_group___c_m_s_i_s___core___reg_acc_functions">CMSIS Core Register Access Functions</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gabd585ddc865fb9b7f2493af1eee1a572">__NOP</link>&#160;&#160;&#160;__nop</para>
+
+<para>No Operation. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gad23bf2b78a9a4524157c9de0d30b7448">__WFI</link>&#160;&#160;&#160;__wfi</para>
+
+<para>Wait For Interrupt. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gaac6cc7dd4325d9cb40d3290fa5244b3d">__WFE</link>&#160;&#160;&#160;__wfe</para>
+
+<para>Wait For Event. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gaab4f296d0022b4b10dc0976eb22052f9">__SEV</link>&#160;&#160;&#160;__sev</para>
+
+<para>Send Event. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gaad233022e850a009fc6f7602be1182f6">__ISB</link>()</para>
+
+<para>Instruction Synchronization Barrier. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga067d257a2b34565410acefb5afef2203">__DSB</link>()</para>
+
+<para>Data Synchronization Barrier. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga671101179b5943990785f36f8c1e2269">__DMB</link>()</para>
+
+<para>Data Memory Barrier. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga14f54807872c0f5e05604c4924abfdae">__REV</link>&#160;&#160;&#160;__rev</para>
+
+<para>Reverse byte order (32 bit) </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga95b9bd281ddeda378b85afdb8f2ced86">__ROR</link>&#160;&#160;&#160;__ror</para>
+
+<para>Rotate Right in unsigned value (32 bit) </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga15ea6bd3c507d3e81c3b3a1258e46397">__BKPT</link>(value)</para>
+
+<para>Breakpoint. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga5d5bb1527e042be4a9fa5a33f65cc248">__CLZ</link>&#160;&#160;&#160;__clz</para>
+
+<para>Count leading zeros. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gabc17e391c13c71702366c67cba39c276">__CMSIS_GCC_OUT_REG</link>(r)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga03179f79efee45c226dddfb8d824ad83">__CMSIS_GCC_RW_REG</link>(r)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga9d94dee7402367961d2cf0accc00fd97">__CMSIS_GCC_USE_REG</link>(r)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gabd585ddc865fb9b7f2493af1eee1a572">__NOP</link>&#160;&#160;&#160;__builtin_arm_nop</para>
+
+<para>No Operation. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gad23bf2b78a9a4524157c9de0d30b7448">__WFI</link>&#160;&#160;&#160;__builtin_arm_wfi</para>
+
+<para>Wait For Interrupt. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gaac6cc7dd4325d9cb40d3290fa5244b3d">__WFE</link>&#160;&#160;&#160;__builtin_arm_wfe</para>
+
+<para>Wait For Event. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gaab4f296d0022b4b10dc0976eb22052f9">__SEV</link>&#160;&#160;&#160;__builtin_arm_sev</para>
+
+<para>Send Event. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gaad233022e850a009fc6f7602be1182f6">__ISB</link>()</para>
+
+<para>Instruction Synchronization Barrier. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga067d257a2b34565410acefb5afef2203">__DSB</link>()</para>
+
+<para>Data Synchronization Barrier. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga671101179b5943990785f36f8c1e2269">__DMB</link>()</para>
+
+<para>Data Memory Barrier. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gaca25a02e09983da5558f5242f2f635bc">__REV</link>(value)</para>
+
+<para>Reverse byte order (32 bit) </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gad35497777af37e7809271b5e6f9510ba">__REV16</link>(value)</para>
+
+<para>Reverse byte order (16 bit) </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gae580812686119c9c5cf3c11a7519a404">__REVSH</link>(value)</para>
+
+<para>Reverse byte order (16 bit) </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga15ea6bd3c507d3e81c3b3a1258e46397">__BKPT</link>(value)</para>
+
+<para>Breakpoint. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gab83768933a612816fad669db5488366f">__RBIT</link>&#160;&#160;&#160;__builtin_arm_rbit</para>
+
+<para>Reverse bit order of value. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gabc17e391c13c71702366c67cba39c276">__CMSIS_GCC_OUT_REG</link>(r)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga9d94dee7402367961d2cf0accc00fd97">__CMSIS_GCC_USE_REG</link>(r)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gabd585ddc865fb9b7f2493af1eee1a572">__NOP</link>&#160;&#160;&#160;__builtin_arm_nop</para>
+
+<para>No Operation. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gad23bf2b78a9a4524157c9de0d30b7448">__WFI</link>&#160;&#160;&#160;__builtin_arm_wfi</para>
+
+<para>Wait For Interrupt. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gaac6cc7dd4325d9cb40d3290fa5244b3d">__WFE</link>&#160;&#160;&#160;__builtin_arm_wfe</para>
+
+<para>Wait For Event. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gaab4f296d0022b4b10dc0976eb22052f9">__SEV</link>&#160;&#160;&#160;__builtin_arm_sev</para>
+
+<para>Send Event. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gaad233022e850a009fc6f7602be1182f6">__ISB</link>()</para>
+
+<para>Instruction Synchronization Barrier. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga067d257a2b34565410acefb5afef2203">__DSB</link>()</para>
+
+<para>Data Synchronization Barrier. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga671101179b5943990785f36f8c1e2269">__DMB</link>()</para>
+
+<para>Data Memory Barrier. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gaca25a02e09983da5558f5242f2f635bc">__REV</link>(value)</para>
+
+<para>Reverse byte order (32 bit) </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gad35497777af37e7809271b5e6f9510ba">__REV16</link>(value)</para>
+
+<para>Reverse byte order (16 bit) </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gae580812686119c9c5cf3c11a7519a404">__REVSH</link>(value)</para>
+
+<para>Reverse byte order (16 bit) </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga15ea6bd3c507d3e81c3b3a1258e46397">__BKPT</link>(value)</para>
+
+<para>Breakpoint. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gab83768933a612816fad669db5488366f">__RBIT</link>&#160;&#160;&#160;__builtin_arm_rbit</para>
+
+<para>Reverse bit order of value. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gabc17e391c13c71702366c67cba39c276">__CMSIS_GCC_OUT_REG</link>(r)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga03179f79efee45c226dddfb8d824ad83">__CMSIS_GCC_RW_REG</link>(r)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga9d94dee7402367961d2cf0accc00fd97">__CMSIS_GCC_USE_REG</link>(r)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga0b13f3617dd4af2cd2eb3a311073f717">__NOP</link>()</para>
+
+<para>No Operation. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gab28e2b328c4cf23c917ab18a23194f8e">__WFI</link>()</para>
+
+<para>Wait For Interrupt. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gaf0330712223f4cfb6091e4ab84775f73">__WFE</link>()</para>
+
+<para>Wait For Event. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gafa58e60fcd2176ad58f96947466ea1fa">__SEV</link>()</para>
+
+<para>Send Event. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga15ea6bd3c507d3e81c3b3a1258e46397">__BKPT</link>(value)</para>
+
+<para>Breakpoint. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_group___c_m_s_i_s___core___instruction_interface_1gae84a2733711339c5eefeb0d899506b96">__attribute__</link> ((section(&quot;.rev16_text&quot;))) __STATIC_INLINE __ASM uint32_t <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gad35497777af37e7809271b5e6f9510ba">__REV16</link>(uint32_t value)</para>
+
+<para>Reverse byte order (16 bit) </para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s___core___instruction_interface_1gabe2b619a40cc0a7ffa8f765249ccf682">__attribute__</link> ((section(&quot;.revsh_text&quot;))) __STATIC_INLINE __ASM int16_t <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gae580812686119c9c5cf3c11a7519a404">__REVSH</link>(int16_t value)</para>
+
+<para>Reverse byte order (16 bit) </para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s___core___instruction_interface_1gab926fe7178a379c3a7c0410b06fcb661">__attribute__</link> ((always_inline)) __STATIC_INLINE uint32_t <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gab83768933a612816fad669db5488366f">__RBIT</link>(uint32_t value)</para>
+
+<para>Reverse bit order of value. </para>
+</listitem>
+            <listitem><para>__STATIC_FORCEINLINE uint32_t <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gab16acb6456176f1e87a4f2724c2b6028">__ROR</link> (uint32_t op1, uint32_t op2)</para>
+
+<para>Rotate Right in unsigned value (32 bit) </para>
+</listitem>
+            <listitem><para>__STATIC_FORCEINLINE uint8_t <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gaf32ee2525f946bce31504904f3ef8243">__CLZ</link> (uint32_t value)</para>
+
+<para>Count leading zeros. </para>
+</listitem>
+            <listitem><para>__STATIC_FORCEINLINE int32_t <link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga372c0535573dde3e37f0f08c774a3487">__SSAT</link> (int32_t val, uint32_t sat)</para>
+
+<para>Signed Saturate. </para>
+</listitem>
+            <listitem><para>__STATIC_FORCEINLINE uint32_t <link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga6562dbd8182d1571e22dbca7ebdfa9bc">__USAT</link> (int32_t val, uint32_t sat)</para>
+
+<para>Unsigned Saturate. </para>
+</listitem>
+            <listitem><para>__STATIC_FORCEINLINE void <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gae26c2b3961e702aeabc24d4984ebd369">__ISB</link> (void)</para>
+
+<para>Instruction Synchronization Barrier. </para>
+</listitem>
+            <listitem><para>__STATIC_FORCEINLINE void <link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga7fe277f5385d23b9c44b2cbda1577ce9">__DSB</link> (void)</para>
+
+<para>Data Synchronization Barrier. </para>
+</listitem>
+            <listitem><para>__STATIC_FORCEINLINE void <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gab1ea24daaaaee9c828f90cbca330cb5e">__DMB</link> (void)</para>
+
+<para>Data Memory Barrier. </para>
+</listitem>
+            <listitem><para>__STATIC_FORCEINLINE uint32_t <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gadb92679719950635fba8b1b954072695">__REV</link> (uint32_t value)</para>
+
+<para>Reverse byte order (32 bit) </para>
+</listitem>
+            <listitem><para>__STATIC_FORCEINLINE uint32_t <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gaa12aedd096506c9639c1581acd5c6a78">__REV16</link> (uint32_t value)</para>
+
+<para>Reverse byte order (16 bit) </para>
+</listitem>
+            <listitem><para>__STATIC_FORCEINLINE int16_t <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gacb695341318226a5f69ed508166622ac">__REVSH</link> (int16_t value)</para>
+
+<para>Reverse byte order (16 bit) </para>
+</listitem>
+            <listitem><para>__STATIC_FORCEINLINE uint32_t <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gaf944a7b7d8fd70164cca27669316bcf7">__RBIT</link> (uint32_t value)</para>
+
+<para>Reverse bit order of value. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gaafcad33f86db3a8e1f55925989f9d2dc">sat</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Access to dedicated instructions</para>
+
+<para>Access to dedicated instructions</para>
+
+<para>Access to dedicated instructions</para>
+
+<para>Access to dedicated instructions </para>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1ga15ea6bd3c507d3e81c3b3a1258e46397"/><section>
+    <title>__BKPT<computeroutput>[1/4]</computeroutput></title>
+<indexterm><primary>__BKPT</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__BKPT</secondary></indexterm>
+<para><computeroutput>#define __BKPT( value)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__breakpoint(value)
+</programlisting><para>
+
+<para>Breakpoint. </para>
+</para>
+
+<para>Causes the processor to enter Debug state. Debug tools can use this to investigate system state when the instruction at a particular address is reached. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>value</entry><entry>
+<para>is ignored by the processor. If required, a debugger can use it to store additional information about the breakpoint. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_cmsis__armcc_8h_source_1l00248">248</link> of file <link linkend="_cmsis__armcc_8h_source">cmsis_armcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1ga15ea6bd3c507d3e81c3b3a1258e46397"/><section>
+    <title>__BKPT<computeroutput>[2/4]</computeroutput></title>
+<indexterm><primary>__BKPT</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__BKPT</secondary></indexterm>
+<para><computeroutput>#define __BKPT( value)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(<emphasis role="stringliteral">&quot;bkpt&#32;&quot;</emphasis>#value)
+</programlisting><para>
+
+<para>Breakpoint. </para>
+</para>
+
+<para>Causes the processor to enter Debug state. Debug tools can use this to investigate system state when the instruction at a particular address is reached. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>value</entry><entry>
+<para>is ignored by the processor. If required, a debugger can use it to store additional information about the breakpoint. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_cmsis__armclang_8h_source_1l00278">278</link> of file <link linkend="_cmsis__armclang_8h_source">cmsis_armclang.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1ga15ea6bd3c507d3e81c3b3a1258e46397"/><section>
+    <title>__BKPT<computeroutput>[3/4]</computeroutput></title>
+<indexterm><primary>__BKPT</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__BKPT</secondary></indexterm>
+<para><computeroutput>#define __BKPT( value)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(<emphasis role="stringliteral">&quot;bkpt&#32;&quot;</emphasis>#value)
+</programlisting><para>
+
+<para>Breakpoint. </para>
+</para>
+
+<para>Causes the processor to enter Debug state. Debug tools can use this to investigate system state when the instruction at a particular address is reached. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>value</entry><entry>
+<para>is ignored by the processor. If required, a debugger can use it to store additional information about the breakpoint. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_cmsis__armclang__ltm_8h_source_1l00276">276</link> of file <link linkend="_cmsis__armclang__ltm_8h_source">cmsis_armclang_ltm.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1ga15ea6bd3c507d3e81c3b3a1258e46397"/><section>
+    <title>__BKPT<computeroutput>[4/4]</computeroutput></title>
+<indexterm><primary>__BKPT</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__BKPT</secondary></indexterm>
+<para><computeroutput>#define __BKPT( value)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(<emphasis role="stringliteral">&quot;bkpt&#32;&quot;</emphasis>#value)
+</programlisting><para>
+
+<para>Breakpoint. </para>
+</para>
+
+<para>Causes the processor to enter Debug state. Debug tools can use this to investigate system state when the instruction at a particular address is reached. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>value</entry><entry>
+<para>is ignored by the processor. If required, a debugger can use it to store additional information about the breakpoint. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_cmsis__gcc_8h_source_1l00364">364</link> of file <link linkend="_cmsis__gcc_8h_source">cmsis_gcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1ga5d5bb1527e042be4a9fa5a33f65cc248"/><section>
+    <title>__CLZ</title>
+<indexterm><primary>__CLZ</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__CLZ</secondary></indexterm>
+<para><computeroutput>#define __CLZ&#160;&#160;&#160;__clz</computeroutput></para><para>
+
+<para>Count leading zeros. </para>
+</para>
+
+<para>Counts the number of leading zeros of a data value. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>value</entry><entry>
+<para>Value to count the leading zeros </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>number of leading zeros in value </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_cmsis__armcc_8h_source_1l00285">285</link> of file <link linkend="_cmsis__armcc_8h_source">cmsis_armcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gabc17e391c13c71702366c67cba39c276"/><section>
+    <title>__CMSIS_GCC_OUT_REG<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>__CMSIS_GCC_OUT_REG</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__CMSIS_GCC_OUT_REG</secondary></indexterm>
+<para><computeroutput>#define __CMSIS_GCC_OUT_REG( r)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered"><emphasis role="stringliteral">&quot;=r&quot;</emphasis>&#32;(r)
+</programlisting><para>
+Definition at line <link linkend="_cmsis__armclang_8h_source_1l00169">169</link> of file <link linkend="_cmsis__armclang_8h_source">cmsis_armclang.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gabc17e391c13c71702366c67cba39c276"/><section>
+    <title>__CMSIS_GCC_OUT_REG<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>__CMSIS_GCC_OUT_REG</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__CMSIS_GCC_OUT_REG</secondary></indexterm>
+<para><computeroutput>#define __CMSIS_GCC_OUT_REG( r)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered"><emphasis role="stringliteral">&quot;=r&quot;</emphasis>&#32;(r)
+</programlisting><para>
+Definition at line <link linkend="_cmsis__armclang__ltm_8h_source_1l00168">168</link> of file <link linkend="_cmsis__armclang__ltm_8h_source">cmsis_armclang_ltm.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gabc17e391c13c71702366c67cba39c276"/><section>
+    <title>__CMSIS_GCC_OUT_REG<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>__CMSIS_GCC_OUT_REG</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__CMSIS_GCC_OUT_REG</secondary></indexterm>
+<para><computeroutput>#define __CMSIS_GCC_OUT_REG( r)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered"><emphasis role="stringliteral">&quot;=r&quot;</emphasis>&#32;(r)
+</programlisting><para>
+Definition at line <link linkend="_cmsis__gcc_8h_source_1l00219">219</link> of file <link linkend="_cmsis__gcc_8h_source">cmsis_gcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1ga03179f79efee45c226dddfb8d824ad83"/><section>
+    <title>__CMSIS_GCC_RW_REG<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>__CMSIS_GCC_RW_REG</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__CMSIS_GCC_RW_REG</secondary></indexterm>
+<para><computeroutput>#define __CMSIS_GCC_RW_REG( r)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered"><emphasis role="stringliteral">&quot;+r&quot;</emphasis>&#32;(r)
+</programlisting><para>
+Definition at line <link linkend="_cmsis__armclang_8h_source_1l00170">170</link> of file <link linkend="_cmsis__armclang_8h_source">cmsis_armclang.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1ga03179f79efee45c226dddfb8d824ad83"/><section>
+    <title>__CMSIS_GCC_RW_REG<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>__CMSIS_GCC_RW_REG</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__CMSIS_GCC_RW_REG</secondary></indexterm>
+<para><computeroutput>#define __CMSIS_GCC_RW_REG( r)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered"><emphasis role="stringliteral">&quot;+r&quot;</emphasis>&#32;(r)
+</programlisting><para>
+Definition at line <link linkend="_cmsis__gcc_8h_source_1l00220">220</link> of file <link linkend="_cmsis__gcc_8h_source">cmsis_gcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1ga9d94dee7402367961d2cf0accc00fd97"/><section>
+    <title>__CMSIS_GCC_USE_REG<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>__CMSIS_GCC_USE_REG</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__CMSIS_GCC_USE_REG</secondary></indexterm>
+<para><computeroutput>#define __CMSIS_GCC_USE_REG( r)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered"><emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(r)
+</programlisting><para>
+Definition at line <link linkend="_cmsis__armclang_8h_source_1l00171">171</link> of file <link linkend="_cmsis__armclang_8h_source">cmsis_armclang.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1ga9d94dee7402367961d2cf0accc00fd97"/><section>
+    <title>__CMSIS_GCC_USE_REG<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>__CMSIS_GCC_USE_REG</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__CMSIS_GCC_USE_REG</secondary></indexterm>
+<para><computeroutput>#define __CMSIS_GCC_USE_REG( r)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered"><emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(r)
+</programlisting><para>
+Definition at line <link linkend="_cmsis__armclang__ltm_8h_source_1l00169">169</link> of file <link linkend="_cmsis__armclang__ltm_8h_source">cmsis_armclang_ltm.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1ga9d94dee7402367961d2cf0accc00fd97"/><section>
+    <title>__CMSIS_GCC_USE_REG<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>__CMSIS_GCC_USE_REG</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__CMSIS_GCC_USE_REG</secondary></indexterm>
+<para><computeroutput>#define __CMSIS_GCC_USE_REG( r)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered"><emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(r)
+</programlisting><para>
+Definition at line <link linkend="_cmsis__gcc_8h_source_1l00221">221</link> of file <link linkend="_cmsis__gcc_8h_source">cmsis_gcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1ga671101179b5943990785f36f8c1e2269"/><section>
+    <title>__DMB<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>__DMB</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__DMB</secondary></indexterm>
+<para><computeroutput>#define __DMB( void)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__dmb(0xF)
+</programlisting><para>
+
+<para>Data Memory Barrier. </para>
+</para>
+
+<para>Ensures the apparent order of the explicit memory operations before and after the instruction, without ensuring their completion. </para>
+<para>
+Definition at line <link linkend="_cmsis__armcc_8h_source_1l00189">189</link> of file <link linkend="_cmsis__armcc_8h_source">cmsis_armcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1ga671101179b5943990785f36f8c1e2269"/><section>
+    <title>__DMB<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>__DMB</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__DMB</secondary></indexterm>
+<para><computeroutput>#define __DMB( void)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__builtin_arm_dmb(0xF)
+</programlisting><para>
+
+<para>Data Memory Barrier. </para>
+</para>
+
+<para>Ensures the apparent order of the explicit memory operations before and after the instruction, without ensuring their completion. </para>
+<para>
+Definition at line <link linkend="_cmsis__armclang_8h_source_1l00223">223</link> of file <link linkend="_cmsis__armclang_8h_source">cmsis_armclang.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1ga671101179b5943990785f36f8c1e2269"/><section>
+    <title>__DMB<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>__DMB</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__DMB</secondary></indexterm>
+<para><computeroutput>#define __DMB( void)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__builtin_arm_dmb(0xF)
+</programlisting><para>
+
+<para>Data Memory Barrier. </para>
+</para>
+
+<para>Ensures the apparent order of the explicit memory operations before and after the instruction, without ensuring their completion. </para>
+<para>
+Definition at line <link linkend="_cmsis__armclang__ltm_8h_source_1l00221">221</link> of file <link linkend="_cmsis__armclang__ltm_8h_source">cmsis_armclang_ltm.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1ga067d257a2b34565410acefb5afef2203"/><section>
+    <title>__DSB<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>__DSB</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__DSB</secondary></indexterm>
+<para><computeroutput>#define __DSB( void)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__dsb(0xF)
+</programlisting><para>
+
+<para>Data Synchronization Barrier. </para>
+</para>
+
+<para>Acts as a special kind of Data Memory Barrier. It completes when all explicit memory accesses before this instruction complete. </para>
+<para>
+Definition at line <link linkend="_cmsis__armcc_8h_source_1l00182">182</link> of file <link linkend="_cmsis__armcc_8h_source">cmsis_armcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1ga067d257a2b34565410acefb5afef2203"/><section>
+    <title>__DSB<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>__DSB</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__DSB</secondary></indexterm>
+<para><computeroutput>#define __DSB( void)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__builtin_arm_dsb(0xF)
+</programlisting><para>
+
+<para>Data Synchronization Barrier. </para>
+</para>
+
+<para>Acts as a special kind of Data Memory Barrier. It completes when all explicit memory accesses before this instruction complete. </para>
+<para>
+Definition at line <link linkend="_cmsis__armclang_8h_source_1l00215">215</link> of file <link linkend="_cmsis__armclang_8h_source">cmsis_armclang.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1ga067d257a2b34565410acefb5afef2203"/><section>
+    <title>__DSB<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>__DSB</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__DSB</secondary></indexterm>
+<para><computeroutput>#define __DSB( void)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__builtin_arm_dsb(0xF)
+</programlisting><para>
+
+<para>Data Synchronization Barrier. </para>
+</para>
+
+<para>Acts as a special kind of Data Memory Barrier. It completes when all explicit memory accesses before this instruction complete. </para>
+<para>
+Definition at line <link linkend="_cmsis__armclang__ltm_8h_source_1l00213">213</link> of file <link linkend="_cmsis__armclang__ltm_8h_source">cmsis_armclang_ltm.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gaad233022e850a009fc6f7602be1182f6"/><section>
+    <title>__ISB<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>__ISB</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__ISB</secondary></indexterm>
+<para><computeroutput>#define __ISB( void)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__isb(0xF)
+</programlisting><para>
+
+<para>Instruction Synchronization Barrier. </para>
+</para>
+
+<para>Instruction Synchronization Barrier flushes the pipeline in the processor, so that all instructions following the ISB are fetched from cache or memory, after the instruction has been completed. </para>
+<para>
+Definition at line <link linkend="_cmsis__armcc_8h_source_1l00175">175</link> of file <link linkend="_cmsis__armcc_8h_source">cmsis_armcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gaad233022e850a009fc6f7602be1182f6"/><section>
+    <title>__ISB<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>__ISB</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__ISB</secondary></indexterm>
+<para><computeroutput>#define __ISB( void)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__builtin_arm_isb(0xF)
+</programlisting><para>
+
+<para>Instruction Synchronization Barrier. </para>
+</para>
+
+<para>Instruction Synchronization Barrier flushes the pipeline in the processor, so that all instructions following the ISB are fetched from cache or memory, after the instruction has been completed. </para>
+<para>
+Definition at line <link linkend="_cmsis__armclang_8h_source_1l00208">208</link> of file <link linkend="_cmsis__armclang_8h_source">cmsis_armclang.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gaad233022e850a009fc6f7602be1182f6"/><section>
+    <title>__ISB<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>__ISB</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__ISB</secondary></indexterm>
+<para><computeroutput>#define __ISB( void)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__builtin_arm_isb(0xF)
+</programlisting><para>
+
+<para>Instruction Synchronization Barrier. </para>
+</para>
+
+<para>Instruction Synchronization Barrier flushes the pipeline in the processor, so that all instructions following the ISB are fetched from cache or memory, after the instruction has been completed. </para>
+<para>
+Definition at line <link linkend="_cmsis__armclang__ltm_8h_source_1l00206">206</link> of file <link linkend="_cmsis__armclang__ltm_8h_source">cmsis_armclang_ltm.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gabd585ddc865fb9b7f2493af1eee1a572"/><section>
+    <title>__NOP<computeroutput>[1/4]</computeroutput></title>
+<indexterm><primary>__NOP</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__NOP</secondary></indexterm>
+<para><computeroutput>#define __NOP&#160;&#160;&#160;__nop</computeroutput></para><para>
+
+<para>No Operation. </para>
+</para>
+
+<para>No Operation does nothing. This instruction can be used for code alignment purposes. </para>
+<para>
+Definition at line <link linkend="_cmsis__armcc_8h_source_1l00144">144</link> of file <link linkend="_cmsis__armcc_8h_source">cmsis_armcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gabd585ddc865fb9b7f2493af1eee1a572"/><section>
+    <title>__NOP<computeroutput>[2/4]</computeroutput></title>
+<indexterm><primary>__NOP</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__NOP</secondary></indexterm>
+<para><computeroutput>#define __NOP&#160;&#160;&#160;__builtin_arm_nop</computeroutput></para><para>
+
+<para>No Operation. </para>
+</para>
+
+<para>No Operation does nothing. This instruction can be used for code alignment purposes. </para>
+<para>
+Definition at line <link linkend="_cmsis__armclang_8h_source_1l00178">178</link> of file <link linkend="_cmsis__armclang_8h_source">cmsis_armclang.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gabd585ddc865fb9b7f2493af1eee1a572"/><section>
+    <title>__NOP<computeroutput>[3/4]</computeroutput></title>
+<indexterm><primary>__NOP</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__NOP</secondary></indexterm>
+<para><computeroutput>#define __NOP&#160;&#160;&#160;__builtin_arm_nop</computeroutput></para><para>
+
+<para>No Operation. </para>
+</para>
+
+<para>No Operation does nothing. This instruction can be used for code alignment purposes. </para>
+<para>
+Definition at line <link linkend="_cmsis__armclang__ltm_8h_source_1l00176">176</link> of file <link linkend="_cmsis__armclang__ltm_8h_source">cmsis_armclang_ltm.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1ga0b13f3617dd4af2cd2eb3a311073f717"/><section>
+    <title>__NOP<computeroutput>[4/4]</computeroutput></title>
+<indexterm><primary>__NOP</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__NOP</secondary></indexterm>
+<para><computeroutput>#define __NOP( )</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(<emphasis role="stringliteral">&quot;nop&quot;</emphasis>)
+</programlisting><para>
+
+<para>No Operation. </para>
+</para>
+
+<para>No Operation does nothing. This instruction can be used for code alignment purposes. </para>
+<para>
+Definition at line <link linkend="_cmsis__gcc_8h_source_1l00228">228</link> of file <link linkend="_cmsis__gcc_8h_source">cmsis_gcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gab83768933a612816fad669db5488366f"/><section>
+    <title>__RBIT<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>__RBIT</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__RBIT</secondary></indexterm>
+<para><computeroutput>#define __RBIT&#160;&#160;&#160;__builtin_arm_rbit</computeroutput></para><para>
+
+<para>Reverse bit order of value. </para>
+</para>
+
+<para>Reverses the bit order of the given value. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>value</entry><entry>
+<para>Value to reverse </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Reversed value </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_cmsis__armclang_8h_source_1l00287">287</link> of file <link linkend="_cmsis__armclang_8h_source">cmsis_armclang.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gab83768933a612816fad669db5488366f"/><section>
+    <title>__RBIT<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>__RBIT</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__RBIT</secondary></indexterm>
+<para><computeroutput>#define __RBIT&#160;&#160;&#160;__builtin_arm_rbit</computeroutput></para><para>
+
+<para>Reverse bit order of value. </para>
+</para>
+
+<para>Reverses the bit order of the given value. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>value</entry><entry>
+<para>Value to reverse </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Reversed value </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_cmsis__armclang__ltm_8h_source_1l00285">285</link> of file <link linkend="_cmsis__armclang__ltm_8h_source">cmsis_armclang_ltm.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1ga14f54807872c0f5e05604c4924abfdae"/><section>
+    <title>__REV<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>__REV</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__REV</secondary></indexterm>
+<para><computeroutput>#define __REV&#160;&#160;&#160;__rev</computeroutput></para><para>
+
+<para>Reverse byte order (32 bit) </para>
+</para>
+
+<para>Reverses the byte order in unsigned integer value. For example, 0x12345678 becomes 0x78563412. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>value</entry><entry>
+<para>Value to reverse </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Reversed value </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_cmsis__armcc_8h_source_1l00198">198</link> of file <link linkend="_cmsis__armcc_8h_source">cmsis_armcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gaca25a02e09983da5558f5242f2f635bc"/><section>
+    <title>__REV<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>__REV</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__REV</secondary></indexterm>
+<para><computeroutput>#define __REV( value)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__builtin_bswap32(value)
+</programlisting><para>
+
+<para>Reverse byte order (32 bit) </para>
+</para>
+
+<para>Reverses the byte order in unsigned integer value. For example, 0x12345678 becomes 0x78563412. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>value</entry><entry>
+<para>Value to reverse </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Reversed value </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_cmsis__armclang_8h_source_1l00232">232</link> of file <link linkend="_cmsis__armclang_8h_source">cmsis_armclang.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gaca25a02e09983da5558f5242f2f635bc"/><section>
+    <title>__REV<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>__REV</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__REV</secondary></indexterm>
+<para><computeroutput>#define __REV( value)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__builtin_bswap32(value)
+</programlisting><para>
+
+<para>Reverse byte order (32 bit) </para>
+</para>
+
+<para>Reverses the byte order in unsigned integer value. For example, 0x12345678 becomes 0x78563412. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>value</entry><entry>
+<para>Value to reverse </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Reversed value </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_cmsis__armclang__ltm_8h_source_1l00230">230</link> of file <link linkend="_cmsis__armclang__ltm_8h_source">cmsis_armclang_ltm.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gad35497777af37e7809271b5e6f9510ba"/><section>
+    <title>__REV16<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>__REV16</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__REV16</secondary></indexterm>
+<para><computeroutput>#define __REV16( value)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered"><link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga95b9bd281ddeda378b85afdb8f2ced86">__ROR</link>(<link linkend="_group___c_m_s_i_s___core___instruction_interface_1gaca25a02e09983da5558f5242f2f635bc">__REV</link>(value),&#32;16)
+</programlisting><para>
+
+<para>Reverse byte order (16 bit) </para>
+</para>
+
+<para>Reverses the byte order within each halfword of a word. For example, 0x12345678 becomes 0x34127856. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>value</entry><entry>
+<para>Value to reverse </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Reversed value </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_cmsis__armclang_8h_source_1l00241">241</link> of file <link linkend="_cmsis__armclang_8h_source">cmsis_armclang.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gad35497777af37e7809271b5e6f9510ba"/><section>
+    <title>__REV16<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>__REV16</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__REV16</secondary></indexterm>
+<para><computeroutput>#define __REV16( value)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered"><link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga95b9bd281ddeda378b85afdb8f2ced86">__ROR</link>(<link linkend="_group___c_m_s_i_s___core___instruction_interface_1gaca25a02e09983da5558f5242f2f635bc">__REV</link>(value),&#32;16)
+</programlisting><para>
+
+<para>Reverse byte order (16 bit) </para>
+</para>
+
+<para>Reverses the byte order within each halfword of a word. For example, 0x12345678 becomes 0x34127856. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>value</entry><entry>
+<para>Value to reverse </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Reversed value </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_cmsis__armclang__ltm_8h_source_1l00239">239</link> of file <link linkend="_cmsis__armclang__ltm_8h_source">cmsis_armclang_ltm.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gae580812686119c9c5cf3c11a7519a404"/><section>
+    <title>__REVSH<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>__REVSH</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__REVSH</secondary></indexterm>
+<para><computeroutput>#define __REVSH( value)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">(int16_t)__builtin_bswap16(value)
+</programlisting><para>
+
+<para>Reverse byte order (16 bit) </para>
+</para>
+
+<para>Reverses the byte order in a 16-bit value and returns the signed 16-bit result. For example, 0x0080 becomes 0x8000. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>value</entry><entry>
+<para>Value to reverse </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Reversed value </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_cmsis__armclang_8h_source_1l00250">250</link> of file <link linkend="_cmsis__armclang_8h_source">cmsis_armclang.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gae580812686119c9c5cf3c11a7519a404"/><section>
+    <title>__REVSH<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>__REVSH</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__REVSH</secondary></indexterm>
+<para><computeroutput>#define __REVSH( value)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">(int16_t)__builtin_bswap16(value)
+</programlisting><para>
+
+<para>Reverse byte order (16 bit) </para>
+</para>
+
+<para>Reverses the byte order in a 16-bit value and returns the signed 16-bit result. For example, 0x0080 becomes 0x8000. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>value</entry><entry>
+<para>Value to reverse </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Reversed value </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_cmsis__armclang__ltm_8h_source_1l00248">248</link> of file <link linkend="_cmsis__armclang__ltm_8h_source">cmsis_armclang_ltm.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1ga95b9bd281ddeda378b85afdb8f2ced86"/><section>
+    <title>__ROR</title>
+<indexterm><primary>__ROR</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__ROR</secondary></indexterm>
+<para><computeroutput>#define __ROR&#160;&#160;&#160;__ror</computeroutput></para><para>
+
+<para>Rotate Right in unsigned value (32 bit) </para>
+</para>
+
+<para>Rotate Right (immediate) provides the value of the contents of a register rotated by a variable number of bits. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>op1</entry><entry>
+<para>Value to rotate </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>op2</entry><entry>
+<para>Number of Bits to rotate </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Rotated value </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_cmsis__armcc_8h_source_1l00238">238</link> of file <link linkend="_cmsis__armcc_8h_source">cmsis_armcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gaab4f296d0022b4b10dc0976eb22052f9"/><section>
+    <title>__SEV<computeroutput>[1/4]</computeroutput></title>
+<indexterm><primary>__SEV</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__SEV</secondary></indexterm>
+<para><computeroutput>#define __SEV&#160;&#160;&#160;__sev</computeroutput></para><para>
+
+<para>Send Event. </para>
+</para>
+
+<para>Send Event is a hint instruction. It causes an event to be signaled to the CPU. </para>
+<para>
+Definition at line <link linkend="_cmsis__armcc_8h_source_1l00166">166</link> of file <link linkend="_cmsis__armcc_8h_source">cmsis_armcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gaab4f296d0022b4b10dc0976eb22052f9"/><section>
+    <title>__SEV<computeroutput>[2/4]</computeroutput></title>
+<indexterm><primary>__SEV</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__SEV</secondary></indexterm>
+<para><computeroutput>#define __SEV&#160;&#160;&#160;__builtin_arm_sev</computeroutput></para><para>
+
+<para>Send Event. </para>
+</para>
+
+<para>Send Event is a hint instruction. It causes an event to be signaled to the CPU. </para>
+<para>
+Definition at line <link linkend="_cmsis__armclang_8h_source_1l00199">199</link> of file <link linkend="_cmsis__armclang_8h_source">cmsis_armclang.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gaab4f296d0022b4b10dc0976eb22052f9"/><section>
+    <title>__SEV<computeroutput>[3/4]</computeroutput></title>
+<indexterm><primary>__SEV</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__SEV</secondary></indexterm>
+<para><computeroutput>#define __SEV&#160;&#160;&#160;__builtin_arm_sev</computeroutput></para><para>
+
+<para>Send Event. </para>
+</para>
+
+<para>Send Event is a hint instruction. It causes an event to be signaled to the CPU. </para>
+<para>
+Definition at line <link linkend="_cmsis__armclang__ltm_8h_source_1l00197">197</link> of file <link linkend="_cmsis__armclang__ltm_8h_source">cmsis_armclang_ltm.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gafa58e60fcd2176ad58f96947466ea1fa"/><section>
+    <title>__SEV<computeroutput>[4/4]</computeroutput></title>
+<indexterm><primary>__SEV</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__SEV</secondary></indexterm>
+<para><computeroutput>#define __SEV( )</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(<emphasis role="stringliteral">&quot;sev&quot;</emphasis>)
+</programlisting><para>
+
+<para>Send Event. </para>
+</para>
+
+<para>Send Event is a hint instruction. It causes an event to be signaled to the CPU. </para>
+<para>
+Definition at line <link linkend="_cmsis__gcc_8h_source_1l00249">249</link> of file <link linkend="_cmsis__gcc_8h_source">cmsis_gcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gaac6cc7dd4325d9cb40d3290fa5244b3d"/><section>
+    <title>__WFE<computeroutput>[1/4]</computeroutput></title>
+<indexterm><primary>__WFE</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__WFE</secondary></indexterm>
+<para><computeroutput>#define __WFE&#160;&#160;&#160;__wfe</computeroutput></para><para>
+
+<para>Wait For Event. </para>
+</para>
+
+<para>Wait For Event is a hint instruction that permits the processor to enter a low-power state until one of a number of events occurs. </para>
+<para>
+Definition at line <link linkend="_cmsis__armcc_8h_source_1l00159">159</link> of file <link linkend="_cmsis__armcc_8h_source">cmsis_armcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gaac6cc7dd4325d9cb40d3290fa5244b3d"/><section>
+    <title>__WFE<computeroutput>[2/4]</computeroutput></title>
+<indexterm><primary>__WFE</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__WFE</secondary></indexterm>
+<para><computeroutput>#define __WFE&#160;&#160;&#160;__builtin_arm_wfe</computeroutput></para><para>
+
+<para>Wait For Event. </para>
+</para>
+
+<para>Wait For Event is a hint instruction that permits the processor to enter a low-power state until one of a number of events occurs. </para>
+<para>
+Definition at line <link linkend="_cmsis__armclang_8h_source_1l00192">192</link> of file <link linkend="_cmsis__armclang_8h_source">cmsis_armclang.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gaac6cc7dd4325d9cb40d3290fa5244b3d"/><section>
+    <title>__WFE<computeroutput>[3/4]</computeroutput></title>
+<indexterm><primary>__WFE</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__WFE</secondary></indexterm>
+<para><computeroutput>#define __WFE&#160;&#160;&#160;__builtin_arm_wfe</computeroutput></para><para>
+
+<para>Wait For Event. </para>
+</para>
+
+<para>Wait For Event is a hint instruction that permits the processor to enter a low-power state until one of a number of events occurs. </para>
+<para>
+Definition at line <link linkend="_cmsis__armclang__ltm_8h_source_1l00190">190</link> of file <link linkend="_cmsis__armclang__ltm_8h_source">cmsis_armclang_ltm.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gaf0330712223f4cfb6091e4ab84775f73"/><section>
+    <title>__WFE<computeroutput>[4/4]</computeroutput></title>
+<indexterm><primary>__WFE</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__WFE</secondary></indexterm>
+<para><computeroutput>#define __WFE( )</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(<emphasis role="stringliteral">&quot;wfe&quot;</emphasis>:::<emphasis role="stringliteral">&quot;memory&quot;</emphasis>)
+</programlisting><para>
+
+<para>Wait For Event. </para>
+</para>
+
+<para>Wait For Event is a hint instruction that permits the processor to enter a low-power state until one of a number of events occurs. </para>
+<para>
+Definition at line <link linkend="_cmsis__gcc_8h_source_1l00242">242</link> of file <link linkend="_cmsis__gcc_8h_source">cmsis_gcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gad23bf2b78a9a4524157c9de0d30b7448"/><section>
+    <title>__WFI<computeroutput>[1/4]</computeroutput></title>
+<indexterm><primary>__WFI</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__WFI</secondary></indexterm>
+<para><computeroutput>#define __WFI&#160;&#160;&#160;__wfi</computeroutput></para><para>
+
+<para>Wait For Interrupt. </para>
+</para>
+
+<para>Wait For Interrupt is a hint instruction that suspends execution until one of a number of events occurs. </para>
+<para>
+Definition at line <link linkend="_cmsis__armcc_8h_source_1l00151">151</link> of file <link linkend="_cmsis__armcc_8h_source">cmsis_armcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gad23bf2b78a9a4524157c9de0d30b7448"/><section>
+    <title>__WFI<computeroutput>[2/4]</computeroutput></title>
+<indexterm><primary>__WFI</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__WFI</secondary></indexterm>
+<para><computeroutput>#define __WFI&#160;&#160;&#160;__builtin_arm_wfi</computeroutput></para><para>
+
+<para>Wait For Interrupt. </para>
+</para>
+
+<para>Wait For Interrupt is a hint instruction that suspends execution until one of a number of events occurs. </para>
+<para>
+Definition at line <link linkend="_cmsis__armclang_8h_source_1l00184">184</link> of file <link linkend="_cmsis__armclang_8h_source">cmsis_armclang.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gad23bf2b78a9a4524157c9de0d30b7448"/><section>
+    <title>__WFI<computeroutput>[3/4]</computeroutput></title>
+<indexterm><primary>__WFI</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__WFI</secondary></indexterm>
+<para><computeroutput>#define __WFI&#160;&#160;&#160;__builtin_arm_wfi</computeroutput></para><para>
+
+<para>Wait For Interrupt. </para>
+</para>
+
+<para>Wait For Interrupt is a hint instruction that suspends execution until one of a number of events occurs. </para>
+<para>
+Definition at line <link linkend="_cmsis__armclang__ltm_8h_source_1l00182">182</link> of file <link linkend="_cmsis__armclang__ltm_8h_source">cmsis_armclang_ltm.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gab28e2b328c4cf23c917ab18a23194f8e"/><section>
+    <title>__WFI<computeroutput>[4/4]</computeroutput></title>
+<indexterm><primary>__WFI</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__WFI</secondary></indexterm>
+<para><computeroutput>#define __WFI( )</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(<emphasis role="stringliteral">&quot;wfi&quot;</emphasis>:::<emphasis role="stringliteral">&quot;memory&quot;</emphasis>)
+</programlisting><para>
+
+<para>Wait For Interrupt. </para>
+</para>
+
+<para>Wait For Interrupt is a hint instruction that suspends execution until one of a number of events occurs. </para>
+<para>
+Definition at line <link linkend="_cmsis__gcc_8h_source_1l00234">234</link> of file <link linkend="_cmsis__gcc_8h_source">cmsis_gcc.h</link>.</para>
+</section>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gab926fe7178a379c3a7c0410b06fcb661"/><section>
+    <title>__attribute__()<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>__attribute__</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__attribute__</secondary></indexterm>
+<para><computeroutput>__attribute__ ((always_inline) )</computeroutput></para><para>
+
+<para>Reverse bit order of value. </para>
+</para>
+
+<para>Unsigned Saturate.</para>
+
+<para>Signed Saturate.</para>
+
+<para>Reverses the bit order of the given value. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>value</entry><entry>
+<para>Value to reverse </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Reversed value</para>
+</formalpara>
+Saturates a signed value. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>value</entry><entry>
+<para>Value to be saturated </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>sat</entry><entry>
+<para>Bit position to saturate to (1..32) </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Saturated value</para>
+</formalpara>
+Saturates an unsigned value. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>value</entry><entry>
+<para>Value to be saturated </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>sat</entry><entry>
+<para>Bit position to saturate to (0..31) </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Saturated value </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_cmsis__armcc_8h_source_1l00261">261</link> of file <link linkend="_cmsis__armcc_8h_source">cmsis_armcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gae84a2733711339c5eefeb0d899506b96"/><section>
+    <title>__attribute__()<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>__attribute__</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__attribute__</secondary></indexterm>
+<para><computeroutput>__attribute__ ((section(&quot;.rev16_text&quot;)) )</computeroutput></para><para>
+
+<para>Reverse byte order (16 bit) </para>
+</para>
+
+<para>Reverses the byte order within each halfword of a word. For example, 0x12345678 becomes 0x34127856. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>value</entry><entry>
+<para>Value to reverse </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Reversed value </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_cmsis__armcc_8h_source_1l00208">208</link> of file <link linkend="_cmsis__armcc_8h_source">cmsis_armcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gabe2b619a40cc0a7ffa8f765249ccf682"/><section>
+    <title>__attribute__()<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>__attribute__</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__attribute__</secondary></indexterm>
+<para><computeroutput>__attribute__ ((section(&quot;.revsh_text&quot;)) )</computeroutput></para><para>
+
+<para>Reverse byte order (16 bit) </para>
+</para>
+
+<para>Reverses the byte order in a 16-bit value and returns the signed 16-bit result. For example, 0x0080 becomes 0x8000. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>value</entry><entry>
+<para>Value to reverse </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Reversed value </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_cmsis__armcc_8h_source_1l00223">223</link> of file <link linkend="_cmsis__armcc_8h_source">cmsis_armcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gaf32ee2525f946bce31504904f3ef8243"/><section>
+    <title>__CLZ()</title>
+<indexterm><primary>__CLZ</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__CLZ</secondary></indexterm>
+<para><computeroutput>__STATIC_FORCEINLINE uint8_t __CLZ (uint32_t value)</computeroutput></para><para>
+
+<para>Count leading zeros. </para>
+</para>
+
+<para>Counts the number of leading zeros of a data value. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>value</entry><entry>
+<para>Value to count the leading zeros </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>number of leading zeros in value </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_cmsis__armclang_8h_source_1l00295">295</link> of file <link linkend="_cmsis__armclang_8h_source">cmsis_armclang.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gab1ea24daaaaee9c828f90cbca330cb5e"/><section>
+    <title>__DMB()</title>
+<indexterm><primary>__DMB</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__DMB</secondary></indexterm>
+<para><computeroutput>__STATIC_FORCEINLINE void __DMB (void )</computeroutput></para><para>
+
+<para>Data Memory Barrier. </para>
+</para>
+
+<para>Ensures the apparent order of the explicit memory operations before and after the instruction, without ensuring their completion. </para>
+<para>
+Definition at line <link linkend="_cmsis__gcc_8h_source_1l00280">280</link> of file <link linkend="_cmsis__gcc_8h_source">cmsis_gcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1ga7fe277f5385d23b9c44b2cbda1577ce9"/><section>
+    <title>__DSB()</title>
+<indexterm><primary>__DSB</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__DSB</secondary></indexterm>
+<para><computeroutput>__STATIC_FORCEINLINE void __DSB (void )</computeroutput></para><para>
+
+<para>Data Synchronization Barrier. </para>
+</para>
+
+<para>Acts as a special kind of Data Memory Barrier. It completes when all explicit memory accesses before this instruction complete. </para>
+<para>
+Definition at line <link linkend="_cmsis__gcc_8h_source_1l00269">269</link> of file <link linkend="_cmsis__gcc_8h_source">cmsis_gcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gae26c2b3961e702aeabc24d4984ebd369"/><section>
+    <title>__ISB()</title>
+<indexterm><primary>__ISB</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__ISB</secondary></indexterm>
+<para><computeroutput>__STATIC_FORCEINLINE void __ISB (void )</computeroutput></para><para>
+
+<para>Instruction Synchronization Barrier. </para>
+</para>
+
+<para>Instruction Synchronization Barrier flushes the pipeline in the processor, so that all instructions following the ISB are fetched from cache or memory, after the instruction has been completed. </para>
+<para>
+Definition at line <link linkend="_cmsis__gcc_8h_source_1l00258">258</link> of file <link linkend="_cmsis__gcc_8h_source">cmsis_gcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gaf944a7b7d8fd70164cca27669316bcf7"/><section>
+    <title>__RBIT()</title>
+<indexterm><primary>__RBIT</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__RBIT</secondary></indexterm>
+<para><computeroutput>__STATIC_FORCEINLINE uint32_t __RBIT (uint32_t value)</computeroutput></para><para>
+
+<para>Reverse bit order of value. </para>
+</para>
+
+<para>Reverses the bit order of the given value. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>value</entry><entry>
+<para>Value to reverse </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Reversed value </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_cmsis__gcc_8h_source_1l00373">373</link> of file <link linkend="_cmsis__gcc_8h_source">cmsis_gcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gadb92679719950635fba8b1b954072695"/><section>
+    <title>__REV()</title>
+<indexterm><primary>__REV</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__REV</secondary></indexterm>
+<para><computeroutput>__STATIC_FORCEINLINE uint32_t __REV (uint32_t value)</computeroutput></para><para>
+
+<para>Reverse byte order (32 bit) </para>
+</para>
+
+<para>Reverses the byte order in unsigned integer value. For example, 0x12345678 becomes 0x78563412. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>value</entry><entry>
+<para>Value to reverse </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Reversed value </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_cmsis__gcc_8h_source_1l00292">292</link> of file <link linkend="_cmsis__gcc_8h_source">cmsis_gcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gaa12aedd096506c9639c1581acd5c6a78"/><section>
+    <title>__REV16()</title>
+<indexterm><primary>__REV16</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__REV16</secondary></indexterm>
+<para><computeroutput>__STATIC_FORCEINLINE uint32_t __REV16 (uint32_t value)</computeroutput></para><para>
+
+<para>Reverse byte order (16 bit) </para>
+</para>
+
+<para>Reverses the byte order within each halfword of a word. For example, 0x12345678 becomes 0x34127856. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>value</entry><entry>
+<para>Value to reverse </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Reversed value </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_cmsis__gcc_8h_source_1l00311">311</link> of file <link linkend="_cmsis__gcc_8h_source">cmsis_gcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gacb695341318226a5f69ed508166622ac"/><section>
+    <title>__REVSH()</title>
+<indexterm><primary>__REVSH</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__REVSH</secondary></indexterm>
+<para><computeroutput>__STATIC_FORCEINLINE int16_t __REVSH (int16_t value)</computeroutput></para><para>
+
+<para>Reverse byte order (16 bit) </para>
+</para>
+
+<para>Reverses the byte order in a 16-bit value and returns the signed 16-bit result. For example, 0x0080 becomes 0x8000. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>value</entry><entry>
+<para>Value to reverse </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Reversed value </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_cmsis__gcc_8h_source_1l00326">326</link> of file <link linkend="_cmsis__gcc_8h_source">cmsis_gcc.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gab16acb6456176f1e87a4f2724c2b6028"/><section>
+    <title>__ROR()</title>
+<indexterm><primary>__ROR</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__ROR</secondary></indexterm>
+<para><computeroutput>__STATIC_FORCEINLINE uint32_t __ROR (uint32_t op1, uint32_t op2)</computeroutput></para><para>
+
+<para>Rotate Right in unsigned value (32 bit) </para>
+</para>
+
+<para>Rotate Right (immediate) provides the value of the contents of a register rotated by a variable number of bits. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>op1</entry><entry>
+<para>Value to rotate </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>op2</entry><entry>
+<para>Number of Bits to rotate </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Rotated value </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_cmsis__armclang_8h_source_1l00260">260</link> of file <link linkend="_cmsis__armclang_8h_source">cmsis_armclang.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1ga372c0535573dde3e37f0f08c774a3487"/><section>
+    <title>__SSAT()</title>
+<indexterm><primary>__SSAT</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__SSAT</secondary></indexterm>
+<para><computeroutput>__STATIC_FORCEINLINE int32_t __SSAT (int32_t val, uint32_t sat)</computeroutput></para><para>
+
+<para>Signed Saturate. </para>
+</para>
+
+<para>Saturates a signed value. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>value</entry><entry>
+<para>Value to be saturated </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>sat</entry><entry>
+<para>Bit position to saturate to (1..32) </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Saturated value </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_cmsis__armclang_8h_source_1l00526">526</link> of file <link linkend="_cmsis__armclang_8h_source">cmsis_armclang.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1ga6562dbd8182d1571e22dbca7ebdfa9bc"/><section>
+    <title>__USAT()</title>
+<indexterm><primary>__USAT</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>__USAT</secondary></indexterm>
+<para><computeroutput>__STATIC_FORCEINLINE uint32_t __USAT (int32_t val, uint32_t sat)</computeroutput></para><para>
+
+<para>Unsigned Saturate. </para>
+</para>
+
+<para>Saturates an unsigned value. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>value</entry><entry>
+<para>Value to be saturated </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>sat</entry><entry>
+<para>Bit position to saturate to (0..31) </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Saturated value </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_cmsis__armclang_8h_source_1l00551">551</link> of file <link linkend="_cmsis__armclang_8h_source">cmsis_armclang.h</link>.</para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_group___c_m_s_i_s___core___instruction_interface_1gaafcad33f86db3a8e1f55925989f9d2dc"/><section>
+    <title>sat</title>
+<indexterm><primary>sat</primary><secondary>CMSIS Core Instruction Interface</secondary></indexterm>
+<indexterm><primary>CMSIS Core Instruction Interface</primary><secondary>sat</secondary></indexterm>
+<para><computeroutput>uint32_t sat</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">{
+&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;((sat&#32;&gt;=&#32;1U)&#32;&amp;&amp;&#32;(sat&#32;&lt;=&#32;32U))
+&#32;&#32;{
+&#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;int32_t&#32;max&#32;=&#32;(int32_t)((1U&#32;&lt;&lt;&#32;(sat&#32;-&#32;1U))&#32;-&#32;1U);
+&#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;int32_t&#32;min&#32;=&#32;-1&#32;-&#32;max&#32;;
+&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(val&#32;&gt;&#32;max)
+&#32;&#32;&#32;&#32;{
+&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;max;
+&#32;&#32;&#32;&#32;}
+&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(val&#32;&lt;&#32;min)
+&#32;&#32;&#32;&#32;{
+&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;min;
+&#32;&#32;&#32;&#32;}
+&#32;&#32;}
+&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;val
+</programlisting><para>
+Definition at line <link linkend="_cmsis__armcc_8h_source_1l00481">481</link> of file <link linkend="_cmsis__armcc_8h_source">cmsis_armcc.h</link>.</para>
+</section>
+</section>
+    <xi:include href="group___c_m_s_i_s___core___reg_acc_functions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

@@ -1,0 +1,55 @@
+.TH "CMSIS_Core_MveFunctions" 3 "Version JSTDRVF4" "Joystick Driver" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CMSIS_Core_MveFunctions \- MVE Functions
+.PP
+ \- Function that provides MVE type\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Topics"
+
+.in +1c
+.ti -1c
+.RI "\fBSAU Functions\fP"
+.br
+.RI "Functions that configure the SAU\&. "
+.in -1c
+.in +1c
+.ti -1c
+.RI "__STATIC_INLINE uint32_t \fBSCB_GetMVEType\fP (void)"
+.br
+.RI "get MVE type "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Function that provides MVE type\&. 
+
+
+.SH "Function Documentation"
+.PP 
+.SS "__STATIC_INLINE uint32_t SCB_GetMVEType (void )"
+
+.PP
+get MVE type returns the MVE type 
+.PP
+\fBReturns\fP
+.RS 4
+
+.IP "\(bu" 2
+\fB0\fP: No Vector Extension (MVE)
+.IP "\(bu" 2
+\fB1\fP: Integer Vector Extension (MVE-I)
+.IP "\(bu" 2
+\fB2\fP: Floating-point Vector Extension (MVE-F) 
+.PP
+.RE
+.PP
+
+.PP
+Definition at line \fB3900\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Joystick Driver from the source code\&.

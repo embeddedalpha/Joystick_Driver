@@ -1,0 +1,154 @@
+.TH "USB_OTG_GlobalTypeDef" 3 "Version JSTDRVF4" "Joystick Driver" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+USB_OTG_GlobalTypeDef \- USB_OTG_Core_Registers\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <stm32f407xx\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBGOTGCTL\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBGOTGINT\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBGAHBCFG\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBGUSBCFG\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBGRSTCTL\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBGINTSTS\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBGINTMSK\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBGRXSTSR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBGRXSTSP\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBGRXFSIZ\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDIEPTXF0_HNPTXFSIZ\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBHNPTXSTS\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBReserved30\fP [2]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBGCCFG\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCID\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBReserved40\fP [48]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBHPTXFSIZ\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDIEPTXF\fP [0x0F]"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+USB_OTG_Core_Registers\&. 
+.PP
+Definition at line \fB793\fP of file \fBstm32f407xx\&.h\fP\&.
+.SH "Field Documentation"
+.PP 
+.SS "\fB__IO\fP uint32_t CID"
+User ID Register 03Ch 
+.PP
+Definition at line \fB809\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t DIEPTXF[0x0F]"
+dev Periodic Transmit FIFO 
+.br
+ 
+.PP
+Definition at line \fB812\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t DIEPTXF0_HNPTXFSIZ"
+EP0 / Non Periodic Tx FIFO Size Register 028h 
+.PP
+Definition at line \fB805\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t GAHBCFG"
+Core AHB Configuration Register 008h 
+.PP
+Definition at line \fB797\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t GCCFG"
+General Purpose IO Register 038h 
+.PP
+Definition at line \fB808\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t GINTMSK"
+Core Interrupt Mask Register 018h 
+.PP
+Definition at line \fB801\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t GINTSTS"
+Core Interrupt Register 014h 
+.PP
+Definition at line \fB800\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t GOTGCTL"
+USB_OTG Control and Status Register 000h 
+.PP
+Definition at line \fB795\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t GOTGINT"
+USB_OTG Interrupt Register 004h 
+.PP
+Definition at line \fB796\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t GRSTCTL"
+Core Reset Register 010h 
+.PP
+Definition at line \fB799\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t GRXFSIZ"
+Receive FIFO Size Register 024h 
+.PP
+Definition at line \fB804\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t GRXSTSP"
+Receive Sts Q Read & POP Register 020h 
+.PP
+Definition at line \fB803\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t GRXSTSR"
+Receive Sts Q Read Register 01Ch 
+.PP
+Definition at line \fB802\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t GUSBCFG"
+Core USB Configuration Register 00Ch 
+.PP
+Definition at line \fB798\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t HNPTXSTS"
+Non Periodic Tx FIFO/Queue Sts reg 02Ch 
+.PP
+Definition at line \fB806\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t HPTXFSIZ"
+Host Periodic Tx FIFO Size Reg 100h 
+.PP
+Definition at line \fB811\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "uint32_t Reserved30[2]"
+Reserved 030h 
+.PP
+Definition at line \fB807\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "uint32_t Reserved40[48]"
+Reserved 0x40-0xFF 
+.PP
+Definition at line \fB810\fP of file \fBstm32f407xx\&.h\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Joystick Driver from the source code\&.

@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_pac__armv81_8h_source" xml:lang="en-US">
+<title>pac_armv81.h</title>
+<indexterm><primary>Inc/pac_armv81.h</primary></indexterm>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_pac__armv81_8h_source_1l00001"/>00001 <emphasis role="comment">/******************************************************************************</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00002"/>00002 <emphasis role="comment">&#32;*&#32;@file&#32;&#32;&#32;&#32;&#32;pac_armv81.h</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00003"/>00003 <emphasis role="comment">&#32;*&#32;@brief&#32;&#32;&#32;&#32;CMSIS&#32;PAC&#32;key&#32;functions&#32;for&#32;Armv8.1-M&#32;PAC&#32;extension</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00004"/>00004 <emphasis role="comment">&#32;*&#32;@version&#32;&#32;V1.0.0</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00005"/>00005 <emphasis role="comment">&#32;*&#32;@date&#32;&#32;&#32;&#32;&#32;23.&#32;March&#32;2022</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00006"/>00006 <emphasis role="comment">&#32;******************************************************************************/</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00007"/>00007 <emphasis role="comment">/*</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00008"/>00008 <emphasis role="comment">&#32;*&#32;Copyright&#32;(c)&#32;2022&#32;Arm&#32;Limited.&#32;All&#32;rights&#32;reserved.</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00009"/>00009 <emphasis role="comment">&#32;*</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00010"/>00010 <emphasis role="comment">&#32;*&#32;SPDX-License-Identifier:&#32;Apache-2.0</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00011"/>00011 <emphasis role="comment">&#32;*</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00012"/>00012 <emphasis role="comment">&#32;*&#32;Licensed&#32;under&#32;the&#32;Apache&#32;License,&#32;Version&#32;2.0&#32;(the&#32;License);&#32;you&#32;may</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00013"/>00013 <emphasis role="comment">&#32;*&#32;not&#32;use&#32;this&#32;file&#32;except&#32;in&#32;compliance&#32;with&#32;the&#32;License.</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00014"/>00014 <emphasis role="comment">&#32;*&#32;You&#32;may&#32;obtain&#32;a&#32;copy&#32;of&#32;the&#32;License&#32;at</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00015"/>00015 <emphasis role="comment">&#32;*</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00016"/>00016 <emphasis role="comment">&#32;*&#32;www.apache.org/licenses/LICENSE-2.0</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00017"/>00017 <emphasis role="comment">&#32;*</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00018"/>00018 <emphasis role="comment">&#32;*&#32;Unless&#32;required&#32;by&#32;applicable&#32;law&#32;or&#32;agreed&#32;to&#32;in&#32;writing,&#32;software</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00019"/>00019 <emphasis role="comment">&#32;*&#32;distributed&#32;under&#32;the&#32;License&#32;is&#32;distributed&#32;on&#32;an&#32;AS&#32;IS&#32;BASIS,&#32;WITHOUT</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00020"/>00020 <emphasis role="comment">&#32;*&#32;WARRANTIES&#32;OR&#32;CONDITIONS&#32;OF&#32;ANY&#32;KIND,&#32;either&#32;express&#32;or&#32;implied.</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00021"/>00021 <emphasis role="comment">&#32;*&#32;See&#32;the&#32;License&#32;for&#32;the&#32;specific&#32;language&#32;governing&#32;permissions&#32;and</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00022"/>00022 <emphasis role="comment">&#32;*&#32;limitations&#32;under&#32;the&#32;License.</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00023"/>00023 <emphasis role="comment">&#32;*/</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00024"/>00024 
+<anchor xml:id="_pac__armv81_8h_source_1l00025"/>00025 <emphasis role="preprocessor">#if&#32;&#32;&#32;defined&#32;(&#32;__ICCARM__&#32;)</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00026"/>00026 <emphasis role="preprocessor">&#32;&#32;#pragma&#32;system_include&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</emphasis><emphasis role="comment">/*&#32;treat&#32;file&#32;as&#32;system&#32;include&#32;file&#32;for&#32;MISRA&#32;check&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00027"/>00027 <emphasis role="preprocessor">#elif&#32;defined&#32;(__clang__)</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00028"/>00028 <emphasis role="preprocessor">&#32;&#32;#pragma&#32;clang&#32;system_header&#32;&#32;&#32;&#32;</emphasis><emphasis role="comment">/*&#32;treat&#32;file&#32;as&#32;system&#32;include&#32;file&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00029"/>00029 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00030"/>00030 
+<anchor xml:id="_pac__armv81_8h_source_1l00031"/>00031 <emphasis role="preprocessor">#ifndef&#32;PAC_ARMV81_H</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00032"/>00032 <emphasis role="preprocessor">#define&#32;PAC_ARMV81_H</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00033"/>00033 
+<anchor xml:id="_pac__armv81_8h_source_1l00034"/>00034 
+<anchor xml:id="_pac__armv81_8h_source_1l00035"/>00035 <emphasis role="comment">/*&#32;###################&#32;&#32;PAC&#32;Key&#32;functions&#32;&#32;###########################&#32;*/</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00043"/>00043 <emphasis role="preprocessor">#if&#32;(defined&#32;(__ARM_FEATURE_PAUTH)&#32;&amp;&amp;&#32;(__ARM_FEATURE_PAUTH&#32;==&#32;1))</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00044"/>00044 
+<anchor xml:id="_pac__armv81_8h_source_1l00050"/>00050 __STATIC_FORCEINLINE&#32;<emphasis role="keywordtype">void</emphasis>&#32;__get_PAC_KEY_P&#32;(uint32_t*&#32;pPacKey)&#32;{
+<anchor xml:id="_pac__armv81_8h_source_1l00051"/>00051 &#32;&#32;__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(
+<anchor xml:id="_pac__armv81_8h_source_1l00052"/>00052 &#32;&#32;<emphasis role="stringliteral">&quot;mrs&#32;&#32;&#32;r1,&#32;pac_key_p_0\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00053"/>00053 &#32;&#32;<emphasis role="stringliteral">&quot;str&#32;&#32;&#32;r1,[%0,#0]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00054"/>00054 &#32;&#32;<emphasis role="stringliteral">&quot;mrs&#32;&#32;&#32;r1,&#32;pac_key_p_1\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00055"/>00055 &#32;&#32;<emphasis role="stringliteral">&quot;str&#32;&#32;&#32;r1,[%0,#4]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00056"/>00056 &#32;&#32;<emphasis role="stringliteral">&quot;mrs&#32;&#32;&#32;r1,&#32;pac_key_p_2\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00057"/>00057 &#32;&#32;<emphasis role="stringliteral">&quot;str&#32;&#32;&#32;r1,[%0,#8]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00058"/>00058 &#32;&#32;<emphasis role="stringliteral">&quot;mrs&#32;&#32;&#32;r1,&#32;pac_key_p_3\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00059"/>00059 &#32;&#32;<emphasis role="stringliteral">&quot;str&#32;&#32;&#32;r1,[%0,#12]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00060"/>00060 &#32;&#32;:&#32;:&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(pPacKey)&#32;:&#32;<emphasis role="stringliteral">&quot;memory&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;r1&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00061"/>00061 &#32;&#32;);
+<anchor xml:id="_pac__armv81_8h_source_1l00062"/>00062 }
+<anchor xml:id="_pac__armv81_8h_source_1l00063"/>00063 
+<anchor xml:id="_pac__armv81_8h_source_1l00069"/>00069 __STATIC_FORCEINLINE&#32;<emphasis role="keywordtype">void</emphasis>&#32;__set_PAC_KEY_P&#32;(uint32_t*&#32;pPacKey)&#32;{
+<anchor xml:id="_pac__armv81_8h_source_1l00070"/>00070 &#32;&#32;__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(
+<anchor xml:id="_pac__armv81_8h_source_1l00071"/>00071 &#32;&#32;<emphasis role="stringliteral">&quot;ldr&#32;&#32;&#32;r1,[%0,#0]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00072"/>00072 &#32;&#32;<emphasis role="stringliteral">&quot;msr&#32;&#32;&#32;pac_key_p_0,&#32;r1\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00073"/>00073 &#32;&#32;<emphasis role="stringliteral">&quot;ldr&#32;&#32;&#32;r1,[%0,#4]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00074"/>00074 &#32;&#32;<emphasis role="stringliteral">&quot;msr&#32;&#32;&#32;pac_key_p_1,&#32;r1\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00075"/>00075 &#32;&#32;<emphasis role="stringliteral">&quot;ldr&#32;&#32;&#32;r1,[%0,#8]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00076"/>00076 &#32;&#32;<emphasis role="stringliteral">&quot;msr&#32;&#32;&#32;pac_key_p_2,&#32;r1\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00077"/>00077 &#32;&#32;<emphasis role="stringliteral">&quot;ldr&#32;&#32;&#32;r1,[%0,#12]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00078"/>00078 &#32;&#32;<emphasis role="stringliteral">&quot;msr&#32;&#32;&#32;pac_key_p_3,&#32;r1\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00079"/>00079 &#32;&#32;:&#32;:&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(pPacKey)&#32;:&#32;<emphasis role="stringliteral">&quot;memory&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;r1&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00080"/>00080 &#32;&#32;);
+<anchor xml:id="_pac__armv81_8h_source_1l00081"/>00081 }
+<anchor xml:id="_pac__armv81_8h_source_1l00082"/>00082 
+<anchor xml:id="_pac__armv81_8h_source_1l00088"/>00088 __STATIC_FORCEINLINE&#32;<emphasis role="keywordtype">void</emphasis>&#32;__get_PAC_KEY_U&#32;(uint32_t*&#32;pPacKey)&#32;{
+<anchor xml:id="_pac__armv81_8h_source_1l00089"/>00089 &#32;&#32;__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(
+<anchor xml:id="_pac__armv81_8h_source_1l00090"/>00090 &#32;&#32;<emphasis role="stringliteral">&quot;mrs&#32;&#32;&#32;r1,&#32;pac_key_u_0\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00091"/>00091 &#32;&#32;<emphasis role="stringliteral">&quot;str&#32;&#32;&#32;r1,[%0,#0]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00092"/>00092 &#32;&#32;<emphasis role="stringliteral">&quot;mrs&#32;&#32;&#32;r1,&#32;pac_key_u_1\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00093"/>00093 &#32;&#32;<emphasis role="stringliteral">&quot;str&#32;&#32;&#32;r1,[%0,#4]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00094"/>00094 &#32;&#32;<emphasis role="stringliteral">&quot;mrs&#32;&#32;&#32;r1,&#32;pac_key_u_2\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00095"/>00095 &#32;&#32;<emphasis role="stringliteral">&quot;str&#32;&#32;&#32;r1,[%0,#8]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00096"/>00096 &#32;&#32;<emphasis role="stringliteral">&quot;mrs&#32;&#32;&#32;r1,&#32;pac_key_u_3\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00097"/>00097 &#32;&#32;<emphasis role="stringliteral">&quot;str&#32;&#32;&#32;r1,[%0,#12]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00098"/>00098 &#32;&#32;:&#32;:&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(pPacKey)&#32;:&#32;<emphasis role="stringliteral">&quot;memory&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;r1&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00099"/>00099 &#32;&#32;);
+<anchor xml:id="_pac__armv81_8h_source_1l00100"/>00100 }
+<anchor xml:id="_pac__armv81_8h_source_1l00101"/>00101 
+<anchor xml:id="_pac__armv81_8h_source_1l00107"/>00107 __STATIC_FORCEINLINE&#32;<emphasis role="keywordtype">void</emphasis>&#32;__set_PAC_KEY_U&#32;(uint32_t*&#32;pPacKey)&#32;{
+<anchor xml:id="_pac__armv81_8h_source_1l00108"/>00108 &#32;&#32;__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(
+<anchor xml:id="_pac__armv81_8h_source_1l00109"/>00109 &#32;&#32;<emphasis role="stringliteral">&quot;ldr&#32;&#32;&#32;r1,[%0,#0]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00110"/>00110 &#32;&#32;<emphasis role="stringliteral">&quot;msr&#32;&#32;&#32;pac_key_u_0,&#32;r1\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00111"/>00111 &#32;&#32;<emphasis role="stringliteral">&quot;ldr&#32;&#32;&#32;r1,[%0,#4]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00112"/>00112 &#32;&#32;<emphasis role="stringliteral">&quot;msr&#32;&#32;&#32;pac_key_u_1,&#32;r1\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00113"/>00113 &#32;&#32;<emphasis role="stringliteral">&quot;ldr&#32;&#32;&#32;r1,[%0,#8]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00114"/>00114 &#32;&#32;<emphasis role="stringliteral">&quot;msr&#32;&#32;&#32;pac_key_u_2,&#32;r1\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00115"/>00115 &#32;&#32;<emphasis role="stringliteral">&quot;ldr&#32;&#32;&#32;r1,[%0,#12]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00116"/>00116 &#32;&#32;<emphasis role="stringliteral">&quot;msr&#32;&#32;&#32;pac_key_u_3,&#32;r1\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00117"/>00117 &#32;&#32;:&#32;:&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(pPacKey)&#32;:&#32;<emphasis role="stringliteral">&quot;memory&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;r1&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00118"/>00118 &#32;&#32;);
+<anchor xml:id="_pac__armv81_8h_source_1l00119"/>00119 }
+<anchor xml:id="_pac__armv81_8h_source_1l00120"/>00120 
+<anchor xml:id="_pac__armv81_8h_source_1l00121"/>00121 <emphasis role="preprocessor">#if&#32;(defined&#32;(__ARM_FEATURE_CMSE&#32;)&#32;&amp;&amp;&#32;(__ARM_FEATURE_CMSE&#32;==&#32;3))</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00122"/>00122 
+<anchor xml:id="_pac__armv81_8h_source_1l00128"/>00128 __STATIC_FORCEINLINE&#32;<emphasis role="keywordtype">void</emphasis>&#32;__TZ_get_PAC_KEY_P_NS&#32;(uint32_t*&#32;pPacKey)&#32;{
+<anchor xml:id="_pac__armv81_8h_source_1l00129"/>00129 &#32;&#32;__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(
+<anchor xml:id="_pac__armv81_8h_source_1l00130"/>00130 &#32;&#32;<emphasis role="stringliteral">&quot;mrs&#32;&#32;&#32;r1,&#32;pac_key_p_0_ns\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00131"/>00131 &#32;&#32;<emphasis role="stringliteral">&quot;str&#32;&#32;&#32;r1,[%0,#0]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00132"/>00132 &#32;&#32;<emphasis role="stringliteral">&quot;mrs&#32;&#32;&#32;r1,&#32;pac_key_p_1_ns\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00133"/>00133 &#32;&#32;<emphasis role="stringliteral">&quot;str&#32;&#32;&#32;r1,[%0,#4]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00134"/>00134 &#32;&#32;<emphasis role="stringliteral">&quot;mrs&#32;&#32;&#32;r1,&#32;pac_key_p_2_ns\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00135"/>00135 &#32;&#32;<emphasis role="stringliteral">&quot;str&#32;&#32;&#32;r1,[%0,#8]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00136"/>00136 &#32;&#32;<emphasis role="stringliteral">&quot;mrs&#32;&#32;&#32;r1,&#32;pac_key_p_3_ns\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00137"/>00137 &#32;&#32;<emphasis role="stringliteral">&quot;str&#32;&#32;&#32;r1,[%0,#12]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00138"/>00138 &#32;&#32;:&#32;:&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(pPacKey)&#32;:&#32;<emphasis role="stringliteral">&quot;memory&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;r1&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00139"/>00139 &#32;&#32;);
+<anchor xml:id="_pac__armv81_8h_source_1l00140"/>00140 }
+<anchor xml:id="_pac__armv81_8h_source_1l00141"/>00141 
+<anchor xml:id="_pac__armv81_8h_source_1l00147"/>00147 __STATIC_FORCEINLINE&#32;<emphasis role="keywordtype">void</emphasis>&#32;__TZ_set_PAC_KEY_P_NS&#32;(uint32_t*&#32;pPacKey)&#32;{
+<anchor xml:id="_pac__armv81_8h_source_1l00148"/>00148 &#32;&#32;__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(
+<anchor xml:id="_pac__armv81_8h_source_1l00149"/>00149 &#32;&#32;<emphasis role="stringliteral">&quot;ldr&#32;&#32;&#32;r1,[%0,#0]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00150"/>00150 &#32;&#32;<emphasis role="stringliteral">&quot;msr&#32;&#32;&#32;pac_key_p_0_ns,&#32;r1\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00151"/>00151 &#32;&#32;<emphasis role="stringliteral">&quot;ldr&#32;&#32;&#32;r1,[%0,#4]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00152"/>00152 &#32;&#32;<emphasis role="stringliteral">&quot;msr&#32;&#32;&#32;pac_key_p_1_ns,&#32;r1\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00153"/>00153 &#32;&#32;<emphasis role="stringliteral">&quot;ldr&#32;&#32;&#32;r1,[%0,#8]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00154"/>00154 &#32;&#32;<emphasis role="stringliteral">&quot;msr&#32;&#32;&#32;pac_key_p_2_ns,&#32;r1\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00155"/>00155 &#32;&#32;<emphasis role="stringliteral">&quot;ldr&#32;&#32;&#32;r1,[%0,#12]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00156"/>00156 &#32;&#32;<emphasis role="stringliteral">&quot;msr&#32;&#32;&#32;pac_key_p_3_ns,&#32;r1\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00157"/>00157 &#32;&#32;:&#32;:&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(pPacKey)&#32;:&#32;<emphasis role="stringliteral">&quot;memory&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;r1&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00158"/>00158 &#32;&#32;);
+<anchor xml:id="_pac__armv81_8h_source_1l00159"/>00159 }
+<anchor xml:id="_pac__armv81_8h_source_1l00160"/>00160 
+<anchor xml:id="_pac__armv81_8h_source_1l00166"/>00166 __STATIC_FORCEINLINE&#32;<emphasis role="keywordtype">void</emphasis>&#32;__TZ_get_PAC_KEY_U_NS&#32;(uint32_t*&#32;pPacKey)&#32;{
+<anchor xml:id="_pac__armv81_8h_source_1l00167"/>00167 &#32;&#32;__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(
+<anchor xml:id="_pac__armv81_8h_source_1l00168"/>00168 &#32;&#32;<emphasis role="stringliteral">&quot;mrs&#32;&#32;&#32;r1,&#32;pac_key_u_0_ns\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00169"/>00169 &#32;&#32;<emphasis role="stringliteral">&quot;str&#32;&#32;&#32;r1,[%0,#0]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00170"/>00170 &#32;&#32;<emphasis role="stringliteral">&quot;mrs&#32;&#32;&#32;r1,&#32;pac_key_u_1_ns\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00171"/>00171 &#32;&#32;<emphasis role="stringliteral">&quot;str&#32;&#32;&#32;r1,[%0,#4]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00172"/>00172 &#32;&#32;<emphasis role="stringliteral">&quot;mrs&#32;&#32;&#32;r1,&#32;pac_key_u_2_ns\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00173"/>00173 &#32;&#32;<emphasis role="stringliteral">&quot;str&#32;&#32;&#32;r1,[%0,#8]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00174"/>00174 &#32;&#32;<emphasis role="stringliteral">&quot;mrs&#32;&#32;&#32;r1,&#32;pac_key_u_3_ns\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00175"/>00175 &#32;&#32;<emphasis role="stringliteral">&quot;str&#32;&#32;&#32;r1,[%0,#12]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00176"/>00176 &#32;&#32;:&#32;:&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(pPacKey)&#32;:&#32;<emphasis role="stringliteral">&quot;memory&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;r1&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00177"/>00177 &#32;&#32;);
+<anchor xml:id="_pac__armv81_8h_source_1l00178"/>00178 }
+<anchor xml:id="_pac__armv81_8h_source_1l00179"/>00179 
+<anchor xml:id="_pac__armv81_8h_source_1l00185"/>00185 __STATIC_FORCEINLINE&#32;<emphasis role="keywordtype">void</emphasis>&#32;__TZ_set_PAC_KEY_U_NS&#32;(uint32_t*&#32;pPacKey)&#32;{
+<anchor xml:id="_pac__armv81_8h_source_1l00186"/>00186 &#32;&#32;__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(
+<anchor xml:id="_pac__armv81_8h_source_1l00187"/>00187 &#32;&#32;<emphasis role="stringliteral">&quot;ldr&#32;&#32;&#32;r1,[%0,#0]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00188"/>00188 &#32;&#32;<emphasis role="stringliteral">&quot;msr&#32;&#32;&#32;pac_key_u_0_ns,&#32;r1\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00189"/>00189 &#32;&#32;<emphasis role="stringliteral">&quot;ldr&#32;&#32;&#32;r1,[%0,#4]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00190"/>00190 &#32;&#32;<emphasis role="stringliteral">&quot;msr&#32;&#32;&#32;pac_key_u_1_ns,&#32;r1\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00191"/>00191 &#32;&#32;<emphasis role="stringliteral">&quot;ldr&#32;&#32;&#32;r1,[%0,#8]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00192"/>00192 &#32;&#32;<emphasis role="stringliteral">&quot;msr&#32;&#32;&#32;pac_key_u_2_ns,&#32;r1\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00193"/>00193 &#32;&#32;<emphasis role="stringliteral">&quot;ldr&#32;&#32;&#32;r1,[%0,#12]\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00194"/>00194 &#32;&#32;<emphasis role="stringliteral">&quot;msr&#32;&#32;&#32;pac_key_u_3_ns,&#32;r1\n&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00195"/>00195 &#32;&#32;:&#32;:&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(pPacKey)&#32;:&#32;<emphasis role="stringliteral">&quot;memory&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;r1&quot;</emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00196"/>00196 &#32;&#32;);
+<anchor xml:id="_pac__armv81_8h_source_1l00197"/>00197 }
+<anchor xml:id="_pac__armv81_8h_source_1l00198"/>00198 
+<anchor xml:id="_pac__armv81_8h_source_1l00199"/>00199 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*&#32;(defined&#32;(__ARM_FEATURE_CMSE&#32;)&#32;&amp;&amp;&#32;(__ARM_FEATURE_CMSE&#32;==&#32;3))&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00200"/>00200 
+<anchor xml:id="_pac__armv81_8h_source_1l00201"/>00201 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*&#32;(defined&#32;(__ARM_FEATURE_PAUTH)&#32;&amp;&amp;&#32;(__ARM_FEATURE_PAUTH&#32;==&#32;1))&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+<anchor xml:id="_pac__armv81_8h_source_1l00202"/>00202 
+<anchor xml:id="_pac__armv81_8h_source_1l00206"/>00206 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*&#32;PAC_ARMV81_H&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+</programlisting></section>

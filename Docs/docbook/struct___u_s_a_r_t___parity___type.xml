@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct___u_s_a_r_t___parity___type" xml:lang="en-US">
+<title>_USART_Parity_Type Struct Reference</title>
+<indexterm><primary>_USART_Parity_Type</primary></indexterm>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para>uint16_t <link linkend="_struct___u_s_a_r_t___parity___type_1a99fc6e5d5a390ad5f8a6c78590a99007">Enable</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct___u_s_a_r_t___parity___type_1ab26e988c25aa46c52b400f0659371262">Disable</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct___u_s_a_r_t___parity___type_1a963f168aeec6d998c84f826d33da5ee4">Even</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct___u_s_a_r_t___parity___type_1a17d7eb95dd5d71d69c7be60e3329756f">Odd</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__u_s_a_r_t___defs_8h_source_1l00062">62</link> of file <link linkend="__u_s_a_r_t___defs_8h_source">USART_Defs.h</link>.</para>
+</section>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_struct___u_s_a_r_t___parity___type_1ab26e988c25aa46c52b400f0659371262"/><section>
+    <title>Disable</title>
+<indexterm><primary>Disable</primary><secondary>_USART_Parity_Type</secondary></indexterm>
+<indexterm><primary>_USART_Parity_Type</primary><secondary>Disable</secondary></indexterm>
+<para><computeroutput>uint16_t Disable</computeroutput></para><para>
+Definition at line <link linkend="__u_s_a_r_t___defs_8h_source_1l00064">64</link> of file <link linkend="__u_s_a_r_t___defs_8h_source">USART_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct___u_s_a_r_t___parity___type_1a99fc6e5d5a390ad5f8a6c78590a99007"/><section>
+    <title>Enable</title>
+<indexterm><primary>Enable</primary><secondary>_USART_Parity_Type</secondary></indexterm>
+<indexterm><primary>_USART_Parity_Type</primary><secondary>Enable</secondary></indexterm>
+<para><computeroutput>uint16_t Enable</computeroutput></para><para>
+Definition at line <link linkend="__u_s_a_r_t___defs_8h_source_1l00063">63</link> of file <link linkend="__u_s_a_r_t___defs_8h_source">USART_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct___u_s_a_r_t___parity___type_1a963f168aeec6d998c84f826d33da5ee4"/><section>
+    <title>Even</title>
+<indexterm><primary>Even</primary><secondary>_USART_Parity_Type</secondary></indexterm>
+<indexterm><primary>_USART_Parity_Type</primary><secondary>Even</secondary></indexterm>
+<para><computeroutput>uint16_t Even</computeroutput></para><para>
+Definition at line <link linkend="__u_s_a_r_t___defs_8h_source_1l00065">65</link> of file <link linkend="__u_s_a_r_t___defs_8h_source">USART_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct___u_s_a_r_t___parity___type_1a17d7eb95dd5d71d69c7be60e3329756f"/><section>
+    <title>Odd</title>
+<indexterm><primary>Odd</primary><secondary>_USART_Parity_Type</secondary></indexterm>
+<indexterm><primary>_USART_Parity_Type</primary><secondary>Odd</secondary></indexterm>
+<para><computeroutput>uint16_t Odd</computeroutput></para><para>
+Definition at line <link linkend="__u_s_a_r_t___defs_8h_source_1l00066">66</link> of file <link linkend="__u_s_a_r_t___defs_8h_source">USART_Defs.h</link>.</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+USART/USART_Defs.h</section>
+</section>

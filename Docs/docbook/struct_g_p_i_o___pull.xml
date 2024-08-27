@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_g_p_i_o___pull" xml:lang="en-US">
+<title>GPIO_Pull Struct Reference</title>
+<indexterm><primary>GPIO_Pull</primary></indexterm>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para>uint8_t <link linkend="_struct_g_p_i_o___pull_1ae59cb056e5e915db545abc82cf851bcb">No_Pull_Up_Down</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct_g_p_i_o___pull_1a28cc468948a0bd2ac9809fad01203e6a">Pull_Up</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct_g_p_i_o___pull_1ae41dfbf464c3a8dd966e16a17ec78ccb">Pull_Down</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct_g_p_i_o___pull_1a239658e9a66a410af695d853e0d3d75c">None</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__g_p_i_o___defs_8h_source_1l00038">38</link> of file <link linkend="__g_p_i_o___defs_8h_source">GPIO_Defs.h</link>.</para>
+</section>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_struct_g_p_i_o___pull_1ae59cb056e5e915db545abc82cf851bcb"/><section>
+    <title>No_Pull_Up_Down</title>
+<indexterm><primary>No_Pull_Up_Down</primary><secondary>GPIO_Pull</secondary></indexterm>
+<indexterm><primary>GPIO_Pull</primary><secondary>No_Pull_Up_Down</secondary></indexterm>
+<para><computeroutput>uint8_t No_Pull_Up_Down</computeroutput></para><para>
+Definition at line <link linkend="__g_p_i_o___defs_8h_source_1l00039">39</link> of file <link linkend="__g_p_i_o___defs_8h_source">GPIO_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_g_p_i_o___pull_1a239658e9a66a410af695d853e0d3d75c"/><section>
+    <title>None</title>
+<indexterm><primary>None</primary><secondary>GPIO_Pull</secondary></indexterm>
+<indexterm><primary>GPIO_Pull</primary><secondary>None</secondary></indexterm>
+<para><computeroutput>uint8_t None</computeroutput></para><para>
+Definition at line <link linkend="__g_p_i_o___defs_8h_source_1l00042">42</link> of file <link linkend="__g_p_i_o___defs_8h_source">GPIO_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_g_p_i_o___pull_1ae41dfbf464c3a8dd966e16a17ec78ccb"/><section>
+    <title>Pull_Down</title>
+<indexterm><primary>Pull_Down</primary><secondary>GPIO_Pull</secondary></indexterm>
+<indexterm><primary>GPIO_Pull</primary><secondary>Pull_Down</secondary></indexterm>
+<para><computeroutput>uint8_t Pull_Down</computeroutput></para><para>
+Definition at line <link linkend="__g_p_i_o___defs_8h_source_1l00041">41</link> of file <link linkend="__g_p_i_o___defs_8h_source">GPIO_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_g_p_i_o___pull_1a28cc468948a0bd2ac9809fad01203e6a"/><section>
+    <title>Pull_Up</title>
+<indexterm><primary>Pull_Up</primary><secondary>GPIO_Pull</secondary></indexterm>
+<indexterm><primary>GPIO_Pull</primary><secondary>Pull_Up</secondary></indexterm>
+<para><computeroutput>uint8_t Pull_Up</computeroutput></para><para>
+Definition at line <link linkend="__g_p_i_o___defs_8h_source_1l00040">40</link> of file <link linkend="__g_p_i_o___defs_8h_source">GPIO_Defs.h</link>.</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+GPIO/GPIO_Defs.h</section>
+</section>

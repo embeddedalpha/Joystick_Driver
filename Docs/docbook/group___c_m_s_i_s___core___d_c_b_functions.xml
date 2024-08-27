@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___c_m_s_i_s___core___d_c_b_functions" xml:lang="en-US">
+<title>Debug Control Functions</title>
+<indexterm><primary>Debug Control Functions</primary></indexterm>
+<para>
+
+<para>Functions that access the Debug Control Block. </para>
+ 
+</para>
+Collaboration diagram for Debug Control Functions:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="group___c_m_s_i_s___core___d_c_b_functions.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Topics    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_group___c_m_s_i_s___core___d_i_b_functions">Debug Identification Functions</link></para>
+
+<para>Functions that access the Debug Identification Block. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+        <itemizedlist>
+            <listitem><para>__STATIC_INLINE void <link linkend="_group___c_m_s_i_s___core___n_v_i_c_functions_1ga8684eef21a32a624112814027635796b">DCB_SetAuthCtrl</link> (uint32_t value)</para>
+
+<para>Set Debug Authentication Control Register. </para>
+</listitem>
+            <listitem><para>__STATIC_INLINE uint32_t <link linkend="_group___c_m_s_i_s___core___n_v_i_c_functions_1gaf5c941317584778c1830125de083c23e">DCB_GetAuthCtrl</link> (void)</para>
+
+<para>Get Debug Authentication Control Register. </para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para>Functions that access the Debug Control Block. </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_group___c_m_s_i_s___core___n_v_i_c_functions_1gaf5c941317584778c1830125de083c23e"/><section>
+    <title>DCB_GetAuthCtrl()</title>
+<indexterm><primary>DCB_GetAuthCtrl</primary><secondary>Debug Control Functions</secondary></indexterm>
+<indexterm><primary>Debug Control Functions</primary><secondary>DCB_GetAuthCtrl</secondary></indexterm>
+<para><computeroutput>__STATIC_INLINE uint32_t DCB_GetAuthCtrl (void )</computeroutput></para><para>
+
+<para>Get Debug Authentication Control Register. </para>
+</para>
+
+<para>Reads Debug Authentication Control register. <formalpara><title>Returns</title>
+
+<para>Debug Authentication Control Register. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_core__armv81mml_8h_source_1l03995">3995</link> of file <link linkend="_core__armv81mml_8h_source">core_armv81mml.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___core___n_v_i_c_functions_1ga8684eef21a32a624112814027635796b"/><section>
+    <title>DCB_SetAuthCtrl()</title>
+<indexterm><primary>DCB_SetAuthCtrl</primary><secondary>Debug Control Functions</secondary></indexterm>
+<indexterm><primary>Debug Control Functions</primary><secondary>DCB_SetAuthCtrl</secondary></indexterm>
+<para><computeroutput>__STATIC_INLINE void DCB_SetAuthCtrl (uint32_t value)</computeroutput></para><para>
+
+<para>Set Debug Authentication Control Register. </para>
+</para>
+
+<para>writes to Debug Authentication Control register. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>value</entry><entry>
+<para>value to be writen. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_core__armv81mml_8h_source_1l03980">3980</link> of file <link linkend="_core__armv81mml_8h_source">core_armv81mml.h</link>.</para>
+</section>
+</section>
+    <xi:include href="group___c_m_s_i_s___core___d_i_b_functions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

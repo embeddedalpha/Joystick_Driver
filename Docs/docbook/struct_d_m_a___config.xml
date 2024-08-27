@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_d_m_a___config" xml:lang="en-US">
+<title>DMA_Config Struct Reference</title>
+<indexterm><primary>DMA_Config</primary></indexterm>
+Collaboration diagram for DMA_Config:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="struct_d_m_a___config__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___config_1a6e85060d1eb70652d7ae25f5874c0471">Request</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_d_m_a___config_1a341521a67cff2231692c24e9a6b7c066">flow_control</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_d_m_a___config_1ab0d4e04dd71552331ffad0117c882600">transfer_direction</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_d_m_a___config_1a5090e6477b7dbf372840dff800b528f3">priority_level</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_d_m_a___config_1af3efd9c698a3ac53ca80d3822260b610">circular_mode</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_d_m_a___config_1ae5845b33ba38b7f790d11c9ffa21bb7e">interrupts</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_d_m_a___config_1add9e68da28202be0bd061aa0016cb13d">memory_pointer_increment</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_d_m_a___config_1a6a0ff80a44dba7f7fb5b067940c55d02">peripheral_pointer_increment</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_d_m_a___config_1ac0e90ce8ec7c5cd20b9837d24210f9bc">peripheral_data_size</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_d_m_a___config_1a20c2a65d22c9bd4072e7964f7f78ee81">memory_data_size</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_d_m_a___config_1a156ed3af12f80bf8d66d9421d6519cd5">peripheral_address</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_d_m_a___config_1aee042fb0186f503bb66e69688778d2ab">memory_address</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_d_m_a___config_1a8162110b7928d54377741a8066310938">buffer_length</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__d_m_a_8h_source_1l00037">37</link> of file <link linkend="__d_m_a_8h_source">DMA.h</link>.</para>
+</section>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_struct_d_m_a___config_1a8162110b7928d54377741a8066310938"/><section>
+    <title>buffer_length</title>
+<indexterm><primary>buffer_length</primary><secondary>DMA_Config</secondary></indexterm>
+<indexterm><primary>DMA_Config</primary><secondary>buffer_length</secondary></indexterm>
+<para><computeroutput>uint16_t buffer_length</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a_8h_source_1l00052">52</link> of file <link linkend="__d_m_a_8h_source">DMA.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___config_1af3efd9c698a3ac53ca80d3822260b610"/><section>
+    <title>circular_mode</title>
+<indexterm><primary>circular_mode</primary><secondary>DMA_Config</secondary></indexterm>
+<indexterm><primary>DMA_Config</primary><secondary>circular_mode</secondary></indexterm>
+<para><computeroutput>uint32_t circular_mode</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a_8h_source_1l00043">43</link> of file <link linkend="__d_m_a_8h_source">DMA.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___config_1a341521a67cff2231692c24e9a6b7c066"/><section>
+    <title>flow_control</title>
+<indexterm><primary>flow_control</primary><secondary>DMA_Config</secondary></indexterm>
+<indexterm><primary>DMA_Config</primary><secondary>flow_control</secondary></indexterm>
+<para><computeroutput>uint32_t flow_control</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a_8h_source_1l00040">40</link> of file <link linkend="__d_m_a_8h_source">DMA.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___config_1ae5845b33ba38b7f790d11c9ffa21bb7e"/><section>
+    <title>interrupts</title>
+<indexterm><primary>interrupts</primary><secondary>DMA_Config</secondary></indexterm>
+<indexterm><primary>DMA_Config</primary><secondary>interrupts</secondary></indexterm>
+<para><computeroutput>uint32_t interrupts</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a_8h_source_1l00044">44</link> of file <link linkend="__d_m_a_8h_source">DMA.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___config_1aee042fb0186f503bb66e69688778d2ab"/><section>
+    <title>memory_address</title>
+<indexterm><primary>memory_address</primary><secondary>DMA_Config</secondary></indexterm>
+<indexterm><primary>DMA_Config</primary><secondary>memory_address</secondary></indexterm>
+<para><computeroutput>uint32_t memory_address</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a_8h_source_1l00051">51</link> of file <link linkend="__d_m_a_8h_source">DMA.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___config_1a20c2a65d22c9bd4072e7964f7f78ee81"/><section>
+    <title>memory_data_size</title>
+<indexterm><primary>memory_data_size</primary><secondary>DMA_Config</secondary></indexterm>
+<indexterm><primary>DMA_Config</primary><secondary>memory_data_size</secondary></indexterm>
+<para><computeroutput>uint32_t memory_data_size</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a_8h_source_1l00049">49</link> of file <link linkend="__d_m_a_8h_source">DMA.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___config_1add9e68da28202be0bd061aa0016cb13d"/><section>
+    <title>memory_pointer_increment</title>
+<indexterm><primary>memory_pointer_increment</primary><secondary>DMA_Config</secondary></indexterm>
+<indexterm><primary>DMA_Config</primary><secondary>memory_pointer_increment</secondary></indexterm>
+<para><computeroutput>uint16_t memory_pointer_increment</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a_8h_source_1l00045">45</link> of file <link linkend="__d_m_a_8h_source">DMA.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___config_1a156ed3af12f80bf8d66d9421d6519cd5"/><section>
+    <title>peripheral_address</title>
+<indexterm><primary>peripheral_address</primary><secondary>DMA_Config</secondary></indexterm>
+<indexterm><primary>DMA_Config</primary><secondary>peripheral_address</secondary></indexterm>
+<para><computeroutput>uint32_t peripheral_address</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a_8h_source_1l00050">50</link> of file <link linkend="__d_m_a_8h_source">DMA.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___config_1ac0e90ce8ec7c5cd20b9837d24210f9bc"/><section>
+    <title>peripheral_data_size</title>
+<indexterm><primary>peripheral_data_size</primary><secondary>DMA_Config</secondary></indexterm>
+<indexterm><primary>DMA_Config</primary><secondary>peripheral_data_size</secondary></indexterm>
+<para><computeroutput>uint32_t peripheral_data_size</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a_8h_source_1l00048">48</link> of file <link linkend="__d_m_a_8h_source">DMA.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___config_1a6a0ff80a44dba7f7fb5b067940c55d02"/><section>
+    <title>peripheral_pointer_increment</title>
+<indexterm><primary>peripheral_pointer_increment</primary><secondary>DMA_Config</secondary></indexterm>
+<indexterm><primary>DMA_Config</primary><secondary>peripheral_pointer_increment</secondary></indexterm>
+<para><computeroutput>uint16_t peripheral_pointer_increment</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a_8h_source_1l00046">46</link> of file <link linkend="__d_m_a_8h_source">DMA.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___config_1a5090e6477b7dbf372840dff800b528f3"/><section>
+    <title>priority_level</title>
+<indexterm><primary>priority_level</primary><secondary>DMA_Config</secondary></indexterm>
+<indexterm><primary>DMA_Config</primary><secondary>priority_level</secondary></indexterm>
+<para><computeroutput>uint32_t priority_level</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a_8h_source_1l00042">42</link> of file <link linkend="__d_m_a_8h_source">DMA.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___config_1a6e85060d1eb70652d7ae25f5874c0471"/><section>
+    <title>Request</title>
+<indexterm><primary>Request</primary><secondary>DMA_Config</secondary></indexterm>
+<indexterm><primary>DMA_Config</primary><secondary>Request</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> Request</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a_8h_source_1l00039">39</link> of file <link linkend="__d_m_a_8h_source">DMA.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___config_1ab0d4e04dd71552331ffad0117c882600"/><section>
+    <title>transfer_direction</title>
+<indexterm><primary>transfer_direction</primary><secondary>DMA_Config</secondary></indexterm>
+<indexterm><primary>DMA_Config</primary><secondary>transfer_direction</secondary></indexterm>
+<para><computeroutput>uint32_t transfer_direction</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a_8h_source_1l00041">41</link> of file <link linkend="__d_m_a_8h_source">DMA.h</link>.</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+DMA/DMA.h</section>
+</section>

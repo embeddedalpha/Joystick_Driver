@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___c_m_s_i_s___core___pac_key_functions" xml:lang="en-US">
+<title>PAC Key functions</title>
+<indexterm><primary>PAC Key functions</primary></indexterm>
+<para>
+
+<para>Functions that access the PAC keys. </para>
+ 
+</para>
+Collaboration diagram for PAC Key functions:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="group___c_m_s_i_s___core___pac_key_functions.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+
+<para>Functions that access the PAC keys. </para>
+</section>

@@ -4,7 +4,9 @@ USART/USART.o: ../USART/USART.c ../Inc/main.h ../Inc/stm32f407xx.h \
  ../Inc/stm32f4xx.h \
  B:/STM32F407V_Firmware_C_Lang/Joystick_Driver/GPIO/GPIO.h \
  B:/STM32F407V_Firmware_C_Lang/Joystick_Driver/GPIO/GPIO_Defs.h \
- ../USART/USART.h ../USART/USART_Defs.h
+ ../USART/USART.h ../USART/USART_Defs.h \
+ B:/STM32F407V_Firmware_C_Lang/Joystick_Driver/DMA/DMA.h \
+ B:/STM32F407V_Firmware_C_Lang/Joystick_Driver/DMA/DMA_Defs.h
 ../Inc/main.h:
 ../Inc/stm32f407xx.h:
 ../Inc/core_cm4.h:
@@ -18,3 +20,5 @@ B:/STM32F407V_Firmware_C_Lang/Joystick_Driver/GPIO/GPIO.h:
 B:/STM32F407V_Firmware_C_Lang/Joystick_Driver/GPIO/GPIO_Defs.h:
 ../USART/USART.h:
 ../USART/USART_Defs.h:
+B:/STM32F407V_Firmware_C_Lang/Joystick_Driver/DMA/DMA.h:
+B:/STM32F407V_Firmware_C_Lang/Joystick_Driver/DMA/DMA_Defs.h:

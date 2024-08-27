@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_a_d_c___channel___type" xml:lang="en-US">
+<title>ADC_Channel_Type Struct Reference</title>
+<indexterm><primary>ADC_Channel_Type</primary></indexterm>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para>uint8_t <link linkend="_struct_a_d_c___channel___type_1a66cc485b200597d602219c305c95cce8">Regular</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct_a_d_c___channel___type_1a20e2d3eadb048c47c80d3fbd7257cc52">Injected</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00157">157</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_struct_a_d_c___channel___type_1a20e2d3eadb048c47c80d3fbd7257cc52"/><section>
+    <title>Injected</title>
+<indexterm><primary>Injected</primary><secondary>ADC_Channel_Type</secondary></indexterm>
+<indexterm><primary>ADC_Channel_Type</primary><secondary>Injected</secondary></indexterm>
+<para><computeroutput>uint8_t Injected</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00159">159</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_a_d_c___channel___type_1a66cc485b200597d602219c305c95cce8"/><section>
+    <title>Regular</title>
+<indexterm><primary>Regular</primary><secondary>ADC_Channel_Type</secondary></indexterm>
+<indexterm><primary>ADC_Channel_Type</primary><secondary>Regular</secondary></indexterm>
+<para><computeroutput>uint8_t Regular</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00158">158</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+ADC/<link linkend="__a_d_c___defs_8h">ADC_Defs.h</link></section>
+</section>

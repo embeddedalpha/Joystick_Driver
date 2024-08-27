@@ -1,0 +1,166 @@
+.TH "USB_OTG_DeviceTypeDef" 3 "Version JSTDRVF4" "Joystick Driver" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+USB_OTG_DeviceTypeDef \- USB_OTG_device_Registers\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <stm32f407xx\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDCFG\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDCTL\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDSTS\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBReserved0C\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDIEPMSK\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDOEPMSK\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDAINT\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDAINTMSK\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBReserved20\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBReserved9\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDVBUSDIS\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDVBUSPULSE\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDTHRCTL\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDIEPEMPMSK\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDEACHINT\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDEACHMSK\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBReserved40\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDINEP1MSK\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBReserved44\fP [15]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDOUTEP1MSK\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+USB_OTG_device_Registers\&. 
+.PP
+Definition at line \fB818\fP of file \fBstm32f407xx\&.h\fP\&.
+.SH "Field Documentation"
+.PP 
+.SS "\fB__IO\fP uint32_t DAINT"
+dev All Endpoints Itr Reg 818h 
+.PP
+Definition at line \fB826\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t DAINTMSK"
+dev All Endpoints Itr Mask 81Ch 
+.PP
+Definition at line \fB827\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t DCFG"
+dev Configuration Register 800h 
+.PP
+Definition at line \fB820\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t DCTL"
+dev Control Register 804h 
+.PP
+Definition at line \fB821\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t DEACHINT"
+dedicated EP interrupt 838h 
+.PP
+Definition at line \fB834\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t DEACHMSK"
+dedicated EP msk 83Ch 
+.PP
+Definition at line \fB835\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t DIEPEMPMSK"
+dev empty msk 834h 
+.PP
+Definition at line \fB833\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t DIEPMSK"
+dev IN Endpoint Mask 810h 
+.PP
+Definition at line \fB824\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t DINEP1MSK"
+dedicated EP mask 844h 
+.PP
+Definition at line \fB837\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t DOEPMSK"
+dev OUT Endpoint Mask 814h 
+.PP
+Definition at line \fB825\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t DOUTEP1MSK"
+dedicated EP msk 884h 
+.PP
+Definition at line \fB839\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t DSTS"
+dev Status Register (RO) 808h 
+.PP
+Definition at line \fB822\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t DTHRCTL"
+dev threshold 830h 
+.PP
+Definition at line \fB832\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t DVBUSDIS"
+dev VBUS discharge Register 828h 
+.PP
+Definition at line \fB830\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t DVBUSPULSE"
+dev VBUS Pulse Register 82Ch 
+.PP
+Definition at line \fB831\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "uint32_t Reserved0C"
+Reserved 80Ch 
+.PP
+Definition at line \fB823\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "uint32_t Reserved20"
+Reserved 820h 
+.PP
+Definition at line \fB828\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "uint32_t Reserved40"
+dedicated EP mask 840h 
+.PP
+Definition at line \fB836\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "uint32_t Reserved44[15]"
+Reserved 844-87Ch 
+.PP
+Definition at line \fB838\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "uint32_t Reserved9"
+Reserved 824h 
+.PP
+Definition at line \fB829\fP of file \fBstm32f407xx\&.h\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Joystick Driver from the source code\&.

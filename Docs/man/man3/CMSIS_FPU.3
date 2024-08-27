@@ -1,0 +1,4359 @@
+.TH "CMSIS_FPU" 3 "Version JSTDRVF4" "Joystick Driver" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CMSIS_FPU \- Floating Point Unit (FPU)
+.PP
+ \- Type definitions for the Floating Point Unit (FPU)  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Topics"
+
+.in +1c
+.ti -1c
+.RI "\fBCore Debug Registers (CoreDebug)\fP"
+.br
+.RI "Type definitions for the Core Debug Registers\&. "
+.in -1c
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBFPU_Type\fP"
+.br
+.RI "Structure type to access the Floating Point Unit (FPU)\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBEXC_RETURN_HANDLER_FPU\fP   (0xFFFFFFE1UL)     /* return to Handler mode, uses MSP after return, restore floating\-point state */"
+.br
+.ti -1c
+.RI "#define \fBEXC_RETURN_THREAD_MSP_FPU\fP   (0xFFFFFFE9UL)     /* return to Thread mode, uses MSP after return, restore floating\-point state  */"
+.br
+.ti -1c
+.RI "#define \fBEXC_RETURN_THREAD_PSP_FPU\fP   (0xFFFFFFEDUL)     /* return to Thread mode, uses PSP after return, restore floating\-point state  */"
+.br
+.in -1c
+.in +1c
+.ti -1c
+.RI "#define \fBFPU_FPCCR_ASPEN_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_ASPEN_Msk\fP   (1UL << \fBFPU_FPCCR_ASPEN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPEN_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPEN_Msk\fP   (1UL << \fBFPU_FPCCR_LSPEN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPENS_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPENS_Msk\fP   (1UL << \fBFPU_FPCCR_LSPENS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRET_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRET_Msk\fP   (1UL << \fBFPU_FPCCR_CLRONRET_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRETS_Pos\fP   27U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRETS_Msk\fP   (1UL << \fBFPU_FPCCR_CLRONRETS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_TS_Pos\fP   26U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_TS_Msk\fP   (1UL << \fBFPU_FPCCR_TS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_UFRDY_Pos\fP   10U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_UFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_UFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SPLIMVIOL_Pos\fP   9U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SPLIMVIOL_Msk\fP   (1UL << \fBFPU_FPCCR_SPLIMVIOL_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MONRDY_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MONRDY_Msk\fP   (1UL << \fBFPU_FPCCR_MONRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SFRDY_Pos\fP   7U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_SFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_BFRDY_Pos\fP   6U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_BFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_BFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MMRDY_Pos\fP   5U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MMRDY_Msk\fP   (1UL << \fBFPU_FPCCR_MMRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_HFRDY_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_HFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_HFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_THREAD_Pos\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_THREAD_Msk\fP   (1UL << \fBFPU_FPCCR_THREAD_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_S_Pos\fP   2U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_S_Msk\fP   (1UL << \fBFPU_FPCCR_S_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_USER_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_USER_Msk\fP   (1UL << \fBFPU_FPCCR_USER_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPACT_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPACT_Msk\fP   (1UL /*<< \fBFPU_FPCCR_LSPACT_Pos\fP*/)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCAR_ADDRESS_Pos\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCAR_ADDRESS_Msk\fP   (0x1FFFFFFFUL << \fBFPU_FPCAR_ADDRESS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_AHP_Pos\fP   26U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_AHP_Msk\fP   (1UL << \fBFPU_FPDSCR_AHP_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_DN_Pos\fP   25U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_DN_Msk\fP   (1UL << \fBFPU_FPDSCR_DN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_FZ_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_FZ_Msk\fP   (1UL << \fBFPU_FPDSCR_FZ_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_RMode_Pos\fP   22U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_RMode_Msk\fP   (3UL << \fBFPU_FPDSCR_RMode_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR2_FPMisc_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR2_FPMisc_Msk\fP   (0xFUL << \fBFPU_MVFR2_FPMisc_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_ASPEN_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_ASPEN_Msk\fP   (1UL << \fBFPU_FPCCR_ASPEN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPEN_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPEN_Msk\fP   (1UL << \fBFPU_FPCCR_LSPEN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPENS_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPENS_Msk\fP   (1UL << \fBFPU_FPCCR_LSPENS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRET_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRET_Msk\fP   (1UL << \fBFPU_FPCCR_CLRONRET_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRETS_Pos\fP   27U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRETS_Msk\fP   (1UL << \fBFPU_FPCCR_CLRONRETS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_TS_Pos\fP   26U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_TS_Msk\fP   (1UL << \fBFPU_FPCCR_TS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_UFRDY_Pos\fP   10U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_UFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_UFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SPLIMVIOL_Pos\fP   9U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SPLIMVIOL_Msk\fP   (1UL << \fBFPU_FPCCR_SPLIMVIOL_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MONRDY_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MONRDY_Msk\fP   (1UL << \fBFPU_FPCCR_MONRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SFRDY_Pos\fP   7U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_SFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_BFRDY_Pos\fP   6U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_BFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_BFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MMRDY_Pos\fP   5U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MMRDY_Msk\fP   (1UL << \fBFPU_FPCCR_MMRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_HFRDY_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_HFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_HFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_THREAD_Pos\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_THREAD_Msk\fP   (1UL << \fBFPU_FPCCR_THREAD_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_S_Pos\fP   2U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_S_Msk\fP   (1UL << \fBFPU_FPCCR_S_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_USER_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_USER_Msk\fP   (1UL << \fBFPU_FPCCR_USER_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPACT_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPACT_Msk\fP   (1UL /*<< \fBFPU_FPCCR_LSPACT_Pos\fP*/)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCAR_ADDRESS_Pos\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCAR_ADDRESS_Msk\fP   (0x1FFFFFFFUL << \fBFPU_FPCAR_ADDRESS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_AHP_Pos\fP   26U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_AHP_Msk\fP   (1UL << \fBFPU_FPDSCR_AHP_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_DN_Pos\fP   25U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_DN_Msk\fP   (1UL << \fBFPU_FPDSCR_DN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_FZ_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_FZ_Msk\fP   (1UL << \fBFPU_FPDSCR_FZ_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_RMode_Pos\fP   22U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_RMode_Msk\fP   (3UL << \fBFPU_FPDSCR_RMode_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FP_rounding_modes_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FP_rounding_modes_Msk\fP   (0xFUL << \fBFPU_MVFR0_FP_rounding_modes_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Short_vectors_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Short_vectors_Msk\fP   (0xFUL << \fBFPU_MVFR0_Short_vectors_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Square_root_Pos\fP   20U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Square_root_Msk\fP   (0xFUL << \fBFPU_MVFR0_Square_root_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Divide_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Divide_Msk\fP   (0xFUL << \fBFPU_MVFR0_Divide_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FP_excep_trapping_Pos\fP   12U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FP_excep_trapping_Msk\fP   (0xFUL << \fBFPU_MVFR0_FP_excep_trapping_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Double_precision_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Double_precision_Msk\fP   (0xFUL << \fBFPU_MVFR0_Double_precision_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Single_precision_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Single_precision_Msk\fP   (0xFUL << \fBFPU_MVFR0_Single_precision_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_A_SIMD_registers_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_A_SIMD_registers_Msk\fP   (0xFUL /*<< \fBFPU_MVFR0_A_SIMD_registers_Pos\fP*/)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP_fused_MAC_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP_fused_MAC_Msk\fP   (0xFUL << \fBFPU_MVFR1_FP_fused_MAC_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP_HPFP_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP_HPFP_Msk\fP   (0xFUL << \fBFPU_MVFR1_FP_HPFP_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_D_NaN_mode_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_D_NaN_mode_Msk\fP   (0xFUL << \fBFPU_MVFR1_D_NaN_mode_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FtZ_mode_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FtZ_mode_Msk\fP   (0xFUL /*<< \fBFPU_MVFR1_FtZ_mode_Pos\fP*/)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR2_FPMisc_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR2_FPMisc_Msk\fP   (0xFUL << \fBFPU_MVFR2_FPMisc_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_ASPEN_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_ASPEN_Msk\fP   (1UL << \fBFPU_FPCCR_ASPEN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPEN_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPEN_Msk\fP   (1UL << \fBFPU_FPCCR_LSPEN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPENS_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPENS_Msk\fP   (1UL << \fBFPU_FPCCR_LSPENS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRET_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRET_Msk\fP   (1UL << \fBFPU_FPCCR_CLRONRET_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRETS_Pos\fP   27U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRETS_Msk\fP   (1UL << \fBFPU_FPCCR_CLRONRETS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_TS_Pos\fP   26U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_TS_Msk\fP   (1UL << \fBFPU_FPCCR_TS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_UFRDY_Pos\fP   10U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_UFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_UFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SPLIMVIOL_Pos\fP   9U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SPLIMVIOL_Msk\fP   (1UL << \fBFPU_FPCCR_SPLIMVIOL_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MONRDY_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MONRDY_Msk\fP   (1UL << \fBFPU_FPCCR_MONRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SFRDY_Pos\fP   7U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_SFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_BFRDY_Pos\fP   6U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_BFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_BFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MMRDY_Pos\fP   5U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MMRDY_Msk\fP   (1UL << \fBFPU_FPCCR_MMRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_HFRDY_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_HFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_HFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_THREAD_Pos\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_THREAD_Msk\fP   (1UL << \fBFPU_FPCCR_THREAD_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_S_Pos\fP   2U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_S_Msk\fP   (1UL << \fBFPU_FPCCR_S_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_USER_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_USER_Msk\fP   (1UL << \fBFPU_FPCCR_USER_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPACT_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPACT_Msk\fP   (1UL /*<< \fBFPU_FPCCR_LSPACT_Pos\fP*/)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCAR_ADDRESS_Pos\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCAR_ADDRESS_Msk\fP   (0x1FFFFFFFUL << \fBFPU_FPCAR_ADDRESS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_AHP_Pos\fP   26U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_AHP_Msk\fP   (1UL << \fBFPU_FPDSCR_AHP_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_DN_Pos\fP   25U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_DN_Msk\fP   (1UL << \fBFPU_FPDSCR_DN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_FZ_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_FZ_Msk\fP   (1UL << \fBFPU_FPDSCR_FZ_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_RMode_Pos\fP   22U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_RMode_Msk\fP   (3UL << \fBFPU_FPDSCR_RMode_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FP_rounding_modes_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FP_rounding_modes_Msk\fP   (0xFUL << \fBFPU_MVFR0_FP_rounding_modes_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Short_vectors_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Short_vectors_Msk\fP   (0xFUL << \fBFPU_MVFR0_Short_vectors_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Square_root_Pos\fP   20U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Square_root_Msk\fP   (0xFUL << \fBFPU_MVFR0_Square_root_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Divide_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Divide_Msk\fP   (0xFUL << \fBFPU_MVFR0_Divide_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FP_excep_trapping_Pos\fP   12U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FP_excep_trapping_Msk\fP   (0xFUL << \fBFPU_MVFR0_FP_excep_trapping_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Double_precision_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Double_precision_Msk\fP   (0xFUL << \fBFPU_MVFR0_Double_precision_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Single_precision_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Single_precision_Msk\fP   (0xFUL << \fBFPU_MVFR0_Single_precision_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_A_SIMD_registers_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_A_SIMD_registers_Msk\fP   (0xFUL /*<< \fBFPU_MVFR0_A_SIMD_registers_Pos\fP*/)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP_fused_MAC_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP_fused_MAC_Msk\fP   (0xFUL << \fBFPU_MVFR1_FP_fused_MAC_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP_HPFP_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP_HPFP_Msk\fP   (0xFUL << \fBFPU_MVFR1_FP_HPFP_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_D_NaN_mode_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_D_NaN_mode_Msk\fP   (0xFUL << \fBFPU_MVFR1_D_NaN_mode_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FtZ_mode_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FtZ_mode_Msk\fP   (0xFUL /*<< \fBFPU_MVFR1_FtZ_mode_Pos\fP*/)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR2_FPMisc_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR2_FPMisc_Msk\fP   (0xFUL << \fBFPU_MVFR2_FPMisc_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_ASPEN_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_ASPEN_Msk\fP   (1UL << \fBFPU_FPCCR_ASPEN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPEN_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPEN_Msk\fP   (1UL << \fBFPU_FPCCR_LSPEN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPENS_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPENS_Msk\fP   (1UL << \fBFPU_FPCCR_LSPENS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRET_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRET_Msk\fP   (1UL << \fBFPU_FPCCR_CLRONRET_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRETS_Pos\fP   27U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRETS_Msk\fP   (1UL << \fBFPU_FPCCR_CLRONRETS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_TS_Pos\fP   26U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_TS_Msk\fP   (1UL << \fBFPU_FPCCR_TS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_UFRDY_Pos\fP   10U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_UFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_UFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SPLIMVIOL_Pos\fP   9U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SPLIMVIOL_Msk\fP   (1UL << \fBFPU_FPCCR_SPLIMVIOL_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MONRDY_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MONRDY_Msk\fP   (1UL << \fBFPU_FPCCR_MONRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SFRDY_Pos\fP   7U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_SFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_BFRDY_Pos\fP   6U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_BFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_BFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MMRDY_Pos\fP   5U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MMRDY_Msk\fP   (1UL << \fBFPU_FPCCR_MMRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_HFRDY_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_HFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_HFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_THREAD_Pos\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_THREAD_Msk\fP   (1UL << \fBFPU_FPCCR_THREAD_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_S_Pos\fP   2U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_S_Msk\fP   (1UL << \fBFPU_FPCCR_S_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_USER_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_USER_Msk\fP   (1UL << \fBFPU_FPCCR_USER_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPACT_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPACT_Msk\fP   (1UL /*<< \fBFPU_FPCCR_LSPACT_Pos\fP*/)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCAR_ADDRESS_Pos\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCAR_ADDRESS_Msk\fP   (0x1FFFFFFFUL << \fBFPU_FPCAR_ADDRESS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_AHP_Pos\fP   26U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_AHP_Msk\fP   (1UL << \fBFPU_FPDSCR_AHP_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_DN_Pos\fP   25U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_DN_Msk\fP   (1UL << \fBFPU_FPDSCR_DN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_FZ_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_FZ_Msk\fP   (1UL << \fBFPU_FPDSCR_FZ_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_RMode_Pos\fP   22U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_RMode_Msk\fP   (3UL << \fBFPU_FPDSCR_RMode_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FP_rounding_modes_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FP_rounding_modes_Msk\fP   (0xFUL << \fBFPU_MVFR0_FP_rounding_modes_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Short_vectors_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Short_vectors_Msk\fP   (0xFUL << \fBFPU_MVFR0_Short_vectors_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Square_root_Pos\fP   20U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Square_root_Msk\fP   (0xFUL << \fBFPU_MVFR0_Square_root_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Divide_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Divide_Msk\fP   (0xFUL << \fBFPU_MVFR0_Divide_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FP_excep_trapping_Pos\fP   12U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FP_excep_trapping_Msk\fP   (0xFUL << \fBFPU_MVFR0_FP_excep_trapping_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Double_precision_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Double_precision_Msk\fP   (0xFUL << \fBFPU_MVFR0_Double_precision_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Single_precision_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Single_precision_Msk\fP   (0xFUL << \fBFPU_MVFR0_Single_precision_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_A_SIMD_registers_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_A_SIMD_registers_Msk\fP   (0xFUL /*<< \fBFPU_MVFR0_A_SIMD_registers_Pos\fP*/)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP_fused_MAC_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP_fused_MAC_Msk\fP   (0xFUL << \fBFPU_MVFR1_FP_fused_MAC_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP_HPFP_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP_HPFP_Msk\fP   (0xFUL << \fBFPU_MVFR1_FP_HPFP_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_D_NaN_mode_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_D_NaN_mode_Msk\fP   (0xFUL << \fBFPU_MVFR1_D_NaN_mode_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FtZ_mode_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FtZ_mode_Msk\fP   (0xFUL /*<< \fBFPU_MVFR1_FtZ_mode_Pos\fP*/)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR2_FPMisc_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR2_FPMisc_Msk\fP   (0xFUL << \fBFPU_MVFR2_FPMisc_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_ASPEN_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_ASPEN_Msk\fP   (1UL << \fBFPU_FPCCR_ASPEN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPEN_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPEN_Msk\fP   (1UL << \fBFPU_FPCCR_LSPEN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MONRDY_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MONRDY_Msk\fP   (1UL << \fBFPU_FPCCR_MONRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_BFRDY_Pos\fP   6U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_BFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_BFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MMRDY_Pos\fP   5U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MMRDY_Msk\fP   (1UL << \fBFPU_FPCCR_MMRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_HFRDY_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_HFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_HFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_THREAD_Pos\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_THREAD_Msk\fP   (1UL << \fBFPU_FPCCR_THREAD_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_USER_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_USER_Msk\fP   (1UL << \fBFPU_FPCCR_USER_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPACT_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPACT_Msk\fP   (1UL /*<< \fBFPU_FPCCR_LSPACT_Pos\fP*/)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCAR_ADDRESS_Pos\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCAR_ADDRESS_Msk\fP   (0x1FFFFFFFUL << \fBFPU_FPCAR_ADDRESS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_AHP_Pos\fP   26U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_AHP_Msk\fP   (1UL << \fBFPU_FPDSCR_AHP_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_DN_Pos\fP   25U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_DN_Msk\fP   (1UL << \fBFPU_FPDSCR_DN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_FZ_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_FZ_Msk\fP   (1UL << \fBFPU_FPDSCR_FZ_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_RMode_Pos\fP   22U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_RMode_Msk\fP   (3UL << \fBFPU_FPDSCR_RMode_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FP_rounding_modes_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FP_rounding_modes_Msk\fP   (0xFUL << \fBFPU_MVFR0_FP_rounding_modes_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Short_vectors_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Short_vectors_Msk\fP   (0xFUL << \fBFPU_MVFR0_Short_vectors_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Square_root_Pos\fP   20U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Square_root_Msk\fP   (0xFUL << \fBFPU_MVFR0_Square_root_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Divide_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Divide_Msk\fP   (0xFUL << \fBFPU_MVFR0_Divide_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FP_excep_trapping_Pos\fP   12U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FP_excep_trapping_Msk\fP   (0xFUL << \fBFPU_MVFR0_FP_excep_trapping_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Double_precision_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Double_precision_Msk\fP   (0xFUL << \fBFPU_MVFR0_Double_precision_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Single_precision_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Single_precision_Msk\fP   (0xFUL << \fBFPU_MVFR0_Single_precision_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_A_SIMD_registers_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_A_SIMD_registers_Msk\fP   (0xFUL /*<< \fBFPU_MVFR0_A_SIMD_registers_Pos\fP*/)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP_fused_MAC_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP_fused_MAC_Msk\fP   (0xFUL << \fBFPU_MVFR1_FP_fused_MAC_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP_HPFP_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP_HPFP_Msk\fP   (0xFUL << \fBFPU_MVFR1_FP_HPFP_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_D_NaN_mode_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_D_NaN_mode_Msk\fP   (0xFUL << \fBFPU_MVFR1_D_NaN_mode_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FtZ_mode_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FtZ_mode_Msk\fP   (0xFUL /*<< \fBFPU_MVFR1_FtZ_mode_Pos\fP*/)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_ASPEN_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_ASPEN_Msk\fP   (1UL << \fBFPU_FPCCR_ASPEN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPEN_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPEN_Msk\fP   (1UL << \fBFPU_FPCCR_LSPEN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPENS_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPENS_Msk\fP   (1UL << \fBFPU_FPCCR_LSPENS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRET_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRET_Msk\fP   (1UL << \fBFPU_FPCCR_CLRONRET_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRETS_Pos\fP   27U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRETS_Msk\fP   (1UL << \fBFPU_FPCCR_CLRONRETS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_TS_Pos\fP   26U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_TS_Msk\fP   (1UL << \fBFPU_FPCCR_TS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_UFRDY_Pos\fP   10U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_UFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_UFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SPLIMVIOL_Pos\fP   9U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SPLIMVIOL_Msk\fP   (1UL << \fBFPU_FPCCR_SPLIMVIOL_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MONRDY_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MONRDY_Msk\fP   (1UL << \fBFPU_FPCCR_MONRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SFRDY_Pos\fP   7U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_SFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_BFRDY_Pos\fP   6U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_BFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_BFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MMRDY_Pos\fP   5U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MMRDY_Msk\fP   (1UL << \fBFPU_FPCCR_MMRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_HFRDY_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_HFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_HFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_THREAD_Pos\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_THREAD_Msk\fP   (1UL << \fBFPU_FPCCR_THREAD_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_S_Pos\fP   2U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_S_Msk\fP   (1UL << \fBFPU_FPCCR_S_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_USER_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_USER_Msk\fP   (1UL << \fBFPU_FPCCR_USER_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPACT_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPACT_Msk\fP   (1UL /*<< \fBFPU_FPCCR_LSPACT_Pos\fP*/)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCAR_ADDRESS_Pos\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCAR_ADDRESS_Msk\fP   (0x1FFFFFFFUL << \fBFPU_FPCAR_ADDRESS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_AHP_Pos\fP   26U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_AHP_Msk\fP   (1UL << \fBFPU_FPDSCR_AHP_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_DN_Pos\fP   25U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_DN_Msk\fP   (1UL << \fBFPU_FPDSCR_DN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_FZ_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_FZ_Msk\fP   (1UL << \fBFPU_FPDSCR_FZ_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_RMode_Pos\fP   22U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_RMode_Msk\fP   (3UL << \fBFPU_FPDSCR_RMode_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR2_FPMisc_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR2_FPMisc_Msk\fP   (0xFUL << \fBFPU_MVFR2_FPMisc_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_ASPEN_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_ASPEN_Msk\fP   (1UL << \fBFPU_FPCCR_ASPEN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPEN_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPEN_Msk\fP   (1UL << \fBFPU_FPCCR_LSPEN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MONRDY_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MONRDY_Msk\fP   (1UL << \fBFPU_FPCCR_MONRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_BFRDY_Pos\fP   6U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_BFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_BFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MMRDY_Pos\fP   5U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MMRDY_Msk\fP   (1UL << \fBFPU_FPCCR_MMRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_HFRDY_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_HFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_HFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_THREAD_Pos\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_THREAD_Msk\fP   (1UL << \fBFPU_FPCCR_THREAD_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_USER_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_USER_Msk\fP   (1UL << \fBFPU_FPCCR_USER_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPACT_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPACT_Msk\fP   (1UL /*<< \fBFPU_FPCCR_LSPACT_Pos\fP*/)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCAR_ADDRESS_Pos\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCAR_ADDRESS_Msk\fP   (0x1FFFFFFFUL << \fBFPU_FPCAR_ADDRESS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_AHP_Pos\fP   26U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_AHP_Msk\fP   (1UL << \fBFPU_FPDSCR_AHP_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_DN_Pos\fP   25U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_DN_Msk\fP   (1UL << \fBFPU_FPDSCR_DN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_FZ_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_FZ_Msk\fP   (1UL << \fBFPU_FPDSCR_FZ_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_RMode_Pos\fP   22U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_RMode_Msk\fP   (3UL << \fBFPU_FPDSCR_RMode_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FP_rounding_modes_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FP_rounding_modes_Msk\fP   (0xFUL << \fBFPU_MVFR0_FP_rounding_modes_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Short_vectors_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Short_vectors_Msk\fP   (0xFUL << \fBFPU_MVFR0_Short_vectors_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Square_root_Pos\fP   20U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Square_root_Msk\fP   (0xFUL << \fBFPU_MVFR0_Square_root_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Divide_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Divide_Msk\fP   (0xFUL << \fBFPU_MVFR0_Divide_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FP_excep_trapping_Pos\fP   12U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FP_excep_trapping_Msk\fP   (0xFUL << \fBFPU_MVFR0_FP_excep_trapping_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Double_precision_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Double_precision_Msk\fP   (0xFUL << \fBFPU_MVFR0_Double_precision_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Single_precision_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Single_precision_Msk\fP   (0xFUL << \fBFPU_MVFR0_Single_precision_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_A_SIMD_registers_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_A_SIMD_registers_Msk\fP   (0xFUL /*<< \fBFPU_MVFR0_A_SIMD_registers_Pos\fP*/)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP_fused_MAC_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP_fused_MAC_Msk\fP   (0xFUL << \fBFPU_MVFR1_FP_fused_MAC_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP_HPFP_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP_HPFP_Msk\fP   (0xFUL << \fBFPU_MVFR1_FP_HPFP_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_D_NaN_mode_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_D_NaN_mode_Msk\fP   (0xFUL << \fBFPU_MVFR1_D_NaN_mode_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FtZ_mode_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FtZ_mode_Msk\fP   (0xFUL /*<< \fBFPU_MVFR1_FtZ_mode_Pos\fP*/)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_ASPEN_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_ASPEN_Msk\fP   (1UL << \fBFPU_FPCCR_ASPEN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPEN_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPEN_Msk\fP   (1UL << \fBFPU_FPCCR_LSPEN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPENS_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPENS_Msk\fP   (1UL << \fBFPU_FPCCR_LSPENS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRET_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRET_Msk\fP   (1UL << \fBFPU_FPCCR_CLRONRET_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRETS_Pos\fP   27U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRETS_Msk\fP   (1UL << \fBFPU_FPCCR_CLRONRETS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_TS_Pos\fP   26U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_TS_Msk\fP   (1UL << \fBFPU_FPCCR_TS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_UFRDY_Pos\fP   10U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_UFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_UFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SPLIMVIOL_Pos\fP   9U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SPLIMVIOL_Msk\fP   (1UL << \fBFPU_FPCCR_SPLIMVIOL_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MONRDY_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MONRDY_Msk\fP   (1UL << \fBFPU_FPCCR_MONRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SFRDY_Pos\fP   7U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_SFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_BFRDY_Pos\fP   6U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_BFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_BFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MMRDY_Pos\fP   5U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MMRDY_Msk\fP   (1UL << \fBFPU_FPCCR_MMRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_HFRDY_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_HFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_HFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_THREAD_Pos\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_THREAD_Msk\fP   (1UL << \fBFPU_FPCCR_THREAD_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_S_Pos\fP   2U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_S_Msk\fP   (1UL << \fBFPU_FPCCR_S_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_USER_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_USER_Msk\fP   (1UL << \fBFPU_FPCCR_USER_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPACT_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPACT_Msk\fP   (1UL /*<< \fBFPU_FPCCR_LSPACT_Pos\fP*/)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCAR_ADDRESS_Pos\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCAR_ADDRESS_Msk\fP   (0x1FFFFFFFUL << \fBFPU_FPCAR_ADDRESS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_AHP_Pos\fP   26U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_AHP_Msk\fP   (1UL << \fBFPU_FPDSCR_AHP_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_DN_Pos\fP   25U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_DN_Msk\fP   (1UL << \fBFPU_FPDSCR_DN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_FZ_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_FZ_Msk\fP   (1UL << \fBFPU_FPDSCR_FZ_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_RMode_Pos\fP   22U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_RMode_Msk\fP   (3UL << \fBFPU_FPDSCR_RMode_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR2_FPMisc_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR2_FPMisc_Msk\fP   (0xFUL << \fBFPU_MVFR2_FPMisc_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_ASPEN_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_ASPEN_Msk\fP   (1UL << \fBFPU_FPCCR_ASPEN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPEN_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPEN_Msk\fP   (1UL << \fBFPU_FPCCR_LSPEN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPENS_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPENS_Msk\fP   (1UL << \fBFPU_FPCCR_LSPENS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRET_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRET_Msk\fP   (1UL << \fBFPU_FPCCR_CLRONRET_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRETS_Pos\fP   27U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_CLRONRETS_Msk\fP   (1UL << \fBFPU_FPCCR_CLRONRETS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_TS_Pos\fP   26U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_TS_Msk\fP   (1UL << \fBFPU_FPCCR_TS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_UFRDY_Pos\fP   10U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_UFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_UFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SPLIMVIOL_Pos\fP   9U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SPLIMVIOL_Msk\fP   (1UL << \fBFPU_FPCCR_SPLIMVIOL_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MONRDY_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MONRDY_Msk\fP   (1UL << \fBFPU_FPCCR_MONRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SFRDY_Pos\fP   7U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_SFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_SFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_BFRDY_Pos\fP   6U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_BFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_BFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MMRDY_Pos\fP   5U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_MMRDY_Msk\fP   (1UL << \fBFPU_FPCCR_MMRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_HFRDY_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_HFRDY_Msk\fP   (1UL << \fBFPU_FPCCR_HFRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_THREAD_Pos\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_THREAD_Msk\fP   (1UL << \fBFPU_FPCCR_THREAD_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_S_Pos\fP   2U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_S_Msk\fP   (1UL << \fBFPU_FPCCR_S_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_USER_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_USER_Msk\fP   (1UL << \fBFPU_FPCCR_USER_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPACT_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCCR_LSPACT_Msk\fP   (1UL /*<< \fBFPU_FPCCR_LSPACT_Pos\fP*/)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCAR_ADDRESS_Pos\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPCAR_ADDRESS_Msk\fP   (0x1FFFFFFFUL << \fBFPU_FPCAR_ADDRESS_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_AHP_Pos\fP   26U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_AHP_Msk\fP   (1UL << \fBFPU_FPDSCR_AHP_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_DN_Pos\fP   25U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_DN_Msk\fP   (1UL << \fBFPU_FPDSCR_DN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_FZ_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_FZ_Msk\fP   (1UL << \fBFPU_FPDSCR_FZ_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_RMode_Pos\fP   22U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_RMode_Msk\fP   (3UL << \fBFPU_FPDSCR_RMode_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FP_rounding_modes_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FP_rounding_modes_Msk\fP   (0xFUL << \fBFPU_MVFR0_FP_rounding_modes_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Short_vectors_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Short_vectors_Msk\fP   (0xFUL << \fBFPU_MVFR0_Short_vectors_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Square_root_Pos\fP   20U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Square_root_Msk\fP   (0xFUL << \fBFPU_MVFR0_Square_root_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Divide_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Divide_Msk\fP   (0xFUL << \fBFPU_MVFR0_Divide_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FP_excep_trapping_Pos\fP   12U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FP_excep_trapping_Msk\fP   (0xFUL << \fBFPU_MVFR0_FP_excep_trapping_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Double_precision_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Double_precision_Msk\fP   (0xFUL << \fBFPU_MVFR0_Double_precision_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Single_precision_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_Single_precision_Msk\fP   (0xFUL << \fBFPU_MVFR0_Single_precision_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_A_SIMD_registers_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_A_SIMD_registers_Msk\fP   (0xFUL /*<< \fBFPU_MVFR0_A_SIMD_registers_Pos\fP*/)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP_fused_MAC_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP_fused_MAC_Msk\fP   (0xFUL << \fBFPU_MVFR1_FP_fused_MAC_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP_HPFP_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP_HPFP_Msk\fP   (0xFUL << \fBFPU_MVFR1_FP_HPFP_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_D_NaN_mode_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_D_NaN_mode_Msk\fP   (0xFUL << \fBFPU_MVFR1_D_NaN_mode_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FtZ_mode_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FtZ_mode_Msk\fP   (0xFUL /*<< \fBFPU_MVFR1_FtZ_mode_Pos\fP*/)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR2_FPMisc_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR2_FPMisc_Msk\fP   (0xFUL << \fBFPU_MVFR2_FPMisc_Pos\fP)"
+.br
+.in -1c
+.in +1c
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_FZ16_Pos\fP   19U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_FZ16_Msk\fP   (1UL << \fBFPU_FPDSCR_FZ16_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_LTPSIZE_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_LTPSIZE_Msk\fP   (7UL << \fBFPU_FPDSCR_LTPSIZE_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPRound_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPRound_Msk\fP   (0xFUL << \fBFPU_MVFR0_FPRound_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPSqrt_Pos\fP   20U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPSqrt_Msk\fP   (0xFUL << \fBFPU_MVFR0_FPSqrt_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPDivide_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPDivide_Msk\fP   (0xFUL << \fBFPU_MVFR0_FPDivide_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPDP_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPDP_Msk\fP   (0xFUL << \fBFPU_MVFR0_FPDP_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPSP_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPSP_Msk\fP   (0xFUL << \fBFPU_MVFR0_FPSP_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_SIMDReg_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_SIMDReg_Msk\fP   (0xFUL /*<< \fBFPU_MVFR0_SIMDReg_Pos\fP*/)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FMAC_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FMAC_Msk\fP   (0xFUL << \fBFPU_MVFR1_FMAC_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FPHP_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FPHP_Msk\fP   (0xFUL << \fBFPU_MVFR1_FPHP_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP16_Pos\fP   20U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP16_Msk\fP   (0xFUL << \fBFPU_MVFR1_FP16_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_MVE_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_MVE_Msk\fP   (0xFUL << \fBFPU_MVFR1_MVE_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FPDNaN_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FPDNaN_Msk\fP   (0xFUL << \fBFPU_MVFR1_FPDNaN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FPFtZ_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FPFtZ_Msk\fP   (0xFUL /*<< \fBFPU_MVFR1_FPFtZ_Pos\fP*/)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_FZ16_Pos\fP   19U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_FZ16_Msk\fP   (1UL << \fBFPU_FPDSCR_FZ16_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_LTPSIZE_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_LTPSIZE_Msk\fP   (7UL << \fBFPU_FPDSCR_LTPSIZE_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPRound_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPRound_Msk\fP   (0xFUL << \fBFPU_MVFR0_FPRound_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPSqrt_Pos\fP   20U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPSqrt_Msk\fP   (0xFUL << \fBFPU_MVFR0_FPSqrt_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPDivide_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPDivide_Msk\fP   (0xFUL << \fBFPU_MVFR0_FPDivide_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPDP_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPDP_Msk\fP   (0xFUL << \fBFPU_MVFR0_FPDP_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPSP_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPSP_Msk\fP   (0xFUL << \fBFPU_MVFR0_FPSP_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_SIMDReg_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_SIMDReg_Msk\fP   (0xFUL /*<< \fBFPU_MVFR0_SIMDReg_Pos\fP*/)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FMAC_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FMAC_Msk\fP   (0xFUL << \fBFPU_MVFR1_FMAC_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FPHP_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FPHP_Msk\fP   (0xFUL << \fBFPU_MVFR1_FPHP_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP16_Pos\fP   20U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP16_Msk\fP   (0xFUL << \fBFPU_MVFR1_FP16_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_MVE_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_MVE_Msk\fP   (0xFUL << \fBFPU_MVFR1_MVE_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FPDNaN_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FPDNaN_Msk\fP   (0xFUL << \fBFPU_MVFR1_FPDNaN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FPFtZ_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FPFtZ_Msk\fP   (0xFUL /*<< \fBFPU_MVFR1_FPFtZ_Pos\fP*/)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_FZ16_Pos\fP   19U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_FZ16_Msk\fP   (1UL << \fBFPU_FPDSCR_FZ16_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_LTPSIZE_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBFPU_FPDSCR_LTPSIZE_Msk\fP   (7UL << \fBFPU_FPDSCR_LTPSIZE_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPRound_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPRound_Msk\fP   (0xFUL << \fBFPU_MVFR0_FPRound_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPSqrt_Pos\fP   20U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPSqrt_Msk\fP   (0xFUL << \fBFPU_MVFR0_FPSqrt_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPDivide_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPDivide_Msk\fP   (0xFUL << \fBFPU_MVFR0_FPDivide_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPDP_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPDP_Msk\fP   (0xFUL << \fBFPU_MVFR0_FPDP_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPSP_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_FPSP_Msk\fP   (0xFUL << \fBFPU_MVFR0_FPSP_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_SIMDReg_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR0_SIMDReg_Msk\fP   (0xFUL /*<< \fBFPU_MVFR0_SIMDReg_Pos\fP*/)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FMAC_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FMAC_Msk\fP   (0xFUL << \fBFPU_MVFR1_FMAC_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FPHP_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FPHP_Msk\fP   (0xFUL << \fBFPU_MVFR1_FPHP_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP16_Pos\fP   20U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FP16_Msk\fP   (0xFUL << \fBFPU_MVFR1_FP16_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_MVE_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_MVE_Msk\fP   (0xFUL << \fBFPU_MVFR1_MVE_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FPDNaN_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FPDNaN_Msk\fP   (0xFUL << \fBFPU_MVFR1_FPDNaN_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FPFtZ_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR1_FPFtZ_Msk\fP   (0xFUL /*<< \fBFPU_MVFR1_FPFtZ_Pos\fP*/)"
+.br
+.in -1c
+.in +1c
+.ti -1c
+.RI "#define \fBFPU_MVFR2_VFP_Misc_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR2_VFP_Misc_Msk\fP   (0xFUL << \fBFPU_MVFR2_VFP_Misc_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR2_VFP_Misc_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBFPU_MVFR2_VFP_Misc_Msk\fP   (0xFUL << \fBFPU_MVFR2_VFP_Misc_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBEXC_RETURN_HANDLER_FPU\fP   (0xFFFFFFE1UL)     /* return to Handler mode, uses MSP after return, restore floating\-point state */"
+.br
+.ti -1c
+.RI "#define \fBEXC_RETURN_THREAD_MSP_FPU\fP   (0xFFFFFFE9UL)     /* return to Thread mode, uses MSP after return, restore floating\-point state  */"
+.br
+.ti -1c
+.RI "#define \fBEXC_RETURN_THREAD_PSP_FPU\fP   (0xFFFFFFEDUL)     /* return to Thread mode, uses PSP after return, restore floating\-point state  */"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Type definitions for the Floating Point Unit (FPU) 
+
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define EXC_RETURN_HANDLER_FPU   (0xFFFFFFE1UL)     /* return to Handler mode, uses MSP after return, restore floating\-point state */"
+
+.PP
+Definition at line \fB1639\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define EXC_RETURN_HANDLER_FPU   (0xFFFFFFE1UL)     /* return to Handler mode, uses MSP after return, restore floating\-point state */"
+
+.PP
+Definition at line \fB1866\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define EXC_RETURN_THREAD_MSP_FPU   (0xFFFFFFE9UL)     /* return to Thread mode, uses MSP after return, restore floating\-point state  */"
+
+.PP
+Definition at line \fB1640\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define EXC_RETURN_THREAD_MSP_FPU   (0xFFFFFFE9UL)     /* return to Thread mode, uses MSP after return, restore floating\-point state  */"
+
+.PP
+Definition at line \fB1867\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define EXC_RETURN_THREAD_PSP_FPU   (0xFFFFFFEDUL)     /* return to Thread mode, uses PSP after return, restore floating\-point state  */"
+
+.PP
+Definition at line \fB1641\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define EXC_RETURN_THREAD_PSP_FPU   (0xFFFFFFEDUL)     /* return to Thread mode, uses PSP after return, restore floating\-point state  */"
+
+.PP
+Definition at line \fB1868\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPCAR_ADDRESS_Msk   (0x1FFFFFFFUL << \fBFPU_FPCAR_ADDRESS_Pos\fP)"
+FPCAR: ADDRESS bit Mask 
+.PP
+Definition at line \fB2547\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCAR_ADDRESS_Msk   (0x1FFFFFFFUL << \fBFPU_FPCAR_ADDRESS_Pos\fP)"
+FPCAR: ADDRESS bit Mask 
+.PP
+Definition at line \fB1666\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCAR_ADDRESS_Msk   (0x1FFFFFFFUL << \fBFPU_FPCAR_ADDRESS_Pos\fP)"
+FPCAR: ADDRESS bit Mask 
+.PP
+Definition at line \fB1741\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCAR_ADDRESS_Msk   (0x1FFFFFFFUL << \fBFPU_FPCAR_ADDRESS_Pos\fP)"
+FPCAR: ADDRESS bit Mask 
+.PP
+Definition at line \fB1741\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCAR_ADDRESS_Msk   (0x1FFFFFFFUL << \fBFPU_FPCAR_ADDRESS_Pos\fP)"
+FPCAR: ADDRESS bit Mask 
+.PP
+Definition at line \fB1350\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPCAR_ADDRESS_Msk   (0x1FFFFFFFUL << \fBFPU_FPCAR_ADDRESS_Pos\fP)"
+FPCAR: ADDRESS bit Mask 
+.PP
+Definition at line \fB3043\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCAR_ADDRESS_Msk   (0x1FFFFFFFUL << \fBFPU_FPCAR_ADDRESS_Pos\fP)"
+FPCAR: ADDRESS bit Mask 
+.PP
+Definition at line \fB1577\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPCAR_ADDRESS_Msk   (0x1FFFFFFFUL << \fBFPU_FPCAR_ADDRESS_Pos\fP)"
+FPCAR: ADDRESS bit Mask 
+.PP
+Definition at line \fB2948\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCAR_ADDRESS_Msk   (0x1FFFFFFFUL << \fBFPU_FPCAR_ADDRESS_Pos\fP)"
+FPCAR: ADDRESS bit Mask 
+.PP
+Definition at line \fB1799\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCAR_ADDRESS_Pos   3U"
+FPCAR: ADDRESS bit Position 
+.PP
+Definition at line \fB2546\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCAR_ADDRESS_Pos   3U"
+FPCAR: ADDRESS bit Position 
+.PP
+Definition at line \fB1665\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCAR_ADDRESS_Pos   3U"
+FPCAR: ADDRESS bit Position 
+.PP
+Definition at line \fB1740\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCAR_ADDRESS_Pos   3U"
+FPCAR: ADDRESS bit Position 
+.PP
+Definition at line \fB1740\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCAR_ADDRESS_Pos   3U"
+FPCAR: ADDRESS bit Position 
+.PP
+Definition at line \fB1349\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPCAR_ADDRESS_Pos   3U"
+FPCAR: ADDRESS bit Position 
+.PP
+Definition at line \fB3042\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCAR_ADDRESS_Pos   3U"
+FPCAR: ADDRESS bit Position 
+.PP
+Definition at line \fB1576\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPCAR_ADDRESS_Pos   3U"
+FPCAR: ADDRESS bit Position 
+.PP
+Definition at line \fB2947\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCAR_ADDRESS_Pos   3U"
+FPCAR: ADDRESS bit Position 
+.PP
+Definition at line \fB1798\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_ASPEN_Msk   (1UL << \fBFPU_FPCCR_ASPEN_Pos\fP)"
+FPCCR: ASPEN bit Mask 
+.PP
+Definition at line \fB2495\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_ASPEN_Msk   (1UL << \fBFPU_FPCCR_ASPEN_Pos\fP)"
+FPCCR: ASPEN bit Mask 
+.PP
+Definition at line \fB1614\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_ASPEN_Msk   (1UL << \fBFPU_FPCCR_ASPEN_Pos\fP)"
+FPCCR: ASPEN bit Mask 
+.PP
+Definition at line \fB1689\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_ASPEN_Msk   (1UL << \fBFPU_FPCCR_ASPEN_Pos\fP)"
+FPCCR: ASPEN bit Mask 
+.PP
+Definition at line \fB1689\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_ASPEN_Msk   (1UL << \fBFPU_FPCCR_ASPEN_Pos\fP)"
+FPCCR: ASPEN bit Mask 
+.PP
+Definition at line \fB1322\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPCCR_ASPEN_Msk   (1UL << \fBFPU_FPCCR_ASPEN_Pos\fP)"
+FPCCR: ASPEN bit Mask 
+.PP
+Definition at line \fB2991\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_ASPEN_Msk   (1UL << \fBFPU_FPCCR_ASPEN_Pos\fP)"
+FPCCR: ASPEN bit Mask 
+.PP
+Definition at line \fB1549\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPCCR_ASPEN_Msk   (1UL << \fBFPU_FPCCR_ASPEN_Pos\fP)"
+FPCCR: ASPEN bit Mask 
+.PP
+Definition at line \fB2896\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_ASPEN_Msk   (1UL << \fBFPU_FPCCR_ASPEN_Pos\fP)"
+FPCCR: ASPEN bit Mask 
+.PP
+Definition at line \fB1747\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_ASPEN_Pos   31U"
+FPCCR: ASPEN bit Position 
+.PP
+Definition at line \fB2494\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_ASPEN_Pos   31U"
+FPCCR: ASPEN bit Position 
+.PP
+Definition at line \fB1613\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_ASPEN_Pos   31U"
+FPCCR: ASPEN bit Position 
+.PP
+Definition at line \fB1688\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_ASPEN_Pos   31U"
+FPCCR: ASPEN bit Position 
+.PP
+Definition at line \fB1688\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_ASPEN_Pos   31U"
+FPCCR: ASPEN bit Position 
+.PP
+Definition at line \fB1321\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPCCR_ASPEN_Pos   31U"
+FPCCR: ASPEN bit Position 
+.PP
+Definition at line \fB2990\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_ASPEN_Pos   31U"
+FPCCR: ASPEN bit Position 
+.PP
+Definition at line \fB1548\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPCCR_ASPEN_Pos   31U"
+FPCCR: ASPEN bit Position 
+.PP
+Definition at line \fB2895\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_ASPEN_Pos   31U"
+FPCCR: ASPEN bit Position 
+.PP
+Definition at line \fB1746\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_BFRDY_Msk   (1UL << \fBFPU_FPCCR_BFRDY_Pos\fP)"
+FPCCR: BFRDY bit Mask 
+.PP
+Definition at line \fB2525\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_BFRDY_Msk   (1UL << \fBFPU_FPCCR_BFRDY_Pos\fP)"
+FPCCR: BFRDY bit Mask 
+.PP
+Definition at line \fB1644\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_BFRDY_Msk   (1UL << \fBFPU_FPCCR_BFRDY_Pos\fP)"
+FPCCR: BFRDY bit Mask 
+.PP
+Definition at line \fB1719\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_BFRDY_Msk   (1UL << \fBFPU_FPCCR_BFRDY_Pos\fP)"
+FPCCR: BFRDY bit Mask 
+.PP
+Definition at line \fB1719\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_BFRDY_Msk   (1UL << \fBFPU_FPCCR_BFRDY_Pos\fP)"
+FPCCR: BFRDY bit Mask 
+.PP
+Definition at line \fB1331\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPCCR_BFRDY_Msk   (1UL << \fBFPU_FPCCR_BFRDY_Pos\fP)"
+FPCCR: BFRDY bit Mask 
+.PP
+Definition at line \fB3021\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_BFRDY_Msk   (1UL << \fBFPU_FPCCR_BFRDY_Pos\fP)"
+FPCCR: BFRDY bit Mask 
+.PP
+Definition at line \fB1558\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPCCR_BFRDY_Msk   (1UL << \fBFPU_FPCCR_BFRDY_Pos\fP)"
+FPCCR: BFRDY bit Mask 
+.PP
+Definition at line \fB2926\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_BFRDY_Msk   (1UL << \fBFPU_FPCCR_BFRDY_Pos\fP)"
+FPCCR: BFRDY bit Mask 
+.PP
+Definition at line \fB1777\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_BFRDY_Pos   6U"
+FPCCR: BFRDY Position 
+.PP
+Definition at line \fB2524\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_BFRDY_Pos   6U"
+FPCCR: BFRDY Position 
+.PP
+Definition at line \fB1643\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_BFRDY_Pos   6U"
+FPCCR: BFRDY Position 
+.PP
+Definition at line \fB1718\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_BFRDY_Pos   6U"
+FPCCR: BFRDY Position 
+.PP
+Definition at line \fB1718\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_BFRDY_Pos   6U"
+FPCCR: BFRDY Position 
+.PP
+Definition at line \fB1330\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPCCR_BFRDY_Pos   6U"
+FPCCR: BFRDY Position 
+.PP
+Definition at line \fB3020\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_BFRDY_Pos   6U"
+FPCCR: BFRDY Position 
+.PP
+Definition at line \fB1557\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPCCR_BFRDY_Pos   6U"
+FPCCR: BFRDY Position 
+.PP
+Definition at line \fB2925\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_BFRDY_Pos   6U"
+FPCCR: BFRDY Position 
+.PP
+Definition at line \fB1776\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRET_Msk   (1UL << \fBFPU_FPCCR_CLRONRET_Pos\fP)"
+FPCCR: CLRONRET bit Mask 
+.PP
+Definition at line \fB2504\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRET_Msk   (1UL << \fBFPU_FPCCR_CLRONRET_Pos\fP)"
+FPCCR: CLRONRET bit Mask 
+.PP
+Definition at line \fB1623\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRET_Msk   (1UL << \fBFPU_FPCCR_CLRONRET_Pos\fP)"
+FPCCR: CLRONRET bit Mask 
+.PP
+Definition at line \fB1698\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRET_Msk   (1UL << \fBFPU_FPCCR_CLRONRET_Pos\fP)"
+FPCCR: CLRONRET bit Mask 
+.PP
+Definition at line \fB1698\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRET_Msk   (1UL << \fBFPU_FPCCR_CLRONRET_Pos\fP)"
+FPCCR: CLRONRET bit Mask 
+.PP
+Definition at line \fB3000\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRET_Msk   (1UL << \fBFPU_FPCCR_CLRONRET_Pos\fP)"
+FPCCR: CLRONRET bit Mask 
+.PP
+Definition at line \fB2905\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRET_Msk   (1UL << \fBFPU_FPCCR_CLRONRET_Pos\fP)"
+FPCCR: CLRONRET bit Mask 
+.PP
+Definition at line \fB1756\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRET_Pos   28U"
+FPCCR: CLRONRET Position 
+.PP
+Definition at line \fB2503\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRET_Pos   28U"
+FPCCR: CLRONRET Position 
+.PP
+Definition at line \fB1622\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRET_Pos   28U"
+FPCCR: CLRONRET Position 
+.PP
+Definition at line \fB1697\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRET_Pos   28U"
+FPCCR: CLRONRET Position 
+.PP
+Definition at line \fB1697\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRET_Pos   28U"
+FPCCR: CLRONRET Position 
+.PP
+Definition at line \fB2999\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRET_Pos   28U"
+FPCCR: CLRONRET Position 
+.PP
+Definition at line \fB2904\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRET_Pos   28U"
+FPCCR: CLRONRET Position 
+.PP
+Definition at line \fB1755\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRETS_Msk   (1UL << \fBFPU_FPCCR_CLRONRETS_Pos\fP)"
+FPCCR: CLRONRETS bit Mask 
+.PP
+Definition at line \fB2507\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRETS_Msk   (1UL << \fBFPU_FPCCR_CLRONRETS_Pos\fP)"
+FPCCR: CLRONRETS bit Mask 
+.PP
+Definition at line \fB1626\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRETS_Msk   (1UL << \fBFPU_FPCCR_CLRONRETS_Pos\fP)"
+FPCCR: CLRONRETS bit Mask 
+.PP
+Definition at line \fB1701\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRETS_Msk   (1UL << \fBFPU_FPCCR_CLRONRETS_Pos\fP)"
+FPCCR: CLRONRETS bit Mask 
+.PP
+Definition at line \fB1701\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRETS_Msk   (1UL << \fBFPU_FPCCR_CLRONRETS_Pos\fP)"
+FPCCR: CLRONRETS bit Mask 
+.PP
+Definition at line \fB3003\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRETS_Msk   (1UL << \fBFPU_FPCCR_CLRONRETS_Pos\fP)"
+FPCCR: CLRONRETS bit Mask 
+.PP
+Definition at line \fB2908\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRETS_Msk   (1UL << \fBFPU_FPCCR_CLRONRETS_Pos\fP)"
+FPCCR: CLRONRETS bit Mask 
+.PP
+Definition at line \fB1759\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRETS_Pos   27U"
+FPCCR: CLRONRETS Position 
+.PP
+Definition at line \fB2506\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRETS_Pos   27U"
+FPCCR: CLRONRETS Position 
+.PP
+Definition at line \fB1625\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRETS_Pos   27U"
+FPCCR: CLRONRETS Position 
+.PP
+Definition at line \fB1700\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRETS_Pos   27U"
+FPCCR: CLRONRETS Position 
+.PP
+Definition at line \fB1700\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRETS_Pos   27U"
+FPCCR: CLRONRETS Position 
+.PP
+Definition at line \fB3002\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRETS_Pos   27U"
+FPCCR: CLRONRETS Position 
+.PP
+Definition at line \fB2907\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_CLRONRETS_Pos   27U"
+FPCCR: CLRONRETS Position 
+.PP
+Definition at line \fB1758\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_HFRDY_Msk   (1UL << \fBFPU_FPCCR_HFRDY_Pos\fP)"
+FPCCR: HFRDY bit Mask 
+.PP
+Definition at line \fB2531\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_HFRDY_Msk   (1UL << \fBFPU_FPCCR_HFRDY_Pos\fP)"
+FPCCR: HFRDY bit Mask 
+.PP
+Definition at line \fB1650\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_HFRDY_Msk   (1UL << \fBFPU_FPCCR_HFRDY_Pos\fP)"
+FPCCR: HFRDY bit Mask 
+.PP
+Definition at line \fB1725\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_HFRDY_Msk   (1UL << \fBFPU_FPCCR_HFRDY_Pos\fP)"
+FPCCR: HFRDY bit Mask 
+.PP
+Definition at line \fB1725\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_HFRDY_Msk   (1UL << \fBFPU_FPCCR_HFRDY_Pos\fP)"
+FPCCR: HFRDY bit Mask 
+.PP
+Definition at line \fB1337\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPCCR_HFRDY_Msk   (1UL << \fBFPU_FPCCR_HFRDY_Pos\fP)"
+FPCCR: HFRDY bit Mask 
+.PP
+Definition at line \fB3027\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_HFRDY_Msk   (1UL << \fBFPU_FPCCR_HFRDY_Pos\fP)"
+FPCCR: HFRDY bit Mask 
+.PP
+Definition at line \fB1564\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPCCR_HFRDY_Msk   (1UL << \fBFPU_FPCCR_HFRDY_Pos\fP)"
+FPCCR: HFRDY bit Mask 
+.PP
+Definition at line \fB2932\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_HFRDY_Msk   (1UL << \fBFPU_FPCCR_HFRDY_Pos\fP)"
+FPCCR: HFRDY bit Mask 
+.PP
+Definition at line \fB1783\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_HFRDY_Pos   4U"
+FPCCR: HFRDY Position 
+.PP
+Definition at line \fB2530\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_HFRDY_Pos   4U"
+FPCCR: HFRDY Position 
+.PP
+Definition at line \fB1649\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_HFRDY_Pos   4U"
+FPCCR: HFRDY Position 
+.PP
+Definition at line \fB1724\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_HFRDY_Pos   4U"
+FPCCR: HFRDY Position 
+.PP
+Definition at line \fB1724\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_HFRDY_Pos   4U"
+FPCCR: HFRDY Position 
+.PP
+Definition at line \fB1336\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPCCR_HFRDY_Pos   4U"
+FPCCR: HFRDY Position 
+.PP
+Definition at line \fB3026\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_HFRDY_Pos   4U"
+FPCCR: HFRDY Position 
+.PP
+Definition at line \fB1563\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPCCR_HFRDY_Pos   4U"
+FPCCR: HFRDY Position 
+.PP
+Definition at line \fB2931\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_HFRDY_Pos   4U"
+FPCCR: HFRDY Position 
+.PP
+Definition at line \fB1782\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPACT_Msk   (1UL /*<< \fBFPU_FPCCR_LSPACT_Pos\fP*/)"
+FPCCR: Lazy state preservation active bit Mask 
+.PP
+Definition at line \fB2543\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPACT_Msk   (1UL /*<< \fBFPU_FPCCR_LSPACT_Pos\fP*/)"
+FPCCR: Lazy state preservation active bit Mask 
+.PP
+Definition at line \fB1662\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPACT_Msk   (1UL /*<< \fBFPU_FPCCR_LSPACT_Pos\fP*/)"
+FPCCR: Lazy state preservation active bit Mask 
+.PP
+Definition at line \fB1737\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPACT_Msk   (1UL /*<< \fBFPU_FPCCR_LSPACT_Pos\fP*/)"
+FPCCR: Lazy state preservation active bit Mask 
+.PP
+Definition at line \fB1737\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPACT_Msk   (1UL /*<< \fBFPU_FPCCR_LSPACT_Pos\fP*/)"
+FPCCR: Lazy state preservation active bit Mask 
+.PP
+Definition at line \fB1346\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPACT_Msk   (1UL /*<< \fBFPU_FPCCR_LSPACT_Pos\fP*/)"
+FPCCR: Lazy state preservation active bit Mask 
+.PP
+Definition at line \fB3039\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPACT_Msk   (1UL /*<< \fBFPU_FPCCR_LSPACT_Pos\fP*/)"
+FPCCR: Lazy state preservation active bit Mask 
+.PP
+Definition at line \fB1573\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPACT_Msk   (1UL /*<< \fBFPU_FPCCR_LSPACT_Pos\fP*/)"
+FPCCR: Lazy state preservation active bit Mask 
+.PP
+Definition at line \fB2944\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPACT_Msk   (1UL /*<< \fBFPU_FPCCR_LSPACT_Pos\fP*/)"
+FPCCR: Lazy state preservation active bit Mask 
+.PP
+Definition at line \fB1795\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPACT_Pos   0U"
+FPCCR: Lazy state preservation active bit Position 
+.PP
+Definition at line \fB2542\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPACT_Pos   0U"
+FPCCR: Lazy state preservation active bit Position 
+.PP
+Definition at line \fB1661\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPACT_Pos   0U"
+FPCCR: Lazy state preservation active bit Position 
+.PP
+Definition at line \fB1736\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPACT_Pos   0U"
+FPCCR: Lazy state preservation active bit Position 
+.PP
+Definition at line \fB1736\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPACT_Pos   0U"
+FPCCR: Lazy state preservation active bit Position 
+.PP
+Definition at line \fB1345\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPACT_Pos   0U"
+FPCCR: Lazy state preservation active bit Position 
+.PP
+Definition at line \fB3038\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPACT_Pos   0U"
+FPCCR: Lazy state preservation active bit Position 
+.PP
+Definition at line \fB1572\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPACT_Pos   0U"
+FPCCR: Lazy state preservation active bit Position 
+.PP
+Definition at line \fB2943\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPACT_Pos   0U"
+FPCCR: Lazy state preservation active bit Position 
+.PP
+Definition at line \fB1794\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPEN_Msk   (1UL << \fBFPU_FPCCR_LSPEN_Pos\fP)"
+FPCCR: LSPEN bit Mask 
+.PP
+Definition at line \fB2498\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPEN_Msk   (1UL << \fBFPU_FPCCR_LSPEN_Pos\fP)"
+FPCCR: LSPEN bit Mask 
+.PP
+Definition at line \fB1617\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPEN_Msk   (1UL << \fBFPU_FPCCR_LSPEN_Pos\fP)"
+FPCCR: LSPEN bit Mask 
+.PP
+Definition at line \fB1692\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPEN_Msk   (1UL << \fBFPU_FPCCR_LSPEN_Pos\fP)"
+FPCCR: LSPEN bit Mask 
+.PP
+Definition at line \fB1692\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPEN_Msk   (1UL << \fBFPU_FPCCR_LSPEN_Pos\fP)"
+FPCCR: LSPEN bit Mask 
+.PP
+Definition at line \fB1325\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPEN_Msk   (1UL << \fBFPU_FPCCR_LSPEN_Pos\fP)"
+FPCCR: LSPEN bit Mask 
+.PP
+Definition at line \fB2994\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPEN_Msk   (1UL << \fBFPU_FPCCR_LSPEN_Pos\fP)"
+FPCCR: LSPEN bit Mask 
+.PP
+Definition at line \fB1552\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPEN_Msk   (1UL << \fBFPU_FPCCR_LSPEN_Pos\fP)"
+FPCCR: LSPEN bit Mask 
+.PP
+Definition at line \fB2899\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPEN_Msk   (1UL << \fBFPU_FPCCR_LSPEN_Pos\fP)"
+FPCCR: LSPEN bit Mask 
+.PP
+Definition at line \fB1750\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPEN_Pos   30U"
+FPCCR: LSPEN Position 
+.PP
+Definition at line \fB2497\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPEN_Pos   30U"
+FPCCR: LSPEN Position 
+.PP
+Definition at line \fB1616\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPEN_Pos   30U"
+FPCCR: LSPEN Position 
+.PP
+Definition at line \fB1691\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPEN_Pos   30U"
+FPCCR: LSPEN Position 
+.PP
+Definition at line \fB1691\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPEN_Pos   30U"
+FPCCR: LSPEN Position 
+.PP
+Definition at line \fB1324\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPEN_Pos   30U"
+FPCCR: LSPEN Position 
+.PP
+Definition at line \fB2993\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPEN_Pos   30U"
+FPCCR: LSPEN Position 
+.PP
+Definition at line \fB1551\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPEN_Pos   30U"
+FPCCR: LSPEN Position 
+.PP
+Definition at line \fB2898\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPEN_Pos   30U"
+FPCCR: LSPEN Position 
+.PP
+Definition at line \fB1749\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPENS_Msk   (1UL << \fBFPU_FPCCR_LSPENS_Pos\fP)"
+FPCCR: LSPENS bit Mask 
+.PP
+Definition at line \fB2501\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPENS_Msk   (1UL << \fBFPU_FPCCR_LSPENS_Pos\fP)"
+FPCCR: LSPENS bit Mask 
+.PP
+Definition at line \fB1620\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPENS_Msk   (1UL << \fBFPU_FPCCR_LSPENS_Pos\fP)"
+FPCCR: LSPENS bit Mask 
+.PP
+Definition at line \fB1695\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPENS_Msk   (1UL << \fBFPU_FPCCR_LSPENS_Pos\fP)"
+FPCCR: LSPENS bit Mask 
+.PP
+Definition at line \fB1695\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPENS_Msk   (1UL << \fBFPU_FPCCR_LSPENS_Pos\fP)"
+FPCCR: LSPENS bit Mask 
+.PP
+Definition at line \fB2997\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPENS_Msk   (1UL << \fBFPU_FPCCR_LSPENS_Pos\fP)"
+FPCCR: LSPENS bit Mask 
+.PP
+Definition at line \fB2902\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPENS_Msk   (1UL << \fBFPU_FPCCR_LSPENS_Pos\fP)"
+FPCCR: LSPENS bit Mask 
+.PP
+Definition at line \fB1753\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPENS_Pos   29U"
+FPCCR: LSPENS Position 
+.PP
+Definition at line \fB2500\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPENS_Pos   29U"
+FPCCR: LSPENS Position 
+.PP
+Definition at line \fB1619\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPENS_Pos   29U"
+FPCCR: LSPENS Position 
+.PP
+Definition at line \fB1694\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPENS_Pos   29U"
+FPCCR: LSPENS Position 
+.PP
+Definition at line \fB1694\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPENS_Pos   29U"
+FPCCR: LSPENS Position 
+.PP
+Definition at line \fB2996\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPENS_Pos   29U"
+FPCCR: LSPENS Position 
+.PP
+Definition at line \fB2901\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_LSPENS_Pos   29U"
+FPCCR: LSPENS Position 
+.PP
+Definition at line \fB1752\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_MMRDY_Msk   (1UL << \fBFPU_FPCCR_MMRDY_Pos\fP)"
+FPCCR: MMRDY bit Mask 
+.PP
+Definition at line \fB2528\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_MMRDY_Msk   (1UL << \fBFPU_FPCCR_MMRDY_Pos\fP)"
+FPCCR: MMRDY bit Mask 
+.PP
+Definition at line \fB1647\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_MMRDY_Msk   (1UL << \fBFPU_FPCCR_MMRDY_Pos\fP)"
+FPCCR: MMRDY bit Mask 
+.PP
+Definition at line \fB1722\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_MMRDY_Msk   (1UL << \fBFPU_FPCCR_MMRDY_Pos\fP)"
+FPCCR: MMRDY bit Mask 
+.PP
+Definition at line \fB1722\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_MMRDY_Msk   (1UL << \fBFPU_FPCCR_MMRDY_Pos\fP)"
+FPCCR: MMRDY bit Mask 
+.PP
+Definition at line \fB1334\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPCCR_MMRDY_Msk   (1UL << \fBFPU_FPCCR_MMRDY_Pos\fP)"
+FPCCR: MMRDY bit Mask 
+.PP
+Definition at line \fB3024\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_MMRDY_Msk   (1UL << \fBFPU_FPCCR_MMRDY_Pos\fP)"
+FPCCR: MMRDY bit Mask 
+.PP
+Definition at line \fB1561\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPCCR_MMRDY_Msk   (1UL << \fBFPU_FPCCR_MMRDY_Pos\fP)"
+FPCCR: MMRDY bit Mask 
+.PP
+Definition at line \fB2929\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_MMRDY_Msk   (1UL << \fBFPU_FPCCR_MMRDY_Pos\fP)"
+FPCCR: MMRDY bit Mask 
+.PP
+Definition at line \fB1780\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_MMRDY_Pos   5U"
+FPCCR: MMRDY Position 
+.PP
+Definition at line \fB2527\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_MMRDY_Pos   5U"
+FPCCR: MMRDY Position 
+.PP
+Definition at line \fB1646\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_MMRDY_Pos   5U"
+FPCCR: MMRDY Position 
+.PP
+Definition at line \fB1721\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_MMRDY_Pos   5U"
+FPCCR: MMRDY Position 
+.PP
+Definition at line \fB1721\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_MMRDY_Pos   5U"
+FPCCR: MMRDY Position 
+.PP
+Definition at line \fB1333\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPCCR_MMRDY_Pos   5U"
+FPCCR: MMRDY Position 
+.PP
+Definition at line \fB3023\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_MMRDY_Pos   5U"
+FPCCR: MMRDY Position 
+.PP
+Definition at line \fB1560\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPCCR_MMRDY_Pos   5U"
+FPCCR: MMRDY Position 
+.PP
+Definition at line \fB2928\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_MMRDY_Pos   5U"
+FPCCR: MMRDY Position 
+.PP
+Definition at line \fB1779\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_MONRDY_Msk   (1UL << \fBFPU_FPCCR_MONRDY_Pos\fP)"
+FPCCR: MONRDY bit Mask 
+.PP
+Definition at line \fB2519\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_MONRDY_Msk   (1UL << \fBFPU_FPCCR_MONRDY_Pos\fP)"
+FPCCR: MONRDY bit Mask 
+.PP
+Definition at line \fB1638\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_MONRDY_Msk   (1UL << \fBFPU_FPCCR_MONRDY_Pos\fP)"
+FPCCR: MONRDY bit Mask 
+.PP
+Definition at line \fB1713\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_MONRDY_Msk   (1UL << \fBFPU_FPCCR_MONRDY_Pos\fP)"
+FPCCR: MONRDY bit Mask 
+.PP
+Definition at line \fB1713\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_MONRDY_Msk   (1UL << \fBFPU_FPCCR_MONRDY_Pos\fP)"
+FPCCR: MONRDY bit Mask 
+.PP
+Definition at line \fB1328\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPCCR_MONRDY_Msk   (1UL << \fBFPU_FPCCR_MONRDY_Pos\fP)"
+FPCCR: MONRDY bit Mask 
+.PP
+Definition at line \fB3015\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_MONRDY_Msk   (1UL << \fBFPU_FPCCR_MONRDY_Pos\fP)"
+FPCCR: MONRDY bit Mask 
+.PP
+Definition at line \fB1555\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPCCR_MONRDY_Msk   (1UL << \fBFPU_FPCCR_MONRDY_Pos\fP)"
+FPCCR: MONRDY bit Mask 
+.PP
+Definition at line \fB2920\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_MONRDY_Msk   (1UL << \fBFPU_FPCCR_MONRDY_Pos\fP)"
+FPCCR: MONRDY bit Mask 
+.PP
+Definition at line \fB1771\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_MONRDY_Pos   8U"
+FPCCR: MONRDY Position 
+.PP
+Definition at line \fB2518\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_MONRDY_Pos   8U"
+FPCCR: MONRDY Position 
+.PP
+Definition at line \fB1637\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_MONRDY_Pos   8U"
+FPCCR: MONRDY Position 
+.PP
+Definition at line \fB1712\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_MONRDY_Pos   8U"
+FPCCR: MONRDY Position 
+.PP
+Definition at line \fB1712\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_MONRDY_Pos   8U"
+FPCCR: MONRDY Position 
+.PP
+Definition at line \fB1327\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPCCR_MONRDY_Pos   8U"
+FPCCR: MONRDY Position 
+.PP
+Definition at line \fB3014\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_MONRDY_Pos   8U"
+FPCCR: MONRDY Position 
+.PP
+Definition at line \fB1554\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPCCR_MONRDY_Pos   8U"
+FPCCR: MONRDY Position 
+.PP
+Definition at line \fB2919\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_MONRDY_Pos   8U"
+FPCCR: MONRDY Position 
+.PP
+Definition at line \fB1770\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_S_Msk   (1UL << \fBFPU_FPCCR_S_Pos\fP)"
+FPCCR: Security status of the FP context bit Mask 
+.PP
+Definition at line \fB2537\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_S_Msk   (1UL << \fBFPU_FPCCR_S_Pos\fP)"
+FPCCR: Security status of the FP context bit Mask 
+.PP
+Definition at line \fB1656\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_S_Msk   (1UL << \fBFPU_FPCCR_S_Pos\fP)"
+FPCCR: Security status of the FP context bit Mask 
+.PP
+Definition at line \fB1731\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_S_Msk   (1UL << \fBFPU_FPCCR_S_Pos\fP)"
+FPCCR: Security status of the FP context bit Mask 
+.PP
+Definition at line \fB1731\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_S_Msk   (1UL << \fBFPU_FPCCR_S_Pos\fP)"
+FPCCR: Security status of the FP context bit Mask 
+.PP
+Definition at line \fB3033\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_S_Msk   (1UL << \fBFPU_FPCCR_S_Pos\fP)"
+FPCCR: Security status of the FP context bit Mask 
+.PP
+Definition at line \fB2938\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_S_Msk   (1UL << \fBFPU_FPCCR_S_Pos\fP)"
+FPCCR: Security status of the FP context bit Mask 
+.PP
+Definition at line \fB1789\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_S_Pos   2U"
+FPCCR: Security status of the FP context bit Position 
+.PP
+Definition at line \fB2536\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_S_Pos   2U"
+FPCCR: Security status of the FP context bit Position 
+.PP
+Definition at line \fB1655\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_S_Pos   2U"
+FPCCR: Security status of the FP context bit Position 
+.PP
+Definition at line \fB1730\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_S_Pos   2U"
+FPCCR: Security status of the FP context bit Position 
+.PP
+Definition at line \fB1730\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_S_Pos   2U"
+FPCCR: Security status of the FP context bit Position 
+.PP
+Definition at line \fB3032\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_S_Pos   2U"
+FPCCR: Security status of the FP context bit Position 
+.PP
+Definition at line \fB2937\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_S_Pos   2U"
+FPCCR: Security status of the FP context bit Position 
+.PP
+Definition at line \fB1788\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_SFRDY_Msk   (1UL << \fBFPU_FPCCR_SFRDY_Pos\fP)"
+FPCCR: SFRDY bit Mask 
+.PP
+Definition at line \fB2522\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_SFRDY_Msk   (1UL << \fBFPU_FPCCR_SFRDY_Pos\fP)"
+FPCCR: SFRDY bit Mask 
+.PP
+Definition at line \fB1641\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_SFRDY_Msk   (1UL << \fBFPU_FPCCR_SFRDY_Pos\fP)"
+FPCCR: SFRDY bit Mask 
+.PP
+Definition at line \fB1716\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_SFRDY_Msk   (1UL << \fBFPU_FPCCR_SFRDY_Pos\fP)"
+FPCCR: SFRDY bit Mask 
+.PP
+Definition at line \fB1716\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_SFRDY_Msk   (1UL << \fBFPU_FPCCR_SFRDY_Pos\fP)"
+FPCCR: SFRDY bit Mask 
+.PP
+Definition at line \fB3018\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_SFRDY_Msk   (1UL << \fBFPU_FPCCR_SFRDY_Pos\fP)"
+FPCCR: SFRDY bit Mask 
+.PP
+Definition at line \fB2923\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_SFRDY_Msk   (1UL << \fBFPU_FPCCR_SFRDY_Pos\fP)"
+FPCCR: SFRDY bit Mask 
+.PP
+Definition at line \fB1774\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_SFRDY_Pos   7U"
+FPCCR: SFRDY Position 
+.PP
+Definition at line \fB2521\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_SFRDY_Pos   7U"
+FPCCR: SFRDY Position 
+.PP
+Definition at line \fB1640\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_SFRDY_Pos   7U"
+FPCCR: SFRDY Position 
+.PP
+Definition at line \fB1715\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_SFRDY_Pos   7U"
+FPCCR: SFRDY Position 
+.PP
+Definition at line \fB1715\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_SFRDY_Pos   7U"
+FPCCR: SFRDY Position 
+.PP
+Definition at line \fB3017\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_SFRDY_Pos   7U"
+FPCCR: SFRDY Position 
+.PP
+Definition at line \fB2922\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_SFRDY_Pos   7U"
+FPCCR: SFRDY Position 
+.PP
+Definition at line \fB1773\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_SPLIMVIOL_Msk   (1UL << \fBFPU_FPCCR_SPLIMVIOL_Pos\fP)"
+FPCCR: SPLIMVIOL bit Mask 
+.PP
+Definition at line \fB2516\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_SPLIMVIOL_Msk   (1UL << \fBFPU_FPCCR_SPLIMVIOL_Pos\fP)"
+FPCCR: SPLIMVIOL bit Mask 
+.PP
+Definition at line \fB1635\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_SPLIMVIOL_Msk   (1UL << \fBFPU_FPCCR_SPLIMVIOL_Pos\fP)"
+FPCCR: SPLIMVIOL bit Mask 
+.PP
+Definition at line \fB1710\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_SPLIMVIOL_Msk   (1UL << \fBFPU_FPCCR_SPLIMVIOL_Pos\fP)"
+FPCCR: SPLIMVIOL bit Mask 
+.PP
+Definition at line \fB1710\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_SPLIMVIOL_Msk   (1UL << \fBFPU_FPCCR_SPLIMVIOL_Pos\fP)"
+FPCCR: SPLIMVIOL bit Mask 
+.PP
+Definition at line \fB3012\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_SPLIMVIOL_Msk   (1UL << \fBFPU_FPCCR_SPLIMVIOL_Pos\fP)"
+FPCCR: SPLIMVIOL bit Mask 
+.PP
+Definition at line \fB2917\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_SPLIMVIOL_Msk   (1UL << \fBFPU_FPCCR_SPLIMVIOL_Pos\fP)"
+FPCCR: SPLIMVIOL bit Mask 
+.PP
+Definition at line \fB1768\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_SPLIMVIOL_Pos   9U"
+FPCCR: SPLIMVIOL Position 
+.PP
+Definition at line \fB2515\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_SPLIMVIOL_Pos   9U"
+FPCCR: SPLIMVIOL Position 
+.PP
+Definition at line \fB1634\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_SPLIMVIOL_Pos   9U"
+FPCCR: SPLIMVIOL Position 
+.PP
+Definition at line \fB1709\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_SPLIMVIOL_Pos   9U"
+FPCCR: SPLIMVIOL Position 
+.PP
+Definition at line \fB1709\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_SPLIMVIOL_Pos   9U"
+FPCCR: SPLIMVIOL Position 
+.PP
+Definition at line \fB3011\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_SPLIMVIOL_Pos   9U"
+FPCCR: SPLIMVIOL Position 
+.PP
+Definition at line \fB2916\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_SPLIMVIOL_Pos   9U"
+FPCCR: SPLIMVIOL Position 
+.PP
+Definition at line \fB1767\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_THREAD_Msk   (1UL << \fBFPU_FPCCR_THREAD_Pos\fP)"
+FPCCR: processor mode active bit Mask 
+.PP
+Definition at line \fB2534\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_THREAD_Msk   (1UL << \fBFPU_FPCCR_THREAD_Pos\fP)"
+FPCCR: processor mode active bit Mask 
+.PP
+Definition at line \fB1653\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_THREAD_Msk   (1UL << \fBFPU_FPCCR_THREAD_Pos\fP)"
+FPCCR: processor mode active bit Mask 
+.PP
+Definition at line \fB1728\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_THREAD_Msk   (1UL << \fBFPU_FPCCR_THREAD_Pos\fP)"
+FPCCR: processor mode active bit Mask 
+.PP
+Definition at line \fB1728\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_THREAD_Msk   (1UL << \fBFPU_FPCCR_THREAD_Pos\fP)"
+FPCCR: processor mode active bit Mask 
+.PP
+Definition at line \fB1340\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPCCR_THREAD_Msk   (1UL << \fBFPU_FPCCR_THREAD_Pos\fP)"
+FPCCR: processor mode active bit Mask 
+.PP
+Definition at line \fB3030\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_THREAD_Msk   (1UL << \fBFPU_FPCCR_THREAD_Pos\fP)"
+FPCCR: processor mode active bit Mask 
+.PP
+Definition at line \fB1567\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPCCR_THREAD_Msk   (1UL << \fBFPU_FPCCR_THREAD_Pos\fP)"
+FPCCR: processor mode active bit Mask 
+.PP
+Definition at line \fB2935\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_THREAD_Msk   (1UL << \fBFPU_FPCCR_THREAD_Pos\fP)"
+FPCCR: processor mode active bit Mask 
+.PP
+Definition at line \fB1786\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_THREAD_Pos   3U"
+FPCCR: processor mode bit Position 
+.PP
+Definition at line \fB2533\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_THREAD_Pos   3U"
+FPCCR: processor mode bit Position 
+.PP
+Definition at line \fB1652\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_THREAD_Pos   3U"
+FPCCR: processor mode bit Position 
+.PP
+Definition at line \fB1727\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_THREAD_Pos   3U"
+FPCCR: processor mode bit Position 
+.PP
+Definition at line \fB1727\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_THREAD_Pos   3U"
+FPCCR: processor mode bit Position 
+.PP
+Definition at line \fB1339\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPCCR_THREAD_Pos   3U"
+FPCCR: processor mode bit Position 
+.PP
+Definition at line \fB3029\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_THREAD_Pos   3U"
+FPCCR: processor mode bit Position 
+.PP
+Definition at line \fB1566\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPCCR_THREAD_Pos   3U"
+FPCCR: processor mode bit Position 
+.PP
+Definition at line \fB2934\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_THREAD_Pos   3U"
+FPCCR: processor mode bit Position 
+.PP
+Definition at line \fB1785\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_TS_Msk   (1UL << \fBFPU_FPCCR_TS_Pos\fP)"
+FPCCR: TS bit Mask 
+.PP
+Definition at line \fB2510\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_TS_Msk   (1UL << \fBFPU_FPCCR_TS_Pos\fP)"
+FPCCR: TS bit Mask 
+.PP
+Definition at line \fB1629\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_TS_Msk   (1UL << \fBFPU_FPCCR_TS_Pos\fP)"
+FPCCR: TS bit Mask 
+.PP
+Definition at line \fB1704\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_TS_Msk   (1UL << \fBFPU_FPCCR_TS_Pos\fP)"
+FPCCR: TS bit Mask 
+.PP
+Definition at line \fB1704\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_TS_Msk   (1UL << \fBFPU_FPCCR_TS_Pos\fP)"
+FPCCR: TS bit Mask 
+.PP
+Definition at line \fB3006\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_TS_Msk   (1UL << \fBFPU_FPCCR_TS_Pos\fP)"
+FPCCR: TS bit Mask 
+.PP
+Definition at line \fB2911\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_TS_Msk   (1UL << \fBFPU_FPCCR_TS_Pos\fP)"
+FPCCR: TS bit Mask 
+.PP
+Definition at line \fB1762\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_TS_Pos   26U"
+FPCCR: TS Position 
+.PP
+Definition at line \fB2509\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_TS_Pos   26U"
+FPCCR: TS Position 
+.PP
+Definition at line \fB1628\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_TS_Pos   26U"
+FPCCR: TS Position 
+.PP
+Definition at line \fB1703\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_TS_Pos   26U"
+FPCCR: TS Position 
+.PP
+Definition at line \fB1703\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_TS_Pos   26U"
+FPCCR: TS Position 
+.PP
+Definition at line \fB3005\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_TS_Pos   26U"
+FPCCR: TS Position 
+.PP
+Definition at line \fB2910\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_TS_Pos   26U"
+FPCCR: TS Position 
+.PP
+Definition at line \fB1761\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_UFRDY_Msk   (1UL << \fBFPU_FPCCR_UFRDY_Pos\fP)"
+FPCCR: UFRDY bit Mask 
+.PP
+Definition at line \fB2513\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_UFRDY_Msk   (1UL << \fBFPU_FPCCR_UFRDY_Pos\fP)"
+FPCCR: UFRDY bit Mask 
+.PP
+Definition at line \fB1632\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_UFRDY_Msk   (1UL << \fBFPU_FPCCR_UFRDY_Pos\fP)"
+FPCCR: UFRDY bit Mask 
+.PP
+Definition at line \fB1707\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_UFRDY_Msk   (1UL << \fBFPU_FPCCR_UFRDY_Pos\fP)"
+FPCCR: UFRDY bit Mask 
+.PP
+Definition at line \fB1707\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_UFRDY_Msk   (1UL << \fBFPU_FPCCR_UFRDY_Pos\fP)"
+FPCCR: UFRDY bit Mask 
+.PP
+Definition at line \fB3009\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_UFRDY_Msk   (1UL << \fBFPU_FPCCR_UFRDY_Pos\fP)"
+FPCCR: UFRDY bit Mask 
+.PP
+Definition at line \fB2914\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_UFRDY_Msk   (1UL << \fBFPU_FPCCR_UFRDY_Pos\fP)"
+FPCCR: UFRDY bit Mask 
+.PP
+Definition at line \fB1765\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_UFRDY_Pos   10U"
+FPCCR: UFRDY Position 
+.PP
+Definition at line \fB2512\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_UFRDY_Pos   10U"
+FPCCR: UFRDY Position 
+.PP
+Definition at line \fB1631\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_UFRDY_Pos   10U"
+FPCCR: UFRDY Position 
+.PP
+Definition at line \fB1706\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_UFRDY_Pos   10U"
+FPCCR: UFRDY Position 
+.PP
+Definition at line \fB1706\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_UFRDY_Pos   10U"
+FPCCR: UFRDY Position 
+.PP
+Definition at line \fB3008\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_UFRDY_Pos   10U"
+FPCCR: UFRDY Position 
+.PP
+Definition at line \fB2913\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_UFRDY_Pos   10U"
+FPCCR: UFRDY Position 
+.PP
+Definition at line \fB1764\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_USER_Msk   (1UL << \fBFPU_FPCCR_USER_Pos\fP)"
+FPCCR: privilege level bit Mask 
+.PP
+Definition at line \fB2540\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_USER_Msk   (1UL << \fBFPU_FPCCR_USER_Pos\fP)"
+FPCCR: privilege level bit Mask 
+.PP
+Definition at line \fB1659\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_USER_Msk   (1UL << \fBFPU_FPCCR_USER_Pos\fP)"
+FPCCR: privilege level bit Mask 
+.PP
+Definition at line \fB1734\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_USER_Msk   (1UL << \fBFPU_FPCCR_USER_Pos\fP)"
+FPCCR: privilege level bit Mask 
+.PP
+Definition at line \fB1734\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_USER_Msk   (1UL << \fBFPU_FPCCR_USER_Pos\fP)"
+FPCCR: privilege level bit Mask 
+.PP
+Definition at line \fB1343\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPCCR_USER_Msk   (1UL << \fBFPU_FPCCR_USER_Pos\fP)"
+FPCCR: privilege level bit Mask 
+.PP
+Definition at line \fB3036\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_USER_Msk   (1UL << \fBFPU_FPCCR_USER_Pos\fP)"
+FPCCR: privilege level bit Mask 
+.PP
+Definition at line \fB1570\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPCCR_USER_Msk   (1UL << \fBFPU_FPCCR_USER_Pos\fP)"
+FPCCR: privilege level bit Mask 
+.PP
+Definition at line \fB2941\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_USER_Msk   (1UL << \fBFPU_FPCCR_USER_Pos\fP)"
+FPCCR: privilege level bit Mask 
+.PP
+Definition at line \fB1792\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPCCR_USER_Pos   1U"
+FPCCR: privilege level bit Position 
+.PP
+Definition at line \fB2539\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_USER_Pos   1U"
+FPCCR: privilege level bit Position 
+.PP
+Definition at line \fB1658\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPCCR_USER_Pos   1U"
+FPCCR: privilege level bit Position 
+.PP
+Definition at line \fB1733\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPCCR_USER_Pos   1U"
+FPCCR: privilege level bit Position 
+.PP
+Definition at line \fB1733\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPCCR_USER_Pos   1U"
+FPCCR: privilege level bit Position 
+.PP
+Definition at line \fB1342\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPCCR_USER_Pos   1U"
+FPCCR: privilege level bit Position 
+.PP
+Definition at line \fB3035\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPCCR_USER_Pos   1U"
+FPCCR: privilege level bit Position 
+.PP
+Definition at line \fB1569\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPCCR_USER_Pos   1U"
+FPCCR: privilege level bit Position 
+.PP
+Definition at line \fB2940\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPCCR_USER_Pos   1U"
+FPCCR: privilege level bit Position 
+.PP
+Definition at line \fB1791\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPDSCR_AHP_Msk   (1UL << \fBFPU_FPDSCR_AHP_Pos\fP)"
+FPDSCR: AHP bit Mask 
+.PP
+Definition at line \fB2551\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPDSCR_AHP_Msk   (1UL << \fBFPU_FPDSCR_AHP_Pos\fP)"
+FPDSCR: AHP bit Mask 
+.PP
+Definition at line \fB1670\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPDSCR_AHP_Msk   (1UL << \fBFPU_FPDSCR_AHP_Pos\fP)"
+FPDSCR: AHP bit Mask 
+.PP
+Definition at line \fB1745\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPDSCR_AHP_Msk   (1UL << \fBFPU_FPDSCR_AHP_Pos\fP)"
+FPDSCR: AHP bit Mask 
+.PP
+Definition at line \fB1745\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPDSCR_AHP_Msk   (1UL << \fBFPU_FPDSCR_AHP_Pos\fP)"
+FPDSCR: AHP bit Mask 
+.PP
+Definition at line \fB1354\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPDSCR_AHP_Msk   (1UL << \fBFPU_FPDSCR_AHP_Pos\fP)"
+FPDSCR: AHP bit Mask 
+.PP
+Definition at line \fB3047\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPDSCR_AHP_Msk   (1UL << \fBFPU_FPDSCR_AHP_Pos\fP)"
+FPDSCR: AHP bit Mask 
+.PP
+Definition at line \fB1581\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPDSCR_AHP_Msk   (1UL << \fBFPU_FPDSCR_AHP_Pos\fP)"
+FPDSCR: AHP bit Mask 
+.PP
+Definition at line \fB2952\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPDSCR_AHP_Msk   (1UL << \fBFPU_FPDSCR_AHP_Pos\fP)"
+FPDSCR: AHP bit Mask 
+.PP
+Definition at line \fB1803\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPDSCR_AHP_Pos   26U"
+FPDSCR: AHP bit Position 
+.PP
+Definition at line \fB2550\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPDSCR_AHP_Pos   26U"
+FPDSCR: AHP bit Position 
+.PP
+Definition at line \fB1669\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPDSCR_AHP_Pos   26U"
+FPDSCR: AHP bit Position 
+.PP
+Definition at line \fB1744\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPDSCR_AHP_Pos   26U"
+FPDSCR: AHP bit Position 
+.PP
+Definition at line \fB1744\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPDSCR_AHP_Pos   26U"
+FPDSCR: AHP bit Position 
+.PP
+Definition at line \fB1353\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPDSCR_AHP_Pos   26U"
+FPDSCR: AHP bit Position 
+.PP
+Definition at line \fB3046\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPDSCR_AHP_Pos   26U"
+FPDSCR: AHP bit Position 
+.PP
+Definition at line \fB1580\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPDSCR_AHP_Pos   26U"
+FPDSCR: AHP bit Position 
+.PP
+Definition at line \fB2951\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPDSCR_AHP_Pos   26U"
+FPDSCR: AHP bit Position 
+.PP
+Definition at line \fB1802\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPDSCR_DN_Msk   (1UL << \fBFPU_FPDSCR_DN_Pos\fP)"
+FPDSCR: DN bit Mask 
+.PP
+Definition at line \fB2554\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPDSCR_DN_Msk   (1UL << \fBFPU_FPDSCR_DN_Pos\fP)"
+FPDSCR: DN bit Mask 
+.PP
+Definition at line \fB1673\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPDSCR_DN_Msk   (1UL << \fBFPU_FPDSCR_DN_Pos\fP)"
+FPDSCR: DN bit Mask 
+.PP
+Definition at line \fB1748\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPDSCR_DN_Msk   (1UL << \fBFPU_FPDSCR_DN_Pos\fP)"
+FPDSCR: DN bit Mask 
+.PP
+Definition at line \fB1748\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPDSCR_DN_Msk   (1UL << \fBFPU_FPDSCR_DN_Pos\fP)"
+FPDSCR: DN bit Mask 
+.PP
+Definition at line \fB1357\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPDSCR_DN_Msk   (1UL << \fBFPU_FPDSCR_DN_Pos\fP)"
+FPDSCR: DN bit Mask 
+.PP
+Definition at line \fB3050\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPDSCR_DN_Msk   (1UL << \fBFPU_FPDSCR_DN_Pos\fP)"
+FPDSCR: DN bit Mask 
+.PP
+Definition at line \fB1584\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPDSCR_DN_Msk   (1UL << \fBFPU_FPDSCR_DN_Pos\fP)"
+FPDSCR: DN bit Mask 
+.PP
+Definition at line \fB2955\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPDSCR_DN_Msk   (1UL << \fBFPU_FPDSCR_DN_Pos\fP)"
+FPDSCR: DN bit Mask 
+.PP
+Definition at line \fB1806\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPDSCR_DN_Pos   25U"
+FPDSCR: DN bit Position 
+.PP
+Definition at line \fB2553\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPDSCR_DN_Pos   25U"
+FPDSCR: DN bit Position 
+.PP
+Definition at line \fB1672\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPDSCR_DN_Pos   25U"
+FPDSCR: DN bit Position 
+.PP
+Definition at line \fB1747\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPDSCR_DN_Pos   25U"
+FPDSCR: DN bit Position 
+.PP
+Definition at line \fB1747\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPDSCR_DN_Pos   25U"
+FPDSCR: DN bit Position 
+.PP
+Definition at line \fB1356\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPDSCR_DN_Pos   25U"
+FPDSCR: DN bit Position 
+.PP
+Definition at line \fB3049\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPDSCR_DN_Pos   25U"
+FPDSCR: DN bit Position 
+.PP
+Definition at line \fB1583\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPDSCR_DN_Pos   25U"
+FPDSCR: DN bit Position 
+.PP
+Definition at line \fB2954\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPDSCR_DN_Pos   25U"
+FPDSCR: DN bit Position 
+.PP
+Definition at line \fB1805\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPDSCR_FZ16_Msk   (1UL << \fBFPU_FPDSCR_FZ16_Pos\fP)"
+FPDSCR: FZ16 bit Mask 
+.PP
+Definition at line \fB2563\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPDSCR_FZ16_Msk   (1UL << \fBFPU_FPDSCR_FZ16_Pos\fP)"
+FPDSCR: FZ16 bit Mask 
+.PP
+Definition at line \fB3059\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPDSCR_FZ16_Msk   (1UL << \fBFPU_FPDSCR_FZ16_Pos\fP)"
+FPDSCR: FZ16 bit Mask 
+.PP
+Definition at line \fB2964\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPDSCR_FZ16_Pos   19U"
+FPDSCR: FZ16 bit Position 
+.PP
+Definition at line \fB2562\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPDSCR_FZ16_Pos   19U"
+FPDSCR: FZ16 bit Position 
+.PP
+Definition at line \fB3058\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPDSCR_FZ16_Pos   19U"
+FPDSCR: FZ16 bit Position 
+.PP
+Definition at line \fB2963\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPDSCR_FZ_Msk   (1UL << \fBFPU_FPDSCR_FZ_Pos\fP)"
+FPDSCR: FZ bit Mask 
+.PP
+Definition at line \fB2557\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPDSCR_FZ_Msk   (1UL << \fBFPU_FPDSCR_FZ_Pos\fP)"
+FPDSCR: FZ bit Mask 
+.PP
+Definition at line \fB1676\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPDSCR_FZ_Msk   (1UL << \fBFPU_FPDSCR_FZ_Pos\fP)"
+FPDSCR: FZ bit Mask 
+.PP
+Definition at line \fB1751\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPDSCR_FZ_Msk   (1UL << \fBFPU_FPDSCR_FZ_Pos\fP)"
+FPDSCR: FZ bit Mask 
+.PP
+Definition at line \fB1751\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPDSCR_FZ_Msk   (1UL << \fBFPU_FPDSCR_FZ_Pos\fP)"
+FPDSCR: FZ bit Mask 
+.PP
+Definition at line \fB1360\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPDSCR_FZ_Msk   (1UL << \fBFPU_FPDSCR_FZ_Pos\fP)"
+FPDSCR: FZ bit Mask 
+.PP
+Definition at line \fB3053\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPDSCR_FZ_Msk   (1UL << \fBFPU_FPDSCR_FZ_Pos\fP)"
+FPDSCR: FZ bit Mask 
+.PP
+Definition at line \fB1587\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPDSCR_FZ_Msk   (1UL << \fBFPU_FPDSCR_FZ_Pos\fP)"
+FPDSCR: FZ bit Mask 
+.PP
+Definition at line \fB2958\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPDSCR_FZ_Msk   (1UL << \fBFPU_FPDSCR_FZ_Pos\fP)"
+FPDSCR: FZ bit Mask 
+.PP
+Definition at line \fB1809\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPDSCR_FZ_Pos   24U"
+FPDSCR: FZ bit Position 
+.PP
+Definition at line \fB2556\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPDSCR_FZ_Pos   24U"
+FPDSCR: FZ bit Position 
+.PP
+Definition at line \fB1675\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPDSCR_FZ_Pos   24U"
+FPDSCR: FZ bit Position 
+.PP
+Definition at line \fB1750\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPDSCR_FZ_Pos   24U"
+FPDSCR: FZ bit Position 
+.PP
+Definition at line \fB1750\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPDSCR_FZ_Pos   24U"
+FPDSCR: FZ bit Position 
+.PP
+Definition at line \fB1359\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPDSCR_FZ_Pos   24U"
+FPDSCR: FZ bit Position 
+.PP
+Definition at line \fB3052\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPDSCR_FZ_Pos   24U"
+FPDSCR: FZ bit Position 
+.PP
+Definition at line \fB1586\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPDSCR_FZ_Pos   24U"
+FPDSCR: FZ bit Position 
+.PP
+Definition at line \fB2957\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPDSCR_FZ_Pos   24U"
+FPDSCR: FZ bit Position 
+.PP
+Definition at line \fB1808\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPDSCR_LTPSIZE_Msk   (7UL << \fBFPU_FPDSCR_LTPSIZE_Pos\fP)"
+FPDSCR: LTPSIZE bit Mask 
+.PP
+Definition at line \fB2566\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPDSCR_LTPSIZE_Msk   (7UL << \fBFPU_FPDSCR_LTPSIZE_Pos\fP)"
+FPDSCR: LTPSIZE bit Mask 
+.PP
+Definition at line \fB3062\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPDSCR_LTPSIZE_Msk   (7UL << \fBFPU_FPDSCR_LTPSIZE_Pos\fP)"
+FPDSCR: LTPSIZE bit Mask 
+.PP
+Definition at line \fB2967\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPDSCR_LTPSIZE_Pos   16U"
+FPDSCR: LTPSIZE bit Position 
+.PP
+Definition at line \fB2565\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPDSCR_LTPSIZE_Pos   16U"
+FPDSCR: LTPSIZE bit Position 
+.PP
+Definition at line \fB3061\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPDSCR_LTPSIZE_Pos   16U"
+FPDSCR: LTPSIZE bit Position 
+.PP
+Definition at line \fB2966\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPDSCR_RMode_Msk   (3UL << \fBFPU_FPDSCR_RMode_Pos\fP)"
+FPDSCR: RMode bit Mask 
+.PP
+Definition at line \fB2560\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPDSCR_RMode_Msk   (3UL << \fBFPU_FPDSCR_RMode_Pos\fP)"
+FPDSCR: RMode bit Mask 
+.PP
+Definition at line \fB1679\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPDSCR_RMode_Msk   (3UL << \fBFPU_FPDSCR_RMode_Pos\fP)"
+FPDSCR: RMode bit Mask 
+.PP
+Definition at line \fB1754\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPDSCR_RMode_Msk   (3UL << \fBFPU_FPDSCR_RMode_Pos\fP)"
+FPDSCR: RMode bit Mask 
+.PP
+Definition at line \fB1754\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPDSCR_RMode_Msk   (3UL << \fBFPU_FPDSCR_RMode_Pos\fP)"
+FPDSCR: RMode bit Mask 
+.PP
+Definition at line \fB1363\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPDSCR_RMode_Msk   (3UL << \fBFPU_FPDSCR_RMode_Pos\fP)"
+FPDSCR: RMode bit Mask 
+.PP
+Definition at line \fB3056\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPDSCR_RMode_Msk   (3UL << \fBFPU_FPDSCR_RMode_Pos\fP)"
+FPDSCR: RMode bit Mask 
+.PP
+Definition at line \fB1590\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPDSCR_RMode_Msk   (3UL << \fBFPU_FPDSCR_RMode_Pos\fP)"
+FPDSCR: RMode bit Mask 
+.PP
+Definition at line \fB2961\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPDSCR_RMode_Msk   (3UL << \fBFPU_FPDSCR_RMode_Pos\fP)"
+FPDSCR: RMode bit Mask 
+.PP
+Definition at line \fB1812\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_FPDSCR_RMode_Pos   22U"
+FPDSCR: RMode bit Position 
+.PP
+Definition at line \fB2559\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_FPDSCR_RMode_Pos   22U"
+FPDSCR: RMode bit Position 
+.PP
+Definition at line \fB1678\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_FPDSCR_RMode_Pos   22U"
+FPDSCR: RMode bit Position 
+.PP
+Definition at line \fB1753\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_FPDSCR_RMode_Pos   22U"
+FPDSCR: RMode bit Position 
+.PP
+Definition at line \fB1753\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_FPDSCR_RMode_Pos   22U"
+FPDSCR: RMode bit Position 
+.PP
+Definition at line \fB1362\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_FPDSCR_RMode_Pos   22U"
+FPDSCR: RMode bit Position 
+.PP
+Definition at line \fB3055\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_FPDSCR_RMode_Pos   22U"
+FPDSCR: RMode bit Position 
+.PP
+Definition at line \fB1589\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_FPDSCR_RMode_Pos   22U"
+FPDSCR: RMode bit Position 
+.PP
+Definition at line \fB2960\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_FPDSCR_RMode_Pos   22U"
+FPDSCR: RMode bit Position 
+.PP
+Definition at line \fB1811\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_MVFR0_A_SIMD_registers_Msk   (0xFUL /*<< \fBFPU_MVFR0_A_SIMD_registers_Pos\fP*/)"
+MVFR0: A_SIMD registers bits Mask 
+.PP
+Definition at line \fB1704\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_A_SIMD_registers_Msk   (0xFUL /*<< \fBFPU_MVFR0_A_SIMD_registers_Pos\fP*/)"
+MVFR0: A_SIMD registers bits Mask 
+.PP
+Definition at line \fB1779\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_MVFR0_A_SIMD_registers_Msk   (0xFUL /*<< \fBFPU_MVFR0_A_SIMD_registers_Pos\fP*/)"
+MVFR0: A_SIMD registers bits Mask 
+.PP
+Definition at line \fB1779\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_MVFR0_A_SIMD_registers_Msk   (0xFUL /*<< \fBFPU_MVFR0_A_SIMD_registers_Pos\fP*/)"
+MVFR0: A_SIMD registers bits Mask 
+.PP
+Definition at line \fB1388\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_MVFR0_A_SIMD_registers_Msk   (0xFUL /*<< \fBFPU_MVFR0_A_SIMD_registers_Pos\fP*/)"
+MVFR0: A_SIMD registers bits Mask 
+.PP
+Definition at line \fB1615\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_MVFR0_A_SIMD_registers_Msk   (0xFUL /*<< \fBFPU_MVFR0_A_SIMD_registers_Pos\fP*/)"
+MVFR0: A_SIMD registers bits Mask 
+.PP
+Definition at line \fB1837\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_MVFR0_A_SIMD_registers_Pos   0U"
+MVFR0: A_SIMD registers bits Position 
+.PP
+Definition at line \fB1703\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_A_SIMD_registers_Pos   0U"
+MVFR0: A_SIMD registers bits Position 
+.PP
+Definition at line \fB1778\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_MVFR0_A_SIMD_registers_Pos   0U"
+MVFR0: A_SIMD registers bits Position 
+.PP
+Definition at line \fB1778\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_MVFR0_A_SIMD_registers_Pos   0U"
+MVFR0: A_SIMD registers bits Position 
+.PP
+Definition at line \fB1387\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_MVFR0_A_SIMD_registers_Pos   0U"
+MVFR0: A_SIMD registers bits Position 
+.PP
+Definition at line \fB1614\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_MVFR0_A_SIMD_registers_Pos   0U"
+MVFR0: A_SIMD registers bits Position 
+.PP
+Definition at line \fB1836\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_MVFR0_Divide_Msk   (0xFUL << \fBFPU_MVFR0_Divide_Pos\fP)"
+MVFR0: Divide bits Mask 
+.PP
+Definition at line \fB1692\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_Divide_Msk   (0xFUL << \fBFPU_MVFR0_Divide_Pos\fP)"
+MVFR0: Divide bits Mask 
+.PP
+Definition at line \fB1767\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_MVFR0_Divide_Msk   (0xFUL << \fBFPU_MVFR0_Divide_Pos\fP)"
+MVFR0: Divide bits Mask 
+.PP
+Definition at line \fB1767\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_MVFR0_Divide_Msk   (0xFUL << \fBFPU_MVFR0_Divide_Pos\fP)"
+MVFR0: Divide bits Mask 
+.PP
+Definition at line \fB1376\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_MVFR0_Divide_Msk   (0xFUL << \fBFPU_MVFR0_Divide_Pos\fP)"
+MVFR0: Divide bits Mask 
+.PP
+Definition at line \fB1603\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_MVFR0_Divide_Msk   (0xFUL << \fBFPU_MVFR0_Divide_Pos\fP)"
+MVFR0: Divide bits Mask 
+.PP
+Definition at line \fB1825\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_MVFR0_Divide_Pos   16U"
+MVFR0: Divide bits Position 
+.PP
+Definition at line \fB1691\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_Divide_Pos   16U"
+MVFR0: Divide bits Position 
+.PP
+Definition at line \fB1766\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_MVFR0_Divide_Pos   16U"
+MVFR0: Divide bits Position 
+.PP
+Definition at line \fB1766\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_MVFR0_Divide_Pos   16U"
+MVFR0: Divide bits Position 
+.PP
+Definition at line \fB1375\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_MVFR0_Divide_Pos   16U"
+MVFR0: Divide bits Position 
+.PP
+Definition at line \fB1602\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_MVFR0_Divide_Pos   16U"
+MVFR0: Divide bits Position 
+.PP
+Definition at line \fB1824\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_MVFR0_Double_precision_Msk   (0xFUL << \fBFPU_MVFR0_Double_precision_Pos\fP)"
+MVFR0: Double-precision bits Mask 
+.PP
+Definition at line \fB1698\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_Double_precision_Msk   (0xFUL << \fBFPU_MVFR0_Double_precision_Pos\fP)"
+MVFR0: Double-precision bits Mask 
+.PP
+Definition at line \fB1773\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_MVFR0_Double_precision_Msk   (0xFUL << \fBFPU_MVFR0_Double_precision_Pos\fP)"
+MVFR0: Double-precision bits Mask 
+.PP
+Definition at line \fB1773\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_MVFR0_Double_precision_Msk   (0xFUL << \fBFPU_MVFR0_Double_precision_Pos\fP)"
+MVFR0: Double-precision bits Mask 
+.PP
+Definition at line \fB1382\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_MVFR0_Double_precision_Msk   (0xFUL << \fBFPU_MVFR0_Double_precision_Pos\fP)"
+MVFR0: Double-precision bits Mask 
+.PP
+Definition at line \fB1609\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_MVFR0_Double_precision_Msk   (0xFUL << \fBFPU_MVFR0_Double_precision_Pos\fP)"
+MVFR0: Double-precision bits Mask 
+.PP
+Definition at line \fB1831\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_MVFR0_Double_precision_Pos   8U"
+MVFR0: Double-precision bits Position 
+.PP
+Definition at line \fB1697\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_Double_precision_Pos   8U"
+MVFR0: Double-precision bits Position 
+.PP
+Definition at line \fB1772\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_MVFR0_Double_precision_Pos   8U"
+MVFR0: Double-precision bits Position 
+.PP
+Definition at line \fB1772\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_MVFR0_Double_precision_Pos   8U"
+MVFR0: Double-precision bits Position 
+.PP
+Definition at line \fB1381\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_MVFR0_Double_precision_Pos   8U"
+MVFR0: Double-precision bits Position 
+.PP
+Definition at line \fB1608\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_MVFR0_Double_precision_Pos   8U"
+MVFR0: Double-precision bits Position 
+.PP
+Definition at line \fB1830\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_MVFR0_FP_excep_trapping_Msk   (0xFUL << \fBFPU_MVFR0_FP_excep_trapping_Pos\fP)"
+MVFR0: FP exception trapping bits Mask 
+.PP
+Definition at line \fB1695\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_FP_excep_trapping_Msk   (0xFUL << \fBFPU_MVFR0_FP_excep_trapping_Pos\fP)"
+MVFR0: FP exception trapping bits Mask 
+.PP
+Definition at line \fB1770\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_MVFR0_FP_excep_trapping_Msk   (0xFUL << \fBFPU_MVFR0_FP_excep_trapping_Pos\fP)"
+MVFR0: FP exception trapping bits Mask 
+.PP
+Definition at line \fB1770\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_MVFR0_FP_excep_trapping_Msk   (0xFUL << \fBFPU_MVFR0_FP_excep_trapping_Pos\fP)"
+MVFR0: FP exception trapping bits Mask 
+.PP
+Definition at line \fB1379\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_MVFR0_FP_excep_trapping_Msk   (0xFUL << \fBFPU_MVFR0_FP_excep_trapping_Pos\fP)"
+MVFR0: FP exception trapping bits Mask 
+.PP
+Definition at line \fB1606\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_MVFR0_FP_excep_trapping_Msk   (0xFUL << \fBFPU_MVFR0_FP_excep_trapping_Pos\fP)"
+MVFR0: FP exception trapping bits Mask 
+.PP
+Definition at line \fB1828\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_MVFR0_FP_excep_trapping_Pos   12U"
+MVFR0: FP exception trapping bits Position 
+.PP
+Definition at line \fB1694\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_FP_excep_trapping_Pos   12U"
+MVFR0: FP exception trapping bits Position 
+.PP
+Definition at line \fB1769\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_MVFR0_FP_excep_trapping_Pos   12U"
+MVFR0: FP exception trapping bits Position 
+.PP
+Definition at line \fB1769\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_MVFR0_FP_excep_trapping_Pos   12U"
+MVFR0: FP exception trapping bits Position 
+.PP
+Definition at line \fB1378\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_MVFR0_FP_excep_trapping_Pos   12U"
+MVFR0: FP exception trapping bits Position 
+.PP
+Definition at line \fB1605\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_MVFR0_FP_excep_trapping_Pos   12U"
+MVFR0: FP exception trapping bits Position 
+.PP
+Definition at line \fB1827\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_MVFR0_FP_rounding_modes_Msk   (0xFUL << \fBFPU_MVFR0_FP_rounding_modes_Pos\fP)"
+MVFR0: FP rounding modes bits Mask 
+.PP
+Definition at line \fB1683\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_FP_rounding_modes_Msk   (0xFUL << \fBFPU_MVFR0_FP_rounding_modes_Pos\fP)"
+MVFR0: FP rounding modes bits Mask 
+.PP
+Definition at line \fB1758\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_MVFR0_FP_rounding_modes_Msk   (0xFUL << \fBFPU_MVFR0_FP_rounding_modes_Pos\fP)"
+MVFR0: FP rounding modes bits Mask 
+.PP
+Definition at line \fB1758\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_MVFR0_FP_rounding_modes_Msk   (0xFUL << \fBFPU_MVFR0_FP_rounding_modes_Pos\fP)"
+MVFR0: FP rounding modes bits Mask 
+.PP
+Definition at line \fB1367\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_MVFR0_FP_rounding_modes_Msk   (0xFUL << \fBFPU_MVFR0_FP_rounding_modes_Pos\fP)"
+MVFR0: FP rounding modes bits Mask 
+.PP
+Definition at line \fB1594\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_MVFR0_FP_rounding_modes_Msk   (0xFUL << \fBFPU_MVFR0_FP_rounding_modes_Pos\fP)"
+MVFR0: FP rounding modes bits Mask 
+.PP
+Definition at line \fB1816\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_MVFR0_FP_rounding_modes_Pos   28U"
+MVFR0: FP rounding modes bits Position 
+.PP
+Definition at line \fB1682\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_FP_rounding_modes_Pos   28U"
+MVFR0: FP rounding modes bits Position 
+.PP
+Definition at line \fB1757\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_MVFR0_FP_rounding_modes_Pos   28U"
+MVFR0: FP rounding modes bits Position 
+.PP
+Definition at line \fB1757\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_MVFR0_FP_rounding_modes_Pos   28U"
+MVFR0: FP rounding modes bits Position 
+.PP
+Definition at line \fB1366\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_MVFR0_FP_rounding_modes_Pos   28U"
+MVFR0: FP rounding modes bits Position 
+.PP
+Definition at line \fB1593\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_MVFR0_FP_rounding_modes_Pos   28U"
+MVFR0: FP rounding modes bits Position 
+.PP
+Definition at line \fB1815\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPDivide_Msk   (0xFUL << \fBFPU_MVFR0_FPDivide_Pos\fP)"
+MVFR0: Divide bits Mask 
+.PP
+Definition at line \fB2576\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPDivide_Msk   (0xFUL << \fBFPU_MVFR0_FPDivide_Pos\fP)"
+MVFR0: Divide bits Mask 
+.PP
+Definition at line \fB3072\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPDivide_Msk   (0xFUL << \fBFPU_MVFR0_FPDivide_Pos\fP)"
+MVFR0: Divide bits Mask 
+.PP
+Definition at line \fB2977\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPDivide_Pos   16U"
+MVFR0: FPDivide bits Position 
+.PP
+Definition at line \fB2575\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPDivide_Pos   16U"
+MVFR0: FPDivide bits Position 
+.PP
+Definition at line \fB3071\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPDivide_Pos   16U"
+MVFR0: FPDivide bits Position 
+.PP
+Definition at line \fB2976\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPDP_Msk   (0xFUL << \fBFPU_MVFR0_FPDP_Pos\fP)"
+MVFR0: FPDP bits Mask 
+.PP
+Definition at line \fB2579\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPDP_Msk   (0xFUL << \fBFPU_MVFR0_FPDP_Pos\fP)"
+MVFR0: FPDP bits Mask 
+.PP
+Definition at line \fB3075\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPDP_Msk   (0xFUL << \fBFPU_MVFR0_FPDP_Pos\fP)"
+MVFR0: FPDP bits Mask 
+.PP
+Definition at line \fB2980\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPDP_Pos   8U"
+MVFR0: FPDP bits Position 
+.PP
+Definition at line \fB2578\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPDP_Pos   8U"
+MVFR0: FPDP bits Position 
+.PP
+Definition at line \fB3074\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPDP_Pos   8U"
+MVFR0: FPDP bits Position 
+.PP
+Definition at line \fB2979\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPRound_Msk   (0xFUL << \fBFPU_MVFR0_FPRound_Pos\fP)"
+MVFR0: FPRound bits Mask 
+.PP
+Definition at line \fB2570\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPRound_Msk   (0xFUL << \fBFPU_MVFR0_FPRound_Pos\fP)"
+MVFR0: FPRound bits Mask 
+.PP
+Definition at line \fB3066\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPRound_Msk   (0xFUL << \fBFPU_MVFR0_FPRound_Pos\fP)"
+MVFR0: FPRound bits Mask 
+.PP
+Definition at line \fB2971\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPRound_Pos   28U"
+MVFR0: FPRound bits Position 
+.PP
+Definition at line \fB2569\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPRound_Pos   28U"
+MVFR0: FPRound bits Position 
+.PP
+Definition at line \fB3065\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPRound_Pos   28U"
+MVFR0: FPRound bits Position 
+.PP
+Definition at line \fB2970\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPSP_Msk   (0xFUL << \fBFPU_MVFR0_FPSP_Pos\fP)"
+MVFR0: FPSP bits Mask 
+.PP
+Definition at line \fB2582\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPSP_Msk   (0xFUL << \fBFPU_MVFR0_FPSP_Pos\fP)"
+MVFR0: FPSP bits Mask 
+.PP
+Definition at line \fB3078\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPSP_Msk   (0xFUL << \fBFPU_MVFR0_FPSP_Pos\fP)"
+MVFR0: FPSP bits Mask 
+.PP
+Definition at line \fB2983\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPSP_Pos   4U"
+MVFR0: FPSP bits Position 
+.PP
+Definition at line \fB2581\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPSP_Pos   4U"
+MVFR0: FPSP bits Position 
+.PP
+Definition at line \fB3077\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPSP_Pos   4U"
+MVFR0: FPSP bits Position 
+.PP
+Definition at line \fB2982\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPSqrt_Msk   (0xFUL << \fBFPU_MVFR0_FPSqrt_Pos\fP)"
+MVFR0: FPSqrt bits Mask 
+.PP
+Definition at line \fB2573\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPSqrt_Msk   (0xFUL << \fBFPU_MVFR0_FPSqrt_Pos\fP)"
+MVFR0: FPSqrt bits Mask 
+.PP
+Definition at line \fB3069\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPSqrt_Msk   (0xFUL << \fBFPU_MVFR0_FPSqrt_Pos\fP)"
+MVFR0: FPSqrt bits Mask 
+.PP
+Definition at line \fB2974\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPSqrt_Pos   20U"
+MVFR0: FPSqrt bits Position 
+.PP
+Definition at line \fB2572\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPSqrt_Pos   20U"
+MVFR0: FPSqrt bits Position 
+.PP
+Definition at line \fB3068\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_MVFR0_FPSqrt_Pos   20U"
+MVFR0: FPSqrt bits Position 
+.PP
+Definition at line \fB2973\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_MVFR0_Short_vectors_Msk   (0xFUL << \fBFPU_MVFR0_Short_vectors_Pos\fP)"
+MVFR0: Short vectors bits Mask 
+.PP
+Definition at line \fB1686\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_Short_vectors_Msk   (0xFUL << \fBFPU_MVFR0_Short_vectors_Pos\fP)"
+MVFR0: Short vectors bits Mask 
+.PP
+Definition at line \fB1761\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_MVFR0_Short_vectors_Msk   (0xFUL << \fBFPU_MVFR0_Short_vectors_Pos\fP)"
+MVFR0: Short vectors bits Mask 
+.PP
+Definition at line \fB1761\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_MVFR0_Short_vectors_Msk   (0xFUL << \fBFPU_MVFR0_Short_vectors_Pos\fP)"
+MVFR0: Short vectors bits Mask 
+.PP
+Definition at line \fB1370\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_MVFR0_Short_vectors_Msk   (0xFUL << \fBFPU_MVFR0_Short_vectors_Pos\fP)"
+MVFR0: Short vectors bits Mask 
+.PP
+Definition at line \fB1597\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_MVFR0_Short_vectors_Msk   (0xFUL << \fBFPU_MVFR0_Short_vectors_Pos\fP)"
+MVFR0: Short vectors bits Mask 
+.PP
+Definition at line \fB1819\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_MVFR0_Short_vectors_Pos   24U"
+MVFR0: Short vectors bits Position 
+.PP
+Definition at line \fB1685\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_Short_vectors_Pos   24U"
+MVFR0: Short vectors bits Position 
+.PP
+Definition at line \fB1760\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_MVFR0_Short_vectors_Pos   24U"
+MVFR0: Short vectors bits Position 
+.PP
+Definition at line \fB1760\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_MVFR0_Short_vectors_Pos   24U"
+MVFR0: Short vectors bits Position 
+.PP
+Definition at line \fB1369\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_MVFR0_Short_vectors_Pos   24U"
+MVFR0: Short vectors bits Position 
+.PP
+Definition at line \fB1596\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_MVFR0_Short_vectors_Pos   24U"
+MVFR0: Short vectors bits Position 
+.PP
+Definition at line \fB1818\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_MVFR0_SIMDReg_Msk   (0xFUL /*<< \fBFPU_MVFR0_SIMDReg_Pos\fP*/)"
+MVFR0: SIMDReg bits Mask 
+.PP
+Definition at line \fB2585\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_SIMDReg_Msk   (0xFUL /*<< \fBFPU_MVFR0_SIMDReg_Pos\fP*/)"
+MVFR0: SIMDReg bits Mask 
+.PP
+Definition at line \fB3081\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_MVFR0_SIMDReg_Msk   (0xFUL /*<< \fBFPU_MVFR0_SIMDReg_Pos\fP*/)"
+MVFR0: SIMDReg bits Mask 
+.PP
+Definition at line \fB2986\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_MVFR0_SIMDReg_Pos   0U"
+MVFR0: SIMDReg bits Position 
+.PP
+Definition at line \fB2584\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_SIMDReg_Pos   0U"
+MVFR0: SIMDReg bits Position 
+.PP
+Definition at line \fB3080\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_MVFR0_SIMDReg_Pos   0U"
+MVFR0: SIMDReg bits Position 
+.PP
+Definition at line \fB2985\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_MVFR0_Single_precision_Msk   (0xFUL << \fBFPU_MVFR0_Single_precision_Pos\fP)"
+MVFR0: Single-precision bits Mask 
+.PP
+Definition at line \fB1701\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_Single_precision_Msk   (0xFUL << \fBFPU_MVFR0_Single_precision_Pos\fP)"
+MVFR0: Single-precision bits Mask 
+.PP
+Definition at line \fB1776\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_MVFR0_Single_precision_Msk   (0xFUL << \fBFPU_MVFR0_Single_precision_Pos\fP)"
+MVFR0: Single-precision bits Mask 
+.PP
+Definition at line \fB1776\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_MVFR0_Single_precision_Msk   (0xFUL << \fBFPU_MVFR0_Single_precision_Pos\fP)"
+MVFR0: Single-precision bits Mask 
+.PP
+Definition at line \fB1385\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_MVFR0_Single_precision_Msk   (0xFUL << \fBFPU_MVFR0_Single_precision_Pos\fP)"
+MVFR0: Single-precision bits Mask 
+.PP
+Definition at line \fB1612\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_MVFR0_Single_precision_Msk   (0xFUL << \fBFPU_MVFR0_Single_precision_Pos\fP)"
+MVFR0: Single-precision bits Mask 
+.PP
+Definition at line \fB1834\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_MVFR0_Single_precision_Pos   4U"
+MVFR0: Single-precision bits Position 
+.PP
+Definition at line \fB1700\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_Single_precision_Pos   4U"
+MVFR0: Single-precision bits Position 
+.PP
+Definition at line \fB1775\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_MVFR0_Single_precision_Pos   4U"
+MVFR0: Single-precision bits Position 
+.PP
+Definition at line \fB1775\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_MVFR0_Single_precision_Pos   4U"
+MVFR0: Single-precision bits Position 
+.PP
+Definition at line \fB1384\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_MVFR0_Single_precision_Pos   4U"
+MVFR0: Single-precision bits Position 
+.PP
+Definition at line \fB1611\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_MVFR0_Single_precision_Pos   4U"
+MVFR0: Single-precision bits Position 
+.PP
+Definition at line \fB1833\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_MVFR0_Square_root_Msk   (0xFUL << \fBFPU_MVFR0_Square_root_Pos\fP)"
+MVFR0: Square root bits Mask 
+.PP
+Definition at line \fB1689\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_Square_root_Msk   (0xFUL << \fBFPU_MVFR0_Square_root_Pos\fP)"
+MVFR0: Square root bits Mask 
+.PP
+Definition at line \fB1764\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_MVFR0_Square_root_Msk   (0xFUL << \fBFPU_MVFR0_Square_root_Pos\fP)"
+MVFR0: Square root bits Mask 
+.PP
+Definition at line \fB1764\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_MVFR0_Square_root_Msk   (0xFUL << \fBFPU_MVFR0_Square_root_Pos\fP)"
+MVFR0: Square root bits Mask 
+.PP
+Definition at line \fB1373\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_MVFR0_Square_root_Msk   (0xFUL << \fBFPU_MVFR0_Square_root_Pos\fP)"
+MVFR0: Square root bits Mask 
+.PP
+Definition at line \fB1600\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_MVFR0_Square_root_Msk   (0xFUL << \fBFPU_MVFR0_Square_root_Pos\fP)"
+MVFR0: Square root bits Mask 
+.PP
+Definition at line \fB1822\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_MVFR0_Square_root_Pos   20U"
+MVFR0: Square root bits Position 
+.PP
+Definition at line \fB1688\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_MVFR0_Square_root_Pos   20U"
+MVFR0: Square root bits Position 
+.PP
+Definition at line \fB1763\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_MVFR0_Square_root_Pos   20U"
+MVFR0: Square root bits Position 
+.PP
+Definition at line \fB1763\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_MVFR0_Square_root_Pos   20U"
+MVFR0: Square root bits Position 
+.PP
+Definition at line \fB1372\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_MVFR0_Square_root_Pos   20U"
+MVFR0: Square root bits Position 
+.PP
+Definition at line \fB1599\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_MVFR0_Square_root_Pos   20U"
+MVFR0: Square root bits Position 
+.PP
+Definition at line \fB1821\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_MVFR1_D_NaN_mode_Msk   (0xFUL << \fBFPU_MVFR1_D_NaN_mode_Pos\fP)"
+MVFR1: D_NaN mode bits Mask 
+.PP
+Definition at line \fB1714\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_MVFR1_D_NaN_mode_Msk   (0xFUL << \fBFPU_MVFR1_D_NaN_mode_Pos\fP)"
+MVFR1: D_NaN mode bits Mask 
+.PP
+Definition at line \fB1789\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_MVFR1_D_NaN_mode_Msk   (0xFUL << \fBFPU_MVFR1_D_NaN_mode_Pos\fP)"
+MVFR1: D_NaN mode bits Mask 
+.PP
+Definition at line \fB1789\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_MVFR1_D_NaN_mode_Msk   (0xFUL << \fBFPU_MVFR1_D_NaN_mode_Pos\fP)"
+MVFR1: D_NaN mode bits Mask 
+.PP
+Definition at line \fB1398\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_MVFR1_D_NaN_mode_Msk   (0xFUL << \fBFPU_MVFR1_D_NaN_mode_Pos\fP)"
+MVFR1: D_NaN mode bits Mask 
+.PP
+Definition at line \fB1625\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_MVFR1_D_NaN_mode_Msk   (0xFUL << \fBFPU_MVFR1_D_NaN_mode_Pos\fP)"
+MVFR1: D_NaN mode bits Mask 
+.PP
+Definition at line \fB1847\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_MVFR1_D_NaN_mode_Pos   4U"
+MVFR1: D_NaN mode bits Position 
+.PP
+Definition at line \fB1713\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_MVFR1_D_NaN_mode_Pos   4U"
+MVFR1: D_NaN mode bits Position 
+.PP
+Definition at line \fB1788\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_MVFR1_D_NaN_mode_Pos   4U"
+MVFR1: D_NaN mode bits Position 
+.PP
+Definition at line \fB1788\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_MVFR1_D_NaN_mode_Pos   4U"
+MVFR1: D_NaN mode bits Position 
+.PP
+Definition at line \fB1397\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_MVFR1_D_NaN_mode_Pos   4U"
+MVFR1: D_NaN mode bits Position 
+.PP
+Definition at line \fB1624\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_MVFR1_D_NaN_mode_Pos   4U"
+MVFR1: D_NaN mode bits Position 
+.PP
+Definition at line \fB1846\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_MVFR1_FMAC_Msk   (0xFUL << \fBFPU_MVFR1_FMAC_Pos\fP)"
+MVFR1: FMAC bits Mask 
+.PP
+Definition at line \fB2589\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_MVFR1_FMAC_Msk   (0xFUL << \fBFPU_MVFR1_FMAC_Pos\fP)"
+MVFR1: FMAC bits Mask 
+.PP
+Definition at line \fB3085\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_MVFR1_FMAC_Msk   (0xFUL << \fBFPU_MVFR1_FMAC_Pos\fP)"
+MVFR1: FMAC bits Mask 
+.PP
+Definition at line \fB2990\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_MVFR1_FMAC_Pos   28U"
+MVFR1: FMAC bits Position 
+.PP
+Definition at line \fB2588\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_MVFR1_FMAC_Pos   28U"
+MVFR1: FMAC bits Position 
+.PP
+Definition at line \fB3084\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_MVFR1_FMAC_Pos   28U"
+MVFR1: FMAC bits Position 
+.PP
+Definition at line \fB2989\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP16_Msk   (0xFUL << \fBFPU_MVFR1_FP16_Pos\fP)"
+MVFR1: FP16 bits Mask 
+.PP
+Definition at line \fB2595\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP16_Msk   (0xFUL << \fBFPU_MVFR1_FP16_Pos\fP)"
+MVFR1: FP16 bits Mask 
+.PP
+Definition at line \fB3091\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP16_Msk   (0xFUL << \fBFPU_MVFR1_FP16_Pos\fP)"
+MVFR1: FP16 bits Mask 
+.PP
+Definition at line \fB2996\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP16_Pos   20U"
+MVFR1: FP16 bits Position 
+.PP
+Definition at line \fB2594\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP16_Pos   20U"
+MVFR1: FP16 bits Position 
+.PP
+Definition at line \fB3090\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP16_Pos   20U"
+MVFR1: FP16 bits Position 
+.PP
+Definition at line \fB2995\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP_fused_MAC_Msk   (0xFUL << \fBFPU_MVFR1_FP_fused_MAC_Pos\fP)"
+MVFR1: FP fused MAC bits Mask 
+.PP
+Definition at line \fB1708\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP_fused_MAC_Msk   (0xFUL << \fBFPU_MVFR1_FP_fused_MAC_Pos\fP)"
+MVFR1: FP fused MAC bits Mask 
+.PP
+Definition at line \fB1783\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP_fused_MAC_Msk   (0xFUL << \fBFPU_MVFR1_FP_fused_MAC_Pos\fP)"
+MVFR1: FP fused MAC bits Mask 
+.PP
+Definition at line \fB1783\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP_fused_MAC_Msk   (0xFUL << \fBFPU_MVFR1_FP_fused_MAC_Pos\fP)"
+MVFR1: FP fused MAC bits Mask 
+.PP
+Definition at line \fB1392\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP_fused_MAC_Msk   (0xFUL << \fBFPU_MVFR1_FP_fused_MAC_Pos\fP)"
+MVFR1: FP fused MAC bits Mask 
+.PP
+Definition at line \fB1619\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP_fused_MAC_Msk   (0xFUL << \fBFPU_MVFR1_FP_fused_MAC_Pos\fP)"
+MVFR1: FP fused MAC bits Mask 
+.PP
+Definition at line \fB1841\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP_fused_MAC_Pos   28U"
+MVFR1: FP fused MAC bits Position 
+.PP
+Definition at line \fB1707\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP_fused_MAC_Pos   28U"
+MVFR1: FP fused MAC bits Position 
+.PP
+Definition at line \fB1782\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP_fused_MAC_Pos   28U"
+MVFR1: FP fused MAC bits Position 
+.PP
+Definition at line \fB1782\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP_fused_MAC_Pos   28U"
+MVFR1: FP fused MAC bits Position 
+.PP
+Definition at line \fB1391\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP_fused_MAC_Pos   28U"
+MVFR1: FP fused MAC bits Position 
+.PP
+Definition at line \fB1618\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP_fused_MAC_Pos   28U"
+MVFR1: FP fused MAC bits Position 
+.PP
+Definition at line \fB1840\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP_HPFP_Msk   (0xFUL << \fBFPU_MVFR1_FP_HPFP_Pos\fP)"
+MVFR1: FP HPFP bits Mask 
+.PP
+Definition at line \fB1711\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP_HPFP_Msk   (0xFUL << \fBFPU_MVFR1_FP_HPFP_Pos\fP)"
+MVFR1: FP HPFP bits Mask 
+.PP
+Definition at line \fB1786\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP_HPFP_Msk   (0xFUL << \fBFPU_MVFR1_FP_HPFP_Pos\fP)"
+MVFR1: FP HPFP bits Mask 
+.PP
+Definition at line \fB1786\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP_HPFP_Msk   (0xFUL << \fBFPU_MVFR1_FP_HPFP_Pos\fP)"
+MVFR1: FP HPFP bits Mask 
+.PP
+Definition at line \fB1395\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP_HPFP_Msk   (0xFUL << \fBFPU_MVFR1_FP_HPFP_Pos\fP)"
+MVFR1: FP HPFP bits Mask 
+.PP
+Definition at line \fB1622\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP_HPFP_Msk   (0xFUL << \fBFPU_MVFR1_FP_HPFP_Pos\fP)"
+MVFR1: FP HPFP bits Mask 
+.PP
+Definition at line \fB1844\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP_HPFP_Pos   24U"
+MVFR1: FP HPFP bits Position 
+.PP
+Definition at line \fB1710\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP_HPFP_Pos   24U"
+MVFR1: FP HPFP bits Position 
+.PP
+Definition at line \fB1785\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP_HPFP_Pos   24U"
+MVFR1: FP HPFP bits Position 
+.PP
+Definition at line \fB1785\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP_HPFP_Pos   24U"
+MVFR1: FP HPFP bits Position 
+.PP
+Definition at line \fB1394\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP_HPFP_Pos   24U"
+MVFR1: FP HPFP bits Position 
+.PP
+Definition at line \fB1621\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_MVFR1_FP_HPFP_Pos   24U"
+MVFR1: FP HPFP bits Position 
+.PP
+Definition at line \fB1843\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_MVFR1_FPDNaN_Msk   (0xFUL << \fBFPU_MVFR1_FPDNaN_Pos\fP)"
+MVFR1: FPDNaN bits Mask 
+.PP
+Definition at line \fB2601\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_MVFR1_FPDNaN_Msk   (0xFUL << \fBFPU_MVFR1_FPDNaN_Pos\fP)"
+MVFR1: FPDNaN bits Mask 
+.PP
+Definition at line \fB3097\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_MVFR1_FPDNaN_Msk   (0xFUL << \fBFPU_MVFR1_FPDNaN_Pos\fP)"
+MVFR1: FPDNaN bits Mask 
+.PP
+Definition at line \fB3002\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_MVFR1_FPDNaN_Pos   4U"
+MVFR1: FPDNaN bits Position 
+.PP
+Definition at line \fB2600\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_MVFR1_FPDNaN_Pos   4U"
+MVFR1: FPDNaN bits Position 
+.PP
+Definition at line \fB3096\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_MVFR1_FPDNaN_Pos   4U"
+MVFR1: FPDNaN bits Position 
+.PP
+Definition at line \fB3001\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_MVFR1_FPFtZ_Msk   (0xFUL /*<< \fBFPU_MVFR1_FPFtZ_Pos\fP*/)"
+MVFR1: FPFtZ bits Mask 
+.PP
+Definition at line \fB2604\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_MVFR1_FPFtZ_Msk   (0xFUL /*<< \fBFPU_MVFR1_FPFtZ_Pos\fP*/)"
+MVFR1: FPFtZ bits Mask 
+.PP
+Definition at line \fB3100\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_MVFR1_FPFtZ_Msk   (0xFUL /*<< \fBFPU_MVFR1_FPFtZ_Pos\fP*/)"
+MVFR1: FPFtZ bits Mask 
+.PP
+Definition at line \fB3005\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_MVFR1_FPFtZ_Pos   0U"
+MVFR1: FPFtZ bits Position 
+.PP
+Definition at line \fB2603\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_MVFR1_FPFtZ_Pos   0U"
+MVFR1: FPFtZ bits Position 
+.PP
+Definition at line \fB3099\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_MVFR1_FPFtZ_Pos   0U"
+MVFR1: FPFtZ bits Position 
+.PP
+Definition at line \fB3004\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_MVFR1_FPHP_Msk   (0xFUL << \fBFPU_MVFR1_FPHP_Pos\fP)"
+MVFR1: FPHP bits Mask 
+.PP
+Definition at line \fB2592\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_MVFR1_FPHP_Msk   (0xFUL << \fBFPU_MVFR1_FPHP_Pos\fP)"
+MVFR1: FPHP bits Mask 
+.PP
+Definition at line \fB3088\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_MVFR1_FPHP_Msk   (0xFUL << \fBFPU_MVFR1_FPHP_Pos\fP)"
+MVFR1: FPHP bits Mask 
+.PP
+Definition at line \fB2993\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_MVFR1_FPHP_Pos   24U"
+MVFR1: FPHP bits Position 
+.PP
+Definition at line \fB2591\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_MVFR1_FPHP_Pos   24U"
+MVFR1: FPHP bits Position 
+.PP
+Definition at line \fB3087\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_MVFR1_FPHP_Pos   24U"
+MVFR1: FPHP bits Position 
+.PP
+Definition at line \fB2992\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_MVFR1_FtZ_mode_Msk   (0xFUL /*<< \fBFPU_MVFR1_FtZ_mode_Pos\fP*/)"
+MVFR1: FtZ mode bits Mask 
+.PP
+Definition at line \fB1717\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_MVFR1_FtZ_mode_Msk   (0xFUL /*<< \fBFPU_MVFR1_FtZ_mode_Pos\fP*/)"
+MVFR1: FtZ mode bits Mask 
+.PP
+Definition at line \fB1792\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_MVFR1_FtZ_mode_Msk   (0xFUL /*<< \fBFPU_MVFR1_FtZ_mode_Pos\fP*/)"
+MVFR1: FtZ mode bits Mask 
+.PP
+Definition at line \fB1792\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_MVFR1_FtZ_mode_Msk   (0xFUL /*<< \fBFPU_MVFR1_FtZ_mode_Pos\fP*/)"
+MVFR1: FtZ mode bits Mask 
+.PP
+Definition at line \fB1401\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_MVFR1_FtZ_mode_Msk   (0xFUL /*<< \fBFPU_MVFR1_FtZ_mode_Pos\fP*/)"
+MVFR1: FtZ mode bits Mask 
+.PP
+Definition at line \fB1628\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_MVFR1_FtZ_mode_Msk   (0xFUL /*<< \fBFPU_MVFR1_FtZ_mode_Pos\fP*/)"
+MVFR1: FtZ mode bits Mask 
+.PP
+Definition at line \fB1850\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_MVFR1_FtZ_mode_Pos   0U"
+MVFR1: FtZ mode bits Position 
+.PP
+Definition at line \fB1716\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_MVFR1_FtZ_mode_Pos   0U"
+MVFR1: FtZ mode bits Position 
+.PP
+Definition at line \fB1791\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_MVFR1_FtZ_mode_Pos   0U"
+MVFR1: FtZ mode bits Position 
+.PP
+Definition at line \fB1791\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_MVFR1_FtZ_mode_Pos   0U"
+MVFR1: FtZ mode bits Position 
+.PP
+Definition at line \fB1400\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_MVFR1_FtZ_mode_Pos   0U"
+MVFR1: FtZ mode bits Position 
+.PP
+Definition at line \fB1627\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_MVFR1_FtZ_mode_Pos   0U"
+MVFR1: FtZ mode bits Position 
+.PP
+Definition at line \fB1849\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_MVFR1_MVE_Msk   (0xFUL << \fBFPU_MVFR1_MVE_Pos\fP)"
+MVFR1: MVE bits Mask 
+.PP
+Definition at line \fB2598\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_MVFR1_MVE_Msk   (0xFUL << \fBFPU_MVFR1_MVE_Pos\fP)"
+MVFR1: MVE bits Mask 
+.PP
+Definition at line \fB3094\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_MVFR1_MVE_Msk   (0xFUL << \fBFPU_MVFR1_MVE_Pos\fP)"
+MVFR1: MVE bits Mask 
+.PP
+Definition at line \fB2999\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_MVFR1_MVE_Pos   8U"
+MVFR1: MVE bits Position 
+.PP
+Definition at line \fB2597\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_MVFR1_MVE_Pos   8U"
+MVFR1: MVE bits Position 
+.PP
+Definition at line \fB3093\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_MVFR1_MVE_Pos   8U"
+MVFR1: MVE bits Position 
+.PP
+Definition at line \fB2998\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_MVFR2_FPMisc_Msk   (0xFUL << \fBFPU_MVFR2_FPMisc_Pos\fP)"
+MVFR2: FPMisc bits Mask 
+.PP
+Definition at line \fB2608\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_MVFR2_FPMisc_Msk   (0xFUL << \fBFPU_MVFR2_FPMisc_Pos\fP)"
+MVFR2: FPMisc bits Mask 
+.PP
+Definition at line \fB1721\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_MVFR2_FPMisc_Msk   (0xFUL << \fBFPU_MVFR2_FPMisc_Pos\fP)"
+MVFR2: FPMisc bits Mask 
+.PP
+Definition at line \fB1796\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_MVFR2_FPMisc_Msk   (0xFUL << \fBFPU_MVFR2_FPMisc_Pos\fP)"
+MVFR2: FPMisc bits Mask 
+.PP
+Definition at line \fB1796\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_MVFR2_FPMisc_Msk   (0xFUL << \fBFPU_MVFR2_FPMisc_Pos\fP)"
+MVFR2: FPMisc bits Mask 
+.PP
+Definition at line \fB3104\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_MVFR2_FPMisc_Msk   (0xFUL << \fBFPU_MVFR2_FPMisc_Pos\fP)"
+MVFR2: FPMisc bits Mask 
+.PP
+Definition at line \fB3009\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_MVFR2_FPMisc_Msk   (0xFUL << \fBFPU_MVFR2_FPMisc_Pos\fP)"
+MVFR2: FPMisc bits Mask 
+.PP
+Definition at line \fB1854\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_MVFR2_FPMisc_Pos   4U"
+MVFR2: FPMisc bits Position 
+.PP
+Definition at line \fB2607\fP of file \fBcore_armv81mml\&.h\fP\&.
+.SS "#define FPU_MVFR2_FPMisc_Pos   4U"
+MVFR2: FPMisc bits Position 
+.PP
+Definition at line \fB1720\fP of file \fBcore_armv8mml\&.h\fP\&.
+.SS "#define FPU_MVFR2_FPMisc_Pos   4U"
+MVFR2: FPMisc bits Position 
+.PP
+Definition at line \fB1795\fP of file \fBcore_cm33\&.h\fP\&.
+.SS "#define FPU_MVFR2_FPMisc_Pos   4U"
+MVFR2: FPMisc bits Position 
+.PP
+Definition at line \fB1795\fP of file \fBcore_cm35p\&.h\fP\&.
+.SS "#define FPU_MVFR2_FPMisc_Pos   4U"
+MVFR2: FPMisc bits Position 
+.PP
+Definition at line \fB3103\fP of file \fBcore_cm55\&.h\fP\&.
+.SS "#define FPU_MVFR2_FPMisc_Pos   4U"
+MVFR2: FPMisc bits Position 
+.PP
+Definition at line \fB3008\fP of file \fBcore_cm85\&.h\fP\&.
+.SS "#define FPU_MVFR2_FPMisc_Pos   4U"
+MVFR2: FPMisc bits Position 
+.PP
+Definition at line \fB1853\fP of file \fBcore_starmc1\&.h\fP\&.
+.SS "#define FPU_MVFR2_VFP_Misc_Msk   (0xFUL << \fBFPU_MVFR2_VFP_Misc_Pos\fP)"
+MVFR2: VFP Misc bits Mask 
+.PP
+Definition at line \fB1406\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_MVFR2_VFP_Misc_Msk   (0xFUL << \fBFPU_MVFR2_VFP_Misc_Pos\fP)"
+MVFR2: VFP Misc bits Mask 
+.PP
+Definition at line \fB1633\fP of file \fBcore_cm7\&.h\fP\&.
+.SS "#define FPU_MVFR2_VFP_Misc_Pos   4U"
+MVFR2: VFP Misc bits Position 
+.PP
+Definition at line \fB1405\fP of file \fBcore_cm4\&.h\fP\&.
+.SS "#define FPU_MVFR2_VFP_Misc_Pos   4U"
+MVFR2: VFP Misc bits Position 
+.PP
+Definition at line \fB1632\fP of file \fBcore_cm7\&.h\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Joystick Driver from the source code\&.

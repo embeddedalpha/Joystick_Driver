@@ -1,0 +1,713 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_d_m_a___configuration_1_1_request" xml:lang="en-US">
+<title>DMA_Configuration::Request Struct Reference</title>
+<indexterm><primary>DMA_Configuration::Request</primary></indexterm>
+Collaboration diagram for DMA_Configuration::Request:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="struct_d_m_a___configuration_1_1_request__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a225c1fa022a45677e2074771cfef8856">SPI3_RX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a35e31b3c31bfc0f01f0cbc203964f10d">SPI3_TX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a46295f52535ccf819e5080f1de63d18b">SPI2_RX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a7cfa7cc42ef7ba7d85abd6743bc2b2af">SPI2_TX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1af80517744d5706b8011d31b51bd0d411">SPI1_RX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1aad2afb2446be5ebbc21fbce320613c42">SPI1_TX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a95b9e2e52718e6dc5b85341ce66bbe63">I2S2_RX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a284f26e6542c64e80a2172f96441ff5a">I2S2_TX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a1a818e99743ac145044b05402ee1d168">I2S3_RX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a9bd8689c123f6a9e990463563c866cbe">I2S3_TX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1addf10d54fd999c3344c8dd1ff6f92150">I2C1_RX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1ad911e0f02cdba443916f5129f440d250">I2C1_TX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a963f9a82cfb160af72abc63177bfa23c">I2C2_RX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a5ce35815fd0fbcefebfb3f3db783d708">I2C2_TX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a00b93f6f92132c6be3425c65fb4dccd3">I2C3_RX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a0aaee29837505ae1fabec10b0db666ba">I2C3_TX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a490ab542ca3b45b8af3a8b83957470d3">USART1_RX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a329e07b9bd0b23890a3a9e78b6a80d36">USART1_TX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a0f18a3cd72e03ca273f8d8c1cf2e843d">USART2_RX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a27fde27f7bb6ffb7d1b46a45ab2adfb4">USART2_TX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a18cba448979c55b642746d2565b57109">USART3_RX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a385a354726458b081155071594382bb7">USART3_TX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1af769dd4e9dfe08402bb229e4a386949e">UART4_RX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a77bc8398f6da4b6f157ce2040b0c8038">UART4_TX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a86ae09b9a035e70333114663ccf43de8">UART5_RX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1aa2804e5a1f717a0d1cc2ad2a0251f8ee">UART5_TX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a3fdf3e98ba626b3942fd4be2fd909ff0">UART6_RX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a1849c9b39658250079757e857d5fccd7">UART6_TX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a35d4c8675b191218522ae92470ef9903">UART7_RX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1ad549e4f31b0df30f3741b617b1d58313">UART7_TX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a54e49fbbd2932a80f9939f1405ae9f66">UART8_RX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a74261e7b0bbe6661d14bac20e4a01457">UART8_TX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a8197f2201c975b4ce80d0fcb45da8904">TIM1_UP</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a0be7f8788efaabb4dcc0f4eb652931ed">TIM1_CH1</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a093f640c93bf59ca6ce36a3c3a0dbf9d">TIM1_CH2</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a2c9476c492b9e773f7c76855c33b1f51">TIM1_CH3</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a6e6d3663474c558b1aae4209f203aba9">TIM1_CH4</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1abde113e796cb03c4df556aa5b2d8a870">TIM1_TRIG</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a793850eb8bb76feebb2c9b6cbaa3c21f">TIM1_COM</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1ac6af2782229ebdebd7f04c1117e5224d">TIM8_UP</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a740b92d8397d80628bce68c0542ecf59">TIM8_CH1</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1acb40e665e4b1fcdbf6ac403399a364cc">TIM8_CH2</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a98c0dbd8a470377dd997aeca7e2a96e2">TIM8_CH3</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1abb12edd3e864a637e831a4bf9d3f5490">TIM8_CH4</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a1a837010741bc5784abeaf21ab30e25b">TIM8_TRIG</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a66b85bbcd711e5b0455633adfd7e9ee0">TIM8_COM</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a1b2a484fd080f0afe42d41cf0effc065">TIM2_UP</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a33295e5d20c3147b5616363a9a89fdd6">TIM2_CH1</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1afc54703e1b6bd4eb1fdc96ebbf00da42">TIM2_CH2</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a7fb8370f1e140828704dba3042dabb6e">TIM2_CH3</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1ac318b2de099cb8215218707bf182d091">TIM2_CH4</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1ab9751e5207446bf60b9aa4011a916edb">TIM3_CH1</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a1b6aaabd6b0c19e4c4f505e45bce1960">TIM3_CH2</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1abbf17853c8c07edda5c9bbcdafa0e524">TIM3_CH3</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a40be65782e1607bdec3f23fe65b35797">TIM3_CH4</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1ab42427117ca51bb3ae3ca8ec5b09625d">TIM3_UP</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a5d59710b47311137240c0f45a4ecfb61">TIM3_TRIG</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a57e51cfc6529ba3255367410c0b57bec">TIM4_CH1</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a497b8f4c4b2ecdefb701981244e68328">TIM4_CH2</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1ad308ef6b103c78a48acf3fa04a795537">TIM4_CH3</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a6b6590673602cdbecc6b5b35b87affd1">TIM4_UP</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a2340d4c851eb80557e75365f48c18ad2">TIM5_CH1</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a5e312e4ada26528314f1f97df42d8ad7">TIM5_CH2</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a99a0c9ad187fccaeee8f0586bc6e400d">TIM5_CH3</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a187b42ad33a5b353f108f8559237d152">TIM5_CH4</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a4e95caf0d6b2c3bbdfed16e7e24db2d5">TIM5_UP</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a05824c024c3e6532e8c5cd9f265a2d2d">TIM5_TRIG</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1aa19b7fe398ab2eb2c07d87d7a4fd1e6d">TIM6_UP</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a790a517343444197e59a886a720139be">TIM7_UP</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a948aa94d99247bf3cebe826fd5f835f0">_DAC1</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a3a1bb7994a144e633696b8a6582832e2">_DAC2</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a1c803b222ce8dd979d83e8eaff2f05c6">SDIO_RXTX</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a4939960cfbca48726c464b6638abf4ce">_DCMI</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a3ea6de53d4bbca9b8c34e022186c8a40">_ADC1</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a5c90adda4430b38dc476aa0aea291874">_ADC2</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_d_m_a___request">DMA_Request</link> <link linkend="_struct_d_m_a___configuration_1_1_request_1a2599808cdbf78a09b021f91dfadf5987">_ADC3</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00032">32</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a3ea6de53d4bbca9b8c34e022186c8a40"/><section>
+    <title>_ADC1</title>
+<indexterm><primary>_ADC1</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>_ADC1</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> _ADC1</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00140">140</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a5c90adda4430b38dc476aa0aea291874"/><section>
+    <title>_ADC2</title>
+<indexterm><primary>_ADC2</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>_ADC2</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> _ADC2</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00141">141</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a2599808cdbf78a09b021f91dfadf5987"/><section>
+    <title>_ADC3</title>
+<indexterm><primary>_ADC3</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>_ADC3</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> _ADC3</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00142">142</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a948aa94d99247bf3cebe826fd5f835f0"/><section>
+    <title>_DAC1</title>
+<indexterm><primary>_DAC1</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>_DAC1</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> _DAC1</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00130">130</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a3a1bb7994a144e633696b8a6582832e2"/><section>
+    <title>_DAC2</title>
+<indexterm><primary>_DAC2</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>_DAC2</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> _DAC2</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00131">131</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a4939960cfbca48726c464b6638abf4ce"/><section>
+    <title>_DCMI</title>
+<indexterm><primary>_DCMI</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>_DCMI</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> _DCMI</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00137">137</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1addf10d54fd999c3344c8dd1ff6f92150"/><section>
+    <title>I2C1_RX</title>
+<indexterm><primary>I2C1_RX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>I2C1_RX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> I2C1_RX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00050">50</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1ad911e0f02cdba443916f5129f440d250"/><section>
+    <title>I2C1_TX</title>
+<indexterm><primary>I2C1_TX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>I2C1_TX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> I2C1_TX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00051">51</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a963f9a82cfb160af72abc63177bfa23c"/><section>
+    <title>I2C2_RX</title>
+<indexterm><primary>I2C2_RX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>I2C2_RX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> I2C2_RX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00052">52</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a5ce35815fd0fbcefebfb3f3db783d708"/><section>
+    <title>I2C2_TX</title>
+<indexterm><primary>I2C2_TX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>I2C2_TX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> I2C2_TX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00053">53</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a00b93f6f92132c6be3425c65fb4dccd3"/><section>
+    <title>I2C3_RX</title>
+<indexterm><primary>I2C3_RX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>I2C3_RX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> I2C3_RX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00054">54</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a0aaee29837505ae1fabec10b0db666ba"/><section>
+    <title>I2C3_TX</title>
+<indexterm><primary>I2C3_TX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>I2C3_TX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> I2C3_TX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00055">55</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a95b9e2e52718e6dc5b85341ce66bbe63"/><section>
+    <title>I2S2_RX</title>
+<indexterm><primary>I2S2_RX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>I2S2_RX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> I2S2_RX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00044">44</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a284f26e6542c64e80a2172f96441ff5a"/><section>
+    <title>I2S2_TX</title>
+<indexterm><primary>I2S2_TX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>I2S2_TX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> I2S2_TX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00045">45</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a1a818e99743ac145044b05402ee1d168"/><section>
+    <title>I2S3_RX</title>
+<indexterm><primary>I2S3_RX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>I2S3_RX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> I2S3_RX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00046">46</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a9bd8689c123f6a9e990463563c866cbe"/><section>
+    <title>I2S3_TX</title>
+<indexterm><primary>I2S3_TX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>I2S3_TX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> I2S3_TX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00047">47</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a1c803b222ce8dd979d83e8eaff2f05c6"/><section>
+    <title>SDIO_RXTX</title>
+<indexterm><primary>SDIO_RXTX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>SDIO_RXTX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> SDIO_RXTX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00134">134</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1af80517744d5706b8011d31b51bd0d411"/><section>
+    <title>SPI1_RX</title>
+<indexterm><primary>SPI1_RX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>SPI1_RX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> SPI1_RX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00040">40</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1aad2afb2446be5ebbc21fbce320613c42"/><section>
+    <title>SPI1_TX</title>
+<indexterm><primary>SPI1_TX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>SPI1_TX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> SPI1_TX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00041">41</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a46295f52535ccf819e5080f1de63d18b"/><section>
+    <title>SPI2_RX</title>
+<indexterm><primary>SPI2_RX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>SPI2_RX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> SPI2_RX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00037">37</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a7cfa7cc42ef7ba7d85abd6743bc2b2af"/><section>
+    <title>SPI2_TX</title>
+<indexterm><primary>SPI2_TX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>SPI2_TX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> SPI2_TX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00038">38</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a225c1fa022a45677e2074771cfef8856"/><section>
+    <title>SPI3_RX</title>
+<indexterm><primary>SPI3_RX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>SPI3_RX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> SPI3_RX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00034">34</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a35e31b3c31bfc0f01f0cbc203964f10d"/><section>
+    <title>SPI3_TX</title>
+<indexterm><primary>SPI3_TX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>SPI3_TX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> SPI3_TX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00035">35</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a0be7f8788efaabb4dcc0f4eb652931ed"/><section>
+    <title>TIM1_CH1</title>
+<indexterm><primary>TIM1_CH1</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM1_CH1</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM1_CH1</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00078">78</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a093f640c93bf59ca6ce36a3c3a0dbf9d"/><section>
+    <title>TIM1_CH2</title>
+<indexterm><primary>TIM1_CH2</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM1_CH2</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM1_CH2</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00079">79</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a2c9476c492b9e773f7c76855c33b1f51"/><section>
+    <title>TIM1_CH3</title>
+<indexterm><primary>TIM1_CH3</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM1_CH3</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM1_CH3</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00080">80</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a6e6d3663474c558b1aae4209f203aba9"/><section>
+    <title>TIM1_CH4</title>
+<indexterm><primary>TIM1_CH4</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM1_CH4</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM1_CH4</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00081">81</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a793850eb8bb76feebb2c9b6cbaa3c21f"/><section>
+    <title>TIM1_COM</title>
+<indexterm><primary>TIM1_COM</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM1_COM</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM1_COM</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00083">83</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1abde113e796cb03c4df556aa5b2d8a870"/><section>
+    <title>TIM1_TRIG</title>
+<indexterm><primary>TIM1_TRIG</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM1_TRIG</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM1_TRIG</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00082">82</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a8197f2201c975b4ce80d0fcb45da8904"/><section>
+    <title>TIM1_UP</title>
+<indexterm><primary>TIM1_UP</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM1_UP</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM1_UP</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00077">77</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a33295e5d20c3147b5616363a9a89fdd6"/><section>
+    <title>TIM2_CH1</title>
+<indexterm><primary>TIM2_CH1</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM2_CH1</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM2_CH1</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00096">96</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1afc54703e1b6bd4eb1fdc96ebbf00da42"/><section>
+    <title>TIM2_CH2</title>
+<indexterm><primary>TIM2_CH2</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM2_CH2</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM2_CH2</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00097">97</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a7fb8370f1e140828704dba3042dabb6e"/><section>
+    <title>TIM2_CH3</title>
+<indexterm><primary>TIM2_CH3</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM2_CH3</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM2_CH3</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00098">98</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1ac318b2de099cb8215218707bf182d091"/><section>
+    <title>TIM2_CH4</title>
+<indexterm><primary>TIM2_CH4</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM2_CH4</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM2_CH4</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00099">99</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a1b2a484fd080f0afe42d41cf0effc065"/><section>
+    <title>TIM2_UP</title>
+<indexterm><primary>TIM2_UP</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM2_UP</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM2_UP</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00095">95</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1ab9751e5207446bf60b9aa4011a916edb"/><section>
+    <title>TIM3_CH1</title>
+<indexterm><primary>TIM3_CH1</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM3_CH1</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM3_CH1</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00102">102</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a1b6aaabd6b0c19e4c4f505e45bce1960"/><section>
+    <title>TIM3_CH2</title>
+<indexterm><primary>TIM3_CH2</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM3_CH2</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM3_CH2</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00103">103</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1abbf17853c8c07edda5c9bbcdafa0e524"/><section>
+    <title>TIM3_CH3</title>
+<indexterm><primary>TIM3_CH3</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM3_CH3</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM3_CH3</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00104">104</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a40be65782e1607bdec3f23fe65b35797"/><section>
+    <title>TIM3_CH4</title>
+<indexterm><primary>TIM3_CH4</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM3_CH4</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM3_CH4</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00105">105</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a5d59710b47311137240c0f45a4ecfb61"/><section>
+    <title>TIM3_TRIG</title>
+<indexterm><primary>TIM3_TRIG</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM3_TRIG</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM3_TRIG</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00107">107</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1ab42427117ca51bb3ae3ca8ec5b09625d"/><section>
+    <title>TIM3_UP</title>
+<indexterm><primary>TIM3_UP</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM3_UP</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM3_UP</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00106">106</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a57e51cfc6529ba3255367410c0b57bec"/><section>
+    <title>TIM4_CH1</title>
+<indexterm><primary>TIM4_CH1</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM4_CH1</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM4_CH1</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00110">110</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a497b8f4c4b2ecdefb701981244e68328"/><section>
+    <title>TIM4_CH2</title>
+<indexterm><primary>TIM4_CH2</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM4_CH2</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM4_CH2</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00111">111</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1ad308ef6b103c78a48acf3fa04a795537"/><section>
+    <title>TIM4_CH3</title>
+<indexterm><primary>TIM4_CH3</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM4_CH3</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM4_CH3</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00112">112</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a6b6590673602cdbecc6b5b35b87affd1"/><section>
+    <title>TIM4_UP</title>
+<indexterm><primary>TIM4_UP</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM4_UP</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM4_UP</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00113">113</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a2340d4c851eb80557e75365f48c18ad2"/><section>
+    <title>TIM5_CH1</title>
+<indexterm><primary>TIM5_CH1</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM5_CH1</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM5_CH1</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00116">116</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a5e312e4ada26528314f1f97df42d8ad7"/><section>
+    <title>TIM5_CH2</title>
+<indexterm><primary>TIM5_CH2</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM5_CH2</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM5_CH2</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00117">117</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a99a0c9ad187fccaeee8f0586bc6e400d"/><section>
+    <title>TIM5_CH3</title>
+<indexterm><primary>TIM5_CH3</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM5_CH3</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM5_CH3</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00118">118</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a187b42ad33a5b353f108f8559237d152"/><section>
+    <title>TIM5_CH4</title>
+<indexterm><primary>TIM5_CH4</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM5_CH4</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM5_CH4</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00119">119</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a05824c024c3e6532e8c5cd9f265a2d2d"/><section>
+    <title>TIM5_TRIG</title>
+<indexterm><primary>TIM5_TRIG</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM5_TRIG</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM5_TRIG</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00121">121</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a4e95caf0d6b2c3bbdfed16e7e24db2d5"/><section>
+    <title>TIM5_UP</title>
+<indexterm><primary>TIM5_UP</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM5_UP</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM5_UP</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00120">120</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1aa19b7fe398ab2eb2c07d87d7a4fd1e6d"/><section>
+    <title>TIM6_UP</title>
+<indexterm><primary>TIM6_UP</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM6_UP</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM6_UP</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00123">123</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a790a517343444197e59a886a720139be"/><section>
+    <title>TIM7_UP</title>
+<indexterm><primary>TIM7_UP</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM7_UP</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM7_UP</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00125">125</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a740b92d8397d80628bce68c0542ecf59"/><section>
+    <title>TIM8_CH1</title>
+<indexterm><primary>TIM8_CH1</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM8_CH1</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM8_CH1</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00087">87</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1acb40e665e4b1fcdbf6ac403399a364cc"/><section>
+    <title>TIM8_CH2</title>
+<indexterm><primary>TIM8_CH2</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM8_CH2</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM8_CH2</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00088">88</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a98c0dbd8a470377dd997aeca7e2a96e2"/><section>
+    <title>TIM8_CH3</title>
+<indexterm><primary>TIM8_CH3</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM8_CH3</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM8_CH3</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00089">89</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1abb12edd3e864a637e831a4bf9d3f5490"/><section>
+    <title>TIM8_CH4</title>
+<indexterm><primary>TIM8_CH4</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM8_CH4</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM8_CH4</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00090">90</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a66b85bbcd711e5b0455633adfd7e9ee0"/><section>
+    <title>TIM8_COM</title>
+<indexterm><primary>TIM8_COM</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM8_COM</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM8_COM</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00092">92</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a1a837010741bc5784abeaf21ab30e25b"/><section>
+    <title>TIM8_TRIG</title>
+<indexterm><primary>TIM8_TRIG</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM8_TRIG</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM8_TRIG</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00091">91</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1ac6af2782229ebdebd7f04c1117e5224d"/><section>
+    <title>TIM8_UP</title>
+<indexterm><primary>TIM8_UP</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>TIM8_UP</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> TIM8_UP</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00086">86</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1af769dd4e9dfe08402bb229e4a386949e"/><section>
+    <title>UART4_RX</title>
+<indexterm><primary>UART4_RX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>UART4_RX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> UART4_RX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00064">64</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a77bc8398f6da4b6f157ce2040b0c8038"/><section>
+    <title>UART4_TX</title>
+<indexterm><primary>UART4_TX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>UART4_TX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> UART4_TX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00065">65</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a86ae09b9a035e70333114663ccf43de8"/><section>
+    <title>UART5_RX</title>
+<indexterm><primary>UART5_RX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>UART5_RX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> UART5_RX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00066">66</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1aa2804e5a1f717a0d1cc2ad2a0251f8ee"/><section>
+    <title>UART5_TX</title>
+<indexterm><primary>UART5_TX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>UART5_TX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> UART5_TX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00067">67</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a3fdf3e98ba626b3942fd4be2fd909ff0"/><section>
+    <title>UART6_RX</title>
+<indexterm><primary>UART6_RX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>UART6_RX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> UART6_RX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00068">68</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a1849c9b39658250079757e857d5fccd7"/><section>
+    <title>UART6_TX</title>
+<indexterm><primary>UART6_TX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>UART6_TX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> UART6_TX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00069">69</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a35d4c8675b191218522ae92470ef9903"/><section>
+    <title>UART7_RX</title>
+<indexterm><primary>UART7_RX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>UART7_RX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> UART7_RX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00070">70</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1ad549e4f31b0df30f3741b617b1d58313"/><section>
+    <title>UART7_TX</title>
+<indexterm><primary>UART7_TX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>UART7_TX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> UART7_TX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00071">71</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a54e49fbbd2932a80f9939f1405ae9f66"/><section>
+    <title>UART8_RX</title>
+<indexterm><primary>UART8_RX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>UART8_RX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> UART8_RX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00072">72</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a74261e7b0bbe6661d14bac20e4a01457"/><section>
+    <title>UART8_TX</title>
+<indexterm><primary>UART8_TX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>UART8_TX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> UART8_TX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00073">73</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a490ab542ca3b45b8af3a8b83957470d3"/><section>
+    <title>USART1_RX</title>
+<indexterm><primary>USART1_RX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>USART1_RX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> USART1_RX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00058">58</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a329e07b9bd0b23890a3a9e78b6a80d36"/><section>
+    <title>USART1_TX</title>
+<indexterm><primary>USART1_TX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>USART1_TX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> USART1_TX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00059">59</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a0f18a3cd72e03ca273f8d8c1cf2e843d"/><section>
+    <title>USART2_RX</title>
+<indexterm><primary>USART2_RX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>USART2_RX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> USART2_RX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00060">60</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a27fde27f7bb6ffb7d1b46a45ab2adfb4"/><section>
+    <title>USART2_TX</title>
+<indexterm><primary>USART2_TX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>USART2_TX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> USART2_TX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00061">61</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a18cba448979c55b642746d2565b57109"/><section>
+    <title>USART3_RX</title>
+<indexterm><primary>USART3_RX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>USART3_RX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> USART3_RX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00062">62</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct_d_m_a___configuration_1_1_request_1a385a354726458b081155071594382bb7"/><section>
+    <title>USART3_TX</title>
+<indexterm><primary>USART3_TX</primary><secondary>DMA_Configuration::Request</secondary></indexterm>
+<indexterm><primary>DMA_Configuration::Request</primary><secondary>USART3_TX</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_d_m_a___request">DMA_Request</link> USART3_TX</computeroutput></para><para>
+Definition at line <link linkend="__d_m_a___defs_8h_source_1l00063">63</link> of file <link linkend="__d_m_a___defs_8h_source">DMA_Defs.h</link>.</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+DMA/DMA_Defs.h</section>
+</section>

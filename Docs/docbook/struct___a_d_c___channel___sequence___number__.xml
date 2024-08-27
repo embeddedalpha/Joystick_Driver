@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct___a_d_c___channel___sequence___number__" xml:lang="en-US">
+<title>_ADC_Channel_Sequence_Number_ Struct Reference</title>
+<indexterm><primary>_ADC_Channel_Sequence_Number_</primary></indexterm>
+<para>
+
+<para>This sturct is used in <emphasis>ADC_Channel</emphasis> struct. Used to enable or disable a particular Channel of the ADC. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;ADC_Defs.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para>uint8_t <link linkend="_struct___a_d_c___channel___sequence___number___1a0dc9c1d69cb01fb74511f1be4542553a">Sequence_1</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct___a_d_c___channel___sequence___number___1a26072231fe64e9cc95f8805e3728a44a">Sequence_2</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct___a_d_c___channel___sequence___number___1ad27d421293b0f9cecb868ea79d06b487">Sequence_3</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct___a_d_c___channel___sequence___number___1a637b4f956feca3033e581727c862b4b7">Sequence_4</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct___a_d_c___channel___sequence___number___1a913553a02e45cd14b42b71f391f3f952">Sequence_5</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct___a_d_c___channel___sequence___number___1acf855a43a9943657cad17a3e734f22e3">Sequence_6</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct___a_d_c___channel___sequence___number___1a01e912b39d6a6a0d4afb338e258d8070">Sequence_7</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct___a_d_c___channel___sequence___number___1a2043941588057507fd4ec75aee390353">Sequence_8</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct___a_d_c___channel___sequence___number___1a576bb57985d47af84399f543145c9b9f">Sequence_9</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct___a_d_c___channel___sequence___number___1a8e5c0afee9e21e4b72656c388815a952">Sequence_10</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct___a_d_c___channel___sequence___number___1ad55125904d5fbcb1baa9811aad1ef8f2">Sequence_11</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct___a_d_c___channel___sequence___number___1a87174cde61310ecc7cc457f33d9d9a89">Sequence_12</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct___a_d_c___channel___sequence___number___1a8cb0d5cc0df9bbc7ae77fae5b60db798">Sequence_13</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct___a_d_c___channel___sequence___number___1a09e71c3444193b9f57aa1f85397a58e2">Sequence_14</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct___a_d_c___channel___sequence___number___1a7bf9b7188aefa56c458a8855e9d481cb">Sequence_15</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_struct___a_d_c___channel___sequence___number___1ae6b66d6fc5958b4abc4d0280b5df4fea">Sequence_16</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>This sturct is used in <emphasis>ADC_Channel</emphasis> struct. Used to enable or disable a particular Channel of the ADC. </para>
+
+
+
+<para><formalpara><title>See also</title>
+
+<para><emphasis>ADC_Channel</emphasis></para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Sequence_1;</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>Sequence_2;</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>Sequence_3;</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>Sequence_4;</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>Sequence_5;</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>Sequence_6;</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>Sequence_7;</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>Sequence_8;</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>Sequence_9;</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>Sequence_10;</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>Sequence_11;</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>Sequence_12;</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>Sequence_13;</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>Sequence_14;</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>Sequence_15;</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>Sequence_16;</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00061">61</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_struct___a_d_c___channel___sequence___number___1a0dc9c1d69cb01fb74511f1be4542553a"/><section>
+    <title>Sequence_1</title>
+<indexterm><primary>Sequence_1</primary><secondary>_ADC_Channel_Sequence_Number_</secondary></indexterm>
+<indexterm><primary>_ADC_Channel_Sequence_Number_</primary><secondary>Sequence_1</secondary></indexterm>
+<para><computeroutput>uint8_t Sequence_1</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00063">63</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct___a_d_c___channel___sequence___number___1a8e5c0afee9e21e4b72656c388815a952"/><section>
+    <title>Sequence_10</title>
+<indexterm><primary>Sequence_10</primary><secondary>_ADC_Channel_Sequence_Number_</secondary></indexterm>
+<indexterm><primary>_ADC_Channel_Sequence_Number_</primary><secondary>Sequence_10</secondary></indexterm>
+<para><computeroutput>uint8_t Sequence_10</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00072">72</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct___a_d_c___channel___sequence___number___1ad55125904d5fbcb1baa9811aad1ef8f2"/><section>
+    <title>Sequence_11</title>
+<indexterm><primary>Sequence_11</primary><secondary>_ADC_Channel_Sequence_Number_</secondary></indexterm>
+<indexterm><primary>_ADC_Channel_Sequence_Number_</primary><secondary>Sequence_11</secondary></indexterm>
+<para><computeroutput>uint8_t Sequence_11</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00073">73</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct___a_d_c___channel___sequence___number___1a87174cde61310ecc7cc457f33d9d9a89"/><section>
+    <title>Sequence_12</title>
+<indexterm><primary>Sequence_12</primary><secondary>_ADC_Channel_Sequence_Number_</secondary></indexterm>
+<indexterm><primary>_ADC_Channel_Sequence_Number_</primary><secondary>Sequence_12</secondary></indexterm>
+<para><computeroutput>uint8_t Sequence_12</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00074">74</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct___a_d_c___channel___sequence___number___1a8cb0d5cc0df9bbc7ae77fae5b60db798"/><section>
+    <title>Sequence_13</title>
+<indexterm><primary>Sequence_13</primary><secondary>_ADC_Channel_Sequence_Number_</secondary></indexterm>
+<indexterm><primary>_ADC_Channel_Sequence_Number_</primary><secondary>Sequence_13</secondary></indexterm>
+<para><computeroutput>uint8_t Sequence_13</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00075">75</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct___a_d_c___channel___sequence___number___1a09e71c3444193b9f57aa1f85397a58e2"/><section>
+    <title>Sequence_14</title>
+<indexterm><primary>Sequence_14</primary><secondary>_ADC_Channel_Sequence_Number_</secondary></indexterm>
+<indexterm><primary>_ADC_Channel_Sequence_Number_</primary><secondary>Sequence_14</secondary></indexterm>
+<para><computeroutput>uint8_t Sequence_14</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00076">76</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct___a_d_c___channel___sequence___number___1a7bf9b7188aefa56c458a8855e9d481cb"/><section>
+    <title>Sequence_15</title>
+<indexterm><primary>Sequence_15</primary><secondary>_ADC_Channel_Sequence_Number_</secondary></indexterm>
+<indexterm><primary>_ADC_Channel_Sequence_Number_</primary><secondary>Sequence_15</secondary></indexterm>
+<para><computeroutput>uint8_t Sequence_15</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00077">77</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct___a_d_c___channel___sequence___number___1ae6b66d6fc5958b4abc4d0280b5df4fea"/><section>
+    <title>Sequence_16</title>
+<indexterm><primary>Sequence_16</primary><secondary>_ADC_Channel_Sequence_Number_</secondary></indexterm>
+<indexterm><primary>_ADC_Channel_Sequence_Number_</primary><secondary>Sequence_16</secondary></indexterm>
+<para><computeroutput>uint8_t Sequence_16</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00078">78</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct___a_d_c___channel___sequence___number___1a26072231fe64e9cc95f8805e3728a44a"/><section>
+    <title>Sequence_2</title>
+<indexterm><primary>Sequence_2</primary><secondary>_ADC_Channel_Sequence_Number_</secondary></indexterm>
+<indexterm><primary>_ADC_Channel_Sequence_Number_</primary><secondary>Sequence_2</secondary></indexterm>
+<para><computeroutput>uint8_t Sequence_2</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00064">64</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct___a_d_c___channel___sequence___number___1ad27d421293b0f9cecb868ea79d06b487"/><section>
+    <title>Sequence_3</title>
+<indexterm><primary>Sequence_3</primary><secondary>_ADC_Channel_Sequence_Number_</secondary></indexterm>
+<indexterm><primary>_ADC_Channel_Sequence_Number_</primary><secondary>Sequence_3</secondary></indexterm>
+<para><computeroutput>uint8_t Sequence_3</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00065">65</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct___a_d_c___channel___sequence___number___1a637b4f956feca3033e581727c862b4b7"/><section>
+    <title>Sequence_4</title>
+<indexterm><primary>Sequence_4</primary><secondary>_ADC_Channel_Sequence_Number_</secondary></indexterm>
+<indexterm><primary>_ADC_Channel_Sequence_Number_</primary><secondary>Sequence_4</secondary></indexterm>
+<para><computeroutput>uint8_t Sequence_4</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00066">66</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct___a_d_c___channel___sequence___number___1a913553a02e45cd14b42b71f391f3f952"/><section>
+    <title>Sequence_5</title>
+<indexterm><primary>Sequence_5</primary><secondary>_ADC_Channel_Sequence_Number_</secondary></indexterm>
+<indexterm><primary>_ADC_Channel_Sequence_Number_</primary><secondary>Sequence_5</secondary></indexterm>
+<para><computeroutput>uint8_t Sequence_5</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00067">67</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct___a_d_c___channel___sequence___number___1acf855a43a9943657cad17a3e734f22e3"/><section>
+    <title>Sequence_6</title>
+<indexterm><primary>Sequence_6</primary><secondary>_ADC_Channel_Sequence_Number_</secondary></indexterm>
+<indexterm><primary>_ADC_Channel_Sequence_Number_</primary><secondary>Sequence_6</secondary></indexterm>
+<para><computeroutput>uint8_t Sequence_6</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00068">68</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct___a_d_c___channel___sequence___number___1a01e912b39d6a6a0d4afb338e258d8070"/><section>
+    <title>Sequence_7</title>
+<indexterm><primary>Sequence_7</primary><secondary>_ADC_Channel_Sequence_Number_</secondary></indexterm>
+<indexterm><primary>_ADC_Channel_Sequence_Number_</primary><secondary>Sequence_7</secondary></indexterm>
+<para><computeroutput>uint8_t Sequence_7</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00069">69</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct___a_d_c___channel___sequence___number___1a2043941588057507fd4ec75aee390353"/><section>
+    <title>Sequence_8</title>
+<indexterm><primary>Sequence_8</primary><secondary>_ADC_Channel_Sequence_Number_</secondary></indexterm>
+<indexterm><primary>_ADC_Channel_Sequence_Number_</primary><secondary>Sequence_8</secondary></indexterm>
+<para><computeroutput>uint8_t Sequence_8</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00070">70</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<anchor xml:id="_struct___a_d_c___channel___sequence___number___1a576bb57985d47af84399f543145c9b9f"/><section>
+    <title>Sequence_9</title>
+<indexterm><primary>Sequence_9</primary><secondary>_ADC_Channel_Sequence_Number_</secondary></indexterm>
+<indexterm><primary>_ADC_Channel_Sequence_Number_</primary><secondary>Sequence_9</secondary></indexterm>
+<para><computeroutput>uint8_t Sequence_9</computeroutput></para><para>
+Definition at line <link linkend="__a_d_c___defs_8h_source_1l00071">71</link> of file <link linkend="__a_d_c___defs_8h_source">ADC_Defs.h</link>.</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+ADC/<link linkend="__a_d_c___defs_8h">ADC_Defs.h</link></section>
+</section>

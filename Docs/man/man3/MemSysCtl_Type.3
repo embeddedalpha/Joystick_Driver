@@ -1,0 +1,72 @@
+.TH "MemSysCtl_Type" 3 "Version JSTDRVF4" "Joystick Driver" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MemSysCtl_Type \- Structure type to access the Memory System Control Registers (MEMSYSCTL)\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <core_cm55\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "__IOM uint32_t \fBMSCR\fP"
+.br
+.ti -1c
+.RI "__IOM uint32_t \fBPFCR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED1\fP [2U]"
+.br
+.ti -1c
+.RI "__IOM uint32_t \fBITCMCR\fP"
+.br
+.ti -1c
+.RI "__IOM uint32_t \fBDTCMCR\fP"
+.br
+.ti -1c
+.RI "__IOM uint32_t \fBPAHBCR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED2\fP [313U]"
+.br
+.ti -1c
+.RI "__IOM uint32_t \fBITGU_CTRL\fP"
+.br
+.ti -1c
+.RI "__IOM uint32_t \fBITGU_CFG\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED3\fP [2U]"
+.br
+.ti -1c
+.RI "__IOM uint32_t \fBITGU_LUT\fP [16U]"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED4\fP [44U]"
+.br
+.ti -1c
+.RI "__IOM uint32_t \fBDTGU_CTRL\fP"
+.br
+.ti -1c
+.RI "__IOM uint32_t \fBDTGU_CFG\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED5\fP [2U]"
+.br
+.ti -1c
+.RI "__IOM uint32_t \fBDTGU_LUT\fP [16U]"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Structure type to access the Memory System Control Registers (MEMSYSCTL)\&. 
+.PP
+Definition at line \fB1410\fP of file \fBcore_cm55\&.h\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Joystick Driver from the source code\&.

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_err_bnk___type" xml:lang="en-US">
+<title>ErrBnk_Type Struct Reference</title>
+<indexterm><primary>ErrBnk_Type</primary></indexterm>
+<para>
+
+<para>Structure type to access the Error Banking Registers (ERRBNK). </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;core_cm55.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para>__IOM uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gabdd196c0876979401b5928990efef875">IEBR0</link></para>
+</listitem>
+            <listitem><para>__IOM uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga0dd7999cde584b8c3656505d2000c4ec">IEBR1</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gaa57754b8f88bb376d184aaf6fe74f391">RESERVED0</link> [2U]</para>
+</listitem>
+            <listitem><para>__IOM uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga23e6f75cfc2dc7af3d75eb3d480232d3">DEBR0</link></para>
+</listitem>
+            <listitem><para>__IOM uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga81ed6524b42207cf903eff7e38b08c6c">DEBR1</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gaeab57fe9b109127c3a1e1ecc508247c7">RESERVED1</link> [2U]</para>
+</listitem>
+            <listitem><para>__IOM uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gaee87890959972bb2ff1f5a8354dc6c85">TEBR0</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga093dc351b7db0476c625f462acb9fd7f">RESERVED2</link> [1U]</para>
+</listitem>
+            <listitem><para>__IOM uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga44ba96ff3c8b86f8542f5f10eb72031e">TEBR1</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Structure type to access the Error Banking Registers (ERRBNK). </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01615">1615</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+<para>
+The documentation for this struct was generated from the following files:</para>
+Inc/<link linkend="_core__cm55_8h">core_cm55.h</link>Inc/<link linkend="_core__cm85_8h">core_cm85.h</link></section>
+</section>

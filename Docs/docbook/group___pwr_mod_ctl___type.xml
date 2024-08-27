@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___pwr_mod_ctl___type" xml:lang="en-US">
+<title>Power Mode Control Registers</title>
+<indexterm><primary>Power Mode Control Registers</primary></indexterm>
+<para>
+
+<para>Type definitions for the Power Mode Control Registers (PWRMODCTL) </para>
+ 
+</para>
+Collaboration diagram for Power Mode Control Registers:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="group___pwr_mod_ctl___type.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Topics    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_group___e_w_i_c___type">External Wakeup Interrupt Controller Registers</link></para>
+
+<para>Type definitions for the External Wakeup Interrupt Controller Registers (EWIC) </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Data Structures    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_struct_pwr_mod_ctl___type">PwrModCtl_Type</link></para>
+
+<para>Structure type to access the Power Mode Control Registers (PWRMODCTL). </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gaaa2a6127f13eccaf67e2fbd93c87a539">PWRMODCTL_CPDLPSTATE_RLPSTATE_Pos</link>&#160;&#160;&#160;8U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gac9351bfce6ac5a3aa5714c8f8fb52ac8">PWRMODCTL_CPDLPSTATE_RLPSTATE_Msk</link>&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gaaa2a6127f13eccaf67e2fbd93c87a539">PWRMODCTL_CPDLPSTATE_RLPSTATE_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gab34a4844667438defcca4204314da917">PWRMODCTL_CPDLPSTATE_ELPSTATE_Pos</link>&#160;&#160;&#160;4U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga313251d3745f99ddb6e6d0e322462c38">PWRMODCTL_CPDLPSTATE_ELPSTATE_Msk</link>&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gab34a4844667438defcca4204314da917">PWRMODCTL_CPDLPSTATE_ELPSTATE_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga9f5a40e807a5e97c59b708303ed4ad3b">PWRMODCTL_CPDLPSTATE_CLPSTATE_Pos</link>&#160;&#160;&#160;0U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga03132d38641251a0c1ec3a31353bd77d">PWRMODCTL_CPDLPSTATE_CLPSTATE_Msk</link>&#160;&#160;&#160;(0x3UL /*&lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga9f5a40e807a5e97c59b708303ed4ad3b">PWRMODCTL_CPDLPSTATE_CLPSTATE_Pos</link>*/)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga106aec0d201afa658ba9b333230a2f62">PWRMODCTL_DPDLPSTATE_DLPSTATE_Pos</link>&#160;&#160;&#160;0U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gab46e82a703aa4929517c80932a8204b7">PWRMODCTL_DPDLPSTATE_DLPSTATE_Msk</link>&#160;&#160;&#160;(0x3UL /*&lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga106aec0d201afa658ba9b333230a2f62">PWRMODCTL_DPDLPSTATE_DLPSTATE_Pos</link>*/)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gaaa2a6127f13eccaf67e2fbd93c87a539">PWRMODCTL_CPDLPSTATE_RLPSTATE_Pos</link>&#160;&#160;&#160;8U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gac9351bfce6ac5a3aa5714c8f8fb52ac8">PWRMODCTL_CPDLPSTATE_RLPSTATE_Msk</link>&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gaaa2a6127f13eccaf67e2fbd93c87a539">PWRMODCTL_CPDLPSTATE_RLPSTATE_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gab34a4844667438defcca4204314da917">PWRMODCTL_CPDLPSTATE_ELPSTATE_Pos</link>&#160;&#160;&#160;4U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga313251d3745f99ddb6e6d0e322462c38">PWRMODCTL_CPDLPSTATE_ELPSTATE_Msk</link>&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gab34a4844667438defcca4204314da917">PWRMODCTL_CPDLPSTATE_ELPSTATE_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga9f5a40e807a5e97c59b708303ed4ad3b">PWRMODCTL_CPDLPSTATE_CLPSTATE_Pos</link>&#160;&#160;&#160;0U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga03132d38641251a0c1ec3a31353bd77d">PWRMODCTL_CPDLPSTATE_CLPSTATE_Msk</link>&#160;&#160;&#160;(0x3UL /*&lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga9f5a40e807a5e97c59b708303ed4ad3b">PWRMODCTL_CPDLPSTATE_CLPSTATE_Pos</link>*/)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1ga106aec0d201afa658ba9b333230a2f62">PWRMODCTL_DPDLPSTATE_DLPSTATE_Pos</link>&#160;&#160;&#160;0U</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___s_c_b_1gab46e82a703aa4929517c80932a8204b7">PWRMODCTL_DPDLPSTATE_DLPSTATE_Msk</link>&#160;&#160;&#160;(0x3UL /*&lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga106aec0d201afa658ba9b333230a2f62">PWRMODCTL_DPDLPSTATE_DLPSTATE_Pos</link>*/)</para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para>Type definitions for the Power Mode Control Registers (PWRMODCTL) </para>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga03132d38641251a0c1ec3a31353bd77d"/><section>
+    <title>PWRMODCTL_CPDLPSTATE_CLPSTATE_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>PWRMODCTL_CPDLPSTATE_CLPSTATE_Msk</primary><secondary>Power Mode Control Registers</secondary></indexterm>
+<indexterm><primary>Power Mode Control Registers</primary><secondary>PWRMODCTL_CPDLPSTATE_CLPSTATE_Msk</secondary></indexterm>
+<para><computeroutput>#define PWRMODCTL_CPDLPSTATE_CLPSTATE_Msk&#160;&#160;&#160;(0x3UL /*&lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga9f5a40e807a5e97c59b708303ed4ad3b">PWRMODCTL_CPDLPSTATE_CLPSTATE_Pos</link>*/)</computeroutput></para>
+<para>PWRMODCTL CPDLPSTATE: CLPSTATE Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01551">1551</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga03132d38641251a0c1ec3a31353bd77d"/><section>
+    <title>PWRMODCTL_CPDLPSTATE_CLPSTATE_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>PWRMODCTL_CPDLPSTATE_CLPSTATE_Msk</primary><secondary>Power Mode Control Registers</secondary></indexterm>
+<indexterm><primary>Power Mode Control Registers</primary><secondary>PWRMODCTL_CPDLPSTATE_CLPSTATE_Msk</secondary></indexterm>
+<para><computeroutput>#define PWRMODCTL_CPDLPSTATE_CLPSTATE_Msk&#160;&#160;&#160;(0x3UL /*&lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga9f5a40e807a5e97c59b708303ed4ad3b">PWRMODCTL_CPDLPSTATE_CLPSTATE_Pos</link>*/)</computeroutput></para>
+<para>PWRMODCTL CPDLPSTATE: CLPSTATE Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01538">1538</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga9f5a40e807a5e97c59b708303ed4ad3b"/><section>
+    <title>PWRMODCTL_CPDLPSTATE_CLPSTATE_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>PWRMODCTL_CPDLPSTATE_CLPSTATE_Pos</primary><secondary>Power Mode Control Registers</secondary></indexterm>
+<indexterm><primary>Power Mode Control Registers</primary><secondary>PWRMODCTL_CPDLPSTATE_CLPSTATE_Pos</secondary></indexterm>
+<para><computeroutput>#define PWRMODCTL_CPDLPSTATE_CLPSTATE_Pos&#160;&#160;&#160;0U</computeroutput></para>
+<para>PWRMODCTL CPDLPSTATE: CLPSTATE Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01550">1550</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga9f5a40e807a5e97c59b708303ed4ad3b"/><section>
+    <title>PWRMODCTL_CPDLPSTATE_CLPSTATE_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>PWRMODCTL_CPDLPSTATE_CLPSTATE_Pos</primary><secondary>Power Mode Control Registers</secondary></indexterm>
+<indexterm><primary>Power Mode Control Registers</primary><secondary>PWRMODCTL_CPDLPSTATE_CLPSTATE_Pos</secondary></indexterm>
+<para><computeroutput>#define PWRMODCTL_CPDLPSTATE_CLPSTATE_Pos&#160;&#160;&#160;0U</computeroutput></para>
+<para>PWRMODCTL CPDLPSTATE: CLPSTATE Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01537">1537</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga313251d3745f99ddb6e6d0e322462c38"/><section>
+    <title>PWRMODCTL_CPDLPSTATE_ELPSTATE_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>PWRMODCTL_CPDLPSTATE_ELPSTATE_Msk</primary><secondary>Power Mode Control Registers</secondary></indexterm>
+<indexterm><primary>Power Mode Control Registers</primary><secondary>PWRMODCTL_CPDLPSTATE_ELPSTATE_Msk</secondary></indexterm>
+<para><computeroutput>#define PWRMODCTL_CPDLPSTATE_ELPSTATE_Msk&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gab34a4844667438defcca4204314da917">PWRMODCTL_CPDLPSTATE_ELPSTATE_Pos</link>)</computeroutput></para>
+<para>PWRMODCTL CPDLPSTATE: ELPSTATE Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01548">1548</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga313251d3745f99ddb6e6d0e322462c38"/><section>
+    <title>PWRMODCTL_CPDLPSTATE_ELPSTATE_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>PWRMODCTL_CPDLPSTATE_ELPSTATE_Msk</primary><secondary>Power Mode Control Registers</secondary></indexterm>
+<indexterm><primary>Power Mode Control Registers</primary><secondary>PWRMODCTL_CPDLPSTATE_ELPSTATE_Msk</secondary></indexterm>
+<para><computeroutput>#define PWRMODCTL_CPDLPSTATE_ELPSTATE_Msk&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gab34a4844667438defcca4204314da917">PWRMODCTL_CPDLPSTATE_ELPSTATE_Pos</link>)</computeroutput></para>
+<para>PWRMODCTL CPDLPSTATE: ELPSTATE Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01535">1535</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gab34a4844667438defcca4204314da917"/><section>
+    <title>PWRMODCTL_CPDLPSTATE_ELPSTATE_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>PWRMODCTL_CPDLPSTATE_ELPSTATE_Pos</primary><secondary>Power Mode Control Registers</secondary></indexterm>
+<indexterm><primary>Power Mode Control Registers</primary><secondary>PWRMODCTL_CPDLPSTATE_ELPSTATE_Pos</secondary></indexterm>
+<para><computeroutput>#define PWRMODCTL_CPDLPSTATE_ELPSTATE_Pos&#160;&#160;&#160;4U</computeroutput></para>
+<para>PWRMODCTL CPDLPSTATE: ELPSTATE Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01547">1547</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gab34a4844667438defcca4204314da917"/><section>
+    <title>PWRMODCTL_CPDLPSTATE_ELPSTATE_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>PWRMODCTL_CPDLPSTATE_ELPSTATE_Pos</primary><secondary>Power Mode Control Registers</secondary></indexterm>
+<indexterm><primary>Power Mode Control Registers</primary><secondary>PWRMODCTL_CPDLPSTATE_ELPSTATE_Pos</secondary></indexterm>
+<para><computeroutput>#define PWRMODCTL_CPDLPSTATE_ELPSTATE_Pos&#160;&#160;&#160;4U</computeroutput></para>
+<para>PWRMODCTL CPDLPSTATE: ELPSTATE Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01534">1534</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gac9351bfce6ac5a3aa5714c8f8fb52ac8"/><section>
+    <title>PWRMODCTL_CPDLPSTATE_RLPSTATE_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>PWRMODCTL_CPDLPSTATE_RLPSTATE_Msk</primary><secondary>Power Mode Control Registers</secondary></indexterm>
+<indexterm><primary>Power Mode Control Registers</primary><secondary>PWRMODCTL_CPDLPSTATE_RLPSTATE_Msk</secondary></indexterm>
+<para><computeroutput>#define PWRMODCTL_CPDLPSTATE_RLPSTATE_Msk&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gaaa2a6127f13eccaf67e2fbd93c87a539">PWRMODCTL_CPDLPSTATE_RLPSTATE_Pos</link>)</computeroutput></para>
+<para>PWRMODCTL CPDLPSTATE: RLPSTATE Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01545">1545</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gac9351bfce6ac5a3aa5714c8f8fb52ac8"/><section>
+    <title>PWRMODCTL_CPDLPSTATE_RLPSTATE_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>PWRMODCTL_CPDLPSTATE_RLPSTATE_Msk</primary><secondary>Power Mode Control Registers</secondary></indexterm>
+<indexterm><primary>Power Mode Control Registers</primary><secondary>PWRMODCTL_CPDLPSTATE_RLPSTATE_Msk</secondary></indexterm>
+<para><computeroutput>#define PWRMODCTL_CPDLPSTATE_RLPSTATE_Msk&#160;&#160;&#160;(0x3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1gaaa2a6127f13eccaf67e2fbd93c87a539">PWRMODCTL_CPDLPSTATE_RLPSTATE_Pos</link>)</computeroutput></para>
+<para>PWRMODCTL CPDLPSTATE: RLPSTATE Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01532">1532</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gaaa2a6127f13eccaf67e2fbd93c87a539"/><section>
+    <title>PWRMODCTL_CPDLPSTATE_RLPSTATE_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>PWRMODCTL_CPDLPSTATE_RLPSTATE_Pos</primary><secondary>Power Mode Control Registers</secondary></indexterm>
+<indexterm><primary>Power Mode Control Registers</primary><secondary>PWRMODCTL_CPDLPSTATE_RLPSTATE_Pos</secondary></indexterm>
+<para><computeroutput>#define PWRMODCTL_CPDLPSTATE_RLPSTATE_Pos&#160;&#160;&#160;8U</computeroutput></para>
+<para>PWRMODCTL CPDLPSTATE: RLPSTATE Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01544">1544</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gaaa2a6127f13eccaf67e2fbd93c87a539"/><section>
+    <title>PWRMODCTL_CPDLPSTATE_RLPSTATE_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>PWRMODCTL_CPDLPSTATE_RLPSTATE_Pos</primary><secondary>Power Mode Control Registers</secondary></indexterm>
+<indexterm><primary>Power Mode Control Registers</primary><secondary>PWRMODCTL_CPDLPSTATE_RLPSTATE_Pos</secondary></indexterm>
+<para><computeroutput>#define PWRMODCTL_CPDLPSTATE_RLPSTATE_Pos&#160;&#160;&#160;8U</computeroutput></para>
+<para>PWRMODCTL CPDLPSTATE: RLPSTATE Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01531">1531</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gab46e82a703aa4929517c80932a8204b7"/><section>
+    <title>PWRMODCTL_DPDLPSTATE_DLPSTATE_Msk<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>PWRMODCTL_DPDLPSTATE_DLPSTATE_Msk</primary><secondary>Power Mode Control Registers</secondary></indexterm>
+<indexterm><primary>Power Mode Control Registers</primary><secondary>PWRMODCTL_DPDLPSTATE_DLPSTATE_Msk</secondary></indexterm>
+<para><computeroutput>#define PWRMODCTL_DPDLPSTATE_DLPSTATE_Msk&#160;&#160;&#160;(0x3UL /*&lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga106aec0d201afa658ba9b333230a2f62">PWRMODCTL_DPDLPSTATE_DLPSTATE_Pos</link>*/)</computeroutput></para>
+<para>PWRMODCTL DPDLPSTATE: DLPSTATE Mask </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01555">1555</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1gab46e82a703aa4929517c80932a8204b7"/><section>
+    <title>PWRMODCTL_DPDLPSTATE_DLPSTATE_Msk<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>PWRMODCTL_DPDLPSTATE_DLPSTATE_Msk</primary><secondary>Power Mode Control Registers</secondary></indexterm>
+<indexterm><primary>Power Mode Control Registers</primary><secondary>PWRMODCTL_DPDLPSTATE_DLPSTATE_Msk</secondary></indexterm>
+<para><computeroutput>#define PWRMODCTL_DPDLPSTATE_DLPSTATE_Msk&#160;&#160;&#160;(0x3UL /*&lt;&lt; <link linkend="_group___c_m_s_i_s___s_c_b_1ga106aec0d201afa658ba9b333230a2f62">PWRMODCTL_DPDLPSTATE_DLPSTATE_Pos</link>*/)</computeroutput></para>
+<para>PWRMODCTL DPDLPSTATE: DLPSTATE Mask </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01542">1542</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga106aec0d201afa658ba9b333230a2f62"/><section>
+    <title>PWRMODCTL_DPDLPSTATE_DLPSTATE_Pos<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>PWRMODCTL_DPDLPSTATE_DLPSTATE_Pos</primary><secondary>Power Mode Control Registers</secondary></indexterm>
+<indexterm><primary>Power Mode Control Registers</primary><secondary>PWRMODCTL_DPDLPSTATE_DLPSTATE_Pos</secondary></indexterm>
+<para><computeroutput>#define PWRMODCTL_DPDLPSTATE_DLPSTATE_Pos&#160;&#160;&#160;0U</computeroutput></para>
+<para>PWRMODCTL DPDLPSTATE: DLPSTATE Position </para>
+<para>
+Definition at line <link linkend="_core__cm55_8h_source_1l01554">1554</link> of file <link linkend="_core__cm55_8h_source">core_cm55.h</link>.</para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___s_c_b_1ga106aec0d201afa658ba9b333230a2f62"/><section>
+    <title>PWRMODCTL_DPDLPSTATE_DLPSTATE_Pos<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>PWRMODCTL_DPDLPSTATE_DLPSTATE_Pos</primary><secondary>Power Mode Control Registers</secondary></indexterm>
+<indexterm><primary>Power Mode Control Registers</primary><secondary>PWRMODCTL_DPDLPSTATE_DLPSTATE_Pos</secondary></indexterm>
+<para><computeroutput>#define PWRMODCTL_DPDLPSTATE_DLPSTATE_Pos&#160;&#160;&#160;0U</computeroutput></para>
+<para>PWRMODCTL DPDLPSTATE: DLPSTATE Position </para>
+<para>
+Definition at line <link linkend="_core__cm85_8h_source_1l01541">1541</link> of file <link linkend="_core__cm85_8h_source">core_cm85.h</link>.</para>
+</section>
+</section>
+    <xi:include href="group___e_w_i_c___type.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

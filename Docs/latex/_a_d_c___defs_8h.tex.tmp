@@ -1,0 +1,227 @@
+\doxysection{ADC/\+ADC\+\_\+\+Defs.h File Reference}
+\hypertarget{_a_d_c___defs_8h}{}\label{_a_d_c___defs_8h}\index{ADC/ADC\_Defs.h@{ADC/ADC\_Defs.h}}
+{\ttfamily \#include "{}main.\+h"{}}\newline
+{\ttfamily \#include "{}ADC.\+h"{}}\newline
+Include dependency graph for ADC\+\_\+\+Defs.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct___a_d_c___channel___enable___disable__}{\+\_\+\+ADC\+\_\+\+Channel\+\_\+\+Enable\+\_\+\+Disable\+\_\+}}
+\begin{DoxyCompactList}\small\item\em This sturct is used in {\itshape ADC\+\_\+\+Channel} struct. Used to enable or disable a particular Channel of the ADC. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct___a_d_c___channel___sequence___number__}{\+\_\+\+ADC\+\_\+\+Channel\+\_\+\+Sequence\+\_\+\+Number\+\_\+}}
+\begin{DoxyCompactList}\small\item\em This sturct is used in {\itshape ADC\+\_\+\+Channel} struct. Used to enable or disable a particular Channel of the ADC. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct___a_d_c___channel___sample___time__}{\+\_\+\+ADC\+\_\+\+Channel\+\_\+\+Sample\+\_\+\+Time\+\_\+}}
+\begin{DoxyCompactList}\small\item\em This struct provides an easy way for the user to set the sample time of a channel. All the options when selected will have an additional 12 cycles added to them in the hardware. So {\itshape 3\+\_\+\+Cycles is selected by the user, then total cycles taken to complete one conversion of that channel will be 3+12 = 15 cycles. Is used in \+\_\+\+ADC\+\_\+\+Channel} struct. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct___a_d_c___channel__}{\+\_\+\+ADC\+\_\+\+Channel\+\_\+}}
+\begin{DoxyCompactList}\small\item\em This sturct is used in ADC\+\_\+\+Configuration struct. Encapsulates all the necessary configurations needed for any ADC channel. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_a_d_c___mode}{ADC\+\_\+\+Mode}}
+\begin{DoxyCompactList}\small\item\em This struct helps select the mode in which the conversions will happen. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_a_d_c___channel___type}{ADC\+\_\+\+Channel\+\_\+\+Type}}
+\item 
+struct {\bfseries ADC\+\_\+\+Configuration}
+\item 
+struct \mbox{\hyperlink{struct_a_d_c___configuration_1_1_port}{ADC\+\_\+\+Configuration\+::\+Port}}
+\item 
+struct \mbox{\hyperlink{struct_a_d_c___configuration_1_1_data___alignment}{ADC\+\_\+\+Configuration\+::\+Data\+\_\+\+Alignment}}
+\item 
+struct \mbox{\hyperlink{struct_a_d_c___configuration_1_1_resolution}{ADC\+\_\+\+Configuration\+::\+Resolution}}
+\item 
+struct \mbox{\hyperlink{struct_a_d_c___configuration_1_1_regular___external___trigger___enable}{ADC\+\_\+\+Configuration\+::\+Regular\+\_\+\+External\+\_\+\+Trigger\+\_\+\+Enable}}
+\item 
+struct \mbox{\hyperlink{struct_a_d_c___configuration_1_1_regular___external___trigger___event}{ADC\+\_\+\+Configuration\+::\+Regular\+\_\+\+External\+\_\+\+Trigger\+\_\+\+Event}}
+\item 
+struct \mbox{\hyperlink{struct_a_d_c___configuration_1_1_injected___external___trigger___event}{ADC\+\_\+\+Configuration\+::\+Injected\+\_\+\+External\+\_\+\+Trigger\+\_\+\+Event}}
+\item 
+struct \mbox{\hyperlink{struct_a_d_c___configuration_1_1___watchdog___analog__}{ADC\+\_\+\+Configuration\+::\+\_\+\+Watchdog\+\_\+\+Analog\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_a_d_c___configuration_1_1___watchdog___analog___1_1_channel___scan}{ADC\+\_\+\+Configuration\+::\+\_\+\+Watchdog\+\_\+\+Analog\+\_\+\+::\+Channel\+\_\+\+Scan}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \+\_\+\+ADC\+\_\+\+Channel\+\_\+\+Enable\+\_\+\+Disable\+\_\+ \mbox{\hyperlink{_a_d_c___defs_8h_ae8232447cede995328fb6151d1966bf3}{\+\_\+\+ADC\+\_\+\+Channel\+\_\+\+Enable\+\_\+\+Disable\+\_\+}}
+\begin{DoxyCompactList}\small\item\em This sturct is used in {\itshape ADC\+\_\+\+Channel} struct. Used to enable or disable a particular Channel of the ADC. \end{DoxyCompactList}\item 
+typedef struct \+\_\+\+ADC\+\_\+\+Channel\+\_\+\+Sequence\+\_\+\+Number\+\_\+ \mbox{\hyperlink{_a_d_c___defs_8h_a04a85bf1ef16be895becce75a86a17a3}{\+\_\+\+ADC\+\_\+\+Channel\+\_\+\+Sequence\+\_\+\+Number\+\_\+}}
+\begin{DoxyCompactList}\small\item\em This sturct is used in {\itshape ADC\+\_\+\+Channel} struct. Used to enable or disable a particular Channel of the ADC. \end{DoxyCompactList}\item 
+typedef struct \+\_\+\+ADC\+\_\+\+Channel\+\_\+\+Sample\+\_\+\+Time\+\_\+ \mbox{\hyperlink{_a_d_c___defs_8h_ac3df1025cf023f1fbe7b1f192838603b}{\+\_\+\+ADC\+\_\+\+Channel\+\_\+\+Sample\+\_\+\+Time\+\_\+}}
+\begin{DoxyCompactList}\small\item\em This struct provides an easy way for the user to set the sample time of a channel. All the options when selected will have an additional 12 cycles added to them in the hardware. So {\itshape 3\+\_\+\+Cycles is selected by the user, then total cycles taken to complete one conversion of that channel will be 3+12 = 15 cycles. Is used in \+\_\+\+ADC\+\_\+\+Channel} struct. \end{DoxyCompactList}\item 
+typedef struct \+\_\+\+ADC\+\_\+\+Channel\+\_\+ \mbox{\hyperlink{_a_d_c___defs_8h_a5e047567480c642b65028fc8cdfc715d}{\+\_\+\+ADC\+\_\+\+Channel\+\_\+}}
+\begin{DoxyCompactList}\small\item\em This sturct is used in ADC\+\_\+\+Configuration struct. Encapsulates all the necessary configurations needed for any ADC channel. \end{DoxyCompactList}\item 
+typedef struct ADC\+\_\+\+Mode \mbox{\hyperlink{_a_d_c___defs_8h_a660d564e524f185a1d7bf2df0f254b40}{ADC\+\_\+\+Mode}}
+\begin{DoxyCompactList}\small\item\em This struct helps select the mode in which the conversions will happen. \end{DoxyCompactList}\item 
+\Hypertarget{_a_d_c___defs_8h_a5dea965518130ecdaf07b2db78285f3a}\label{_a_d_c___defs_8h_a5dea965518130ecdaf07b2db78285f3a} 
+typedef struct ADC\+\_\+\+Channel\+\_\+\+Type {\bfseries ADC\+\_\+\+Channel\+\_\+\+Type}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Kunal Salvi (\href{mailto:kunalsalviusu@gmail.com}{\texttt{ kunalsalviusu@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/08-\/20
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 
+\end{DoxyCopyright}
+
+
+Definition in file \mbox{\hyperlink{_a_d_c___defs_8h_source}{ADC\+\_\+\+Defs.\+h}}.
+
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{_a_d_c___defs_8h_a5e047567480c642b65028fc8cdfc715d}\index{ADC\_Defs.h@{ADC\_Defs.h}!\_ADC\_Channel\_@{\_ADC\_Channel\_}}
+\index{\_ADC\_Channel\_@{\_ADC\_Channel\_}!ADC\_Defs.h@{ADC\_Defs.h}}
+\doxysubsubsection{\texorpdfstring{\_ADC\_Channel\_}{\_ADC\_Channel\_}}
+{\footnotesize\ttfamily \label{_a_d_c___defs_8h_a5e047567480c642b65028fc8cdfc715d} 
+typedef struct \+\_\+\+ADC\+\_\+\+Channel\+\_\+ \+\_\+\+ADC\+\_\+\+Channel\+\_\+}
+
+
+
+This sturct is used in ADC\+\_\+\+Configuration struct. Encapsulates all the necessary configurations needed for any ADC channel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Enable} & \\
+\hline
+{\em Sequence\+\_\+\+Number} & \\
+\hline
+{\em Sample\+\_\+\+Time} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+{\itshape ADC\+\_\+\+Channel\+\_\+\+Enable\+\_\+\+Disable} 
+
+{\itshape ADC\+\_\+\+Channel\+\_\+\+Sequence\+\_\+\+Number} 
+
+{\itshape ADC\+\_\+\+Channel\+\_\+\+Sample\+\_\+\+Time} 
+\end{DoxySeeAlso}
+\Hypertarget{_a_d_c___defs_8h_ae8232447cede995328fb6151d1966bf3}\index{ADC\_Defs.h@{ADC\_Defs.h}!\_ADC\_Channel\_Enable\_Disable\_@{\_ADC\_Channel\_Enable\_Disable\_}}
+\index{\_ADC\_Channel\_Enable\_Disable\_@{\_ADC\_Channel\_Enable\_Disable\_}!ADC\_Defs.h@{ADC\_Defs.h}}
+\doxysubsubsection{\texorpdfstring{\_ADC\_Channel\_Enable\_Disable\_}{\_ADC\_Channel\_Enable\_Disable\_}}
+{\footnotesize\ttfamily \label{_a_d_c___defs_8h_ae8232447cede995328fb6151d1966bf3} 
+typedef struct \+\_\+\+ADC\+\_\+\+Channel\+\_\+\+Enable\+\_\+\+Disable\+\_\+ \+\_\+\+ADC\+\_\+\+Channel\+\_\+\+Enable\+\_\+\+Disable\+\_\+}
+
+
+
+This sturct is used in {\itshape ADC\+\_\+\+Channel} struct. Used to enable or disable a particular Channel of the ADC. 
+
+\begin{DoxySeeAlso}{See also}
+{\itshape ADC\+\_\+\+Channel}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em Enable} & \\
+\hline
+{\em Disable} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_a_d_c___defs_8h_ac3df1025cf023f1fbe7b1f192838603b}\index{ADC\_Defs.h@{ADC\_Defs.h}!\_ADC\_Channel\_Sample\_Time\_@{\_ADC\_Channel\_Sample\_Time\_}}
+\index{\_ADC\_Channel\_Sample\_Time\_@{\_ADC\_Channel\_Sample\_Time\_}!ADC\_Defs.h@{ADC\_Defs.h}}
+\doxysubsubsection{\texorpdfstring{\_ADC\_Channel\_Sample\_Time\_}{\_ADC\_Channel\_Sample\_Time\_}}
+{\footnotesize\ttfamily \label{_a_d_c___defs_8h_ac3df1025cf023f1fbe7b1f192838603b} 
+typedef struct \+\_\+\+ADC\+\_\+\+Channel\+\_\+\+Sample\+\_\+\+Time\+\_\+ \+\_\+\+ADC\+\_\+\+Channel\+\_\+\+Sample\+\_\+\+Time\+\_\+}
+
+
+
+This struct provides an easy way for the user to set the sample time of a channel. All the options when selected will have an additional 12 cycles added to them in the hardware. So {\itshape 3\+\_\+\+Cycles is selected by the user, then total cycles taken to complete one conversion of that channel will be 3+12 = 15 cycles. Is used in \+\_\+\+ADC\+\_\+\+Channel} struct. 
+
+\begin{DoxySeeAlso}{See also}
+{\itshape ADC\+\_\+\+Channel}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+3\+\_\+\+Cycles} & \\
+\hline
+{\em \+\_\+15\+\_\+\+Cycles} & \\
+\hline
+{\em \+\_\+28\+\_\+\+Cycles} & \\
+\hline
+{\em \+\_\+56\+\_\+\+Cycles} & \\
+\hline
+{\em \+\_\+84\+\_\+\+Cycles} & \\
+\hline
+{\em \+\_\+112\+\_\+\+Cycles} & \\
+\hline
+{\em \+\_\+144\+\_\+\+Cycles} & \\
+\hline
+{\em \+\_\+480\+\_\+\+Cycles} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_a_d_c___defs_8h_a04a85bf1ef16be895becce75a86a17a3}\index{ADC\_Defs.h@{ADC\_Defs.h}!\_ADC\_Channel\_Sequence\_Number\_@{\_ADC\_Channel\_Sequence\_Number\_}}
+\index{\_ADC\_Channel\_Sequence\_Number\_@{\_ADC\_Channel\_Sequence\_Number\_}!ADC\_Defs.h@{ADC\_Defs.h}}
+\doxysubsubsection{\texorpdfstring{\_ADC\_Channel\_Sequence\_Number\_}{\_ADC\_Channel\_Sequence\_Number\_}}
+{\footnotesize\ttfamily \label{_a_d_c___defs_8h_a04a85bf1ef16be895becce75a86a17a3} 
+typedef struct \+\_\+\+ADC\+\_\+\+Channel\+\_\+\+Sequence\+\_\+\+Number\+\_\+ \+\_\+\+ADC\+\_\+\+Channel\+\_\+\+Sequence\+\_\+\+Number\+\_\+}
+
+
+
+This sturct is used in {\itshape ADC\+\_\+\+Channel} struct. Used to enable or disable a particular Channel of the ADC. 
+
+\begin{DoxySeeAlso}{See also}
+{\itshape ADC\+\_\+\+Channel}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em Sequence\+\_\+1;} & \\
+\hline
+{\em Sequence\+\_\+2;} & \\
+\hline
+{\em Sequence\+\_\+3;} & \\
+\hline
+{\em Sequence\+\_\+4;} & \\
+\hline
+{\em Sequence\+\_\+5;} & \\
+\hline
+{\em Sequence\+\_\+6;} & \\
+\hline
+{\em Sequence\+\_\+7;} & \\
+\hline
+{\em Sequence\+\_\+8;} & \\
+\hline
+{\em Sequence\+\_\+9;} & \\
+\hline
+{\em Sequence\+\_\+10;} & \\
+\hline
+{\em Sequence\+\_\+11;} & \\
+\hline
+{\em Sequence\+\_\+12;} & \\
+\hline
+{\em Sequence\+\_\+13;} & \\
+\hline
+{\em Sequence\+\_\+14;} & \\
+\hline
+{\em Sequence\+\_\+15;} & \\
+\hline
+{\em Sequence\+\_\+16;} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_a_d_c___defs_8h_a660d564e524f185a1d7bf2df0f254b40}\index{ADC\_Defs.h@{ADC\_Defs.h}!ADC\_Mode@{ADC\_Mode}}
+\index{ADC\_Mode@{ADC\_Mode}!ADC\_Defs.h@{ADC\_Defs.h}}
+\doxysubsubsection{\texorpdfstring{ADC\_Mode}{ADC\_Mode}}
+{\footnotesize\ttfamily \label{_a_d_c___defs_8h_a660d564e524f185a1d7bf2df0f254b40} 
+typedef struct ADC\+\_\+\+Mode ADC\+\_\+\+Mode}
+
+
+
+This struct helps select the mode in which the conversions will happen. 
+
+\begin{DoxyAttention}{Attention}
+When an external trigger is used i.\+e. Regular\+\_\+\+External\+\_\+\+Trigger\+\_\+\+Enable or Injected\+\_\+\+External\+\_\+\+Trigger\+\_\+\+Enable is configured to be Enable, make sure to select "{}\+Single"{} instead of Continuous.
+\end{DoxyAttention}
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+
+
+\begin{DoxySeeAlso}{See also}
+ADC\+\_\+\+Configuration 
+\end{DoxySeeAlso}

@@ -1,0 +1,66 @@
+.TH "Exported_types" 3 "Version JSTDRVF4" "Joystick Driver" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Exported_types \- Exported_types
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBIS_FUNCTIONAL_STATE\fP(STATE)"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef enum FlagStatus \fBITStatus\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBFlagStatus\fP { \fBRESET\fP = 0U, \fBSET\fP = !RESET }"
+.br
+.ti -1c
+.RI "enum \fBFunctionalState\fP { \fBDISABLE\fP = 0U, \fBENABLE\fP = !DISABLE }"
+.br
+.ti -1c
+.RI "enum \fBErrorStatus\fP { \fBSUCCESS\fP = 0U, \fBERROR\fP = !SUCCESS }"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_FUNCTIONAL_STATE( STATE)"
+\fBValue:\fP
+.nf
+(((STATE) == DISABLE) || ((STATE) == ENABLE))
+.PP
+.fi
+
+.PP
+Definition at line \fB195\fP of file \fBstm32f4xx\&.h\fP\&.
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum ErrorStatus"
+
+.PP
+Definition at line \fB197\fP of file \fBstm32f4xx\&.h\fP\&.
+.SS "enum FlagStatus"
+
+.PP
+Definition at line \fB184\fP of file \fBstm32f4xx\&.h\fP\&.
+.SS "enum FunctionalState"
+
+.PP
+Definition at line \fB190\fP of file \fBstm32f4xx\&.h\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Joystick Driver from the source code\&.

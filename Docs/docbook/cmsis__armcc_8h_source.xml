@@ -1,0 +1,561 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_cmsis__armcc_8h_source" xml:lang="en-US">
+<title>cmsis_armcc.h</title>
+<indexterm><primary>Inc/cmsis_armcc.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_cmsis__armcc_8h_source_1l00001"/>00001 <emphasis role="comment">/**************************************************************************/</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00007"/>00007 <emphasis role="comment">/*</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00008"/>00008 <emphasis role="comment">&#32;*&#32;Copyright&#32;(c)&#32;2009-2021&#32;Arm&#32;Limited.&#32;All&#32;rights&#32;reserved.</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00009"/>00009 <emphasis role="comment">&#32;*</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00010"/>00010 <emphasis role="comment">&#32;*&#32;SPDX-License-Identifier:&#32;Apache-2.0</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00011"/>00011 <emphasis role="comment">&#32;*</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00012"/>00012 <emphasis role="comment">&#32;*&#32;Licensed&#32;under&#32;the&#32;Apache&#32;License,&#32;Version&#32;2.0&#32;(the&#32;License);&#32;you&#32;may</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00013"/>00013 <emphasis role="comment">&#32;*&#32;not&#32;use&#32;this&#32;file&#32;except&#32;in&#32;compliance&#32;with&#32;the&#32;License.</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00014"/>00014 <emphasis role="comment">&#32;*&#32;You&#32;may&#32;obtain&#32;a&#32;copy&#32;of&#32;the&#32;License&#32;at</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00015"/>00015 <emphasis role="comment">&#32;*</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00016"/>00016 <emphasis role="comment">&#32;*&#32;www.apache.org/licenses/LICENSE-2.0</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00017"/>00017 <emphasis role="comment">&#32;*</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00018"/>00018 <emphasis role="comment">&#32;*&#32;Unless&#32;required&#32;by&#32;applicable&#32;law&#32;or&#32;agreed&#32;to&#32;in&#32;writing,&#32;software</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00019"/>00019 <emphasis role="comment">&#32;*&#32;distributed&#32;under&#32;the&#32;License&#32;is&#32;distributed&#32;on&#32;an&#32;AS&#32;IS&#32;BASIS,&#32;WITHOUT</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00020"/>00020 <emphasis role="comment">&#32;*&#32;WARRANTIES&#32;OR&#32;CONDITIONS&#32;OF&#32;ANY&#32;KIND,&#32;either&#32;express&#32;or&#32;implied.</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00021"/>00021 <emphasis role="comment">&#32;*&#32;See&#32;the&#32;License&#32;for&#32;the&#32;specific&#32;language&#32;governing&#32;permissions&#32;and</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00022"/>00022 <emphasis role="comment">&#32;*&#32;limitations&#32;under&#32;the&#32;License.</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00023"/>00023 <emphasis role="comment">&#32;*/</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00024"/>00024 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00025"/>00025 <emphasis role="preprocessor">#ifndef&#32;__CMSIS_ARMCC_H</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00026"/>00026 <emphasis role="preprocessor">#define&#32;__CMSIS_ARMCC_H</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00027"/>00027 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00028"/>00028 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00029"/>00029 <emphasis role="preprocessor">#if&#32;defined(__ARMCC_VERSION)&#32;&amp;&amp;&#32;(__ARMCC_VERSION&#32;&lt;&#32;400677)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00030"/>00030 <emphasis role="preprocessor">&#32;&#32;#error&#32;&quot;Please&#32;use&#32;Arm&#32;Compiler&#32;Toolchain&#32;V4.0.677&#32;or&#32;later!&quot;</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00031"/>00031 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00032"/>00032 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00033"/>00033 <emphasis role="comment">/*&#32;CMSIS&#32;compiler&#32;control&#32;architecture&#32;macros&#32;*/</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00034"/>00034 <emphasis role="preprocessor">#if&#32;((defined&#32;(__TARGET_ARCH_6_M&#32;&#32;)&#32;&amp;&amp;&#32;(__TARGET_ARCH_6_M&#32;&#32;&#32;==&#32;1))&#32;||&#32;\</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00035"/>00035 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;(defined&#32;(__TARGET_ARCH_6S_M&#32;)&#32;&amp;&amp;&#32;(__TARGET_ARCH_6S_M&#32;&#32;==&#32;1))&#32;&#32;&#32;)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00036"/>00036 <emphasis role="preprocessor">&#32;&#32;#define&#32;__ARM_ARCH_6M__&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;1</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00037"/>00037 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00038"/>00038 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00039"/>00039 <emphasis role="preprocessor">#if&#32;(defined&#32;(__TARGET_ARCH_7_M&#32;)&#32;&amp;&amp;&#32;(__TARGET_ARCH_7_M&#32;&#32;==&#32;1))</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00040"/>00040 <emphasis role="preprocessor">&#32;&#32;#define&#32;__ARM_ARCH_7M__&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;1</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00041"/>00041 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00042"/>00042 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00043"/>00043 <emphasis role="preprocessor">#if&#32;(defined&#32;(__TARGET_ARCH_7E_M)&#32;&amp;&amp;&#32;(__TARGET_ARCH_7E_M&#32;==&#32;1))</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00044"/>00044 <emphasis role="preprocessor">&#32;&#32;#define&#32;__ARM_ARCH_7EM__&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;1</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00045"/>00045 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00046"/>00046 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00047"/>00047 &#32;&#32;<emphasis role="comment">/*&#32;__ARM_ARCH_8M_BASE__&#32;&#32;not&#32;applicable&#32;*/</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00048"/>00048 &#32;&#32;<emphasis role="comment">/*&#32;__ARM_ARCH_8M_MAIN__&#32;&#32;not&#32;applicable&#32;*/</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00049"/>00049 &#32;&#32;<emphasis role="comment">/*&#32;__ARM_ARCH_8_1M_MAIN__&#32;&#32;not&#32;applicable&#32;*/</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00050"/>00050 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00051"/>00051 <emphasis role="comment">/*&#32;CMSIS&#32;compiler&#32;control&#32;DSP&#32;macros&#32;*/</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00052"/>00052 <emphasis role="preprocessor">#if&#32;((defined&#32;(__ARM_ARCH_7EM__)&#32;&amp;&amp;&#32;(__ARM_ARCH_7EM__&#32;==&#32;1))&#32;&#32;&#32;&#32;&#32;)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00053"/>00053 <emphasis role="preprocessor">&#32;&#32;#define&#32;__ARM_FEATURE_DSP&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;1</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00054"/>00054 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00055"/>00055 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00056"/>00056 <emphasis role="comment">/*&#32;CMSIS&#32;compiler&#32;specific&#32;defines&#32;*/</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00057"/>00057 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__ASM</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00058"/>00058 <emphasis role="preprocessor">&#32;&#32;#define&#32;__ASM&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__asm</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00059"/>00059 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00060"/>00060 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__INLINE</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00061"/>00061 <emphasis role="preprocessor">&#32;&#32;#define&#32;__INLINE&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__inline</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00062"/>00062 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00063"/>00063 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__STATIC_INLINE</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00064"/>00064 <emphasis role="preprocessor">&#32;&#32;#define&#32;__STATIC_INLINE&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;static&#32;__inline</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00065"/>00065 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00066"/>00066 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__STATIC_FORCEINLINE</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00067"/>00067 <emphasis role="preprocessor">&#32;&#32;#define&#32;__STATIC_FORCEINLINE&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;static&#32;__forceinline</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00068"/>00068 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00069"/>00069 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__NO_RETURN</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00070"/>00070 <emphasis role="preprocessor">&#32;&#32;#define&#32;__NO_RETURN&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__declspec(noreturn)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00071"/>00071 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00072"/>00072 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__USED</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00073"/>00073 <emphasis role="preprocessor">&#32;&#32;#define&#32;__USED&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__attribute__((used))</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00074"/>00074 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00075"/>00075 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__WEAK</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00076"/>00076 <emphasis role="preprocessor">&#32;&#32;#define&#32;__WEAK&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__attribute__((weak))</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00077"/>00077 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00078"/>00078 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__PACKED</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00079"/>00079 <emphasis role="preprocessor">&#32;&#32;#define&#32;__PACKED&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__attribute__((packed))</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00080"/>00080 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00081"/>00081 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__PACKED_STRUCT</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00082"/>00082 <emphasis role="preprocessor">&#32;&#32;#define&#32;__PACKED_STRUCT&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__packed&#32;struct</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00083"/>00083 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00084"/>00084 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__PACKED_UNION</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00085"/>00085 <emphasis role="preprocessor">&#32;&#32;#define&#32;__PACKED_UNION&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__packed&#32;union</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00086"/>00086 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00087"/>00087 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__UNALIGNED_UINT32&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</emphasis><emphasis role="comment">/*&#32;deprecated&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00088"/>00088 <emphasis role="preprocessor">&#32;&#32;#define&#32;__UNALIGNED_UINT32(x)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(*((__packed&#32;uint32_t&#32;*)(x)))</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00089"/>00089 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00090"/>00090 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__UNALIGNED_UINT16_WRITE</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00091"/>00091 <emphasis role="preprocessor">&#32;&#32;#define&#32;__UNALIGNED_UINT16_WRITE(addr,&#32;val)&#32;&#32;&#32;&#32;((*((__packed&#32;uint16_t&#32;*)(addr)))&#32;=&#32;(val))</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00092"/>00092 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00093"/>00093 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__UNALIGNED_UINT16_READ</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00094"/>00094 <emphasis role="preprocessor">&#32;&#32;#define&#32;__UNALIGNED_UINT16_READ(addr)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(*((const&#32;__packed&#32;uint16_t&#32;*)(addr)))</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00095"/>00095 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00096"/>00096 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__UNALIGNED_UINT32_WRITE</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00097"/>00097 <emphasis role="preprocessor">&#32;&#32;#define&#32;__UNALIGNED_UINT32_WRITE(addr,&#32;val)&#32;&#32;&#32;&#32;((*((__packed&#32;uint32_t&#32;*)(addr)))&#32;=&#32;(val))</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00098"/>00098 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00099"/>00099 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__UNALIGNED_UINT32_READ</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00100"/>00100 <emphasis role="preprocessor">&#32;&#32;#define&#32;__UNALIGNED_UINT32_READ(addr)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(*((const&#32;__packed&#32;uint32_t&#32;*)(addr)))</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00101"/>00101 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00102"/>00102 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__ALIGNED</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00103"/>00103 <emphasis role="preprocessor">&#32;&#32;#define&#32;__ALIGNED(x)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__attribute__((aligned(x)))</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00104"/>00104 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00105"/>00105 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__RESTRICT</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00106"/>00106 <emphasis role="preprocessor">&#32;&#32;#define&#32;__RESTRICT&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__restrict</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00107"/>00107 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00108"/>00108 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__COMPILER_BARRIER</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00109"/>00109 <emphasis role="preprocessor">&#32;&#32;#define&#32;__COMPILER_BARRIER()&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__memory_changed()</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00110"/>00110 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00111"/>00111 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00112"/>00112 <emphasis role="comment">/*&#32;#########################&#32;&#32;Startup&#32;and&#32;Lowlevel&#32;Init&#32;&#32;########################&#32;*/</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00113"/>00113 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00114"/>00114 <emphasis role="preprocessor">#ifndef&#32;__PROGRAM_START</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00115"/>00115 <emphasis role="preprocessor">#define&#32;__PROGRAM_START&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__main</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00116"/>00116 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00117"/>00117 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00118"/>00118 <emphasis role="preprocessor">#ifndef&#32;__INITIAL_SP</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00119"/>00119 <emphasis role="preprocessor">#define&#32;__INITIAL_SP&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Image$$ARM_LIB_STACK$$ZI$$Limit</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00120"/>00120 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00121"/>00121 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00122"/>00122 <emphasis role="preprocessor">#ifndef&#32;__STACK_LIMIT</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00123"/>00123 <emphasis role="preprocessor">#define&#32;__STACK_LIMIT&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Image$$ARM_LIB_STACK$$ZI$$Base</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00124"/>00124 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00125"/>00125 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00126"/>00126 <emphasis role="preprocessor">#ifndef&#32;__VECTOR_TABLE</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00127"/>00127 <emphasis role="preprocessor">#define&#32;__VECTOR_TABLE&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__Vectors</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00128"/>00128 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00129"/>00129 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00130"/>00130 <emphasis role="preprocessor">#ifndef&#32;__VECTOR_TABLE_ATTRIBUTE</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00131"/>00131 <emphasis role="preprocessor">#define&#32;__VECTOR_TABLE_ATTRIBUTE&#32;&#32;__attribute__((used,&#32;section(&quot;RESET&quot;)))</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00132"/>00132 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00133"/>00133 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00134"/>00134 <emphasis role="comment">/*&#32;##########################&#32;&#32;Core&#32;Instruction&#32;Access&#32;&#32;#########################&#32;*/</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00144"/><link linkend="_group___c_m_s_i_s___core___instruction_interface_1gabd585ddc865fb9b7f2493af1eee1a572">00144</link> <emphasis role="preprocessor">#define&#32;__NOP&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__nop</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00145"/>00145 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00146"/>00146 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00151"/><link linkend="_group___c_m_s_i_s___core___instruction_interface_1gad23bf2b78a9a4524157c9de0d30b7448">00151</link> <emphasis role="preprocessor">#define&#32;__WFI&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__wfi</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00152"/>00152 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00153"/>00153 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00159"/><link linkend="_group___c_m_s_i_s___core___instruction_interface_1gaac6cc7dd4325d9cb40d3290fa5244b3d">00159</link> <emphasis role="preprocessor">#define&#32;__WFE&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__wfe</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00160"/>00160 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00161"/>00161 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00166"/><link linkend="_group___c_m_s_i_s___core___instruction_interface_1gaab4f296d0022b4b10dc0976eb22052f9">00166</link> <emphasis role="preprocessor">#define&#32;__SEV&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__sev</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00167"/>00167 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00168"/>00168 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00175"/><link linkend="_group___c_m_s_i_s___core___instruction_interface_1gaad233022e850a009fc6f7602be1182f6">00175</link> <emphasis role="preprocessor">#define&#32;__ISB()&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__isb(0xF)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00176"/>00176 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00182"/><link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga067d257a2b34565410acefb5afef2203">00182</link> <emphasis role="preprocessor">#define&#32;__DSB()&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__dsb(0xF)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00183"/>00183 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00189"/><link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga671101179b5943990785f36f8c1e2269">00189</link> <emphasis role="preprocessor">#define&#32;__DMB()&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__dmb(0xF)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00190"/>00190 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00191"/>00191 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00198"/><link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga14f54807872c0f5e05604c4924abfdae">00198</link> <emphasis role="preprocessor">#define&#32;__REV&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__rev</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00199"/>00199 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00200"/>00200 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00207"/>00207 <emphasis role="preprocessor">#ifndef&#32;__NO_EMBEDDED_ASM</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00208"/><link linkend="_group___c_m_s_i_s___core___instruction_interface_1gae84a2733711339c5eefeb0d899506b96">00208</link> <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gae84a2733711339c5eefeb0d899506b96">__attribute__</link>((section(<emphasis role="stringliteral">&quot;.rev16_text&quot;</emphasis>)))&#32;__STATIC_INLINE&#32;__ASM&#32;uint32_t&#32;<link linkend="_group___c_m_s_i_s___core___instruction_interface_1gad35497777af37e7809271b5e6f9510ba">__REV16</link>(uint32_t&#32;value)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00209"/>00209 {
+<anchor xml:id="_cmsis__armcc_8h_source_1l00210"/>00210 &#32;&#32;rev16&#32;r0,&#32;r0
+<anchor xml:id="_cmsis__armcc_8h_source_1l00211"/>00211 &#32;&#32;bx&#32;lr
+<anchor xml:id="_cmsis__armcc_8h_source_1l00212"/>00212 }
+<anchor xml:id="_cmsis__armcc_8h_source_1l00213"/>00213 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00214"/>00214 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00215"/>00215 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00222"/>00222 <emphasis role="preprocessor">#ifndef&#32;__NO_EMBEDDED_ASM</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00223"/><link linkend="_group___c_m_s_i_s___core___instruction_interface_1gabe2b619a40cc0a7ffa8f765249ccf682">00223</link> <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gae84a2733711339c5eefeb0d899506b96">__attribute__</link>((section(<emphasis role="stringliteral">&quot;.revsh_text&quot;</emphasis>)))&#32;__STATIC_INLINE&#32;__ASM&#32;int16_t&#32;<link linkend="_group___c_m_s_i_s___core___instruction_interface_1gae580812686119c9c5cf3c11a7519a404">__REVSH</link>(int16_t&#32;value)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00224"/>00224 {
+<anchor xml:id="_cmsis__armcc_8h_source_1l00225"/>00225 &#32;&#32;revsh&#32;r0,&#32;r0
+<anchor xml:id="_cmsis__armcc_8h_source_1l00226"/>00226 &#32;&#32;bx&#32;lr
+<anchor xml:id="_cmsis__armcc_8h_source_1l00227"/>00227 }
+<anchor xml:id="_cmsis__armcc_8h_source_1l00228"/>00228 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00229"/>00229 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00230"/>00230 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00238"/><link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga95b9bd281ddeda378b85afdb8f2ced86">00238</link> <emphasis role="preprocessor">#define&#32;__ROR&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__ror</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00239"/>00239 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00240"/>00240 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00248"/><link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga15ea6bd3c507d3e81c3b3a1258e46397">00248</link> <emphasis role="preprocessor">#define&#32;__BKPT(value)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__breakpoint(value)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00249"/>00249 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00250"/>00250 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00257"/>00257 <emphasis role="preprocessor">#if&#32;((defined&#32;(__ARM_ARCH_7M__&#32;)&#32;&amp;&amp;&#32;(__ARM_ARCH_7M__&#32;&#32;==&#32;1))&#32;||&#32;\</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00258"/>00258 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;(defined&#32;(__ARM_ARCH_7EM__)&#32;&amp;&amp;&#32;(__ARM_ARCH_7EM__&#32;==&#32;1))&#32;&#32;&#32;&#32;&#32;)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00259"/>00259 <emphasis role="preprocessor">&#32;&#32;#define&#32;__RBIT&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__rbit</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00260"/>00260 <emphasis role="preprocessor">#else</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00261"/><link linkend="_group___c_m_s_i_s___core___instruction_interface_1gab926fe7178a379c3a7c0410b06fcb661">00261</link> <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gae84a2733711339c5eefeb0d899506b96">__attribute__</link>((always_inline))&#32;__STATIC_INLINE&#32;uint32_t&#32;<link linkend="_group___c_m_s_i_s___core___instruction_interface_1gab83768933a612816fad669db5488366f">__RBIT</link>(uint32_t&#32;value)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00262"/>00262 {
+<anchor xml:id="_cmsis__armcc_8h_source_1l00263"/>00263 &#32;&#32;uint32_t&#32;result;
+<anchor xml:id="_cmsis__armcc_8h_source_1l00264"/>00264 &#32;&#32;uint32_t&#32;s&#32;=&#32;(4U&#32;<emphasis role="comment">/*sizeof(v)*/</emphasis>&#32;*&#32;8U)&#32;-&#32;1U;&#32;<emphasis role="comment">/*&#32;extra&#32;shift&#32;needed&#32;at&#32;end&#32;*/</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00265"/>00265 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00266"/>00266 &#32;&#32;result&#32;=&#32;value;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*&#32;r&#32;will&#32;be&#32;reversed&#32;bits&#32;of&#32;v;&#32;first&#32;get&#32;LSB&#32;of&#32;v&#32;*/</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00267"/>00267 &#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(value&#32;&gt;&gt;=&#32;1U;&#32;value&#32;!=&#32;0U;&#32;value&#32;&gt;&gt;=&#32;1U)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00268"/>00268 &#32;&#32;{
+<anchor xml:id="_cmsis__armcc_8h_source_1l00269"/>00269 &#32;&#32;&#32;&#32;result&#32;&lt;&lt;=&#32;1U;
+<anchor xml:id="_cmsis__armcc_8h_source_1l00270"/>00270 &#32;&#32;&#32;&#32;result&#32;|=&#32;value&#32;&amp;&#32;1U;
+<anchor xml:id="_cmsis__armcc_8h_source_1l00271"/>00271 &#32;&#32;&#32;&#32;s--;
+<anchor xml:id="_cmsis__armcc_8h_source_1l00272"/>00272 &#32;&#32;}
+<anchor xml:id="_cmsis__armcc_8h_source_1l00273"/>00273 &#32;&#32;result&#32;&lt;&lt;=&#32;s;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*&#32;shift&#32;when&#32;v&apos;s&#32;highest&#32;bits&#32;are&#32;zero&#32;*/</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00274"/>00274 &#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;result;
+<anchor xml:id="_cmsis__armcc_8h_source_1l00275"/>00275 }
+<anchor xml:id="_cmsis__armcc_8h_source_1l00276"/>00276 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00277"/>00277 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00278"/>00278 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00285"/><link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga5d5bb1527e042be4a9fa5a33f65cc248">00285</link> <emphasis role="preprocessor">#define&#32;__CLZ&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__clz</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00286"/>00286 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00287"/>00287 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00288"/>00288 <emphasis role="preprocessor">#if&#32;((defined&#32;(__ARM_ARCH_7M__&#32;)&#32;&amp;&amp;&#32;(__ARM_ARCH_7M__&#32;&#32;==&#32;1))&#32;||&#32;\</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00289"/>00289 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;(defined&#32;(__ARM_ARCH_7EM__)&#32;&amp;&amp;&#32;(__ARM_ARCH_7EM__&#32;==&#32;1))&#32;&#32;&#32;&#32;&#32;)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00290"/>00290 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00297"/>00297 <emphasis role="preprocessor">#if&#32;defined(__ARMCC_VERSION)&#32;&amp;&amp;&#32;(__ARMCC_VERSION&#32;&lt;&#32;5060020)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00298"/>00298 <emphasis role="preprocessor">&#32;&#32;#define&#32;__LDREXB(ptr)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t&#32;)&#32;__ldrex(ptr))</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00299"/>00299 <emphasis role="preprocessor">#else</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00300"/>00300 <emphasis role="preprocessor">&#32;&#32;#define&#32;__LDREXB(ptr)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_Pragma(&quot;push&quot;)&#32;_Pragma(&quot;diag_suppress&#32;3731&quot;)&#32;((uint8_t&#32;)&#32;__ldrex(ptr))&#32;&#32;_Pragma(&quot;pop&quot;)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00301"/>00301 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00302"/>00302 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00303"/>00303 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00310"/>00310 <emphasis role="preprocessor">#if&#32;defined(__ARMCC_VERSION)&#32;&amp;&amp;&#32;(__ARMCC_VERSION&#32;&lt;&#32;5060020)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00311"/>00311 <emphasis role="preprocessor">&#32;&#32;#define&#32;__LDREXH(ptr)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint16_t)&#32;__ldrex(ptr))</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00312"/>00312 <emphasis role="preprocessor">#else</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00313"/>00313 <emphasis role="preprocessor">&#32;&#32;#define&#32;__LDREXH(ptr)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_Pragma(&quot;push&quot;)&#32;_Pragma(&quot;diag_suppress&#32;3731&quot;)&#32;((uint16_t)&#32;__ldrex(ptr))&#32;&#32;_Pragma(&quot;pop&quot;)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00314"/>00314 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00315"/>00315 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00316"/>00316 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00323"/>00323 <emphasis role="preprocessor">#if&#32;defined(__ARMCC_VERSION)&#32;&amp;&amp;&#32;(__ARMCC_VERSION&#32;&lt;&#32;5060020)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00324"/>00324 <emphasis role="preprocessor">&#32;&#32;#define&#32;__LDREXW(ptr)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t&#32;)&#32;__ldrex(ptr))</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00325"/>00325 <emphasis role="preprocessor">#else</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00326"/>00326 <emphasis role="preprocessor">&#32;&#32;#define&#32;__LDREXW(ptr)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_Pragma(&quot;push&quot;)&#32;_Pragma(&quot;diag_suppress&#32;3731&quot;)&#32;((uint32_t&#32;)&#32;__ldrex(ptr))&#32;&#32;_Pragma(&quot;pop&quot;)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00327"/>00327 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00328"/>00328 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00329"/>00329 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00338"/>00338 <emphasis role="preprocessor">#if&#32;defined(__ARMCC_VERSION)&#32;&amp;&amp;&#32;(__ARMCC_VERSION&#32;&lt;&#32;5060020)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00339"/>00339 <emphasis role="preprocessor">&#32;&#32;#define&#32;__STREXB(value,&#32;ptr)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__strex(value,&#32;ptr)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00340"/>00340 <emphasis role="preprocessor">#else</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00341"/>00341 <emphasis role="preprocessor">&#32;&#32;#define&#32;__STREXB(value,&#32;ptr)&#32;&#32;&#32;_Pragma(&quot;push&quot;)&#32;_Pragma(&quot;diag_suppress&#32;3731&quot;)&#32;__strex(value,&#32;ptr)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_Pragma(&quot;pop&quot;)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00342"/>00342 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00343"/>00343 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00344"/>00344 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00353"/>00353 <emphasis role="preprocessor">#if&#32;defined(__ARMCC_VERSION)&#32;&amp;&amp;&#32;(__ARMCC_VERSION&#32;&lt;&#32;5060020)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00354"/>00354 <emphasis role="preprocessor">&#32;&#32;#define&#32;__STREXH(value,&#32;ptr)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__strex(value,&#32;ptr)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00355"/>00355 <emphasis role="preprocessor">#else</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00356"/>00356 <emphasis role="preprocessor">&#32;&#32;#define&#32;__STREXH(value,&#32;ptr)&#32;&#32;&#32;_Pragma(&quot;push&quot;)&#32;_Pragma(&quot;diag_suppress&#32;3731&quot;)&#32;__strex(value,&#32;ptr)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_Pragma(&quot;pop&quot;)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00357"/>00357 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00358"/>00358 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00359"/>00359 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00368"/>00368 <emphasis role="preprocessor">#if&#32;defined(__ARMCC_VERSION)&#32;&amp;&amp;&#32;(__ARMCC_VERSION&#32;&lt;&#32;5060020)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00369"/>00369 <emphasis role="preprocessor">&#32;&#32;#define&#32;__STREXW(value,&#32;ptr)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__strex(value,&#32;ptr)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00370"/>00370 <emphasis role="preprocessor">#else</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00371"/>00371 <emphasis role="preprocessor">&#32;&#32;#define&#32;__STREXW(value,&#32;ptr)&#32;&#32;&#32;_Pragma(&quot;push&quot;)&#32;_Pragma(&quot;diag_suppress&#32;3731&quot;)&#32;__strex(value,&#32;ptr)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_Pragma(&quot;pop&quot;)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00372"/>00372 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00373"/>00373 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00374"/>00374 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00379"/>00379 <emphasis role="preprocessor">#define&#32;__CLREX&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__clrex</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00380"/>00380 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00381"/>00381 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00389"/>00389 <emphasis role="preprocessor">#define&#32;__SSAT&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__ssat</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00390"/>00390 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00391"/>00391 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00399"/>00399 <emphasis role="preprocessor">#define&#32;__USAT&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__usat</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00400"/>00400 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00401"/>00401 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00409"/>00409 <emphasis role="preprocessor">#ifndef&#32;__NO_EMBEDDED_ASM</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00410"/>00410 <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gae84a2733711339c5eefeb0d899506b96">__attribute__</link>((section(<emphasis role="stringliteral">&quot;.rrx_text&quot;</emphasis>)))&#32;__STATIC_INLINE&#32;__ASM&#32;uint32_t&#32;__RRX(uint32_t&#32;value)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00411"/>00411 {
+<anchor xml:id="_cmsis__armcc_8h_source_1l00412"/>00412 &#32;&#32;rrx&#32;r0,&#32;r0
+<anchor xml:id="_cmsis__armcc_8h_source_1l00413"/>00413 &#32;&#32;bx&#32;lr
+<anchor xml:id="_cmsis__armcc_8h_source_1l00414"/>00414 }
+<anchor xml:id="_cmsis__armcc_8h_source_1l00415"/>00415 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00416"/>00416 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00417"/>00417 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00424"/>00424 <emphasis role="preprocessor">#define&#32;__LDRBT(ptr)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t&#32;)&#32;&#32;__ldrt(ptr))</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00425"/>00425 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00426"/>00426 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00433"/>00433 <emphasis role="preprocessor">#define&#32;__LDRHT(ptr)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint16_t)&#32;&#32;__ldrt(ptr))</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00434"/>00434 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00435"/>00435 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00442"/>00442 <emphasis role="preprocessor">#define&#32;__LDRT(ptr)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t&#32;)&#32;__ldrt(ptr))</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00443"/>00443 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00444"/>00444 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00451"/>00451 <emphasis role="preprocessor">#define&#32;__STRBT(value,&#32;ptr)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__strt(value,&#32;ptr)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00452"/>00452 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00453"/>00453 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00460"/>00460 <emphasis role="preprocessor">#define&#32;__STRHT(value,&#32;ptr)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__strt(value,&#32;ptr)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00461"/>00461 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00462"/>00462 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00469"/>00469 <emphasis role="preprocessor">#define&#32;__STRT(value,&#32;ptr)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__strt(value,&#32;ptr)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00470"/>00470 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00471"/>00471 <emphasis role="preprocessor">#else&#32;&#32;</emphasis><emphasis role="comment">/*&#32;((defined&#32;(__ARM_ARCH_7M__&#32;)&#32;&amp;&amp;&#32;(__ARM_ARCH_7M__&#32;&#32;==&#32;1))&#32;||&#32;\</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00472"/>00472 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(defined&#32;(__ARM_ARCH_7EM__)&#32;&amp;&amp;&#32;(__ARM_ARCH_7EM__&#32;==&#32;1))&#32;&#32;&#32;&#32;&#32;)&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00473"/>00473 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00481"/>00481 <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gae84a2733711339c5eefeb0d899506b96">__attribute__</link>((always_inline))&#32;__STATIC_INLINE&#32;int32_t&#32;<link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga372c0535573dde3e37f0f08c774a3487">__SSAT</link>(int32_t&#32;val,&#32;uint32_t&#32;sat)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00482"/>00482 {
+<anchor xml:id="_cmsis__armcc_8h_source_1l00483"/>00483 &#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;((sat&#32;&gt;=&#32;1U)&#32;&amp;&amp;&#32;(sat&#32;&lt;=&#32;32U))
+<anchor xml:id="_cmsis__armcc_8h_source_1l00484"/>00484 &#32;&#32;{
+<anchor xml:id="_cmsis__armcc_8h_source_1l00485"/>00485 &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;int32_t&#32;max&#32;=&#32;(int32_t)((1U&#32;&lt;&lt;&#32;(sat&#32;-&#32;1U))&#32;-&#32;1U);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00486"/>00486 &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;int32_t&#32;min&#32;=&#32;-1&#32;-&#32;max&#32;;
+<anchor xml:id="_cmsis__armcc_8h_source_1l00487"/>00487 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(val&#32;&gt;&#32;max)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00488"/>00488 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__armcc_8h_source_1l00489"/>00489 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;max;
+<anchor xml:id="_cmsis__armcc_8h_source_1l00490"/>00490 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__armcc_8h_source_1l00491"/>00491 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(val&#32;&lt;&#32;min)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00492"/>00492 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__armcc_8h_source_1l00493"/>00493 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;min;
+<anchor xml:id="_cmsis__armcc_8h_source_1l00494"/>00494 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__armcc_8h_source_1l00495"/>00495 &#32;&#32;}
+<anchor xml:id="_cmsis__armcc_8h_source_1l00496"/>00496 &#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;val;
+<anchor xml:id="_cmsis__armcc_8h_source_1l00497"/>00497 }
+<anchor xml:id="_cmsis__armcc_8h_source_1l00498"/>00498 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00506"/>00506 <link linkend="_group___c_m_s_i_s___core___instruction_interface_1gae84a2733711339c5eefeb0d899506b96">__attribute__</link>((always_inline))&#32;__STATIC_INLINE&#32;uint32_t&#32;<link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga6562dbd8182d1571e22dbca7ebdfa9bc">__USAT</link>(int32_t&#32;val,&#32;uint32_t&#32;sat)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00507"/>00507 {
+<anchor xml:id="_cmsis__armcc_8h_source_1l00508"/>00508 &#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(sat&#32;&lt;=&#32;31U)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00509"/>00509 &#32;&#32;{
+<anchor xml:id="_cmsis__armcc_8h_source_1l00510"/>00510 &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;uint32_t&#32;max&#32;=&#32;((1U&#32;&lt;&lt;&#32;sat)&#32;-&#32;1U);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00511"/>00511 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(val&#32;&gt;&#32;(int32_t)max)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00512"/>00512 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__armcc_8h_source_1l00513"/>00513 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;max;
+<anchor xml:id="_cmsis__armcc_8h_source_1l00514"/>00514 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__armcc_8h_source_1l00515"/>00515 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(val&#32;&lt;&#32;0)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00516"/>00516 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__armcc_8h_source_1l00517"/>00517 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;0U;
+<anchor xml:id="_cmsis__armcc_8h_source_1l00518"/>00518 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__armcc_8h_source_1l00519"/>00519 &#32;&#32;}
+<anchor xml:id="_cmsis__armcc_8h_source_1l00520"/>00520 &#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;(uint32_t)val;
+<anchor xml:id="_cmsis__armcc_8h_source_1l00521"/>00521 }
+<anchor xml:id="_cmsis__armcc_8h_source_1l00522"/>00522 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00523"/>00523 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*&#32;((defined&#32;(__ARM_ARCH_7M__&#32;)&#32;&amp;&amp;&#32;(__ARM_ARCH_7M__&#32;&#32;==&#32;1))&#32;||&#32;\</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00524"/>00524 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(defined&#32;(__ARM_ARCH_7EM__)&#32;&amp;&amp;&#32;(__ARM_ARCH_7EM__&#32;==&#32;1))&#32;&#32;&#32;&#32;&#32;)&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00525"/>00525 &#32;<emphasis role="comment">/*&#32;end&#32;of&#32;group&#32;CMSIS_Core_InstructionInterface&#32;*/</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00527"/>00527 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00528"/>00528 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00529"/>00529 <emphasis role="comment">/*&#32;###########################&#32;&#32;Core&#32;Function&#32;Access&#32;&#32;###########################&#32;*/</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00540"/>00540 <emphasis role="comment">/*&#32;intrinsic&#32;void&#32;__enable_irq();&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00541"/>00541 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00542"/>00542 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00548"/>00548 <emphasis role="comment">/*&#32;intrinsic&#32;void&#32;__disable_irq();&#32;&#32;&#32;&#32;*/</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00549"/>00549 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00555"/><link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1ga7dd5c942bee32f055b90153feb950f59">00555</link> __STATIC_INLINE&#32;uint32_t&#32;<link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1ga7dd5c942bee32f055b90153feb950f59">__get_CONTROL</link>(<emphasis role="keywordtype">void</emphasis>)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00556"/>00556 {
+<anchor xml:id="_cmsis__armcc_8h_source_1l00557"/>00557 &#32;&#32;<emphasis role="keyword">register</emphasis>&#32;uint32_t&#32;__regControl&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__ASM(<emphasis role="stringliteral">&quot;control&quot;</emphasis>);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00558"/>00558 &#32;&#32;<emphasis role="keywordflow">return</emphasis>(__regControl);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00559"/>00559 }
+<anchor xml:id="_cmsis__armcc_8h_source_1l00560"/>00560 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00561"/>00561 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00567"/><link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1ga0102d0939d9b26c5c792be6bf5fd550f">00567</link> __STATIC_INLINE&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1ga0102d0939d9b26c5c792be6bf5fd550f">__set_CONTROL</link>(uint32_t&#32;control)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00568"/>00568 {
+<anchor xml:id="_cmsis__armcc_8h_source_1l00569"/>00569 &#32;&#32;<emphasis role="keyword">register</emphasis>&#32;uint32_t&#32;__regControl&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__ASM(<emphasis role="stringliteral">&quot;control&quot;</emphasis>);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00570"/>00570 &#32;&#32;__regControl&#32;=&#32;control;
+<anchor xml:id="_cmsis__armcc_8h_source_1l00571"/>00571 &#32;&#32;<link linkend="_group___c_m_s_i_s___core___instruction_interface_1gaad233022e850a009fc6f7602be1182f6">__ISB</link>();
+<anchor xml:id="_cmsis__armcc_8h_source_1l00572"/>00572 }
+<anchor xml:id="_cmsis__armcc_8h_source_1l00573"/>00573 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00574"/>00574 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00580"/><link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1gaf15a71855b9d731d11de92704c82bd18">00580</link> __STATIC_INLINE&#32;uint32_t&#32;<link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1gaf15a71855b9d731d11de92704c82bd18">__get_IPSR</link>(<emphasis role="keywordtype">void</emphasis>)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00581"/>00581 {
+<anchor xml:id="_cmsis__armcc_8h_source_1l00582"/>00582 &#32;&#32;<emphasis role="keyword">register</emphasis>&#32;uint32_t&#32;__regIPSR&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__ASM(<emphasis role="stringliteral">&quot;ipsr&quot;</emphasis>);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00583"/>00583 &#32;&#32;<emphasis role="keywordflow">return</emphasis>(__regIPSR);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00584"/>00584 }
+<anchor xml:id="_cmsis__armcc_8h_source_1l00585"/>00585 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00586"/>00586 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00592"/><link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1gadff4f1e599946e8ae96fba17b5245f04">00592</link> __STATIC_INLINE&#32;uint32_t&#32;<link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1gadff4f1e599946e8ae96fba17b5245f04">__get_APSR</link>(<emphasis role="keywordtype">void</emphasis>)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00593"/>00593 {
+<anchor xml:id="_cmsis__armcc_8h_source_1l00594"/>00594 &#32;&#32;<emphasis role="keyword">register</emphasis>&#32;uint32_t&#32;__regAPSR&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__ASM(<emphasis role="stringliteral">&quot;apsr&quot;</emphasis>);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00595"/>00595 &#32;&#32;<emphasis role="keywordflow">return</emphasis>(__regAPSR);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00596"/>00596 }
+<anchor xml:id="_cmsis__armcc_8h_source_1l00597"/>00597 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00598"/>00598 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00604"/><link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1ga94c675a736d4754a5f73d8748b24aa11">00604</link> __STATIC_INLINE&#32;uint32_t&#32;<link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1ga94c675a736d4754a5f73d8748b24aa11">__get_xPSR</link>(<emphasis role="keywordtype">void</emphasis>)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00605"/>00605 {
+<anchor xml:id="_cmsis__armcc_8h_source_1l00606"/>00606 &#32;&#32;<emphasis role="keyword">register</emphasis>&#32;uint32_t&#32;__regXPSR&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__ASM(<emphasis role="stringliteral">&quot;xpsr&quot;</emphasis>);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00607"/>00607 &#32;&#32;<emphasis role="keywordflow">return</emphasis>(__regXPSR);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00608"/>00608 }
+<anchor xml:id="_cmsis__armcc_8h_source_1l00609"/>00609 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00610"/>00610 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00616"/><link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1ga826c53e30812e350c77f58aac9f42bcb">00616</link> __STATIC_INLINE&#32;uint32_t&#32;<link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1ga826c53e30812e350c77f58aac9f42bcb">__get_PSP</link>(<emphasis role="keywordtype">void</emphasis>)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00617"/>00617 {
+<anchor xml:id="_cmsis__armcc_8h_source_1l00618"/>00618 &#32;&#32;<emphasis role="keyword">register</emphasis>&#32;uint32_t&#32;__regProcessStackPointer&#32;&#32;__ASM(<emphasis role="stringliteral">&quot;psp&quot;</emphasis>);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00619"/>00619 &#32;&#32;<emphasis role="keywordflow">return</emphasis>(__regProcessStackPointer);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00620"/>00620 }
+<anchor xml:id="_cmsis__armcc_8h_source_1l00621"/>00621 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00622"/>00622 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00628"/><link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1ga21f50fc02c3927a8ebf0bc3678c06862">00628</link> __STATIC_INLINE&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1ga21f50fc02c3927a8ebf0bc3678c06862">__set_PSP</link>(uint32_t&#32;topOfProcStack)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00629"/>00629 {
+<anchor xml:id="_cmsis__armcc_8h_source_1l00630"/>00630 &#32;&#32;<emphasis role="keyword">register</emphasis>&#32;uint32_t&#32;__regProcessStackPointer&#32;&#32;__ASM(<emphasis role="stringliteral">&quot;psp&quot;</emphasis>);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00631"/>00631 &#32;&#32;__regProcessStackPointer&#32;=&#32;topOfProcStack;
+<anchor xml:id="_cmsis__armcc_8h_source_1l00632"/>00632 }
+<anchor xml:id="_cmsis__armcc_8h_source_1l00633"/>00633 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00634"/>00634 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00640"/><link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1ga667e7b8b97b4a30f445ae45d37588e45">00640</link> __STATIC_INLINE&#32;uint32_t&#32;<link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1ga667e7b8b97b4a30f445ae45d37588e45">__get_MSP</link>(<emphasis role="keywordtype">void</emphasis>)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00641"/>00641 {
+<anchor xml:id="_cmsis__armcc_8h_source_1l00642"/>00642 &#32;&#32;<emphasis role="keyword">register</emphasis>&#32;uint32_t&#32;__regMainStackPointer&#32;&#32;&#32;&#32;&#32;__ASM(<emphasis role="stringliteral">&quot;msp&quot;</emphasis>);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00643"/>00643 &#32;&#32;<emphasis role="keywordflow">return</emphasis>(__regMainStackPointer);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00644"/>00644 }
+<anchor xml:id="_cmsis__armcc_8h_source_1l00645"/>00645 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00646"/>00646 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00652"/><link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1ga08b66e2b60a46fada36d90d2bc1e7c9b">00652</link> __STATIC_INLINE&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1ga08b66e2b60a46fada36d90d2bc1e7c9b">__set_MSP</link>(uint32_t&#32;topOfMainStack)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00653"/>00653 {
+<anchor xml:id="_cmsis__armcc_8h_source_1l00654"/>00654 &#32;&#32;<emphasis role="keyword">register</emphasis>&#32;uint32_t&#32;__regMainStackPointer&#32;&#32;&#32;&#32;&#32;__ASM(<emphasis role="stringliteral">&quot;msp&quot;</emphasis>);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00655"/>00655 &#32;&#32;__regMainStackPointer&#32;=&#32;topOfMainStack;
+<anchor xml:id="_cmsis__armcc_8h_source_1l00656"/>00656 }
+<anchor xml:id="_cmsis__armcc_8h_source_1l00657"/>00657 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00658"/>00658 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00664"/><link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1ga4ff59fb9e280d19e79e6875863a65f0a">00664</link> __STATIC_INLINE&#32;uint32_t&#32;<link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1ga4ff59fb9e280d19e79e6875863a65f0a">__get_PRIMASK</link>(<emphasis role="keywordtype">void</emphasis>)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00665"/>00665 {
+<anchor xml:id="_cmsis__armcc_8h_source_1l00666"/>00666 &#32;&#32;<emphasis role="keyword">register</emphasis>&#32;uint32_t&#32;__regPriMask&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__ASM(<emphasis role="stringliteral">&quot;primask&quot;</emphasis>);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00667"/>00667 &#32;&#32;<emphasis role="keywordflow">return</emphasis>(__regPriMask);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00668"/>00668 }
+<anchor xml:id="_cmsis__armcc_8h_source_1l00669"/>00669 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00670"/>00670 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00676"/><link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1gaf4a17d3be7dbb066489836d849930d92">00676</link> __STATIC_INLINE&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1gaf4a17d3be7dbb066489836d849930d92">__set_PRIMASK</link>(uint32_t&#32;priMask)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00677"/>00677 {
+<anchor xml:id="_cmsis__armcc_8h_source_1l00678"/>00678 &#32;&#32;<emphasis role="keyword">register</emphasis>&#32;uint32_t&#32;__regPriMask&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__ASM(<emphasis role="stringliteral">&quot;primask&quot;</emphasis>);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00679"/>00679 &#32;&#32;__regPriMask&#32;=&#32;(priMask);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00680"/>00680 }
+<anchor xml:id="_cmsis__armcc_8h_source_1l00681"/>00681 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00682"/>00682 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00683"/>00683 <emphasis role="preprocessor">#if&#32;((defined&#32;(__ARM_ARCH_7M__&#32;)&#32;&amp;&amp;&#32;(__ARM_ARCH_7M__&#32;&#32;==&#32;1))&#32;||&#32;\</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00684"/>00684 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;(defined&#32;(__ARM_ARCH_7EM__)&#32;&amp;&amp;&#32;(__ARM_ARCH_7EM__&#32;==&#32;1))&#32;&#32;&#32;&#32;&#32;)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00685"/>00685 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00691"/>00691 <emphasis role="preprocessor">#define&#32;__enable_fault_irq&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__enable_fiq</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00692"/>00692 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00693"/>00693 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00699"/>00699 <emphasis role="preprocessor">#define&#32;__disable_fault_irq&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__disable_fiq</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00700"/>00700 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00701"/>00701 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00707"/>00707 __STATIC_INLINE&#32;uint32_t&#32;&#32;__get_BASEPRI(<emphasis role="keywordtype">void</emphasis>)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00708"/>00708 {
+<anchor xml:id="_cmsis__armcc_8h_source_1l00709"/>00709 &#32;&#32;<emphasis role="keyword">register</emphasis>&#32;uint32_t&#32;__regBasePri&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__ASM(<emphasis role="stringliteral">&quot;basepri&quot;</emphasis>);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00710"/>00710 &#32;&#32;<emphasis role="keywordflow">return</emphasis>(__regBasePri);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00711"/>00711 }
+<anchor xml:id="_cmsis__armcc_8h_source_1l00712"/>00712 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00713"/>00713 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00719"/>00719 __STATIC_INLINE&#32;<emphasis role="keywordtype">void</emphasis>&#32;__set_BASEPRI(uint32_t&#32;basePri)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00720"/>00720 {
+<anchor xml:id="_cmsis__armcc_8h_source_1l00721"/>00721 &#32;&#32;<emphasis role="keyword">register</emphasis>&#32;uint32_t&#32;__regBasePri&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__ASM(<emphasis role="stringliteral">&quot;basepri&quot;</emphasis>);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00722"/>00722 &#32;&#32;__regBasePri&#32;=&#32;(basePri&#32;&amp;&#32;0xFFU);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00723"/>00723 }
+<anchor xml:id="_cmsis__armcc_8h_source_1l00724"/>00724 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00725"/>00725 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00732"/>00732 __STATIC_INLINE&#32;<emphasis role="keywordtype">void</emphasis>&#32;__set_BASEPRI_MAX(uint32_t&#32;basePri)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00733"/>00733 {
+<anchor xml:id="_cmsis__armcc_8h_source_1l00734"/>00734 &#32;&#32;<emphasis role="keyword">register</emphasis>&#32;uint32_t&#32;__regBasePriMax&#32;&#32;&#32;&#32;&#32;&#32;__ASM(<emphasis role="stringliteral">&quot;basepri_max&quot;</emphasis>);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00735"/>00735 &#32;&#32;__regBasePriMax&#32;=&#32;(basePri&#32;&amp;&#32;0xFFU);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00736"/>00736 }
+<anchor xml:id="_cmsis__armcc_8h_source_1l00737"/>00737 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00738"/>00738 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00744"/>00744 __STATIC_INLINE&#32;uint32_t&#32;__get_FAULTMASK(<emphasis role="keywordtype">void</emphasis>)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00745"/>00745 {
+<anchor xml:id="_cmsis__armcc_8h_source_1l00746"/>00746 &#32;&#32;<emphasis role="keyword">register</emphasis>&#32;uint32_t&#32;__regFaultMask&#32;&#32;&#32;&#32;&#32;&#32;&#32;__ASM(<emphasis role="stringliteral">&quot;faultmask&quot;</emphasis>);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00747"/>00747 &#32;&#32;<emphasis role="keywordflow">return</emphasis>(__regFaultMask);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00748"/>00748 }
+<anchor xml:id="_cmsis__armcc_8h_source_1l00749"/>00749 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00750"/>00750 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00756"/>00756 __STATIC_INLINE&#32;<emphasis role="keywordtype">void</emphasis>&#32;__set_FAULTMASK(uint32_t&#32;faultMask)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00757"/>00757 {
+<anchor xml:id="_cmsis__armcc_8h_source_1l00758"/>00758 &#32;&#32;<emphasis role="keyword">register</emphasis>&#32;uint32_t&#32;__regFaultMask&#32;&#32;&#32;&#32;&#32;&#32;&#32;__ASM(<emphasis role="stringliteral">&quot;faultmask&quot;</emphasis>);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00759"/>00759 &#32;&#32;__regFaultMask&#32;=&#32;(faultMask&#32;&amp;&#32;(uint32_t)1U);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00760"/>00760 }
+<anchor xml:id="_cmsis__armcc_8h_source_1l00761"/>00761 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00762"/>00762 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*&#32;((defined&#32;(__ARM_ARCH_7M__&#32;)&#32;&amp;&amp;&#32;(__ARM_ARCH_7M__&#32;&#32;==&#32;1))&#32;||&#32;\</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00763"/>00763 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(defined&#32;(__ARM_ARCH_7EM__)&#32;&amp;&amp;&#32;(__ARM_ARCH_7EM__&#32;==&#32;1))&#32;&#32;&#32;&#32;&#32;)&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00764"/>00764 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00765"/>00765 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00771"/><link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1ga6a275172e274ea7ce6c22030d07c6c64">00771</link> __STATIC_INLINE&#32;uint32_t&#32;<link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1ga6a275172e274ea7ce6c22030d07c6c64">__get_FPSCR</link>(<emphasis role="keywordtype">void</emphasis>)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00772"/>00772 {
+<anchor xml:id="_cmsis__armcc_8h_source_1l00773"/>00773 <emphasis role="preprocessor">#if&#32;((defined&#32;(__FPU_PRESENT)&#32;&amp;&amp;&#32;(__FPU_PRESENT&#32;==&#32;1U))&#32;&amp;&amp;&#32;\</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00774"/>00774 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;(defined&#32;(__FPU_USED&#32;&#32;&#32;)&#32;&amp;&amp;&#32;(__FPU_USED&#32;&#32;&#32;&#32;==&#32;1U))&#32;&#32;&#32;&#32;&#32;)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00775"/>00775 &#32;&#32;<emphasis role="keyword">register</emphasis>&#32;uint32_t&#32;__regfpscr&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__ASM(<emphasis role="stringliteral">&quot;fpscr&quot;</emphasis>);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00776"/>00776 &#32;&#32;<emphasis role="keywordflow">return</emphasis>(__regfpscr);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00777"/>00777 <emphasis role="preprocessor">#else</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00778"/>00778 &#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>(0U);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00779"/>00779 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00780"/>00780 }
+<anchor xml:id="_cmsis__armcc_8h_source_1l00781"/>00781 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00782"/>00782 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00788"/><link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1ga63aa6f7ed41dcaf39cbccb11e812ad4e">00788</link> __STATIC_INLINE&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1ga3cd91c42ad2793c3f3ae553a1b975512">__set_FPSCR</link>(uint32_t&#32;fpscr)
+<anchor xml:id="_cmsis__armcc_8h_source_1l00789"/>00789 {
+<anchor xml:id="_cmsis__armcc_8h_source_1l00790"/>00790 <emphasis role="preprocessor">#if&#32;((defined&#32;(__FPU_PRESENT)&#32;&amp;&amp;&#32;(__FPU_PRESENT&#32;==&#32;1U))&#32;&amp;&amp;&#32;\</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00791"/>00791 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;(defined&#32;(__FPU_USED&#32;&#32;&#32;)&#32;&amp;&amp;&#32;(__FPU_USED&#32;&#32;&#32;&#32;==&#32;1U))&#32;&#32;&#32;&#32;&#32;)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00792"/>00792 &#32;&#32;<emphasis role="keyword">register</emphasis>&#32;uint32_t&#32;__regfpscr&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__ASM(<emphasis role="stringliteral">&quot;fpscr&quot;</emphasis>);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00793"/>00793 &#32;&#32;__regfpscr&#32;=&#32;(fpscr);
+<anchor xml:id="_cmsis__armcc_8h_source_1l00794"/>00794 <emphasis role="preprocessor">#else</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00795"/>00795 &#32;&#32;(void)fpscr;
+<anchor xml:id="_cmsis__armcc_8h_source_1l00796"/>00796 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00797"/>00797 }
+<anchor xml:id="_cmsis__armcc_8h_source_1l00798"/>00798 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00799"/>00799 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00803"/>00803 <emphasis role="comment">/*&#32;###################&#32;&#32;Compiler&#32;specific&#32;Intrinsics&#32;&#32;###########################&#32;*/</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00809"/>00809 <emphasis role="preprocessor">#if&#32;((defined&#32;(__ARM_ARCH_7EM__)&#32;&amp;&amp;&#32;(__ARM_ARCH_7EM__&#32;==&#32;1))&#32;&#32;&#32;&#32;&#32;)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00810"/>00810 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00811"/>00811 <emphasis role="preprocessor">#define&#32;__SADD8&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__sadd8</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00812"/>00812 <emphasis role="preprocessor">#define&#32;__QADD8&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__qadd8</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00813"/>00813 <emphasis role="preprocessor">#define&#32;__SHADD8&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__shadd8</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00814"/>00814 <emphasis role="preprocessor">#define&#32;__UADD8&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__uadd8</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00815"/>00815 <emphasis role="preprocessor">#define&#32;__UQADD8&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__uqadd8</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00816"/>00816 <emphasis role="preprocessor">#define&#32;__UHADD8&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__uhadd8</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00817"/>00817 <emphasis role="preprocessor">#define&#32;__SSUB8&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__ssub8</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00818"/>00818 <emphasis role="preprocessor">#define&#32;__QSUB8&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__qsub8</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00819"/>00819 <emphasis role="preprocessor">#define&#32;__SHSUB8&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__shsub8</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00820"/>00820 <emphasis role="preprocessor">#define&#32;__USUB8&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__usub8</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00821"/>00821 <emphasis role="preprocessor">#define&#32;__UQSUB8&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__uqsub8</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00822"/>00822 <emphasis role="preprocessor">#define&#32;__UHSUB8&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__uhsub8</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00823"/>00823 <emphasis role="preprocessor">#define&#32;__SADD16&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__sadd16</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00824"/>00824 <emphasis role="preprocessor">#define&#32;__QADD16&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__qadd16</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00825"/>00825 <emphasis role="preprocessor">#define&#32;__SHADD16&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__shadd16</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00826"/>00826 <emphasis role="preprocessor">#define&#32;__UADD16&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__uadd16</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00827"/>00827 <emphasis role="preprocessor">#define&#32;__UQADD16&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__uqadd16</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00828"/>00828 <emphasis role="preprocessor">#define&#32;__UHADD16&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__uhadd16</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00829"/>00829 <emphasis role="preprocessor">#define&#32;__SSUB16&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__ssub16</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00830"/>00830 <emphasis role="preprocessor">#define&#32;__QSUB16&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__qsub16</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00831"/>00831 <emphasis role="preprocessor">#define&#32;__SHSUB16&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__shsub16</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00832"/>00832 <emphasis role="preprocessor">#define&#32;__USUB16&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__usub16</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00833"/>00833 <emphasis role="preprocessor">#define&#32;__UQSUB16&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__uqsub16</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00834"/>00834 <emphasis role="preprocessor">#define&#32;__UHSUB16&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__uhsub16</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00835"/>00835 <emphasis role="preprocessor">#define&#32;__SASX&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__sasx</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00836"/>00836 <emphasis role="preprocessor">#define&#32;__QASX&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__qasx</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00837"/>00837 <emphasis role="preprocessor">#define&#32;__SHASX&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__shasx</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00838"/>00838 <emphasis role="preprocessor">#define&#32;__UASX&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__uasx</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00839"/>00839 <emphasis role="preprocessor">#define&#32;__UQASX&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__uqasx</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00840"/>00840 <emphasis role="preprocessor">#define&#32;__UHASX&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__uhasx</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00841"/>00841 <emphasis role="preprocessor">#define&#32;__SSAX&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__ssax</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00842"/>00842 <emphasis role="preprocessor">#define&#32;__QSAX&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__qsax</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00843"/>00843 <emphasis role="preprocessor">#define&#32;__SHSAX&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__shsax</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00844"/>00844 <emphasis role="preprocessor">#define&#32;__USAX&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__usax</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00845"/>00845 <emphasis role="preprocessor">#define&#32;__UQSAX&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__uqsax</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00846"/>00846 <emphasis role="preprocessor">#define&#32;__UHSAX&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__uhsax</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00847"/>00847 <emphasis role="preprocessor">#define&#32;__USAD8&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__usad8</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00848"/>00848 <emphasis role="preprocessor">#define&#32;__USADA8&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__usada8</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00849"/>00849 <emphasis role="preprocessor">#define&#32;__SSAT16&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__ssat16</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00850"/>00850 <emphasis role="preprocessor">#define&#32;__USAT16&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__usat16</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00851"/>00851 <emphasis role="preprocessor">#define&#32;__UXTB16&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__uxtb16</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00852"/>00852 <emphasis role="preprocessor">#define&#32;__UXTAB16&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__uxtab16</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00853"/>00853 <emphasis role="preprocessor">#define&#32;__SXTB16&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__sxtb16</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00854"/>00854 <emphasis role="preprocessor">#define&#32;__SXTAB16&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__sxtab16</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00855"/>00855 <emphasis role="preprocessor">#define&#32;__SMUAD&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__smuad</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00856"/>00856 <emphasis role="preprocessor">#define&#32;__SMUADX&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__smuadx</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00857"/>00857 <emphasis role="preprocessor">#define&#32;__SMLAD&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__smlad</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00858"/>00858 <emphasis role="preprocessor">#define&#32;__SMLADX&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__smladx</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00859"/>00859 <emphasis role="preprocessor">#define&#32;__SMLALD&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__smlald</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00860"/>00860 <emphasis role="preprocessor">#define&#32;__SMLALDX&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__smlaldx</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00861"/>00861 <emphasis role="preprocessor">#define&#32;__SMUSD&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__smusd</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00862"/>00862 <emphasis role="preprocessor">#define&#32;__SMUSDX&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__smusdx</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00863"/>00863 <emphasis role="preprocessor">#define&#32;__SMLSD&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__smlsd</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00864"/>00864 <emphasis role="preprocessor">#define&#32;__SMLSDX&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__smlsdx</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00865"/>00865 <emphasis role="preprocessor">#define&#32;__SMLSLD&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__smlsld</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00866"/>00866 <emphasis role="preprocessor">#define&#32;__SMLSLDX&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__smlsldx</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00867"/>00867 <emphasis role="preprocessor">#define&#32;__SEL&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__sel</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00868"/>00868 <emphasis role="preprocessor">#define&#32;__QADD&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__qadd</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00869"/>00869 <emphasis role="preprocessor">#define&#32;__QSUB&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__qsub</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00870"/>00870 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00871"/>00871 <emphasis role="preprocessor">#define&#32;__PKHBT(ARG1,ARG2,ARG3)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(&#32;((((uint32_t)(ARG1))&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;)&#32;&amp;&#32;0x0000FFFFUL)&#32;|&#32;&#32;\</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00872"/>00872 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((((uint32_t)(ARG2))&#32;&lt;&lt;&#32;(ARG3))&#32;&amp;&#32;0xFFFF0000UL)&#32;&#32;)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00873"/>00873 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00874"/>00874 <emphasis role="preprocessor">#define&#32;__PKHTB(ARG1,ARG2,ARG3)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(&#32;((((uint32_t)(ARG1))&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;)&#32;&amp;&#32;0xFFFF0000UL)&#32;|&#32;&#32;\</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00875"/>00875 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((((uint32_t)(ARG2))&#32;&gt;&gt;&#32;(ARG3))&#32;&amp;&#32;0x0000FFFFUL)&#32;&#32;)</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00876"/>00876 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00877"/>00877 <emphasis role="preprocessor">#define&#32;__SMMLA(ARG1,ARG2,ARG3)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(&#32;(int32_t)((((int64_t)(ARG1)&#32;*&#32;(ARG2))&#32;+&#32;\</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00878"/>00878 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((int64_t)(ARG3)&#32;&lt;&lt;&#32;32U)&#32;&#32;&#32;&#32;&#32;)&#32;&gt;&gt;&#32;32U))</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00879"/>00879 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00880"/>00880 <emphasis role="preprocessor">#define&#32;__SXTB16_RORn(ARG1,&#32;ARG2)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__SXTB16(__ROR(ARG1,&#32;ARG2))</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00881"/>00881 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00882"/>00882 <emphasis role="preprocessor">#define&#32;__SXTAB16_RORn(ARG1,&#32;ARG2,&#32;ARG3)&#32;__SXTAB16(ARG1,&#32;__ROR(ARG2,&#32;ARG3))</emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00883"/>00883 
+<anchor xml:id="_cmsis__armcc_8h_source_1l00884"/>00884 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*&#32;((defined&#32;(__ARM_ARCH_7EM__)&#32;&amp;&amp;&#32;(__ARM_ARCH_7EM__&#32;==&#32;1))&#32;&#32;&#32;&#32;&#32;)&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+<anchor xml:id="_cmsis__armcc_8h_source_1l00888"/>00888 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*&#32;__CMSIS_ARMCC_H&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+</programlisting></section>

@@ -1,0 +1,436 @@
+.TH "CMSIS_Core_RegAccFunctions" 3 "Version JSTDRVF4" "Joystick Driver" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CMSIS_Core_RegAccFunctions \- CMSIS Core Register Access Functions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Topics"
+
+.in +1c
+.ti -1c
+.RI "\fBCMSIS SIMD Intrinsics\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__get_FPSCR\fP()"
+.br
+.RI "Get FPSCR\&. "
+.ti -1c
+.RI "#define \fB__set_FPSCR\fP(x)"
+.br
+.RI "Set FPSCR\&. "
+.ti -1c
+.RI "#define \fB__get_FPSCR\fP()"
+.br
+.RI "Get FPSCR\&. "
+.ti -1c
+.RI "#define \fB__set_FPSCR\fP(x)"
+.br
+.RI "Set FPSCR\&. "
+.ti -1c
+.RI "#define \fB__get_xPSR\fP"
+.br
+.RI "Get xPSR Register\&. "
+.ti -1c
+.RI "#define \fB__enable_irq\fP"
+.br
+.RI "Enable IRQ \fBInterrupts\fP\&. "
+.ti -1c
+.RI "#define \fB__disable_irq\fP"
+.br
+.RI "Disable IRQ \fBInterrupts\fP\&. "
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "__STATIC_INLINE uint32_t \fB__get_CONTROL\fP (void)"
+.br
+.RI "Enable IRQ \fBInterrupts\fP\&. "
+.ti -1c
+.RI "__STATIC_INLINE void \fB__set_CONTROL\fP (uint32_t control)"
+.br
+.RI "Set Control Register\&. "
+.ti -1c
+.RI "__STATIC_INLINE uint32_t \fB__get_IPSR\fP (void)"
+.br
+.RI "Get IPSR Register\&. "
+.ti -1c
+.RI "__STATIC_INLINE uint32_t \fB__get_APSR\fP (void)"
+.br
+.RI "Get APSR Register\&. "
+.ti -1c
+.RI "__STATIC_INLINE uint32_t \fB__get_xPSR\fP (void)"
+.br
+.RI "Get xPSR Register\&. "
+.ti -1c
+.RI "__STATIC_INLINE uint32_t \fB__get_PSP\fP (void)"
+.br
+.RI "Get Process Stack Pointer\&. "
+.ti -1c
+.RI "__STATIC_INLINE void \fB__set_PSP\fP (uint32_t topOfProcStack)"
+.br
+.RI "Set Process Stack Pointer\&. "
+.ti -1c
+.RI "__STATIC_INLINE uint32_t \fB__get_MSP\fP (void)"
+.br
+.RI "Get Main Stack Pointer\&. "
+.ti -1c
+.RI "__STATIC_INLINE void \fB__set_MSP\fP (uint32_t topOfMainStack)"
+.br
+.RI "Set Main Stack Pointer\&. "
+.ti -1c
+.RI "__STATIC_INLINE uint32_t \fB__get_PRIMASK\fP (void)"
+.br
+.RI "Get Priority Mask\&. "
+.ti -1c
+.RI "__STATIC_INLINE void \fB__set_PRIMASK\fP (uint32_t priMask)"
+.br
+.RI "Set Priority Mask\&. "
+.ti -1c
+.RI "__STATIC_INLINE uint32_t \fB__get_FPSCR\fP (void)"
+.br
+.RI "Get FPSCR\&. "
+.ti -1c
+.RI "__STATIC_INLINE void \fB__set_FPSCR\fP (uint32_t fpscr)"
+.br
+.RI "Set FPSCR\&. "
+.ti -1c
+.RI "__STATIC_FORCEINLINE void \fB__enable_irq\fP (void)"
+.br
+.RI "Enable IRQ \fBInterrupts\fP\&. "
+.ti -1c
+.RI "__STATIC_FORCEINLINE void \fB__disable_irq\fP (void)"
+.br
+.RI "Disable IRQ \fBInterrupts\fP\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "__STATIC_FORCEINLINE void __disable_irq( void)"
+\fBValue:\fP
+.nf
+__disable_interrupt
+.PP
+.fi
+
+.PP
+Disable IRQ \fBInterrupts\fP\&. Disables IRQ interrupts by setting special-purpose register PRIMASK\&. Can only be executed in Privileged modes\&. 
+.PP
+Definition at line \fB607\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "__STATIC_FORCEINLINE void __enable_irq( void)"
+\fBValue:\fP
+.nf
+__enable_interrupt
+.PP
+.fi
+
+.PP
+Enable IRQ \fBInterrupts\fP\&. Enables IRQ interrupts by clearing special-purpose register PRIMASK\&. Can only be executed in Privileged modes\&. 
+.PP
+Definition at line \fB606\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "__STATIC_FORCEINLINE uint32_t __get_FPSCR( void)"
+\fBValue:\fP
+.nf
+((uint32_t)0U)
+.PP
+.fi
+
+.PP
+Get FPSCR\&. Returns the current value of the Floating Point Status/Control register\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Floating Point Status/Control register value 
+.RE
+.PP
+
+.PP
+Definition at line \fB1394\fP of file \fBcmsis_armclang\&.h\fP\&.
+.SS "#define __get_FPSCR( void)"
+\fBValue:\fP
+.nf
+((uint32_t)0U)
+.PP
+.fi
+
+.PP
+Get FPSCR\&. Returns the current value of the Floating Point Status/Control register\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Floating Point Status/Control register value 
+.RE
+.PP
+
+.PP
+Definition at line \fB1371\fP of file \fBcmsis_armclang_ltm\&.h\fP\&.
+.SS "__STATIC_FORCEINLINE uint32_t __get_xPSR( void)"
+\fBValue:\fP
+.nf
+__get_PSR
+.PP
+.fi
+
+.PP
+Get xPSR Register\&. Returns the content of the xPSR Register\&. 
+.PP
+\fBReturns\fP
+.RS 4
+xPSR Register value 
+.RE
+.PP
+
+.PP
+Definition at line \fB610\fP of file \fBcmsis_iccarm\&.h\fP\&.
+.SS "#define __set_FPSCR( x)"
+\fBValue:\fP
+.nf
+((void)(x))
+.PP
+.fi
+
+.PP
+Set FPSCR\&. Assigns the given value to the Floating Point Status/Control register\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfpscr\fP Floating Point Status/Control value to set 
+.RE
+.PP
+
+.PP
+Definition at line \fB1406\fP of file \fBcmsis_armclang\&.h\fP\&.
+.SS "#define __set_FPSCR( x)"
+\fBValue:\fP
+.nf
+((void)(x))
+.PP
+.fi
+
+.PP
+Set FPSCR\&. Assigns the given value to the Floating Point Status/Control register\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfpscr\fP Floating Point Status/Control value to set 
+.RE
+.PP
+
+.PP
+Definition at line \fB1383\fP of file \fBcmsis_armclang_ltm\&.h\fP\&.
+.SH "Function Documentation"
+.PP 
+.SS "__STATIC_FORCEINLINE void __disable_irq (void )"
+
+.PP
+Disable IRQ \fBInterrupts\fP\&. Disables IRQ interrupts by setting special-purpose register PRIMASK\&. Can only be executed in Privileged modes\&. 
+.PP
+Definition at line \fB750\fP of file \fBcmsis_armclang\&.h\fP\&.
+.SS "__STATIC_FORCEINLINE void __enable_irq (void )"
+
+.PP
+Enable IRQ \fBInterrupts\fP\&. Enables IRQ interrupts by clearing special-purpose register PRIMASK\&. Can only be executed in Privileged modes\&. 
+.PP
+Definition at line \fB737\fP of file \fBcmsis_armclang\&.h\fP\&.
+.SS "__STATIC_FORCEINLINE uint32_t __get_APSR (void )"
+
+.PP
+Get APSR Register\&. Returns the content of the APSR Register\&. 
+.PP
+\fBReturns\fP
+.RS 4
+APSR Register value 
+.RE
+.PP
+
+.PP
+Definition at line \fB592\fP of file \fBcmsis_armcc\&.h\fP\&.
+.SS "__STATIC_FORCEINLINE uint32_t __get_CONTROL (void )"
+
+.PP
+Enable IRQ \fBInterrupts\fP\&. Get Control Register\&.
+
+.PP
+Enables IRQ interrupts by clearing special-purpose register PRIMASK\&. Can only be executed in Privileged modes\&.
+
+.PP
+Disable IRQ \fBInterrupts\fP
+
+.PP
+Disables IRQ interrupts by setting special-purpose register PRIMASK\&. Can only be executed in Privileged modes\&.
+
+.PP
+Get Control Register
+
+.PP
+Returns the content of the Control Register\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Control Register value
+.RE
+.PP
+Returns the content of the Control Register\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Control Register value 
+.RE
+.PP
+
+.PP
+Definition at line \fB555\fP of file \fBcmsis_armcc\&.h\fP\&.
+.SS "__STATIC_INLINE uint32_t __get_FPSCR (void )"
+
+.PP
+Get FPSCR\&. Returns the current value of the Floating Point Status/Control register\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Floating Point Status/Control register value 
+.RE
+.PP
+
+.PP
+Definition at line \fB771\fP of file \fBcmsis_armcc\&.h\fP\&.
+.SS "__STATIC_FORCEINLINE uint32_t __get_IPSR (void )"
+
+.PP
+Get IPSR Register\&. Returns the content of the IPSR Register\&. 
+.PP
+\fBReturns\fP
+.RS 4
+IPSR Register value 
+.RE
+.PP
+
+.PP
+Definition at line \fB580\fP of file \fBcmsis_armcc\&.h\fP\&.
+.SS "__STATIC_FORCEINLINE uint32_t __get_MSP (void )"
+
+.PP
+Get Main Stack Pointer\&. Returns the current value of the Main Stack Pointer (MSP)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+MSP Register value 
+.RE
+.PP
+
+.PP
+Definition at line \fB640\fP of file \fBcmsis_armcc\&.h\fP\&.
+.SS "__STATIC_FORCEINLINE uint32_t __get_PRIMASK (void )"
+
+.PP
+Get Priority Mask\&. Returns the current state of the priority mask bit from the Priority Mask Register\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Priority Mask value 
+.RE
+.PP
+
+.PP
+Definition at line \fB664\fP of file \fBcmsis_armcc\&.h\fP\&.
+.SS "__STATIC_FORCEINLINE uint32_t __get_PSP (void )"
+
+.PP
+Get Process Stack Pointer\&. Returns the current value of the Process Stack Pointer (PSP)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+PSP Register value 
+.RE
+.PP
+
+.PP
+Definition at line \fB616\fP of file \fBcmsis_armcc\&.h\fP\&.
+.SS "__STATIC_INLINE uint32_t __get_xPSR (void )"
+
+.PP
+Get xPSR Register\&. Returns the content of the xPSR Register\&. 
+.PP
+\fBReturns\fP
+.RS 4
+xPSR Register value 
+.RE
+.PP
+
+.PP
+Definition at line \fB604\fP of file \fBcmsis_armcc\&.h\fP\&.
+.SS "__STATIC_FORCEINLINE void __set_CONTROL (uint32_t control)"
+
+.PP
+Set Control Register\&. Writes the given value to the Control Register\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcontrol\fP Control Register value to set 
+.RE
+.PP
+
+.PP
+Definition at line \fB567\fP of file \fBcmsis_armcc\&.h\fP\&.
+.SS "__STATIC_FORCEINLINE void __set_FPSCR (uint32_t fpscr)"
+
+.PP
+Set FPSCR\&. Assigns the given value to the Floating Point Status/Control register\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfpscr\fP Floating Point Status/Control value to set 
+.RE
+.PP
+
+.PP
+Definition at line \fB788\fP of file \fBcmsis_armcc\&.h\fP\&.
+.SS "__STATIC_FORCEINLINE void __set_MSP (uint32_t topOfMainStack)"
+
+.PP
+Set Main Stack Pointer\&. Assigns the given value to the Main Stack Pointer (MSP)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItopOfMainStack\fP Main Stack Pointer value to set 
+.RE
+.PP
+
+.PP
+Definition at line \fB652\fP of file \fBcmsis_armcc\&.h\fP\&.
+.SS "__STATIC_FORCEINLINE void __set_PRIMASK (uint32_t priMask)"
+
+.PP
+Set Priority Mask\&. Assigns the given value to the Priority Mask Register\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpriMask\fP Priority Mask 
+.RE
+.PP
+
+.PP
+Definition at line \fB676\fP of file \fBcmsis_armcc\&.h\fP\&.
+.SS "__STATIC_FORCEINLINE void __set_PSP (uint32_t topOfProcStack)"
+
+.PP
+Set Process Stack Pointer\&. Assigns the given value to the Process Stack Pointer (PSP)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItopOfProcStack\fP Process Stack Pointer value to set 
+.RE
+.PP
+
+.PP
+Definition at line \fB628\fP of file \fBcmsis_armcc\&.h\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Joystick Driver from the source code\&.

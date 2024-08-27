@@ -1,4 +1,5 @@
 Joystick_Driver_Doxyfile
-ADC\Documentation
-ADC\docs
-Docs
+ADC\Documentation\
+ADC\docs\
+Docs\
+DMA\docs\

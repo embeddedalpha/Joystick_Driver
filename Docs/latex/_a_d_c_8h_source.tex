@@ -1,0 +1,84 @@
+\doxysection{ADC.\+h}
+\hypertarget{_a_d_c_8h_source}{}\label{_a_d_c_8h_source}\index{ADC/ADC.h@{ADC/ADC.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00002}00002\ \textcolor{comment}{\ *\ ADC.h}}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00003}00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00004}00004\ \textcolor{comment}{\ *\ \ Created\ on:\ Jul\ 31,\ 2024}}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00005}00005\ \textcolor{comment}{\ *\ \ \ \ \ \ Author:\ kunal}}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00006}00006\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00008}00008\ \textcolor{preprocessor}{\#ifndef\ ADC\_H\_}}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00009}00009\ \textcolor{preprocessor}{\#define\ ADC\_H\_}}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}main.h"{}}}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}GPIO.h"{}}}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00013}00013\ \textcolor{preprocessor}{\#include\ "{}DMA.h"{}}}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00014}00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_a_d_c___defs_8h}{ADC\_Defs.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00017}\mbox{\hyperlink{struct_a_d_c___pin}{00017}}\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_a_d_c___pin}{ADC\_Pin}}\{}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00018}00018\ \ \ \ \ \textcolor{keywordtype}{bool}\ Enable;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00019}00019\ \ \ \ \ uint8\_t\ Sequence\_Number;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00020}00020\ \ \ \ \ uint8\_t\ Sample\_Time;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00021}00021\ \}\mbox{\hyperlink{struct_a_d_c___pin}{ADC\_Pin}};}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00023}\mbox{\hyperlink{struct_a_d_c___config}{00023}}\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_a_d_c___config}{ADC\_Config}}\{}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00025}00025\ \ \ \ \ \mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}\ *Port;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00027}00027\ \ \ \ \ uint8\_t\ Data\_Alignment;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00029}00029\ \ \ \ \ uint8\_t\ Conversion\_Mode;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00031}00031\ \ \ \ \ uint8\_t\ Channel\_Type;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00033}\mbox{\hyperlink{struct_a_d_c___config_1_1_external___trigger}{00033}}\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_a_d_c___config_1_1_external___trigger}{External\_Trigger}}}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00034}00034\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00035}00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ Enable;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00036}00036\ \ \ \ \ \ \ \ \ uint8\_t\ Trigger\_Event;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00037}00037\ \ \ \ \ \ \ \ \ uint8\_t\ Sampling\_Frequency;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00038}00038\ \ \ \ \ \}\mbox{\hyperlink{struct_a_d_c___config_1_1_external___trigger}{External\_Trigger}};}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00040}00040\ \ \ \ \ \mbox{\hyperlink{struct_a_d_c___pin}{ADC\_Pin}}\ Channel\_0;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00041}00041\ \ \ \ \ \mbox{\hyperlink{struct_a_d_c___pin}{ADC\_Pin}}\ Channel\_1;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00042}00042\ \ \ \ \ \mbox{\hyperlink{struct_a_d_c___pin}{ADC\_Pin}}\ Channel\_2;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00043}00043\ \ \ \ \ \mbox{\hyperlink{struct_a_d_c___pin}{ADC\_Pin}}\ Channel\_3;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00044}00044\ \ \ \ \ \mbox{\hyperlink{struct_a_d_c___pin}{ADC\_Pin}}\ Channel\_4;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00045}00045\ \ \ \ \ \mbox{\hyperlink{struct_a_d_c___pin}{ADC\_Pin}}\ Channel\_5;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00046}00046\ \ \ \ \ \mbox{\hyperlink{struct_a_d_c___pin}{ADC\_Pin}}\ Channel\_6;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00047}00047\ \ \ \ \ \mbox{\hyperlink{struct_a_d_c___pin}{ADC\_Pin}}\ Channel\_7;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00048}00048\ \ \ \ \ \mbox{\hyperlink{struct_a_d_c___pin}{ADC\_Pin}}\ Channel\_8;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00049}00049\ \ \ \ \ \mbox{\hyperlink{struct_a_d_c___pin}{ADC\_Pin}}\ Channel\_9;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00050}00050\ \ \ \ \ \mbox{\hyperlink{struct_a_d_c___pin}{ADC\_Pin}}\ Channel\_10;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00051}00051\ \ \ \ \ \mbox{\hyperlink{struct_a_d_c___pin}{ADC\_Pin}}\ Channel\_11;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00052}00052\ \ \ \ \ \mbox{\hyperlink{struct_a_d_c___pin}{ADC\_Pin}}\ Channel\_12;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00053}00053\ \ \ \ \ \mbox{\hyperlink{struct_a_d_c___pin}{ADC\_Pin}}\ Channel\_13;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00054}00054\ \ \ \ \ \mbox{\hyperlink{struct_a_d_c___pin}{ADC\_Pin}}\ Channel\_14;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00055}00055\ \ \ \ \ \mbox{\hyperlink{struct_a_d_c___pin}{ADC\_Pin}}\ Channel\_15;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00057}00057\ \ \ \ \ uint8\_t\ Resolution;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00059}\mbox{\hyperlink{struct_a_d_c___config_1_1_watchdog___analog}{00059}}\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_a_d_c___config_1_1_watchdog___analog}{Watchdog\_Analog}}}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00060}00060\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00061}00061\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ Enable;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00062}00062\ \ \ \ \ \ \ \ \ uint8\_t\ Channel\_Type;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00063}00063\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ Channel\_Scan;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00064}00064\ \ \ \ \ \ \ \ \ uint8\_t\ Channel;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00065}00065\ \ \ \ \ \ \ \ \ uint16\_t\ Higher\_Threshold;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00066}00066\ \ \ \ \ \ \ \ \ uint16\_t\ Lower\_Threshold;}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00067}00067\ \ \ \ \ \}\mbox{\hyperlink{struct_a_d_c___config_1_1_watchdog___analog}{Watchdog\_Analog}};}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00068}00068\ }
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00070}00070\ }
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00071}00071\ \}\mbox{\hyperlink{struct_a_d_c___config}{ADC\_Config}};}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00072}00072\ }
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00073}00073\ int8\_t\ ADC\_Init(\mbox{\hyperlink{struct_a_d_c___config}{ADC\_Config}}\ *config);}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00074}00074\ int8\_t\ ADC\_Enable(\mbox{\hyperlink{struct_a_d_c___config}{ADC\_Config}}\ *config);}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00075}00075\ int8\_t\ ADC\_Start(\mbox{\hyperlink{struct_a_d_c___config}{ADC\_Config}}\ *config);}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00076}00076\ int8\_t\ ADC\_Start\_Capture(\mbox{\hyperlink{struct_a_d_c___config}{ADC\_Config}}\ *config,\ uint16\_t\ *buffer);}
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{_a_d_c_8h_source_l00078}00078\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ ADC\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

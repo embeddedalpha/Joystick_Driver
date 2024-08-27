@@ -1,0 +1,1001 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_cmsis__iccarm_8h_source" xml:lang="en-US">
+<title>cmsis_iccarm.h</title>
+<indexterm><primary>Inc/cmsis_iccarm.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_cmsis__iccarm_8h_source_1l00001"/>00001 <emphasis role="comment">/**************************************************************************/</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00008"/>00008 <emphasis role="comment">//------------------------------------------------------------------------------</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00009"/>00009 <emphasis role="comment">//</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00010"/>00010 <emphasis role="comment">//&#32;Copyright&#32;(c)&#32;2017-2021&#32;IAR&#32;Systems</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00011"/>00011 <emphasis role="comment">//&#32;Copyright&#32;(c)&#32;2017-2021&#32;Arm&#32;Limited.&#32;All&#32;rights&#32;reserved.</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00012"/>00012 <emphasis role="comment">//</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00013"/>00013 <emphasis role="comment">//&#32;SPDX-License-Identifier:&#32;Apache-2.0</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00014"/>00014 <emphasis role="comment">//</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00015"/>00015 <emphasis role="comment">//&#32;Licensed&#32;under&#32;the&#32;Apache&#32;License,&#32;Version&#32;2.0&#32;(the&#32;&quot;License&quot;)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00016"/>00016 <emphasis role="comment">//&#32;you&#32;may&#32;not&#32;use&#32;this&#32;file&#32;except&#32;in&#32;compliance&#32;with&#32;the&#32;License.</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00017"/>00017 <emphasis role="comment">//&#32;You&#32;may&#32;obtain&#32;a&#32;copy&#32;of&#32;the&#32;License&#32;at</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00018"/>00018 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;http://www.apache.org/licenses/LICENSE-2.0</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00019"/>00019 <emphasis role="comment">//</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00020"/>00020 <emphasis role="comment">//&#32;Unless&#32;required&#32;by&#32;applicable&#32;law&#32;or&#32;agreed&#32;to&#32;in&#32;writing,&#32;software</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00021"/>00021 <emphasis role="comment">//&#32;distributed&#32;under&#32;the&#32;License&#32;is&#32;distributed&#32;on&#32;an&#32;&quot;AS&#32;IS&quot;&#32;BASIS,</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00022"/>00022 <emphasis role="comment">//&#32;WITHOUT&#32;WARRANTIES&#32;OR&#32;CONDITIONS&#32;OF&#32;ANY&#32;KIND,&#32;either&#32;express&#32;or&#32;implied.</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00023"/>00023 <emphasis role="comment">//&#32;See&#32;the&#32;License&#32;for&#32;the&#32;specific&#32;language&#32;governing&#32;permissions&#32;and</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00024"/>00024 <emphasis role="comment">//&#32;limitations&#32;under&#32;the&#32;License.</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00025"/>00025 <emphasis role="comment">//</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00026"/>00026 <emphasis role="comment">//------------------------------------------------------------------------------</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00027"/>00027 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00028"/>00028 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00029"/>00029 <emphasis role="preprocessor">#ifndef&#32;__CMSIS_ICCARM_H__</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00030"/>00030 <emphasis role="preprocessor">#define&#32;__CMSIS_ICCARM_H__</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00031"/>00031 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00032"/>00032 <emphasis role="preprocessor">#ifndef&#32;__ICCARM__</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00033"/>00033 <emphasis role="preprocessor">&#32;&#32;#error&#32;This&#32;file&#32;should&#32;only&#32;be&#32;compiled&#32;by&#32;ICCARM</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00034"/>00034 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00035"/>00035 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00036"/>00036 <emphasis role="preprocessor">#pragma&#32;system_include</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00037"/>00037 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00038"/>00038 <emphasis role="preprocessor">#define&#32;__IAR_FT&#32;_Pragma(&quot;inline=forced&quot;)&#32;__intrinsic</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00039"/>00039 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00040"/>00040 <emphasis role="preprocessor">#if&#32;(__VER__&#32;&gt;=&#32;8000000)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00041"/>00041 <emphasis role="preprocessor">&#32;&#32;#define&#32;__ICCARM_V8&#32;1</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00042"/>00042 <emphasis role="preprocessor">#else</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00043"/>00043 <emphasis role="preprocessor">&#32;&#32;#define&#32;__ICCARM_V8&#32;0</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00044"/>00044 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00045"/>00045 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00046"/>00046 <emphasis role="preprocessor">#ifndef&#32;__ALIGNED</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00047"/>00047 <emphasis role="preprocessor">&#32;&#32;#if&#32;__ICCARM_V8</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00048"/>00048 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__ALIGNED(x)&#32;__attribute__((aligned(x)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00049"/>00049 <emphasis role="preprocessor">&#32;&#32;#elif&#32;(__VER__&#32;&gt;=&#32;7080000)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00050"/>00050 &#32;&#32;&#32;&#32;<emphasis role="comment">/*&#32;Needs&#32;IAR&#32;language&#32;extensions&#32;*/</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00051"/>00051 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__ALIGNED(x)&#32;__attribute__((aligned(x)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00052"/>00052 <emphasis role="preprocessor">&#32;&#32;#else</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00053"/>00053 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#warning&#32;No&#32;compiler&#32;specific&#32;solution&#32;for&#32;__ALIGNED.__ALIGNED&#32;is&#32;ignored.</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00054"/>00054 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__ALIGNED(x)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00055"/>00055 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00056"/>00056 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00057"/>00057 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00058"/>00058 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00059"/>00059 <emphasis role="comment">/*&#32;Define&#32;compiler&#32;macros&#32;for&#32;CPU&#32;architecture,&#32;used&#32;in&#32;CMSIS&#32;5.</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00060"/>00060 <emphasis role="comment">&#32;*/</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00061"/>00061 <emphasis role="preprocessor">#if&#32;__ARM_ARCH_6M__&#32;||&#32;__ARM_ARCH_7M__&#32;||&#32;__ARM_ARCH_7EM__&#32;||&#32;__ARM_ARCH_8M_BASE__&#32;||&#32;__ARM_ARCH_8M_MAIN__</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00062"/>00062 <emphasis role="comment">/*&#32;Macros&#32;already&#32;defined&#32;*/</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00063"/>00063 <emphasis role="preprocessor">#else</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00064"/>00064 <emphasis role="preprocessor">&#32;&#32;#if&#32;defined(__ARM8M_MAINLINE__)&#32;||&#32;defined(__ARM8EM_MAINLINE__)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00065"/>00065 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__ARM_ARCH_8M_MAIN__&#32;1</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00066"/>00066 <emphasis role="preprocessor">&#32;&#32;#elif&#32;defined(__ARM8M_BASELINE__)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00067"/>00067 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__ARM_ARCH_8M_BASE__&#32;1</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00068"/>00068 <emphasis role="preprocessor">&#32;&#32;#elif&#32;defined(__ARM_ARCH_PROFILE)&#32;&amp;&amp;&#32;__ARM_ARCH_PROFILE&#32;==&#32;&apos;M&apos;</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00069"/>00069 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#if&#32;__ARM_ARCH&#32;==&#32;6</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00070"/>00070 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;#define&#32;__ARM_ARCH_6M__&#32;1</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00071"/>00071 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#elif&#32;__ARM_ARCH&#32;==&#32;7</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00072"/>00072 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;#if&#32;__ARM_FEATURE_DSP</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00073"/>00073 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#define&#32;__ARM_ARCH_7EM__&#32;1</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00074"/>00074 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;#else</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00075"/>00075 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#define&#32;__ARM_ARCH_7M__&#32;1</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00076"/>00076 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00077"/>00077 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#endif&#32;</emphasis><emphasis role="comment">/*&#32;__ARM_ARCH&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00078"/>00078 <emphasis role="preprocessor">&#32;&#32;#endif&#32;</emphasis><emphasis role="comment">/*&#32;__ARM_ARCH_PROFILE&#32;==&#32;&apos;M&apos;&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00079"/>00079 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00080"/>00080 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00081"/>00081 <emphasis role="comment">/*&#32;Alternativ&#32;core&#32;deduction&#32;for&#32;older&#32;ICCARM&apos;s&#32;*/</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00082"/>00082 <emphasis role="preprocessor">#if&#32;!defined(__ARM_ARCH_6M__)&#32;&amp;&amp;&#32;!defined(__ARM_ARCH_7M__)&#32;&amp;&amp;&#32;!defined(__ARM_ARCH_7EM__)&#32;&amp;&amp;&#32;\</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00083"/>00083 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;!defined(__ARM_ARCH_8M_BASE__)&#32;&amp;&amp;&#32;!defined(__ARM_ARCH_8M_MAIN__)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00084"/>00084 <emphasis role="preprocessor">&#32;&#32;#if&#32;defined(__ARM6M__)&#32;&amp;&amp;&#32;(__CORE__&#32;==&#32;__ARM6M__)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00085"/>00085 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__ARM_ARCH_6M__&#32;1</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00086"/>00086 <emphasis role="preprocessor">&#32;&#32;#elif&#32;defined(__ARM7M__)&#32;&amp;&amp;&#32;(__CORE__&#32;==&#32;__ARM7M__)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00087"/>00087 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__ARM_ARCH_7M__&#32;1</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00088"/>00088 <emphasis role="preprocessor">&#32;&#32;#elif&#32;defined(__ARM7EM__)&#32;&amp;&amp;&#32;(__CORE__&#32;==&#32;__ARM7EM__)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00089"/>00089 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__ARM_ARCH_7EM__&#32;&#32;1</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00090"/>00090 <emphasis role="preprocessor">&#32;&#32;#elif&#32;defined(__ARM8M_BASELINE__)&#32;&amp;&amp;&#32;(__CORE&#32;==&#32;__ARM8M_BASELINE__)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00091"/>00091 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__ARM_ARCH_8M_BASE__&#32;1</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00092"/>00092 <emphasis role="preprocessor">&#32;&#32;#elif&#32;defined(__ARM8M_MAINLINE__)&#32;&amp;&amp;&#32;(__CORE&#32;==&#32;__ARM8M_MAINLINE__)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00093"/>00093 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__ARM_ARCH_8M_MAIN__&#32;1</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00094"/>00094 <emphasis role="preprocessor">&#32;&#32;#elif&#32;defined(__ARM8EM_MAINLINE__)&#32;&amp;&amp;&#32;(__CORE&#32;==&#32;__ARM8EM_MAINLINE__)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00095"/>00095 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__ARM_ARCH_8M_MAIN__&#32;1</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00096"/>00096 <emphasis role="preprocessor">&#32;&#32;#else</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00097"/>00097 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#error&#32;&quot;Unknown&#32;target.&quot;</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00098"/>00098 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00099"/>00099 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00100"/>00100 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00101"/>00101 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00102"/>00102 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00103"/>00103 <emphasis role="preprocessor">#if&#32;defined(__ARM_ARCH_6M__)&#32;&amp;&amp;&#32;__ARM_ARCH_6M__==1</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00104"/>00104 <emphasis role="preprocessor">&#32;&#32;#define&#32;__IAR_M0_FAMILY&#32;&#32;1</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00105"/>00105 <emphasis role="preprocessor">#elif&#32;defined(__ARM_ARCH_8M_BASE__)&#32;&amp;&amp;&#32;__ARM_ARCH_8M_BASE__==1</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00106"/>00106 <emphasis role="preprocessor">&#32;&#32;#define&#32;__IAR_M0_FAMILY&#32;&#32;1</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00107"/>00107 <emphasis role="preprocessor">#else</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00108"/>00108 <emphasis role="preprocessor">&#32;&#32;#define&#32;__IAR_M0_FAMILY&#32;&#32;0</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00109"/>00109 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00110"/>00110 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00111"/>00111 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00112"/>00112 <emphasis role="preprocessor">#ifndef&#32;__ASM</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00113"/>00113 <emphasis role="preprocessor">&#32;&#32;#define&#32;__ASM&#32;__asm</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00114"/>00114 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00115"/>00115 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00116"/>00116 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__COMPILER_BARRIER</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00117"/>00117 <emphasis role="preprocessor">&#32;&#32;#define&#32;__COMPILER_BARRIER()&#32;__ASM&#32;volatile(&quot;&quot;:::&quot;memory&quot;)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00118"/>00118 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00119"/>00119 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00120"/>00120 <emphasis role="preprocessor">#ifndef&#32;__INLINE</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00121"/>00121 <emphasis role="preprocessor">&#32;&#32;#define&#32;__INLINE&#32;inline</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00122"/>00122 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00123"/>00123 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00124"/>00124 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__NO_RETURN</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00125"/>00125 <emphasis role="preprocessor">&#32;&#32;#if&#32;__ICCARM_V8</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00126"/>00126 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__NO_RETURN&#32;__attribute__((__noreturn__))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00127"/>00127 <emphasis role="preprocessor">&#32;&#32;#else</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00128"/>00128 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__NO_RETURN&#32;_Pragma(&quot;object_attribute=__noreturn&quot;)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00129"/>00129 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00130"/>00130 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00131"/>00131 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00132"/>00132 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__PACKED</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00133"/>00133 <emphasis role="preprocessor">&#32;&#32;#if&#32;__ICCARM_V8</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00134"/>00134 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__PACKED&#32;__attribute__((packed,&#32;aligned(1)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00135"/>00135 <emphasis role="preprocessor">&#32;&#32;#else</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00136"/>00136 &#32;&#32;&#32;&#32;<emphasis role="comment">/*&#32;Needs&#32;IAR&#32;language&#32;extensions&#32;*/</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00137"/>00137 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__PACKED&#32;__packed</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00138"/>00138 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00139"/>00139 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00140"/>00140 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00141"/>00141 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__PACKED_STRUCT</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00142"/>00142 <emphasis role="preprocessor">&#32;&#32;#if&#32;__ICCARM_V8</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00143"/>00143 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__PACKED_STRUCT&#32;struct&#32;__attribute__((packed,&#32;aligned(1)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00144"/>00144 <emphasis role="preprocessor">&#32;&#32;#else</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00145"/>00145 &#32;&#32;&#32;&#32;<emphasis role="comment">/*&#32;Needs&#32;IAR&#32;language&#32;extensions&#32;*/</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00146"/>00146 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__PACKED_STRUCT&#32;__packed&#32;struct</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00147"/>00147 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00148"/>00148 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00149"/>00149 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00150"/>00150 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__PACKED_UNION</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00151"/>00151 <emphasis role="preprocessor">&#32;&#32;#if&#32;__ICCARM_V8</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00152"/>00152 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__PACKED_UNION&#32;union&#32;__attribute__((packed,&#32;aligned(1)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00153"/>00153 <emphasis role="preprocessor">&#32;&#32;#else</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00154"/>00154 &#32;&#32;&#32;&#32;<emphasis role="comment">/*&#32;Needs&#32;IAR&#32;language&#32;extensions&#32;*/</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00155"/>00155 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__PACKED_UNION&#32;__packed&#32;union</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00156"/>00156 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00157"/>00157 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00158"/>00158 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00159"/>00159 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__RESTRICT</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00160"/>00160 <emphasis role="preprocessor">&#32;&#32;#if&#32;__ICCARM_V8</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00161"/>00161 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__RESTRICT&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__restrict</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00162"/>00162 <emphasis role="preprocessor">&#32;&#32;#else</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00163"/>00163 &#32;&#32;&#32;&#32;<emphasis role="comment">/*&#32;Needs&#32;IAR&#32;language&#32;extensions&#32;*/</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00164"/>00164 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__RESTRICT&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;restrict</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00165"/>00165 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00166"/>00166 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00167"/>00167 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00168"/>00168 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__STATIC_INLINE</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00169"/>00169 <emphasis role="preprocessor">&#32;&#32;#define&#32;__STATIC_INLINE&#32;&#32;&#32;&#32;&#32;&#32;&#32;static&#32;inline</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00170"/>00170 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00171"/>00171 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00172"/>00172 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__FORCEINLINE</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00173"/>00173 <emphasis role="preprocessor">&#32;&#32;#define&#32;__FORCEINLINE&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_Pragma(&quot;inline=forced&quot;)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00174"/>00174 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00175"/>00175 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00176"/>00176 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__STATIC_FORCEINLINE</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00177"/>00177 <emphasis role="preprocessor">&#32;&#32;#define&#32;__STATIC_FORCEINLINE&#32;&#32;__FORCEINLINE&#32;__STATIC_INLINE</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00178"/>00178 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00179"/>00179 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00180"/>00180 <emphasis role="preprocessor">#ifndef&#32;__UNALIGNED_UINT16_READ</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00181"/>00181 <emphasis role="preprocessor">#pragma&#32;language=save</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00182"/>00182 <emphasis role="preprocessor">#pragma&#32;language=extended</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00183"/>00183 __IAR_FT&#32;uint16_t&#32;__iar_uint16_read(<emphasis role="keywordtype">void</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;*ptr)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00184"/>00184 {
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00185"/>00185 &#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;*(__packed&#32;uint16_t*)(ptr);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00186"/>00186 }
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00187"/>00187 <emphasis role="preprocessor">#pragma&#32;language=restore</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00188"/>00188 <emphasis role="preprocessor">#define&#32;__UNALIGNED_UINT16_READ(PTR)&#32;__iar_uint16_read(PTR)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00189"/>00189 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00190"/>00190 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00191"/>00191 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00192"/>00192 <emphasis role="preprocessor">#ifndef&#32;__UNALIGNED_UINT16_WRITE</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00193"/>00193 <emphasis role="preprocessor">#pragma&#32;language=save</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00194"/>00194 <emphasis role="preprocessor">#pragma&#32;language=extended</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00195"/>00195 __IAR_FT&#32;<emphasis role="keywordtype">void</emphasis>&#32;__iar_uint16_write(<emphasis role="keywordtype">void</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;*ptr,&#32;uint16_t&#32;val)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00196"/>00196 {
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00197"/>00197 &#32;&#32;*(__packed&#32;uint16_t*)(ptr)&#32;=&#32;val;;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00198"/>00198 }
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00199"/>00199 <emphasis role="preprocessor">#pragma&#32;language=restore</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00200"/>00200 <emphasis role="preprocessor">#define&#32;__UNALIGNED_UINT16_WRITE(PTR,VAL)&#32;__iar_uint16_write(PTR,VAL)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00201"/>00201 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00202"/>00202 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00203"/>00203 <emphasis role="preprocessor">#ifndef&#32;__UNALIGNED_UINT32_READ</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00204"/>00204 <emphasis role="preprocessor">#pragma&#32;language=save</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00205"/>00205 <emphasis role="preprocessor">#pragma&#32;language=extended</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00206"/>00206 __IAR_FT&#32;uint32_t&#32;__iar_uint32_read(<emphasis role="keywordtype">void</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;*ptr)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00207"/>00207 {
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00208"/>00208 &#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;*(__packed&#32;uint32_t*)(ptr);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00209"/>00209 }
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00210"/>00210 <emphasis role="preprocessor">#pragma&#32;language=restore</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00211"/>00211 <emphasis role="preprocessor">#define&#32;__UNALIGNED_UINT32_READ(PTR)&#32;__iar_uint32_read(PTR)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00212"/>00212 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00213"/>00213 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00214"/>00214 <emphasis role="preprocessor">#ifndef&#32;__UNALIGNED_UINT32_WRITE</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00215"/>00215 <emphasis role="preprocessor">#pragma&#32;language=save</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00216"/>00216 <emphasis role="preprocessor">#pragma&#32;language=extended</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00217"/>00217 __IAR_FT&#32;<emphasis role="keywordtype">void</emphasis>&#32;__iar_uint32_write(<emphasis role="keywordtype">void</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;*ptr,&#32;uint32_t&#32;val)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00218"/>00218 {
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00219"/>00219 &#32;&#32;*(__packed&#32;uint32_t*)(ptr)&#32;=&#32;val;;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00220"/>00220 }
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00221"/>00221 <emphasis role="preprocessor">#pragma&#32;language=restore</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00222"/>00222 <emphasis role="preprocessor">#define&#32;__UNALIGNED_UINT32_WRITE(PTR,VAL)&#32;__iar_uint32_write(PTR,VAL)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00223"/>00223 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00224"/>00224 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00225"/>00225 <emphasis role="preprocessor">#ifndef&#32;__UNALIGNED_UINT32&#32;&#32;&#32;</emphasis><emphasis role="comment">/*&#32;deprecated&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00226"/>00226 <emphasis role="preprocessor">#pragma&#32;language=save</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00227"/>00227 <emphasis role="preprocessor">#pragma&#32;language=extended</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00228"/><link linkend="_struct____iar__u32">00228</link> __packed&#32;<emphasis role="keyword">struct&#32;&#32;</emphasis><link linkend="_struct____iar__u32">__iar_u32</link>&#32;{&#32;uint32_t&#32;v;&#32;};
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00229"/>00229 <emphasis role="preprocessor">#pragma&#32;language=restore</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00230"/>00230 <emphasis role="preprocessor">#define&#32;__UNALIGNED_UINT32(PTR)&#32;(((struct&#32;__iar_u32&#32;*)(PTR))-&gt;v)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00231"/>00231 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00232"/>00232 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00233"/>00233 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__USED</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00234"/>00234 <emphasis role="preprocessor">&#32;&#32;#if&#32;__ICCARM_V8</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00235"/>00235 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__USED&#32;__attribute__((used))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00236"/>00236 <emphasis role="preprocessor">&#32;&#32;#else</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00237"/>00237 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__USED&#32;_Pragma(&quot;__root&quot;)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00238"/>00238 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00239"/>00239 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00240"/>00240 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00241"/>00241 <emphasis role="preprocessor">#undef&#32;__WEAK&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</emphasis><emphasis role="comment">/*&#32;undo&#32;the&#32;definition&#32;from&#32;DLib_Defaults.h&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00242"/>00242 <emphasis role="preprocessor">#ifndef&#32;&#32;&#32;__WEAK</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00243"/>00243 <emphasis role="preprocessor">&#32;&#32;#if&#32;__ICCARM_V8</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00244"/>00244 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__WEAK&#32;__attribute__((weak))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00245"/>00245 <emphasis role="preprocessor">&#32;&#32;#else</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00246"/>00246 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__WEAK&#32;_Pragma(&quot;__weak&quot;)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00247"/>00247 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00248"/>00248 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00249"/>00249 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00250"/>00250 <emphasis role="preprocessor">#ifndef&#32;__PROGRAM_START</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00251"/>00251 <emphasis role="preprocessor">#define&#32;__PROGRAM_START&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__iar_program_start</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00252"/>00252 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00253"/>00253 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00254"/>00254 <emphasis role="preprocessor">#ifndef&#32;__INITIAL_SP</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00255"/>00255 <emphasis role="preprocessor">#define&#32;__INITIAL_SP&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;CSTACK$$Limit</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00256"/>00256 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00257"/>00257 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00258"/>00258 <emphasis role="preprocessor">#ifndef&#32;__STACK_LIMIT</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00259"/>00259 <emphasis role="preprocessor">#define&#32;__STACK_LIMIT&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;CSTACK$$Base</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00260"/>00260 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00261"/>00261 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00262"/>00262 <emphasis role="preprocessor">#ifndef&#32;__VECTOR_TABLE</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00263"/>00263 <emphasis role="preprocessor">#define&#32;__VECTOR_TABLE&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__vector_table</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00264"/>00264 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00265"/>00265 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00266"/>00266 <emphasis role="preprocessor">#ifndef&#32;__VECTOR_TABLE_ATTRIBUTE</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00267"/>00267 <emphasis role="preprocessor">#define&#32;__VECTOR_TABLE_ATTRIBUTE&#32;&#32;@&quot;.intvec&quot;</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00268"/>00268 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00269"/>00269 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00270"/>00270 <emphasis role="preprocessor">#if&#32;defined&#32;(__ARM_FEATURE_CMSE)&#32;&amp;&amp;&#32;(__ARM_FEATURE_CMSE&#32;==&#32;3U)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00271"/>00271 <emphasis role="preprocessor">#ifndef&#32;__STACK_SEAL</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00272"/>00272 <emphasis role="preprocessor">#define&#32;__STACK_SEAL&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;STACKSEAL$$Base</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00273"/>00273 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00274"/>00274 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00275"/>00275 <emphasis role="preprocessor">#ifndef&#32;__TZ_STACK_SEAL_SIZE</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00276"/>00276 <emphasis role="preprocessor">#define&#32;__TZ_STACK_SEAL_SIZE&#32;&#32;&#32;&#32;&#32;&#32;8U</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00277"/>00277 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00278"/>00278 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00279"/>00279 <emphasis role="preprocessor">#ifndef&#32;__TZ_STACK_SEAL_VALUE</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00280"/>00280 <emphasis role="preprocessor">#define&#32;__TZ_STACK_SEAL_VALUE&#32;&#32;&#32;&#32;&#32;0xFEF5EDA5FEF5EDA5ULL</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00281"/>00281 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00282"/>00282 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00283"/>00283 __STATIC_FORCEINLINE&#32;<emphasis role="keywordtype">void</emphasis>&#32;__TZ_set_STACKSEAL_S&#32;(uint32_t*&#32;stackTop)&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00284"/>00284 &#32;&#32;*((uint64_t&#32;*)stackTop)&#32;=&#32;__TZ_STACK_SEAL_VALUE;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00285"/>00285 }
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00286"/>00286 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00287"/>00287 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00288"/>00288 <emphasis role="preprocessor">#ifndef&#32;__ICCARM_INTRINSICS_VERSION__</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00289"/>00289 <emphasis role="preprocessor">&#32;&#32;#define&#32;__ICCARM_INTRINSICS_VERSION__&#32;&#32;0</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00290"/>00290 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00291"/>00291 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00292"/>00292 <emphasis role="preprocessor">#if&#32;__ICCARM_INTRINSICS_VERSION__&#32;==&#32;2</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00293"/>00293 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00294"/>00294 <emphasis role="preprocessor">&#32;&#32;#if&#32;defined(__CLZ)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00295"/>00295 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#undef&#32;__CLZ</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00296"/>00296 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00297"/>00297 <emphasis role="preprocessor">&#32;&#32;#if&#32;defined(__REVSH)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00298"/>00298 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#undef&#32;__REVSH</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00299"/>00299 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00300"/>00300 <emphasis role="preprocessor">&#32;&#32;#if&#32;defined(__RBIT)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00301"/>00301 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#undef&#32;__RBIT</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00302"/>00302 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00303"/>00303 <emphasis role="preprocessor">&#32;&#32;#if&#32;defined(__SSAT)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00304"/>00304 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#undef&#32;__SSAT</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00305"/>00305 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00306"/>00306 <emphasis role="preprocessor">&#32;&#32;#if&#32;defined(__USAT)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00307"/>00307 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#undef&#32;__USAT</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00308"/>00308 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00309"/>00309 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00310"/>00310 <emphasis role="preprocessor">&#32;&#32;#include&#32;&quot;iccarm_builtin.h&quot;</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00311"/>00311 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00312"/>00312 <emphasis role="preprocessor">&#32;&#32;#define&#32;__disable_fault_irq&#32;__iar_builtin_disable_fiq</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00313"/>00313 <emphasis role="preprocessor">&#32;&#32;#define&#32;__disable_irq&#32;&#32;&#32;&#32;&#32;&#32;&#32;__iar_builtin_disable_interrupt</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00314"/>00314 <emphasis role="preprocessor">&#32;&#32;#define&#32;__enable_fault_irq&#32;&#32;__iar_builtin_enable_fiq</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00315"/>00315 <emphasis role="preprocessor">&#32;&#32;#define&#32;__enable_irq&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__iar_builtin_enable_interrupt</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00316"/>00316 <emphasis role="preprocessor">&#32;&#32;#define&#32;__arm_rsr&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__iar_builtin_rsr</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00317"/>00317 <emphasis role="preprocessor">&#32;&#32;#define&#32;__arm_wsr&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__iar_builtin_wsr</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00318"/>00318 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00319"/>00319 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00320"/>00320 <emphasis role="preprocessor">&#32;&#32;#define&#32;__get_APSR()&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(__arm_rsr(&quot;APSR&quot;))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00321"/>00321 <emphasis role="preprocessor">&#32;&#32;#define&#32;__get_BASEPRI()&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(__arm_rsr(&quot;BASEPRI&quot;))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00322"/>00322 <emphasis role="preprocessor">&#32;&#32;#define&#32;__get_CONTROL()&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(__arm_rsr(&quot;CONTROL&quot;))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00323"/>00323 <emphasis role="preprocessor">&#32;&#32;#define&#32;__get_FAULTMASK()&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(__arm_rsr(&quot;FAULTMASK&quot;))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00324"/>00324 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00325"/>00325 <emphasis role="preprocessor">&#32;&#32;#if&#32;((defined&#32;(__FPU_PRESENT)&#32;&amp;&amp;&#32;(__FPU_PRESENT&#32;==&#32;1U))&#32;&amp;&amp;&#32;\</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00326"/>00326 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;(defined&#32;(__FPU_USED&#32;&#32;&#32;)&#32;&amp;&amp;&#32;(__FPU_USED&#32;&#32;&#32;&#32;==&#32;1U))&#32;&#32;&#32;&#32;&#32;)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00327"/>00327 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__get_FPSCR()&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(__arm_rsr(&quot;FPSCR&quot;))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00328"/>00328 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__set_FPSCR(VALUE)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(__arm_wsr(&quot;FPSCR&quot;,&#32;(VALUE)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00329"/>00329 <emphasis role="preprocessor">&#32;&#32;#else</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00330"/>00330 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__get_FPSCR()&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(&#32;0&#32;)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00331"/>00331 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__set_FPSCR(VALUE)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((void)VALUE)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00332"/>00332 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00333"/>00333 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00334"/>00334 <emphasis role="preprocessor">&#32;&#32;#define&#32;__get_IPSR()&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(__arm_rsr(&quot;IPSR&quot;))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00335"/>00335 <emphasis role="preprocessor">&#32;&#32;#define&#32;__get_MSP()&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(__arm_rsr(&quot;MSP&quot;))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00336"/>00336 <emphasis role="preprocessor">&#32;&#32;#if&#32;(!(defined&#32;(__ARM_ARCH_8M_MAIN__&#32;)&#32;&amp;&amp;&#32;(__ARM_ARCH_8M_MAIN__&#32;==&#32;1))&#32;&amp;&amp;&#32;\</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00337"/>00337 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;(!defined&#32;(__ARM_FEATURE_CMSE)&#32;||&#32;(__ARM_FEATURE_CMSE&#32;&lt;&#32;3)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00338"/>00338 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;without&#32;main&#32;extensions,&#32;the&#32;non-secure&#32;MSPLIM&#32;is&#32;RAZ/WI</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00339"/>00339 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__get_MSPLIM()&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(0U)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00340"/>00340 <emphasis role="preprocessor">&#32;&#32;#else</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00341"/>00341 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__get_MSPLIM()&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(__arm_rsr(&quot;MSPLIM&quot;))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00342"/>00342 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00343"/>00343 <emphasis role="preprocessor">&#32;&#32;#define&#32;__get_PRIMASK()&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(__arm_rsr(&quot;PRIMASK&quot;))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00344"/>00344 <emphasis role="preprocessor">&#32;&#32;#define&#32;__get_PSP()&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(__arm_rsr(&quot;PSP&quot;))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00345"/>00345 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00346"/>00346 <emphasis role="preprocessor">&#32;&#32;#if&#32;(!(defined&#32;(__ARM_ARCH_8M_MAIN__&#32;)&#32;&amp;&amp;&#32;(__ARM_ARCH_8M_MAIN__&#32;==&#32;1))&#32;&amp;&amp;&#32;\</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00347"/>00347 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;(!defined&#32;(__ARM_FEATURE_CMSE)&#32;||&#32;(__ARM_FEATURE_CMSE&#32;&lt;&#32;3)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00348"/>00348 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;without&#32;main&#32;extensions,&#32;the&#32;non-secure&#32;PSPLIM&#32;is&#32;RAZ/WI</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00349"/>00349 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__get_PSPLIM()&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(0U)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00350"/>00350 <emphasis role="preprocessor">&#32;&#32;#else</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00351"/>00351 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__get_PSPLIM()&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(__arm_rsr(&quot;PSPLIM&quot;))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00352"/>00352 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00353"/>00353 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00354"/>00354 <emphasis role="preprocessor">&#32;&#32;#define&#32;__get_xPSR()&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(__arm_rsr(&quot;xPSR&quot;))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00355"/>00355 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00356"/>00356 <emphasis role="preprocessor">&#32;&#32;#define&#32;__set_BASEPRI(VALUE)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(__arm_wsr(&quot;BASEPRI&quot;,&#32;(VALUE)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00357"/>00357 <emphasis role="preprocessor">&#32;&#32;#define&#32;__set_BASEPRI_MAX(VALUE)&#32;&#32;&#32;&#32;(__arm_wsr(&quot;BASEPRI_MAX&quot;,&#32;(VALUE)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00358"/>00358 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00359"/>00359 __STATIC_FORCEINLINE&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1ga0102d0939d9b26c5c792be6bf5fd550f">__set_CONTROL</link>(uint32_t&#32;control)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00360"/>00360 {
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00361"/>00361 &#32;&#32;__arm_wsr(<emphasis role="stringliteral">&quot;CONTROL&quot;</emphasis>,&#32;control);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00362"/>00362 &#32;&#32;__iar_builtin_ISB();
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00363"/>00363 }
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00364"/>00364 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00365"/>00365 <emphasis role="preprocessor">&#32;&#32;#define&#32;__set_FAULTMASK(VALUE)&#32;&#32;&#32;&#32;&#32;&#32;(__arm_wsr(&quot;FAULTMASK&quot;,&#32;(VALUE)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00366"/>00366 <emphasis role="preprocessor">&#32;&#32;#define&#32;__set_MSP(VALUE)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(__arm_wsr(&quot;MSP&quot;,&#32;(VALUE)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00367"/>00367 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00368"/>00368 <emphasis role="preprocessor">&#32;&#32;#if&#32;(!(defined&#32;(__ARM_ARCH_8M_MAIN__&#32;)&#32;&amp;&amp;&#32;(__ARM_ARCH_8M_MAIN__&#32;==&#32;1))&#32;&amp;&amp;&#32;\</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00369"/>00369 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;(!defined&#32;(__ARM_FEATURE_CMSE)&#32;||&#32;(__ARM_FEATURE_CMSE&#32;&lt;&#32;3)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00370"/>00370 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;without&#32;main&#32;extensions,&#32;the&#32;non-secure&#32;MSPLIM&#32;is&#32;RAZ/WI</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00371"/>00371 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__set_MSPLIM(VALUE)&#32;&#32;&#32;&#32;&#32;&#32;&#32;((void)(VALUE))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00372"/>00372 <emphasis role="preprocessor">&#32;&#32;#else</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00373"/>00373 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__set_MSPLIM(VALUE)&#32;&#32;&#32;&#32;&#32;&#32;&#32;(__arm_wsr(&quot;MSPLIM&quot;,&#32;(VALUE)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00374"/>00374 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00375"/>00375 <emphasis role="preprocessor">&#32;&#32;#define&#32;__set_PRIMASK(VALUE)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(__arm_wsr(&quot;PRIMASK&quot;,&#32;(VALUE)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00376"/>00376 <emphasis role="preprocessor">&#32;&#32;#define&#32;__set_PSP(VALUE)&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(__arm_wsr(&quot;PSP&quot;,&#32;(VALUE)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00377"/>00377 <emphasis role="preprocessor">&#32;&#32;#if&#32;(!(defined&#32;(__ARM_ARCH_8M_MAIN__&#32;)&#32;&amp;&amp;&#32;(__ARM_ARCH_8M_MAIN__&#32;==&#32;1))&#32;&amp;&amp;&#32;\</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00378"/>00378 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;(!defined&#32;(__ARM_FEATURE_CMSE)&#32;||&#32;(__ARM_FEATURE_CMSE&#32;&lt;&#32;3)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00379"/>00379 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;without&#32;main&#32;extensions,&#32;the&#32;non-secure&#32;PSPLIM&#32;is&#32;RAZ/WI</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00380"/>00380 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__set_PSPLIM(VALUE)&#32;&#32;&#32;&#32;&#32;&#32;&#32;((void)(VALUE))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00381"/>00381 <emphasis role="preprocessor">&#32;&#32;#else</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00382"/>00382 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__set_PSPLIM(VALUE)&#32;&#32;&#32;&#32;&#32;&#32;&#32;(__arm_wsr(&quot;PSPLIM&quot;,&#32;(VALUE)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00383"/>00383 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00384"/>00384 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00385"/>00385 <emphasis role="preprocessor">&#32;&#32;#define&#32;__TZ_get_CONTROL_NS()&#32;&#32;&#32;&#32;&#32;&#32;&#32;(__arm_rsr(&quot;CONTROL_NS&quot;))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00386"/>00386 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00387"/>00387 __STATIC_FORCEINLINE&#32;<emphasis role="keywordtype">void</emphasis>&#32;__TZ_set_CONTROL_NS(uint32_t&#32;control)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00388"/>00388 {
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00389"/>00389 &#32;&#32;__arm_wsr(<emphasis role="stringliteral">&quot;CONTROL_NS&quot;</emphasis>,&#32;control);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00390"/>00390 &#32;&#32;__iar_builtin_ISB();
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00391"/>00391 }
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00392"/>00392 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00393"/>00393 <emphasis role="preprocessor">&#32;&#32;#define&#32;__TZ_get_PSP_NS()&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(__arm_rsr(&quot;PSP_NS&quot;))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00394"/>00394 <emphasis role="preprocessor">&#32;&#32;#define&#32;__TZ_set_PSP_NS(VALUE)&#32;&#32;&#32;&#32;&#32;&#32;(__arm_wsr(&quot;PSP_NS&quot;,&#32;(VALUE)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00395"/>00395 <emphasis role="preprocessor">&#32;&#32;#define&#32;__TZ_get_MSP_NS()&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(__arm_rsr(&quot;MSP_NS&quot;))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00396"/>00396 <emphasis role="preprocessor">&#32;&#32;#define&#32;__TZ_set_MSP_NS(VALUE)&#32;&#32;&#32;&#32;&#32;&#32;(__arm_wsr(&quot;MSP_NS&quot;,&#32;(VALUE)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00397"/>00397 <emphasis role="preprocessor">&#32;&#32;#define&#32;__TZ_get_SP_NS()&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(__arm_rsr(&quot;SP_NS&quot;))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00398"/>00398 <emphasis role="preprocessor">&#32;&#32;#define&#32;__TZ_set_SP_NS(VALUE)&#32;&#32;&#32;&#32;&#32;&#32;&#32;(__arm_wsr(&quot;SP_NS&quot;,&#32;(VALUE)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00399"/>00399 <emphasis role="preprocessor">&#32;&#32;#define&#32;__TZ_get_PRIMASK_NS()&#32;&#32;&#32;&#32;&#32;&#32;&#32;(__arm_rsr(&quot;PRIMASK_NS&quot;))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00400"/>00400 <emphasis role="preprocessor">&#32;&#32;#define&#32;__TZ_set_PRIMASK_NS(VALUE)&#32;&#32;(__arm_wsr(&quot;PRIMASK_NS&quot;,&#32;(VALUE)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00401"/>00401 <emphasis role="preprocessor">&#32;&#32;#define&#32;__TZ_get_BASEPRI_NS()&#32;&#32;&#32;&#32;&#32;&#32;&#32;(__arm_rsr(&quot;BASEPRI_NS&quot;))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00402"/>00402 <emphasis role="preprocessor">&#32;&#32;#define&#32;__TZ_set_BASEPRI_NS(VALUE)&#32;&#32;(__arm_wsr(&quot;BASEPRI_NS&quot;,&#32;(VALUE)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00403"/>00403 <emphasis role="preprocessor">&#32;&#32;#define&#32;__TZ_get_FAULTMASK_NS()&#32;&#32;&#32;&#32;&#32;(__arm_rsr(&quot;FAULTMASK_NS&quot;))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00404"/>00404 <emphasis role="preprocessor">&#32;&#32;#define&#32;__TZ_set_FAULTMASK_NS(VALUE)(__arm_wsr(&quot;FAULTMASK_NS&quot;,&#32;(VALUE)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00405"/>00405 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00406"/>00406 <emphasis role="preprocessor">&#32;&#32;#if&#32;(!(defined&#32;(__ARM_ARCH_8M_MAIN__&#32;)&#32;&amp;&amp;&#32;(__ARM_ARCH_8M_MAIN__&#32;==&#32;1))&#32;&amp;&amp;&#32;\</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00407"/>00407 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;(!defined&#32;(__ARM_FEATURE_CMSE)&#32;||&#32;(__ARM_FEATURE_CMSE&#32;&lt;&#32;3)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00408"/>00408 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;without&#32;main&#32;extensions,&#32;the&#32;non-secure&#32;PSPLIM&#32;is&#32;RAZ/WI</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00409"/>00409 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__TZ_get_PSPLIM_NS()&#32;&#32;&#32;&#32;&#32;&#32;(0U)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00410"/>00410 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__TZ_set_PSPLIM_NS(VALUE)&#32;((void)(VALUE))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00411"/>00411 <emphasis role="preprocessor">&#32;&#32;#else</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00412"/>00412 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__TZ_get_PSPLIM_NS()&#32;&#32;&#32;&#32;&#32;&#32;(__arm_rsr(&quot;PSPLIM_NS&quot;))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00413"/>00413 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__TZ_set_PSPLIM_NS(VALUE)&#32;(__arm_wsr(&quot;PSPLIM_NS&quot;,&#32;(VALUE)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00414"/>00414 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00415"/>00415 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00416"/>00416 <emphasis role="preprocessor">&#32;&#32;#define&#32;__TZ_get_MSPLIM_NS()&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(__arm_rsr(&quot;MSPLIM_NS&quot;))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00417"/>00417 <emphasis role="preprocessor">&#32;&#32;#define&#32;__TZ_set_MSPLIM_NS(VALUE)&#32;&#32;&#32;(__arm_wsr(&quot;MSPLIM_NS&quot;,&#32;(VALUE)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00418"/>00418 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00419"/>00419 <emphasis role="preprocessor">&#32;&#32;#define&#32;__NOP&#32;&#32;&#32;&#32;&#32;__iar_builtin_no_operation</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00420"/>00420 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00421"/>00421 <emphasis role="preprocessor">&#32;&#32;#define&#32;__CLZ&#32;&#32;&#32;&#32;&#32;__iar_builtin_CLZ</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00422"/>00422 <emphasis role="preprocessor">&#32;&#32;#define&#32;__CLREX&#32;&#32;&#32;__iar_builtin_CLREX</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00423"/>00423 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00424"/>00424 <emphasis role="preprocessor">&#32;&#32;#define&#32;__DMB&#32;&#32;&#32;&#32;&#32;__iar_builtin_DMB</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00425"/>00425 <emphasis role="preprocessor">&#32;&#32;#define&#32;__DSB&#32;&#32;&#32;&#32;&#32;__iar_builtin_DSB</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00426"/>00426 <emphasis role="preprocessor">&#32;&#32;#define&#32;__ISB&#32;&#32;&#32;&#32;&#32;__iar_builtin_ISB</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00427"/>00427 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00428"/>00428 <emphasis role="preprocessor">&#32;&#32;#define&#32;__LDREXB&#32;&#32;__iar_builtin_LDREXB</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00429"/>00429 <emphasis role="preprocessor">&#32;&#32;#define&#32;__LDREXH&#32;&#32;__iar_builtin_LDREXH</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00430"/>00430 <emphasis role="preprocessor">&#32;&#32;#define&#32;__LDREXW&#32;&#32;__iar_builtin_LDREX</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00431"/>00431 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00432"/>00432 <emphasis role="preprocessor">&#32;&#32;#define&#32;__RBIT&#32;&#32;&#32;&#32;__iar_builtin_RBIT</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00433"/>00433 <emphasis role="preprocessor">&#32;&#32;#define&#32;__REV&#32;&#32;&#32;&#32;&#32;__iar_builtin_REV</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00434"/>00434 <emphasis role="preprocessor">&#32;&#32;#define&#32;__REV16&#32;&#32;&#32;__iar_builtin_REV16</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00435"/>00435 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00436"/>00436 &#32;&#32;__IAR_FT&#32;int16_t&#32;<link linkend="_group___c_m_s_i_s___core___instruction_interface_1gae580812686119c9c5cf3c11a7519a404">__REVSH</link>(int16_t&#32;val)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00437"/>00437 &#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00438"/>00438 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;(int16_t)&#32;__iar_builtin_REVSH(val);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00439"/>00439 &#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00440"/>00440 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00441"/>00441 <emphasis role="preprocessor">&#32;&#32;#define&#32;__ROR&#32;&#32;&#32;&#32;&#32;__iar_builtin_ROR</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00442"/>00442 <emphasis role="preprocessor">&#32;&#32;#define&#32;__RRX&#32;&#32;&#32;&#32;&#32;__iar_builtin_RRX</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00443"/>00443 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00444"/>00444 <emphasis role="preprocessor">&#32;&#32;#define&#32;__SEV&#32;&#32;&#32;&#32;&#32;__iar_builtin_SEV</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00445"/>00445 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00446"/>00446 <emphasis role="preprocessor">&#32;&#32;#if&#32;!__IAR_M0_FAMILY</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00447"/>00447 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SSAT&#32;&#32;&#32;&#32;__iar_builtin_SSAT</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00448"/>00448 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00449"/>00449 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00450"/>00450 <emphasis role="preprocessor">&#32;&#32;#define&#32;__STREXB&#32;&#32;__iar_builtin_STREXB</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00451"/>00451 <emphasis role="preprocessor">&#32;&#32;#define&#32;__STREXH&#32;&#32;__iar_builtin_STREXH</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00452"/>00452 <emphasis role="preprocessor">&#32;&#32;#define&#32;__STREXW&#32;&#32;__iar_builtin_STREX</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00453"/>00453 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00454"/>00454 <emphasis role="preprocessor">&#32;&#32;#if&#32;!__IAR_M0_FAMILY</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00455"/>00455 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__USAT&#32;&#32;&#32;&#32;__iar_builtin_USAT</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00456"/>00456 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00457"/>00457 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00458"/>00458 <emphasis role="preprocessor">&#32;&#32;#define&#32;__WFE&#32;&#32;&#32;&#32;&#32;__iar_builtin_WFE</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00459"/>00459 <emphasis role="preprocessor">&#32;&#32;#define&#32;__WFI&#32;&#32;&#32;&#32;&#32;__iar_builtin_WFI</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00460"/>00460 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00461"/>00461 <emphasis role="preprocessor">&#32;&#32;#if&#32;__ARM_MEDIA__</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00462"/>00462 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SADD8&#32;&#32;&#32;__iar_builtin_SADD8</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00463"/>00463 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__QADD8&#32;&#32;&#32;__iar_builtin_QADD8</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00464"/>00464 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SHADD8&#32;&#32;__iar_builtin_SHADD8</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00465"/>00465 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__UADD8&#32;&#32;&#32;__iar_builtin_UADD8</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00466"/>00466 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__UQADD8&#32;&#32;__iar_builtin_UQADD8</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00467"/>00467 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__UHADD8&#32;&#32;__iar_builtin_UHADD8</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00468"/>00468 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SSUB8&#32;&#32;&#32;__iar_builtin_SSUB8</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00469"/>00469 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__QSUB8&#32;&#32;&#32;__iar_builtin_QSUB8</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00470"/>00470 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SHSUB8&#32;&#32;__iar_builtin_SHSUB8</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00471"/>00471 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__USUB8&#32;&#32;&#32;__iar_builtin_USUB8</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00472"/>00472 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__UQSUB8&#32;&#32;__iar_builtin_UQSUB8</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00473"/>00473 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__UHSUB8&#32;&#32;__iar_builtin_UHSUB8</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00474"/>00474 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SADD16&#32;&#32;__iar_builtin_SADD16</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00475"/>00475 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__QADD16&#32;&#32;__iar_builtin_QADD16</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00476"/>00476 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SHADD16&#32;__iar_builtin_SHADD16</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00477"/>00477 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__UADD16&#32;&#32;__iar_builtin_UADD16</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00478"/>00478 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__UQADD16&#32;__iar_builtin_UQADD16</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00479"/>00479 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__UHADD16&#32;__iar_builtin_UHADD16</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00480"/>00480 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SSUB16&#32;&#32;__iar_builtin_SSUB16</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00481"/>00481 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__QSUB16&#32;&#32;__iar_builtin_QSUB16</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00482"/>00482 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SHSUB16&#32;__iar_builtin_SHSUB16</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00483"/>00483 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__USUB16&#32;&#32;__iar_builtin_USUB16</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00484"/>00484 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__UQSUB16&#32;__iar_builtin_UQSUB16</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00485"/>00485 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__UHSUB16&#32;__iar_builtin_UHSUB16</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00486"/>00486 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SASX&#32;&#32;&#32;&#32;__iar_builtin_SASX</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00487"/>00487 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__QASX&#32;&#32;&#32;&#32;__iar_builtin_QASX</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00488"/>00488 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SHASX&#32;&#32;&#32;__iar_builtin_SHASX</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00489"/>00489 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__UASX&#32;&#32;&#32;&#32;__iar_builtin_UASX</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00490"/>00490 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__UQASX&#32;&#32;&#32;__iar_builtin_UQASX</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00491"/>00491 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__UHASX&#32;&#32;&#32;__iar_builtin_UHASX</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00492"/>00492 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SSAX&#32;&#32;&#32;&#32;__iar_builtin_SSAX</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00493"/>00493 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__QSAX&#32;&#32;&#32;&#32;__iar_builtin_QSAX</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00494"/>00494 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SHSAX&#32;&#32;&#32;__iar_builtin_SHSAX</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00495"/>00495 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__USAX&#32;&#32;&#32;&#32;__iar_builtin_USAX</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00496"/>00496 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__UQSAX&#32;&#32;&#32;__iar_builtin_UQSAX</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00497"/>00497 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__UHSAX&#32;&#32;&#32;__iar_builtin_UHSAX</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00498"/>00498 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__USAD8&#32;&#32;&#32;__iar_builtin_USAD8</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00499"/>00499 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__USADA8&#32;&#32;__iar_builtin_USADA8</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00500"/>00500 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SSAT16&#32;&#32;__iar_builtin_SSAT16</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00501"/>00501 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__USAT16&#32;&#32;__iar_builtin_USAT16</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00502"/>00502 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__UXTB16&#32;&#32;__iar_builtin_UXTB16</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00503"/>00503 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__UXTAB16&#32;__iar_builtin_UXTAB16</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00504"/>00504 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SXTB16&#32;&#32;__iar_builtin_SXTB16</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00505"/>00505 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SXTAB16&#32;__iar_builtin_SXTAB16</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00506"/>00506 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SMUAD&#32;&#32;&#32;__iar_builtin_SMUAD</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00507"/>00507 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SMUADX&#32;&#32;__iar_builtin_SMUADX</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00508"/>00508 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SMMLA&#32;&#32;&#32;__iar_builtin_SMMLA</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00509"/>00509 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SMLAD&#32;&#32;&#32;__iar_builtin_SMLAD</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00510"/>00510 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SMLADX&#32;&#32;__iar_builtin_SMLADX</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00511"/>00511 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SMLALD&#32;&#32;__iar_builtin_SMLALD</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00512"/>00512 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SMLALDX&#32;__iar_builtin_SMLALDX</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00513"/>00513 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SMUSD&#32;&#32;&#32;__iar_builtin_SMUSD</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00514"/>00514 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SMUSDX&#32;&#32;__iar_builtin_SMUSDX</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00515"/>00515 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SMLSD&#32;&#32;&#32;__iar_builtin_SMLSD</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00516"/>00516 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SMLSDX&#32;&#32;__iar_builtin_SMLSDX</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00517"/>00517 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SMLSLD&#32;&#32;__iar_builtin_SMLSLD</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00518"/>00518 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SMLSLDX&#32;__iar_builtin_SMLSLDX</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00519"/>00519 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SEL&#32;&#32;&#32;&#32;&#32;__iar_builtin_SEL</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00520"/>00520 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__QADD&#32;&#32;&#32;&#32;__iar_builtin_QADD</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00521"/>00521 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__QSUB&#32;&#32;&#32;&#32;__iar_builtin_QSUB</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00522"/>00522 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__PKHBT&#32;&#32;&#32;__iar_builtin_PKHBT</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00523"/>00523 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__PKHTB&#32;&#32;&#32;__iar_builtin_PKHTB</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00524"/>00524 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00525"/>00525 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00526"/>00526 <emphasis role="preprocessor">#else&#32;</emphasis><emphasis role="comment">/*&#32;__ICCARM_INTRINSICS_VERSION__&#32;==&#32;2&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00527"/>00527 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00528"/>00528 <emphasis role="preprocessor">&#32;&#32;#if&#32;__IAR_M0_FAMILY</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00529"/>00529 &#32;&#32;&#32;<emphasis role="comment">/*&#32;Avoid&#32;clash&#32;between&#32;intrinsics.h&#32;and&#32;arm_math.h&#32;when&#32;compiling&#32;for&#32;Cortex-M0.&#32;*/</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00530"/>00530 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__CLZ&#32;&#32;__cmsis_iar_clz_not_active</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00531"/>00531 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__SSAT&#32;__cmsis_iar_ssat_not_active</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00532"/>00532 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__USAT&#32;__cmsis_iar_usat_not_active</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00533"/>00533 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__RBIT&#32;__cmsis_iar_rbit_not_active</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00534"/>00534 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__get_APSR&#32;&#32;__cmsis_iar_get_APSR_not_active</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00535"/>00535 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00536"/>00536 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00537"/>00537 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00538"/>00538 <emphasis role="preprocessor">&#32;&#32;#if&#32;(!((defined&#32;(__FPU_PRESENT)&#32;&amp;&amp;&#32;(__FPU_PRESENT&#32;==&#32;1U))&#32;&amp;&amp;&#32;\</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00539"/>00539 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(defined&#32;(__FPU_USED&#32;&#32;&#32;)&#32;&amp;&amp;&#32;(__FPU_USED&#32;&#32;&#32;&#32;==&#32;1U))&#32;&#32;&#32;&#32;&#32;))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00540"/>00540 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__get_FPSCR&#32;__cmsis_iar_get_FPSR_not_active</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00541"/>00541 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__set_FPSCR&#32;__cmsis_iar_set_FPSR_not_active</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00542"/>00542 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00543"/>00543 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00544"/>00544 <emphasis role="preprocessor">&#32;&#32;#ifdef&#32;__INTRINSICS_INCLUDED</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00545"/>00545 <emphasis role="preprocessor">&#32;&#32;#error&#32;intrinsics.h&#32;is&#32;already&#32;included&#32;previously!</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00546"/>00546 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00547"/>00547 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00548"/>00548 <emphasis role="preprocessor">&#32;&#32;#include&#32;&lt;intrinsics.h&gt;</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00549"/>00549 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00550"/>00550 <emphasis role="preprocessor">&#32;&#32;#if&#32;__IAR_M0_FAMILY</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00551"/>00551 &#32;&#32;&#32;<emphasis role="comment">/*&#32;Avoid&#32;clash&#32;between&#32;intrinsics.h&#32;and&#32;arm_math.h&#32;when&#32;compiling&#32;for&#32;Cortex-M0.&#32;*/</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00552"/>00552 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#undef&#32;__CLZ</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00553"/>00553 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#undef&#32;__SSAT</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00554"/>00554 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#undef&#32;__USAT</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00555"/>00555 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#undef&#32;__RBIT</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00556"/>00556 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#undef&#32;__get_APSR</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00557"/>00557 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00558"/>00558 &#32;&#32;&#32;&#32;__STATIC_INLINE&#32;uint8_t&#32;<link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga5d5bb1527e042be4a9fa5a33f65cc248">__CLZ</link>(uint32_t&#32;data)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00559"/>00559 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00560"/>00560 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(data&#32;==&#32;0U)&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;32U;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00561"/>00561 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00562"/>00562 &#32;&#32;&#32;&#32;&#32;&#32;uint32_t&#32;count&#32;=&#32;0U;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00563"/>00563 &#32;&#32;&#32;&#32;&#32;&#32;uint32_t&#32;mask&#32;=&#32;0x80000000U;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00564"/>00564 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00565"/>00565 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>&#32;((data&#32;&amp;&#32;mask)&#32;==&#32;0U)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00566"/>00566 &#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00567"/>00567 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;count&#32;+=&#32;1U;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00568"/>00568 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mask&#32;=&#32;mask&#32;&gt;&gt;&#32;1U;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00569"/>00569 &#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00570"/>00570 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;count;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00571"/>00571 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00572"/>00572 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00573"/>00573 &#32;&#32;&#32;&#32;__STATIC_INLINE&#32;uint32_t&#32;<link linkend="_group___c_m_s_i_s___core___instruction_interface_1gab83768933a612816fad669db5488366f">__RBIT</link>(uint32_t&#32;v)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00574"/>00574 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00575"/>00575 &#32;&#32;&#32;&#32;&#32;&#32;uint8_t&#32;sc&#32;=&#32;31U;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00576"/>00576 &#32;&#32;&#32;&#32;&#32;&#32;uint32_t&#32;r&#32;=&#32;v;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00577"/>00577 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(v&#32;&gt;&gt;=&#32;1U;&#32;v;&#32;v&#32;&gt;&gt;=&#32;1U)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00578"/>00578 &#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00579"/>00579 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;r&#32;&lt;&lt;=&#32;1U;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00580"/>00580 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;r&#32;|=&#32;v&#32;&amp;&#32;1U;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00581"/>00581 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;sc--;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00582"/>00582 &#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00583"/>00583 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;(r&#32;&lt;&lt;&#32;sc);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00584"/>00584 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00585"/>00585 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00586"/>00586 &#32;&#32;&#32;&#32;__STATIC_INLINE&#32;&#32;uint32_t&#32;<link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1gadff4f1e599946e8ae96fba17b5245f04">__get_APSR</link>(<emphasis role="keywordtype">void</emphasis>)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00587"/>00587 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00588"/>00588 &#32;&#32;&#32;&#32;&#32;&#32;uint32_t&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00589"/>00589 &#32;&#32;&#32;&#32;&#32;&#32;__asm(<emphasis role="stringliteral">&quot;MRS&#32;&#32;&#32;&#32;&#32;&#32;%0,APSR&quot;</emphasis>&#32;:&#32;<emphasis role="stringliteral">&quot;=r&quot;</emphasis>&#32;(res));
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00590"/>00590 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00591"/>00591 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00592"/>00592 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00593"/>00593 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00594"/>00594 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00595"/>00595 <emphasis role="preprocessor">&#32;&#32;#if&#32;(!((defined&#32;(__FPU_PRESENT)&#32;&amp;&amp;&#32;(__FPU_PRESENT&#32;==&#32;1U))&#32;&amp;&amp;&#32;\</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00596"/>00596 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(defined&#32;(__FPU_USED&#32;&#32;&#32;)&#32;&amp;&amp;&#32;(__FPU_USED&#32;&#32;&#32;&#32;==&#32;1U))&#32;&#32;&#32;&#32;&#32;))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00597"/>00597 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#undef&#32;__get_FPSCR</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00598"/>00598 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#undef&#32;__set_FPSCR</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00599"/>00599 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__get_FPSCR()&#32;&#32;&#32;&#32;&#32;&#32;&#32;(0)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00600"/>00600 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__set_FPSCR(VALUE)&#32;&#32;((void)VALUE)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00601"/>00601 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00602"/>00602 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00603"/>00603 <emphasis role="preprocessor">&#32;&#32;#pragma&#32;diag_suppress=Pe940</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00604"/>00604 <emphasis role="preprocessor">&#32;&#32;#pragma&#32;diag_suppress=Pe177</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00605"/>00605 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00606"/><link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1ga63ab98aec1a5bde0e191fb22e693f480">00606</link> <emphasis role="preprocessor">&#32;&#32;#define&#32;__enable_irq&#32;&#32;&#32;&#32;__enable_interrupt</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00607"/><link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1ga9a8f966bf50cc372e7ac092f612efd1a">00607</link> <emphasis role="preprocessor">&#32;&#32;#define&#32;__disable_irq&#32;&#32;&#32;__disable_interrupt</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00608"/>00608 <emphasis role="preprocessor">&#32;&#32;#define&#32;__NOP&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__no_operation</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00609"/>00609 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00610"/><link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1gae0d8e20f8c3c2a502075dabcff733c05">00610</link> <emphasis role="preprocessor">&#32;&#32;#define&#32;__get_xPSR&#32;&#32;&#32;&#32;&#32;&#32;__get_PSR</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00611"/>00611 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00612"/>00612 <emphasis role="preprocessor">&#32;&#32;#if&#32;(!defined(__ARM_ARCH_6M__)&#32;||&#32;__ARM_ARCH_6M__==0)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00613"/>00613 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00614"/>00614 &#32;&#32;&#32;&#32;__IAR_FT&#32;uint32_t&#32;__LDREXW(uint32_t&#32;<emphasis role="keyword">volatile</emphasis>&#32;*ptr)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00615"/>00615 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00616"/>00616 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;__LDREX((<emphasis role="keywordtype">unsigned</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;*)ptr);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00617"/>00617 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00618"/>00618 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00619"/>00619 &#32;&#32;&#32;&#32;__IAR_FT&#32;uint32_t&#32;__STREXW(uint32_t&#32;value,&#32;uint32_t&#32;<emphasis role="keyword">volatile</emphasis>&#32;*ptr)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00620"/>00620 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00621"/>00621 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;__STREX(value,&#32;(<emphasis role="keywordtype">unsigned</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;*)ptr);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00622"/>00622 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00623"/>00623 <emphasis role="preprocessor">&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00624"/>00624 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00625"/>00625 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00626"/>00626 &#32;&#32;<emphasis role="comment">/*&#32;__CORTEX_M&#32;is&#32;defined&#32;in&#32;core_cm0.h,&#32;core_cm3.h&#32;and&#32;core_cm4.h.&#32;*/</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00627"/>00627 <emphasis role="preprocessor">&#32;&#32;#if&#32;(__CORTEX_M&#32;&gt;=&#32;0x03)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00628"/>00628 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00629"/>00629 &#32;&#32;&#32;&#32;__IAR_FT&#32;uint32_t&#32;__RRX(uint32_t&#32;value)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00630"/>00630 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00631"/>00631 &#32;&#32;&#32;&#32;&#32;&#32;uint32_t&#32;result;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00632"/>00632 &#32;&#32;&#32;&#32;&#32;&#32;__ASM&#32;<emphasis role="keyword">volatile</emphasis>(<emphasis role="stringliteral">&quot;RRX&#32;&#32;&#32;&#32;&#32;&#32;%0,&#32;%1&quot;</emphasis>&#32;:&#32;<emphasis role="stringliteral">&quot;=r&quot;</emphasis>(result)&#32;:&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(value));
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00633"/>00633 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>(result);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00634"/>00634 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00635"/>00635 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00636"/>00636 &#32;&#32;&#32;&#32;__IAR_FT&#32;<emphasis role="keywordtype">void</emphasis>&#32;__set_BASEPRI_MAX(uint32_t&#32;value)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00637"/>00637 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00638"/>00638 &#32;&#32;&#32;&#32;&#32;&#32;__asm&#32;<emphasis role="keyword">volatile</emphasis>(<emphasis role="stringliteral">&quot;MSR&#32;&#32;&#32;&#32;&#32;&#32;BASEPRI_MAX,%0&quot;</emphasis>::<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(value));
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00639"/>00639 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00640"/>00640 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00641"/>00641 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00642"/>00642 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__enable_fault_irq&#32;&#32;__enable_fiq</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00643"/>00643 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#define&#32;__disable_fault_irq&#32;__disable_fiq</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00644"/>00644 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00645"/>00645 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00646"/>00646 <emphasis role="preprocessor">&#32;&#32;#endif&#32;</emphasis><emphasis role="comment">/*&#32;(__CORTEX_M&#32;&gt;=&#32;0x03)&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00647"/>00647 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00648"/>00648 &#32;&#32;__IAR_FT&#32;uint32_t&#32;<link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga95b9bd281ddeda378b85afdb8f2ced86">__ROR</link>(uint32_t&#32;op1,&#32;uint32_t&#32;op2)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00649"/>00649 &#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00650"/>00650 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;(op1&#32;&gt;&gt;&#32;op2)&#32;|&#32;(op1&#32;&lt;&lt;&#32;((<emphasis role="keyword">sizeof</emphasis>(op1)*8)-op2));
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00651"/>00651 &#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00652"/>00652 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00653"/>00653 <emphasis role="preprocessor">&#32;&#32;#if&#32;((defined&#32;(__ARM_ARCH_8M_MAIN__&#32;)&#32;&amp;&amp;&#32;(__ARM_ARCH_8M_MAIN__&#32;==&#32;1))&#32;||&#32;\</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00654"/>00654 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;(defined&#32;(__ARM_ARCH_8M_BASE__&#32;)&#32;&amp;&amp;&#32;(__ARM_ARCH_8M_BASE__&#32;==&#32;1))&#32;&#32;&#32;&#32;)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00655"/>00655 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00656"/>00656 &#32;&#32;&#32;__IAR_FT&#32;uint32_t&#32;__get_MSPLIM(<emphasis role="keywordtype">void</emphasis>)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00657"/>00657 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00658"/>00658 &#32;&#32;&#32;&#32;&#32;&#32;uint32_t&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00659"/>00659 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#if&#32;(!(defined&#32;(__ARM_ARCH_8M_MAIN__&#32;)&#32;&amp;&amp;&#32;(__ARM_ARCH_8M_MAIN__&#32;==&#32;1))&#32;&amp;&amp;&#32;\</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00660"/>00660 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(!defined&#32;(__ARM_FEATURE_CMSE&#32;&#32;)&#32;||&#32;(__ARM_FEATURE_CMSE&#32;&#32;&#32;&lt;&#32;3)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00661"/>00661 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;without&#32;main&#32;extensions,&#32;the&#32;non-secure&#32;MSPLIM&#32;is&#32;RAZ/WI</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00662"/>00662 &#32;&#32;&#32;&#32;&#32;&#32;res&#32;=&#32;0U;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00663"/>00663 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#else</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00664"/>00664 &#32;&#32;&#32;&#32;&#32;&#32;__asm&#32;<emphasis role="keyword">volatile</emphasis>(<emphasis role="stringliteral">&quot;MRS&#32;&#32;&#32;&#32;&#32;&#32;%0,MSPLIM&quot;</emphasis>&#32;:&#32;<emphasis role="stringliteral">&quot;=r&quot;</emphasis>&#32;(res));
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00665"/>00665 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00666"/>00666 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00667"/>00667 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00668"/>00668 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00669"/>00669 &#32;&#32;&#32;&#32;__IAR_FT&#32;<emphasis role="keywordtype">void</emphasis>&#32;&#32;&#32;__set_MSPLIM(uint32_t&#32;value)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00670"/>00670 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00671"/>00671 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#if&#32;(!(defined&#32;(__ARM_ARCH_8M_MAIN__&#32;)&#32;&amp;&amp;&#32;(__ARM_ARCH_8M_MAIN__&#32;==&#32;1))&#32;&amp;&amp;&#32;\</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00672"/>00672 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(!defined&#32;(__ARM_FEATURE_CMSE&#32;&#32;)&#32;||&#32;(__ARM_FEATURE_CMSE&#32;&#32;&#32;&lt;&#32;3)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00673"/>00673 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;without&#32;main&#32;extensions,&#32;the&#32;non-secure&#32;MSPLIM&#32;is&#32;RAZ/WI</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00674"/>00674 &#32;&#32;&#32;&#32;&#32;&#32;(void)value;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00675"/>00675 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#else</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00676"/>00676 &#32;&#32;&#32;&#32;&#32;&#32;__asm&#32;<emphasis role="keyword">volatile</emphasis>(<emphasis role="stringliteral">&quot;MSR&#32;&#32;&#32;&#32;&#32;&#32;MSPLIM,%0&quot;</emphasis>&#32;::&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(value));
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00677"/>00677 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00678"/>00678 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00679"/>00679 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00680"/>00680 &#32;&#32;&#32;&#32;__IAR_FT&#32;uint32_t&#32;__get_PSPLIM(<emphasis role="keywordtype">void</emphasis>)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00681"/>00681 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00682"/>00682 &#32;&#32;&#32;&#32;&#32;&#32;uint32_t&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00683"/>00683 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#if&#32;(!(defined&#32;(__ARM_ARCH_8M_MAIN__&#32;)&#32;&amp;&amp;&#32;(__ARM_ARCH_8M_MAIN__&#32;==&#32;1))&#32;&amp;&amp;&#32;\</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00684"/>00684 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(!defined&#32;(__ARM_FEATURE_CMSE&#32;&#32;)&#32;||&#32;(__ARM_FEATURE_CMSE&#32;&#32;&#32;&lt;&#32;3)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00685"/>00685 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;without&#32;main&#32;extensions,&#32;the&#32;non-secure&#32;PSPLIM&#32;is&#32;RAZ/WI</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00686"/>00686 &#32;&#32;&#32;&#32;&#32;&#32;res&#32;=&#32;0U;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00687"/>00687 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#else</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00688"/>00688 &#32;&#32;&#32;&#32;&#32;&#32;__asm&#32;<emphasis role="keyword">volatile</emphasis>(<emphasis role="stringliteral">&quot;MRS&#32;&#32;&#32;&#32;&#32;&#32;%0,PSPLIM&quot;</emphasis>&#32;:&#32;<emphasis role="stringliteral">&quot;=r&quot;</emphasis>&#32;(res));
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00689"/>00689 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00690"/>00690 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00691"/>00691 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00692"/>00692 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00693"/>00693 &#32;&#32;&#32;&#32;__IAR_FT&#32;<emphasis role="keywordtype">void</emphasis>&#32;&#32;&#32;__set_PSPLIM(uint32_t&#32;value)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00694"/>00694 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00695"/>00695 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#if&#32;(!(defined&#32;(__ARM_ARCH_8M_MAIN__&#32;)&#32;&amp;&amp;&#32;(__ARM_ARCH_8M_MAIN__&#32;==&#32;1))&#32;&amp;&amp;&#32;\</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00696"/>00696 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(!defined&#32;(__ARM_FEATURE_CMSE&#32;&#32;)&#32;||&#32;(__ARM_FEATURE_CMSE&#32;&#32;&#32;&lt;&#32;3)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00697"/>00697 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;without&#32;main&#32;extensions,&#32;the&#32;non-secure&#32;PSPLIM&#32;is&#32;RAZ/WI</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00698"/>00698 &#32;&#32;&#32;&#32;&#32;&#32;(void)value;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00699"/>00699 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#else</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00700"/>00700 &#32;&#32;&#32;&#32;&#32;&#32;__asm&#32;<emphasis role="keyword">volatile</emphasis>(<emphasis role="stringliteral">&quot;MSR&#32;&#32;&#32;&#32;&#32;&#32;PSPLIM,%0&quot;</emphasis>&#32;::&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(value));
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00701"/>00701 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00702"/>00702 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00703"/>00703 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00704"/>00704 &#32;&#32;&#32;&#32;__IAR_FT&#32;uint32_t&#32;__TZ_get_CONTROL_NS(<emphasis role="keywordtype">void</emphasis>)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00705"/>00705 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00706"/>00706 &#32;&#32;&#32;&#32;&#32;&#32;uint32_t&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00707"/>00707 &#32;&#32;&#32;&#32;&#32;&#32;__asm&#32;<emphasis role="keyword">volatile</emphasis>(<emphasis role="stringliteral">&quot;MRS&#32;&#32;&#32;&#32;&#32;&#32;%0,CONTROL_NS&quot;</emphasis>&#32;:&#32;<emphasis role="stringliteral">&quot;=r&quot;</emphasis>&#32;(res));
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00708"/>00708 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00709"/>00709 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00710"/>00710 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00711"/>00711 &#32;&#32;&#32;&#32;__IAR_FT&#32;<emphasis role="keywordtype">void</emphasis>&#32;&#32;&#32;__TZ_set_CONTROL_NS(uint32_t&#32;value)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00712"/>00712 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00713"/>00713 &#32;&#32;&#32;&#32;&#32;&#32;__asm&#32;<emphasis role="keyword">volatile</emphasis>(<emphasis role="stringliteral">&quot;MSR&#32;&#32;&#32;&#32;&#32;&#32;CONTROL_NS,%0&quot;</emphasis>&#32;::&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(value));
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00714"/>00714 &#32;&#32;&#32;&#32;&#32;&#32;__iar_builtin_ISB();
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00715"/>00715 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00716"/>00716 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00717"/>00717 &#32;&#32;&#32;&#32;__IAR_FT&#32;uint32_t&#32;&#32;&#32;__TZ_get_PSP_NS(<emphasis role="keywordtype">void</emphasis>)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00718"/>00718 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00719"/>00719 &#32;&#32;&#32;&#32;&#32;&#32;uint32_t&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00720"/>00720 &#32;&#32;&#32;&#32;&#32;&#32;__asm&#32;<emphasis role="keyword">volatile</emphasis>(<emphasis role="stringliteral">&quot;MRS&#32;&#32;&#32;&#32;&#32;&#32;%0,PSP_NS&quot;</emphasis>&#32;:&#32;<emphasis role="stringliteral">&quot;=r&quot;</emphasis>&#32;(res));
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00721"/>00721 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00722"/>00722 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00723"/>00723 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00724"/>00724 &#32;&#32;&#32;&#32;__IAR_FT&#32;<emphasis role="keywordtype">void</emphasis>&#32;&#32;&#32;__TZ_set_PSP_NS(uint32_t&#32;value)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00725"/>00725 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00726"/>00726 &#32;&#32;&#32;&#32;&#32;&#32;__asm&#32;<emphasis role="keyword">volatile</emphasis>(<emphasis role="stringliteral">&quot;MSR&#32;&#32;&#32;&#32;&#32;&#32;PSP_NS,%0&quot;</emphasis>&#32;::&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(value));
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00727"/>00727 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00728"/>00728 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00729"/>00729 &#32;&#32;&#32;&#32;__IAR_FT&#32;uint32_t&#32;&#32;&#32;__TZ_get_MSP_NS(<emphasis role="keywordtype">void</emphasis>)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00730"/>00730 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00731"/>00731 &#32;&#32;&#32;&#32;&#32;&#32;uint32_t&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00732"/>00732 &#32;&#32;&#32;&#32;&#32;&#32;__asm&#32;<emphasis role="keyword">volatile</emphasis>(<emphasis role="stringliteral">&quot;MRS&#32;&#32;&#32;&#32;&#32;&#32;%0,MSP_NS&quot;</emphasis>&#32;:&#32;<emphasis role="stringliteral">&quot;=r&quot;</emphasis>&#32;(res));
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00733"/>00733 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00734"/>00734 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00735"/>00735 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00736"/>00736 &#32;&#32;&#32;&#32;__IAR_FT&#32;<emphasis role="keywordtype">void</emphasis>&#32;&#32;&#32;__TZ_set_MSP_NS(uint32_t&#32;value)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00737"/>00737 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00738"/>00738 &#32;&#32;&#32;&#32;&#32;&#32;__asm&#32;<emphasis role="keyword">volatile</emphasis>(<emphasis role="stringliteral">&quot;MSR&#32;&#32;&#32;&#32;&#32;&#32;MSP_NS,%0&quot;</emphasis>&#32;::&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(value));
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00739"/>00739 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00740"/>00740 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00741"/>00741 &#32;&#32;&#32;&#32;__IAR_FT&#32;uint32_t&#32;&#32;&#32;__TZ_get_SP_NS(<emphasis role="keywordtype">void</emphasis>)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00742"/>00742 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00743"/>00743 &#32;&#32;&#32;&#32;&#32;&#32;uint32_t&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00744"/>00744 &#32;&#32;&#32;&#32;&#32;&#32;__asm&#32;<emphasis role="keyword">volatile</emphasis>(<emphasis role="stringliteral">&quot;MRS&#32;&#32;&#32;&#32;&#32;&#32;%0,SP_NS&quot;</emphasis>&#32;:&#32;<emphasis role="stringliteral">&quot;=r&quot;</emphasis>&#32;(res));
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00745"/>00745 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00746"/>00746 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00747"/>00747 &#32;&#32;&#32;&#32;__IAR_FT&#32;<emphasis role="keywordtype">void</emphasis>&#32;&#32;&#32;__TZ_set_SP_NS(uint32_t&#32;value)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00748"/>00748 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00749"/>00749 &#32;&#32;&#32;&#32;&#32;&#32;__asm&#32;<emphasis role="keyword">volatile</emphasis>(<emphasis role="stringliteral">&quot;MSR&#32;&#32;&#32;&#32;&#32;&#32;SP_NS,%0&quot;</emphasis>&#32;::&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(value));
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00750"/>00750 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00751"/>00751 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00752"/>00752 &#32;&#32;&#32;&#32;__IAR_FT&#32;uint32_t&#32;&#32;&#32;__TZ_get_PRIMASK_NS(<emphasis role="keywordtype">void</emphasis>)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00753"/>00753 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00754"/>00754 &#32;&#32;&#32;&#32;&#32;&#32;uint32_t&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00755"/>00755 &#32;&#32;&#32;&#32;&#32;&#32;__asm&#32;<emphasis role="keyword">volatile</emphasis>(<emphasis role="stringliteral">&quot;MRS&#32;&#32;&#32;&#32;&#32;&#32;%0,PRIMASK_NS&quot;</emphasis>&#32;:&#32;<emphasis role="stringliteral">&quot;=r&quot;</emphasis>&#32;(res));
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00756"/>00756 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00757"/>00757 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00758"/>00758 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00759"/>00759 &#32;&#32;&#32;&#32;__IAR_FT&#32;<emphasis role="keywordtype">void</emphasis>&#32;&#32;&#32;__TZ_set_PRIMASK_NS(uint32_t&#32;value)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00760"/>00760 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00761"/>00761 &#32;&#32;&#32;&#32;&#32;&#32;__asm&#32;<emphasis role="keyword">volatile</emphasis>(<emphasis role="stringliteral">&quot;MSR&#32;&#32;&#32;&#32;&#32;&#32;PRIMASK_NS,%0&quot;</emphasis>&#32;::&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(value));
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00762"/>00762 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00763"/>00763 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00764"/>00764 &#32;&#32;&#32;&#32;__IAR_FT&#32;uint32_t&#32;&#32;&#32;__TZ_get_BASEPRI_NS(<emphasis role="keywordtype">void</emphasis>)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00765"/>00765 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00766"/>00766 &#32;&#32;&#32;&#32;&#32;&#32;uint32_t&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00767"/>00767 &#32;&#32;&#32;&#32;&#32;&#32;__asm&#32;<emphasis role="keyword">volatile</emphasis>(<emphasis role="stringliteral">&quot;MRS&#32;&#32;&#32;&#32;&#32;&#32;%0,BASEPRI_NS&quot;</emphasis>&#32;:&#32;<emphasis role="stringliteral">&quot;=r&quot;</emphasis>&#32;(res));
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00768"/>00768 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00769"/>00769 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00770"/>00770 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00771"/>00771 &#32;&#32;&#32;&#32;__IAR_FT&#32;<emphasis role="keywordtype">void</emphasis>&#32;&#32;&#32;__TZ_set_BASEPRI_NS(uint32_t&#32;value)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00772"/>00772 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00773"/>00773 &#32;&#32;&#32;&#32;&#32;&#32;__asm&#32;<emphasis role="keyword">volatile</emphasis>(<emphasis role="stringliteral">&quot;MSR&#32;&#32;&#32;&#32;&#32;&#32;BASEPRI_NS,%0&quot;</emphasis>&#32;::&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(value));
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00774"/>00774 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00775"/>00775 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00776"/>00776 &#32;&#32;&#32;&#32;__IAR_FT&#32;uint32_t&#32;&#32;&#32;__TZ_get_FAULTMASK_NS(<emphasis role="keywordtype">void</emphasis>)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00777"/>00777 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00778"/>00778 &#32;&#32;&#32;&#32;&#32;&#32;uint32_t&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00779"/>00779 &#32;&#32;&#32;&#32;&#32;&#32;__asm&#32;<emphasis role="keyword">volatile</emphasis>(<emphasis role="stringliteral">&quot;MRS&#32;&#32;&#32;&#32;&#32;&#32;%0,FAULTMASK_NS&quot;</emphasis>&#32;:&#32;<emphasis role="stringliteral">&quot;=r&quot;</emphasis>&#32;(res));
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00780"/>00780 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00781"/>00781 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00782"/>00782 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00783"/>00783 &#32;&#32;&#32;&#32;__IAR_FT&#32;<emphasis role="keywordtype">void</emphasis>&#32;&#32;&#32;__TZ_set_FAULTMASK_NS(uint32_t&#32;value)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00784"/>00784 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00785"/>00785 &#32;&#32;&#32;&#32;&#32;&#32;__asm&#32;<emphasis role="keyword">volatile</emphasis>(<emphasis role="stringliteral">&quot;MSR&#32;&#32;&#32;&#32;&#32;&#32;FAULTMASK_NS,%0&quot;</emphasis>&#32;::&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(value));
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00786"/>00786 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00787"/>00787 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00788"/>00788 &#32;&#32;&#32;&#32;__IAR_FT&#32;uint32_t&#32;&#32;&#32;__TZ_get_PSPLIM_NS(<emphasis role="keywordtype">void</emphasis>)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00789"/>00789 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00790"/>00790 &#32;&#32;&#32;&#32;&#32;&#32;uint32_t&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00791"/>00791 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#if&#32;(!(defined&#32;(__ARM_ARCH_8M_MAIN__&#32;)&#32;&amp;&amp;&#32;(__ARM_ARCH_8M_MAIN__&#32;==&#32;1))&#32;&amp;&amp;&#32;\</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00792"/>00792 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(!defined&#32;(__ARM_FEATURE_CMSE&#32;&#32;)&#32;||&#32;(__ARM_FEATURE_CMSE&#32;&#32;&#32;&lt;&#32;3)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00793"/>00793 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;without&#32;main&#32;extensions,&#32;the&#32;non-secure&#32;PSPLIM&#32;is&#32;RAZ/WI</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00794"/>00794 &#32;&#32;&#32;&#32;&#32;&#32;res&#32;=&#32;0U;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00795"/>00795 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#else</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00796"/>00796 &#32;&#32;&#32;&#32;&#32;&#32;__asm&#32;<emphasis role="keyword">volatile</emphasis>(<emphasis role="stringliteral">&quot;MRS&#32;&#32;&#32;&#32;&#32;&#32;%0,PSPLIM_NS&quot;</emphasis>&#32;:&#32;<emphasis role="stringliteral">&quot;=r&quot;</emphasis>&#32;(res));
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00797"/>00797 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00798"/>00798 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00799"/>00799 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00800"/>00800 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00801"/>00801 &#32;&#32;&#32;&#32;__IAR_FT&#32;<emphasis role="keywordtype">void</emphasis>&#32;&#32;&#32;__TZ_set_PSPLIM_NS(uint32_t&#32;value)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00802"/>00802 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00803"/>00803 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#if&#32;(!(defined&#32;(__ARM_ARCH_8M_MAIN__&#32;)&#32;&amp;&amp;&#32;(__ARM_ARCH_8M_MAIN__&#32;==&#32;1))&#32;&amp;&amp;&#32;\</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00804"/>00804 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(!defined&#32;(__ARM_FEATURE_CMSE&#32;&#32;)&#32;||&#32;(__ARM_FEATURE_CMSE&#32;&#32;&#32;&lt;&#32;3)))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00805"/>00805 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;without&#32;main&#32;extensions,&#32;the&#32;non-secure&#32;PSPLIM&#32;is&#32;RAZ/WI</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00806"/>00806 &#32;&#32;&#32;&#32;&#32;&#32;(void)value;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00807"/>00807 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#else</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00808"/>00808 &#32;&#32;&#32;&#32;&#32;&#32;__asm&#32;<emphasis role="keyword">volatile</emphasis>(<emphasis role="stringliteral">&quot;MSR&#32;&#32;&#32;&#32;&#32;&#32;PSPLIM_NS,%0&quot;</emphasis>&#32;::&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(value));
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00809"/>00809 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00810"/>00810 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00811"/>00811 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00812"/>00812 &#32;&#32;&#32;&#32;__IAR_FT&#32;uint32_t&#32;&#32;&#32;__TZ_get_MSPLIM_NS(<emphasis role="keywordtype">void</emphasis>)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00813"/>00813 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00814"/>00814 &#32;&#32;&#32;&#32;&#32;&#32;uint32_t&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00815"/>00815 &#32;&#32;&#32;&#32;&#32;&#32;__asm&#32;<emphasis role="keyword">volatile</emphasis>(<emphasis role="stringliteral">&quot;MRS&#32;&#32;&#32;&#32;&#32;&#32;%0,MSPLIM_NS&quot;</emphasis>&#32;:&#32;<emphasis role="stringliteral">&quot;=r&quot;</emphasis>&#32;(res));
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00816"/>00816 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00817"/>00817 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00818"/>00818 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00819"/>00819 &#32;&#32;&#32;&#32;__IAR_FT&#32;<emphasis role="keywordtype">void</emphasis>&#32;&#32;&#32;__TZ_set_MSPLIM_NS(uint32_t&#32;value)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00820"/>00820 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00821"/>00821 &#32;&#32;&#32;&#32;&#32;&#32;__asm&#32;<emphasis role="keyword">volatile</emphasis>(<emphasis role="stringliteral">&quot;MSR&#32;&#32;&#32;&#32;&#32;&#32;MSPLIM_NS,%0&quot;</emphasis>&#32;::&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(value));
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00822"/>00822 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00823"/>00823 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00824"/>00824 <emphasis role="preprocessor">&#32;&#32;#endif&#32;</emphasis><emphasis role="comment">/*&#32;__ARM_ARCH_8M_MAIN__&#32;or&#32;__ARM_ARCH_8M_BASE__&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00825"/>00825 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00826"/>00826 <emphasis role="preprocessor">#endif&#32;&#32;&#32;</emphasis><emphasis role="comment">/*&#32;__ICCARM_INTRINSICS_VERSION__&#32;==&#32;2&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00827"/>00827 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00828"/>00828 <emphasis role="preprocessor">#define&#32;__BKPT(value)&#32;&#32;&#32;&#32;__asm&#32;volatile&#32;(&quot;BKPT&#32;&#32;&#32;&#32;&#32;%0&quot;&#32;:&#32;:&#32;&quot;i&quot;(value))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00829"/>00829 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00830"/>00830 <emphasis role="preprocessor">#if&#32;__IAR_M0_FAMILY</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00831"/>00831 &#32;&#32;__STATIC_INLINE&#32;int32_t&#32;<link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga372c0535573dde3e37f0f08c774a3487">__SSAT</link>(int32_t&#32;val,&#32;uint32_t&#32;sat)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00832"/>00832 &#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00833"/>00833 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;((sat&#32;&gt;=&#32;1U)&#32;&amp;&amp;&#32;(sat&#32;&lt;=&#32;32U))
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00834"/>00834 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00835"/>00835 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;int32_t&#32;max&#32;=&#32;(int32_t)((1U&#32;&lt;&lt;&#32;(sat&#32;-&#32;1U))&#32;-&#32;1U);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00836"/>00836 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;int32_t&#32;min&#32;=&#32;-1&#32;-&#32;max&#32;;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00837"/>00837 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(val&#32;&gt;&#32;max)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00838"/>00838 &#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00839"/>00839 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;max;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00840"/>00840 &#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00841"/>00841 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(val&#32;&lt;&#32;min)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00842"/>00842 &#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00843"/>00843 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;min;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00844"/>00844 &#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00845"/>00845 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00846"/>00846 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;val;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00847"/>00847 &#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00848"/>00848 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00849"/>00849 &#32;&#32;__STATIC_INLINE&#32;uint32_t&#32;<link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga6562dbd8182d1571e22dbca7ebdfa9bc">__USAT</link>(int32_t&#32;val,&#32;uint32_t&#32;sat)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00850"/>00850 &#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00851"/>00851 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(sat&#32;&lt;=&#32;31U)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00852"/>00852 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00853"/>00853 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;uint32_t&#32;max&#32;=&#32;((1U&#32;&lt;&lt;&#32;sat)&#32;-&#32;1U);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00854"/>00854 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(val&#32;&gt;&#32;(int32_t)max)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00855"/>00855 &#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00856"/>00856 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;max;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00857"/>00857 &#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00858"/>00858 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(val&#32;&lt;&#32;0)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00859"/>00859 &#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00860"/>00860 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;0U;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00861"/>00861 &#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00862"/>00862 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00863"/>00863 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;(uint32_t)val;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00864"/>00864 &#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00865"/>00865 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00866"/>00866 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00867"/>00867 <emphasis role="preprocessor">#if&#32;(__CORTEX_M&#32;&gt;=&#32;0x03)&#32;&#32;&#32;</emphasis><emphasis role="comment">/*&#32;__CORTEX_M&#32;is&#32;defined&#32;in&#32;core_cm0.h,&#32;core_cm3.h&#32;and&#32;core_cm4.h.&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00868"/>00868 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00869"/>00869 &#32;&#32;__IAR_FT&#32;uint8_t&#32;__LDRBT(<emphasis role="keyword">volatile</emphasis>&#32;uint8_t&#32;*addr)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00870"/>00870 &#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00871"/>00871 &#32;&#32;&#32;&#32;uint32_t&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00872"/>00872 &#32;&#32;&#32;&#32;__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(<emphasis role="stringliteral">&quot;LDRBT&#32;%0,&#32;[%1]&quot;</emphasis>&#32;:&#32;<emphasis role="stringliteral">&quot;=r&quot;</emphasis>&#32;(res)&#32;:&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(addr)&#32;:&#32;<emphasis role="stringliteral">&quot;memory&quot;</emphasis>);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00873"/>00873 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;((uint8_t)res);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00874"/>00874 &#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00875"/>00875 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00876"/>00876 &#32;&#32;__IAR_FT&#32;uint16_t&#32;__LDRHT(<emphasis role="keyword">volatile</emphasis>&#32;uint16_t&#32;*addr)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00877"/>00877 &#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00878"/>00878 &#32;&#32;&#32;&#32;uint32_t&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00879"/>00879 &#32;&#32;&#32;&#32;__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(<emphasis role="stringliteral">&quot;LDRHT&#32;%0,&#32;[%1]&quot;</emphasis>&#32;:&#32;<emphasis role="stringliteral">&quot;=r&quot;</emphasis>&#32;(res)&#32;:&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(addr)&#32;:&#32;<emphasis role="stringliteral">&quot;memory&quot;</emphasis>);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00880"/>00880 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;((uint16_t)res);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00881"/>00881 &#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00882"/>00882 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00883"/>00883 &#32;&#32;__IAR_FT&#32;uint32_t&#32;__LDRT(<emphasis role="keyword">volatile</emphasis>&#32;uint32_t&#32;*addr)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00884"/>00884 &#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00885"/>00885 &#32;&#32;&#32;&#32;uint32_t&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00886"/>00886 &#32;&#32;&#32;&#32;__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(<emphasis role="stringliteral">&quot;LDRT&#32;%0,&#32;[%1]&quot;</emphasis>&#32;:&#32;<emphasis role="stringliteral">&quot;=r&quot;</emphasis>&#32;(res)&#32;:&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(addr)&#32;:&#32;<emphasis role="stringliteral">&quot;memory&quot;</emphasis>);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00887"/>00887 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00888"/>00888 &#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00889"/>00889 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00890"/>00890 &#32;&#32;__IAR_FT&#32;<emphasis role="keywordtype">void</emphasis>&#32;__STRBT(uint8_t&#32;value,&#32;<emphasis role="keyword">volatile</emphasis>&#32;uint8_t&#32;*addr)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00891"/>00891 &#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00892"/>00892 &#32;&#32;&#32;&#32;__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(<emphasis role="stringliteral">&quot;STRBT&#32;%1,&#32;[%0]&quot;</emphasis>&#32;:&#32;:&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(addr),&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;((uint32_t)value)&#32;:&#32;<emphasis role="stringliteral">&quot;memory&quot;</emphasis>);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00893"/>00893 &#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00894"/>00894 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00895"/>00895 &#32;&#32;__IAR_FT&#32;<emphasis role="keywordtype">void</emphasis>&#32;__STRHT(uint16_t&#32;value,&#32;<emphasis role="keyword">volatile</emphasis>&#32;uint16_t&#32;*addr)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00896"/>00896 &#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00897"/>00897 &#32;&#32;&#32;&#32;__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(<emphasis role="stringliteral">&quot;STRHT&#32;%1,&#32;[%0]&quot;</emphasis>&#32;:&#32;:&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(addr),&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;((uint32_t)value)&#32;:&#32;<emphasis role="stringliteral">&quot;memory&quot;</emphasis>);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00898"/>00898 &#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00899"/>00899 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00900"/>00900 &#32;&#32;__IAR_FT&#32;<emphasis role="keywordtype">void</emphasis>&#32;__STRT(uint32_t&#32;value,&#32;<emphasis role="keyword">volatile</emphasis>&#32;uint32_t&#32;*addr)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00901"/>00901 &#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00902"/>00902 &#32;&#32;&#32;&#32;__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(<emphasis role="stringliteral">&quot;STRT&#32;%1,&#32;[%0]&quot;</emphasis>&#32;:&#32;:&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(addr),&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(value)&#32;:&#32;<emphasis role="stringliteral">&quot;memory&quot;</emphasis>);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00903"/>00903 &#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00904"/>00904 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00905"/>00905 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*&#32;(__CORTEX_M&#32;&gt;=&#32;0x03)&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00906"/>00906 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00907"/>00907 <emphasis role="preprocessor">#if&#32;((defined&#32;(__ARM_ARCH_8M_MAIN__&#32;)&#32;&amp;&amp;&#32;(__ARM_ARCH_8M_MAIN__&#32;==&#32;1))&#32;||&#32;\</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00908"/>00908 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;(defined&#32;(__ARM_ARCH_8M_BASE__&#32;)&#32;&amp;&amp;&#32;(__ARM_ARCH_8M_BASE__&#32;==&#32;1))&#32;&#32;&#32;&#32;)</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00909"/>00909 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00910"/>00910 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00911"/>00911 &#32;&#32;__IAR_FT&#32;uint8_t&#32;__LDAB(<emphasis role="keyword">volatile</emphasis>&#32;uint8_t&#32;*ptr)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00912"/>00912 &#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00913"/>00913 &#32;&#32;&#32;&#32;uint32_t&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00914"/>00914 &#32;&#32;&#32;&#32;__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(<emphasis role="stringliteral">&quot;LDAB&#32;%0,&#32;[%1]&quot;</emphasis>&#32;:&#32;<emphasis role="stringliteral">&quot;=r&quot;</emphasis>&#32;(res)&#32;:&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(ptr)&#32;:&#32;<emphasis role="stringliteral">&quot;memory&quot;</emphasis>);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00915"/>00915 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;((uint8_t)res);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00916"/>00916 &#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00917"/>00917 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00918"/>00918 &#32;&#32;__IAR_FT&#32;uint16_t&#32;__LDAH(<emphasis role="keyword">volatile</emphasis>&#32;uint16_t&#32;*ptr)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00919"/>00919 &#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00920"/>00920 &#32;&#32;&#32;&#32;uint32_t&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00921"/>00921 &#32;&#32;&#32;&#32;__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(<emphasis role="stringliteral">&quot;LDAH&#32;%0,&#32;[%1]&quot;</emphasis>&#32;:&#32;<emphasis role="stringliteral">&quot;=r&quot;</emphasis>&#32;(res)&#32;:&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(ptr)&#32;:&#32;<emphasis role="stringliteral">&quot;memory&quot;</emphasis>);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00922"/>00922 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;((uint16_t)res);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00923"/>00923 &#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00924"/>00924 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00925"/>00925 &#32;&#32;__IAR_FT&#32;uint32_t&#32;__LDA(<emphasis role="keyword">volatile</emphasis>&#32;uint32_t&#32;*ptr)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00926"/>00926 &#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00927"/>00927 &#32;&#32;&#32;&#32;uint32_t&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00928"/>00928 &#32;&#32;&#32;&#32;__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(<emphasis role="stringliteral">&quot;LDA&#32;%0,&#32;[%1]&quot;</emphasis>&#32;:&#32;<emphasis role="stringliteral">&quot;=r&quot;</emphasis>&#32;(res)&#32;:&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(ptr)&#32;:&#32;<emphasis role="stringliteral">&quot;memory&quot;</emphasis>);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00929"/>00929 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00930"/>00930 &#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00931"/>00931 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00932"/>00932 &#32;&#32;__IAR_FT&#32;<emphasis role="keywordtype">void</emphasis>&#32;__STLB(uint8_t&#32;value,&#32;<emphasis role="keyword">volatile</emphasis>&#32;uint8_t&#32;*ptr)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00933"/>00933 &#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00934"/>00934 &#32;&#32;&#32;&#32;__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(<emphasis role="stringliteral">&quot;STLB&#32;%1,&#32;[%0]&quot;</emphasis>&#32;::&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(ptr),&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(value)&#32;:&#32;<emphasis role="stringliteral">&quot;memory&quot;</emphasis>);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00935"/>00935 &#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00936"/>00936 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00937"/>00937 &#32;&#32;__IAR_FT&#32;<emphasis role="keywordtype">void</emphasis>&#32;__STLH(uint16_t&#32;value,&#32;<emphasis role="keyword">volatile</emphasis>&#32;uint16_t&#32;*ptr)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00938"/>00938 &#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00939"/>00939 &#32;&#32;&#32;&#32;__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(<emphasis role="stringliteral">&quot;STLH&#32;%1,&#32;[%0]&quot;</emphasis>&#32;::&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(ptr),&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(value)&#32;:&#32;<emphasis role="stringliteral">&quot;memory&quot;</emphasis>);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00940"/>00940 &#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00941"/>00941 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00942"/>00942 &#32;&#32;__IAR_FT&#32;<emphasis role="keywordtype">void</emphasis>&#32;__STL(uint32_t&#32;value,&#32;<emphasis role="keyword">volatile</emphasis>&#32;uint32_t&#32;*ptr)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00943"/>00943 &#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00944"/>00944 &#32;&#32;&#32;&#32;__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(<emphasis role="stringliteral">&quot;STL&#32;%1,&#32;[%0]&quot;</emphasis>&#32;::&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(ptr),&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(value)&#32;:&#32;<emphasis role="stringliteral">&quot;memory&quot;</emphasis>);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00945"/>00945 &#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00946"/>00946 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00947"/>00947 &#32;&#32;__IAR_FT&#32;uint8_t&#32;__LDAEXB(<emphasis role="keyword">volatile</emphasis>&#32;uint8_t&#32;*ptr)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00948"/>00948 &#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00949"/>00949 &#32;&#32;&#32;&#32;uint32_t&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00950"/>00950 &#32;&#32;&#32;&#32;__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(<emphasis role="stringliteral">&quot;LDAEXB&#32;%0,&#32;[%1]&quot;</emphasis>&#32;:&#32;<emphasis role="stringliteral">&quot;=r&quot;</emphasis>&#32;(res)&#32;:&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(ptr)&#32;:&#32;<emphasis role="stringliteral">&quot;memory&quot;</emphasis>);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00951"/>00951 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;((uint8_t)res);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00952"/>00952 &#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00953"/>00953 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00954"/>00954 &#32;&#32;__IAR_FT&#32;uint16_t&#32;__LDAEXH(<emphasis role="keyword">volatile</emphasis>&#32;uint16_t&#32;*ptr)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00955"/>00955 &#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00956"/>00956 &#32;&#32;&#32;&#32;uint32_t&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00957"/>00957 &#32;&#32;&#32;&#32;__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(<emphasis role="stringliteral">&quot;LDAEXH&#32;%0,&#32;[%1]&quot;</emphasis>&#32;:&#32;<emphasis role="stringliteral">&quot;=r&quot;</emphasis>&#32;(res)&#32;:&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(ptr)&#32;:&#32;<emphasis role="stringliteral">&quot;memory&quot;</emphasis>);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00958"/>00958 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;((uint16_t)res);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00959"/>00959 &#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00960"/>00960 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00961"/>00961 &#32;&#32;__IAR_FT&#32;uint32_t&#32;__LDAEX(<emphasis role="keyword">volatile</emphasis>&#32;uint32_t&#32;*ptr)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00962"/>00962 &#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00963"/>00963 &#32;&#32;&#32;&#32;uint32_t&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00964"/>00964 &#32;&#32;&#32;&#32;__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(<emphasis role="stringliteral">&quot;LDAEX&#32;%0,&#32;[%1]&quot;</emphasis>&#32;:&#32;<emphasis role="stringliteral">&quot;=r&quot;</emphasis>&#32;(res)&#32;:&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(ptr)&#32;:&#32;<emphasis role="stringliteral">&quot;memory&quot;</emphasis>);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00965"/>00965 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00966"/>00966 &#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00967"/>00967 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00968"/>00968 &#32;&#32;__IAR_FT&#32;uint32_t&#32;__STLEXB(uint8_t&#32;value,&#32;<emphasis role="keyword">volatile</emphasis>&#32;uint8_t&#32;*ptr)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00969"/>00969 &#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00970"/>00970 &#32;&#32;&#32;&#32;uint32_t&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00971"/>00971 &#32;&#32;&#32;&#32;__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(<emphasis role="stringliteral">&quot;STLEXB&#32;%0,&#32;%2,&#32;[%1]&quot;</emphasis>&#32;:&#32;<emphasis role="stringliteral">&quot;=r&quot;</emphasis>&#32;(res)&#32;:&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(ptr),&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(value)&#32;:&#32;<emphasis role="stringliteral">&quot;memory&quot;</emphasis>);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00972"/>00972 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00973"/>00973 &#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00974"/>00974 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00975"/>00975 &#32;&#32;__IAR_FT&#32;uint32_t&#32;__STLEXH(uint16_t&#32;value,&#32;<emphasis role="keyword">volatile</emphasis>&#32;uint16_t&#32;*ptr)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00976"/>00976 &#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00977"/>00977 &#32;&#32;&#32;&#32;uint32_t&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00978"/>00978 &#32;&#32;&#32;&#32;__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(<emphasis role="stringliteral">&quot;STLEXH&#32;%0,&#32;%2,&#32;[%1]&quot;</emphasis>&#32;:&#32;<emphasis role="stringliteral">&quot;=r&quot;</emphasis>&#32;(res)&#32;:&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(ptr),&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(value)&#32;:&#32;<emphasis role="stringliteral">&quot;memory&quot;</emphasis>);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00979"/>00979 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00980"/>00980 &#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00981"/>00981 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00982"/>00982 &#32;&#32;__IAR_FT&#32;uint32_t&#32;__STLEX(uint32_t&#32;value,&#32;<emphasis role="keyword">volatile</emphasis>&#32;uint32_t&#32;*ptr)
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00983"/>00983 &#32;&#32;{
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00984"/>00984 &#32;&#32;&#32;&#32;uint32_t&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00985"/>00985 &#32;&#32;&#32;&#32;__ASM&#32;<emphasis role="keyword">volatile</emphasis>&#32;(<emphasis role="stringliteral">&quot;STLEX&#32;%0,&#32;%2,&#32;[%1]&quot;</emphasis>&#32;:&#32;<emphasis role="stringliteral">&quot;=r&quot;</emphasis>&#32;(res)&#32;:&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(ptr),&#32;<emphasis role="stringliteral">&quot;r&quot;</emphasis>&#32;(value)&#32;:&#32;<emphasis role="stringliteral">&quot;memory&quot;</emphasis>);
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00986"/>00986 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;res;
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00987"/>00987 &#32;&#32;}
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00988"/>00988 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00989"/>00989 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*&#32;__ARM_ARCH_8M_MAIN__&#32;or&#32;__ARM_ARCH_8M_BASE__&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00990"/>00990 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00991"/>00991 <emphasis role="preprocessor">#undef&#32;__IAR_FT</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00992"/>00992 <emphasis role="preprocessor">#undef&#32;__IAR_M0_FAMILY</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00993"/>00993 <emphasis role="preprocessor">#undef&#32;__ICCARM_V8</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00994"/>00994 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00995"/>00995 <emphasis role="preprocessor">#pragma&#32;diag_default=Pe940</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00996"/>00996 <emphasis role="preprocessor">#pragma&#32;diag_default=Pe177</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00997"/>00997 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00998"/>00998 <emphasis role="preprocessor">#define&#32;__SXTB16_RORn(ARG1,&#32;ARG2)&#32;__SXTB16(__ROR(ARG1,&#32;ARG2))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l00999"/>00999 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l01000"/>01000 <emphasis role="preprocessor">#define&#32;__SXTAB16_RORn(ARG1,&#32;ARG2,&#32;ARG3)&#32;__SXTAB16(ARG1,&#32;__ROR(ARG2,&#32;ARG3))</emphasis>
+<anchor xml:id="_cmsis__iccarm_8h_source_1l01001"/>01001 
+<anchor xml:id="_cmsis__iccarm_8h_source_1l01002"/>01002 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*&#32;__CMSIS_ICCARM_H__&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+</programlisting></section>

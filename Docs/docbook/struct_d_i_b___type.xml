@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_d_i_b___type" xml:lang="en-US">
+<title>DIB_Type Struct Reference</title>
+<indexterm><primary>DIB_Type</primary></indexterm>
+<para>
+
+<para>Structure type to access the Debug Identification Block Registers (DIB). </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;core_armv81mml.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para>__OM uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga28821179e31468c31aba2997679f74d3">DLAR</link></para>
+</listitem>
+            <listitem><para>__IM uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga6fcce5258bf54a32b105430861fd3a1c">DLSR</link></para>
+</listitem>
+            <listitem><para>__IM uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gadd26c1ab268693e763910789a06adf9e">DAUTHSTATUS</link></para>
+</listitem>
+            <listitem><para>__IM uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga487394977ea138271a27dbb9540662d8">DDEVARCH</link></para>
+</listitem>
+            <listitem><para>__IM uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga1c10e7044b4fed4e3a5009b899bc2cf3">DDEVTYPE</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Structure type to access the Debug Identification Block Registers (DIB). </para>
+<para>
+Definition at line <link linkend="_core__armv81mml_8h_source_1l02985">2985</link> of file <link linkend="_core__armv81mml_8h_source">core_armv81mml.h</link>.</para>
+<para>
+The documentation for this struct was generated from the following files:</para>
+Inc/<link linkend="_core__armv81mml_8h">core_armv81mml.h</link>Inc/<link linkend="_core__armv8mbl_8h">core_armv8mbl.h</link>Inc/<link linkend="_core__armv8mml_8h">core_armv8mml.h</link>Inc/<link linkend="_core__cm23_8h">core_cm23.h</link>Inc/<link linkend="_core__cm33_8h">core_cm33.h</link>Inc/<link linkend="_core__cm35p_8h">core_cm35p.h</link>Inc/<link linkend="_core__cm55_8h">core_cm55.h</link>Inc/<link linkend="_core__cm85_8h">core_cm85.h</link>Inc/<link linkend="_core__starmc1_8h">core_starmc1.h</link></section>
+</section>

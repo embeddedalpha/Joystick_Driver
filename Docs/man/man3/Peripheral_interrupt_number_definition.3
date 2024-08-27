@@ -1,0 +1,487 @@
+.TH "Peripheral_interrupt_number_definition" 3 "Version JSTDRVF4" "Joystick Driver" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Peripheral_interrupt_number_definition \- Peripheral_interrupt_number_definition
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBHASH_RNG_IRQn\fP   \fBRNG_IRQn\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBIRQn_Type\fP { \fBNonMaskableInt_IRQn\fP = -14, \fBMemoryManagement_IRQn\fP = -12, \fBBusFault_IRQn\fP = -11, \fBUsageFault_IRQn\fP = -10, \fBSVCall_IRQn\fP = -5, \fBDebugMonitor_IRQn\fP = -4, \fBPendSV_IRQn\fP = -2, \fBSysTick_IRQn\fP = -1, \fBWWDG_IRQn\fP = 0, \fBPVD_IRQn\fP = 1, \fBTAMP_STAMP_IRQn\fP = 2, \fBRTC_WKUP_IRQn\fP = 3, \fBFLASH_IRQn\fP = 4, \fBRCC_IRQn\fP = 5, \fBEXTI0_IRQn\fP = 6, \fBEXTI1_IRQn\fP = 7, \fBEXTI2_IRQn\fP = 8, \fBEXTI3_IRQn\fP = 9, \fBEXTI4_IRQn\fP = 10, \fBDMA1_Stream0_IRQn\fP = 11, \fBDMA1_Stream1_IRQn\fP = 12, \fBDMA1_Stream2_IRQn\fP = 13, \fBDMA1_Stream3_IRQn\fP = 14, \fBDMA1_Stream4_IRQn\fP = 15, \fBDMA1_Stream5_IRQn\fP = 16, \fBDMA1_Stream6_IRQn\fP = 17, \fBADC_IRQn\fP = 18, \fBCAN1_TX_IRQn\fP = 19, \fBCAN1_RX0_IRQn\fP = 20, \fBCAN1_RX1_IRQn\fP = 21, \fBCAN1_SCE_IRQn\fP = 22, \fBEXTI9_5_IRQn\fP = 23, \fBTIM1_BRK_TIM9_IRQn\fP = 24, \fBTIM1_UP_TIM10_IRQn\fP = 25, \fBTIM1_TRG_COM_TIM11_IRQn\fP = 26, \fBTIM1_CC_IRQn\fP = 27, \fBTIM2_IRQn\fP = 28, \fBTIM3_IRQn\fP = 29, \fBTIM4_IRQn\fP = 30, \fBI2C1_EV_IRQn\fP = 31, \fBI2C1_ER_IRQn\fP = 32, \fBI2C2_EV_IRQn\fP = 33, \fBI2C2_ER_IRQn\fP = 34, \fBSPI1_IRQn\fP = 35, \fBSPI2_IRQn\fP = 36, \fBUSART1_IRQn\fP = 37, \fBUSART2_IRQn\fP = 38, \fBUSART3_IRQn\fP = 39, \fBEXTI15_10_IRQn\fP = 40, \fBRTC_Alarm_IRQn\fP = 41, \fBOTG_FS_WKUP_IRQn\fP = 42, \fBTIM8_BRK_TIM12_IRQn\fP = 43, \fBTIM8_UP_TIM13_IRQn\fP = 44, \fBTIM8_TRG_COM_TIM14_IRQn\fP = 45, \fBTIM8_CC_IRQn\fP = 46, \fBDMA1_Stream7_IRQn\fP = 47, \fBFSMC_IRQn\fP = 48, \fBSDIO_IRQn\fP = 49, \fBTIM5_IRQn\fP = 50, \fBSPI3_IRQn\fP = 51, \fBUART4_IRQn\fP = 52, \fBUART5_IRQn\fP = 53, \fBTIM6_DAC_IRQn\fP = 54, \fBTIM7_IRQn\fP = 55, \fBDMA2_Stream0_IRQn\fP = 56, \fBDMA2_Stream1_IRQn\fP = 57, \fBDMA2_Stream2_IRQn\fP = 58, \fBDMA2_Stream3_IRQn\fP = 59, \fBDMA2_Stream4_IRQn\fP = 60, \fBETH_IRQn\fP = 61, \fBETH_WKUP_IRQn\fP = 62, \fBCAN2_TX_IRQn\fP = 63, \fBCAN2_RX0_IRQn\fP = 64, \fBCAN2_RX1_IRQn\fP = 65, \fBCAN2_SCE_IRQn\fP = 66, \fBOTG_FS_IRQn\fP = 67, \fBDMA2_Stream5_IRQn\fP = 68, \fBDMA2_Stream6_IRQn\fP = 69, \fBDMA2_Stream7_IRQn\fP = 70, \fBUSART6_IRQn\fP = 71, \fBI2C3_EV_IRQn\fP = 72, \fBI2C3_ER_IRQn\fP = 73, \fBOTG_HS_EP1_OUT_IRQn\fP = 74, \fBOTG_HS_EP1_IN_IRQn\fP = 75, \fBOTG_HS_WKUP_IRQn\fP = 76, \fBOTG_HS_IRQn\fP = 77, \fBDCMI_IRQn\fP = 78, \fBRNG_IRQn\fP = 80, \fBFPU_IRQn\fP = 81 }"
+.br
+.RI "STM32F4XX Interrupt Number Definition, according to the selected device in \fBLibrary_configuration_section\fP\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define HASH_RNG_IRQn   \fBRNG_IRQn\fP"
+
+.PP
+Definition at line \fB160\fP of file \fBstm32f407xx\&.h\fP\&.
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBIRQn_Type\fP"
+
+.PP
+STM32F4XX Interrupt Number Definition, according to the selected device in \fBLibrary_configuration_section\fP\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\f(BINonMaskableInt_IRQn \fP
+2 Non Maskable Interrupt 
+.br
+ 
+.TP
+\f(BIMemoryManagement_IRQn \fP
+4 Cortex-M4 Memory Management Interrupt 
+.br
+ 
+.TP
+\f(BIBusFault_IRQn \fP
+5 Cortex-M4 Bus Fault Interrupt 
+.br
+ 
+.TP
+\f(BIUsageFault_IRQn \fP
+6 Cortex-M4 Usage Fault Interrupt 
+.br
+ 
+.TP
+\f(BISVCall_IRQn \fP
+11 Cortex-M4 SV Call Interrupt 
+.br
+ 
+.TP
+\f(BIDebugMonitor_IRQn \fP
+12 Cortex-M4 Debug Monitor Interrupt 
+.br
+ 
+.TP
+\f(BIPendSV_IRQn \fP
+14 Cortex-M4 Pend SV Interrupt 
+.br
+ 
+.TP
+\f(BISysTick_IRQn \fP
+15 Cortex-M4 System Tick Interrupt 
+.br
+ 
+.TP
+\f(BIWWDG_IRQn \fP
+Window WatchDog Interrupt 
+.br
+ 
+.TP
+\f(BIPVD_IRQn \fP
+PVD through EXTI Line detection Interrupt 
+.br
+ 
+.TP
+\f(BITAMP_STAMP_IRQn \fP
+Tamper and TimeStamp interrupts through the EXTI line 
+.br
+ 
+.TP
+\f(BIRTC_WKUP_IRQn \fP
+RTC Wakeup interrupt through the EXTI line 
+.br
+ 
+.TP
+\f(BIFLASH_IRQn \fP
+FLASH global Interrupt 
+.br
+ 
+.TP
+\f(BIRCC_IRQn \fP
+RCC global Interrupt 
+.br
+ 
+.TP
+\f(BIEXTI0_IRQn \fP
+EXTI Line0 Interrupt 
+.br
+ 
+.TP
+\f(BIEXTI1_IRQn \fP
+EXTI Line1 Interrupt 
+.br
+ 
+.TP
+\f(BIEXTI2_IRQn \fP
+EXTI Line2 Interrupt 
+.br
+ 
+.TP
+\f(BIEXTI3_IRQn \fP
+EXTI Line3 Interrupt 
+.br
+ 
+.TP
+\f(BIEXTI4_IRQn \fP
+EXTI Line4 Interrupt 
+.br
+ 
+.TP
+\f(BIDMA1_Stream0_IRQn \fP
+DMA1 Stream 0 global Interrupt 
+.br
+ 
+.TP
+\f(BIDMA1_Stream1_IRQn \fP
+DMA1 Stream 1 global Interrupt 
+.br
+ 
+.TP
+\f(BIDMA1_Stream2_IRQn \fP
+DMA1 Stream 2 global Interrupt 
+.br
+ 
+.TP
+\f(BIDMA1_Stream3_IRQn \fP
+DMA1 Stream 3 global Interrupt 
+.br
+ 
+.TP
+\f(BIDMA1_Stream4_IRQn \fP
+DMA1 Stream 4 global Interrupt 
+.br
+ 
+.TP
+\f(BIDMA1_Stream5_IRQn \fP
+DMA1 Stream 5 global Interrupt 
+.br
+ 
+.TP
+\f(BIDMA1_Stream6_IRQn \fP
+DMA1 Stream 6 global Interrupt 
+.br
+ 
+.TP
+\f(BIADC_IRQn \fP
+ADC1, ADC2 and ADC3 global \fBInterrupts\fP 
+.br
+ 
+.TP
+\f(BICAN1_TX_IRQn \fP
+CAN1 TX Interrupt 
+.br
+ 
+.TP
+\f(BICAN1_RX0_IRQn \fP
+CAN1 RX0 Interrupt 
+.br
+ 
+.TP
+\f(BICAN1_RX1_IRQn \fP
+CAN1 RX1 Interrupt 
+.br
+ 
+.TP
+\f(BICAN1_SCE_IRQn \fP
+CAN1 SCE Interrupt 
+.br
+ 
+.TP
+\f(BIEXTI9_5_IRQn \fP
+External Line[9:5] \fBInterrupts\fP 
+.br
+ 
+.TP
+\f(BITIM1_BRK_TIM9_IRQn \fP
+TIM1 Break interrupt and TIM9 global interrupt 
+.br
+ 
+.TP
+\f(BITIM1_UP_TIM10_IRQn \fP
+TIM1 Update Interrupt and TIM10 global interrupt 
+.br
+ 
+.TP
+\f(BITIM1_TRG_COM_TIM11_IRQn \fP
+TIM1 Trigger and Commutation Interrupt and TIM11 global interrupt 
+.TP
+\f(BITIM1_CC_IRQn \fP
+TIM1 Capture Compare Interrupt 
+.br
+ 
+.TP
+\f(BITIM2_IRQn \fP
+TIM2 global Interrupt 
+.br
+ 
+.TP
+\f(BITIM3_IRQn \fP
+TIM3 global Interrupt 
+.br
+ 
+.TP
+\f(BITIM4_IRQn \fP
+TIM4 global Interrupt 
+.br
+ 
+.TP
+\f(BII2C1_EV_IRQn \fP
+I2C1 Event Interrupt 
+.br
+ 
+.TP
+\f(BII2C1_ER_IRQn \fP
+I2C1 Error Interrupt 
+.br
+ 
+.TP
+\f(BII2C2_EV_IRQn \fP
+I2C2 Event Interrupt 
+.br
+ 
+.TP
+\f(BII2C2_ER_IRQn \fP
+I2C2 Error Interrupt 
+.br
+ 
+.TP
+\f(BISPI1_IRQn \fP
+SPI1 global Interrupt 
+.br
+ 
+.TP
+\f(BISPI2_IRQn \fP
+SPI2 global Interrupt 
+.br
+ 
+.TP
+\f(BIUSART1_IRQn \fP
+USART1 global Interrupt 
+.br
+ 
+.TP
+\f(BIUSART2_IRQn \fP
+USART2 global Interrupt 
+.br
+ 
+.TP
+\f(BIUSART3_IRQn \fP
+USART3 global Interrupt 
+.br
+ 
+.TP
+\f(BIEXTI15_10_IRQn \fP
+External Line[15:10] \fBInterrupts\fP 
+.br
+ 
+.TP
+\f(BIRTC_Alarm_IRQn \fP
+RTC Alarm (A and B) through EXTI Line Interrupt 
+.br
+ 
+.TP
+\f(BIOTG_FS_WKUP_IRQn \fP
+USB OTG FS Wakeup through EXTI line interrupt 
+.br
+ 
+.TP
+\f(BITIM8_BRK_TIM12_IRQn \fP
+TIM8 Break Interrupt and TIM12 global interrupt 
+.br
+ 
+.TP
+\f(BITIM8_UP_TIM13_IRQn \fP
+TIM8 Update Interrupt and TIM13 global interrupt 
+.br
+ 
+.TP
+\f(BITIM8_TRG_COM_TIM14_IRQn \fP
+TIM8 Trigger and Commutation Interrupt and TIM14 global interrupt 
+.TP
+\f(BITIM8_CC_IRQn \fP
+TIM8 Capture Compare global interrupt 
+.br
+ 
+.TP
+\f(BIDMA1_Stream7_IRQn \fP
+DMA1 Stream7 Interrupt 
+.br
+ 
+.TP
+\f(BIFSMC_IRQn \fP
+FSMC global Interrupt 
+.br
+ 
+.TP
+\f(BISDIO_IRQn \fP
+SDIO global Interrupt 
+.br
+ 
+.TP
+\f(BITIM5_IRQn \fP
+TIM5 global Interrupt 
+.br
+ 
+.TP
+\f(BISPI3_IRQn \fP
+SPI3 global Interrupt 
+.br
+ 
+.TP
+\f(BIUART4_IRQn \fP
+UART4 global Interrupt 
+.br
+ 
+.TP
+\f(BIUART5_IRQn \fP
+UART5 global Interrupt 
+.br
+ 
+.TP
+\f(BITIM6_DAC_IRQn \fP
+TIM6 global and DAC1&2 underrun error interrupts 
+.br
+ 
+.TP
+\f(BITIM7_IRQn \fP
+TIM7 global interrupt 
+.br
+ 
+.TP
+\f(BIDMA2_Stream0_IRQn \fP
+DMA2 Stream 0 global Interrupt 
+.br
+ 
+.TP
+\f(BIDMA2_Stream1_IRQn \fP
+DMA2 Stream 1 global Interrupt 
+.br
+ 
+.TP
+\f(BIDMA2_Stream2_IRQn \fP
+DMA2 Stream 2 global Interrupt 
+.br
+ 
+.TP
+\f(BIDMA2_Stream3_IRQn \fP
+DMA2 Stream 3 global Interrupt 
+.br
+ 
+.TP
+\f(BIDMA2_Stream4_IRQn \fP
+DMA2 Stream 4 global Interrupt 
+.br
+ 
+.TP
+\f(BIETH_IRQn \fP
+Ethernet global Interrupt 
+.br
+ 
+.TP
+\f(BIETH_WKUP_IRQn \fP
+Ethernet Wakeup through EXTI line Interrupt 
+.br
+ 
+.TP
+\f(BICAN2_TX_IRQn \fP
+CAN2 TX Interrupt 
+.br
+ 
+.TP
+\f(BICAN2_RX0_IRQn \fP
+CAN2 RX0 Interrupt 
+.br
+ 
+.TP
+\f(BICAN2_RX1_IRQn \fP
+CAN2 RX1 Interrupt 
+.br
+ 
+.TP
+\f(BICAN2_SCE_IRQn \fP
+CAN2 SCE Interrupt 
+.br
+ 
+.TP
+\f(BIOTG_FS_IRQn \fP
+USB OTG FS global Interrupt 
+.br
+ 
+.TP
+\f(BIDMA2_Stream5_IRQn \fP
+DMA2 Stream 5 global interrupt 
+.br
+ 
+.TP
+\f(BIDMA2_Stream6_IRQn \fP
+DMA2 Stream 6 global interrupt 
+.br
+ 
+.TP
+\f(BIDMA2_Stream7_IRQn \fP
+DMA2 Stream 7 global interrupt 
+.br
+ 
+.TP
+\f(BIUSART6_IRQn \fP
+USART6 global interrupt 
+.br
+ 
+.TP
+\f(BII2C3_EV_IRQn \fP
+I2C3 event interrupt 
+.br
+ 
+.TP
+\f(BII2C3_ER_IRQn \fP
+I2C3 error interrupt 
+.br
+ 
+.TP
+\f(BIOTG_HS_EP1_OUT_IRQn \fP
+USB OTG HS End Point 1 Out global interrupt 
+.br
+ 
+.TP
+\f(BIOTG_HS_EP1_IN_IRQn \fP
+USB OTG HS End Point 1 In global interrupt 
+.br
+ 
+.TP
+\f(BIOTG_HS_WKUP_IRQn \fP
+USB OTG HS Wakeup through EXTI interrupt 
+.br
+ 
+.TP
+\f(BIOTG_HS_IRQn \fP
+USB OTG HS global interrupt 
+.br
+ 
+.TP
+\f(BIDCMI_IRQn \fP
+DCMI global interrupt 
+.br
+ 
+.TP
+\f(BIRNG_IRQn \fP
+RNG global Interrupt 
+.br
+ 
+.TP
+\f(BIFPU_IRQn \fP
+FPU global interrupt 
+.br
+ 
+.PP
+Definition at line \fB65\fP of file \fBstm32f407xx\&.h\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Joystick Driver from the source code\&.

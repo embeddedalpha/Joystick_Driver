@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_main_8c_source" xml:lang="en-US">
+<title>main.c</title>
+<indexterm><primary>Src/main.c</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_main_8c_source_1l00001"/>00001 
+<anchor xml:id="_main_8c_source_1l00012"/>00012 <emphasis role="preprocessor">#include&#32;&lt;stdint.h&gt;</emphasis>
+<anchor xml:id="_main_8c_source_1l00013"/>00013 <emphasis role="preprocessor">#include&#32;&quot;main.h&quot;</emphasis>
+<anchor xml:id="_main_8c_source_1l00014"/>00014 <emphasis role="preprocessor">#include&#32;&quot;ADC.h&quot;</emphasis>
+<anchor xml:id="_main_8c_source_1l00015"/>00015 <emphasis role="preprocessor">#include&#32;&quot;GPIO.h&quot;</emphasis>
+<anchor xml:id="_main_8c_source_1l00016"/>00016 
+<anchor xml:id="_main_8c_source_1l00017"/>00017 <link linkend="_struct_a_d_c___config">ADC_Config</link>&#32;Joystick;
+<anchor xml:id="_main_8c_source_1l00018"/>00018 
+<anchor xml:id="_main_8c_source_1l00019"/>00019 <emphasis role="preprocessor">#define&#32;Joystick_Buffer_Size&#32;4</emphasis>
+<anchor xml:id="_main_8c_source_1l00020"/>00020 
+<anchor xml:id="_main_8c_source_1l00021"/>00021 uint16_t&#32;Joystick_Data_Buffer[Joystick_Buffer_Size];
+<anchor xml:id="_main_8c_source_1l00022"/>00022 
+<anchor xml:id="_main_8c_source_1l00023"/>00023 <emphasis role="keywordtype">bool</emphasis>&#32;Joystick_1_UP&#32;=&#32;0;
+<anchor xml:id="_main_8c_source_1l00024"/>00024 <emphasis role="keywordtype">bool</emphasis>&#32;Joystick_1_Down&#32;=&#32;0;
+<anchor xml:id="_main_8c_source_1l00025"/>00025 <emphasis role="keywordtype">bool</emphasis>&#32;Joystick_1_Left&#32;=&#32;0;
+<anchor xml:id="_main_8c_source_1l00026"/>00026 <emphasis role="keywordtype">bool</emphasis>&#32;Joystick_1_Right&#32;=&#32;0;
+<anchor xml:id="_main_8c_source_1l00027"/>00027 
+<anchor xml:id="_main_8c_source_1l00028"/>00028 <emphasis role="keywordtype">bool</emphasis>&#32;Joystick_2_UP&#32;=&#32;0;
+<anchor xml:id="_main_8c_source_1l00029"/>00029 <emphasis role="keywordtype">bool</emphasis>&#32;Joystick_2_Down&#32;=&#32;0;
+<anchor xml:id="_main_8c_source_1l00030"/>00030 <emphasis role="keywordtype">bool</emphasis>&#32;Joystick_2_Left&#32;=&#32;0;
+<anchor xml:id="_main_8c_source_1l00031"/>00031 <emphasis role="keywordtype">bool</emphasis>&#32;Joystick_2_Right&#32;=&#32;0;
+<anchor xml:id="_main_8c_source_1l00032"/>00032 
+<anchor xml:id="_main_8c_source_1l00033"/>00033 
+<anchor xml:id="_main_8c_source_1l00034"/>00034 
+<anchor xml:id="_main_8c_source_1l00035"/>00035 <emphasis role="keywordtype">int</emphasis>&#32;main(<emphasis role="keywordtype">void</emphasis>)
+<anchor xml:id="_main_8c_source_1l00036"/>00036 {
+<anchor xml:id="_main_8c_source_1l00037"/>00037 &#32;&#32;&#32;&#32;MCU_Clock_Setup();
+<anchor xml:id="_main_8c_source_1l00038"/>00038 &#32;&#32;&#32;&#32;Delay_Config();
+<anchor xml:id="_main_8c_source_1l00039"/>00039 
+<anchor xml:id="_main_8c_source_1l00040"/>00040 &#32;&#32;&#32;&#32;GPIO_Pin_Init(GPIOD,&#32;12,
+<anchor xml:id="_main_8c_source_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GPIO_Configuration.Mode.General_Purpose_Output,
+<anchor xml:id="_main_8c_source_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GPIO_Configuration.Output_Type.Push_Pull,
+<anchor xml:id="_main_8c_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GPIO_Configuration.Speed.Very_High_Speed,
+<anchor xml:id="_main_8c_source_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GPIO_Configuration.Pull.No_Pull_Up_Down,
+<anchor xml:id="_main_8c_source_1l00045"/>00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GPIO_Configuration.Alternate_Functions.None);
+<anchor xml:id="_main_8c_source_1l00046"/>00046 
+<anchor xml:id="_main_8c_source_1l00047"/>00047 &#32;&#32;&#32;&#32;Joystick.Channel_0.Enable&#32;=&#32;ADC_Configuration.Channel.Enable.Enable;
+<anchor xml:id="_main_8c_source_1l00048"/>00048 &#32;&#32;&#32;&#32;Joystick.Channel_0.Sample_Time&#32;=&#32;ADC_Configuration.Channel.Sample_Time._3_Cycles;
+<anchor xml:id="_main_8c_source_1l00049"/>00049 &#32;&#32;&#32;&#32;Joystick.Channel_0.Sequence_Number&#32;=&#32;ADC_Configuration.Channel.Sequence_Number.Sequence_1;
+<anchor xml:id="_main_8c_source_1l00050"/>00050 
+<anchor xml:id="_main_8c_source_1l00051"/>00051 &#32;&#32;&#32;&#32;Joystick.Channel_1.Enable&#32;=&#32;ADC_Configuration.Channel.Enable.Enable;
+<anchor xml:id="_main_8c_source_1l00052"/>00052 &#32;&#32;&#32;&#32;Joystick.Channel_1.Sample_Time&#32;=&#32;ADC_Configuration.Channel.Sample_Time._3_Cycles;
+<anchor xml:id="_main_8c_source_1l00053"/>00053 &#32;&#32;&#32;&#32;Joystick.Channel_1.Sequence_Number&#32;=&#32;ADC_Configuration.Channel.Sequence_Number.Sequence_2;
+<anchor xml:id="_main_8c_source_1l00054"/>00054 
+<anchor xml:id="_main_8c_source_1l00055"/>00055 &#32;&#32;&#32;&#32;Joystick.Channel_2.Enable&#32;=&#32;ADC_Configuration.Channel.Enable.Enable;
+<anchor xml:id="_main_8c_source_1l00056"/>00056 &#32;&#32;&#32;&#32;Joystick.Channel_2.Sample_Time&#32;=&#32;ADC_Configuration.Channel.Sample_Time._3_Cycles;
+<anchor xml:id="_main_8c_source_1l00057"/>00057 &#32;&#32;&#32;&#32;Joystick.Channel_2.Sequence_Number&#32;=&#32;ADC_Configuration.Channel.Sequence_Number.Sequence_3;
+<anchor xml:id="_main_8c_source_1l00058"/>00058 
+<anchor xml:id="_main_8c_source_1l00059"/>00059 &#32;&#32;&#32;&#32;Joystick.Channel_3.Enable&#32;=&#32;ADC_Configuration.Channel.Enable.Enable;
+<anchor xml:id="_main_8c_source_1l00060"/>00060 &#32;&#32;&#32;&#32;Joystick.Channel_3.Sample_Time&#32;=&#32;ADC_Configuration.Channel.Sample_Time._3_Cycles;
+<anchor xml:id="_main_8c_source_1l00061"/>00061 &#32;&#32;&#32;&#32;Joystick.Channel_3.Sequence_Number&#32;=&#32;ADC_Configuration.Channel.Sequence_Number.Sequence_4;
+<anchor xml:id="_main_8c_source_1l00062"/>00062 
+<anchor xml:id="_main_8c_source_1l00063"/>00063 &#32;&#32;&#32;&#32;Joystick.Channel_Type&#32;=&#32;ADC_Configuration.Channel_Type.Regular;
+<anchor xml:id="_main_8c_source_1l00064"/>00064 &#32;&#32;&#32;&#32;Joystick.Conversion_Mode&#32;=&#32;ADC_Configuration.Conversion_Mode.Single;
+<anchor xml:id="_main_8c_source_1l00065"/>00065 &#32;&#32;&#32;&#32;Joystick.Data_Alignment&#32;=&#32;ADC_Configuration.Data_Alignment.Right_Justified;
+<anchor xml:id="_main_8c_source_1l00066"/>00066 &#32;&#32;&#32;&#32;Joystick.Port&#32;=&#32;ADC_Configuration.Port._ADC1_;
+<anchor xml:id="_main_8c_source_1l00067"/>00067 &#32;&#32;&#32;&#32;Joystick.Resolution&#32;=&#32;ADC_Configuration.Resolution.Bit_12;
+<anchor xml:id="_main_8c_source_1l00068"/>00068 &#32;&#32;&#32;&#32;Joystick.External_Trigger.Enable&#32;=&#32;ENABLE;
+<anchor xml:id="_main_8c_source_1l00069"/>00069 &#32;&#32;&#32;&#32;Joystick.External_Trigger.Trigger_Event&#32;=&#32;ADC_Configuration.Regular_External_Trigger_Event.Timer_2_TRGO;
+<anchor xml:id="_main_8c_source_1l00070"/>00070 
+<anchor xml:id="_main_8c_source_1l00071"/>00071 &#32;&#32;&#32;&#32;ADC_Init(&amp;Joystick);
+<anchor xml:id="_main_8c_source_1l00072"/>00072 &#32;&#32;&#32;&#32;ADC_Start_Capture(&amp;Joystick,&#32;Joystick_Data_Buffer);
+<anchor xml:id="_main_8c_source_1l00073"/>00073 &#32;&#32;&#32;&#32;TIM1&#32;-&gt;&#32;CR1&#32;|=&#32;<link linkend="_group___peripheral___registers___bits___definition_1ga93d86355e5e3b399ed45e1ca83abed2a">TIM_CR1_CEN</link>;
+<anchor xml:id="_main_8c_source_1l00074"/>00074 
+<anchor xml:id="_main_8c_source_1l00075"/>00075 
+<anchor xml:id="_main_8c_source_1l00076"/>00076 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>(;;)
+<anchor xml:id="_main_8c_source_1l00077"/>00077 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_main_8c_source_1l00078"/>00078 
+<anchor xml:id="_main_8c_source_1l00079"/>00079 
+<anchor xml:id="_main_8c_source_1l00080"/>00080 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GPIO_Pin_High(GPIOD,&#32;12);
+<anchor xml:id="_main_8c_source_1l00081"/>00081 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Delay_milli(1000);
+<anchor xml:id="_main_8c_source_1l00082"/>00082 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GPIO_Pin_Low(GPIOD,&#32;12);
+<anchor xml:id="_main_8c_source_1l00083"/>00083 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Delay_milli(1000);
+<anchor xml:id="_main_8c_source_1l00084"/>00084 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_main_8c_source_1l00085"/>00085 }
+</programlisting></section>

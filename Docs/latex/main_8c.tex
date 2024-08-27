@@ -1,0 +1,189 @@
+\doxysection{Src/main.c File Reference}
+\hypertarget{main_8c}{}\label{main_8c}\index{Src/main.c@{Src/main.c}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include "{}main.\+h"{}}\newline
+{\ttfamily \#include "{}ADC.\+h"{}}\newline
+{\ttfamily \#include "{}GPIO.\+h"{}}\newline
+Include dependency graph for main.\+c\+:
+% FIG 0
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{main_8c_ab68518941e3df15db2af432e04979f2a}{Joystick\+\_\+\+Buffer\+\_\+\+Size}}~4
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_a_d_c___config}{ADC\+\_\+\+Config}} \mbox{\hyperlink{main_8c_a1a364df23cc2525085dfa4cec7c54ddd}{Joystick}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{main_8c_a8d375d09c76c08142b06df37c4d69809}{Joystick\+\_\+\+Data\+\_\+\+Buffer}} \mbox{[}Joystick\+\_\+\+Buffer\+\_\+\+Size\mbox{]}
+\item 
+bool \mbox{\hyperlink{main_8c_ad3aa7eed49e16bb275158c8c034ecccc}{Joystick\+\_\+1\+\_\+\+UP}} = 0
+\item 
+bool \mbox{\hyperlink{main_8c_a323d72ef310715fdcbe9e243a75f41f4}{Joystick\+\_\+1\+\_\+\+Down}} = 0
+\item 
+bool \mbox{\hyperlink{main_8c_a1d578660d2946d302dd584d7cdd9dcae}{Joystick\+\_\+1\+\_\+\+Left}} = 0
+\item 
+bool \mbox{\hyperlink{main_8c_a8bc4a05665d8dd5d5987e9599598d406}{Joystick\+\_\+1\+\_\+\+Right}} = 0
+\item 
+bool \mbox{\hyperlink{main_8c_acb63e8217a650af7563238b5f8863490}{Joystick\+\_\+2\+\_\+\+UP}} = 0
+\item 
+bool \mbox{\hyperlink{main_8c_adfed40a273279692acbb7d7fd98a2f99}{Joystick\+\_\+2\+\_\+\+Down}} = 0
+\item 
+bool \mbox{\hyperlink{main_8c_a42509db7e2d3c18acfb1c4b913e102ee}{Joystick\+\_\+2\+\_\+\+Left}} = 0
+\item 
+bool \mbox{\hyperlink{main_8c_a58667839eba2e4997075bfac00d25e83}{Joystick\+\_\+2\+\_\+\+Right}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Kunal Salvi (\href{mailto:kunalsalvius@gmail.com}{\texttt{ kunalsalvius@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/08-\/20
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 
+\end{DoxyCopyright}
+
+
+Definition in file \mbox{\hyperlink{main_8c_source}{main.\+c}}.
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{main_8c_ab68518941e3df15db2af432e04979f2a}\index{main.c@{main.c}!Joystick\_Buffer\_Size@{Joystick\_Buffer\_Size}}
+\index{Joystick\_Buffer\_Size@{Joystick\_Buffer\_Size}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Joystick\_Buffer\_Size}{Joystick\_Buffer\_Size}}
+{\footnotesize\ttfamily \label{main_8c_ab68518941e3df15db2af432e04979f2a} 
+\#define Joystick\+\_\+\+Buffer\+\_\+\+Size~4}
+
+
+
+Definition at line \mbox{\hyperlink{main_8c_source_l00019}{19}} of file \mbox{\hyperlink{main_8c_source}{main.\+c}}.
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8c_a840291bc02cba5474a4cb46a9b9566fe}\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8c_a840291bc02cba5474a4cb46a9b9566fe} 
+int main (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{main_8c_source_l00035}{35}} of file \mbox{\hyperlink{main_8c_source}{main.\+c}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{main_8c_a1a364df23cc2525085dfa4cec7c54ddd}\index{main.c@{main.c}!Joystick@{Joystick}}
+\index{Joystick@{Joystick}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Joystick}{Joystick}}
+{\footnotesize\ttfamily \label{main_8c_a1a364df23cc2525085dfa4cec7c54ddd} 
+\mbox{\hyperlink{struct_a_d_c___config}{ADC\+\_\+\+Config}} Joystick}
+
+
+
+Definition at line \mbox{\hyperlink{main_8c_source_l00017}{17}} of file \mbox{\hyperlink{main_8c_source}{main.\+c}}.
+
+\Hypertarget{main_8c_a323d72ef310715fdcbe9e243a75f41f4}\index{main.c@{main.c}!Joystick\_1\_Down@{Joystick\_1\_Down}}
+\index{Joystick\_1\_Down@{Joystick\_1\_Down}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Joystick\_1\_Down}{Joystick\_1\_Down}}
+{\footnotesize\ttfamily \label{main_8c_a323d72ef310715fdcbe9e243a75f41f4} 
+bool Joystick\+\_\+1\+\_\+\+Down = 0}
+
+
+
+Definition at line \mbox{\hyperlink{main_8c_source_l00024}{24}} of file \mbox{\hyperlink{main_8c_source}{main.\+c}}.
+
+\Hypertarget{main_8c_a1d578660d2946d302dd584d7cdd9dcae}\index{main.c@{main.c}!Joystick\_1\_Left@{Joystick\_1\_Left}}
+\index{Joystick\_1\_Left@{Joystick\_1\_Left}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Joystick\_1\_Left}{Joystick\_1\_Left}}
+{\footnotesize\ttfamily \label{main_8c_a1d578660d2946d302dd584d7cdd9dcae} 
+bool Joystick\+\_\+1\+\_\+\+Left = 0}
+
+
+
+Definition at line \mbox{\hyperlink{main_8c_source_l00025}{25}} of file \mbox{\hyperlink{main_8c_source}{main.\+c}}.
+
+\Hypertarget{main_8c_a8bc4a05665d8dd5d5987e9599598d406}\index{main.c@{main.c}!Joystick\_1\_Right@{Joystick\_1\_Right}}
+\index{Joystick\_1\_Right@{Joystick\_1\_Right}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Joystick\_1\_Right}{Joystick\_1\_Right}}
+{\footnotesize\ttfamily \label{main_8c_a8bc4a05665d8dd5d5987e9599598d406} 
+bool Joystick\+\_\+1\+\_\+\+Right = 0}
+
+
+
+Definition at line \mbox{\hyperlink{main_8c_source_l00026}{26}} of file \mbox{\hyperlink{main_8c_source}{main.\+c}}.
+
+\Hypertarget{main_8c_ad3aa7eed49e16bb275158c8c034ecccc}\index{main.c@{main.c}!Joystick\_1\_UP@{Joystick\_1\_UP}}
+\index{Joystick\_1\_UP@{Joystick\_1\_UP}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Joystick\_1\_UP}{Joystick\_1\_UP}}
+{\footnotesize\ttfamily \label{main_8c_ad3aa7eed49e16bb275158c8c034ecccc} 
+bool Joystick\+\_\+1\+\_\+\+UP = 0}
+
+
+
+Definition at line \mbox{\hyperlink{main_8c_source_l00023}{23}} of file \mbox{\hyperlink{main_8c_source}{main.\+c}}.
+
+\Hypertarget{main_8c_adfed40a273279692acbb7d7fd98a2f99}\index{main.c@{main.c}!Joystick\_2\_Down@{Joystick\_2\_Down}}
+\index{Joystick\_2\_Down@{Joystick\_2\_Down}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Joystick\_2\_Down}{Joystick\_2\_Down}}
+{\footnotesize\ttfamily \label{main_8c_adfed40a273279692acbb7d7fd98a2f99} 
+bool Joystick\+\_\+2\+\_\+\+Down = 0}
+
+
+
+Definition at line \mbox{\hyperlink{main_8c_source_l00029}{29}} of file \mbox{\hyperlink{main_8c_source}{main.\+c}}.
+
+\Hypertarget{main_8c_a42509db7e2d3c18acfb1c4b913e102ee}\index{main.c@{main.c}!Joystick\_2\_Left@{Joystick\_2\_Left}}
+\index{Joystick\_2\_Left@{Joystick\_2\_Left}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Joystick\_2\_Left}{Joystick\_2\_Left}}
+{\footnotesize\ttfamily \label{main_8c_a42509db7e2d3c18acfb1c4b913e102ee} 
+bool Joystick\+\_\+2\+\_\+\+Left = 0}
+
+
+
+Definition at line \mbox{\hyperlink{main_8c_source_l00030}{30}} of file \mbox{\hyperlink{main_8c_source}{main.\+c}}.
+
+\Hypertarget{main_8c_a58667839eba2e4997075bfac00d25e83}\index{main.c@{main.c}!Joystick\_2\_Right@{Joystick\_2\_Right}}
+\index{Joystick\_2\_Right@{Joystick\_2\_Right}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Joystick\_2\_Right}{Joystick\_2\_Right}}
+{\footnotesize\ttfamily \label{main_8c_a58667839eba2e4997075bfac00d25e83} 
+bool Joystick\+\_\+2\+\_\+\+Right = 0}
+
+
+
+Definition at line \mbox{\hyperlink{main_8c_source_l00031}{31}} of file \mbox{\hyperlink{main_8c_source}{main.\+c}}.
+
+\Hypertarget{main_8c_acb63e8217a650af7563238b5f8863490}\index{main.c@{main.c}!Joystick\_2\_UP@{Joystick\_2\_UP}}
+\index{Joystick\_2\_UP@{Joystick\_2\_UP}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Joystick\_2\_UP}{Joystick\_2\_UP}}
+{\footnotesize\ttfamily \label{main_8c_acb63e8217a650af7563238b5f8863490} 
+bool Joystick\+\_\+2\+\_\+\+UP = 0}
+
+
+
+Definition at line \mbox{\hyperlink{main_8c_source_l00028}{28}} of file \mbox{\hyperlink{main_8c_source}{main.\+c}}.
+
+\Hypertarget{main_8c_a8d375d09c76c08142b06df37c4d69809}\index{main.c@{main.c}!Joystick\_Data\_Buffer@{Joystick\_Data\_Buffer}}
+\index{Joystick\_Data\_Buffer@{Joystick\_Data\_Buffer}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Joystick\_Data\_Buffer}{Joystick\_Data\_Buffer}}
+{\footnotesize\ttfamily \label{main_8c_a8d375d09c76c08142b06df37c4d69809} 
+uint16\+\_\+t Joystick\+\_\+\+Data\+\_\+\+Buffer\mbox{[}Joystick\+\_\+\+Buffer\+\_\+\+Size\mbox{]}}
+
+
+
+Definition at line \mbox{\hyperlink{main_8c_source_l00021}{21}} of file \mbox{\hyperlink{main_8c_source}{main.\+c}}.
+

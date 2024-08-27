@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__u_s_a_r_t_8h_source" xml:lang="en-US">
+<title>USART.h</title>
+<indexterm><primary>USART/USART.h</primary></indexterm>
+<programlisting linenumbering="unnumbered"><anchor xml:id="__u_s_a_r_t_8h_source_1l00001"/>00001 <emphasis role="comment">/*</emphasis>
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00002"/>00002 <emphasis role="comment">&#32;*&#32;USART.h</emphasis>
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00003"/>00003 <emphasis role="comment">&#32;*</emphasis>
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00004"/>00004 <emphasis role="comment">&#32;*&#32;&#32;Created&#32;on:&#32;Oct&#32;18,&#32;2023</emphasis>
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00005"/>00005 <emphasis role="comment">&#32;*&#32;&#32;&#32;&#32;&#32;&#32;Author:&#32;kunal</emphasis>
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00006"/>00006 <emphasis role="comment">&#32;*/</emphasis>
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00007"/>00007 
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00008"/>00008 <emphasis role="preprocessor">#ifndef&#32;USART_H_</emphasis>
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00009"/>00009 <emphasis role="preprocessor">#define&#32;USART_H_</emphasis>
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00010"/>00010 
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00011"/>00011 
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00012"/>00012 <emphasis role="preprocessor">#include&#32;&quot;main.h&quot;</emphasis>
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00013"/>00013 <emphasis role="preprocessor">#include&#32;&quot;GPIO.h&quot;</emphasis>
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00014"/>00014 <emphasis role="preprocessor">#include&#32;&quot;USART_Defs.h&quot;</emphasis>
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00015"/>00015 
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00016"/>00016 
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00017"/>00017 
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00018"/>00018 
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00019"/><link linkend="_struct_u_s_a_r_t___config">00019</link> <emphasis role="keyword">typedef</emphasis>&#32;<emphasis role="keyword">struct&#32;</emphasis><link linkend="_struct_u_s_a_r_t___config">USART_Config</link>
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00020"/>00020 {
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00021"/>00021 &#32;&#32;&#32;&#32;<link linkend="_struct_u_s_a_r_t___type_def">USART_TypeDef</link>&#32;*Port;
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00022"/>00022 &#32;&#32;&#32;&#32;uint32_t&#32;baudrate;
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00023"/>00023 &#32;&#32;&#32;&#32;uint8_t&#32;mode;
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00024"/>00024 &#32;&#32;&#32;&#32;uint8_t&#32;TX_Pin;
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00025"/>00025 &#32;&#32;&#32;&#32;uint8_t&#32;RX_Pin;
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00026"/>00026 &#32;&#32;&#32;&#32;uint8_t&#32;CLK_Pin;
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00027"/>00027 &#32;&#32;&#32;&#32;uint8_t&#32;CTS_Pin;
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00028"/>00028 &#32;&#32;&#32;&#32;uint8_t&#32;RTS_Pin;
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00029"/>00029 &#32;&#32;&#32;&#32;uint8_t&#32;interrupt;
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00030"/>00030 &#32;&#32;&#32;&#32;uint8_t&#32;hardware_flow;
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00031"/>00031 &#32;&#32;&#32;&#32;uint8_t&#32;stop_bits;
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00032"/>00032 &#32;&#32;&#32;&#32;uint8_t&#32;dma_enable;
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00033"/>00033 &#32;&#32;&#32;&#32;uint8_t&#32;parity;
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00034"/>00034 }<link linkend="_struct_u_s_a_r_t___config">USART_Config</link>;
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00035"/>00035 
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00036"/>00036 int8_t&#32;USART_Clock_Enable(<link linkend="_struct_u_s_a_r_t___config">USART_Config</link>&#32;*config);
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00037"/>00037 int8_t&#32;USART_Clock_Disable(<link linkend="_struct_u_s_a_r_t___config">USART_Config</link>&#32;*config);
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00038"/>00038 
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00039"/>00039 <emphasis role="keywordtype">void</emphasis>&#32;USART_Config_Reset(<link linkend="_struct_u_s_a_r_t___config">USART_Config</link>&#32;*config);
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00040"/>00040 
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00041"/>00041 int8_t&#32;USART_Init(<link linkend="_struct_u_s_a_r_t___config">USART_Config</link>&#32;*config);
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00042"/>00042 <emphasis role="keywordtype">void</emphasis>&#32;USART_TX_Byte(<link linkend="_struct_u_s_a_r_t___config">USART_Config</link>&#32;*config,&#32;uint16_t&#32;data);
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00043"/>00043 uint16_t&#32;USART_RX_Byte(<link linkend="_struct_u_s_a_r_t___config">USART_Config</link>&#32;*config);
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00044"/>00044 <emphasis role="keywordtype">void</emphasis>&#32;USART_TX_Buffer(<link linkend="_struct_u_s_a_r_t___config">USART_Config</link>&#32;*config,&#32;uint8_t&#32;*tx_buffer,&#32;uint16_t&#32;length);
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00045"/>00045 <emphasis role="keywordtype">void</emphasis>&#32;USART_RX_Buffer(<link linkend="_struct_u_s_a_r_t___config">USART_Config</link>&#32;*config,&#32;uint8_t&#32;*rx_buffer,&#32;uint16_t&#32;length);
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00046"/>00046 
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00047"/>00047 
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00048"/>00048 
+<anchor xml:id="__u_s_a_r_t_8h_source_1l00049"/>00049 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*&#32;USART_H_&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+</programlisting></section>

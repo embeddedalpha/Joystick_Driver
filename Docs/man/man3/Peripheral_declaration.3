@@ -1,0 +1,608 @@
+.TH "Peripheral_declaration" 3 "Version JSTDRVF4" "Joystick Driver" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Peripheral_declaration \- Peripheral_declaration
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTIM2\fP   ((\fBTIM_TypeDef\fP *) TIM2_BASE)"
+.br
+.ti -1c
+.RI "#define \fBTIM3\fP   ((\fBTIM_TypeDef\fP *) TIM3_BASE)"
+.br
+.ti -1c
+.RI "#define \fBTIM4\fP   ((\fBTIM_TypeDef\fP *) TIM4_BASE)"
+.br
+.ti -1c
+.RI "#define \fBTIM5\fP   ((\fBTIM_TypeDef\fP *) TIM5_BASE)"
+.br
+.ti -1c
+.RI "#define \fBTIM6\fP   ((\fBTIM_TypeDef\fP *) TIM6_BASE)"
+.br
+.ti -1c
+.RI "#define \fBTIM7\fP   ((\fBTIM_TypeDef\fP *) TIM7_BASE)"
+.br
+.ti -1c
+.RI "#define \fBTIM12\fP   ((\fBTIM_TypeDef\fP *) TIM12_BASE)"
+.br
+.ti -1c
+.RI "#define \fBTIM13\fP   ((\fBTIM_TypeDef\fP *) TIM13_BASE)"
+.br
+.ti -1c
+.RI "#define \fBTIM14\fP   ((\fBTIM_TypeDef\fP *) TIM14_BASE)"
+.br
+.ti -1c
+.RI "#define \fBRTC\fP   ((\fBRTC_TypeDef\fP *) RTC_BASE)"
+.br
+.ti -1c
+.RI "#define \fBWWDG\fP   ((\fBWWDG_TypeDef\fP *) WWDG_BASE)"
+.br
+.ti -1c
+.RI "#define \fBIWDG\fP   ((\fBIWDG_TypeDef\fP *) IWDG_BASE)"
+.br
+.ti -1c
+.RI "#define \fBI2S2ext\fP   ((\fBSPI_TypeDef\fP *) I2S2ext_BASE)"
+.br
+.ti -1c
+.RI "#define \fBSPI2\fP   ((\fBSPI_TypeDef\fP *) SPI2_BASE)"
+.br
+.ti -1c
+.RI "#define \fBSPI3\fP   ((\fBSPI_TypeDef\fP *) SPI3_BASE)"
+.br
+.ti -1c
+.RI "#define \fBI2S3ext\fP   ((\fBSPI_TypeDef\fP *) I2S3ext_BASE)"
+.br
+.ti -1c
+.RI "#define \fBUSART2\fP   ((\fBUSART_TypeDef\fP *) USART2_BASE)"
+.br
+.ti -1c
+.RI "#define \fBUSART3\fP   ((\fBUSART_TypeDef\fP *) USART3_BASE)"
+.br
+.ti -1c
+.RI "#define \fBUART4\fP   ((\fBUSART_TypeDef\fP *) UART4_BASE)"
+.br
+.ti -1c
+.RI "#define \fBUART5\fP   ((\fBUSART_TypeDef\fP *) UART5_BASE)"
+.br
+.ti -1c
+.RI "#define \fBI2C1\fP   ((\fBI2C_TypeDef\fP *) I2C1_BASE)"
+.br
+.ti -1c
+.RI "#define \fBI2C2\fP   ((\fBI2C_TypeDef\fP *) I2C2_BASE)"
+.br
+.ti -1c
+.RI "#define \fBI2C3\fP   ((\fBI2C_TypeDef\fP *) I2C3_BASE)"
+.br
+.ti -1c
+.RI "#define \fBCAN1\fP   ((\fBCAN_TypeDef\fP *) CAN1_BASE)"
+.br
+.ti -1c
+.RI "#define \fBCAN2\fP   ((\fBCAN_TypeDef\fP *) CAN2_BASE)"
+.br
+.ti -1c
+.RI "#define \fBPWR\fP   ((\fBPWR_TypeDef\fP *) PWR_BASE)"
+.br
+.ti -1c
+.RI "#define \fBDAC1\fP   ((\fBDAC_TypeDef\fP *) \fBDAC_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDAC\fP   ((\fBDAC_TypeDef\fP *) \fBDAC_BASE\fP) /* Kept for legacy purpose */"
+.br
+.ti -1c
+.RI "#define \fBTIM1\fP   ((\fBTIM_TypeDef\fP *) TIM1_BASE)"
+.br
+.ti -1c
+.RI "#define \fBTIM8\fP   ((\fBTIM_TypeDef\fP *) TIM8_BASE)"
+.br
+.ti -1c
+.RI "#define \fBUSART1\fP   ((\fBUSART_TypeDef\fP *) USART1_BASE)"
+.br
+.ti -1c
+.RI "#define \fBUSART6\fP   ((\fBUSART_TypeDef\fP *) USART6_BASE)"
+.br
+.ti -1c
+.RI "#define \fBADC1\fP   ((\fBADC_TypeDef\fP *) ADC1_BASE)"
+.br
+.ti -1c
+.RI "#define \fBADC2\fP   ((\fBADC_TypeDef\fP *) ADC2_BASE)"
+.br
+.ti -1c
+.RI "#define \fBADC3\fP   ((\fBADC_TypeDef\fP *) ADC3_BASE)"
+.br
+.ti -1c
+.RI "#define \fBADC123_COMMON\fP   ((\fBADC_Common_TypeDef\fP *) ADC123_COMMON_BASE)"
+.br
+.ti -1c
+.RI "#define \fBADC\fP   ADC123_COMMON"
+.br
+.ti -1c
+.RI "#define \fBSDIO\fP   ((\fBSDIO_TypeDef\fP *) SDIO_BASE)"
+.br
+.ti -1c
+.RI "#define \fBSPI1\fP   ((\fBSPI_TypeDef\fP *) SPI1_BASE)"
+.br
+.ti -1c
+.RI "#define \fBSYSCFG\fP   ((\fBSYSCFG_TypeDef\fP *) SYSCFG_BASE)"
+.br
+.ti -1c
+.RI "#define \fBEXTI\fP   ((\fBEXTI_TypeDef\fP *) EXTI_BASE)"
+.br
+.ti -1c
+.RI "#define \fBTIM9\fP   ((\fBTIM_TypeDef\fP *) TIM9_BASE)"
+.br
+.ti -1c
+.RI "#define \fBTIM10\fP   ((\fBTIM_TypeDef\fP *) TIM10_BASE)"
+.br
+.ti -1c
+.RI "#define \fBTIM11\fP   ((\fBTIM_TypeDef\fP *) \fBTIM11_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBGPIOA\fP   ((\fBGPIO_TypeDef\fP *) GPIOA_BASE)"
+.br
+.ti -1c
+.RI "#define \fBGPIOB\fP   ((\fBGPIO_TypeDef\fP *) GPIOB_BASE)"
+.br
+.ti -1c
+.RI "#define \fBGPIOC\fP   ((\fBGPIO_TypeDef\fP *) GPIOC_BASE)"
+.br
+.ti -1c
+.RI "#define \fBGPIOD\fP   ((\fBGPIO_TypeDef\fP *) GPIOD_BASE)"
+.br
+.ti -1c
+.RI "#define \fBGPIOE\fP   ((\fBGPIO_TypeDef\fP *) GPIOE_BASE)"
+.br
+.ti -1c
+.RI "#define \fBGPIOF\fP   ((\fBGPIO_TypeDef\fP *) GPIOF_BASE)"
+.br
+.ti -1c
+.RI "#define \fBGPIOG\fP   ((\fBGPIO_TypeDef\fP *) GPIOG_BASE)"
+.br
+.ti -1c
+.RI "#define \fBGPIOH\fP   ((\fBGPIO_TypeDef\fP *) GPIOH_BASE)"
+.br
+.ti -1c
+.RI "#define \fBGPIOI\fP   ((\fBGPIO_TypeDef\fP *) GPIOI_BASE)"
+.br
+.ti -1c
+.RI "#define \fBCRC\fP   ((\fBCRC_TypeDef\fP *) CRC_BASE)"
+.br
+.ti -1c
+.RI "#define \fBRCC\fP   ((\fBRCC_TypeDef\fP *) RCC_BASE)"
+.br
+.ti -1c
+.RI "#define \fBFLASH\fP   ((\fBFLASH_TypeDef\fP *) FLASH_R_BASE)"
+.br
+.ti -1c
+.RI "#define \fBDMA1\fP   ((\fBDMA_TypeDef\fP *) DMA1_BASE)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Stream0\fP   ((\fBDMA_Stream_TypeDef\fP *) DMA1_Stream0_BASE)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Stream1\fP   ((\fBDMA_Stream_TypeDef\fP *) DMA1_Stream1_BASE)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Stream2\fP   ((\fBDMA_Stream_TypeDef\fP *) DMA1_Stream2_BASE)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Stream3\fP   ((\fBDMA_Stream_TypeDef\fP *) DMA1_Stream3_BASE)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Stream4\fP   ((\fBDMA_Stream_TypeDef\fP *) DMA1_Stream4_BASE)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Stream5\fP   ((\fBDMA_Stream_TypeDef\fP *) DMA1_Stream5_BASE)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Stream6\fP   ((\fBDMA_Stream_TypeDef\fP *) DMA1_Stream6_BASE)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Stream7\fP   ((\fBDMA_Stream_TypeDef\fP *) DMA1_Stream7_BASE)"
+.br
+.ti -1c
+.RI "#define \fBDMA2\fP   ((\fBDMA_TypeDef\fP *) DMA2_BASE)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_Stream0\fP   ((\fBDMA_Stream_TypeDef\fP *) DMA2_Stream0_BASE)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_Stream1\fP   ((\fBDMA_Stream_TypeDef\fP *) DMA2_Stream1_BASE)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_Stream2\fP   ((\fBDMA_Stream_TypeDef\fP *) DMA2_Stream2_BASE)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_Stream3\fP   ((\fBDMA_Stream_TypeDef\fP *) DMA2_Stream3_BASE)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_Stream4\fP   ((\fBDMA_Stream_TypeDef\fP *) DMA2_Stream4_BASE)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_Stream5\fP   ((\fBDMA_Stream_TypeDef\fP *) DMA2_Stream5_BASE)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_Stream6\fP   ((\fBDMA_Stream_TypeDef\fP *) DMA2_Stream6_BASE)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_Stream7\fP   ((\fBDMA_Stream_TypeDef\fP *) DMA2_Stream7_BASE)"
+.br
+.ti -1c
+.RI "#define \fBETH\fP   ((\fBETH_TypeDef\fP *) ETH_BASE)"
+.br
+.ti -1c
+.RI "#define \fBDCMI\fP   ((\fBDCMI_TypeDef\fP *) DCMI_BASE)"
+.br
+.ti -1c
+.RI "#define \fBRNG\fP   ((\fBRNG_TypeDef\fP *) \fBRNG_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_Bank1\fP   ((\fBFSMC_Bank1_TypeDef\fP *) FSMC_Bank1_R_BASE)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_Bank1E\fP   ((\fBFSMC_Bank1E_TypeDef\fP *) FSMC_Bank1E_R_BASE)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_Bank2_3\fP   ((\fBFSMC_Bank2_3_TypeDef\fP *) FSMC_Bank2_3_R_BASE)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_Bank4\fP   ((\fBFSMC_Bank4_TypeDef\fP *) \fBFSMC_Bank4_R_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDBGMCU\fP   ((\fBDBGMCU_TypeDef\fP *) \fBDBGMCU_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBUSB_OTG_FS\fP   ((\fBUSB_OTG_GlobalTypeDef\fP *) USB_OTG_FS_PERIPH_BASE)"
+.br
+.ti -1c
+.RI "#define \fBUSB_OTG_HS\fP   ((\fBUSB_OTG_GlobalTypeDef\fP *) USB_OTG_HS_PERIPH_BASE)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define ADC   ADC123_COMMON"
+
+.PP
+Definition at line \fB1094\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define ADC1   ((\fBADC_TypeDef\fP *) ADC1_BASE)"
+
+.PP
+Definition at line \fB1089\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define ADC123_COMMON   ((\fBADC_Common_TypeDef\fP *) ADC123_COMMON_BASE)"
+
+.PP
+Definition at line \fB1092\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define ADC2   ((\fBADC_TypeDef\fP *) ADC2_BASE)"
+
+.PP
+Definition at line \fB1090\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define ADC3   ((\fBADC_TypeDef\fP *) ADC3_BASE)"
+
+.PP
+Definition at line \fB1091\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define CAN1   ((\fBCAN_TypeDef\fP *) CAN1_BASE)"
+
+.PP
+Definition at line \fB1080\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define CAN2   ((\fBCAN_TypeDef\fP *) CAN2_BASE)"
+
+.PP
+Definition at line \fB1081\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define CRC   ((\fBCRC_TypeDef\fP *) CRC_BASE)"
+
+.PP
+Definition at line \fB1111\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define DAC   ((\fBDAC_TypeDef\fP *) \fBDAC_BASE\fP) /* Kept for legacy purpose */"
+
+.PP
+Definition at line \fB1084\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define DAC1   ((\fBDAC_TypeDef\fP *) \fBDAC_BASE\fP)"
+
+.PP
+Definition at line \fB1083\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define DBGMCU   ((\fBDBGMCU_TypeDef\fP *) \fBDBGMCU_BASE\fP)"
+
+.PP
+Definition at line \fB1139\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define DCMI   ((\fBDCMI_TypeDef\fP *) DCMI_BASE)"
+
+.PP
+Definition at line \fB1133\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define DMA1   ((\fBDMA_TypeDef\fP *) DMA1_BASE)"
+
+.PP
+Definition at line \fB1114\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define DMA1_Stream0   ((\fBDMA_Stream_TypeDef\fP *) DMA1_Stream0_BASE)"
+
+.PP
+Definition at line \fB1115\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define DMA1_Stream1   ((\fBDMA_Stream_TypeDef\fP *) DMA1_Stream1_BASE)"
+
+.PP
+Definition at line \fB1116\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define DMA1_Stream2   ((\fBDMA_Stream_TypeDef\fP *) DMA1_Stream2_BASE)"
+
+.PP
+Definition at line \fB1117\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define DMA1_Stream3   ((\fBDMA_Stream_TypeDef\fP *) DMA1_Stream3_BASE)"
+
+.PP
+Definition at line \fB1118\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define DMA1_Stream4   ((\fBDMA_Stream_TypeDef\fP *) DMA1_Stream4_BASE)"
+
+.PP
+Definition at line \fB1119\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define DMA1_Stream5   ((\fBDMA_Stream_TypeDef\fP *) DMA1_Stream5_BASE)"
+
+.PP
+Definition at line \fB1120\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define DMA1_Stream6   ((\fBDMA_Stream_TypeDef\fP *) DMA1_Stream6_BASE)"
+
+.PP
+Definition at line \fB1121\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define DMA1_Stream7   ((\fBDMA_Stream_TypeDef\fP *) DMA1_Stream7_BASE)"
+
+.PP
+Definition at line \fB1122\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define DMA2   ((\fBDMA_TypeDef\fP *) DMA2_BASE)"
+
+.PP
+Definition at line \fB1123\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define DMA2_Stream0   ((\fBDMA_Stream_TypeDef\fP *) DMA2_Stream0_BASE)"
+
+.PP
+Definition at line \fB1124\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define DMA2_Stream1   ((\fBDMA_Stream_TypeDef\fP *) DMA2_Stream1_BASE)"
+
+.PP
+Definition at line \fB1125\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define DMA2_Stream2   ((\fBDMA_Stream_TypeDef\fP *) DMA2_Stream2_BASE)"
+
+.PP
+Definition at line \fB1126\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define DMA2_Stream3   ((\fBDMA_Stream_TypeDef\fP *) DMA2_Stream3_BASE)"
+
+.PP
+Definition at line \fB1127\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define DMA2_Stream4   ((\fBDMA_Stream_TypeDef\fP *) DMA2_Stream4_BASE)"
+
+.PP
+Definition at line \fB1128\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define DMA2_Stream5   ((\fBDMA_Stream_TypeDef\fP *) DMA2_Stream5_BASE)"
+
+.PP
+Definition at line \fB1129\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define DMA2_Stream6   ((\fBDMA_Stream_TypeDef\fP *) DMA2_Stream6_BASE)"
+
+.PP
+Definition at line \fB1130\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define DMA2_Stream7   ((\fBDMA_Stream_TypeDef\fP *) DMA2_Stream7_BASE)"
+
+.PP
+Definition at line \fB1131\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define ETH   ((\fBETH_TypeDef\fP *) ETH_BASE)"
+
+.PP
+Definition at line \fB1132\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define EXTI   ((\fBEXTI_TypeDef\fP *) EXTI_BASE)"
+
+.PP
+Definition at line \fB1098\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define FLASH   ((\fBFLASH_TypeDef\fP *) FLASH_R_BASE)"
+
+.PP
+Definition at line \fB1113\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define FSMC_Bank1   ((\fBFSMC_Bank1_TypeDef\fP *) FSMC_Bank1_R_BASE)"
+
+.PP
+Definition at line \fB1135\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define FSMC_Bank1E   ((\fBFSMC_Bank1E_TypeDef\fP *) FSMC_Bank1E_R_BASE)"
+
+.PP
+Definition at line \fB1136\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define FSMC_Bank2_3   ((\fBFSMC_Bank2_3_TypeDef\fP *) FSMC_Bank2_3_R_BASE)"
+
+.PP
+Definition at line \fB1137\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define FSMC_Bank4   ((\fBFSMC_Bank4_TypeDef\fP *) \fBFSMC_Bank4_R_BASE\fP)"
+
+.PP
+Definition at line \fB1138\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define GPIOA   ((\fBGPIO_TypeDef\fP *) GPIOA_BASE)"
+
+.PP
+Definition at line \fB1102\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define GPIOB   ((\fBGPIO_TypeDef\fP *) GPIOB_BASE)"
+
+.PP
+Definition at line \fB1103\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define GPIOC   ((\fBGPIO_TypeDef\fP *) GPIOC_BASE)"
+
+.PP
+Definition at line \fB1104\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define GPIOD   ((\fBGPIO_TypeDef\fP *) GPIOD_BASE)"
+
+.PP
+Definition at line \fB1105\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define GPIOE   ((\fBGPIO_TypeDef\fP *) GPIOE_BASE)"
+
+.PP
+Definition at line \fB1106\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define GPIOF   ((\fBGPIO_TypeDef\fP *) GPIOF_BASE)"
+
+.PP
+Definition at line \fB1107\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define GPIOG   ((\fBGPIO_TypeDef\fP *) GPIOG_BASE)"
+
+.PP
+Definition at line \fB1108\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define GPIOH   ((\fBGPIO_TypeDef\fP *) GPIOH_BASE)"
+
+.PP
+Definition at line \fB1109\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define GPIOI   ((\fBGPIO_TypeDef\fP *) GPIOI_BASE)"
+
+.PP
+Definition at line \fB1110\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define I2C1   ((\fBI2C_TypeDef\fP *) I2C1_BASE)"
+
+.PP
+Definition at line \fB1077\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define I2C2   ((\fBI2C_TypeDef\fP *) I2C2_BASE)"
+
+.PP
+Definition at line \fB1078\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define I2C3   ((\fBI2C_TypeDef\fP *) I2C3_BASE)"
+
+.PP
+Definition at line \fB1079\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define I2S2ext   ((\fBSPI_TypeDef\fP *) I2S2ext_BASE)"
+
+.PP
+Definition at line \fB1069\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define I2S3ext   ((\fBSPI_TypeDef\fP *) I2S3ext_BASE)"
+
+.PP
+Definition at line \fB1072\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define IWDG   ((\fBIWDG_TypeDef\fP *) IWDG_BASE)"
+
+.PP
+Definition at line \fB1068\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define PWR   ((\fBPWR_TypeDef\fP *) PWR_BASE)"
+
+.PP
+Definition at line \fB1082\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define RCC   ((\fBRCC_TypeDef\fP *) RCC_BASE)"
+
+.PP
+Definition at line \fB1112\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define RNG   ((\fBRNG_TypeDef\fP *) \fBRNG_BASE\fP)"
+
+.PP
+Definition at line \fB1134\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define RTC   ((\fBRTC_TypeDef\fP *) RTC_BASE)"
+
+.PP
+Definition at line \fB1066\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define SDIO   ((\fBSDIO_TypeDef\fP *) SDIO_BASE)"
+
+.PP
+Definition at line \fB1095\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define SPI1   ((\fBSPI_TypeDef\fP *) SPI1_BASE)"
+
+.PP
+Definition at line \fB1096\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define SPI2   ((\fBSPI_TypeDef\fP *) SPI2_BASE)"
+
+.PP
+Definition at line \fB1070\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define SPI3   ((\fBSPI_TypeDef\fP *) SPI3_BASE)"
+
+.PP
+Definition at line \fB1071\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define SYSCFG   ((\fBSYSCFG_TypeDef\fP *) SYSCFG_BASE)"
+
+.PP
+Definition at line \fB1097\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define TIM1   ((\fBTIM_TypeDef\fP *) TIM1_BASE)"
+
+.PP
+Definition at line \fB1085\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define TIM10   ((\fBTIM_TypeDef\fP *) TIM10_BASE)"
+
+.PP
+Definition at line \fB1100\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define TIM11   ((\fBTIM_TypeDef\fP *) \fBTIM11_BASE\fP)"
+
+.PP
+Definition at line \fB1101\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define TIM12   ((\fBTIM_TypeDef\fP *) TIM12_BASE)"
+
+.PP
+Definition at line \fB1063\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define TIM13   ((\fBTIM_TypeDef\fP *) TIM13_BASE)"
+
+.PP
+Definition at line \fB1064\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define TIM14   ((\fBTIM_TypeDef\fP *) TIM14_BASE)"
+
+.PP
+Definition at line \fB1065\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define TIM2   ((\fBTIM_TypeDef\fP *) TIM2_BASE)"
+
+.PP
+Definition at line \fB1057\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define TIM3   ((\fBTIM_TypeDef\fP *) TIM3_BASE)"
+
+.PP
+Definition at line \fB1058\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define TIM4   ((\fBTIM_TypeDef\fP *) TIM4_BASE)"
+
+.PP
+Definition at line \fB1059\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define TIM5   ((\fBTIM_TypeDef\fP *) TIM5_BASE)"
+
+.PP
+Definition at line \fB1060\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define TIM6   ((\fBTIM_TypeDef\fP *) TIM6_BASE)"
+
+.PP
+Definition at line \fB1061\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define TIM7   ((\fBTIM_TypeDef\fP *) TIM7_BASE)"
+
+.PP
+Definition at line \fB1062\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define TIM8   ((\fBTIM_TypeDef\fP *) TIM8_BASE)"
+
+.PP
+Definition at line \fB1086\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define TIM9   ((\fBTIM_TypeDef\fP *) TIM9_BASE)"
+
+.PP
+Definition at line \fB1099\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define UART4   ((\fBUSART_TypeDef\fP *) UART4_BASE)"
+
+.PP
+Definition at line \fB1075\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define UART5   ((\fBUSART_TypeDef\fP *) UART5_BASE)"
+
+.PP
+Definition at line \fB1076\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define USART1   ((\fBUSART_TypeDef\fP *) USART1_BASE)"
+
+.PP
+Definition at line \fB1087\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define USART2   ((\fBUSART_TypeDef\fP *) USART2_BASE)"
+
+.PP
+Definition at line \fB1073\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define USART3   ((\fBUSART_TypeDef\fP *) USART3_BASE)"
+
+.PP
+Definition at line \fB1074\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define USART6   ((\fBUSART_TypeDef\fP *) USART6_BASE)"
+
+.PP
+Definition at line \fB1088\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define USB_OTG_FS   ((\fBUSB_OTG_GlobalTypeDef\fP *) USB_OTG_FS_PERIPH_BASE)"
+
+.PP
+Definition at line \fB1140\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define USB_OTG_HS   ((\fBUSB_OTG_GlobalTypeDef\fP *) USB_OTG_HS_PERIPH_BASE)"
+
+.PP
+Definition at line \fB1141\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "#define WWDG   ((\fBWWDG_TypeDef\fP *) WWDG_BASE)"
+
+.PP
+Definition at line \fB1067\fP of file \fBstm32f407xx\&.h\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Joystick Driver from the source code\&.

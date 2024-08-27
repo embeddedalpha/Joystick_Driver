@@ -1,0 +1,82 @@
+.TH "USB_OTG_INEndpointTypeDef" 3 "Version JSTDRVF4" "Joystick Driver" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+USB_OTG_INEndpointTypeDef \- USB_OTG_IN_Endpoint-Specific_Register\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <stm32f407xx\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDIEPCTL\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBReserved04\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDIEPINT\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBReserved0C\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDIEPTSIZ\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDIEPDMA\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDTXFSTS\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBReserved18\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+USB_OTG_IN_Endpoint-Specific_Register\&. 
+.PP
+Definition at line \fB845\fP of file \fBstm32f407xx\&.h\fP\&.
+.SH "Field Documentation"
+.PP 
+.SS "\fB__IO\fP uint32_t DIEPCTL"
+dev IN Endpoint Control Reg 900h + (ep_num * 20h) + 00h 
+.PP
+Definition at line \fB847\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t DIEPDMA"
+IN Endpoint DMA Address Reg 900h + (ep_num * 20h) + 14h 
+.PP
+Definition at line \fB852\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t DIEPINT"
+dev IN Endpoint Itr Reg 900h + (ep_num * 20h) + 08h 
+.PP
+Definition at line \fB849\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t DIEPTSIZ"
+IN Endpoint Txfer Size 900h + (ep_num * 20h) + 10h 
+.PP
+Definition at line \fB851\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "\fB__IO\fP uint32_t DTXFSTS"
+IN Endpoint Tx FIFO Status Reg 900h + (ep_num * 20h) + 18h 
+.PP
+Definition at line \fB853\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "uint32_t Reserved04"
+Reserved 900h + (ep_num * 20h) + 04h 
+.PP
+Definition at line \fB848\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "uint32_t Reserved0C"
+Reserved 900h + (ep_num * 20h) + 0Ch 
+.PP
+Definition at line \fB850\fP of file \fBstm32f407xx\&.h\fP\&.
+.SS "uint32_t Reserved18"
+Reserved 900h+(ep_num*20h)+1Ch-900h+ (ep_num * 20h) + 1Ch 
+.PP
+Definition at line \fB854\fP of file \fBstm32f407xx\&.h\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Joystick Driver from the source code\&.

@@ -1,0 +1,633 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_e_t_h___type_def" xml:lang="en-US">
+<title>ETH_TypeDef Struct Reference</title>
+<indexterm><primary>ETH_TypeDef</primary></indexterm>
+<para>
+
+<para>Ethernet MAC. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;stm32f407xx.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a20acbcac1c35f66de94c9ff0e2ddc7b0">MACCR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a8ad4e3dbde1518ecde5d979c2a89a76a">MACFFR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a121212bdb227106df681d24e5d896a4e">MACHTHR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a1d34ab8e5c2041c00ba9526b3958099d">MACHTLR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a9ea1e1c6615eb3bd70eb328dba65fc87">MACMIIAR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a87c7687c35332bf5ee86473043652146">MACMIIDR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a12f62d3d3b9ee30c20c324b146e72795">MACFCR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a92ff1fe799bb33d13efbaa1195867781">MACVLANTR</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_e_t_h___type_def_1a8be676577db129a84a9a2689519a8502">RESERVED0</link> [2]</para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a129dcc23d48588d5af7dd218b617933d">MACRWUFFR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1abbb2f4f89e7d8c3242365b4506e43217">MACPMTCSR</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_e_t_h___type_def_1ac4ac04e673b5b8320d53f7b0947db902">RESERVED1</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a8f35b3865c1f5fce934c1d48b9a63442">MACDBGR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a1173127526cca9128e409bc83c7729dc">MACSR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1ac42b829c02429cb9363563f7eb9d58ed">MACIMR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1ab8b4520c137846f0a128146144514419">MACA0HR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a45e8169adb601f00e411b840f9fbb5af">MACA0LR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a3a6cc81e1024f9a93ec7653d32f12dcb">MACA1HR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1aadfb486dd07e2fd02fb491733deffd9b">MACA1LR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a38f1ce04678d5141e115cfd6f7b803d1">MACA2HR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a423b12ab536a1c4fdb1ce63f645822a7">MACA2LR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1ad02ff09f7ce33f093ad04b84fee2bdec">MACA3HR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a2ba9f73c7fa756305d54a8f80872c6df">MACA3LR</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_e_t_h___type_def_1a1cf0d9299ef58b327f4e3d03da1c1aaf">RESERVED2</link> [40]</para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1ad57490cb3a07132702f96d8b5d547c89">MMCCR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1aea29ac183c979d0cb95ad3781fe9ed91">MMCRIR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a614e0b81fce7cf218a357f8a0a3de7b8">MMCTIR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a63872a3017c14a869c647123573dd002">MMCRIMR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a18e294dd2625a93ebf2aab9f2b3c4911">MMCTIMR</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_e_t_h___type_def_1af6446adf612691721c62fc68aff4fe39">RESERVED3</link> [14]</para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a23970354d69354ab78165e76afd6c2f7">MMCTGFSCCR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a50c8425cf8d27268b3272ace0a224a94">MMCTGFMSCCR</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_e_t_h___type_def_1abca175d3acfbc2a0806452fd57ea5fc4">RESERVED4</link> [5]</para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a71d932b554a5548e5d85ed81e58c1ed0">MMCTGFCR</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_e_t_h___type_def_1a3c1a316c73bb5f0eae7fbe66177cbca6">RESERVED5</link> [10]</para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1aff6eeec1afa983f153ff0786c8902d43">MMCRFCECR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a65bb525a3f4d3ee131f9a7ed899d5eef">MMCRFAECR</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_e_t_h___type_def_1a7e9a9bba62d1d98e3058b29a892b3877">RESERVED6</link> [10]</para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a6ff264b60a3b40f40d136288e5ec5ba8">MMCRGUFCR</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_e_t_h___type_def_1ab1b7eacec3f164ed04001e9c806f73f9">RESERVED7</link> [334]</para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1aa657aa42398bc8294976632d778b6db4">PTPTSCR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1af34b7e8815984e272daa3f089014af4e">PTPSSIR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a1ebbda0d742e80ca3d53edfa3a95f627">PTPTSHR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a55c1058cd74dba0ed0cb8963684b9199">PTPTSLR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1ae8e4ef158db1de28bfd759e40677ba4c">PTPTSHUR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a646bf44e807d10a09f980ace333d33ab">PTPTSLUR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a8f47c0f21e22b98bbc2c9f3b6342fbb8">PTPTSAR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1af90723c7aee9c32113a2667b0a5c69f1">PTPTTHR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a28e7b0195ce457d20f585f6587fc1cb8">PTPTTLR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a2e60bc2eefc18398fb2459d1b44453e5">RESERVED8</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1adca0624d09f2c72eee9807cea80a4d0c">PTPTSSR</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_e_t_h___type_def_1ae62fffd7d8f9f69b15edacdea4ba27f2">RESERVED9</link> [565]</para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1ad1e11eb1200e64e0563e3576bf258194">DMABMR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1acf0114902a52b7ffcc343e06484b3623">DMATPDR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1aad6309afe126da26921191697d7e5c43">DMARPDR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a581ce491c035ce46db723260377c2032">DMARDLAR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a7dba9527df73350f35683140d73a5f8d">DMATDLAR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a9e7c3d04e4dcf975939eeaac246b25d0">DMASR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1aa15b972f30ee47f5df0d3ebc8866509d">DMAOMR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1add56f3652fd065c6797411e80477a064">DMAIER</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a12eba1fc5d54aa50fdda201f7f9a84a3">DMAMFBOCR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1ac6fe9e194ed9d08bf6bd28ceb80ac4b0">DMARSWTR</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_e_t_h___type_def_1a57d552323802fb4dd0bac95a02e814f0">RESERVED10</link> [8]</para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1ab5bb348210fdd9a5538eb57abc5a5673">DMACHTDR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a9c49de2e699886d6604fd2b3d376a0e9">DMACHRDR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1a900f9f888342fbdd8ee07e3ee1d4b73c">DMACHTBAR</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_e_t_h___type_def_1acf3f7ecbf774d8d505655ac7f24761fc">DMACHRBAR</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Ethernet MAC. </para>
+<para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00367">367</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_struct_e_t_h___type_def_1ad1e11eb1200e64e0563e3576bf258194"/><section>
+    <title>DMABMR</title>
+<indexterm><primary>DMABMR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>DMABMR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DMABMR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00421">421</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1acf3f7ecbf774d8d505655ac7f24761fc"/><section>
+    <title>DMACHRBAR</title>
+<indexterm><primary>DMACHRBAR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>DMACHRBAR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DMACHRBAR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00435">435</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a9c49de2e699886d6604fd2b3d376a0e9"/><section>
+    <title>DMACHRDR</title>
+<indexterm><primary>DMACHRDR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>DMACHRDR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DMACHRDR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00433">433</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a900f9f888342fbdd8ee07e3ee1d4b73c"/><section>
+    <title>DMACHTBAR</title>
+<indexterm><primary>DMACHTBAR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>DMACHTBAR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DMACHTBAR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00434">434</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1ab5bb348210fdd9a5538eb57abc5a5673"/><section>
+    <title>DMACHTDR</title>
+<indexterm><primary>DMACHTDR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>DMACHTDR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DMACHTDR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00432">432</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1add56f3652fd065c6797411e80477a064"/><section>
+    <title>DMAIER</title>
+<indexterm><primary>DMAIER</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>DMAIER</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DMAIER</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00428">428</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a12eba1fc5d54aa50fdda201f7f9a84a3"/><section>
+    <title>DMAMFBOCR</title>
+<indexterm><primary>DMAMFBOCR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>DMAMFBOCR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DMAMFBOCR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00429">429</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1aa15b972f30ee47f5df0d3ebc8866509d"/><section>
+    <title>DMAOMR</title>
+<indexterm><primary>DMAOMR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>DMAOMR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DMAOMR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00427">427</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a581ce491c035ce46db723260377c2032"/><section>
+    <title>DMARDLAR</title>
+<indexterm><primary>DMARDLAR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>DMARDLAR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DMARDLAR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00424">424</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1aad6309afe126da26921191697d7e5c43"/><section>
+    <title>DMARPDR</title>
+<indexterm><primary>DMARPDR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>DMARPDR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DMARPDR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00423">423</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1ac6fe9e194ed9d08bf6bd28ceb80ac4b0"/><section>
+    <title>DMARSWTR</title>
+<indexterm><primary>DMARSWTR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>DMARSWTR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DMARSWTR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00430">430</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a9e7c3d04e4dcf975939eeaac246b25d0"/><section>
+    <title>DMASR</title>
+<indexterm><primary>DMASR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>DMASR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DMASR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00426">426</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a7dba9527df73350f35683140d73a5f8d"/><section>
+    <title>DMATDLAR</title>
+<indexterm><primary>DMATDLAR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>DMATDLAR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DMATDLAR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00425">425</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1acf0114902a52b7ffcc343e06484b3623"/><section>
+    <title>DMATPDR</title>
+<indexterm><primary>DMATPDR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>DMATPDR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DMATPDR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00422">422</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1ab8b4520c137846f0a128146144514419"/><section>
+    <title>MACA0HR</title>
+<indexterm><primary>MACA0HR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MACA0HR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MACA0HR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00384">384</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a45e8169adb601f00e411b840f9fbb5af"/><section>
+    <title>MACA0LR</title>
+<indexterm><primary>MACA0LR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MACA0LR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MACA0LR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00385">385</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a3a6cc81e1024f9a93ec7653d32f12dcb"/><section>
+    <title>MACA1HR</title>
+<indexterm><primary>MACA1HR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MACA1HR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MACA1HR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00386">386</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1aadfb486dd07e2fd02fb491733deffd9b"/><section>
+    <title>MACA1LR</title>
+<indexterm><primary>MACA1LR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MACA1LR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MACA1LR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00387">387</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a38f1ce04678d5141e115cfd6f7b803d1"/><section>
+    <title>MACA2HR</title>
+<indexterm><primary>MACA2HR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MACA2HR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MACA2HR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00388">388</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a423b12ab536a1c4fdb1ce63f645822a7"/><section>
+    <title>MACA2LR</title>
+<indexterm><primary>MACA2LR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MACA2LR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MACA2LR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00389">389</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1ad02ff09f7ce33f093ad04b84fee2bdec"/><section>
+    <title>MACA3HR</title>
+<indexterm><primary>MACA3HR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MACA3HR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MACA3HR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00390">390</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a2ba9f73c7fa756305d54a8f80872c6df"/><section>
+    <title>MACA3LR</title>
+<indexterm><primary>MACA3LR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MACA3LR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MACA3LR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00391">391</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a20acbcac1c35f66de94c9ff0e2ddc7b0"/><section>
+    <title>MACCR</title>
+<indexterm><primary>MACCR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MACCR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MACCR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00369">369</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a8f35b3865c1f5fce934c1d48b9a63442"/><section>
+    <title>MACDBGR</title>
+<indexterm><primary>MACDBGR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MACDBGR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MACDBGR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00381">381</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a12f62d3d3b9ee30c20c324b146e72795"/><section>
+    <title>MACFCR</title>
+<indexterm><primary>MACFCR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MACFCR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MACFCR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00375">375</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a8ad4e3dbde1518ecde5d979c2a89a76a"/><section>
+    <title>MACFFR</title>
+<indexterm><primary>MACFFR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MACFFR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MACFFR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00370">370</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a121212bdb227106df681d24e5d896a4e"/><section>
+    <title>MACHTHR</title>
+<indexterm><primary>MACHTHR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MACHTHR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MACHTHR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00371">371</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a1d34ab8e5c2041c00ba9526b3958099d"/><section>
+    <title>MACHTLR</title>
+<indexterm><primary>MACHTLR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MACHTLR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MACHTLR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00372">372</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1ac42b829c02429cb9363563f7eb9d58ed"/><section>
+    <title>MACIMR</title>
+<indexterm><primary>MACIMR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MACIMR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MACIMR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00383">383</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a9ea1e1c6615eb3bd70eb328dba65fc87"/><section>
+    <title>MACMIIAR</title>
+<indexterm><primary>MACMIIAR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MACMIIAR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MACMIIAR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00373">373</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a87c7687c35332bf5ee86473043652146"/><section>
+    <title>MACMIIDR</title>
+<indexterm><primary>MACMIIDR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MACMIIDR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MACMIIDR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00374">374</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1abbb2f4f89e7d8c3242365b4506e43217"/><section>
+    <title>MACPMTCSR</title>
+<indexterm><primary>MACPMTCSR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MACPMTCSR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MACPMTCSR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00379">379</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a129dcc23d48588d5af7dd218b617933d"/><section>
+    <title>MACRWUFFR</title>
+<indexterm><primary>MACRWUFFR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MACRWUFFR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MACRWUFFR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00378">378</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a1173127526cca9128e409bc83c7729dc"/><section>
+    <title>MACSR</title>
+<indexterm><primary>MACSR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MACSR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MACSR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00382">382</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a92ff1fe799bb33d13efbaa1195867781"/><section>
+    <title>MACVLANTR</title>
+<indexterm><primary>MACVLANTR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MACVLANTR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MACVLANTR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00376">376</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1ad57490cb3a07132702f96d8b5d547c89"/><section>
+    <title>MMCCR</title>
+<indexterm><primary>MMCCR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MMCCR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MMCCR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00393">393</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a65bb525a3f4d3ee131f9a7ed899d5eef"/><section>
+    <title>MMCRFAECR</title>
+<indexterm><primary>MMCRFAECR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MMCRFAECR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MMCRFAECR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00405">405</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1aff6eeec1afa983f153ff0786c8902d43"/><section>
+    <title>MMCRFCECR</title>
+<indexterm><primary>MMCRFCECR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MMCRFCECR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MMCRFCECR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00404">404</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a6ff264b60a3b40f40d136288e5ec5ba8"/><section>
+    <title>MMCRGUFCR</title>
+<indexterm><primary>MMCRGUFCR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MMCRGUFCR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MMCRGUFCR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00407">407</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a63872a3017c14a869c647123573dd002"/><section>
+    <title>MMCRIMR</title>
+<indexterm><primary>MMCRIMR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MMCRIMR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MMCRIMR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00396">396</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1aea29ac183c979d0cb95ad3781fe9ed91"/><section>
+    <title>MMCRIR</title>
+<indexterm><primary>MMCRIR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MMCRIR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MMCRIR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00394">394</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a71d932b554a5548e5d85ed81e58c1ed0"/><section>
+    <title>MMCTGFCR</title>
+<indexterm><primary>MMCTGFCR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MMCTGFCR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MMCTGFCR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00402">402</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a50c8425cf8d27268b3272ace0a224a94"/><section>
+    <title>MMCTGFMSCCR</title>
+<indexterm><primary>MMCTGFMSCCR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MMCTGFMSCCR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MMCTGFMSCCR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00400">400</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a23970354d69354ab78165e76afd6c2f7"/><section>
+    <title>MMCTGFSCCR</title>
+<indexterm><primary>MMCTGFSCCR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MMCTGFSCCR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MMCTGFSCCR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00399">399</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a18e294dd2625a93ebf2aab9f2b3c4911"/><section>
+    <title>MMCTIMR</title>
+<indexterm><primary>MMCTIMR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MMCTIMR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MMCTIMR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00397">397</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a614e0b81fce7cf218a357f8a0a3de7b8"/><section>
+    <title>MMCTIR</title>
+<indexterm><primary>MMCTIR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>MMCTIR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MMCTIR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00395">395</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1af34b7e8815984e272daa3f089014af4e"/><section>
+    <title>PTPSSIR</title>
+<indexterm><primary>PTPSSIR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>PTPSSIR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t PTPSSIR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00410">410</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a8f47c0f21e22b98bbc2c9f3b6342fbb8"/><section>
+    <title>PTPTSAR</title>
+<indexterm><primary>PTPTSAR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>PTPTSAR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t PTPTSAR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00415">415</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1aa657aa42398bc8294976632d778b6db4"/><section>
+    <title>PTPTSCR</title>
+<indexterm><primary>PTPTSCR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>PTPTSCR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t PTPTSCR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00409">409</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a1ebbda0d742e80ca3d53edfa3a95f627"/><section>
+    <title>PTPTSHR</title>
+<indexterm><primary>PTPTSHR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>PTPTSHR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t PTPTSHR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00411">411</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1ae8e4ef158db1de28bfd759e40677ba4c"/><section>
+    <title>PTPTSHUR</title>
+<indexterm><primary>PTPTSHUR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>PTPTSHUR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t PTPTSHUR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00413">413</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a55c1058cd74dba0ed0cb8963684b9199"/><section>
+    <title>PTPTSLR</title>
+<indexterm><primary>PTPTSLR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>PTPTSLR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t PTPTSLR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00412">412</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a646bf44e807d10a09f980ace333d33ab"/><section>
+    <title>PTPTSLUR</title>
+<indexterm><primary>PTPTSLUR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>PTPTSLUR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t PTPTSLUR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00414">414</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1adca0624d09f2c72eee9807cea80a4d0c"/><section>
+    <title>PTPTSSR</title>
+<indexterm><primary>PTPTSSR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>PTPTSSR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t PTPTSSR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00419">419</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1af90723c7aee9c32113a2667b0a5c69f1"/><section>
+    <title>PTPTTHR</title>
+<indexterm><primary>PTPTTHR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>PTPTTHR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t PTPTTHR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00416">416</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a28e7b0195ce457d20f585f6587fc1cb8"/><section>
+    <title>PTPTTLR</title>
+<indexterm><primary>PTPTTLR</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>PTPTTLR</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t PTPTTLR</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00417">417</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a8be676577db129a84a9a2689519a8502"/><section>
+    <title>RESERVED0</title>
+<indexterm><primary>RESERVED0</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>RESERVED0</secondary></indexterm>
+<para><computeroutput>uint32_t RESERVED0[2]</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00377">377</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1ac4ac04e673b5b8320d53f7b0947db902"/><section>
+    <title>RESERVED1</title>
+<indexterm><primary>RESERVED1</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>RESERVED1</secondary></indexterm>
+<para><computeroutput>uint32_t RESERVED1</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00380">380</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a57d552323802fb4dd0bac95a02e814f0"/><section>
+    <title>RESERVED10</title>
+<indexterm><primary>RESERVED10</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>RESERVED10</secondary></indexterm>
+<para><computeroutput>uint32_t RESERVED10[8]</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00431">431</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a1cf0d9299ef58b327f4e3d03da1c1aaf"/><section>
+    <title>RESERVED2</title>
+<indexterm><primary>RESERVED2</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>RESERVED2</secondary></indexterm>
+<para><computeroutput>uint32_t RESERVED2[40]</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00392">392</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1af6446adf612691721c62fc68aff4fe39"/><section>
+    <title>RESERVED3</title>
+<indexterm><primary>RESERVED3</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>RESERVED3</secondary></indexterm>
+<para><computeroutput>uint32_t RESERVED3[14]</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00398">398</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1abca175d3acfbc2a0806452fd57ea5fc4"/><section>
+    <title>RESERVED4</title>
+<indexterm><primary>RESERVED4</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>RESERVED4</secondary></indexterm>
+<para><computeroutput>uint32_t RESERVED4[5]</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00401">401</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a3c1a316c73bb5f0eae7fbe66177cbca6"/><section>
+    <title>RESERVED5</title>
+<indexterm><primary>RESERVED5</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>RESERVED5</secondary></indexterm>
+<para><computeroutput>uint32_t RESERVED5[10]</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00403">403</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a7e9a9bba62d1d98e3058b29a892b3877"/><section>
+    <title>RESERVED6</title>
+<indexterm><primary>RESERVED6</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>RESERVED6</secondary></indexterm>
+<para><computeroutput>uint32_t RESERVED6[10]</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00406">406</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1ab1b7eacec3f164ed04001e9c806f73f9"/><section>
+    <title>RESERVED7</title>
+<indexterm><primary>RESERVED7</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>RESERVED7</secondary></indexterm>
+<para><computeroutput>uint32_t RESERVED7[334]</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00408">408</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1a2e60bc2eefc18398fb2459d1b44453e5"/><section>
+    <title>RESERVED8</title>
+<indexterm><primary>RESERVED8</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>RESERVED8</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t RESERVED8</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00418">418</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_e_t_h___type_def_1ae62fffd7d8f9f69b15edacdea4ba27f2"/><section>
+    <title>RESERVED9</title>
+<indexterm><primary>RESERVED9</primary><secondary>ETH_TypeDef</secondary></indexterm>
+<indexterm><primary>ETH_TypeDef</primary><secondary>RESERVED9</secondary></indexterm>
+<para><computeroutput>uint32_t RESERVED9[565]</computeroutput></para><para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00420">420</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+Inc/<link linkend="_stm32f407xx_8h">stm32f407xx.h</link></section>
+</section>

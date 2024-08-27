@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_u_s_b___o_t_g___device_type_def" xml:lang="en-US">
+<title>USB_OTG_DeviceTypeDef Struct Reference</title>
+<indexterm><primary>USB_OTG_DeviceTypeDef</primary></indexterm>
+<para>
+
+<para>USB_OTG_device_Registers. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;stm32f407xx.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_u_s_b___o_t_g___device_type_def_1a9a163a0d5cfce7238b38067a1a53b324">DCFG</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_u_s_b___o_t_g___device_type_def_1adc1bdc4e76749ccda09c92e885b164ad">DCTL</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_u_s_b___o_t_g___device_type_def_1a8371acd36203fa875cdea3f29b94d1fb">DSTS</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_u_s_b___o_t_g___device_type_def_1a1bcc039378b4ed4ac1261a0a758c3d1d">Reserved0C</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_u_s_b___o_t_g___device_type_def_1a48647281e48d96a96f701cf5ae3f4f63">DIEPMSK</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_u_s_b___o_t_g___device_type_def_1a11dbd3f7a82b3f3b91621321d3018e0a">DOEPMSK</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_u_s_b___o_t_g___device_type_def_1a4e15c273373694f64b3f70226cb3ac35">DAINT</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_u_s_b___o_t_g___device_type_def_1a2c8f65655aa14ec9ba63c9d0655223ec">DAINTMSK</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_u_s_b___o_t_g___device_type_def_1a17d14644b0d28710722b1c2c0149e472">Reserved20</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_u_s_b___o_t_g___device_type_def_1a5dc05e38e6d591cd88f820b7a0b3f727">Reserved9</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_u_s_b___o_t_g___device_type_def_1aef96b3719a70e62cb004b1e292b7a348">DVBUSDIS</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_u_s_b___o_t_g___device_type_def_1acc968fd160f83749ad4176ad8cb36fe0">DVBUSPULSE</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_u_s_b___o_t_g___device_type_def_1ac5d3a4bffd921da5d69f9a601263b573">DTHRCTL</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_u_s_b___o_t_g___device_type_def_1a99c6c50a3e3235c81b98a428ebd33d4c">DIEPEMPMSK</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_u_s_b___o_t_g___device_type_def_1ae85e8a65a72f52a9daf3d2b66b77c2e2">DEACHINT</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_u_s_b___o_t_g___device_type_def_1a0234d794aba7ddae31f3da3c02c8a673">DEACHMSK</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_u_s_b___o_t_g___device_type_def_1a9e0c029846e94bf08ac8edb35b30ecb2">Reserved40</link></para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_u_s_b___o_t_g___device_type_def_1ab62b876c61e11199cf5c37aa944a5fed">DINEP1MSK</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_u_s_b___o_t_g___device_type_def_1a8b1e044bd34b12074334270cfd18c931">Reserved44</link> [15]</para>
+</listitem>
+            <listitem><para><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_u_s_b___o_t_g___device_type_def_1a196e86fc15ba228188d47468349de69b">DOUTEP1MSK</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>USB_OTG_device_Registers. </para>
+<para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00818">818</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_struct_u_s_b___o_t_g___device_type_def_1a4e15c273373694f64b3f70226cb3ac35"/><section>
+    <title>DAINT</title>
+<indexterm><primary>DAINT</primary><secondary>USB_OTG_DeviceTypeDef</secondary></indexterm>
+<indexterm><primary>USB_OTG_DeviceTypeDef</primary><secondary>DAINT</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DAINT</computeroutput></para>
+<para>dev All Endpoints Itr Reg 818h </para>
+<para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00826">826</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_u_s_b___o_t_g___device_type_def_1a2c8f65655aa14ec9ba63c9d0655223ec"/><section>
+    <title>DAINTMSK</title>
+<indexterm><primary>DAINTMSK</primary><secondary>USB_OTG_DeviceTypeDef</secondary></indexterm>
+<indexterm><primary>USB_OTG_DeviceTypeDef</primary><secondary>DAINTMSK</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DAINTMSK</computeroutput></para>
+<para>dev All Endpoints Itr Mask 81Ch </para>
+<para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00827">827</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_u_s_b___o_t_g___device_type_def_1a9a163a0d5cfce7238b38067a1a53b324"/><section>
+    <title>DCFG</title>
+<indexterm><primary>DCFG</primary><secondary>USB_OTG_DeviceTypeDef</secondary></indexterm>
+<indexterm><primary>USB_OTG_DeviceTypeDef</primary><secondary>DCFG</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DCFG</computeroutput></para>
+<para>dev Configuration Register 800h </para>
+<para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00820">820</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_u_s_b___o_t_g___device_type_def_1adc1bdc4e76749ccda09c92e885b164ad"/><section>
+    <title>DCTL</title>
+<indexterm><primary>DCTL</primary><secondary>USB_OTG_DeviceTypeDef</secondary></indexterm>
+<indexterm><primary>USB_OTG_DeviceTypeDef</primary><secondary>DCTL</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DCTL</computeroutput></para>
+<para>dev Control Register 804h </para>
+<para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00821">821</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_u_s_b___o_t_g___device_type_def_1ae85e8a65a72f52a9daf3d2b66b77c2e2"/><section>
+    <title>DEACHINT</title>
+<indexterm><primary>DEACHINT</primary><secondary>USB_OTG_DeviceTypeDef</secondary></indexterm>
+<indexterm><primary>USB_OTG_DeviceTypeDef</primary><secondary>DEACHINT</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DEACHINT</computeroutput></para>
+<para>dedicated EP interrupt 838h </para>
+<para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00834">834</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_u_s_b___o_t_g___device_type_def_1a0234d794aba7ddae31f3da3c02c8a673"/><section>
+    <title>DEACHMSK</title>
+<indexterm><primary>DEACHMSK</primary><secondary>USB_OTG_DeviceTypeDef</secondary></indexterm>
+<indexterm><primary>USB_OTG_DeviceTypeDef</primary><secondary>DEACHMSK</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DEACHMSK</computeroutput></para>
+<para>dedicated EP msk 83Ch </para>
+<para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00835">835</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_u_s_b___o_t_g___device_type_def_1a99c6c50a3e3235c81b98a428ebd33d4c"/><section>
+    <title>DIEPEMPMSK</title>
+<indexterm><primary>DIEPEMPMSK</primary><secondary>USB_OTG_DeviceTypeDef</secondary></indexterm>
+<indexterm><primary>USB_OTG_DeviceTypeDef</primary><secondary>DIEPEMPMSK</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DIEPEMPMSK</computeroutput></para>
+<para>dev empty msk 834h </para>
+<para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00833">833</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_u_s_b___o_t_g___device_type_def_1a48647281e48d96a96f701cf5ae3f4f63"/><section>
+    <title>DIEPMSK</title>
+<indexterm><primary>DIEPMSK</primary><secondary>USB_OTG_DeviceTypeDef</secondary></indexterm>
+<indexterm><primary>USB_OTG_DeviceTypeDef</primary><secondary>DIEPMSK</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DIEPMSK</computeroutput></para>
+<para>dev IN Endpoint Mask 810h </para>
+<para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00824">824</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_u_s_b___o_t_g___device_type_def_1ab62b876c61e11199cf5c37aa944a5fed"/><section>
+    <title>DINEP1MSK</title>
+<indexterm><primary>DINEP1MSK</primary><secondary>USB_OTG_DeviceTypeDef</secondary></indexterm>
+<indexterm><primary>USB_OTG_DeviceTypeDef</primary><secondary>DINEP1MSK</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DINEP1MSK</computeroutput></para>
+<para>dedicated EP mask 844h </para>
+<para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00837">837</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_u_s_b___o_t_g___device_type_def_1a11dbd3f7a82b3f3b91621321d3018e0a"/><section>
+    <title>DOEPMSK</title>
+<indexterm><primary>DOEPMSK</primary><secondary>USB_OTG_DeviceTypeDef</secondary></indexterm>
+<indexterm><primary>USB_OTG_DeviceTypeDef</primary><secondary>DOEPMSK</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DOEPMSK</computeroutput></para>
+<para>dev OUT Endpoint Mask 814h </para>
+<para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00825">825</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_u_s_b___o_t_g___device_type_def_1a196e86fc15ba228188d47468349de69b"/><section>
+    <title>DOUTEP1MSK</title>
+<indexterm><primary>DOUTEP1MSK</primary><secondary>USB_OTG_DeviceTypeDef</secondary></indexterm>
+<indexterm><primary>USB_OTG_DeviceTypeDef</primary><secondary>DOUTEP1MSK</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DOUTEP1MSK</computeroutput></para>
+<para>dedicated EP msk 884h </para>
+<para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00839">839</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_u_s_b___o_t_g___device_type_def_1a8371acd36203fa875cdea3f29b94d1fb"/><section>
+    <title>DSTS</title>
+<indexterm><primary>DSTS</primary><secondary>USB_OTG_DeviceTypeDef</secondary></indexterm>
+<indexterm><primary>USB_OTG_DeviceTypeDef</primary><secondary>DSTS</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DSTS</computeroutput></para>
+<para>dev Status Register (RO) 808h </para>
+<para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00822">822</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_u_s_b___o_t_g___device_type_def_1ac5d3a4bffd921da5d69f9a601263b573"/><section>
+    <title>DTHRCTL</title>
+<indexterm><primary>DTHRCTL</primary><secondary>USB_OTG_DeviceTypeDef</secondary></indexterm>
+<indexterm><primary>USB_OTG_DeviceTypeDef</primary><secondary>DTHRCTL</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DTHRCTL</computeroutput></para>
+<para>dev threshold 830h </para>
+<para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00832">832</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_u_s_b___o_t_g___device_type_def_1aef96b3719a70e62cb004b1e292b7a348"/><section>
+    <title>DVBUSDIS</title>
+<indexterm><primary>DVBUSDIS</primary><secondary>USB_OTG_DeviceTypeDef</secondary></indexterm>
+<indexterm><primary>USB_OTG_DeviceTypeDef</primary><secondary>DVBUSDIS</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DVBUSDIS</computeroutput></para>
+<para>dev VBUS discharge Register 828h </para>
+<para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00830">830</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_u_s_b___o_t_g___device_type_def_1acc968fd160f83749ad4176ad8cb36fe0"/><section>
+    <title>DVBUSPULSE</title>
+<indexterm><primary>DVBUSPULSE</primary><secondary>USB_OTG_DeviceTypeDef</secondary></indexterm>
+<indexterm><primary>USB_OTG_DeviceTypeDef</primary><secondary>DVBUSPULSE</secondary></indexterm>
+<para><computeroutput><link linkend="_core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DVBUSPULSE</computeroutput></para>
+<para>dev VBUS Pulse Register 82Ch </para>
+<para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00831">831</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_u_s_b___o_t_g___device_type_def_1a1bcc039378b4ed4ac1261a0a758c3d1d"/><section>
+    <title>Reserved0C</title>
+<indexterm><primary>Reserved0C</primary><secondary>USB_OTG_DeviceTypeDef</secondary></indexterm>
+<indexterm><primary>USB_OTG_DeviceTypeDef</primary><secondary>Reserved0C</secondary></indexterm>
+<para><computeroutput>uint32_t Reserved0C</computeroutput></para>
+<para>Reserved 80Ch </para>
+<para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00823">823</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_u_s_b___o_t_g___device_type_def_1a17d14644b0d28710722b1c2c0149e472"/><section>
+    <title>Reserved20</title>
+<indexterm><primary>Reserved20</primary><secondary>USB_OTG_DeviceTypeDef</secondary></indexterm>
+<indexterm><primary>USB_OTG_DeviceTypeDef</primary><secondary>Reserved20</secondary></indexterm>
+<para><computeroutput>uint32_t Reserved20</computeroutput></para>
+<para>Reserved 820h </para>
+<para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00828">828</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_u_s_b___o_t_g___device_type_def_1a9e0c029846e94bf08ac8edb35b30ecb2"/><section>
+    <title>Reserved40</title>
+<indexterm><primary>Reserved40</primary><secondary>USB_OTG_DeviceTypeDef</secondary></indexterm>
+<indexterm><primary>USB_OTG_DeviceTypeDef</primary><secondary>Reserved40</secondary></indexterm>
+<para><computeroutput>uint32_t Reserved40</computeroutput></para>
+<para>dedicated EP mask 840h </para>
+<para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00836">836</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_u_s_b___o_t_g___device_type_def_1a8b1e044bd34b12074334270cfd18c931"/><section>
+    <title>Reserved44</title>
+<indexterm><primary>Reserved44</primary><secondary>USB_OTG_DeviceTypeDef</secondary></indexterm>
+<indexterm><primary>USB_OTG_DeviceTypeDef</primary><secondary>Reserved44</secondary></indexterm>
+<para><computeroutput>uint32_t Reserved44[15]</computeroutput></para>
+<para>Reserved 844-87Ch </para>
+<para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00838">838</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<anchor xml:id="_struct_u_s_b___o_t_g___device_type_def_1a5dc05e38e6d591cd88f820b7a0b3f727"/><section>
+    <title>Reserved9</title>
+<indexterm><primary>Reserved9</primary><secondary>USB_OTG_DeviceTypeDef</secondary></indexterm>
+<indexterm><primary>USB_OTG_DeviceTypeDef</primary><secondary>Reserved9</secondary></indexterm>
+<para><computeroutput>uint32_t Reserved9</computeroutput></para>
+<para>Reserved 824h </para>
+<para>
+Definition at line <link linkend="_stm32f407xx_8h_source_1l00829">829</link> of file <link linkend="_stm32f407xx_8h_source">stm32f407xx.h</link>.</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+Inc/<link linkend="_stm32f407xx_8h">stm32f407xx.h</link></section>
+</section>

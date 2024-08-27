@@ -1,0 +1,470 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_cmsis__iccarm_8h" xml:lang="en-US">
+<title>Inc/cmsis_iccarm.h File Reference</title>
+<indexterm><primary>Inc/cmsis_iccarm.h</primary></indexterm>
+<para>
+
+<para>CMSIS compiler ICCARM (IAR Compiler for Arm) header file. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &lt;intrinsics.h&gt;<?linebreak?></programlisting>Include dependency graph for cmsis_iccarm.h:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="cmsis__iccarm_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Data Structures    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_struct____iar__u32">__iar_u32</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1a3e769b5b7bc4f5d17d8da74663073393">__IAR_FT</link>&#160;&#160;&#160;_Pragma(&quot;inline=forced&quot;) __intrinsic</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1ada3e360f585385631c8548f73fa59e09">__ICCARM_V8</link>&#160;&#160;&#160;0</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1aa65ef8f7a5e8b7a6ea6c1d48b4c78e55">__ALIGNED</link>(x)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1a6c0c4e21065cda012c4275eeb205d18e">__IAR_M0_FAMILY</link>&#160;&#160;&#160;0</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1a1378040bcf22428955c6e3ce9c2053cd">__ASM</link>&#160;&#160;&#160;__asm</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1a6516fb12ab0dd45c734f8cef7d921af6">__COMPILER_BARRIER</link>()</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1ade2d8d7118f8ff49547f60aa0c3382bb">__INLINE</link>&#160;&#160;&#160;inline</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1a153a4a31b276a9758959580538720a51">__NO_RETURN</link>&#160;&#160;&#160;_Pragma(&quot;object_attribute=__noreturn&quot;)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1abe8996d3d985ee1529475443cc635bf1">__PACKED</link>&#160;&#160;&#160;__packed</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1a4dbb70fab85207c27b581ecb6532b314">__PACKED_STRUCT</link>&#160;&#160;&#160;__packed struct</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1a6fba34d08b0a526830b4231d2ea0b89a">__PACKED_UNION</link>&#160;&#160;&#160;__packed union</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1a378ac21329d33f561f90265eef89f564">__RESTRICT</link>&#160;&#160;&#160;restrict</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c">__STATIC_INLINE</link>&#160;&#160;&#160;static inline</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1a2ecb43ce8e7aa73d32f50afa67b42c76">__FORCEINLINE</link>&#160;&#160;&#160;_Pragma(&quot;inline=forced&quot;)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</link>&#160;&#160;&#160;__FORCEINLINE __STATIC_INLINE</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1affc86c22f56e906edc36b79fc834ac54">__UNALIGNED_UINT16_READ</link>(PTR)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1a5020b449a1efa49e9acd6e1e4544ad77">__UNALIGNED_UINT16_WRITE</link>(PTR,  VAL)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1a9f1782e04d6a7d8fe1639383b5ca1bf9">__UNALIGNED_UINT32_READ</link>(PTR)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1af746f04ad965c639fdd4eb8d086e19dd">__UNALIGNED_UINT32_WRITE</link>(PTR,  VAL)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1a683ea97ff9463291187253f7861ebc56">__UNALIGNED_UINT32</link>(PTR)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1a3e40e4c553fc11588f7a4c2a19e789e0">__USED</link>&#160;&#160;&#160;_Pragma(&quot;__root&quot;)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1ac607bf387b29162be6a9b77fc7999539">__WEAK</link>&#160;&#160;&#160;_Pragma(&quot;__weak&quot;)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1a72db8b026c5e100254080fefabd9fd88">__PROGRAM_START</link>&#160;&#160;&#160;__iar_program_start</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1a1002e751427b1189f92787d4e4eef965">__INITIAL_SP</link>&#160;&#160;&#160;CSTACK$$Limit</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1a84b0bad4aa39632d3faea46aa1e102a8">__STACK_LIMIT</link>&#160;&#160;&#160;CSTACK$$Base</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1ab94ebeb20055f1848d7b707d3c7cfc5d">__VECTOR_TABLE</link>&#160;&#160;&#160;__vector_table</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1a4f65c96effa79fbd610fea43ee7d745b">__VECTOR_TABLE_ATTRIBUTE</link>&#160;&#160;&#160;@&quot;.intvec&quot;</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1a2cf5e66520f87c928ab4395d5787e4df">__ICCARM_INTRINSICS_VERSION__</link>&#160;&#160;&#160;0</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1af56e3c942846b8643cbf8f5208d6a63b">__get_FPSCR</link></para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1a63b3bbd6ccb6b92ed6c0bbc489529f0f">__set_FPSCR</link>&#160;&#160;&#160;__cmsis_iar_set_FPSR_not_active</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1a6b3a48e13de4b114653b4e06145a601d">__get_FPSCR</link>()</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1a1cfee62c8cc63a1f72c134ffa096b911">__set_FPSCR</link>(VALUE)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1ga63ab98aec1a5bde0e191fb22e693f480">__enable_irq</link></para>
+
+<para>Enable IRQ <link linkend="_struct_interrupts">Interrupts</link>. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1ga9a8f966bf50cc372e7ac092f612efd1a">__disable_irq</link></para>
+
+<para>Disable IRQ <link linkend="_struct_interrupts">Interrupts</link>. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1abd585ddc865fb9b7f2493af1eee1a572">__NOP</link>&#160;&#160;&#160;__no_operation</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___core___reg_acc_functions_1gae0d8e20f8c3c2a502075dabcff733c05">__get_xPSR</link></para>
+
+<para>Get xPSR Register. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1a15ea6bd3c507d3e81c3b3a1258e46397">__BKPT</link>(value)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1a6cfc7fe62ef04578af6a1f360dc38245">__SXTB16_RORn</link>(ARG1,  ARG2)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmsis__iccarm_8h_1aefefc7eb15bebfb76044494b9491496e">__SXTAB16_RORn</link>(ARG1,  ARG2,  ARG3)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>__IAR_FT uint16_t <link linkend="_cmsis__iccarm_8h_1a1305dc7358478164e7ae459adad136d9">__iar_uint16_read</link> (void const *ptr)</para>
+</listitem>
+            <listitem><para>__IAR_FT void <link linkend="_cmsis__iccarm_8h_1a68e7687068868fc26ad03774570131c6">__iar_uint16_write</link> (void const *ptr, uint16_t val)</para>
+</listitem>
+            <listitem><para>__IAR_FT uint32_t <link linkend="_cmsis__iccarm_8h_1a3f6f0554c695fa3f5a9a7b62987378ba">__iar_uint32_read</link> (void const *ptr)</para>
+</listitem>
+            <listitem><para>__IAR_FT void <link linkend="_cmsis__iccarm_8h_1a9be6bc4e50ac50dca4005e28e648a675">__iar_uint32_write</link> (void const *ptr, uint32_t val)</para>
+</listitem>
+            <listitem><para>__IAR_FT uint32_t <link linkend="_cmsis__iccarm_8h_1afe7e42185902df89a66f328a9792690b">__LDREXW</link> (uint32_t volatile *ptr)</para>
+</listitem>
+            <listitem><para>__IAR_FT uint32_t <link linkend="_cmsis__iccarm_8h_1ab861d5af605077b6e52ffc8e67a8f9c6">__STREXW</link> (uint32_t value, uint32_t volatile *ptr)</para>
+</listitem>
+            <listitem><para>__IAR_FT uint32_t <link linkend="_cmsis__iccarm_8h_1a7105032649bf6158d4d2d5dc38a3f94c">__ROR</link> (uint32_t op1, uint32_t op2)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>CMSIS compiler ICCARM (IAR Compiler for Arm) header file. </para>
+
+<para><formalpara><title>Version</title>
+
+<para>V5.3.0 </para>
+</formalpara>
+<formalpara><title>Date</title>
+
+<para>14. April 2021 </para>
+</formalpara>
+</para>
+<para>
+Definition in file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_cmsis__iccarm_8h_1aa65ef8f7a5e8b7a6ea6c1d48b4c78e55"/><section>
+    <title>__ALIGNED</title>
+<indexterm><primary>__ALIGNED</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__ALIGNED</secondary></indexterm>
+<para><computeroutput>#define __ALIGNED( x)</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00054">54</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1a1378040bcf22428955c6e3ce9c2053cd"/><section>
+    <title>__ASM</title>
+<indexterm><primary>__ASM</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__ASM</secondary></indexterm>
+<para><computeroutput>#define __ASM&#160;&#160;&#160;__asm</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00113">113</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1a15ea6bd3c507d3e81c3b3a1258e46397"/><section>
+    <title>__BKPT</title>
+<indexterm><primary>__BKPT</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__BKPT</secondary></indexterm>
+<para><computeroutput>#define __BKPT( value)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__asm&#32;<emphasis role="keyword">volatile</emphasis>&#32;(<emphasis role="stringliteral">&quot;BKPT&#32;&#32;&#32;&#32;&#32;%0&quot;</emphasis>&#32;:&#32;:&#32;<emphasis role="stringliteral">&quot;i&quot;</emphasis>(value))
+</programlisting><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00828">828</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1a6516fb12ab0dd45c734f8cef7d921af6"/><section>
+    <title>__COMPILER_BARRIER</title>
+<indexterm><primary>__COMPILER_BARRIER</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__COMPILER_BARRIER</secondary></indexterm>
+<para><computeroutput>#define __COMPILER_BARRIER( )</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__ASM&#32;<emphasis role="keyword">volatile</emphasis>(<emphasis role="stringliteral">&quot;&quot;</emphasis>:::<emphasis role="stringliteral">&quot;memory&quot;</emphasis>)
+</programlisting><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00117">117</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1a2ecb43ce8e7aa73d32f50afa67b42c76"/><section>
+    <title>__FORCEINLINE</title>
+<indexterm><primary>__FORCEINLINE</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__FORCEINLINE</secondary></indexterm>
+<para><computeroutput>#define __FORCEINLINE&#160;&#160;&#160;_Pragma(&quot;inline=forced&quot;)</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00173">173</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1af56e3c942846b8643cbf8f5208d6a63b"/><section>
+    <title>__get_FPSCR<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>__get_FPSCR</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__get_FPSCR</secondary></indexterm>
+<para><computeroutput>#define __get_FPSCR( void)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__cmsis_iar_get_FPSR_not_active
+</programlisting><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00540">540</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1a6b3a48e13de4b114653b4e06145a601d"/><section>
+    <title>__get_FPSCR<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>__get_FPSCR</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__get_FPSCR</secondary></indexterm>
+<para><computeroutput>#define __get_FPSCR( void)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">(0)
+</programlisting><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00540">540</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1a3e769b5b7bc4f5d17d8da74663073393"/><section>
+    <title>__IAR_FT</title>
+<indexterm><primary>__IAR_FT</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__IAR_FT</secondary></indexterm>
+<para><computeroutput>#define __IAR_FT&#160;&#160;&#160;_Pragma(&quot;inline=forced&quot;) __intrinsic</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00038">38</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1a6c0c4e21065cda012c4275eeb205d18e"/><section>
+    <title>__IAR_M0_FAMILY</title>
+<indexterm><primary>__IAR_M0_FAMILY</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__IAR_M0_FAMILY</secondary></indexterm>
+<para><computeroutput>#define __IAR_M0_FAMILY&#160;&#160;&#160;0</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00108">108</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1a2cf5e66520f87c928ab4395d5787e4df"/><section>
+    <title>__ICCARM_INTRINSICS_VERSION__</title>
+<indexterm><primary>__ICCARM_INTRINSICS_VERSION__</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__ICCARM_INTRINSICS_VERSION__</secondary></indexterm>
+<para><computeroutput>#define __ICCARM_INTRINSICS_VERSION__&#160;&#160;&#160;0</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00289">289</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1ada3e360f585385631c8548f73fa59e09"/><section>
+    <title>__ICCARM_V8</title>
+<indexterm><primary>__ICCARM_V8</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__ICCARM_V8</secondary></indexterm>
+<para><computeroutput>#define __ICCARM_V8&#160;&#160;&#160;0</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00043">43</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1a1002e751427b1189f92787d4e4eef965"/><section>
+    <title>__INITIAL_SP</title>
+<indexterm><primary>__INITIAL_SP</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__INITIAL_SP</secondary></indexterm>
+<para><computeroutput>#define __INITIAL_SP&#160;&#160;&#160;CSTACK$$Limit</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00255">255</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1ade2d8d7118f8ff49547f60aa0c3382bb"/><section>
+    <title>__INLINE</title>
+<indexterm><primary>__INLINE</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__INLINE</secondary></indexterm>
+<para><computeroutput>#define __INLINE&#160;&#160;&#160;inline</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00121">121</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1a153a4a31b276a9758959580538720a51"/><section>
+    <title>__NO_RETURN</title>
+<indexterm><primary>__NO_RETURN</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__NO_RETURN</secondary></indexterm>
+<para><computeroutput>#define __NO_RETURN&#160;&#160;&#160;_Pragma(&quot;object_attribute=__noreturn&quot;)</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00128">128</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1abd585ddc865fb9b7f2493af1eee1a572"/><section>
+    <title>__NOP</title>
+<indexterm><primary>__NOP</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__NOP</secondary></indexterm>
+<para><computeroutput>#define __NOP&#160;&#160;&#160;__no_operation</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00608">608</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1abe8996d3d985ee1529475443cc635bf1"/><section>
+    <title>__PACKED</title>
+<indexterm><primary>__PACKED</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__PACKED</secondary></indexterm>
+<para><computeroutput>#define __PACKED&#160;&#160;&#160;__packed</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00137">137</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1a4dbb70fab85207c27b581ecb6532b314"/><section>
+    <title>__PACKED_STRUCT</title>
+<indexterm><primary>__PACKED_STRUCT</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__PACKED_STRUCT</secondary></indexterm>
+<para><computeroutput>#define __PACKED_STRUCT&#160;&#160;&#160;__packed struct</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00146">146</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1a6fba34d08b0a526830b4231d2ea0b89a"/><section>
+    <title>__PACKED_UNION</title>
+<indexterm><primary>__PACKED_UNION</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__PACKED_UNION</secondary></indexterm>
+<para><computeroutput>#define __PACKED_UNION&#160;&#160;&#160;__packed union</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00155">155</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1a72db8b026c5e100254080fefabd9fd88"/><section>
+    <title>__PROGRAM_START</title>
+<indexterm><primary>__PROGRAM_START</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__PROGRAM_START</secondary></indexterm>
+<para><computeroutput>#define __PROGRAM_START&#160;&#160;&#160;__iar_program_start</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00251">251</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1a378ac21329d33f561f90265eef89f564"/><section>
+    <title>__RESTRICT</title>
+<indexterm><primary>__RESTRICT</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__RESTRICT</secondary></indexterm>
+<para><computeroutput>#define __RESTRICT&#160;&#160;&#160;restrict</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00164">164</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1a63b3bbd6ccb6b92ed6c0bbc489529f0f"/><section>
+    <title>__set_FPSCR<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>__set_FPSCR</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__set_FPSCR</secondary></indexterm>
+<para><computeroutput>#define __set_FPSCR&#160;&#160;&#160;__cmsis_iar_set_FPSR_not_active</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00541">541</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1a1cfee62c8cc63a1f72c134ffa096b911"/><section>
+    <title>__set_FPSCR<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>__set_FPSCR</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__set_FPSCR</secondary></indexterm>
+<para><computeroutput>#define __set_FPSCR( VALUE)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">((void)VALUE)
+</programlisting><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00541">541</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1a84b0bad4aa39632d3faea46aa1e102a8"/><section>
+    <title>__STACK_LIMIT</title>
+<indexterm><primary>__STACK_LIMIT</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__STACK_LIMIT</secondary></indexterm>
+<para><computeroutput>#define __STACK_LIMIT&#160;&#160;&#160;CSTACK$$Base</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00259">259</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1ab904513442afdf77d4f8c74f23cbb040"/><section>
+    <title>__STATIC_FORCEINLINE</title>
+<indexterm><primary>__STATIC_FORCEINLINE</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__STATIC_FORCEINLINE</secondary></indexterm>
+<para><computeroutput>#define __STATIC_FORCEINLINE&#160;&#160;&#160;__FORCEINLINE __STATIC_INLINE</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00177">177</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c"/><section>
+    <title>__STATIC_INLINE</title>
+<indexterm><primary>__STATIC_INLINE</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__STATIC_INLINE</secondary></indexterm>
+<para><computeroutput>#define __STATIC_INLINE&#160;&#160;&#160;static inline</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00169">169</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1aefefc7eb15bebfb76044494b9491496e"/><section>
+    <title>__SXTAB16_RORn</title>
+<indexterm><primary>__SXTAB16_RORn</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__SXTAB16_RORn</secondary></indexterm>
+<para><computeroutput>#define __SXTAB16_RORn( ARG1,  ARG2,  ARG3)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__SXTAB16(ARG1,&#32;<link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga95b9bd281ddeda378b85afdb8f2ced86">__ROR</link>(ARG2,&#32;ARG3))
+</programlisting><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l01000">1000</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1a6cfc7fe62ef04578af6a1f360dc38245"/><section>
+    <title>__SXTB16_RORn</title>
+<indexterm><primary>__SXTB16_RORn</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__SXTB16_RORn</secondary></indexterm>
+<para><computeroutput>#define __SXTB16_RORn( ARG1,  ARG2)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__SXTB16(<link linkend="_group___c_m_s_i_s___core___instruction_interface_1ga95b9bd281ddeda378b85afdb8f2ced86">__ROR</link>(ARG1,&#32;ARG2))
+</programlisting><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00998">998</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1affc86c22f56e906edc36b79fc834ac54"/><section>
+    <title>__UNALIGNED_UINT16_READ</title>
+<indexterm><primary>__UNALIGNED_UINT16_READ</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__UNALIGNED_UINT16_READ</secondary></indexterm>
+<para><computeroutput>#define __UNALIGNED_UINT16_READ( PTR)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__iar_uint16_read(PTR)
+</programlisting><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00188">188</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1a5020b449a1efa49e9acd6e1e4544ad77"/><section>
+    <title>__UNALIGNED_UINT16_WRITE</title>
+<indexterm><primary>__UNALIGNED_UINT16_WRITE</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__UNALIGNED_UINT16_WRITE</secondary></indexterm>
+<para><computeroutput>#define __UNALIGNED_UINT16_WRITE( PTR,  VAL)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__iar_uint16_write(PTR,VAL)
+</programlisting><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00200">200</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1a683ea97ff9463291187253f7861ebc56"/><section>
+    <title>__UNALIGNED_UINT32</title>
+<indexterm><primary>__UNALIGNED_UINT32</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__UNALIGNED_UINT32</secondary></indexterm>
+<para><computeroutput>#define __UNALIGNED_UINT32( PTR)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">(((<emphasis role="keyword">struct&#32;</emphasis><link linkend="_struct____iar__u32">__iar_u32</link>&#32;*)(PTR))-&gt;v)
+</programlisting><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00230">230</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1a9f1782e04d6a7d8fe1639383b5ca1bf9"/><section>
+    <title>__UNALIGNED_UINT32_READ</title>
+<indexterm><primary>__UNALIGNED_UINT32_READ</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__UNALIGNED_UINT32_READ</secondary></indexterm>
+<para><computeroutput>#define __UNALIGNED_UINT32_READ( PTR)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__iar_uint32_read(PTR)
+</programlisting><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00211">211</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1af746f04ad965c639fdd4eb8d086e19dd"/><section>
+    <title>__UNALIGNED_UINT32_WRITE</title>
+<indexterm><primary>__UNALIGNED_UINT32_WRITE</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__UNALIGNED_UINT32_WRITE</secondary></indexterm>
+<para><computeroutput>#define __UNALIGNED_UINT32_WRITE( PTR,  VAL)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">__iar_uint32_write(PTR,VAL)
+</programlisting><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00222">222</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1a3e40e4c553fc11588f7a4c2a19e789e0"/><section>
+    <title>__USED</title>
+<indexterm><primary>__USED</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__USED</secondary></indexterm>
+<para><computeroutput>#define __USED&#160;&#160;&#160;_Pragma(&quot;__root&quot;)</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00237">237</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1ab94ebeb20055f1848d7b707d3c7cfc5d"/><section>
+    <title>__VECTOR_TABLE</title>
+<indexterm><primary>__VECTOR_TABLE</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__VECTOR_TABLE</secondary></indexterm>
+<para><computeroutput>#define __VECTOR_TABLE&#160;&#160;&#160;__vector_table</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00263">263</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1a4f65c96effa79fbd610fea43ee7d745b"/><section>
+    <title>__VECTOR_TABLE_ATTRIBUTE</title>
+<indexterm><primary>__VECTOR_TABLE_ATTRIBUTE</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__VECTOR_TABLE_ATTRIBUTE</secondary></indexterm>
+<para><computeroutput>#define __VECTOR_TABLE_ATTRIBUTE&#160;&#160;&#160;@&quot;.intvec&quot;</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00267">267</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1ac607bf387b29162be6a9b77fc7999539"/><section>
+    <title>__WEAK</title>
+<indexterm><primary>__WEAK</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__WEAK</secondary></indexterm>
+<para><computeroutput>#define __WEAK&#160;&#160;&#160;_Pragma(&quot;__weak&quot;)</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00246">246</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_cmsis__iccarm_8h_1a1305dc7358478164e7ae459adad136d9"/><section>
+    <title>__iar_uint16_read()</title>
+<indexterm><primary>__iar_uint16_read</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__iar_uint16_read</secondary></indexterm>
+<para><computeroutput>__IAR_FT uint16_t __iar_uint16_read (void const * ptr)</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00183">183</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1a68e7687068868fc26ad03774570131c6"/><section>
+    <title>__iar_uint16_write()</title>
+<indexterm><primary>__iar_uint16_write</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__iar_uint16_write</secondary></indexterm>
+<para><computeroutput>__IAR_FT void __iar_uint16_write (void const * ptr, uint16_t val)</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00195">195</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1a3f6f0554c695fa3f5a9a7b62987378ba"/><section>
+    <title>__iar_uint32_read()</title>
+<indexterm><primary>__iar_uint32_read</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__iar_uint32_read</secondary></indexterm>
+<para><computeroutput>__IAR_FT uint32_t __iar_uint32_read (void const * ptr)</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00206">206</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1a9be6bc4e50ac50dca4005e28e648a675"/><section>
+    <title>__iar_uint32_write()</title>
+<indexterm><primary>__iar_uint32_write</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__iar_uint32_write</secondary></indexterm>
+<para><computeroutput>__IAR_FT void __iar_uint32_write (void const * ptr, uint32_t val)</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00217">217</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1afe7e42185902df89a66f328a9792690b"/><section>
+    <title>__LDREXW()</title>
+<indexterm><primary>__LDREXW</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__LDREXW</secondary></indexterm>
+<para><computeroutput>__IAR_FT uint32_t __LDREXW (uint32_t volatile * ptr)</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00614">614</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1a7105032649bf6158d4d2d5dc38a3f94c"/><section>
+    <title>__ROR()</title>
+<indexterm><primary>__ROR</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__ROR</secondary></indexterm>
+<para><computeroutput>__IAR_FT uint32_t __ROR (uint32_t op1, uint32_t op2)</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00648">648</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+<anchor xml:id="_cmsis__iccarm_8h_1ab861d5af605077b6e52ffc8e67a8f9c6"/><section>
+    <title>__STREXW()</title>
+<indexterm><primary>__STREXW</primary><secondary>cmsis_iccarm.h</secondary></indexterm>
+<indexterm><primary>cmsis_iccarm.h</primary><secondary>__STREXW</secondary></indexterm>
+<para><computeroutput>__IAR_FT uint32_t __STREXW (uint32_t value, uint32_t volatile * ptr)</computeroutput></para><para>
+Definition at line <link linkend="_cmsis__iccarm_8h_source_1l00619">619</link> of file <link linkend="_cmsis__iccarm_8h_source">cmsis_iccarm.h</link>.</para>
+</section>
+</section>
+</section>
