@@ -8,8 +8,23 @@
 
 #include "main.h"
 #include "USART.h"
+#include "DMA.h"
 
+DMA_Config xUSART_RX[6];
+DMA_Config xUSART_TX[6];
 
+int8_t usart_dma_instance_number;
+
+static int8_t Get_USART_Instance_Number(USART_Config *config)
+{
+	if(config->Port == USART1) {return 1;}
+	else if(config->Port == USART2) {return 2;}
+	else if(config->Port == USART3) {return 3;}
+	else if(config->Port == UART4) {return 4;}
+	else if(config->Port == UART5) {return 5;}
+	else if(config->Port == USART6) {return 6;}
+	else {return -1;}
+}
 
 void USART_Config_Reset(USART_Config *config)
 {
@@ -298,6 +313,9 @@ int8_t USART_Init(USART_Config *config)
 	USART_Clock_Enable(config);
 	PIN_Setup(config);
 
+	usart_dma_instance_number = Get_USART_Instance_Number(config);
+	if(usart_dma_instance_number == -1) return -1;
+
 //	USART1 -> CR1 |= USART_CR1_UE;
 
 	double brr = (168000000.0/ (16.0 * 2.0 * (double)(config->baudrate)));
@@ -313,6 +331,97 @@ int8_t USART_Init(USART_Config *config)
 	config->Port->CR1 |= config->interrupt; //interrupt
 	config->Port->CR2 |= config->stop_bits;
 
+	if(config->dma_enable == USART_Configuration.DMA_Enable.RX_Enable)
+	{
+		config -> Port -> CR3 |= USART_CR3_DMAR;
+
+		if(config->Port == USART1)
+		{
+			xUSART_RX[0].Request = DMA_Configuration.Request.USART1_RX;
+		}
+		else if(config->Port == USART2)
+		{
+			xUSART_RX[1].Request = DMA_Configuration.Request.USART2_RX;
+		}
+		else if(config->Port == USART3)
+		{
+			xUSART_RX[2].Request = DMA_Configuration.Request.USART3_RX;
+		}
+		else if(config->Port == UART4)
+		{
+			xUSART_RX[3].Request = DMA_Configuration.Request.UART4_RX;
+		}
+		else if(config->Port == UART5)
+		{
+			xUSART_RX[4].Request = DMA_Configuration.Request.UART5_RX;
+		}
+		else
+		{
+			xUSART_RX[5].Request = DMA_Configuration.Request.UART6_RX;
+		}
+
+		xUSART_RX[usart_dma_instance_number].circular_mode = DMA_Configuration.Circular_Mode.Disable;
+		xUSART_RX[usart_dma_instance_number].flow_control = DMA_Configuration.Flow_Control.DMA_Control;
+		xUSART_RX[usart_dma_instance_number].interrupts = DMA_Configuration.DMA_Interrupts.Transfer_Complete | DMA_Configuration.DMA_Interrupts.Transfer_Error;
+		xUSART_RX[usart_dma_instance_number].memory_data_size = DMA_Configuration.Memory_Data_Size.byte;
+		xUSART_RX[usart_dma_instance_number].peripheral_data_size = DMA_Configuration.Peripheral_Data_Size.byte;
+		xUSART_RX[usart_dma_instance_number].peripheral_pointer_increment = DMA_Configuration.Peripheral_Pointer_Increment.Disable;
+		xUSART_RX[usart_dma_instance_number].memory_pointer_increment = DMA_Configuration.Memory_Pointer_Increment.Disable;
+		xUSART_RX[usart_dma_instance_number].priority_level = DMA_Configuration.Priority_Level.High;
+		xUSART_RX[usart_dma_instance_number].transfer_direction = DMA_Configuration.Transfer_Direction.Peripheral_to_memory;
+		DMA_Init(&xUSART_RX[usart_dma_instance_number]);
+	}
+	else
+	{
+		config -> Port  -> CR3 &= ~USART_CR3_DMAR;
+	}
+
+	if(config->dma_enable == USART_Configuration.DMA_Enable.TX_Enable)
+	{
+
+		config -> Port  -> CR3 |= USART_CR3_DMAT;
+
+		if(config->Port == USART1)
+		{
+			xUSART_TX[0].Request = DMA_Configuration.Request.USART1_TX;
+		}
+		else if(config->Port == USART2)
+		{
+			xUSART_TX[1].Request = DMA_Configuration.Request.USART2_TX;
+		}
+		else if(config->Port == USART3)
+		{
+			xUSART_TX[2].Request = DMA_Configuration.Request.USART3_TX;
+		}
+		else if(config->Port == UART4)
+		{
+			xUSART_TX[3].Request = DMA_Configuration.Request.UART4_TX;
+		}
+		else if(config->Port == UART5)
+		{
+			xUSART_TX[4].Request = DMA_Configuration.Request.UART5_TX;
+		}
+		else
+		{
+			xUSART_TX[5].Request = DMA_Configuration.Request.UART6_TX;
+		}
+
+		xUSART_TX[usart_dma_instance_number].circular_mode = DMA_Configuration.Circular_Mode.Disable;
+		xUSART_TX[usart_dma_instance_number].flow_control = DMA_Configuration.Flow_Control.DMA_Control;
+		xUSART_TX[usart_dma_instance_number].interrupts = DMA_Configuration.DMA_Interrupts.Transfer_Complete | DMA_Configuration.DMA_Interrupts.Transfer_Error;
+		xUSART_TX[usart_dma_instance_number].memory_data_size = DMA_Configuration.Memory_Data_Size.byte;
+		xUSART_TX[usart_dma_instance_number].peripheral_data_size = DMA_Configuration.Peripheral_Data_Size.byte;
+		xUSART_TX[usart_dma_instance_number].peripheral_pointer_increment = DMA_Configuration.Peripheral_Pointer_Increment.Disable;
+		xUSART_TX[usart_dma_instance_number].memory_pointer_increment = DMA_Configuration.Memory_Pointer_Increment.Disable;
+		xUSART_TX[usart_dma_instance_number].priority_level = DMA_Configuration.Priority_Level.High;
+		xUSART_TX[usart_dma_instance_number].transfer_direction = DMA_Configuration.Transfer_Direction.Peripheral_to_memory;
+		DMA_Init(&xUSART_TX[usart_dma_instance_number]);
+	}
+	else
+	{
+		config -> Port -> CR3 &= ~USART_CR3_DMAR;
+	}
+
 	if(config->mode == USART_Configuration.Mode.Single_Wire_Half_Duplex) config -> Port -> CR3 |= USART_CR3_HDSEL;
 	if(config->mode == USART_Configuration.Mode.LIN) config -> Port -> CR2 |= USART_CR2_LINEN;
 
@@ -323,11 +432,64 @@ int8_t USART_Init(USART_Config *config)
 	return 1;
 }
 
-void USART_TX_Buffer(USART_Config *config, uint8_t *tx_buffer, uint16_t length)
+int8_t USART_TX_Buffer(USART_Config *config, uint8_t *tx_buffer, uint16_t length)
 {
 	if(config->dma_enable |= USART_Configuration.DMA_Enable.TX_Enable)
-	{ //Won't take much time
-		//Implement DMA
+	{
+		xUSART_TX[usart_dma_instance_number].memory_address = (uint32_t)&tx_buffer;
+		xUSART_TX[usart_dma_instance_number].peripheral_address = config->Port->DR;
+		xUSART_TX[usart_dma_instance_number].buffer_length = length;
+		DMA_Set_Target(&xUSART_TX[usart_dma_instance_number]);
+		DMA_Set_Trigger(&xUSART_TX[usart_dma_instance_number]);
+
+		if(config->Port == USART1)
+		{
+			while((USART1_TX_DMA_Flag.Transfer_Complete_Flag == false))
+			{
+				if(USART1_TX_DMA_Flag.Transfer_Error_Flag == true) {return -1;}
+			}
+			USART1_TX_DMA_Flag.Transfer_Complete_Flag = false;
+		}
+		else if(config->Port == USART2)
+		{
+			while((USART2_TX_DMA_Flag.Transfer_Complete_Flag == false))
+			{
+				if(USART2_TX_DMA_Flag.Transfer_Error_Flag == true)  {return -1;}
+			}
+			USART2_TX_DMA_Flag.Transfer_Complete_Flag = false;
+		}
+		else if(config->Port == USART3)
+		{
+			while((USART3_TX_DMA_Flag.Transfer_Complete_Flag == false))
+			{
+				if(USART3_TX_DMA_Flag.Transfer_Error_Flag == true)  {return -1;}
+			}
+			USART3_TX_DMA_Flag.Transfer_Complete_Flag = false;
+		}
+		else if(config->Port == UART4)
+		{
+			while((USART4_TX_DMA_Flag.Transfer_Complete_Flag == false))
+			{
+				if(USART4_TX_DMA_Flag.Transfer_Error_Flag == true)  {return -1;}
+			}
+			USART4_TX_DMA_Flag.Transfer_Complete_Flag = false;
+		}
+		else if(config->Port == UART5)
+		{
+			while((USART5_TX_DMA_Flag.Transfer_Complete_Flag == false))
+			{
+				if(USART5_TX_DMA_Flag.Transfer_Error_Flag == true) {return -1;}
+			}
+			USART5_TX_DMA_Flag.Transfer_Complete_Flag = false;
+		}
+		else if(config->Port == USART6)
+		{
+			while((USART6_TX_DMA_Flag.Transfer_Complete_Flag == false))
+			{
+				if(USART6_TX_DMA_Flag.Transfer_Error_Flag == true) {return -1;}
+			}
+			USART6_TX_DMA_Flag.Transfer_Complete_Flag = false;
+		}
 	}
 	else
 	{ //Will Take more time
@@ -338,13 +500,69 @@ void USART_TX_Buffer(USART_Config *config, uint8_t *tx_buffer, uint16_t length)
 		}
 	}
 
+	return 1;
+
 }
 
-void USART_RX_Buffer(USART_Config *config, uint8_t *rx_buffer, uint16_t length)
+int8_t USART_RX_Buffer(USART_Config *config, uint8_t *rx_buffer, uint16_t length)
 {
 	if(config->dma_enable |= USART_Configuration.DMA_Enable.RX_Enable)
-	{ //Won't take much time
-		//Implement DMA
+	{
+
+		xUSART_RX[usart_dma_instance_number].memory_address = (uint32_t)&rx_buffer;
+		xUSART_RX[usart_dma_instance_number].peripheral_address = config->Port->DR;
+		xUSART_RX[usart_dma_instance_number].buffer_length = length;
+		DMA_Set_Target(&xUSART_RX[usart_dma_instance_number]);
+		DMA_Set_Trigger(&xUSART_RX[usart_dma_instance_number]);
+
+		if(config->Port == USART1)
+		{
+			while((USART1_RX_DMA_Flag.Transfer_Complete_Flag == false))
+			{
+				if(USART1_RX_DMA_Flag.Transfer_Error_Flag == true) {return -1;}
+			}
+			USART1_RX_DMA_Flag.Transfer_Complete_Flag = false;
+		}
+		else if(config->Port == USART2)
+		{
+			while((USART2_RX_DMA_Flag.Transfer_Complete_Flag == false))
+			{
+				if(USART2_RX_DMA_Flag.Transfer_Error_Flag == true)  {return -1;}
+			}
+			USART2_RX_DMA_Flag.Transfer_Complete_Flag = false;
+		}
+		else if(config->Port == USART3)
+		{
+			while((USART3_RX_DMA_Flag.Transfer_Complete_Flag == false))
+			{
+				if(USART3_RX_DMA_Flag.Transfer_Error_Flag == true)  {return -1;}
+			}
+			USART3_RX_DMA_Flag.Transfer_Complete_Flag = false;
+		}
+		else if(config->Port == UART4)
+		{
+			while((USART4_RX_DMA_Flag.Transfer_Complete_Flag == false))
+			{
+				if(USART4_RX_DMA_Flag.Transfer_Error_Flag == true)  {return -1;}
+			}
+			USART4_RX_DMA_Flag.Transfer_Complete_Flag = false;
+		}
+		else if(config->Port == UART5)
+		{
+			while((USART5_RX_DMA_Flag.Transfer_Complete_Flag == false))
+			{
+				if(USART5_RX_DMA_Flag.Transfer_Error_Flag == true) {return -1;}
+			}
+			USART5_RX_DMA_Flag.Transfer_Complete_Flag = false;
+		}
+		else if(config->Port == USART6)
+		{
+			while((USART6_RX_DMA_Flag.Transfer_Complete_Flag == false))
+			{
+				if(USART6_RX_DMA_Flag.Transfer_Error_Flag == true) {return -1;}
+			}
+			USART6_RX_DMA_Flag.Transfer_Complete_Flag = false;
+		}
 	}
 	else
 	{ //Will Take more time
@@ -354,6 +572,8 @@ void USART_RX_Buffer(USART_Config *config, uint8_t *rx_buffer, uint16_t length)
 			while(!(config->Port->SR & USART_SR_RXNE));
 		}
 	}
+
+	return 1;
 
 }
 
