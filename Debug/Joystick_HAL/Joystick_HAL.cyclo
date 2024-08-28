@@ -1,0 +1,3 @@
+../Joystick_HAL/Joystick_HAL.c:17:6:Joystick_HAL_Init	5
+../Joystick_HAL/Joystick_HAL.c:120:10:Joystick_HAL_Read_X	3
+../Joystick_HAL/Joystick_HAL.c:134:10:Joystick_HAL_Read_Y	3

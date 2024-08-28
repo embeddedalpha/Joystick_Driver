@@ -1,0 +1,2 @@
+../Joystick_Device_Driver/Joystick_Device_Driver.c:13:6:Joystick_Init	16	static
+../Joystick_Device_Driver/Joystick_Device_Driver.c:21:20:Joystick_Read	32	static

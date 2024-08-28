@@ -1,0 +1,3 @@
+../Joystick_HAL/Joystick_HAL.c:17:6:Joystick_HAL_Init	16	static
+../Joystick_HAL/Joystick_HAL.c:120:10:Joystick_HAL_Read_X	16	static
+../Joystick_HAL/Joystick_HAL.c:134:10:Joystick_HAL_Read_Y	16	static

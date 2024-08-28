@@ -12,6 +12,9 @@ RM := rm -rf
 -include USART/subdir.mk
 -include Startup/subdir.mk
 -include Src/subdir.mk
+-include Joystick_Middleware/subdir.mk
+-include Joystick_HAL/subdir.mk
+-include Joystick_Device_Driver/subdir.mk
 -include GPIO/subdir.mk
 -include DMA/subdir.mk
 -include Console/subdir.mk
