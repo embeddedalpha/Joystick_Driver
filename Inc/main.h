@@ -183,12 +183,61 @@ __STATIC_INLINE float Time_Stamp_End(void)
 	return temp;
 }
 
-__STATIC_INLINE void separateFractionAndIntegral(double number, double *fractionalPart, double *integralPart) {
+__STATIC_INLINE	void separateFractionAndIntegral(double number, double *fractionalPart, double *integralPart) {
     *integralPart = (double)((int64_t)number);
     *fractionalPart = number - *integralPart;
 }
 
 
+__STATIC_INLINE void Loging_Init(void)
+{
+	// Enable Debug Exception and Monitor Control Register (DEMCR)
+	CoreDebug->DEMCR |= CoreDebug_DEMCR_TRCENA_Msk;
+
+	// Unlock and enable ITM
+	ITM->LAR = 0xC5ACCE55;  // Unlock ITM
+	ITM->TCR |= ITM_TCR_ITMENA_Msk;  // Enable ITM
+
+	// Enable stimulus port 0 (ITM_STIM0) for logging
+	ITM->TER |= (1 << 0);  // Enable stimulus port 0
+
+}
+
+__STATIC_INLINE void Log_Print(char *msg, ...)
+{
+	char buff[100];
+
+	va_list args;
+	va_start(args, msg);
+	vsprintf(buff, msg, args);
+
+	for(int i = 0; i<= strlen(buff)-1; i++)
+	{
+		ITM_SendChar(buff[i]);
+	}
+}
+
+__STATIC_INLINE int Log_Scan(int buffer_length, char * msg, ...)
+{
+
+	char buff[100];
+
+	va_list args;
+
+	for(int i = 0; i < buffer_length; i++)
+	{
+		while(!(ITM_CheckChar())){}
+        char ch = ITM_ReceiveChar();
+        buff[i] = ITM_SendChar(ch);  // Echo character back
+	}
+
+	va_start(args, msg);
+    // Use sscanf to parse the input from the buffer
+    int result = vsscanf(buff, msg, args);
+    // Clean up the variable argument list
+    va_end(args);
+    return result;  // Return the number of successful conversions
+}
 
 
 
