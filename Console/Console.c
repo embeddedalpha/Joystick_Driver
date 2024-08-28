@@ -22,9 +22,8 @@ DMA_Config serial_DMA;
 	 serial.stop_bits = USART_Configuration.Stop_Bits.Bit_1;
 	 serial.TX_Pin = USART1_TX_Pin.PB6;
 	 serial.RX_Pin = USART1_RX_Pin.PB7;
+	 serial.dma_enable = USART_Configuration.DMA_Enable.RX_Enable | USART_Configuration.DMA_Enable.TX_Enable;
 	 USART_Init(&serial);
-
-
 }
 
  void printConsole(char *msg, ...)
@@ -37,28 +36,28 @@ char buff[10000];
 	va_start(args, msg);
 	vsprintf(buff, msg, args);
 
-	serial_DMA.Request = DMA_Configuration.Request.USART1_TX;
-	serial_DMA.flow_control = DMA_Configuration.Flow_Control.DMA_Control;
-	serial_DMA.transfer_direction = DMA_Configuration.Transfer_Direction.Memory_to_peripheral;
-	serial_DMA.circular_mode = DMA_Configuration.Circular_Mode.Enable;
-	serial_DMA.memory_data_size = DMA_Configuration.Memory_Data_Size.byte;
-	serial_DMA.memory_pointer_increment = DMA_Configuration.Memory_Pointer_Increment.Enable;
 
+	USART_TX_Buffer(&serial, &buff, strlen(buff)-1);
 
-	for(int i = 0; i<= strlen(buff)-1; i++)
-	{
-		serial.Port -> DR = buff[i];
-		while (!(serial.Port -> SR & USART_SR_TXE));
-	}
+//	for(int i = 0; i<= strlen(buff)-1; i++)
+//	{
+//		serial.Port -> DR = buff[i];
+//		while (!(serial.Port -> SR & USART_SR_TXE));
+//	}
 }
 
-char readConsole(void)
+char readConsole(int buffer_length, char * msg, ...)
 {
-	char retval = 0;
-	while(!(serial.Port -> SR & USART_SR_RXNE));
-	retval = serial.Port-> DR;
+	char buff[100];
+	va_list args;
+	USART_RX_Buffer(&serial, &buff, buffer_length);
+	va_start(args, msg);
+    // Use sscanf to parse the input from the buffer
+    int result = vsscanf(buff, msg, args);
+    // Clean up the variable argument list
+    va_end(args);
+    return result;  // Return the number of successful conversions
 
-	return retval;
 }
 
 

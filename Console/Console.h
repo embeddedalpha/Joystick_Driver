@@ -16,7 +16,7 @@
 
 void Console_Init(int32_t baudrate);
  void printConsole(char *msg, ...);
- char readConsole(void);
+ char readConsole(int buffer_length, char * msg, ...);
 
 
 #endif /* CONSOLE_H_ */
