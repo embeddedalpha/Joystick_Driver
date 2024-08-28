@@ -6,10 +6,10 @@
 
 ### Layers
 
-- Application Layer [Link](Example/Automatic%20Display%20Brightness/)
-- Middleware [Link](Example/Automatic%20Display%20Brightness/)
-- Device Driver [Link](Example/Automatic%20Display%20Brightness/)
-- Hardware Abstraction Layer [Link](Example/Automatic%20Display%20Brightness/)
+- Application Layer [Link]()
+- Middleware [Link](Joystick_Middleware/)
+- Device Driver [Link](Joystick_Device_Driver/)
+- Hardware Abstraction Layer [Link](Joystick_HAL/)
 
 ### Documentation
 
