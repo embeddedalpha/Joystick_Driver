@@ -109,10 +109,10 @@ static const struct USART_Configuration{
 
 		.DMA_Enable =
 		{
-			.TX_Enable = 0,
-			.TX_Disable = 1,
+			.TX_Enable = 1,
+			.TX_Disable = 0,
 			.RX_Enable = 2,
-			.RX_Disable = 3,
+			.RX_Disable = 0,
 		},
 
 		.Hardware_Flow =
