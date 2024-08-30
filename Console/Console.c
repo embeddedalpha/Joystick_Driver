@@ -22,28 +22,35 @@ DMA_Config serial_DMA;
 	 serial.stop_bits = USART_Configuration.Stop_Bits.Bit_1;
 	 serial.TX_Pin = USART1_TX_Pin.PB6;
 	 serial.RX_Pin = USART1_RX_Pin.PB7;
-	 serial.dma_enable = USART_Configuration.DMA_Enable.RX_Enable | USART_Configuration.DMA_Enable.TX_Enable;
+	 serial.dma_enable = USART_Configuration.DMA_Enable.TX_Enable;
 	 USART_Init(&serial);
 }
 
  void printConsole(char *msg, ...)
 {
 
-char buff[10000];
-//	#ifdef DEBUG_UART
+char buff[100];
+uint8_t x[2];
+
+x[0] = 0;
+
+DMA_Memory_To_Memory_Transfer(&x, 8, 8, &buff, 0, 1, 100);
+
 
 	va_list args;
 	va_start(args, msg);
 	vsprintf(buff, msg, args);
 
+	uint16_t len = strlen(buff);
 
-	USART_TX_Buffer(&serial, &buff, strlen(buff)-1);
 
-//	for(int i = 0; i<= strlen(buff)-1; i++)
-//	{
-//		serial.Port -> DR = buff[i];
-//		while (!(serial.Port -> SR & USART_SR_TXE));
-//	}
+	USART_TX_Buffer(&serial, &buff, len);
+
+	for(int i = 0; i<= strlen(buff)-1; i++)
+	{
+		serial.Port -> DR = buff[i];
+		while (!(serial.Port -> SR & USART_SR_TXE));
+	}
 }
 
 char readConsole(int buffer_length, char * msg, ...)
