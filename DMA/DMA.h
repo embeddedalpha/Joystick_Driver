@@ -186,6 +186,7 @@ typedef struct DMA_Config
     uint16_t peripheral_pointer_increment; /**< Peripheral pointer increment mode */
     uint32_t peripheral_data_size;      /**< Peripheral data size (byte, half-word, word) */
     uint32_t memory_data_size;          /**< Memory data size (byte, half-word, word) */
+
     uint32_t peripheral_address;        /**< Peripheral base address */
     uint32_t memory_address;            /**< Memory base address */
     uint16_t buffer_length;             /**< Number of data items to transfer */

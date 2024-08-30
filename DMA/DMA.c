@@ -133,7 +133,7 @@ void DMA1_Stream0_IRQHandler(void)
 		DMA1 -> LIFCR |= DMA_LIFCR_CFEIF0;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> LISR & DMA_LISR_DMEIF0)
+	if(DMA1 -> LISR & DMA_LISR_DMEIF0)
 	{
 		TIM5_CH3_DMA_Flag.Direct_Mode_Error_Flag = true;
 		TIM4_CH1_DMA_Flag.Direct_Mode_Error_Flag = true;
@@ -145,7 +145,7 @@ void DMA1_Stream0_IRQHandler(void)
 		DMA1 -> LIFCR |= DMA_LIFCR_CDMEIF0;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> LISR & DMA_LISR_TEIF0)
+	if(DMA1 -> LISR & DMA_LISR_TEIF0)
 	{
 		TIM5_CH3_DMA_Flag.Transfer_Error_Flag= true;
 		TIM4_CH1_DMA_Flag.Transfer_Error_Flag = true;
@@ -157,7 +157,7 @@ void DMA1_Stream0_IRQHandler(void)
 		DMA1 -> LIFCR |= DMA_LIFCR_CTEIF0;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> LISR & DMA_LISR_HTIF0)
+	if(DMA1 -> LISR & DMA_LISR_HTIF0)
 	{
 		TIM5_CH3_DMA_Flag.Half_Transfer_Complete_Flag = true;
 		TIM4_CH1_DMA_Flag.Half_Transfer_Complete_Flag = true;
@@ -169,7 +169,7 @@ void DMA1_Stream0_IRQHandler(void)
 		DMA1 -> LIFCR |= DMA_LIFCR_CHTIF0;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> LISR & DMA_LISR_TCIF0)
+	if(DMA1 -> LISR & DMA_LISR_TCIF0)
 	{
 		TIM5_CH3_DMA_Flag.Transfer_Complete_Flag = true;
 		TIM4_CH1_DMA_Flag.Transfer_Complete_Flag = true;
@@ -203,7 +203,7 @@ void DMA1_Stream1_IRQHandler(void)
 		DMA1 -> LIFCR |= DMA_LIFCR_CFEIF1;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> LISR & DMA_LISR_DMEIF1)
+	if(DMA1 -> LISR & DMA_LISR_DMEIF1)
 	{
 		TIM2_CH3_DMA_Flag.Direct_Mode_Error_Flag = true;
 		TIM6_UP_DMA_Flag.Direct_Mode_Error_Flag = true;
@@ -213,7 +213,7 @@ void DMA1_Stream1_IRQHandler(void)
 		DMA1 -> LIFCR |= DMA_LIFCR_CDMEIF1;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> LISR & DMA_LISR_TEIF1)
+	if(DMA1 -> LISR & DMA_LISR_TEIF1)
 	{
 		TIM2_CH3_DMA_Flag.Transfer_Error_Flag = true;
 		TIM6_UP_DMA_Flag.Transfer_Error_Flag = true;
@@ -223,7 +223,7 @@ void DMA1_Stream1_IRQHandler(void)
 		DMA1 -> LIFCR |= DMA_LIFCR_CTEIF1;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> LISR & DMA_LISR_HTIF1)
+	if(DMA1 -> LISR & DMA_LISR_HTIF1)
 	{
 		TIM2_CH3_DMA_Flag.Half_Transfer_Complete_Flag = true;
 		TIM6_UP_DMA_Flag.Half_Transfer_Complete_Flag = true;
@@ -233,7 +233,7 @@ void DMA1_Stream1_IRQHandler(void)
 		DMA1 -> LIFCR |= DMA_LIFCR_CHTIF1;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> LISR & DMA_LISR_TCIF1)
+	if(DMA1 -> LISR & DMA_LISR_TCIF1)
 	{
 		TIM2_CH3_DMA_Flag.Transfer_Complete_Flag = true;
 		TIM6_UP_DMA_Flag.Transfer_Complete_Flag = true;
@@ -261,28 +261,28 @@ void DMA1_Stream2_IRQHandler(void)
 		DMA1 -> LIFCR |= DMA_LIFCR_CFEIF2;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> LISR & DMA_LISR_DMEIF2)
+	if(DMA1 -> LISR & DMA_LISR_DMEIF2)
 	{
 		USART3_TX_DMA_Flag.Direct_Mode_Error_Flag = true;
 		DMA1_Stream2_Flag.Direct_Mode_Error_Flag = true;
 		DMA1 -> LIFCR |= DMA_LIFCR_CDMEIF2;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> LISR & DMA_LISR_TEIF2)
+	if(DMA1 -> LISR & DMA_LISR_TEIF2)
 	{
 		USART3_TX_DMA_Flag.Transfer_Error_Flag = true;
 		DMA1_Stream2_Flag.Transfer_Error_Flag = true;
 		DMA1 -> LIFCR |= DMA_LIFCR_CTEIF2;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> LISR & DMA_LISR_HTIF2)
+	if(DMA1 -> LISR & DMA_LISR_HTIF2)
 	{
 		USART3_TX_DMA_Flag.Half_Transfer_Complete_Flag = true;
 		DMA1_Stream2_Flag.Half_Transfer_Complete_Flag = true;
 		DMA1 -> LIFCR |= DMA_LIFCR_CHTIF2;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> LISR & DMA_LISR_TCIF2)
+	if(DMA1 -> LISR & DMA_LISR_TCIF2)
 	{
 		USART3_TX_DMA_Flag.Transfer_Complete_Flag = true;
 		DMA1_Stream2_Flag.Transfer_Complete_Flag = true;
@@ -313,7 +313,7 @@ void DMA1_Stream3_IRQHandler(void)
 		DMA1 -> LIFCR |= DMA_LIFCR_CFEIF3;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> LISR & DMA_LISR_DMEIF3)
+	if(DMA1 -> LISR & DMA_LISR_DMEIF3)
 	{
 		TIM5_TRIG_DMA_Flag.Direct_Mode_Error_Flag = true;
 		TIM4_CH2_DMA_Flag.Direct_Mode_Error_Flag = true;
@@ -325,7 +325,7 @@ void DMA1_Stream3_IRQHandler(void)
 		DMA1 -> LIFCR |= DMA_LIFCR_CDMEIF3;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> LISR & DMA_LISR_TEIF3)
+	if(DMA1 -> LISR & DMA_LISR_TEIF3)
 	{
 		TIM5_TRIG_DMA_Flag.Transfer_Error_Flag = true;
 		TIM4_CH2_DMA_Flag.Transfer_Error_Flag = true;
@@ -337,7 +337,7 @@ void DMA1_Stream3_IRQHandler(void)
 		DMA1 -> LIFCR |= DMA_LIFCR_CTEIF3;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> LISR & DMA_LISR_HTIF3)
+	if(DMA1 -> LISR & DMA_LISR_HTIF3)
 	{
 		TIM5_TRIG_DMA_Flag.Half_Transfer_Complete_Flag = true;
 		TIM4_CH2_DMA_Flag.Half_Transfer_Complete_Flag = true;
@@ -349,7 +349,7 @@ void DMA1_Stream3_IRQHandler(void)
 		DMA1 -> LIFCR |= DMA_LIFCR_CHTIF3;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> LISR & DMA_LISR_TCIF3)
+	if(DMA1 -> LISR & DMA_LISR_TCIF3)
 	{
 		TIM5_TRIG_DMA_Flag.Transfer_Complete_Flag = true;
 		TIM4_CH2_DMA_Flag.Transfer_Complete_Flag = true;
@@ -385,7 +385,7 @@ void DMA1_Stream4_IRQHandler(void)
 		DMA1 -> HIFCR |= DMA_HIFCR_CFEIF4;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> HISR & DMA_HISR_DMEIF4)
+	if(DMA1 -> HISR & DMA_HISR_DMEIF4)
 	{
 		TIM5_CH2_DMA_Flag.Direct_Mode_Error_Flag = true;
 		TIM3_CH1_DMA_Flag.Direct_Mode_Error_Flag = true;
@@ -397,7 +397,7 @@ void DMA1_Stream4_IRQHandler(void)
 		DMA1 -> HIFCR |= DMA_HIFCR_CDMEIF4;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> HISR & DMA_HISR_TEIF4)
+	if(DMA1 -> HISR & DMA_HISR_TEIF4)
 	{
 		TIM5_CH2_DMA_Flag.Transfer_Error_Flag = true;
 		TIM3_CH1_DMA_Flag.Transfer_Error_Flag = true;
@@ -409,7 +409,7 @@ void DMA1_Stream4_IRQHandler(void)
 		DMA1 -> HIFCR |= DMA_HIFCR_CTEIF4;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> HISR & DMA_HISR_HTIF4)
+	if(DMA1 -> HISR & DMA_HISR_HTIF4)
 	{
 		TIM5_CH2_DMA_Flag.Half_Transfer_Complete_Flag = true;
 		TIM3_CH1_DMA_Flag.Half_Transfer_Complete_Flag = true;
@@ -421,7 +421,7 @@ void DMA1_Stream4_IRQHandler(void)
 		DMA1 -> HIFCR |= DMA_HIFCR_CHTIF4;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> HISR & DMA_HISR_TCIF4)
+	if(DMA1 -> HISR & DMA_HISR_TCIF4)
 	{
 		TIM5_CH2_DMA_Flag.Transfer_Complete_Flag = true;
 		TIM3_CH1_DMA_Flag.Transfer_Complete_Flag = true;
@@ -457,7 +457,7 @@ void DMA1_Stream5_IRQHandler(void)
 		DMA1 -> HIFCR |= DMA_HIFCR_CFEIF5;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> HISR & DMA_HISR_DMEIF5)
+	if(DMA1 -> HISR & DMA_HISR_DMEIF5)
 	{
 		SPI3_TX_DMA_Flag.Direct_Mode_Error_Flag = true;
 		TIM3_TRIG_DMA_Flag.Direct_Mode_Error_Flag = true;
@@ -469,7 +469,7 @@ void DMA1_Stream5_IRQHandler(void)
 		DMA1 -> HIFCR |= DMA_HIFCR_CDMEIF5;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> HISR & DMA_HISR_TEIF5)
+	if(DMA1 -> HISR & DMA_HISR_TEIF5)
 	{
 		SPI3_TX_DMA_Flag.Transfer_Error_Flag = true;
 		TIM3_TRIG_DMA_Flag.Transfer_Error_Flag = true;
@@ -481,7 +481,7 @@ void DMA1_Stream5_IRQHandler(void)
 		DMA1 -> HIFCR |= DMA_HIFCR_CTEIF5;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> HISR & DMA_HISR_HTIF5)
+	if(DMA1 -> HISR & DMA_HISR_HTIF5)
 	{
 		SPI3_TX_DMA_Flag.Half_Transfer_Complete_Flag = true;
 		TIM3_TRIG_DMA_Flag.Half_Transfer_Complete_Flag = true;
@@ -493,7 +493,7 @@ void DMA1_Stream5_IRQHandler(void)
 		DMA1 -> HIFCR |= DMA_HIFCR_CHTIF5;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> HISR & DMA_HISR_TCIF5)
+	if(DMA1 -> HISR & DMA_HISR_TCIF5)
 	{
 		SPI3_TX_DMA_Flag.Transfer_Complete_Flag = true;
 		TIM3_TRIG_DMA_Flag.Transfer_Complete_Flag = true;
@@ -528,7 +528,7 @@ void DMA1_Stream6_IRQHandler(void)
 		DMA1 -> HIFCR |= DMA_HIFCR_CFEIF6;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> HISR & DMA_HISR_DMEIF6)
+	if(DMA1 -> HISR & DMA_HISR_DMEIF6)
 	{
 		TIM2_UP_DMA_Flag.Direct_Mode_Error_Flag = true;
 		USART8_RX_DMA_Flag.Direct_Mode_Error_Flag = true;
@@ -538,7 +538,7 @@ void DMA1_Stream6_IRQHandler(void)
 		DMA1 -> HIFCR |= DMA_HIFCR_CDMEIF6;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> HISR & DMA_HISR_TEIF6)
+	if(DMA1 -> HISR & DMA_HISR_TEIF6)
 	{
 		TIM2_UP_DMA_Flag.Transfer_Error_Flag = true;
 		USART8_RX_DMA_Flag.Transfer_Error_Flag = true;
@@ -548,7 +548,7 @@ void DMA1_Stream6_IRQHandler(void)
 		DMA1 -> HIFCR |= DMA_HIFCR_CTEIF6;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> HISR & DMA_HISR_HTIF6)
+	if(DMA1 -> HISR & DMA_HISR_HTIF6)
 	{
 		TIM2_UP_DMA_Flag.Half_Transfer_Complete_Flag = true;
 		USART8_RX_DMA_Flag.Half_Transfer_Complete_Flag = true;
@@ -558,7 +558,7 @@ void DMA1_Stream6_IRQHandler(void)
 		DMA1 -> HIFCR |= DMA_HIFCR_CHTIF6;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> HISR & DMA_HISR_TCIF6)
+	if(DMA1 -> HISR & DMA_HISR_TCIF6)
 	{
 		TIM2_UP_DMA_Flag.Transfer_Complete_Flag = true;
 		USART8_RX_DMA_Flag.Transfer_Complete_Flag = true;
@@ -593,7 +593,7 @@ void DMA1_Stream7_IRQHandler(void)
 		DMA1 -> HIFCR |= DMA_HIFCR_CFEIF7;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> HISR & DMA_HISR_DMEIF7)
+	if(DMA1 -> HISR & DMA_HISR_DMEIF7)
 	{
 		I2S3_TX_DMA_Flag.Direct_Mode_Error_Flag = true;
 		I2C2_TX_DMA_Flag.Direct_Mode_Error_Flag = true;
@@ -605,7 +605,7 @@ void DMA1_Stream7_IRQHandler(void)
 		DMA1 -> HIFCR |= DMA_HIFCR_CDMEIF7;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> HISR & DMA_HISR_TEIF7)
+	if(DMA1 -> HISR & DMA_HISR_TEIF7)
 	{
 		I2S3_TX_DMA_Flag.Transfer_Error_Flag = true;
 		I2C2_TX_DMA_Flag.Transfer_Error_Flag = true;
@@ -617,7 +617,7 @@ void DMA1_Stream7_IRQHandler(void)
 		DMA1 -> HIFCR |= DMA_HIFCR_CTEIF7;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> HISR & DMA_HISR_HTIF7)
+	if(DMA1 -> HISR & DMA_HISR_HTIF7)
 	{
 		I2S3_TX_DMA_Flag.Half_Transfer_Complete_Flag = true;
 		I2C2_TX_DMA_Flag.Half_Transfer_Complete_Flag = true;
@@ -629,7 +629,7 @@ void DMA1_Stream7_IRQHandler(void)
 		DMA1 -> HIFCR |= DMA_HIFCR_CHTIF7;
 	}
 	/************************************************************************************************************/
-	else if(DMA1 -> HISR & DMA_HISR_TCIF7)
+	if(DMA1 -> HISR & DMA_HISR_TCIF7)
 	{
 		I2S3_TX_DMA_Flag.Transfer_Complete_Flag = true;
 		I2C2_TX_DMA_Flag.Transfer_Complete_Flag = true;
@@ -663,7 +663,7 @@ void DMA2_Stream0_IRQHandler(void)
 		DMA2 -> LIFCR |= DMA_LIFCR_CFEIF0;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> LISR & DMA_LISR_DMEIF0)
+	if(DMA2 -> LISR & DMA_LISR_DMEIF0)
 	{
 		SPI1_RX_DMA_Flag.Direct_Mode_Error_Flag = true;
 		ADC1_DMA_Flag.Direct_Mode_Error_Flag = true;
@@ -673,7 +673,7 @@ void DMA2_Stream0_IRQHandler(void)
 		DMA2 -> LIFCR |= DMA_LIFCR_CDMEIF0;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> LISR & DMA_LISR_TEIF0)
+	if(DMA2 -> LISR & DMA_LISR_TEIF0)
 	{
 		SPI1_RX_DMA_Flag.Transfer_Error_Flag = true;
 		ADC1_DMA_Flag.Transfer_Error_Flag = true;
@@ -683,7 +683,7 @@ void DMA2_Stream0_IRQHandler(void)
 		DMA2 -> LIFCR |= DMA_LIFCR_CTEIF0;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> LISR & DMA_LISR_HTIF0)
+	if(DMA2 -> LISR & DMA_LISR_HTIF0)
 	{
 		SPI1_RX_DMA_Flag.Half_Transfer_Complete_Flag = true;
 		ADC1_DMA_Flag.Half_Transfer_Complete_Flag = true;
@@ -693,7 +693,7 @@ void DMA2_Stream0_IRQHandler(void)
 		DMA2 -> LIFCR |= DMA_LIFCR_CHTIF0;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> LISR & DMA_LISR_TCIF0)
+	if(DMA2 -> LISR & DMA_LISR_TCIF0)
 	{
 		SPI1_RX_DMA_Flag.Transfer_Complete_Flag = true;
 		ADC1_DMA_Flag.Transfer_Complete_Flag = true;
@@ -728,7 +728,7 @@ void DMA2_Stream1_IRQHandler(void)
 		DMA2 -> LIFCR |= DMA_LIFCR_CFEIF1;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> LISR & DMA_LISR_DMEIF1)
+	if(DMA2 -> LISR & DMA_LISR_DMEIF1)
 	{
 		ADC3_DMA_Flag.Direct_Mode_Error_Flag = true;
 		TIM1_CH1_DMA_Flag.Direct_Mode_Error_Flag = true;
@@ -741,7 +741,7 @@ void DMA2_Stream1_IRQHandler(void)
 		DMA2 -> LIFCR |= DMA_LIFCR_CDMEIF1;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> LISR & DMA_LISR_TEIF1)
+	if(DMA2 -> LISR & DMA_LISR_TEIF1)
 	{
 		ADC3_DMA_Flag.Transfer_Error_Flag = true;
 		TIM1_CH1_DMA_Flag.Transfer_Error_Flag = true;
@@ -754,7 +754,7 @@ void DMA2_Stream1_IRQHandler(void)
 		DMA2 -> LIFCR |= DMA_LIFCR_CTEIF1;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> LISR & DMA_LISR_HTIF1)
+	if(DMA2 -> LISR & DMA_LISR_HTIF1)
 	{
 		ADC3_DMA_Flag.Half_Transfer_Complete_Flag = true;
 		TIM1_CH1_DMA_Flag.Half_Transfer_Complete_Flag = true;
@@ -767,7 +767,7 @@ void DMA2_Stream1_IRQHandler(void)
 		DMA2 -> LIFCR |= DMA_LIFCR_CHTIF1;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> LISR & DMA_LISR_TCIF1)
+	if(DMA2 -> LISR & DMA_LISR_TCIF1)
 	{
 		ADC3_DMA_Flag.Transfer_Complete_Flag = true;
 		TIM1_CH1_DMA_Flag.Transfer_Complete_Flag = true;
@@ -801,7 +801,7 @@ void DMA2_Stream2_IRQHandler(void)
 		DMA2 -> LIFCR |= DMA_LIFCR_CFEIF2;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> LISR & DMA_LISR_DMEIF2)
+	if(DMA2 -> LISR & DMA_LISR_DMEIF2)
 	{
 		TIM8_CH1_DMA_Flag.Direct_Mode_Error_Flag = true;
 		USART1_RX_DMA_Flag.Direct_Mode_Error_Flag = true;
@@ -810,7 +810,7 @@ void DMA2_Stream2_IRQHandler(void)
 		DMA2 -> LIFCR |= DMA_LIFCR_CDMEIF2;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> LISR & DMA_LISR_TEIF2)
+	if(DMA2 -> LISR & DMA_LISR_TEIF2)
 	{
 		TIM8_CH1_DMA_Flag.Transfer_Error_Flag = true;
 		USART1_RX_DMA_Flag.Transfer_Error_Flag = true;
@@ -819,7 +819,7 @@ void DMA2_Stream2_IRQHandler(void)
 		DMA2 -> LIFCR |= DMA_LIFCR_CTEIF2;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> LISR & DMA_LISR_HTIF2)
+	if(DMA2 -> LISR & DMA_LISR_HTIF2)
 	{
 		TIM8_CH1_DMA_Flag.Half_Transfer_Complete_Flag = true;
 		USART1_RX_DMA_Flag.Half_Transfer_Complete_Flag = true;
@@ -828,7 +828,7 @@ void DMA2_Stream2_IRQHandler(void)
 		DMA2 -> LIFCR |= DMA_LIFCR_CHTIF2;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> LISR & DMA_LISR_TCIF2)
+	if(DMA2 -> LISR & DMA_LISR_TCIF2)
 	{
 		TIM8_CH1_DMA_Flag.Transfer_Complete_Flag = true;
 		USART1_RX_DMA_Flag.Transfer_Complete_Flag = true;
@@ -857,7 +857,7 @@ void DMA2_Stream3_IRQHandler(void)
 		DMA2 -> LIFCR |= DMA_LIFCR_CFEIF3;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> LISR & DMA_LISR_DMEIF3)
+	if(DMA2 -> LISR & DMA_LISR_DMEIF3)
 	{
 		SDIO_RXTX_DMA_Flag.Direct_Mode_Error_Flag = true;
 		SPI1_TX_DMA_Flag.Direct_Mode_Error_Flag = true;
@@ -865,7 +865,7 @@ void DMA2_Stream3_IRQHandler(void)
 		DMA2 -> LIFCR |= DMA_LIFCR_CDMEIF3;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> LISR & DMA_LISR_TEIF3)
+	if(DMA2 -> LISR & DMA_LISR_TEIF3)
 	{
 		SDIO_RXTX_DMA_Flag.Transfer_Error_Flag = true;
 		SPI1_TX_DMA_Flag.Transfer_Error_Flag = true;
@@ -873,7 +873,7 @@ void DMA2_Stream3_IRQHandler(void)
 		DMA2 -> LIFCR |= DMA_LIFCR_CTEIF3;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> LISR & DMA_LISR_HTIF3)
+	if(DMA2 -> LISR & DMA_LISR_HTIF3)
 	{
 		SDIO_RXTX_DMA_Flag.Half_Transfer_Complete_Flag = true;
 		SPI1_TX_DMA_Flag.Half_Transfer_Complete_Flag = true;
@@ -881,7 +881,7 @@ void DMA2_Stream3_IRQHandler(void)
 		DMA2 -> LIFCR |= DMA_LIFCR_CHTIF3;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> LISR & DMA_LISR_TCIF3)
+	if(DMA2 -> LISR & DMA_LISR_TCIF3)
 	{
 		SDIO_RXTX_DMA_Flag.Transfer_Complete_Flag = true;
 		SPI1_TX_DMA_Flag.Transfer_Complete_Flag = true;
@@ -909,7 +909,7 @@ void DMA2_Stream4_IRQHandler(void)
 		DMA2 -> HIFCR |= DMA_HIFCR_CFEIF4;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> HISR & DMA_HISR_DMEIF4)
+	if(DMA2 -> HISR & DMA_HISR_DMEIF4)
 	{
 		TIM1_CH4_DMA_Flag.Direct_Mode_Error_Flag = true;
 		TIM8_CH2_DMA_Flag.Direct_Mode_Error_Flag = true;
@@ -917,7 +917,7 @@ void DMA2_Stream4_IRQHandler(void)
 		DMA2 -> HIFCR |= DMA_HIFCR_CDMEIF4;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> HISR & DMA_HISR_TEIF4)
+	if(DMA2 -> HISR & DMA_HISR_TEIF4)
 	{
 		TIM1_CH4_DMA_Flag.Transfer_Error_Flag = true;
 		TIM8_CH2_DMA_Flag.Transfer_Error_Flag = true;
@@ -925,7 +925,7 @@ void DMA2_Stream4_IRQHandler(void)
 		DMA2 -> HIFCR |= DMA_HIFCR_CTEIF4;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> HISR & DMA_HISR_HTIF4)
+	if(DMA2 -> HISR & DMA_HISR_HTIF4)
 	{
 		TIM1_CH4_DMA_Flag.Half_Transfer_Complete_Flag = true;
 		TIM8_CH2_DMA_Flag.Half_Transfer_Complete_Flag = true;
@@ -933,7 +933,7 @@ void DMA2_Stream4_IRQHandler(void)
 		DMA2 -> HIFCR |= DMA_HIFCR_CHTIF4;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> HISR & DMA_HISR_TCIF4)
+	if(DMA2 -> HISR & DMA_HISR_TCIF4)
 	{
 		TIM1_CH4_DMA_Flag.Transfer_Complete_Flag = true;
 		TIM8_CH2_DMA_Flag.Transfer_Complete_Flag = true;
@@ -960,28 +960,28 @@ void DMA2_Stream5_IRQHandler(void)
 		DMA2 -> HIFCR |= DMA_HIFCR_CFEIF5;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> HISR & DMA_HISR_DMEIF5)
+	if(DMA2 -> HISR & DMA_HISR_DMEIF5)
 	{
 		TIM1_UP_DMA_Flag.Direct_Mode_Error_Flag = true;
 		DMA2_Stream5_Flag.Direct_Mode_Error_Flag = true;
 		DMA2 -> HIFCR |= DMA_HIFCR_CDMEIF5;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> HISR & DMA_HISR_TEIF5)
+	if(DMA2 -> HISR & DMA_HISR_TEIF5)
 	{
 		TIM1_UP_DMA_Flag.Transfer_Error_Flag = true;
 		DMA2_Stream5_Flag.Transfer_Error_Flag = true;
 		DMA2 -> HIFCR |= DMA_HIFCR_CTEIF5;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> HISR & DMA_HISR_HTIF5)
+	if(DMA2 -> HISR & DMA_HISR_HTIF5)
 	{
 		TIM1_UP_DMA_Flag.Half_Transfer_Complete_Flag = true;
 		DMA2_Stream5_Flag.Half_Transfer_Complete_Flag = true;
 		DMA2 -> HIFCR |= DMA_HIFCR_CHTIF5;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> HISR & DMA_HISR_TCIF5)
+	if(DMA2 -> HISR & DMA_HISR_TCIF5)
 	{
 		TIM1_UP_DMA_Flag.Transfer_Complete_Flag = true;
 		DMA2_Stream5_Flag.Transfer_Complete_Flag = true;
@@ -1010,7 +1010,7 @@ void DMA2_Stream6_IRQHandler(void)
 		DMA2 -> HIFCR |= DMA_HIFCR_CFEIF6;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> HISR & DMA_HISR_DMEIF6)
+	if(DMA2 -> HISR & DMA_HISR_DMEIF6)
 	{
 		TIM1_CH2_DMA_Flag.Direct_Mode_Error_Flag= true;
 		TIM1_CH3_DMA_Flag.Direct_Mode_Error_Flag = true;
@@ -1020,7 +1020,7 @@ void DMA2_Stream6_IRQHandler(void)
 		DMA2 -> HIFCR |= DMA_HIFCR_CDMEIF6;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> HISR & DMA_HISR_TEIF6)
+	if(DMA2 -> HISR & DMA_HISR_TEIF6)
 	{
 		TIM1_CH2_DMA_Flag.Transfer_Error_Flag = true;
 		TIM1_CH3_DMA_Flag.Transfer_Error_Flag = true;
@@ -1030,7 +1030,7 @@ void DMA2_Stream6_IRQHandler(void)
 		DMA2 -> HIFCR |= DMA_HIFCR_CTEIF6;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> HISR & DMA_HISR_HTIF6)
+	if(DMA2 -> HISR & DMA_HISR_HTIF6)
 	{
 		TIM1_CH2_DMA_Flag.Half_Transfer_Complete_Flag = true;
 		TIM1_CH3_DMA_Flag.Half_Transfer_Complete_Flag = true;
@@ -1040,7 +1040,7 @@ void DMA2_Stream6_IRQHandler(void)
 		DMA2 -> HIFCR |= DMA_HIFCR_CHTIF6;
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> HISR & DMA_HISR_TCIF6)
+	if(DMA2 -> HISR & DMA_HISR_TCIF6)
 	{
 		TIM1_CH2_DMA_Flag.Transfer_Complete_Flag = true;
 		TIM1_CH3_DMA_Flag.Transfer_Complete_Flag = true;
@@ -1064,42 +1064,47 @@ void DMA2_Stream7_IRQHandler(void)
 {
 	if(DMA2 -> HISR & DMA_HISR_FEIF7)
 	{
+		DMA2 -> HIFCR |= DMA_HIFCR_CFEIF7;
 		TIM8_CH4_DMA_Flag.Fifo_Error_Flag = true;
 		USART1_TX_DMA_Flag.Fifo_Error_Flag = true;
 		DMA2_Stream7_Flag.Fifo_Error_Flag = true;
-		DMA2 -> HIFCR |= DMA_HIFCR_CFEIF7;
+
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> HISR & DMA_HISR_DMEIF7)
+	if(DMA2 -> HISR & DMA_HISR_DMEIF7)
 	{
+		DMA2 -> HIFCR |= DMA_HIFCR_CDMEIF7;
 		TIM8_CH4_DMA_Flag.Direct_Mode_Error_Flag = true;
 		USART1_TX_DMA_Flag.Direct_Mode_Error_Flag = true;
 		DMA2_Stream7_Flag.Direct_Mode_Error_Flag = true;
-		DMA2 -> HIFCR |= DMA_HIFCR_CDMEIF7;
+
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> HISR & DMA_HISR_TEIF7)
+	if(DMA2 -> HISR & DMA_HISR_TEIF7)
 	{
+		DMA2 -> HIFCR |= DMA_HIFCR_CTEIF7;
 		TIM8_CH4_DMA_Flag.Transfer_Error_Flag = true;
 		USART1_TX_DMA_Flag.Transfer_Error_Flag = true;
 		DMA2_Stream7_Flag.Transfer_Error_Flag = true;
-		DMA2 -> HIFCR |= DMA_HIFCR_CTEIF7;
+
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> HISR & DMA_HISR_HTIF7)
+	if(DMA2 -> HISR & DMA_HISR_HTIF7)
 	{
+		DMA2 -> HIFCR |= DMA_HIFCR_CHTIF7;
 		TIM8_CH4_DMA_Flag.Half_Transfer_Complete_Flag = true;
 		USART1_TX_DMA_Flag.Half_Transfer_Complete_Flag = true;
 		DMA2_Stream7_Flag.Half_Transfer_Complete_Flag = true;
-		DMA2 -> HIFCR |= DMA_HIFCR_CHTIF7;
+
 	}
 	/************************************************************************************************************/
-	else if(DMA2 -> HISR & DMA_HISR_TCIF7)
+	if(DMA2 -> HISR & DMA_HISR_TCIF7)
 	{
+		DMA2 -> HIFCR |= DMA_HIFCR_CTCIF7;
 		TIM8_CH4_DMA_Flag.Transfer_Complete_Flag = true;
 		USART1_TX_DMA_Flag.Transfer_Complete_Flag = true;
 		DMA2_Stream7_Flag.Transfer_Complete_Flag = true;
-		DMA2 -> HIFCR |= DMA_HIFCR_CTCIF7;
+
 	}
 }
 
@@ -1134,8 +1139,13 @@ void DMA_Reset_Flags(DMA_Flags_Typedef flag)
  */
 void DMA_Clock_Enable(DMA_Config *config)
 {
-	if(config -> Request.Controller == DMA1) RCC -> AHB1ENR |= RCC_AHB1ENR_DMA1EN;
-	if(config -> Request.Controller == DMA2) RCC -> AHB1ENR |= RCC_AHB1ENR_DMA2EN;
+	if(config -> Request.Controller == DMA1){
+		RCC -> AHB1ENR |= RCC_AHB1ENR_DMA1EN;
+	}
+	if(config -> Request.Controller == DMA2)
+		{
+		RCC -> AHB1ENR |= RCC_AHB1ENR_DMA2EN;
+		}
 }
 //
 
@@ -1197,15 +1207,14 @@ int8_t DMA_Init(DMA_Config *config)
     config->Request.Stream->CR |= config->transfer_direction;  // Set transfer direction
 
     // Configure DMA interrupts if enabled
-    if((config->interrupts == DMA_Configuration.DMA_Interrupts.Transfer_Complete) ||
-       (config->interrupts == DMA_Configuration.DMA_Interrupts.Half_Transfer_Complete) ||
-       (config->interrupts == DMA_Configuration.DMA_Interrupts.Transfer_Error) ||
-       (config->interrupts == DMA_Configuration.DMA_Interrupts.Direct_Mode_Error) ||
-       (config->interrupts == DMA_Configuration.DMA_Interrupts.Fifo_Error))
+
+
+     if(config->interrupts != DMA_Configuration.DMA_Interrupts.Disable)
     {
-        if(config->interrupts == DMA_Configuration.DMA_Interrupts.Fifo_Error)
+
+        if(config->interrupts |= DMA_Configuration.DMA_Interrupts.Fifo_Error)
         {
-            config->Request.Stream->FCR |= config->interrupts;
+        	config->Request.Stream->FCR |= config->interrupts;
         }
 
         config->Request.Stream->CR |= config->interrupts;
@@ -1213,25 +1222,57 @@ int8_t DMA_Init(DMA_Config *config)
         // Enable the corresponding NVIC interrupt for the DMA stream
         if(config->Request.Controller == DMA1)
         {
-            if(config->Request.Stream == DMA1_Stream0)        NVIC_EnableIRQ(DMA1_Stream0_IRQn);
-            else if(config->Request.Stream == DMA1_Stream1)   NVIC_EnableIRQ(DMA1_Stream1_IRQn);
-            else if(config->Request.Stream == DMA1_Stream2)   NVIC_EnableIRQ(DMA1_Stream2_IRQn);
-            else if(config->Request.Stream == DMA1_Stream3)   NVIC_EnableIRQ(DMA1_Stream3_IRQn);
-            else if(config->Request.Stream == DMA1_Stream4)   NVIC_EnableIRQ(DMA1_Stream4_IRQn);
-            else if(config->Request.Stream == DMA1_Stream5)   NVIC_EnableIRQ(DMA1_Stream5_IRQn);
-            else if(config->Request.Stream == DMA1_Stream6)   NVIC_EnableIRQ(DMA1_Stream6_IRQn);
-            else if(config->Request.Stream == DMA1_Stream7)   NVIC_EnableIRQ(DMA1_Stream7_IRQn);
+            if(config->Request.Stream == DMA1_Stream0){
+            	NVIC_EnableIRQ(DMA1_Stream0_IRQn);
+            }
+            else if(config->Request.Stream == DMA1_Stream1){
+            	NVIC_EnableIRQ(DMA1_Stream1_IRQn);
+            }
+            else if(config->Request.Stream == DMA1_Stream2){
+            	NVIC_EnableIRQ(DMA1_Stream2_IRQn);
+            }
+            else if(config->Request.Stream == DMA1_Stream3){
+            	NVIC_EnableIRQ(DMA1_Stream3_IRQn);
+            }
+            else if(config->Request.Stream == DMA1_Stream4){
+            	NVIC_EnableIRQ(DMA1_Stream4_IRQn);
+            }
+            else if(config->Request.Stream == DMA1_Stream5){
+            	NVIC_EnableIRQ(DMA1_Stream5_IRQn);
+            }
+            else if(config->Request.Stream == DMA1_Stream6) {
+            	NVIC_EnableIRQ(DMA1_Stream6_IRQn);
+            }
+            else if(config->Request.Stream == DMA1_Stream7){
+            	NVIC_EnableIRQ(DMA1_Stream7_IRQn);
+            }
         }
         else if(config->Request.Controller == DMA2)
         {
-            if(config->Request.Stream == DMA2_Stream0)        NVIC_EnableIRQ(DMA2_Stream0_IRQn);
-            else if(config->Request.Stream == DMA2_Stream1)   NVIC_EnableIRQ(DMA2_Stream1_IRQn);
-            else if(config->Request.Stream == DMA2_Stream2)   NVIC_EnableIRQ(DMA2_Stream2_IRQn);
-            else if(config->Request.Stream == DMA2_Stream3)   NVIC_EnableIRQ(DMA2_Stream3_IRQn);
-            else if(config->Request.Stream == DMA2_Stream4)   NVIC_EnableIRQ(DMA2_Stream4_IRQn);
-            else if(config->Request.Stream == DMA2_Stream5)   NVIC_EnableIRQ(DMA2_Stream5_IRQn);
-            else if(config->Request.Stream == DMA2_Stream6)   NVIC_EnableIRQ(DMA2_Stream6_IRQn);
-            else if(config->Request.Stream == DMA2_Stream7)   NVIC_EnableIRQ(DMA2_Stream7_IRQn);
+            if(config->Request.Stream == DMA2_Stream0){
+            	NVIC_EnableIRQ(DMA2_Stream0_IRQn);
+            }
+            else if(config->Request.Stream == DMA2_Stream1){
+            	NVIC_EnableIRQ(DMA2_Stream1_IRQn);
+            }
+            else if(config->Request.Stream == DMA2_Stream2){
+            	NVIC_EnableIRQ(DMA2_Stream2_IRQn);
+            }
+            else if(config->Request.Stream == DMA2_Stream3){
+            	NVIC_EnableIRQ(DMA2_Stream3_IRQn);
+            }
+            else if(config->Request.Stream == DMA2_Stream4){
+            	NVIC_EnableIRQ(DMA2_Stream4_IRQn);
+            }
+            else if(config->Request.Stream == DMA2_Stream5){
+            	NVIC_EnableIRQ(DMA2_Stream5_IRQn);
+            }
+            else if(config->Request.Stream == DMA2_Stream6){
+            	NVIC_EnableIRQ(DMA2_Stream6_IRQn);
+            }
+            else if(config->Request.Stream == DMA2_Stream7){
+            	NVIC_EnableIRQ(DMA2_Stream7_IRQn);
+            }
         }
     }
 
@@ -1442,8 +1483,16 @@ void DMA_Memory_To_Memory_Transfer(uint32_t *source,
     while((DMA2->LISR & (DMA_LISR_TCIF0_Msk)) == 0) {}
 
     // Clear the transfer complete flag
-    DMA2->LIFCR |= DMA_LIFCR_CTCIF0;
+    DMA2->LIFCR |= DMA_LIFCR_CTCIF0 | DMA_LIFCR_CHTIF0;
 
     // Disable the DMA stream
+
+    DMA2_Stream0->CR = 0;
+    DMA2_Stream0->FCR = 0;
+    DMA2_Stream0->M0AR = 0;
+    DMA2_Stream0->M1AR = 0;
+    DMA2_Stream0->NDTR= 0;
+    DMA2_Stream0->PAR = 0;
+
     DMA2_Stream0->CR &= ~DMA_SxCR_EN;
 }
