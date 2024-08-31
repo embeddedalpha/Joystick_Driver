@@ -29,12 +29,12 @@ DMA_Config serial_DMA;
  void printConsole(char *msg, ...)
 {
 
-char buff[100];
-uint8_t x[2];
+	char buff[100];
+	uint8_t x[2];
 
-x[0] = 0;
+	x[0] = 0;
 
-DMA_Memory_To_Memory_Transfer(&x, 8, 8, &buff, 0, 1, 100);
+	DMA_Memory_To_Memory_Transfer(&x, 8, 8, &buff, 0, 1, 100);
 
 
 	va_list args;
@@ -46,11 +46,11 @@ DMA_Memory_To_Memory_Transfer(&x, 8, 8, &buff, 0, 1, 100);
 
 	USART_TX_Buffer(&serial, &buff, len);
 
-	for(int i = 0; i<= strlen(buff)-1; i++)
-	{
-		serial.Port -> DR = buff[i];
-		while (!(serial.Port -> SR & USART_SR_TXE));
-	}
+//	for(int i = 0; i<= strlen(buff)-1; i++)
+//	{
+//		serial.Port -> DR = buff[i];
+//		while (!(serial.Port -> SR & USART_SR_TXE));
+//	}
 }
 
 char readConsole(int buffer_length, char * msg, ...)
