@@ -408,7 +408,7 @@ int8_t USART_Init(USART_Config *config)
 
 		xUSART_TX[usart_dma_instance_number].circular_mode = DMA_Configuration.Circular_Mode.Disable;
 		xUSART_TX[usart_dma_instance_number].flow_control = DMA_Configuration.Flow_Control.DMA_Control;
-		xUSART_TX[usart_dma_instance_number].interrupts = DMA_Configuration.DMA_Interrupts.Transfer_Complete | DMA_Configuration.DMA_Interrupts.Transfer_Error;
+		xUSART_TX[usart_dma_instance_number].interrupts = DMA_Configuration.DMA_Interrupts.Transfer_Complete ;
 		xUSART_TX[usart_dma_instance_number].memory_data_size = DMA_Configuration.Memory_Data_Size.byte;
 		xUSART_TX[usart_dma_instance_number].peripheral_data_size = DMA_Configuration.Peripheral_Data_Size.byte;
 		xUSART_TX[usart_dma_instance_number].peripheral_pointer_increment = DMA_Configuration.Peripheral_Pointer_Increment.Disable;
@@ -436,8 +436,10 @@ int8_t USART_TX_Buffer(USART_Config *config, uint8_t *tx_buffer, uint16_t length
 {
 	if(config->dma_enable |= USART_Configuration.DMA_Enable.TX_Enable)
 	{
+		config -> Port -> SR &= ~USART_SR_TC;
 		xUSART_TX[usart_dma_instance_number].memory_address = (uint32_t)tx_buffer;
-		xUSART_TX[usart_dma_instance_number].peripheral_address = &config->Port->DR;
+		xUSART_TX[usart_dma_instance_number].peripheral_address = (uint32_t)&config->Port->DR;
+//		xUSART_TX[usart_dma_instance_number].peripheral_address = (uint32_t)&USART1->DR;
 		xUSART_TX[usart_dma_instance_number].buffer_length = length;
 		DMA_Set_Target(&xUSART_TX[usart_dma_instance_number]);
 		DMA_Set_Trigger(&xUSART_TX[usart_dma_instance_number]);
