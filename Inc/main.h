@@ -35,6 +35,9 @@ typedef struct Interrupts
 extern uint32_t APB1CLK_SPEED;
 extern uint32_t APB2CLK_SPEED;
 
+
+void BSP_Init(void);
+
 __STATIC_INLINE int32_t SystemAPB1_Clock_Speed(void)
 {
 	return (SystemCoreClock >> APBPrescTable[(RCC->CFGR & RCC_CFGR_PPRE1)>> RCC_CFGR_PPRE1_Pos]);
