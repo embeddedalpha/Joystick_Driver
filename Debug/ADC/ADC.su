@@ -1,5 +1,5 @@
-../Inc/main.h:135:26:Delay_ms	24	static
-../Inc/main.h:146:26:Delay_milli	16	static
+../Inc/main.h:138:26:Delay_ms	24	static
+../Inc/main.h:149:26:Delay_milli	16	static
 ../ADC/ADC.c:49:13:ADC_Timer_External_Trigger_Init	16	static
 ../ADC/ADC.c:208:15:ADC_Sampling_Config	24	static
 ../ADC/ADC.c:349:15:ADC_Pin_Init	40	static
