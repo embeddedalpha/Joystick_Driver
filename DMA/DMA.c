@@ -1217,7 +1217,24 @@ int8_t DMA_Init(DMA_Config *config)
         	config->Request.Stream->FCR |= config->interrupts;
         }
 
-        config->Request.Stream->CR |= config->interrupts;
+        if(config->interrupts |= DMA_Configuration.DMA_Interrupts.Transfer_Complete)
+        {
+        	config->Request.Stream->CR |= DMA_SxCR_TCIE;
+        }
+
+        if(config->interrupts |= DMA_Configuration.DMA_Interrupts.Half_Transfer_Complete)
+        {
+        	config->Request.Stream->CR |= DMA_SxCR_HTIE;
+        }
+
+        if(config->interrupts |= DMA_Configuration.DMA_Interrupts.Transfer_Error)
+        {
+        	config->Request.Stream->CR |= DMA_SxCR_TEIE;
+        }
+        if(config->interrupts |= DMA_Configuration.DMA_Interrupts.Direct_Mode_Error)
+        {
+        	config->Request.Stream->CR |= DMA_SxCR_DMEIE;
+        }
 
         // Enable the corresponding NVIC interrupt for the DMA stream
         if(config->Request.Controller == DMA1)
