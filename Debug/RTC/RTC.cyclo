@@ -1,0 +1,6 @@
+../RTC/RTC.c:10:16:BCD_to_Decimal_Converter	1
+../RTC/RTC.c:15:16:Decimal_to_BCD	1
+../RTC/RTC.c:19:13:Enter_Initalization_Mode	1
+../RTC/RTC.c:26:13:Exit_Initalization_Mode	1
+../RTC/RTC.c:33:6:RTC_Init	3
+../RTC/RTC.c:82:6:RTC_Set_Alarm	3

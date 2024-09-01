@@ -5,6 +5,7 @@
 "./Joystick_Device_Driver/Joystick_Device_Driver.o"
 "./Joystick_HAL/Joystick_HAL.o"
 "./Joystick_Middleware/Joystick_Middleware.o"
+"./RTC/RTC.o"
 "./Src/BSP.o"
 "./Src/main.o"
 "./Src/syscalls.o"
