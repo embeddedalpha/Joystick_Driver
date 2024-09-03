@@ -10,13 +10,13 @@
 
 #include "main.h"
 
-volatile uint8_t Hour;
-volatile uint8_t Minute;
-volatile uint8_t Second;
-volatile uint8_t Day;
-volatile uint8_t Month;
-volatile uint8_t Year;
-volatile uint8_t Day_of_Week;
+extern  uint8_t Hour;
+extern  uint8_t Minute;
+extern  uint8_t Second;
+extern  uint8_t Day;
+extern  uint8_t Month;
+extern  uint8_t Year;
+extern  uint8_t Day_of_Week;
 
 
 typedef struct RTC_Config
@@ -66,6 +66,9 @@ typedef struct RTC_Config
 
 }RTC_Config;
 
-
+void RTC_Init(RTC_Config *config);
+void RTC_Set_Alarm(RTC_Config *config);
+void RTC_Get_Date(void);
+void RTC_Get_Time(void);
 
 #endif /* RTC_H_ */
