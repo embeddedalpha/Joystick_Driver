@@ -55,6 +55,8 @@ __STATIC_INLINE void MCU_Clock_Setup(void)
 //	uint8_t pll_p = 0;
 //	uint8_t pll_q = 7;
 
+	SystemInit();
+
 	uint8_t pll_m = 8;
 	uint16_t pll_n = 336; //192
 	uint8_t pll_p = 0;
