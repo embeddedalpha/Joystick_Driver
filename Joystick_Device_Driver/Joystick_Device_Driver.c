@@ -26,8 +26,12 @@ JoystickPosition_t Joystick_Read(uint8_t joystickIndex)
     uint16_t rawY = Joystick_HAL_Read_Y(joystickIndex);
 
     // Normalize to signed 16-bit range (-32768 to 32767)
-    position.x = (int16_t)(((int32_t)rawX - 2048) * 16);
-    position.y = (int16_t)(((int32_t)rawY - 2048) * 16);
+//    position.x = (int16_t)(((int32_t)rawX - 2048) * 16);
+//    position.y = (int16_t)(((int32_t)rawY - 2048) * 16);
+
+//    // Normalize to signed 16-bit range (-32768 to 32767)
+    position.x = rawX;
+    position.y = rawY;
 
     return position;
 }
