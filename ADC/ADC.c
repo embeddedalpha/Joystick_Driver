@@ -107,16 +107,9 @@ static void ADC_Timer_External_Trigger_Init(ADC_Config *config)
 	{
 		RCC -> APB1ENR |= RCC_APB1ENR_TIM2EN;
 		TIM2 -> EGR |= TIM_EGR_CC2G | TIM_EGR_UG;
-//		TIM2->DIER |=  TIM_DIER_CC2IE;
-//		//	NVIC_EnableIRQ(TIM1_CC_IRQn);
-//		//	NVIC_SetPriority(TIM1_CC_IRQn,1);
-//		TIM2->PSC = 10000-1;
-//		TIM2->ARR = 8400-1;
-//		TIM2->CR1 |= TIM_CR1_CEN;
-
-		TIM2 -> CCR1 = 10000/2 -1;
-		TIM2->PSC = 16800;
-		TIM2->ARR = 10000-1;
+		TIM2 -> CCR1 = 100/2 -1;
+		TIM2->PSC = 168;
+		TIM2->ARR = 100-1;
 		TIM2 -> CR2 |=  TIM_CR2_MMS_1;
 		TIM2 -> CCER |= TIM_CCER_CC2E;
 		TIM2->CR1 |= TIM_CR1_CEN ;
@@ -151,8 +144,8 @@ static void ADC_Timer_External_Trigger_Init(ADC_Config *config)
 		// NVIC_EnableIRQ(TIM1_CC_IRQn);
 		//	NVIC_SetPriority(TIM1_CC_IRQn,1);
 		TIM2 -> CR2 |=  TIM_CR2_MMS_1;
-		TIM2->PSC = 10000-1;
-		TIM2->ARR = 1680-1;
+		TIM2->PSC = 1000-1;
+		TIM2->ARR = 16800-1;
 		TIM2->CR1 |= TIM_CR1_CEN;
 		TIM2 -> EGR |= TIM_EGR_UG;
 	}
@@ -748,6 +741,7 @@ int8_t ADC_Init(ADC_Config *config)
     xADC.memory_data_size = DMA_Configuration.Memory_Data_Size.half_word;
     xADC.peripheral_data_size = DMA_Configuration.Peripheral_Data_Size.half_word;
     xADC.memory_pointer_increment = DMA_Configuration.Memory_Pointer_Increment.Enable;
+    xADC.interrupts = DMA_Configuration.DMA_Interrupts.Transfer_Complete | DMA_Configuration.DMA_Interrupts.Half_Transfer_Complete;
     xADC.peripheral_pointer_increment = DMA_Configuration.Peripheral_Pointer_Increment.Disable;
     DMA_Init(&xADC);
 
