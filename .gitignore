@@ -1,5 +1,11 @@
+.dist/
+.settings/
+Debug/
+Startup/
+.cproject
+.project
+Joystick_Driver Debug.launch
+driver_configuration.xml
 Joystick_Driver_Doxyfile
-ADC\Documentation\
-ADC\docs\
-Docs\
-DMA\docs\
+STM32F407VGTX_FLASH.ld
+STM32F407VGTX_RAM.ld
