@@ -9,17 +9,18 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include USART/subdir.mk
+-include Temp/Temp_Driver/subdir.mk
 -include Startup/subdir.mk
 -include Src/subdir.mk
--include RTC/subdir.mk
--include Joystick_Middleware/subdir.mk
--include Joystick_HAL/subdir.mk
--include Joystick_Device_Driver/subdir.mk
--include GPIO/subdir.mk
--include DMA/subdir.mk
--include Console/subdir.mk
--include ADC/subdir.mk
+-include Joystick/Joystick_Middleware/subdir.mk
+-include Joystick/Joystick_HAL/subdir.mk
+-include Joystick/Joystick_Driver/subdir.mk
+-include Drivers/USART/subdir.mk
+-include Drivers/RTC/subdir.mk
+-include Drivers/GPIO/subdir.mk
+-include Drivers/DMA/subdir.mk
+-include Drivers/Console/subdir.mk
+-include Drivers/ADC/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)

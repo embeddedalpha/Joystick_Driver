@@ -9,8 +9,8 @@
 #define JOYSTICK_HAL_H_
 
 #include "main.h"
-#include "ADC.h"
-#include "GPIO.h"
+#include "ADC/ADC.h"
+#include "GPIO/GPIO.h"
 
 #define MAX_JOYSTICK_INSTANCES 4
 

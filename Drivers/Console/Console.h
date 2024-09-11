@@ -9,9 +9,9 @@
 #define CONSOLE_H_
 
 #include "main.h"
-#include "GPIO.h"
-#include "USART.h"
-
+#include "GPIO/GPIO.h"
+#include "USART/USART.h"
+#include "DMA/DMA.h"
 
 
 void Console_Init(int32_t baudrate);

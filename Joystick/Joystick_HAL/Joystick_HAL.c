@@ -111,6 +111,7 @@ void Joystick_HAL_Init(Joystick_HAL_Typedef *instance)
 	Joystick.Port = ADC_Configuration.Port._ADC1_;
 	Joystick.Resolution = ADC_Configuration.Resolution.Bit_12;
 	Joystick.External_Trigger.Enable = ENABLE;
+	Joystick.External_Trigger.Sampling_Frequency = instance->update_rate;
 //	Joystick.External_Trigger.Trigger_Event = ADC_Configuration.Regular_External_Trigger_Event.Timer_2_TRGO;
 	Joystick.External_Trigger.Trigger_Event = ADC_Configuration.Regular_External_Trigger_Event.Timer_2_CC2;
 	ADC_Init(&Joystick);

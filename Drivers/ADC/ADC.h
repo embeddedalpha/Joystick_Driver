@@ -77,8 +77,8 @@
 #define ADC_H_
 
 #include "main.h"
-#include "GPIO.h"
-#include "DMA.h"
+#include "GPIO/GPIO.h"
+#include "DMA/DMA.h"
 #include "ADC_Defs.h"
 
 

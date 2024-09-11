@@ -10,9 +10,9 @@
 
 
 #include "main.h"
-#include "GPIO.h"
+#include "GPIO/GPIO.h"
 #include "USART_Defs.h"
-
+#include "DMA/DMA.h"
 
 
 

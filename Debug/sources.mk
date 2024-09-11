@@ -22,15 +22,16 @@ C_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-ADC \
-Console \
-DMA \
-GPIO \
-Joystick_Device_Driver \
-Joystick_HAL \
-Joystick_Middleware \
-RTC \
+Drivers/ADC \
+Drivers/Console \
+Drivers/DMA \
+Drivers/GPIO \
+Drivers/RTC \
+Drivers/USART \
+Joystick/Joystick_Driver \
+Joystick/Joystick_HAL \
+Joystick/Joystick_Middleware \
 Src \
 Startup \
-USART \
+Temp/Temp_Driver \
 

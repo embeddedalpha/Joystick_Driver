@@ -7,7 +7,7 @@
 
 
 #include "main.h"
-#include "GPIO.h"
+#include "GPIO/GPIO.h"
 
 void BSP_Init(void)
 {

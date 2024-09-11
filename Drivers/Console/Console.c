@@ -7,10 +7,9 @@
 
 
 #include "Console.h"
-#include "DMA.h"
+
 
 USART_Config serial;
-DMA_Config serial_DMA;
 
 
  void Console_Init(int32_t baudrate)
